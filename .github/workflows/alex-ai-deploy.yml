@@ -1,0 +1,54 @@
+name: Alex AI Deployment Pipeline
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+  TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+
+jobs:
+  alex-ai-deploy:
+    name: Deploy Alex AI Systems
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+      
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      
+      - name: Crew Coordination Check
+        run: pnpm turbo run crew:status
+      
+      - name: MCP Tools Validation
+        run: pnpm turbo run mcp:query -- "Turborepo deployment"
+      
+      - name: Memory Optimization
+        run: pnpm turbo run memory:optimize
+      
+      - name: Quality Checks
+        run: pnpm turbo run quality:check
+      
+      - name: Build Alex AI Systems
+        run: pnpm turbo run build
+      
+      - name: Deploy to Production
+        run: pnpm turbo run deploy
+      
+      - name: Notify Crew
+        run: pnpm turbo run crew:notify -- "Deployment complete"

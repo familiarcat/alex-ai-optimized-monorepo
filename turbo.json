@@ -98,6 +98,30 @@
     },
     "clean": {
       "cache": false
+    },
+    "memory:optimize": {
+      "dependsOn": [
+        "build"
+      ],
+      "outputs": [
+        "memory-cache/**"
+      ],
+      "env": [
+        "NODE_ENV"
+      ],
+      "cache": true
+    },
+    "memory:consolidate": {
+      "dependsOn": [
+        "memory:optimize"
+      ],
+      "outputs": [
+        "consolidated-memory/**"
+      ],
+      "env": [
+        "NODE_ENV"
+      ],
+      "cache": true
     }
   }
 }

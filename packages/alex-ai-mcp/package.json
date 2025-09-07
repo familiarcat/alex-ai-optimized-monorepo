@@ -1,0 +1,21 @@
+{
+  "name": "@alex-ai/mcp",
+  "version": "1.0.0",
+  "description": "Alex AI MCP Tools Sharing",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "mcp:query": "node dist/mcp-query.js",
+    "mcp:optimize": "node dist/mcp-optimize.js"
+  },
+  "dependencies": {
+    "turbo": "^1.10.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
