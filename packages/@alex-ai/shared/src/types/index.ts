@@ -29,10 +29,3 @@ export interface MCPQuery {
   sources: string[];
   results: Record<string, any>;
 }
-
-export default {
-  AlexAIConfig,
-  CrewMember,
-  SystemHealth,
-  MCPQuery
-};

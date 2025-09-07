@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex AI Puppeteer Test Report</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 20px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header { background: #2563eb; color: white; padding: 20px; border-radius: 8px 8px 0 0; }
+        .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
+        .metric { text-align: center; padding: 20px; border-radius: 8px; }
+        .metric.pass { background: #dcfce7; color: #166534; }
+        .metric.fail { background: #fef2f2; color: #dc2626; }
+        .metric.warn { background: #fef3c7; color: #d97706; }
+        .results { padding: 20px; }
+        .test-result { margin: 10px 0; padding: 15px; border-radius: 8px; border-left: 4px solid; }
+        .test-result.pass { background: #f0fdf4; border-color: #22c55e; }
+        .test-result.fail { background: #fef2f2; border-color: #ef4444; }
+        .test-result.warn { background: #fffbeb; border-color: #f59e0b; }
+        .screenshots { padding: 20px; }
+        .screenshot { margin: 10px 0; }
+        .screenshot img { max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Alex AI Puppeteer Test Report</h1>
+            <p>Generated: 2025-09-07T07:41:09.373Z</p>
+        </div>
+        
+        <div class="summary">
+            <div class="metric">
+                <h3>Total Tests</h3>
+                <div style="font-size: 2em; font-weight: bold;">9</div>
+            </div>
+            <div class="metric pass">
+                <h3>Passed</h3>
+                <div style="font-size: 2em; font-weight: bold;">4</div>
+            </div>
+            <div class="metric fail">
+                <h3>Failed</h3>
+                <div style="font-size: 2em; font-weight: bold;">4</div>
+            </div>
+            <div class="metric warn">
+                <h3>Warnings</h3>
+                <div style="font-size: 2em; font-weight: bold;">1</div>
+            </div>
+        </div>
+        
+        <div class="results">
+            <h2>Test Results</h2>
+            
+                <div class="test-result pass">
+                    <h3>Page Load - PASS</h3>
+                    <pre>{
+  "title": "Create Next App",
+  "url": "http://localhost:3000/",
+  "loadTime": 1757230857185
+}</pre>
+                    
+                </div>
+            
+                <div class="test-result pass">
+                    <h3>Navigation - PASS</h3>
+                    <pre>{
+  "header": false,
+  "main": false,
+  "navigation": false,
+  "footer": false
+}</pre>
+                    
+                </div>
+            
+                <div class="test-result fail">
+                    <h3>Job Search Interface - FAIL</h3>
+                    
+                    <p style="color: #dc2626;"><strong>Error:</strong> Waiting for selector `[data-testid="job-search"], .job-search, input[type="search"]` failed</p>
+                </div>
+            
+                <div class="test-result fail">
+                    <h3>Responsive Design - Desktop - FAIL</h3>
+                    
+                    <p style="color: #dc2626;"><strong>Error:</strong> this.page.waitForTimeout is not a function</p>
+                </div>
+            
+                <div class="test-result fail">
+                    <h3>Responsive Design - Tablet - FAIL</h3>
+                    
+                    <p style="color: #dc2626;"><strong>Error:</strong> this.page.waitForTimeout is not a function</p>
+                </div>
+            
+                <div class="test-result fail">
+                    <h3>Responsive Design - Mobile - FAIL</h3>
+                    
+                    <p style="color: #dc2626;"><strong>Error:</strong> this.page.waitForTimeout is not a function</p>
+                </div>
+            
+                <div class="test-result pass">
+                    <h3>Performance - PASS</h3>
+                    <pre>{
+  "loadTime": 825,
+  "domContentLoaded": 0,
+  "loadComplete": 0,
+  "totalTime": 207,
+  "threshold": 5000
+}</pre>
+                    
+                </div>
+            
+                <div class="test-result warn">
+                    <h3>Accessibility - WARN</h3>
+                    <pre>{
+  "hasTitle": true,
+  "hasMainLandmark": false,
+  "hasNavigation": false,
+  "hasHeadings": true,
+  "hasAltText": true,
+  "hasFormLabels": false,
+  "score": "3/6"
+}</pre>
+                    
+                </div>
+            
+                <div class="test-result pass">
+                    <h3>Error Handling - 404 - PASS</h3>
+                    <pre>{
+  "hasErrorContent": true
+}</pre>
+                    
+                </div>
+            
+        </div>
+        
+        <div class="screenshots">
+            <h2>Screenshots</h2>
+            
+                <div class="screenshot">
+                    <h3>page-load - Initial page load</h3>
+                    <img src="page-load-2025-09-07T07-40-57-067Z.png" alt="Initial page load">
+                    <p><small>2025-09-07T07:40:57.185Z</small></p>
+                </div>
+            
+                <div class="screenshot">
+                    <h3>navigation-test - Navigation elements check</h3>
+                    <img src="navigation-test-2025-09-07T07-40-57-186Z.png" alt="Navigation elements check">
+                    <p><small>2025-09-07T07:40:57.287Z</small></p>
+                </div>
+            
+                <div class="screenshot">
+                    <h3>performance-test - Performance metrics capture</h3>
+                    <img src="performance-test-2025-09-07T07-41-08-149Z.png" alt="Performance metrics capture">
+                    <p><small>2025-09-07T07:41:08.265Z</small></p>
+                </div>
+            
+                <div class="screenshot">
+                    <h3>accessibility-test - Accessibility checks</h3>
+                    <img src="accessibility-test-2025-09-07T07-41-08-267Z.png" alt="Accessibility checks">
+                    <p><small>2025-09-07T07:41:08.382Z</small></p>
+                </div>
+            
+                <div class="screenshot">
+                    <h3>error-404 - 404 error page test</h3>
+                    <img src="error-404-2025-09-07T07-41-09-303Z.png" alt="404 error page test">
+                    <p><small>2025-09-07T07:41:09.372Z</small></p>
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>

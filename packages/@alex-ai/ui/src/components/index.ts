@@ -30,17 +30,15 @@ export const Button: React.FC<ButtonProps> = ({
     large: 'px-6 py-3 text-lg'
   };
 
-  return (
-    <button
-      className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${
-        disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'
-      }`}
-      onClick={onClick}
-      disabled={disabled}
-    >
-      {children}
-    </button>
-  );
+  const buttonClasses = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${
+    disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'
+  }`;
+
+  return React.createElement('button', {
+    className: buttonClasses,
+    onClick,
+    disabled
+  }, children);
 };
 
 export interface CardProps {
@@ -50,12 +48,15 @@ export interface CardProps {
 }
 
 export const Card: React.FC<CardProps> = ({ children, title, className = '' }) => {
-  return (
-    <div className={`bg-white rounded-lg shadow-md p-6 ${className}`}>
-      {title && <h3 className="text-lg font-semibold mb-4">{title}</h3>}
-      {children}
-    </div>
-  );
+  const cardClasses = `bg-white rounded-lg shadow-md p-6 ${className}`;
+  
+  return React.createElement('div', { className: cardClasses }, [
+    title && React.createElement('h3', { 
+      key: 'title',
+      className: 'text-lg font-semibold mb-4' 
+    }, title),
+    children
+  ]);
 };
 
 export default {
