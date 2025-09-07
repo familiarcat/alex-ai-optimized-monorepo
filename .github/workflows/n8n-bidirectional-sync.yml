@@ -1,0 +1,223 @@
+name: N8N Bi-Directional Synchronization
+
+on:
+  # Development to Production
+  push:
+    branches: [main]
+    paths: ['workflows/**']
+  
+  # Production to Development (scheduled)
+  schedule:
+    - cron: '*/15 * * * *'  # Every 15 minutes
+  
+  # Manual trigger
+  workflow_dispatch:
+    inputs:
+      sync_direction:
+        description: 'Sync direction'
+        required: true
+        default: 'both'
+        type: choice
+        options:
+        - both
+        - dev-to-prod
+        - prod-to-dev
+
+env:
+  N8N_URL: ${{ secrets.N8N_URL }}
+  N8N_API_KEY: ${{ secrets.N8N_API_KEY }}
+
+jobs:
+  # Production to Development Sync
+  prod-to-dev:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && contains(github.event.inputs.sync_direction, 'both'))
+    name: Sync Production to Development
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Configure Git
+        run: |
+          git config --global user.name "N8N Sync Bot"
+          git config --global user.email "n8n-sync@alex-ai.com"
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq curl
+      
+      - name: Monitor N8N Changes
+        env:
+          N8N_URL: ${{ secrets.N8N_URL }}
+          N8N_API_KEY: ${{ secrets.N8N_API_KEY }}
+        run: |
+          chmod +x scripts/n8n-change-monitor.sh
+          ./scripts/n8n-change-monitor.sh
+      
+      - name: Analyze Changes
+        run: |
+          chmod +x scripts/analyze-production-changes.sh
+          ./scripts/analyze-production-changes.sh
+      
+      - name: Create Pull Request
+        if: github.event_name == 'schedule'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "🔄 Auto-sync from N8N production"
+          title: "🔄 Production Changes Sync - $(date +%Y-%m-%d)"
+          body: |
+            ## Production Changes Detected
+            
+            This PR contains changes automatically synced from the N8N production instance.
+            
+            ### Changes Summary
+            - Source: N8N Production (n8n.pbradygeorgen.com)
+            - Sync Time: $(date -u +%Y-%m-%dT%H:%M:%SZ)
+            - Analysis: See analysis files in `analysis/` directory
+            
+            ### Review Required
+            - [ ] Review workflow changes
+            - [ ] Test functionality in development
+            - [ ] Verify security implications
+            - [ ] Check for conflicts with local changes
+            
+            ### Next Steps
+            1. Review the changes
+            2. Test in development environment
+            3. Merge if approved
+            4. Deploy to production via normal CI/CD
+          branch: n8n-production-sync-$(date +%Y%m%d-%H%M%S)
+          delete-branch: true
+
+  # Development to Production Sync (existing)
+  dev-to-prod:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && contains(github.event.inputs.sync_direction, 'dev-to-prod'))
+    name: Sync Development to Production
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq curl
+      
+      - name: Validate Workflows
+        run: |
+          chmod +x scripts/test-workflows.sh
+          ./scripts/test-workflows.sh
+      
+      - name: Security Validation
+        run: |
+          chmod +x scripts/security-validation.sh
+          ./scripts/security-validation.sh
+      
+      - name: Deploy to N8N
+        env:
+          N8N_URL: ${{ secrets.N8N_URL }}
+          N8N_API_KEY: ${{ secrets.N8N_API_KEY }}
+        run: |
+          chmod +x scripts/n8n-cicd-sync.sh
+          ./scripts/n8n-cicd-sync.sh
+      
+      - name: Verify Deployment
+        run: |
+          chmod +x scripts/verify-deployment.sh
+          ./scripts/verify-deployment.sh
+      
+      - name: Notify Deployment
+        if: success()
+        run: |
+          curl -X POST "$N8N_URL/webhook/deployment-notification" \
+               -H "Content-Type: application/json" \
+               -d '{
+                 "status": "success",
+                 "environment": "production",
+                 "git_commit": "${{ github.sha }}",
+                 "git_branch": "${{ github.ref_name }}",
+                 "timestamp": "'$(date -u +%Y-%m-%dT%H:%M:%SZ)'",
+                 "sync_direction": "dev-to-prod"
+               }' || echo "⚠️  Notification failed, but deployment succeeded"
+
+  # Conflict Resolution
+  resolve-conflicts:
+    runs-on: ubuntu-latest
+    needs: [prod-to-dev, dev-to-prod]
+    if: always() && (needs.prod-to-dev.result == 'failure' || needs.dev-to-prod.result == 'failure')
+    name: Resolve Conflicts
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq curl
+      
+      - name: Analyze Conflicts
+        run: |
+          chmod +x scripts/analyze-conflicts.sh
+          ./scripts/analyze-conflicts.sh
+      
+      - name: Notify Conflicts
+        run: |
+          curl -X POST "$N8N_URL/webhook/conflict-notification" \
+               -H "Content-Type: application/json" \
+               -d '{
+                 "status": "conflict_detected",
+                 "timestamp": "'$(date -u +%Y-%m-%dT%H:%M:%SZ)'",
+                 "conflicts": "See conflict analysis in logs",
+                 "sync_direction": "bidirectional"
+               }'
+
+  # Bi-Directional Sync Dashboard
+  generate-dashboard:
+    runs-on: ubuntu-latest
+    needs: [prod-to-dev, dev-to-prod]
+    if: always()
+    name: Generate Sync Dashboard
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq curl
+      
+      - name: Generate Dashboard
+        run: |
+          chmod +x scripts/sync-dashboard.sh
+          ./scripts/sync-dashboard.sh
+      
+      - name: Upload Dashboard
+        uses: actions/upload-artifact@v3
+        with:
+          name: sync-dashboard
+          path: dashboard/
+          retention-days: 30
