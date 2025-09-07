@@ -1,0 +1,25 @@
+{
+  "name": "@alex-ai/testing",
+  "version": "1.0.0",
+  "description": "Alex AI Testing Utilities and Suites",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "test:unit": "jest",
+    "test:integration": "jest --config jest.integration.config.js",
+    "test:e2e": "playwright test",
+    "quality:check": "node dist/quality-check.js"
+  },
+  "dependencies": {
+    "turbo": "^1.10.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "jest": "^29.0.0",
+    "@playwright/test": "^1.40.0"
+  }
+}

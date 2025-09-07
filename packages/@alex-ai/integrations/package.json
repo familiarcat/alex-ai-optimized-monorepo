@@ -1,0 +1,22 @@
+{
+  "name": "@alex-ai/integrations",
+  "version": "1.0.0",
+  "description": "External integrations for Alex AI (MCP, Supabase, N8N)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "mcp:query": "node dist/mcp/index.js",
+    "supabase:test": "node dist/supabase/index.js",
+    "n8n:test": "node dist/n8n/index.js"
+  },
+  "dependencies": {
+    "turbo": "^1.10.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}

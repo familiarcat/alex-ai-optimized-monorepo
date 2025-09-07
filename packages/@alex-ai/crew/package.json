@@ -1,0 +1,21 @@
+{
+  "name": "@alex-ai/crew",
+  "version": "1.0.0",
+  "description": "Alex AI Crew Coordination System",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "crew:coordinate": "node dist/crew-coordinator.js",
+    "crew:status": "node dist/crew-status.js"
+  },
+  "dependencies": {
+    "turbo": "^1.10.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}

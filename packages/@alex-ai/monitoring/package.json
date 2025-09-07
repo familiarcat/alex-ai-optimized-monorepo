@@ -1,0 +1,21 @@
+{
+  "name": "@alex-ai/monitoring",
+  "version": "1.0.0",
+  "description": "Alex AI Monitoring and Alerting System",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "monitor:start": "node dist/monitor.js",
+    "alert:test": "node dist/alert-test.js"
+  },
+  "dependencies": {
+    "turbo": "^1.10.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
