@@ -1,0 +1,127 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": [
+    "**/.env.*local",
+    "**/.env",
+    "**/package.json",
+    "**/pnpm-lock.yaml",
+    "**/turbo.json"
+  ],
+  "pipeline": {
+    "build": {
+      "dependsOn": [
+        "^build",
+        "type-check"
+      ],
+      "outputs": [
+        ".next/**",
+        "dist/**",
+        "build/**",
+        "!.next/cache/**",
+        "!.turbo/**"
+      ],
+      "env": [
+        "NODE_ENV",
+        "NEXT_PUBLIC_*"
+      ],
+      "cache": true,
+      "inputs": [
+        "src/**/*",
+        "public/**/*",
+        "package.json",
+        "tsconfig.json",
+        "next.config.*",
+        "tailwind.config.*",
+        "postcss.config.*"
+      ],
+      "outputMode": "hash-only"
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "env": [
+        "NODE_ENV",
+        "PORT",
+        "NEXT_PUBLIC_*"
+      ]
+    },
+    "test": {
+      "dependsOn": [
+        "build",
+        "lint"
+      ],
+      "outputs": [
+        "coverage/**",
+        "test-results/**"
+      ],
+      "env": [
+        "NODE_ENV"
+      ],
+      "cache": true,
+      "inputs": [
+        "src/**/*",
+        "test/**/*",
+        "**/*.test.*",
+        "**/*.spec.*",
+        "jest.config.*",
+        "vitest.config.*"
+      ]
+    },
+    "lint": {
+      "dependsOn": [
+        "type-check"
+      ],
+      "outputs": [],
+      "env": [
+        "NODE_ENV"
+      ],
+      "cache": true,
+      "inputs": [
+        "src/**/*",
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.js",
+        "**/*.jsx",
+        "eslint.config.*",
+        ".eslintrc.*"
+      ]
+    },
+    "type-check": {
+      "dependsOn": [
+        "^type-check"
+      ],
+      "outputs": [],
+      "env": [
+        "NODE_ENV"
+      ],
+      "cache": true
+    },
+    "clean": {
+      "cache": false
+    },
+    "memory:optimize": {
+      "dependsOn": [
+        "build"
+      ],
+      "outputs": [
+        "memory-cache/**"
+      ],
+      "env": [
+        "NODE_ENV"
+      ],
+      "cache": true
+    },
+    "memory:consolidate": {
+      "dependsOn": [
+        "memory:optimize"
+      ],
+      "outputs": [
+        "consolidated-memory/**"
+      ],
+      "env": [
+        "NODE_ENV"
+      ],
+      "cache": true
+    }
+  }
+}

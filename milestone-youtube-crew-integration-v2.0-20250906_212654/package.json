@@ -1,0 +1,19 @@
+{
+  "name": "alex-ai-optimized-monorepo",
+  "version": "1.0.0",
+  "description": "Alex AI Optimized Monorepo with Turborepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "crew/*"
+  ],
+  "devDependencies": {
+    "turbo": "^1.10.0"
+  },
+  "packageManager": "pnpm@8.0.0",
+  "scripts": {
+    "monitor": "node scripts/monitor-performance.js",
+    "perf": "turbo run build --dry-run --graph"
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "name": "Universal YouTube Scraper - Crew Access",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "youtube-scrape",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "name": "Crew Request Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "position": [240, 300],
+      "webhookId": "youtube-scraper-crew-access"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "video_url_validation",
+              "leftValue": "={{ $json.video_url }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "isNotEmpty"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "name": "Validate Request",
+      "type": "n8n-nodes-base.if",
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.video_url }}",
+        "options": {
+          "timeout": 10000
+        }
+      },
+      "name": "Extract Video ID",
+      "type": "n8n-nodes-base.function",
+      "position": [680, 200],
+      "functionCode": "// Extract YouTube video ID from various URL formats\nconst url = $input.first().json.video_url;\nconst videoId = url.match(/(?:youtube\\.com\\/(?:[^\\/]+\\/.+\\/|(?:v|e(?:mbed)?)\\/|.*[?&]v=)|youtu\\.be\\/)([^\"&?\\/\\s]{11})/);\n\nif (videoId) {\n  return {\n    video_id: videoId[1],\n    original_url: url,\n    crew_member: $input.first().json.crew_member || 'Unknown',\n    request_id: $input.first().json.request_id || Date.now().toString()\n  };\n} else {\n  throw new Error('Invalid YouTube URL format');\n}"
+    },
+    {
+      "parameters": {
+        "url": "https://www.googleapis.com/youtube/v3/videos",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "part",
+              "value": "snippet,contentDetails,statistics"
+            },
+            {
+              "name": "id",
+              "value": "={{ $json.video_id }}"
+            },
+            {
+              "name": "key",
+              "value": "={{ $vars.YOUTUBE_API_KEY }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "YouTube API - Video Metadata",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [900, 200]
+    },
+    {
+      "parameters": {
+        "url": "https://www.googleapis.com/youtube/v3/commentThreads",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "part",
+              "value": "snippet,replies"
+            },
+            {
+              "name": "videoId",
+              "value": "={{ $json.video_id }}"
+            },
+            {
+              "name": "maxResults",
+              "value": "100"
+            },
+            {
+              "name": "order",
+              "value": "relevance"
+            },
+            {
+              "name": "key",
+              "value": "={{ $vars.YOUTUBE_API_KEY }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "YouTube API - Comments",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [900, 400]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Process and structure the YouTube data\nconst videoData = $input.first().json;\nconst commentsData = $input.last().json;\n\n// Extract key concepts and themes\nconst videoInfo = {\n  video_id: videoData.items[0].id,\n  title: videoData.items[0].snippet.title,\n  description: videoData.items[0].snippet.description,\n  channel: videoData.items[0].snippet.channelTitle,\n  published: videoData.items[0].snippet.publishedAt,\n  duration: videoData.items[0].contentDetails.duration,\n  view_count: videoData.items[0].statistics.viewCount,\n  like_count: videoData.items[0].statistics.likeCount,\n  comment_count: videoData.items[0].statistics.commentCount,\n  tags: videoData.items[0].snippet.tags || [],\n  category_id: videoData.items[0].snippet.categoryId\n};\n\n// Extract concepts from comments\nconst comments = commentsData.items || [];\nconst commentTexts = comments.map(comment => \n  comment.snippet.topLevelComment.snippet.textDisplay\n).join(' ');\n\n// Combine all text for analysis\nconst allText = `${videoInfo.title} ${videoInfo.description} ${commentTexts}`;\n\n// Extract potential concepts (simple keyword extraction)\nconst words = allText.toLowerCase()\n  .replace(/[^a-z\\s]/g, ' ')\n  .split(/\\s+/)\n  .filter(word => word.length > 3);\n\nconst wordFreq = {};\nwords.forEach(word => {\n  wordFreq[word] = (wordFreq[word] || 0) + 1;\n});\n\nconst concepts = Object.entries(wordFreq)\n  .sort(([,a], [,b]) => b - a)\n  .slice(0, 20)\n  .map(([word, count]) => ({ concept: word, frequency: count }));\n\nreturn {\n  ...videoInfo,\n  extracted_concepts: concepts,\n  analysis_timestamp: new Date().toISOString(),\n  crew_member: $('Extract Video ID').first().json.crew_member,\n  request_id: $('Extract Video ID').first().json.request_id\n};"
+      },
+      "name": "Process & Extract Concepts",
+      "type": "n8n-nodes-base.function",
+      "position": [1120, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{ $vars.SUPABASE_URL }}/rest/v1/youtube_analysis",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "={{ $vars.SUPABASE_ANON_KEY }}"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer {{ $vars.SUPABASE_ANON_KEY }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Prefer",
+              "value": "return=minimal"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "video_id",
+              "value": "={{ $json.video_id }}"
+            },
+            {
+              "name": "title",
+              "value": "={{ $json.title }}"
+            },
+            {
+              "name": "channel",
+              "value": "={{ $json.channel }}"
+            },
+            {
+              "name": "extracted_concepts",
+              "value": "={{ $json.extracted_concepts }}"
+            },
+            {
+              "name": "crew_member",
+              "value": "={{ $json.crew_member }}"
+            },
+            {
+              "name": "analysis_timestamp",
+              "value": "={{ $json.analysis_timestamp }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Store in Supabase",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [1340, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ {\n  \"status\": \"success\",\n  \"message\": \"YouTube video analysis completed\",\n  \"video_id\": $json.video_id,\n  \"title\": $json.title,\n  \"concepts_extracted\": $json.extracted_concepts.length,\n  \"crew_member\": $json.crew_member,\n  \"analysis_timestamp\": $json.analysis_timestamp\n} }}"
+      },
+      "name": "Success Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "position": [1560, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ {\n  \"status\": \"error\",\n  \"message\": \"Invalid request: Video URL is required\",\n  \"error_code\": \"MISSING_VIDEO_URL\"\n} }}"
+      },
+      "name": "Error Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "position": [680, 400]
+    },
+    {
+      "parameters": {
+        "content": "Universal YouTube Scraper - Crew Access Workflow\n\nThis workflow allows any crew member to request YouTube video analysis:\n\n1. Crew Request Webhook - Receives requests from any crew member\n2. Validate Request - Ensures video URL is provided\n3. Extract Video ID - Parses YouTube URL to get video ID\n4. YouTube API Calls - Fetches video metadata and comments\n5. Process & Extract Concepts - Analyzes content for key concepts\n6. Store in Supabase - Saves analysis results to memory system\n7. Success/Error Response - Returns results to requesting crew member\n\nUsage:\nPOST to webhook with: {\n  \"video_url\": \"https://youtube.com/watch?v=...\",\n  \"crew_member\": \"Captain Picard\",\n  \"request_id\": \"unique_id\"\n}"
+      },
+      "name": "Workflow Documentation",
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [240, 100]
+    }
+  ],
+  "connections": {
+    "Crew Request Webhook": {
+      "main": [
+        [
+          {
+            "node": "Validate Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate Request": {
+      "main": [
+        [
+          {
+            "node": "Extract Video ID",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Error Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Video ID": {
+      "main": [
+        [
+          {
+            "node": "YouTube API - Video Metadata",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "YouTube API - Comments",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "YouTube API - Video Metadata": {
+      "main": [
+        [
+          {
+            "node": "Process & Extract Concepts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "YouTube API - Comments": {
+      "main": [
+        [
+          {
+            "node": "Process & Extract Concepts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Process & Extract Concepts": {
+      "main": [
+        [
+          {
+            "node": "Store in Supabase",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Store in Supabase": {
+      "main": [
+        [
+          {
+            "node": "Success Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "createdAt": "2025-01-27T10:00:00.000Z",
+      "updatedAt": "2025-01-27T10:00:00.000Z",
+      "id": "youtube-scraper",
+      "name": "YouTube Scraper"
+    },
+    {
+      "createdAt": "2025-01-27T10:00:00.000Z",
+      "updatedAt": "2025-01-27T10:00:00.000Z",
+      "id": "crew-access",
+      "name": "Crew Access"
+    }
+  ],
+  "triggerCount": 1,
+  "updatedAt": "2025-01-27T10:00:00.000Z",
+  "versionId": "1"
+}

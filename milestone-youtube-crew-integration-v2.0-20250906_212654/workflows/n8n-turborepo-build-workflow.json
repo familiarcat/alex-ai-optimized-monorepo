@@ -1,0 +1,62 @@
+{
+  "name": "Alex AI Turborepo Build Workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "turborepo-build",
+        "responseMode": "responseNode"
+      },
+      "id": "webhook-trigger",
+      "name": "Turborepo Build Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "command": "cd /workspace && npx turbo run {{ $json.task }}"
+      },
+      "id": "turborepo-build",
+      "name": "Execute Turborepo Build",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        460,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "content": "\ud83d\ude80 Turborepo build completed for task: {{ $json.task }}\\n\\nResult: {{ $json.result }}"
+      },
+      "id": "notify-completion",
+      "name": "Notify Build Completion",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 1,
+      "position": [
+        680,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "webhook-trigger": {
+      "main": [
+        [
+          "turborepo-build"
+        ]
+      ]
+    },
+    "turborepo-build": {
+      "main": [
+        [
+          "notify-completion"
+        ]
+      ]
+    }
+  }
+}
