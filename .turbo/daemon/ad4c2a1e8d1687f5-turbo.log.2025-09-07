@@ -605,3 +605,64 @@
 2025-09-07T08:58:34.699111Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/alex-ai-job-search/src/app/page.tsx"), AnchoredSystemPathBuf("apps/alex-ai-job-search/src/app/api/system-fidelity-test/route.ts")}
 2025-09-07T08:58:34.699117Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("alex-ai-job-search"), path: AnchoredSystemPathBuf("apps/alex-ai-job-search") }}))
 2025-09-07T08:58:34.699151Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-07T09:08:30.217797Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/alex-ai-job-search/src/app/page.tsx")}
+2025-09-07T09:08:30.218226Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("alex-ai-job-search"), path: AnchoredSystemPathBuf("apps/alex-ai-job-search") }}))
+2025-09-07T09:08:43.013978Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/alex-ai-job-search/src/app/page.tsx")}
+2025-09-07T09:08:43.014009Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("alex-ai-job-search"), path: AnchoredSystemPathBuf("apps/alex-ai-job-search") }}))
+2025-09-07T09:08:43.114948Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/alex-ai-job-search/src/app/page.tsx")}
+2025-09-07T09:08:43.114970Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("alex-ai-job-search"), path: AnchoredSystemPathBuf("apps/alex-ai-job-search") }}))
+2025-09-07T09:08:43.115041Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-07T09:10:04.915008Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/alex-ai-job-search/src/app/page.tsx")}
+2025-09-07T09:10:04.915037Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("alex-ai-job-search"), path: AnchoredSystemPathBuf("apps/alex-ai-job-search") }}))
+2025-09-07T09:10:04.966888Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-07T09:28:20.116115Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/alex-ai-job-search/src/app/api/stealth-job-scraping/route.ts"), AnchoredSystemPathBuf("apps/alex-ai-job-search/src/app/api/stealth-job-scraping")}
+2025-09-07T09:28:20.117444Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("alex-ai-job-search"), path: AnchoredSystemPathBuf("apps/alex-ai-job-search") }}))
+2025-09-07T09:28:20.310483Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/alex-ai-job-search/src/app/api/stealth-job-scraping/route.ts")}
+2025-09-07T09:28:20.310498Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("alex-ai-job-search"), path: AnchoredSystemPathBuf("apps/alex-ai-job-search") }}))
+2025-09-07T09:29:07.710859Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/alex-ai-job-search/src/components/StealthScrapingDashboard.tsx")}
+2025-09-07T09:29:07.710892Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("alex-ai-job-search"), path: AnchoredSystemPathBuf("apps/alex-ai-job-search") }}))
+2025-09-07T09:29:07.911339Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/alex-ai-job-search/src/components/StealthScrapingDashboard.tsx")}
+2025-09-07T09:29:07.911352Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("alex-ai-job-search"), path: AnchoredSystemPathBuf("apps/alex-ai-job-search") }}))
+2025-09-07T09:29:15.610600Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/alex-ai-job-search/src/app/page.tsx")}
+2025-09-07T09:29:15.610646Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("alex-ai-job-search"), path: AnchoredSystemPathBuf("apps/alex-ai-job-search") }}))
+2025-09-07T09:29:22.010745Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/alex-ai-job-search/src/app/page.tsx")}
+2025-09-07T09:29:22.010784Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("alex-ai-job-search"), path: AnchoredSystemPathBuf("apps/alex-ai-job-search") }}))
+2025-09-07T09:29:31.311212Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/alex-ai-job-search/src/app/page.tsx")}
+2025-09-07T09:29:31.311231Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("alex-ai-job-search"), path: AnchoredSystemPathBuf("apps/alex-ai-job-search") }}))
+2025-09-07T09:29:46.110233Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/alex-ai-job-search/src/app/page.tsx")}
+2025-09-07T09:29:46.110258Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("alex-ai-job-search"), path: AnchoredSystemPathBuf("apps/alex-ai-job-search") }}))
+2025-09-07T09:40:29.215378Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/alex-ai-job-search/src/components/StealthScrapingDashboard.tsx"), AnchoredSystemPathBuf("apps/alex-ai-job-search/src/app/page.tsx"), AnchoredSystemPathBuf("apps/alex-ai-job-search/src/app/api/stealth-job-scraping/route.ts")}
+2025-09-07T09:40:29.215815Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("alex-ai-job-search"), path: AnchoredSystemPathBuf("apps/alex-ai-job-search") }}))
+2025-09-07T09:40:29.215872Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-09-07T09:55:37.994273Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("scripts/load-credentials.sh")}
+2025-09-07T09:55:38.000621Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T09:55:38.558946Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("scripts/load-credentials.sh")}
+2025-09-07T09:55:38.559000Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T09:55:54.560814Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("scripts/load-credentials.sh")}
+2025-09-07T09:55:54.560926Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T09:56:14.658388Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".github/workflows/alex-ai-ci-cd.yml")}
+2025-09-07T09:56:14.658483Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T09:56:15.260244Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".github/workflows/alex-ai-ci-cd.yml")}
+2025-09-07T09:56:15.260279Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T09:56:22.069734Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("package.json")}
+2025-09-07T09:56:22.072907Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
+2025-09-07T09:56:35.858141Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("scripts/setup-dev-environment.sh")}
+2025-09-07T09:56:35.858209Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T09:56:36.058722Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("scripts/setup-dev-environment.sh")}
+2025-09-07T09:56:36.058760Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T09:56:38.357750Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("scripts/setup-dev-environment.sh")}
+2025-09-07T09:56:38.357784Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T09:56:50.857981Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("scripts/load-credentials.sh")}
+2025-09-07T09:56:50.858037Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T09:57:28.065286Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("package.json"), AnchoredSystemPathBuf(".github/workflows/alex-ai-ci-cd.yml"), AnchoredSystemPathBuf("scripts/setup-dev-environment.sh"), AnchoredSystemPathBuf("scripts/load-credentials.sh")}
+2025-09-07T09:57:28.065317Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
+2025-09-07T09:59:49.862248Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("END_TO_END_TEST_RESULTS.md")}
+2025-09-07T09:59:49.862937Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T09:59:50.956475Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("END_TO_END_TEST_RESULTS.md")}
+2025-09-07T09:59:50.956542Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T10:00:10.559485Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("END_TO_END_TEST_RESULTS.md")}
+2025-09-07T10:00:10.559706Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T10:01:44.361591Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("ALEX_AI_MILESTONE_v2.0.md")}
+2025-09-07T10:01:44.363729Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T10:01:45.453483Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("ALEX_AI_MILESTONE_v2.0.md")}
+2025-09-07T10:01:45.453527Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))

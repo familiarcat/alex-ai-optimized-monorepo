@@ -16,6 +16,13 @@
   "packageManager": "pnpm@8.0.0",
   "scripts": {
     "monitor": "node scripts/monitor-performance.js",
-    "perf": "turbo run build --dry-run --graph"
+    "perf": "turbo run build --dry-run --graph",
+    "load-creds": "./scripts/load-credentials.sh",
+    "dev": "pnpm run load-creds && turbo run dev",
+    "build": "pnpm run load-creds && turbo run build",
+    "test": "pnpm run load-creds && turbo run test",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "deploy": "pnpm run load-creds && turbo run deploy"
   }
 }
