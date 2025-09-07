@@ -34,3 +34,17 @@
 2025-09-07T02:19:24.523821Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
 2025-09-07T02:19:38.693272Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/alex-ai-crew/.turbo")}
 2025-09-07T02:19:38.693288Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T02:20:26.393885Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("src/phase3_alex_ai_integration.py")}
+2025-09-07T02:20:26.393907Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T02:22:13.297488Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("src/youtube_crew_memory_integration.py")}
+2025-09-07T02:22:13.297521Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T02:22:13.494724Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("src/youtube_crew_memory_integration.py")}
+2025-09-07T02:22:13.494734Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T02:22:49.997767Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("src/simple_youtube_crew_memory_demo.py")}
+2025-09-07T02:22:49.997809Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T02:22:50.098191Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("src/simple_youtube_crew_memory_demo.py")}
+2025-09-07T02:22:50.098200Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T02:22:53.694005Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("youtube_crew_memories_20250906_212253.json")}
+2025-09-07T02:22:53.694022Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T02:22:55.394290Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("youtube_crew_memory_report_20250906_212255.md")}
+2025-09-07T02:22:55.394300Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
