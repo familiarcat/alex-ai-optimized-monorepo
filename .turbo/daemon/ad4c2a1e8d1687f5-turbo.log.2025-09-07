@@ -70,3 +70,15 @@
 2025-09-07T02:26:54.898433Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
 2025-09-07T02:26:54.996523Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("milestone-youtube-crew-integration-v2.0-20250906_212654.tar.gz"), AnchoredSystemPathBuf("milestone-youtube-crew-integration-v2.0-summary-20250906_212654.txt")}
 2025-09-07T02:26:54.996533Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T02:27:21.597460Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("MILESTONE_v2.0_YOUTUBE_CREW_INTEGRATION.md"), AnchoredSystemPathBuf("milestone-v2.0-youtube-crew-integration-push.sh")}
+2025-09-07T02:27:21.597477Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T02:27:51.598438Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/alex-ai-core/src/cursor-ai-integration.js")}
+2025-09-07T02:27:51.598455Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T02:27:51.898509Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/alex-ai-core/src/cursor-ai-integration.js")}
+2025-09-07T02:27:51.898535Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T02:28:25.197839Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("src/cursor_ai_integration_memory_update.py")}
+2025-09-07T02:28:25.197873Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T02:28:28.698932Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("cursor_ai_integration_memories_20250906_212828.json")}
+2025-09-07T02:28:28.698968Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T02:28:28.898024Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("cursor_ai_integration_report_20250906_212828.md")}
+2025-09-07T02:28:28.898032Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
