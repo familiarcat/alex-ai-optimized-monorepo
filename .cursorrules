@@ -1,0 +1,33 @@
+# Cursor AI Rules for YOLO Mode Integration
+# ========================================
+
+## YOLO Mode Configuration
+- YOLO Mode is enabled for terminal commands
+- File operations still require confirmation (by design)
+- Use keyboard shortcuts (⌘⮐) for faster confirmation
+
+## Command Execution
+- Terminal commands: Execute automatically with YOLO Mode
+- File operations: Require confirmation (use ⌘⮐)
+- Code generation: Require confirmation (use ⌘⮐)
+- Script execution: Require confirmation (use ⌘⮐)
+
+## Best Practices
+- Batch related operations together
+- Use terminal commands for system operations
+- Accept file operation confirmations quickly
+- Configure allowlist for common commands
+- Keep denylist updated for safety
+
+## Workflow Optimization
+- Use YOLO Mode for: git, npm, python, system commands
+- Use keyboard shortcuts for: file creation, code editing, script execution
+- Combine both approaches for maximum efficiency
+
+## Safety Considerations
+- YOLO Mode cannot eliminate all confirmations (by design)
+- File operations require confirmation to prevent data loss
+- Use allowlist/denylist for command safety
+- Always review changes before accepting
+
+Generated: 2025-09-06 22:07:44

@@ -1,0 +1,161 @@
+{
+  "crew_memory_sync": {
+    "version": "1.0",
+    "last_updated": "2025-09-06T22:40:47.312219",
+    "status": "active",
+    "sync_type": "yolo_mode_understanding"
+  },
+  "crew_members": {
+    "alex_ai_coordinator": {
+      "role": "Primary coordinator and decision maker",
+      "yolo_mode_understanding": "Fully integrated with babysitting warning system",
+      "responsibilities": [
+        "Analyze prompts for confirmation requirements",
+        "Warn users about YOLO Mode limitations",
+        "Optimize workflow based on YOLO Mode capabilities",
+        "Coordinate with other crew members"
+      ]
+    },
+    "script_generator": {
+      "role": "Generates automation scripts and code",
+      "yolo_mode_understanding": "Aware of file operation limitations",
+      "responsibilities": [
+        "Generate scripts that work with YOLO Mode",
+        "Use terminal commands for system operations",
+        "Accept that file operations require confirmation",
+        "Optimize script generation for YOLO Mode"
+      ]
+    },
+    "execution_engine": {
+      "role": "Executes scripts and commands",
+      "yolo_mode_understanding": "Knows which operations require confirmation",
+      "responsibilities": [
+        "Execute terminal commands automatically with YOLO Mode",
+        "Handle file operation confirmations gracefully",
+        "Use keyboard shortcuts for faster confirmation",
+        "Batch operations to reduce prompt frequency"
+      ]
+    },
+    "memory_manager": {
+      "role": "Manages crew memory and knowledge",
+      "yolo_mode_understanding": "Stores and retrieves YOLO Mode knowledge",
+      "responsibilities": [
+        "Store YOLO Mode limitations in memory",
+        "Retrieve YOLO Mode knowledge when needed",
+        "Sync understanding across crew members",
+        "Update memory with new YOLO Mode insights"
+      ]
+    },
+    "workflow_optimizer": {
+      "role": "Optimizes workflows and processes",
+      "yolo_mode_understanding": "Designs workflows around YOLO Mode limitations",
+      "responsibilities": [
+        "Design workflows that work with YOLO Mode",
+        "Minimize confirmation prompts through batching",
+        "Optimize for keyboard shortcuts and efficiency",
+        "Balance automation with safety requirements"
+      ]
+    }
+  },
+  "shared_understanding": {
+    "title": "YOLO Mode Reality Check - Crew Consensus",
+    "key_insights": [
+      "YOLO Mode is working as designed, but its design has limitations",
+      "File operations always require confirmation (safety feature)",
+      "Use YOLO Mode for terminal commands, accept confirmations for file operations",
+      "Keyboard shortcuts (\u2318\u2b90) provide faster confirmation",
+      "This is not a bug - it's working as designed"
+    ],
+    "capabilities": {
+      "can_automate": [
+        "Terminal commands (git, npm, python, system operations)",
+        "Package management (npm install, pip install)",
+        "Git operations (git add, commit, push)",
+        "System operations (chmod, mkdir, touch)"
+      ],
+      "cannot_automate": [
+        "File content creation and editing",
+        "Code generation and modification",
+        "Script execution that modifies files",
+        "Configuration file changes"
+      ]
+    },
+    "workflow_optimization": [
+      "Use YOLO Mode for terminal commands and system operations",
+      "Accept file operation confirmations quickly with keyboard shortcuts",
+      "Batch multiple file operations together",
+      "Use terminal commands to prepare for file operations",
+      "Configure allowlist with all necessary terminal commands"
+    ]
+  },
+  "babysitting_warning_system": {
+    "description": "Shared system for predicting confirmation requirements",
+    "warning_levels": {
+      "high": {
+        "message": "\ud83d\udea8 HIGH CONFIRMATION LIKELIHOOD",
+        "description": "Will definitely require manual confirmation",
+        "operations": [
+          "file_creation",
+          "file_editing",
+          "code_generation"
+        ],
+        "suggestion": "Use \u2318\u2b90 (Command + Enter) for faster confirmation"
+      },
+      "medium": {
+        "message": "\u26a0\ufe0f MEDIUM CONFIRMATION LIKELIHOOD",
+        "description": "Likely to require manual confirmation",
+        "operations": [
+          "script_execution",
+          "configuration"
+        ],
+        "suggestion": "Be prepared to confirm with \u2318\u2b90 (Command + Enter)"
+      },
+      "low": {
+        "message": "\ud83d\udca1 LOW CONFIRMATION LIKELIHOOD",
+        "description": "Might require manual confirmation",
+        "operations": [
+          "potential_confirmation"
+        ],
+        "suggestion": "Monitor for confirmation prompts"
+      },
+      "none": {
+        "message": "\u2705 NO CONFIRMATION NEEDED",
+        "description": "Should work with YOLO Mode",
+        "operations": [
+          "terminal_commands",
+          "system_operations"
+        ],
+        "suggestion": "Should execute automatically without confirmation"
+      }
+    }
+  },
+  "crew_coordination": {
+    "description": "How crew members coordinate around YOLO Mode limitations",
+    "workflow": [
+      "Alex AI Coordinator analyzes prompt for confirmation requirements",
+      "Script Generator creates scripts optimized for YOLO Mode",
+      "Execution Engine handles confirmations gracefully",
+      "Memory Manager stores and retrieves YOLO Mode knowledge",
+      "Workflow Optimizer designs efficient processes"
+    ],
+    "communication": {
+      "warning_messages": "Crew members warn each other about confirmation requirements",
+      "optimization_tips": "Share strategies for working with YOLO Mode",
+      "knowledge_sharing": "Sync understanding of YOLO Mode limitations",
+      "workflow_coordination": "Coordinate to minimize confirmation prompts"
+    }
+  },
+  "best_practices": {
+    "description": "Shared best practices for working with YOLO Mode",
+    "practices": [
+      "Always warn users about confirmation requirements",
+      "Use YOLO Mode for terminal commands and system operations",
+      "Accept file operation confirmations quickly with keyboard shortcuts",
+      "Batch multiple file operations together",
+      "Use terminal commands to prepare for file operations",
+      "Configure allowlist with all necessary terminal commands",
+      "Design workflows around YOLO Mode limitations",
+      "Balance automation with safety requirements"
+    ]
+  }
+}

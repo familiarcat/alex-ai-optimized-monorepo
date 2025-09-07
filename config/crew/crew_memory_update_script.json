@@ -1,0 +1,38 @@
+{
+  "crew_memory_update_script": {
+    "version": "1.0",
+    "last_updated": "2025-09-06T22:40:47.312236",
+    "description": "Script to update crew memory with YOLO Mode understanding"
+  },
+  "update_commands": [
+    {
+      "crew_member": "alex_ai_coordinator",
+      "command": "UPDATE memory SET yolo_mode_understanding = 'Fully integrated with babysitting warning system' WHERE role = 'coordinator'",
+      "description": "Update coordinator with YOLO Mode understanding"
+    },
+    {
+      "crew_member": "script_generator",
+      "command": "UPDATE memory SET yolo_mode_understanding = 'Aware of file operation limitations' WHERE role = 'script_generator'",
+      "description": "Update script generator with YOLO Mode understanding"
+    },
+    {
+      "crew_member": "execution_engine",
+      "command": "UPDATE memory SET yolo_mode_understanding = 'Knows which operations require confirmation' WHERE role = 'execution_engine'",
+      "description": "Update execution engine with YOLO Mode understanding"
+    },
+    {
+      "crew_member": "memory_manager",
+      "command": "UPDATE memory SET yolo_mode_understanding = 'Stores and retrieves YOLO Mode knowledge' WHERE role = 'memory_manager'",
+      "description": "Update memory manager with YOLO Mode understanding"
+    },
+    {
+      "crew_member": "workflow_optimizer",
+      "command": "UPDATE memory SET yolo_mode_understanding = 'Designs workflows around YOLO Mode limitations' WHERE role = 'workflow_optimizer'",
+      "description": "Update workflow optimizer with YOLO Mode understanding"
+    }
+  ],
+  "shared_knowledge_insert": {
+    "command": "INSERT INTO shared_knowledge (type, content, priority) VALUES ('yolo_mode_understanding', 'YOLO Mode has inherent limitations that cannot be overcome', 'high')",
+    "description": "Insert shared YOLO Mode understanding into crew knowledge base"
+  }
+}

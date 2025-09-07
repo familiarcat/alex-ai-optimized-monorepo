@@ -1,0 +1,19 @@
+{
+  "name": "Stress Test Workflow stress_test_workflow_2.json",
+  "nodes": [
+    {
+      "id": "test_node_1",
+      "type": "test",
+      "name": "Test Node",
+      "parameters": {
+        "test": true,
+        "yolo_mode": true
+      }
+    }
+  ],
+  "connections": {},
+  "active": false,
+  "settings": {},
+  "createdAt": "2025-09-06T22:01:20.593410",
+  "updatedAt": "2025-09-06T22:01:20.593412"
+}

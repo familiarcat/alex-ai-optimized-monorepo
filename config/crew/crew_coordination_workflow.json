@@ -1,0 +1,58 @@
+{
+  "crew_coordination_workflow": {
+    "version": "1.0",
+    "last_updated": "2025-09-06T22:40:47.312240",
+    "description": "Workflow for crew coordination around YOLO Mode limitations"
+  },
+  "workflow_steps": [
+    {
+      "step": 1,
+      "crew_member": "alex_ai_coordinator",
+      "action": "Analyze prompt for confirmation requirements",
+      "input": "User prompt",
+      "output": "Confirmation likelihood analysis",
+      "yolo_mode_consideration": "Check if prompt contains file operations, code generation, or script execution"
+    },
+    {
+      "step": 2,
+      "crew_member": "script_generator",
+      "action": "Generate scripts optimized for YOLO Mode",
+      "input": "Confirmation likelihood analysis",
+      "output": "Optimized scripts",
+      "yolo_mode_consideration": "Use terminal commands for system operations, accept file operation confirmations"
+    },
+    {
+      "step": 3,
+      "crew_member": "execution_engine",
+      "action": "Execute scripts with YOLO Mode awareness",
+      "input": "Optimized scripts",
+      "output": "Execution results",
+      "yolo_mode_consideration": "Handle confirmations gracefully, use keyboard shortcuts for faster confirmation"
+    },
+    {
+      "step": 4,
+      "crew_member": "memory_manager",
+      "action": "Store and retrieve YOLO Mode knowledge",
+      "input": "Execution results",
+      "output": "Updated memory",
+      "yolo_mode_consideration": "Store YOLO Mode limitations and optimization strategies"
+    },
+    {
+      "step": 5,
+      "crew_member": "workflow_optimizer",
+      "action": "Optimize workflow based on YOLO Mode limitations",
+      "input": "Updated memory",
+      "output": "Optimized workflow",
+      "yolo_mode_consideration": "Design workflows that work with YOLO Mode capabilities and limitations"
+    }
+  ],
+  "coordination_rules": [
+    "Always warn users about confirmation requirements before execution",
+    "Use YOLO Mode for terminal commands and system operations",
+    "Accept file operation confirmations quickly with keyboard shortcuts",
+    "Batch multiple file operations together to reduce prompt frequency",
+    "Coordinate to minimize confirmation prompts across crew members",
+    "Share YOLO Mode knowledge and optimization strategies",
+    "Design workflows around YOLO Mode limitations, not against them"
+  ]
+}

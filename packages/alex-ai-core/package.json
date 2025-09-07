@@ -1,17 +1,23 @@
 {
-  "name": "@alex-ai-core",
+  "name": "alex-ai-optimized-monorepo",
   "version": "1.0.0",
-  "description": "Core Alex AI functionality and utilities",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "description": "Alex AI Optimized Monorepo with Turborepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "crew/*"
+  ],
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
-    "clean": "rm -rf dist"
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean"
   },
-  "dependencies": {},
   "devDependencies": {
-    "typescript": "^5.0.0",
-    "@types/node": "^20.0.0"
-  }
+    "turbo": "^1.10.0"
+  },
+  "packageManager": "pnpm@8.0.0"
 }

@@ -1,0 +1,72 @@
+{
+  "babysitting_warning_engine": {
+    "version": "1.0",
+    "last_updated": "2025-09-06T22:13:13.439860",
+    "description": "Predicts when prompts will require manual confirmation"
+  },
+  "analysis_patterns": {
+    "file_creation_patterns": [
+      "create\\s+(?:a\\s+)?(?:new\\s+)?file",
+      "generate\\s+(?:a\\s+)?(?:new\\s+)?file",
+      "write\\s+(?:a\\s+)?(?:new\\s+)?file",
+      "make\\s+(?:a\\s+)?(?:new\\s+)?file",
+      "add\\s+(?:a\\s+)?(?:new\\s+)?file",
+      "build\\s+(?:a\\s+)?(?:new\\s+)?file"
+    ],
+    "file_editing_patterns": [
+      "edit\\s+(?:the\\s+)?(?:existing\\s+)?file",
+      "modify\\s+(?:the\\s+)?(?:existing\\s+)?file",
+      "update\\s+(?:the\\s+)?(?:existing\\s+)?file",
+      "change\\s+(?:the\\s+)?(?:existing\\s+)?file",
+      "alter\\s+(?:the\\s+)?(?:existing\\s+)?file",
+      "fix\\s+(?:the\\s+)?(?:existing\\s+)?file"
+    ],
+    "code_generation_patterns": [
+      "generate\\s+(?:some\\s+)?code",
+      "create\\s+(?:a\\s+)?(?:new\\s+)?script",
+      "write\\s+(?:a\\s+)?(?:new\\s+)?function",
+      "implement\\s+(?:a\\s+)?(?:new\\s+)?feature",
+      "develop\\s+(?:a\\s+)?(?:new\\s+)?component",
+      "build\\s+(?:a\\s+)?(?:new\\s+)?system"
+    ],
+    "script_execution_patterns": [
+      "run\\s+(?:the\\s+)?(?:generated\\s+)?script",
+      "execute\\s+(?:the\\s+)?(?:generated\\s+)?script",
+      "launch\\s+(?:the\\s+)?(?:generated\\s+)?script",
+      "start\\s+(?:the\\s+)?(?:generated\\s+)?script",
+      "deploy\\s+(?:the\\s+)?(?:generated\\s+)?script"
+    ],
+    "configuration_patterns": [
+      "config\\w*",
+      "settings?",
+      "environment",
+      "variables?",
+      "credentials?",
+      "secrets?",
+      "tokens?",
+      "keys?"
+    ]
+  },
+  "warning_messages": {
+    "high_confidence": {
+      "message": "\ud83d\udea8 HIGH CONFIRMATION LIKELIHOOD: This prompt will definitely require manual confirmation",
+      "reason": "Contains file creation, editing, or code generation operations",
+      "suggestion": "Use \u2318\u2b90 (Command + Enter) for faster confirmation"
+    },
+    "medium_confidence": {
+      "message": "\u26a0\ufe0f MEDIUM CONFIRMATION LIKELIHOOD: This prompt will likely require manual confirmation",
+      "reason": "Contains operations that typically require confirmation",
+      "suggestion": "Be prepared to confirm with \u2318\u2b90 (Command + Enter)"
+    },
+    "low_confidence": {
+      "message": "\ud83d\udca1 LOW CONFIRMATION LIKELIHOOD: This prompt might require manual confirmation",
+      "reason": "Contains some operations that could require confirmation",
+      "suggestion": "Monitor for confirmation prompts"
+    },
+    "no_confidence": {
+      "message": "\u2705 NO CONFIRMATION NEEDED: This prompt should work with YOLO Mode",
+      "reason": "Contains only terminal commands and system operations",
+      "suggestion": "Should execute automatically without confirmation"
+    }
+  }
+}

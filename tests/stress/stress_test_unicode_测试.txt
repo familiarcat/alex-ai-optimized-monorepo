@@ -1,0 +1,1 @@
+Unicode test file with Chinese characters: 测试

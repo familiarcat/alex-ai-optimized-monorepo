@@ -157,3 +157,4 @@ if (require.main === module) {
     const integration = new CursorAIIntegration();
     console.log(integration.getIntegrationInstructions());
 }
+
