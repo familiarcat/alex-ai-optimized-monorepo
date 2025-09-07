@@ -1,0 +1,10 @@
+{
+  "description": "Real-time system monitoring and alerting",
+  "components": [
+    "supabase_subscriptions",
+    "n8n_webhooks",
+    "claude_analysis",
+    "alerting"
+  ],
+  "status": "created"
+}

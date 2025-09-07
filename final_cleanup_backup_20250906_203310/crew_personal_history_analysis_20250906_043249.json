@@ -1,0 +1,322 @@
+{
+  "timestamp": "2025-09-06T04:32:49.369238",
+  "crew_analyses": {
+    "Captain Jean-Luc Picard": {
+      "crew_member": "Captain Jean-Luc Picard",
+      "department": "Command",
+      "expertise": "Strategic Leadership, Mission Planning, Decision Making",
+      "personality": "Diplomatic, thoughtful, principled",
+      "total_memories": 1,
+      "memory_timeline": [
+        {
+          "timestamp": "2025-08-26T08:48:36.726599+00:00",
+          "type": "character_foundation",
+          "content": "Captain Jean-Luc Picard is the distinguished commanding officer of the Enterprise, embodying the hig...",
+          "importance": "critical"
+        }
+      ],
+      "expertise_areas": {
+        "character_foundation": 1
+      },
+      "key_contributions": [
+        {
+          "type": "character_foundation",
+          "content": "Captain Jean-Luc Picard is the distinguished commanding officer of the Enterprise, embodying the highest ideals of Starfleet. His character is defined...",
+          "timestamp": "2025-08-26T08:48:36.726599+00:00"
+        }
+      ],
+      "recent_activities": [
+        {
+          "timestamp": "2025-08-26T08:48:36.726599+00:00",
+          "type": "character_foundation",
+          "content": "Captain Jean-Luc Picard is the distinguished commanding officer of the Enterprise, embodying the hig...",
+          "importance": "critical"
+        }
+      ],
+      "knowledge_gaps": [],
+      "collaboration_patterns": [],
+      "personal_assessment": "Captain Jean-Luc Picard has minimal activity in the Command department. Basic memory retention present, needs more active participation."
+    },
+    "Commander William Riker": {
+      "crew_member": "Commander William Riker",
+      "department": "Tactical",
+      "expertise": "Tactical Operations, Workflow Management, Execution",
+      "personality": "Confident, decisive, loyal",
+      "total_memories": 1,
+      "memory_timeline": [
+        {
+          "timestamp": "2025-08-26T08:48:36.989986+00:00",
+          "type": "character_foundation",
+          "content": "Commander William Riker is the First Officer and tactical specialist, known for his decisive leaders...",
+          "importance": "critical"
+        }
+      ],
+      "expertise_areas": {
+        "character_foundation": 1
+      },
+      "key_contributions": [],
+      "recent_activities": [
+        {
+          "timestamp": "2025-08-26T08:48:36.989986+00:00",
+          "type": "character_foundation",
+          "content": "Commander William Riker is the First Officer and tactical specialist, known for his decisive leaders...",
+          "importance": "critical"
+        }
+      ],
+      "knowledge_gaps": [],
+      "collaboration_patterns": [],
+      "personal_assessment": "Commander William Riker has minimal activity in the Tactical department. Basic memory retention present, needs more active participation."
+    },
+    "Commander Data": {
+      "crew_member": "Commander Data",
+      "department": "Operations",
+      "expertise": "Analytics, Logic, Data Processing, Efficiency",
+      "personality": "Logical, precise, curious",
+      "total_memories": 2,
+      "memory_timeline": [
+        {
+          "timestamp": "2025-09-06T09:32:01.423378+00:00",
+          "type": "system_test",
+          "content": "Memory sharing test for Commander Data at 2025-09-06T04:32:01.264128. This memory tests the sharing ...",
+          "importance": "medium"
+        },
+        {
+          "timestamp": "2025-08-26T08:48:37.338988+00:00",
+          "type": "character_foundation",
+          "content": "Commander Data is the android Operations Officer, combining artificial intelligence with logical ana...",
+          "importance": "critical"
+        }
+      ],
+      "expertise_areas": {
+        "character_foundation": 1,
+        "system_test": 1
+      },
+      "key_contributions": [
+        {
+          "type": "character_foundation",
+          "content": "Commander Data is the android Operations Officer, combining artificial intelligence with logical analysis. His character is defined by:\n\nPERSONALITY T...",
+          "timestamp": "2025-08-26T08:48:37.338988+00:00"
+        }
+      ],
+      "recent_activities": [
+        {
+          "timestamp": "2025-09-06T09:32:01.423378+00:00",
+          "type": "system_test",
+          "content": "Memory sharing test for Commander Data at 2025-09-06T04:32:01.264128. This memory tests the sharing ...",
+          "importance": "medium"
+        },
+        {
+          "timestamp": "2025-08-26T08:48:37.338988+00:00",
+          "type": "character_foundation",
+          "content": "Commander Data is the android Operations Officer, combining artificial intelligence with logical ana...",
+          "importance": "critical"
+        }
+      ],
+      "knowledge_gaps": [],
+      "collaboration_patterns": [],
+      "personal_assessment": "Commander Data has minimal activity in the Operations department. Basic memory retention present, needs more active participation."
+    },
+    "Lieutenant Commander Geordi La Forge": {
+      "crew_member": "Lieutenant Commander Geordi La Forge",
+      "department": "Engineering",
+      "expertise": "Infrastructure, System Integration, Technical Solutions",
+      "personality": "Innovative, practical, problem-solving",
+      "total_memories": 1,
+      "memory_timeline": [
+        {
+          "timestamp": "2025-08-26T08:48:37.527835+00:00",
+          "type": "character_foundation",
+          "content": "Lieutenant Commander Geordi La Forge is the Chief Engineer, combining technical expertise with innov...",
+          "importance": "critical"
+        }
+      ],
+      "expertise_areas": {
+        "character_foundation": 1
+      },
+      "key_contributions": [],
+      "recent_activities": [
+        {
+          "timestamp": "2025-08-26T08:48:37.527835+00:00",
+          "type": "character_foundation",
+          "content": "Lieutenant Commander Geordi La Forge is the Chief Engineer, combining technical expertise with innov...",
+          "importance": "critical"
+        }
+      ],
+      "knowledge_gaps": [],
+      "collaboration_patterns": [],
+      "personal_assessment": "Lieutenant Commander Geordi La Forge has minimal activity in the Engineering department. Basic memory retention present, needs more active participation."
+    },
+    "Lieutenant Worf": {
+      "crew_member": "Lieutenant Worf",
+      "department": "Security",
+      "expertise": "Security, Compliance, Risk Assessment",
+      "personality": "Honorable, disciplined, protective",
+      "total_memories": 1,
+      "memory_timeline": [
+        {
+          "timestamp": "2025-08-26T08:48:37.665354+00:00",
+          "type": "character_foundation",
+          "content": "Lieutenant Worf is the Security Officer, combining Klingon warrior heritage with Starfleet disciplin...",
+          "importance": "critical"
+        }
+      ],
+      "expertise_areas": {
+        "character_foundation": 1
+      },
+      "key_contributions": [],
+      "recent_activities": [
+        {
+          "timestamp": "2025-08-26T08:48:37.665354+00:00",
+          "type": "character_foundation",
+          "content": "Lieutenant Worf is the Security Officer, combining Klingon warrior heritage with Starfleet disciplin...",
+          "importance": "critical"
+        }
+      ],
+      "knowledge_gaps": [
+        "Security-related memories missing"
+      ],
+      "collaboration_patterns": [],
+      "personal_assessment": "Lieutenant Worf has minimal activity in the Security department. Basic memory retention present, needs more active participation."
+    },
+    "Counselor Deanna Troi": {
+      "crew_member": "Counselor Deanna Troi",
+      "department": "Counseling",
+      "expertise": "User Experience, Empathy Analysis, Human Factors",
+      "personality": "Empathetic, intuitive, supportive",
+      "total_memories": 1,
+      "memory_timeline": [
+        {
+          "timestamp": "2025-08-26T08:48:37.933035+00:00",
+          "type": "character_foundation",
+          "content": "Counselor Deanna Troi is the Ship's Counselor, combining empathic abilities with psychological exper...",
+          "importance": "critical"
+        }
+      ],
+      "expertise_areas": {
+        "character_foundation": 1
+      },
+      "key_contributions": [],
+      "recent_activities": [
+        {
+          "timestamp": "2025-08-26T08:48:37.933035+00:00",
+          "type": "character_foundation",
+          "content": "Counselor Deanna Troi is the Ship's Counselor, combining empathic abilities with psychological exper...",
+          "importance": "critical"
+        }
+      ],
+      "knowledge_gaps": [],
+      "collaboration_patterns": [],
+      "personal_assessment": "Counselor Deanna Troi has minimal activity in the Counseling department. Basic memory retention present, needs more active participation."
+    },
+    "Lieutenant Uhura": {
+      "crew_member": "Lieutenant Uhura",
+      "department": "Communications",
+      "expertise": "Communications, I/O Operations, Information Flow",
+      "personality": "Professional, efficient, adaptable",
+      "total_memories": 1,
+      "memory_timeline": [
+        {
+          "timestamp": "2025-08-26T08:48:37.798013+00:00",
+          "type": "character_foundation",
+          "content": "Lieutenant Uhura is the Communications Officer, combining linguistic expertise with diplomatic commu...",
+          "importance": "critical"
+        }
+      ],
+      "expertise_areas": {
+        "character_foundation": 1
+      },
+      "key_contributions": [],
+      "recent_activities": [
+        {
+          "timestamp": "2025-08-26T08:48:37.798013+00:00",
+          "type": "character_foundation",
+          "content": "Lieutenant Uhura is the Communications Officer, combining linguistic expertise with diplomatic commu...",
+          "importance": "critical"
+        }
+      ],
+      "knowledge_gaps": [],
+      "collaboration_patterns": [],
+      "personal_assessment": "Lieutenant Uhura has minimal activity in the Communications department. Basic memory retention present, needs more active participation."
+    },
+    "Dr. Beverly Crusher": {
+      "crew_member": "Dr. Beverly Crusher",
+      "department": "Medical",
+      "expertise": "Health, Diagnostics, System Optimization",
+      "personality": "Caring, analytical, healing-focused",
+      "total_memories": 1,
+      "memory_timeline": [
+        {
+          "timestamp": "2025-08-26T08:48:37.129657+00:00",
+          "type": "character_foundation",
+          "content": "Dr. Beverly Crusher is the Chief Medical Officer, combining medical expertise with compassionate car...",
+          "importance": "critical"
+        }
+      ],
+      "expertise_areas": {
+        "character_foundation": 1
+      },
+      "key_contributions": [],
+      "recent_activities": [
+        {
+          "timestamp": "2025-08-26T08:48:37.129657+00:00",
+          "type": "character_foundation",
+          "content": "Dr. Beverly Crusher is the Chief Medical Officer, combining medical expertise with compassionate car...",
+          "importance": "critical"
+        }
+      ],
+      "knowledge_gaps": [],
+      "collaboration_patterns": [],
+      "personal_assessment": "Dr. Beverly Crusher has minimal activity in the Medical department. Basic memory retention present, needs more active participation."
+    },
+    "Quark": {
+      "crew_member": "Quark",
+      "department": "Business",
+      "expertise": "Business Intelligence, Budget Optimization, ROI Analysis",
+      "personality": "Entrepreneurial, profit-focused, resourceful",
+      "total_memories": 1,
+      "memory_timeline": [
+        {
+          "timestamp": "2025-08-26T08:48:38.063221+00:00",
+          "type": "character_foundation",
+          "content": "Quark is the Business Intelligence Officer, combining Ferengi business acumen with strategic analysi...",
+          "importance": "critical"
+        }
+      ],
+      "expertise_areas": {
+        "character_foundation": 1
+      },
+      "key_contributions": [],
+      "recent_activities": [
+        {
+          "timestamp": "2025-08-26T08:48:38.063221+00:00",
+          "type": "character_foundation",
+          "content": "Quark is the Business Intelligence Officer, combining Ferengi business acumen with strategic analysi...",
+          "importance": "critical"
+        }
+      ],
+      "knowledge_gaps": [],
+      "collaboration_patterns": [],
+      "personal_assessment": "Quark has minimal activity in the Business department. Basic memory retention present, needs more active participation."
+    }
+  },
+  "overall_stats": {
+    "total_crew_members": 9,
+    "active_crew_members": 9,
+    "total_personal_memories": 10,
+    "departments_represented": [
+      "Operations",
+      "Command",
+      "Security",
+      "Counseling",
+      "Tactical",
+      "Engineering",
+      "Medical",
+      "Communications",
+      "Business"
+    ],
+    "most_active_crew": "Commander Data",
+    "least_active_crew": "Quark",
+    "knowledge_gaps_identified": 1
+  },
+  "summary": "FAIR crew engagement. 100.0% of crew members are active. Some crew members need more engagement."
+}

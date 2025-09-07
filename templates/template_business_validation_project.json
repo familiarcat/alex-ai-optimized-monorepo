@@ -1,0 +1,9 @@
+{
+  "description": "Business validation project with enhanced prompts",
+  "components": [
+    "enhanced_prompts",
+    "claude_analysis",
+    "supabase_storage"
+  ],
+  "status": "template_created"
+}

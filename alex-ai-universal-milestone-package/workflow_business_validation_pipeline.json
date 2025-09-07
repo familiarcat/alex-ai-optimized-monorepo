@@ -1,0 +1,10 @@
+{
+  "description": "AI-powered business model validation",
+  "components": [
+    "model_analysis",
+    "claude_validation",
+    "supabase_tracking",
+    "n8n_workflow"
+  ],
+  "status": "created"
+}

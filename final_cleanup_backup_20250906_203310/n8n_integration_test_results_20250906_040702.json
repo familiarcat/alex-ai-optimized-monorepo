@@ -1,0 +1,83 @@
+{
+  "test_suite": "N8N Integration Test",
+  "timestamp": "2025-09-06T04:07:02.796031",
+  "total_tests": 5,
+  "passed_tests": 1,
+  "success_rate": "20.0%",
+  "workflow_results": [
+    {
+      "workflow_name": "Enhanced Unified AI Controller",
+      "status": "FAIL",
+      "response_time": 0.2,
+      "status_code": 404,
+      "error": "{\"message\":\"not found\"}",
+      "timestamp": "2025-09-06T04:06:54.215691"
+    },
+    {
+      "workflow_name": "Observation Lounge",
+      "status": "FAIL",
+      "response_time": 0.09,
+      "status_code": 404,
+      "error": "{\"message\":\"not found\"}",
+      "timestamp": "2025-09-06T04:06:56.313392"
+    },
+    {
+      "workflow_name": "Crew Coordinator",
+      "status": "FAIL",
+      "response_time": 0.08,
+      "status_code": 404,
+      "error": "{\"message\":\"not found\"}",
+      "timestamp": "2025-09-06T04:06:58.404379"
+    },
+    {
+      "workflow_name": "Job Search Automation",
+      "status": "FAIL",
+      "response_time": 0.09,
+      "status_code": 404,
+      "error": "{\"message\":\"not found\"}",
+      "timestamp": "2025-09-06T04:07:00.501077"
+    }
+  ],
+  "memory_synchronization": {
+    "status": "PASS",
+    "total_memories": 31,
+    "crew_members": {
+      "Captain Picard": 3,
+      "Captain Jean-Luc Picard": 1,
+      "Commander William Riker": 1,
+      "Dr. Beverly Crusher": 1,
+      "Commander Data": 1,
+      "Lieutenant Commander Geordi La Forge": 1,
+      "Lieutenant Worf": 1,
+      "Lieutenant Uhura": 1,
+      "Counselor Deanna Troi": 1,
+      "Quark": 1,
+      "System-Wide": 18,
+      "Cursor-AI-Integration": 1
+    },
+    "memory_types": {
+      "system_setup": 1,
+      "mission_experience": 2,
+      "character_foundation": 9,
+      "system_improvement": 3,
+      "failure_analysis": 1,
+      "problem_solved": 1,
+      "solution_methodology": 1,
+      "solution_example": 1,
+      "system_capability": 1,
+      "project_creation": 3,
+      "solution_implementation": 1,
+      "system_validation": 1,
+      "critical_system_improvement": 1,
+      "system_evolution": 1,
+      "critical_system_fix": 3,
+      "ai_generation_rules": 1
+    },
+    "timestamp": "2025-09-06T04:07:02.791091"
+  },
+  "summary": {
+    "operational_workflows": 0,
+    "total_workflows": 4,
+    "memory_sync_status": "PASS"
+  }
+}

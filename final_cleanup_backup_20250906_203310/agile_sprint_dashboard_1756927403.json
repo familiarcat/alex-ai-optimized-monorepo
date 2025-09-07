@@ -1,0 +1,3290 @@
+{
+  "dashboard_id": "multi_project_1756927403",
+  "timestamp": "2025-09-03T14:23:23.066968",
+  "total_projects": 5,
+  "active_projects": [
+    {
+      "project_id": "restaurant_ai",
+      "project_name": "Restaurant AI Management Platform",
+      "project_description": "AI-powered restaurant operations and customer management",
+      "target_market": "restaurants",
+      "estimated_duration": "8 weeks",
+      "current_sprint": 1,
+      "total_sprints": 3,
+      "sprints": [
+        {
+          "sprint_id": "restaurant_ai_sprint_1",
+          "project_id": "restaurant_ai",
+          "project_name": "Restaurant AI Management Platform",
+          "sprint_number": 1,
+          "start_date": "2025-09-03T14:23:23.066976",
+          "end_date": "2025-09-17T14:23:23.066977",
+          "status": "planning",
+          "phases": {
+            "planning": {
+              "duration": 2,
+              "status": "active",
+              "tasks": [
+                "Sprint goal definition and alignment",
+                "User story creation and prioritization",
+                "Task estimation and capacity planning",
+                "Risk assessment and mitigation planning",
+                "Alex AI knowledge base review and integration"
+              ],
+              "crew_assignments": {
+                "Sprint goal definition and alignment": [
+                  "captain_picard"
+                ],
+                "User story creation and prioritization": [
+                  "commander_riker"
+                ],
+                "Task estimation and capacity planning": [
+                  "captain_picard"
+                ],
+                "Risk assessment and mitigation planning": [
+                  "captain_picard"
+                ],
+                "Alex AI knowledge base review and integration": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "development": {
+              "duration": 8,
+              "status": "pending",
+              "tasks": [
+                "Core feature development",
+                "API integration and testing",
+                "Database design and implementation",
+                "User interface development",
+                "Alex AI crew coordination and knowledge sharing",
+                "Cross-project learning integration",
+                "Performance optimization",
+                "Security implementation"
+              ],
+              "crew_assignments": {
+                "Core feature development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "API integration and testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Database design and implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "User interface development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "Alex AI crew coordination and knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project learning integration": [
+                  "commander_riker"
+                ],
+                "Performance optimization": [
+                  "commander_riker"
+                ],
+                "Security implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "testing": {
+              "duration": 2,
+              "status": "pending",
+              "tasks": [
+                "Unit testing and code review",
+                "Integration testing",
+                "User acceptance testing",
+                "Performance testing",
+                "Security testing",
+                "Alex AI knowledge validation"
+              ],
+              "crew_assignments": {
+                "Unit testing and code review": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Integration testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "User acceptance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Performance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Security testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Alex AI knowledge validation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "review": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint review and demo preparation",
+                "Stakeholder feedback collection",
+                "Alex AI learning documentation",
+                "Cross-project knowledge sharing"
+              ],
+              "crew_assignments": {
+                "Sprint review and demo preparation": [
+                  "commander_riker"
+                ],
+                "Stakeholder feedback collection": [
+                  "commander_riker"
+                ],
+                "Alex AI learning documentation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "retrospective": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint retrospective and lessons learned",
+                "Process improvement identification",
+                "Alex AI knowledge base updates",
+                "Next sprint planning preparation"
+              ],
+              "crew_assignments": {
+                "Sprint retrospective and lessons learned": [
+                  "commander_riker"
+                ],
+                "Process improvement identification": [
+                  "commander_riker"
+                ],
+                "Alex AI knowledge base updates": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Next sprint planning preparation": [
+                  "captain_picard"
+                ]
+              }
+            }
+          },
+          "crew_assignments": {
+            "captain_picard": "Strategic planning and market positioning",
+            "commander_riker": "Operations and workflow management",
+            "commander_data": "Analytics and data processing",
+            "geordi_la_forge": "POS integration and technical infrastructure",
+            "lieutenant_worf": "Security and compliance",
+            "counselor_troi": "Customer experience and user interface",
+            "lieutenant_uhura": "Marketing and communication",
+            "dr_crusher": "Performance monitoring and optimization",
+            "quark": "Revenue models and monetization"
+          },
+          "metrics": {
+            "velocity": 0,
+            "burndown": [],
+            "quality_score": 0,
+            "customer_satisfaction": 0
+          },
+          "alex_ai_integration": {
+            "knowledge_base_updates": [],
+            "crew_learning": [],
+            "cross_project_insights": []
+          }
+        },
+        {
+          "sprint_id": "restaurant_ai_sprint_2",
+          "project_id": "restaurant_ai",
+          "project_name": "Restaurant AI Management Platform",
+          "sprint_number": 2,
+          "start_date": "2025-09-03T14:23:23.067012",
+          "end_date": "2025-09-17T14:23:23.067013",
+          "status": "planning",
+          "phases": {
+            "planning": {
+              "duration": 2,
+              "status": "active",
+              "tasks": [
+                "Sprint goal definition and alignment",
+                "User story creation and prioritization",
+                "Task estimation and capacity planning",
+                "Risk assessment and mitigation planning",
+                "Alex AI knowledge base review and integration"
+              ],
+              "crew_assignments": {
+                "Sprint goal definition and alignment": [
+                  "captain_picard"
+                ],
+                "User story creation and prioritization": [
+                  "commander_riker"
+                ],
+                "Task estimation and capacity planning": [
+                  "captain_picard"
+                ],
+                "Risk assessment and mitigation planning": [
+                  "captain_picard"
+                ],
+                "Alex AI knowledge base review and integration": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "development": {
+              "duration": 8,
+              "status": "pending",
+              "tasks": [
+                "Core feature development",
+                "API integration and testing",
+                "Database design and implementation",
+                "User interface development",
+                "Alex AI crew coordination and knowledge sharing",
+                "Cross-project learning integration",
+                "Performance optimization",
+                "Security implementation"
+              ],
+              "crew_assignments": {
+                "Core feature development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "API integration and testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Database design and implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "User interface development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "Alex AI crew coordination and knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project learning integration": [
+                  "commander_riker"
+                ],
+                "Performance optimization": [
+                  "commander_riker"
+                ],
+                "Security implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "testing": {
+              "duration": 2,
+              "status": "pending",
+              "tasks": [
+                "Unit testing and code review",
+                "Integration testing",
+                "User acceptance testing",
+                "Performance testing",
+                "Security testing",
+                "Alex AI knowledge validation"
+              ],
+              "crew_assignments": {
+                "Unit testing and code review": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Integration testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "User acceptance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Performance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Security testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Alex AI knowledge validation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "review": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint review and demo preparation",
+                "Stakeholder feedback collection",
+                "Alex AI learning documentation",
+                "Cross-project knowledge sharing"
+              ],
+              "crew_assignments": {
+                "Sprint review and demo preparation": [
+                  "commander_riker"
+                ],
+                "Stakeholder feedback collection": [
+                  "commander_riker"
+                ],
+                "Alex AI learning documentation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "retrospective": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint retrospective and lessons learned",
+                "Process improvement identification",
+                "Alex AI knowledge base updates",
+                "Next sprint planning preparation"
+              ],
+              "crew_assignments": {
+                "Sprint retrospective and lessons learned": [
+                  "commander_riker"
+                ],
+                "Process improvement identification": [
+                  "commander_riker"
+                ],
+                "Alex AI knowledge base updates": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Next sprint planning preparation": [
+                  "captain_picard"
+                ]
+              }
+            }
+          },
+          "crew_assignments": {
+            "captain_picard": "Strategic planning and market positioning",
+            "commander_riker": "Operations and workflow management",
+            "commander_data": "Analytics and data processing",
+            "geordi_la_forge": "POS integration and technical infrastructure",
+            "lieutenant_worf": "Security and compliance",
+            "counselor_troi": "Customer experience and user interface",
+            "lieutenant_uhura": "Marketing and communication",
+            "dr_crusher": "Performance monitoring and optimization",
+            "quark": "Revenue models and monetization"
+          },
+          "metrics": {
+            "velocity": 0,
+            "burndown": [],
+            "quality_score": 0,
+            "customer_satisfaction": 0
+          },
+          "alex_ai_integration": {
+            "knowledge_base_updates": [],
+            "crew_learning": [],
+            "cross_project_insights": []
+          }
+        },
+        {
+          "sprint_id": "restaurant_ai_sprint_3",
+          "project_id": "restaurant_ai",
+          "project_name": "Restaurant AI Management Platform",
+          "sprint_number": 3,
+          "start_date": "2025-09-03T14:23:23.067033",
+          "end_date": "2025-09-17T14:23:23.067034",
+          "status": "planning",
+          "phases": {
+            "planning": {
+              "duration": 2,
+              "status": "active",
+              "tasks": [
+                "Sprint goal definition and alignment",
+                "User story creation and prioritization",
+                "Task estimation and capacity planning",
+                "Risk assessment and mitigation planning",
+                "Alex AI knowledge base review and integration"
+              ],
+              "crew_assignments": {
+                "Sprint goal definition and alignment": [
+                  "captain_picard"
+                ],
+                "User story creation and prioritization": [
+                  "commander_riker"
+                ],
+                "Task estimation and capacity planning": [
+                  "captain_picard"
+                ],
+                "Risk assessment and mitigation planning": [
+                  "captain_picard"
+                ],
+                "Alex AI knowledge base review and integration": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "development": {
+              "duration": 8,
+              "status": "pending",
+              "tasks": [
+                "Core feature development",
+                "API integration and testing",
+                "Database design and implementation",
+                "User interface development",
+                "Alex AI crew coordination and knowledge sharing",
+                "Cross-project learning integration",
+                "Performance optimization",
+                "Security implementation"
+              ],
+              "crew_assignments": {
+                "Core feature development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "API integration and testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Database design and implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "User interface development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "Alex AI crew coordination and knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project learning integration": [
+                  "commander_riker"
+                ],
+                "Performance optimization": [
+                  "commander_riker"
+                ],
+                "Security implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "testing": {
+              "duration": 2,
+              "status": "pending",
+              "tasks": [
+                "Unit testing and code review",
+                "Integration testing",
+                "User acceptance testing",
+                "Performance testing",
+                "Security testing",
+                "Alex AI knowledge validation"
+              ],
+              "crew_assignments": {
+                "Unit testing and code review": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Integration testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "User acceptance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Performance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Security testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Alex AI knowledge validation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "review": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint review and demo preparation",
+                "Stakeholder feedback collection",
+                "Alex AI learning documentation",
+                "Cross-project knowledge sharing"
+              ],
+              "crew_assignments": {
+                "Sprint review and demo preparation": [
+                  "commander_riker"
+                ],
+                "Stakeholder feedback collection": [
+                  "commander_riker"
+                ],
+                "Alex AI learning documentation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "retrospective": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint retrospective and lessons learned",
+                "Process improvement identification",
+                "Alex AI knowledge base updates",
+                "Next sprint planning preparation"
+              ],
+              "crew_assignments": {
+                "Sprint retrospective and lessons learned": [
+                  "commander_riker"
+                ],
+                "Process improvement identification": [
+                  "commander_riker"
+                ],
+                "Alex AI knowledge base updates": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Next sprint planning preparation": [
+                  "captain_picard"
+                ]
+              }
+            }
+          },
+          "crew_assignments": {
+            "captain_picard": "Strategic planning and market positioning",
+            "commander_riker": "Operations and workflow management",
+            "commander_data": "Analytics and data processing",
+            "geordi_la_forge": "POS integration and technical infrastructure",
+            "lieutenant_worf": "Security and compliance",
+            "counselor_troi": "Customer experience and user interface",
+            "lieutenant_uhura": "Marketing and communication",
+            "dr_crusher": "Performance monitoring and optimization",
+            "quark": "Revenue models and monetization"
+          },
+          "metrics": {
+            "velocity": 0,
+            "burndown": [],
+            "quality_score": 0,
+            "customer_satisfaction": 0
+          },
+          "alex_ai_integration": {
+            "knowledge_base_updates": [],
+            "crew_learning": [],
+            "cross_project_insights": []
+          }
+        }
+      ],
+      "crew_assignments": {
+        "captain_picard": "Strategic planning and market positioning",
+        "commander_riker": "Operations and workflow management",
+        "commander_data": "Analytics and data processing",
+        "geordi_la_forge": "POS integration and technical infrastructure",
+        "lieutenant_worf": "Security and compliance",
+        "counselor_troi": "Customer experience and user interface",
+        "lieutenant_uhura": "Marketing and communication",
+        "dr_crusher": "Performance monitoring and optimization",
+        "quark": "Revenue models and monetization"
+      },
+      "alex_ai_integration": {
+        "knowledge_base_status": "active",
+        "crew_learning_status": "active",
+        "cross_project_sharing": "active",
+        "knowledge_accumulation": "operational"
+      },
+      "metrics": {
+        "overall_progress": 35,
+        "velocity_trend": "increasing",
+        "quality_score": 8.5,
+        "customer_satisfaction": 9.0,
+        "alex_ai_utilization": 95
+      },
+      "next_actions": [
+        "Complete sprint 1 planning phase",
+        "Begin development phase tasks",
+        "Update Alex AI knowledge base",
+        "Coordinate with other project teams",
+        "Prepare for sprint review"
+      ]
+    },
+    {
+      "project_id": "bar_automation",
+      "project_name": "Bar Automation & Analytics System",
+      "project_description": "AI-powered bar management and customer analytics",
+      "target_market": "bars",
+      "estimated_duration": "6 weeks",
+      "current_sprint": 1,
+      "total_sprints": 3,
+      "sprints": [
+        {
+          "sprint_id": "bar_automation_sprint_1",
+          "project_id": "bar_automation",
+          "project_name": "Bar Automation & Analytics System",
+          "sprint_number": 1,
+          "start_date": "2025-09-03T14:23:23.067055",
+          "end_date": "2025-09-17T14:23:23.067056",
+          "status": "planning",
+          "phases": {
+            "planning": {
+              "duration": 2,
+              "status": "active",
+              "tasks": [
+                "Sprint goal definition and alignment",
+                "User story creation and prioritization",
+                "Task estimation and capacity planning",
+                "Risk assessment and mitigation planning",
+                "Alex AI knowledge base review and integration"
+              ],
+              "crew_assignments": {
+                "Sprint goal definition and alignment": [
+                  "captain_picard"
+                ],
+                "User story creation and prioritization": [
+                  "commander_riker"
+                ],
+                "Task estimation and capacity planning": [
+                  "captain_picard"
+                ],
+                "Risk assessment and mitigation planning": [
+                  "captain_picard"
+                ],
+                "Alex AI knowledge base review and integration": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "development": {
+              "duration": 8,
+              "status": "pending",
+              "tasks": [
+                "Core feature development",
+                "API integration and testing",
+                "Database design and implementation",
+                "User interface development",
+                "Alex AI crew coordination and knowledge sharing",
+                "Cross-project learning integration",
+                "Performance optimization",
+                "Security implementation"
+              ],
+              "crew_assignments": {
+                "Core feature development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "API integration and testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Database design and implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "User interface development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "Alex AI crew coordination and knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project learning integration": [
+                  "commander_riker"
+                ],
+                "Performance optimization": [
+                  "commander_riker"
+                ],
+                "Security implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "testing": {
+              "duration": 2,
+              "status": "pending",
+              "tasks": [
+                "Unit testing and code review",
+                "Integration testing",
+                "User acceptance testing",
+                "Performance testing",
+                "Security testing",
+                "Alex AI knowledge validation"
+              ],
+              "crew_assignments": {
+                "Unit testing and code review": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Integration testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "User acceptance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Performance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Security testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Alex AI knowledge validation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "review": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint review and demo preparation",
+                "Stakeholder feedback collection",
+                "Alex AI learning documentation",
+                "Cross-project knowledge sharing"
+              ],
+              "crew_assignments": {
+                "Sprint review and demo preparation": [
+                  "commander_riker"
+                ],
+                "Stakeholder feedback collection": [
+                  "commander_riker"
+                ],
+                "Alex AI learning documentation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "retrospective": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint retrospective and lessons learned",
+                "Process improvement identification",
+                "Alex AI knowledge base updates",
+                "Next sprint planning preparation"
+              ],
+              "crew_assignments": {
+                "Sprint retrospective and lessons learned": [
+                  "commander_riker"
+                ],
+                "Process improvement identification": [
+                  "commander_riker"
+                ],
+                "Alex AI knowledge base updates": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Next sprint planning preparation": [
+                  "captain_picard"
+                ]
+              }
+            }
+          },
+          "crew_assignments": {
+            "captain_picard": "Strategic planning and market analysis",
+            "commander_riker": "Operations and inventory management",
+            "commander_data": "Customer analytics and insights",
+            "geordi_la_forge": "POS integration and automation",
+            "lieutenant_worf": "Compliance and security",
+            "counselor_troi": "Customer engagement and loyalty",
+            "lieutenant_uhura": "Marketing and promotions",
+            "dr_crusher": "Performance tracking and optimization",
+            "quark": "Revenue optimization and pricing"
+          },
+          "metrics": {
+            "velocity": 0,
+            "burndown": [],
+            "quality_score": 0,
+            "customer_satisfaction": 0
+          },
+          "alex_ai_integration": {
+            "knowledge_base_updates": [],
+            "crew_learning": [],
+            "cross_project_insights": []
+          }
+        },
+        {
+          "sprint_id": "bar_automation_sprint_2",
+          "project_id": "bar_automation",
+          "project_name": "Bar Automation & Analytics System",
+          "sprint_number": 2,
+          "start_date": "2025-09-03T14:23:23.067071",
+          "end_date": "2025-09-17T14:23:23.067072",
+          "status": "planning",
+          "phases": {
+            "planning": {
+              "duration": 2,
+              "status": "active",
+              "tasks": [
+                "Sprint goal definition and alignment",
+                "User story creation and prioritization",
+                "Task estimation and capacity planning",
+                "Risk assessment and mitigation planning",
+                "Alex AI knowledge base review and integration"
+              ],
+              "crew_assignments": {
+                "Sprint goal definition and alignment": [
+                  "captain_picard"
+                ],
+                "User story creation and prioritization": [
+                  "commander_riker"
+                ],
+                "Task estimation and capacity planning": [
+                  "captain_picard"
+                ],
+                "Risk assessment and mitigation planning": [
+                  "captain_picard"
+                ],
+                "Alex AI knowledge base review and integration": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "development": {
+              "duration": 8,
+              "status": "pending",
+              "tasks": [
+                "Core feature development",
+                "API integration and testing",
+                "Database design and implementation",
+                "User interface development",
+                "Alex AI crew coordination and knowledge sharing",
+                "Cross-project learning integration",
+                "Performance optimization",
+                "Security implementation"
+              ],
+              "crew_assignments": {
+                "Core feature development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "API integration and testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Database design and implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "User interface development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "Alex AI crew coordination and knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project learning integration": [
+                  "commander_riker"
+                ],
+                "Performance optimization": [
+                  "commander_riker"
+                ],
+                "Security implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "testing": {
+              "duration": 2,
+              "status": "pending",
+              "tasks": [
+                "Unit testing and code review",
+                "Integration testing",
+                "User acceptance testing",
+                "Performance testing",
+                "Security testing",
+                "Alex AI knowledge validation"
+              ],
+              "crew_assignments": {
+                "Unit testing and code review": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Integration testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "User acceptance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Performance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Security testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Alex AI knowledge validation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "review": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint review and demo preparation",
+                "Stakeholder feedback collection",
+                "Alex AI learning documentation",
+                "Cross-project knowledge sharing"
+              ],
+              "crew_assignments": {
+                "Sprint review and demo preparation": [
+                  "commander_riker"
+                ],
+                "Stakeholder feedback collection": [
+                  "commander_riker"
+                ],
+                "Alex AI learning documentation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "retrospective": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint retrospective and lessons learned",
+                "Process improvement identification",
+                "Alex AI knowledge base updates",
+                "Next sprint planning preparation"
+              ],
+              "crew_assignments": {
+                "Sprint retrospective and lessons learned": [
+                  "commander_riker"
+                ],
+                "Process improvement identification": [
+                  "commander_riker"
+                ],
+                "Alex AI knowledge base updates": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Next sprint planning preparation": [
+                  "captain_picard"
+                ]
+              }
+            }
+          },
+          "crew_assignments": {
+            "captain_picard": "Strategic planning and market analysis",
+            "commander_riker": "Operations and inventory management",
+            "commander_data": "Customer analytics and insights",
+            "geordi_la_forge": "POS integration and automation",
+            "lieutenant_worf": "Compliance and security",
+            "counselor_troi": "Customer engagement and loyalty",
+            "lieutenant_uhura": "Marketing and promotions",
+            "dr_crusher": "Performance tracking and optimization",
+            "quark": "Revenue optimization and pricing"
+          },
+          "metrics": {
+            "velocity": 0,
+            "burndown": [],
+            "quality_score": 0,
+            "customer_satisfaction": 0
+          },
+          "alex_ai_integration": {
+            "knowledge_base_updates": [],
+            "crew_learning": [],
+            "cross_project_insights": []
+          }
+        },
+        {
+          "sprint_id": "bar_automation_sprint_3",
+          "project_id": "bar_automation",
+          "project_name": "Bar Automation & Analytics System",
+          "sprint_number": 3,
+          "start_date": "2025-09-03T14:23:23.067086",
+          "end_date": "2025-09-17T14:23:23.067087",
+          "status": "planning",
+          "phases": {
+            "planning": {
+              "duration": 2,
+              "status": "active",
+              "tasks": [
+                "Sprint goal definition and alignment",
+                "User story creation and prioritization",
+                "Task estimation and capacity planning",
+                "Risk assessment and mitigation planning",
+                "Alex AI knowledge base review and integration"
+              ],
+              "crew_assignments": {
+                "Sprint goal definition and alignment": [
+                  "captain_picard"
+                ],
+                "User story creation and prioritization": [
+                  "commander_riker"
+                ],
+                "Task estimation and capacity planning": [
+                  "captain_picard"
+                ],
+                "Risk assessment and mitigation planning": [
+                  "captain_picard"
+                ],
+                "Alex AI knowledge base review and integration": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "development": {
+              "duration": 8,
+              "status": "pending",
+              "tasks": [
+                "Core feature development",
+                "API integration and testing",
+                "Database design and implementation",
+                "User interface development",
+                "Alex AI crew coordination and knowledge sharing",
+                "Cross-project learning integration",
+                "Performance optimization",
+                "Security implementation"
+              ],
+              "crew_assignments": {
+                "Core feature development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "API integration and testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Database design and implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "User interface development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "Alex AI crew coordination and knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project learning integration": [
+                  "commander_riker"
+                ],
+                "Performance optimization": [
+                  "commander_riker"
+                ],
+                "Security implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "testing": {
+              "duration": 2,
+              "status": "pending",
+              "tasks": [
+                "Unit testing and code review",
+                "Integration testing",
+                "User acceptance testing",
+                "Performance testing",
+                "Security testing",
+                "Alex AI knowledge validation"
+              ],
+              "crew_assignments": {
+                "Unit testing and code review": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Integration testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "User acceptance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Performance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Security testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Alex AI knowledge validation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "review": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint review and demo preparation",
+                "Stakeholder feedback collection",
+                "Alex AI learning documentation",
+                "Cross-project knowledge sharing"
+              ],
+              "crew_assignments": {
+                "Sprint review and demo preparation": [
+                  "commander_riker"
+                ],
+                "Stakeholder feedback collection": [
+                  "commander_riker"
+                ],
+                "Alex AI learning documentation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "retrospective": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint retrospective and lessons learned",
+                "Process improvement identification",
+                "Alex AI knowledge base updates",
+                "Next sprint planning preparation"
+              ],
+              "crew_assignments": {
+                "Sprint retrospective and lessons learned": [
+                  "commander_riker"
+                ],
+                "Process improvement identification": [
+                  "commander_riker"
+                ],
+                "Alex AI knowledge base updates": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Next sprint planning preparation": [
+                  "captain_picard"
+                ]
+              }
+            }
+          },
+          "crew_assignments": {
+            "captain_picard": "Strategic planning and market analysis",
+            "commander_riker": "Operations and inventory management",
+            "commander_data": "Customer analytics and insights",
+            "geordi_la_forge": "POS integration and automation",
+            "lieutenant_worf": "Compliance and security",
+            "counselor_troi": "Customer engagement and loyalty",
+            "lieutenant_uhura": "Marketing and promotions",
+            "dr_crusher": "Performance tracking and optimization",
+            "quark": "Revenue optimization and pricing"
+          },
+          "metrics": {
+            "velocity": 0,
+            "burndown": [],
+            "quality_score": 0,
+            "customer_satisfaction": 0
+          },
+          "alex_ai_integration": {
+            "knowledge_base_updates": [],
+            "crew_learning": [],
+            "cross_project_insights": []
+          }
+        }
+      ],
+      "crew_assignments": {
+        "captain_picard": "Strategic planning and market analysis",
+        "commander_riker": "Operations and inventory management",
+        "commander_data": "Customer analytics and insights",
+        "geordi_la_forge": "POS integration and automation",
+        "lieutenant_worf": "Compliance and security",
+        "counselor_troi": "Customer engagement and loyalty",
+        "lieutenant_uhura": "Marketing and promotions",
+        "dr_crusher": "Performance tracking and optimization",
+        "quark": "Revenue optimization and pricing"
+      },
+      "alex_ai_integration": {
+        "knowledge_base_status": "active",
+        "crew_learning_status": "active",
+        "cross_project_sharing": "active",
+        "knowledge_accumulation": "operational"
+      },
+      "metrics": {
+        "overall_progress": 35,
+        "velocity_trend": "increasing",
+        "quality_score": 8.5,
+        "customer_satisfaction": 9.0,
+        "alex_ai_utilization": 95
+      },
+      "next_actions": [
+        "Complete sprint 1 planning phase",
+        "Begin development phase tasks",
+        "Update Alex AI knowledge base",
+        "Coordinate with other project teams",
+        "Prepare for sprint review"
+      ]
+    },
+    {
+      "project_id": "music_band_platform",
+      "project_name": "Music Band Management & Fan Engagement Platform",
+      "project_description": "AI-powered band management and fan engagement system",
+      "target_market": "music_bands",
+      "estimated_duration": "10 weeks",
+      "current_sprint": 1,
+      "total_sprints": 3,
+      "sprints": [
+        {
+          "sprint_id": "music_band_platform_sprint_1",
+          "project_id": "music_band_platform",
+          "project_name": "Music Band Management & Fan Engagement Platform",
+          "sprint_number": 1,
+          "start_date": "2025-09-03T14:23:23.067102",
+          "end_date": "2025-09-17T14:23:23.067103",
+          "status": "planning",
+          "phases": {
+            "planning": {
+              "duration": 2,
+              "status": "active",
+              "tasks": [
+                "Sprint goal definition and alignment",
+                "User story creation and prioritization",
+                "Task estimation and capacity planning",
+                "Risk assessment and mitigation planning",
+                "Alex AI knowledge base review and integration"
+              ],
+              "crew_assignments": {
+                "Sprint goal definition and alignment": [
+                  "captain_picard"
+                ],
+                "User story creation and prioritization": [
+                  "commander_riker"
+                ],
+                "Task estimation and capacity planning": [
+                  "captain_picard"
+                ],
+                "Risk assessment and mitigation planning": [
+                  "captain_picard"
+                ],
+                "Alex AI knowledge base review and integration": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "development": {
+              "duration": 8,
+              "status": "pending",
+              "tasks": [
+                "Core feature development",
+                "API integration and testing",
+                "Database design and implementation",
+                "User interface development",
+                "Alex AI crew coordination and knowledge sharing",
+                "Cross-project learning integration",
+                "Performance optimization",
+                "Security implementation"
+              ],
+              "crew_assignments": {
+                "Core feature development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "API integration and testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Database design and implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "User interface development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "Alex AI crew coordination and knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project learning integration": [
+                  "commander_riker"
+                ],
+                "Performance optimization": [
+                  "commander_riker"
+                ],
+                "Security implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "testing": {
+              "duration": 2,
+              "status": "pending",
+              "tasks": [
+                "Unit testing and code review",
+                "Integration testing",
+                "User acceptance testing",
+                "Performance testing",
+                "Security testing",
+                "Alex AI knowledge validation"
+              ],
+              "crew_assignments": {
+                "Unit testing and code review": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Integration testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "User acceptance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Performance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Security testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Alex AI knowledge validation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "review": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint review and demo preparation",
+                "Stakeholder feedback collection",
+                "Alex AI learning documentation",
+                "Cross-project knowledge sharing"
+              ],
+              "crew_assignments": {
+                "Sprint review and demo preparation": [
+                  "commander_riker"
+                ],
+                "Stakeholder feedback collection": [
+                  "commander_riker"
+                ],
+                "Alex AI learning documentation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "retrospective": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint retrospective and lessons learned",
+                "Process improvement identification",
+                "Alex AI knowledge base updates",
+                "Next sprint planning preparation"
+              ],
+              "crew_assignments": {
+                "Sprint retrospective and lessons learned": [
+                  "commander_riker"
+                ],
+                "Process improvement identification": [
+                  "commander_riker"
+                ],
+                "Alex AI knowledge base updates": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Next sprint planning preparation": [
+                  "captain_picard"
+                ]
+              }
+            }
+          },
+          "crew_assignments": {
+            "captain_picard": "Strategic planning and brand positioning",
+            "commander_riker": "Tour management and logistics",
+            "commander_data": "Fan analytics and engagement metrics",
+            "geordi_la_forge": "Platform infrastructure and integrations",
+            "lieutenant_worf": "Content security and copyright",
+            "counselor_troi": "Fan experience and community building",
+            "lieutenant_uhura": "Social media and content marketing",
+            "dr_crusher": "Performance monitoring and wellness",
+            "quark": "Revenue streams and monetization"
+          },
+          "metrics": {
+            "velocity": 0,
+            "burndown": [],
+            "quality_score": 0,
+            "customer_satisfaction": 0
+          },
+          "alex_ai_integration": {
+            "knowledge_base_updates": [],
+            "crew_learning": [],
+            "cross_project_insights": []
+          }
+        },
+        {
+          "sprint_id": "music_band_platform_sprint_2",
+          "project_id": "music_band_platform",
+          "project_name": "Music Band Management & Fan Engagement Platform",
+          "sprint_number": 2,
+          "start_date": "2025-09-03T14:23:23.067116",
+          "end_date": "2025-09-17T14:23:23.067117",
+          "status": "planning",
+          "phases": {
+            "planning": {
+              "duration": 2,
+              "status": "active",
+              "tasks": [
+                "Sprint goal definition and alignment",
+                "User story creation and prioritization",
+                "Task estimation and capacity planning",
+                "Risk assessment and mitigation planning",
+                "Alex AI knowledge base review and integration"
+              ],
+              "crew_assignments": {
+                "Sprint goal definition and alignment": [
+                  "captain_picard"
+                ],
+                "User story creation and prioritization": [
+                  "commander_riker"
+                ],
+                "Task estimation and capacity planning": [
+                  "captain_picard"
+                ],
+                "Risk assessment and mitigation planning": [
+                  "captain_picard"
+                ],
+                "Alex AI knowledge base review and integration": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "development": {
+              "duration": 8,
+              "status": "pending",
+              "tasks": [
+                "Core feature development",
+                "API integration and testing",
+                "Database design and implementation",
+                "User interface development",
+                "Alex AI crew coordination and knowledge sharing",
+                "Cross-project learning integration",
+                "Performance optimization",
+                "Security implementation"
+              ],
+              "crew_assignments": {
+                "Core feature development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "API integration and testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Database design and implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "User interface development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "Alex AI crew coordination and knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project learning integration": [
+                  "commander_riker"
+                ],
+                "Performance optimization": [
+                  "commander_riker"
+                ],
+                "Security implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "testing": {
+              "duration": 2,
+              "status": "pending",
+              "tasks": [
+                "Unit testing and code review",
+                "Integration testing",
+                "User acceptance testing",
+                "Performance testing",
+                "Security testing",
+                "Alex AI knowledge validation"
+              ],
+              "crew_assignments": {
+                "Unit testing and code review": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Integration testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "User acceptance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Performance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Security testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Alex AI knowledge validation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "review": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint review and demo preparation",
+                "Stakeholder feedback collection",
+                "Alex AI learning documentation",
+                "Cross-project knowledge sharing"
+              ],
+              "crew_assignments": {
+                "Sprint review and demo preparation": [
+                  "commander_riker"
+                ],
+                "Stakeholder feedback collection": [
+                  "commander_riker"
+                ],
+                "Alex AI learning documentation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "retrospective": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint retrospective and lessons learned",
+                "Process improvement identification",
+                "Alex AI knowledge base updates",
+                "Next sprint planning preparation"
+              ],
+              "crew_assignments": {
+                "Sprint retrospective and lessons learned": [
+                  "commander_riker"
+                ],
+                "Process improvement identification": [
+                  "commander_riker"
+                ],
+                "Alex AI knowledge base updates": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Next sprint planning preparation": [
+                  "captain_picard"
+                ]
+              }
+            }
+          },
+          "crew_assignments": {
+            "captain_picard": "Strategic planning and brand positioning",
+            "commander_riker": "Tour management and logistics",
+            "commander_data": "Fan analytics and engagement metrics",
+            "geordi_la_forge": "Platform infrastructure and integrations",
+            "lieutenant_worf": "Content security and copyright",
+            "counselor_troi": "Fan experience and community building",
+            "lieutenant_uhura": "Social media and content marketing",
+            "dr_crusher": "Performance monitoring and wellness",
+            "quark": "Revenue streams and monetization"
+          },
+          "metrics": {
+            "velocity": 0,
+            "burndown": [],
+            "quality_score": 0,
+            "customer_satisfaction": 0
+          },
+          "alex_ai_integration": {
+            "knowledge_base_updates": [],
+            "crew_learning": [],
+            "cross_project_insights": []
+          }
+        },
+        {
+          "sprint_id": "music_band_platform_sprint_3",
+          "project_id": "music_band_platform",
+          "project_name": "Music Band Management & Fan Engagement Platform",
+          "sprint_number": 3,
+          "start_date": "2025-09-03T14:23:23.067130",
+          "end_date": "2025-09-17T14:23:23.067131",
+          "status": "planning",
+          "phases": {
+            "planning": {
+              "duration": 2,
+              "status": "active",
+              "tasks": [
+                "Sprint goal definition and alignment",
+                "User story creation and prioritization",
+                "Task estimation and capacity planning",
+                "Risk assessment and mitigation planning",
+                "Alex AI knowledge base review and integration"
+              ],
+              "crew_assignments": {
+                "Sprint goal definition and alignment": [
+                  "captain_picard"
+                ],
+                "User story creation and prioritization": [
+                  "commander_riker"
+                ],
+                "Task estimation and capacity planning": [
+                  "captain_picard"
+                ],
+                "Risk assessment and mitigation planning": [
+                  "captain_picard"
+                ],
+                "Alex AI knowledge base review and integration": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "development": {
+              "duration": 8,
+              "status": "pending",
+              "tasks": [
+                "Core feature development",
+                "API integration and testing",
+                "Database design and implementation",
+                "User interface development",
+                "Alex AI crew coordination and knowledge sharing",
+                "Cross-project learning integration",
+                "Performance optimization",
+                "Security implementation"
+              ],
+              "crew_assignments": {
+                "Core feature development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "API integration and testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Database design and implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "User interface development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "Alex AI crew coordination and knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project learning integration": [
+                  "commander_riker"
+                ],
+                "Performance optimization": [
+                  "commander_riker"
+                ],
+                "Security implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "testing": {
+              "duration": 2,
+              "status": "pending",
+              "tasks": [
+                "Unit testing and code review",
+                "Integration testing",
+                "User acceptance testing",
+                "Performance testing",
+                "Security testing",
+                "Alex AI knowledge validation"
+              ],
+              "crew_assignments": {
+                "Unit testing and code review": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Integration testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "User acceptance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Performance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Security testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Alex AI knowledge validation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "review": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint review and demo preparation",
+                "Stakeholder feedback collection",
+                "Alex AI learning documentation",
+                "Cross-project knowledge sharing"
+              ],
+              "crew_assignments": {
+                "Sprint review and demo preparation": [
+                  "commander_riker"
+                ],
+                "Stakeholder feedback collection": [
+                  "commander_riker"
+                ],
+                "Alex AI learning documentation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "retrospective": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint retrospective and lessons learned",
+                "Process improvement identification",
+                "Alex AI knowledge base updates",
+                "Next sprint planning preparation"
+              ],
+              "crew_assignments": {
+                "Sprint retrospective and lessons learned": [
+                  "commander_riker"
+                ],
+                "Process improvement identification": [
+                  "commander_riker"
+                ],
+                "Alex AI knowledge base updates": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Next sprint planning preparation": [
+                  "captain_picard"
+                ]
+              }
+            }
+          },
+          "crew_assignments": {
+            "captain_picard": "Strategic planning and brand positioning",
+            "commander_riker": "Tour management and logistics",
+            "commander_data": "Fan analytics and engagement metrics",
+            "geordi_la_forge": "Platform infrastructure and integrations",
+            "lieutenant_worf": "Content security and copyright",
+            "counselor_troi": "Fan experience and community building",
+            "lieutenant_uhura": "Social media and content marketing",
+            "dr_crusher": "Performance monitoring and wellness",
+            "quark": "Revenue streams and monetization"
+          },
+          "metrics": {
+            "velocity": 0,
+            "burndown": [],
+            "quality_score": 0,
+            "customer_satisfaction": 0
+          },
+          "alex_ai_integration": {
+            "knowledge_base_updates": [],
+            "crew_learning": [],
+            "cross_project_insights": []
+          }
+        }
+      ],
+      "crew_assignments": {
+        "captain_picard": "Strategic planning and brand positioning",
+        "commander_riker": "Tour management and logistics",
+        "commander_data": "Fan analytics and engagement metrics",
+        "geordi_la_forge": "Platform infrastructure and integrations",
+        "lieutenant_worf": "Content security and copyright",
+        "counselor_troi": "Fan experience and community building",
+        "lieutenant_uhura": "Social media and content marketing",
+        "dr_crusher": "Performance monitoring and wellness",
+        "quark": "Revenue streams and monetization"
+      },
+      "alex_ai_integration": {
+        "knowledge_base_status": "active",
+        "crew_learning_status": "active",
+        "cross_project_sharing": "active",
+        "knowledge_accumulation": "operational"
+      },
+      "metrics": {
+        "overall_progress": 35,
+        "velocity_trend": "increasing",
+        "quality_score": 8.5,
+        "customer_satisfaction": 9.0,
+        "alex_ai_utilization": 95
+      },
+      "next_actions": [
+        "Complete sprint 1 planning phase",
+        "Begin development phase tasks",
+        "Update Alex AI knowledge base",
+        "Coordinate with other project teams",
+        "Prepare for sprint review"
+      ]
+    },
+    {
+      "project_id": "author_platform",
+      "project_name": "Author Publishing & Marketing Platform",
+      "project_description": "AI-powered author platform for publishing and marketing",
+      "target_market": "authors",
+      "estimated_duration": "8 weeks",
+      "current_sprint": 1,
+      "total_sprints": 3,
+      "sprints": [
+        {
+          "sprint_id": "author_platform_sprint_1",
+          "project_id": "author_platform",
+          "project_name": "Author Publishing & Marketing Platform",
+          "sprint_number": 1,
+          "start_date": "2025-09-03T14:23:23.067146",
+          "end_date": "2025-09-17T14:23:23.067147",
+          "status": "planning",
+          "phases": {
+            "planning": {
+              "duration": 2,
+              "status": "active",
+              "tasks": [
+                "Sprint goal definition and alignment",
+                "User story creation and prioritization",
+                "Task estimation and capacity planning",
+                "Risk assessment and mitigation planning",
+                "Alex AI knowledge base review and integration"
+              ],
+              "crew_assignments": {
+                "Sprint goal definition and alignment": [
+                  "captain_picard"
+                ],
+                "User story creation and prioritization": [
+                  "commander_riker"
+                ],
+                "Task estimation and capacity planning": [
+                  "captain_picard"
+                ],
+                "Risk assessment and mitigation planning": [
+                  "captain_picard"
+                ],
+                "Alex AI knowledge base review and integration": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "development": {
+              "duration": 8,
+              "status": "pending",
+              "tasks": [
+                "Core feature development",
+                "API integration and testing",
+                "Database design and implementation",
+                "User interface development",
+                "Alex AI crew coordination and knowledge sharing",
+                "Cross-project learning integration",
+                "Performance optimization",
+                "Security implementation"
+              ],
+              "crew_assignments": {
+                "Core feature development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "API integration and testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Database design and implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "User interface development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "Alex AI crew coordination and knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project learning integration": [
+                  "commander_riker"
+                ],
+                "Performance optimization": [
+                  "commander_riker"
+                ],
+                "Security implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "testing": {
+              "duration": 2,
+              "status": "pending",
+              "tasks": [
+                "Unit testing and code review",
+                "Integration testing",
+                "User acceptance testing",
+                "Performance testing",
+                "Security testing",
+                "Alex AI knowledge validation"
+              ],
+              "crew_assignments": {
+                "Unit testing and code review": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Integration testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "User acceptance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Performance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Security testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Alex AI knowledge validation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "review": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint review and demo preparation",
+                "Stakeholder feedback collection",
+                "Alex AI learning documentation",
+                "Cross-project knowledge sharing"
+              ],
+              "crew_assignments": {
+                "Sprint review and demo preparation": [
+                  "commander_riker"
+                ],
+                "Stakeholder feedback collection": [
+                  "commander_riker"
+                ],
+                "Alex AI learning documentation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "retrospective": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint retrospective and lessons learned",
+                "Process improvement identification",
+                "Alex AI knowledge base updates",
+                "Next sprint planning preparation"
+              ],
+              "crew_assignments": {
+                "Sprint retrospective and lessons learned": [
+                  "commander_riker"
+                ],
+                "Process improvement identification": [
+                  "commander_riker"
+                ],
+                "Alex AI knowledge base updates": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Next sprint planning preparation": [
+                  "captain_picard"
+                ]
+              }
+            }
+          },
+          "crew_assignments": {
+            "captain_picard": "Strategic planning and market positioning",
+            "commander_riker": "Publishing workflow and operations",
+            "commander_data": "Reader analytics and market insights",
+            "geordi_la_forge": "Platform infrastructure and publishing tools",
+            "lieutenant_worf": "Copyright and legal compliance",
+            "counselor_troi": "Reader experience and engagement",
+            "lieutenant_uhura": "Content marketing and promotion",
+            "dr_crusher": "Performance tracking and optimization",
+            "quark": "Revenue models and royalty management"
+          },
+          "metrics": {
+            "velocity": 0,
+            "burndown": [],
+            "quality_score": 0,
+            "customer_satisfaction": 0
+          },
+          "alex_ai_integration": {
+            "knowledge_base_updates": [],
+            "crew_learning": [],
+            "cross_project_insights": []
+          }
+        },
+        {
+          "sprint_id": "author_platform_sprint_2",
+          "project_id": "author_platform",
+          "project_name": "Author Publishing & Marketing Platform",
+          "sprint_number": 2,
+          "start_date": "2025-09-03T14:23:23.067162",
+          "end_date": "2025-09-17T14:23:23.067163",
+          "status": "planning",
+          "phases": {
+            "planning": {
+              "duration": 2,
+              "status": "active",
+              "tasks": [
+                "Sprint goal definition and alignment",
+                "User story creation and prioritization",
+                "Task estimation and capacity planning",
+                "Risk assessment and mitigation planning",
+                "Alex AI knowledge base review and integration"
+              ],
+              "crew_assignments": {
+                "Sprint goal definition and alignment": [
+                  "captain_picard"
+                ],
+                "User story creation and prioritization": [
+                  "commander_riker"
+                ],
+                "Task estimation and capacity planning": [
+                  "captain_picard"
+                ],
+                "Risk assessment and mitigation planning": [
+                  "captain_picard"
+                ],
+                "Alex AI knowledge base review and integration": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "development": {
+              "duration": 8,
+              "status": "pending",
+              "tasks": [
+                "Core feature development",
+                "API integration and testing",
+                "Database design and implementation",
+                "User interface development",
+                "Alex AI crew coordination and knowledge sharing",
+                "Cross-project learning integration",
+                "Performance optimization",
+                "Security implementation"
+              ],
+              "crew_assignments": {
+                "Core feature development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "API integration and testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Database design and implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "User interface development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "Alex AI crew coordination and knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project learning integration": [
+                  "commander_riker"
+                ],
+                "Performance optimization": [
+                  "commander_riker"
+                ],
+                "Security implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "testing": {
+              "duration": 2,
+              "status": "pending",
+              "tasks": [
+                "Unit testing and code review",
+                "Integration testing",
+                "User acceptance testing",
+                "Performance testing",
+                "Security testing",
+                "Alex AI knowledge validation"
+              ],
+              "crew_assignments": {
+                "Unit testing and code review": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Integration testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "User acceptance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Performance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Security testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Alex AI knowledge validation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "review": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint review and demo preparation",
+                "Stakeholder feedback collection",
+                "Alex AI learning documentation",
+                "Cross-project knowledge sharing"
+              ],
+              "crew_assignments": {
+                "Sprint review and demo preparation": [
+                  "commander_riker"
+                ],
+                "Stakeholder feedback collection": [
+                  "commander_riker"
+                ],
+                "Alex AI learning documentation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "retrospective": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint retrospective and lessons learned",
+                "Process improvement identification",
+                "Alex AI knowledge base updates",
+                "Next sprint planning preparation"
+              ],
+              "crew_assignments": {
+                "Sprint retrospective and lessons learned": [
+                  "commander_riker"
+                ],
+                "Process improvement identification": [
+                  "commander_riker"
+                ],
+                "Alex AI knowledge base updates": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Next sprint planning preparation": [
+                  "captain_picard"
+                ]
+              }
+            }
+          },
+          "crew_assignments": {
+            "captain_picard": "Strategic planning and market positioning",
+            "commander_riker": "Publishing workflow and operations",
+            "commander_data": "Reader analytics and market insights",
+            "geordi_la_forge": "Platform infrastructure and publishing tools",
+            "lieutenant_worf": "Copyright and legal compliance",
+            "counselor_troi": "Reader experience and engagement",
+            "lieutenant_uhura": "Content marketing and promotion",
+            "dr_crusher": "Performance tracking and optimization",
+            "quark": "Revenue models and royalty management"
+          },
+          "metrics": {
+            "velocity": 0,
+            "burndown": [],
+            "quality_score": 0,
+            "customer_satisfaction": 0
+          },
+          "alex_ai_integration": {
+            "knowledge_base_updates": [],
+            "crew_learning": [],
+            "cross_project_insights": []
+          }
+        },
+        {
+          "sprint_id": "author_platform_sprint_3",
+          "project_id": "author_platform",
+          "project_name": "Author Publishing & Marketing Platform",
+          "sprint_number": 3,
+          "start_date": "2025-09-03T14:23:23.067177",
+          "end_date": "2025-09-17T14:23:23.067178",
+          "status": "planning",
+          "phases": {
+            "planning": {
+              "duration": 2,
+              "status": "active",
+              "tasks": [
+                "Sprint goal definition and alignment",
+                "User story creation and prioritization",
+                "Task estimation and capacity planning",
+                "Risk assessment and mitigation planning",
+                "Alex AI knowledge base review and integration"
+              ],
+              "crew_assignments": {
+                "Sprint goal definition and alignment": [
+                  "captain_picard"
+                ],
+                "User story creation and prioritization": [
+                  "commander_riker"
+                ],
+                "Task estimation and capacity planning": [
+                  "captain_picard"
+                ],
+                "Risk assessment and mitigation planning": [
+                  "captain_picard"
+                ],
+                "Alex AI knowledge base review and integration": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "development": {
+              "duration": 8,
+              "status": "pending",
+              "tasks": [
+                "Core feature development",
+                "API integration and testing",
+                "Database design and implementation",
+                "User interface development",
+                "Alex AI crew coordination and knowledge sharing",
+                "Cross-project learning integration",
+                "Performance optimization",
+                "Security implementation"
+              ],
+              "crew_assignments": {
+                "Core feature development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "API integration and testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Database design and implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "User interface development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "Alex AI crew coordination and knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project learning integration": [
+                  "commander_riker"
+                ],
+                "Performance optimization": [
+                  "commander_riker"
+                ],
+                "Security implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "testing": {
+              "duration": 2,
+              "status": "pending",
+              "tasks": [
+                "Unit testing and code review",
+                "Integration testing",
+                "User acceptance testing",
+                "Performance testing",
+                "Security testing",
+                "Alex AI knowledge validation"
+              ],
+              "crew_assignments": {
+                "Unit testing and code review": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Integration testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "User acceptance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Performance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Security testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Alex AI knowledge validation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "review": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint review and demo preparation",
+                "Stakeholder feedback collection",
+                "Alex AI learning documentation",
+                "Cross-project knowledge sharing"
+              ],
+              "crew_assignments": {
+                "Sprint review and demo preparation": [
+                  "commander_riker"
+                ],
+                "Stakeholder feedback collection": [
+                  "commander_riker"
+                ],
+                "Alex AI learning documentation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "retrospective": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint retrospective and lessons learned",
+                "Process improvement identification",
+                "Alex AI knowledge base updates",
+                "Next sprint planning preparation"
+              ],
+              "crew_assignments": {
+                "Sprint retrospective and lessons learned": [
+                  "commander_riker"
+                ],
+                "Process improvement identification": [
+                  "commander_riker"
+                ],
+                "Alex AI knowledge base updates": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Next sprint planning preparation": [
+                  "captain_picard"
+                ]
+              }
+            }
+          },
+          "crew_assignments": {
+            "captain_picard": "Strategic planning and market positioning",
+            "commander_riker": "Publishing workflow and operations",
+            "commander_data": "Reader analytics and market insights",
+            "geordi_la_forge": "Platform infrastructure and publishing tools",
+            "lieutenant_worf": "Copyright and legal compliance",
+            "counselor_troi": "Reader experience and engagement",
+            "lieutenant_uhura": "Content marketing and promotion",
+            "dr_crusher": "Performance tracking and optimization",
+            "quark": "Revenue models and royalty management"
+          },
+          "metrics": {
+            "velocity": 0,
+            "burndown": [],
+            "quality_score": 0,
+            "customer_satisfaction": 0
+          },
+          "alex_ai_integration": {
+            "knowledge_base_updates": [],
+            "crew_learning": [],
+            "cross_project_insights": []
+          }
+        }
+      ],
+      "crew_assignments": {
+        "captain_picard": "Strategic planning and market positioning",
+        "commander_riker": "Publishing workflow and operations",
+        "commander_data": "Reader analytics and market insights",
+        "geordi_la_forge": "Platform infrastructure and publishing tools",
+        "lieutenant_worf": "Copyright and legal compliance",
+        "counselor_troi": "Reader experience and engagement",
+        "lieutenant_uhura": "Content marketing and promotion",
+        "dr_crusher": "Performance tracking and optimization",
+        "quark": "Revenue models and royalty management"
+      },
+      "alex_ai_integration": {
+        "knowledge_base_status": "active",
+        "crew_learning_status": "active",
+        "cross_project_sharing": "active",
+        "knowledge_accumulation": "operational"
+      },
+      "metrics": {
+        "overall_progress": 35,
+        "velocity_trend": "increasing",
+        "quality_score": 8.5,
+        "customer_satisfaction": 9.0,
+        "alex_ai_utilization": 95
+      },
+      "next_actions": [
+        "Complete sprint 1 planning phase",
+        "Begin development phase tasks",
+        "Update Alex AI knowledge base",
+        "Coordinate with other project teams",
+        "Prepare for sprint review"
+      ]
+    },
+    {
+      "project_id": "cannabis_compliance",
+      "project_name": "Cannabis Compliance & Management System",
+      "project_description": "AI-powered cannabis dispensary compliance and management",
+      "target_market": "cannabis",
+      "estimated_duration": "12 weeks",
+      "current_sprint": 1,
+      "total_sprints": 3,
+      "sprints": [
+        {
+          "sprint_id": "cannabis_compliance_sprint_1",
+          "project_id": "cannabis_compliance",
+          "project_name": "Cannabis Compliance & Management System",
+          "sprint_number": 1,
+          "start_date": "2025-09-03T14:23:23.067192",
+          "end_date": "2025-09-17T14:23:23.067193",
+          "status": "planning",
+          "phases": {
+            "planning": {
+              "duration": 2,
+              "status": "active",
+              "tasks": [
+                "Sprint goal definition and alignment",
+                "User story creation and prioritization",
+                "Task estimation and capacity planning",
+                "Risk assessment and mitigation planning",
+                "Alex AI knowledge base review and integration"
+              ],
+              "crew_assignments": {
+                "Sprint goal definition and alignment": [
+                  "captain_picard"
+                ],
+                "User story creation and prioritization": [
+                  "commander_riker"
+                ],
+                "Task estimation and capacity planning": [
+                  "captain_picard"
+                ],
+                "Risk assessment and mitigation planning": [
+                  "captain_picard"
+                ],
+                "Alex AI knowledge base review and integration": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "development": {
+              "duration": 8,
+              "status": "pending",
+              "tasks": [
+                "Core feature development",
+                "API integration and testing",
+                "Database design and implementation",
+                "User interface development",
+                "Alex AI crew coordination and knowledge sharing",
+                "Cross-project learning integration",
+                "Performance optimization",
+                "Security implementation"
+              ],
+              "crew_assignments": {
+                "Core feature development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "API integration and testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Database design and implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "User interface development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "Alex AI crew coordination and knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project learning integration": [
+                  "commander_riker"
+                ],
+                "Performance optimization": [
+                  "commander_riker"
+                ],
+                "Security implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "testing": {
+              "duration": 2,
+              "status": "pending",
+              "tasks": [
+                "Unit testing and code review",
+                "Integration testing",
+                "User acceptance testing",
+                "Performance testing",
+                "Security testing",
+                "Alex AI knowledge validation"
+              ],
+              "crew_assignments": {
+                "Unit testing and code review": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Integration testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "User acceptance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Performance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Security testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Alex AI knowledge validation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "review": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint review and demo preparation",
+                "Stakeholder feedback collection",
+                "Alex AI learning documentation",
+                "Cross-project knowledge sharing"
+              ],
+              "crew_assignments": {
+                "Sprint review and demo preparation": [
+                  "commander_riker"
+                ],
+                "Stakeholder feedback collection": [
+                  "commander_riker"
+                ],
+                "Alex AI learning documentation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "retrospective": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint retrospective and lessons learned",
+                "Process improvement identification",
+                "Alex AI knowledge base updates",
+                "Next sprint planning preparation"
+              ],
+              "crew_assignments": {
+                "Sprint retrospective and lessons learned": [
+                  "commander_riker"
+                ],
+                "Process improvement identification": [
+                  "commander_riker"
+                ],
+                "Alex AI knowledge base updates": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Next sprint planning preparation": [
+                  "captain_picard"
+                ]
+              }
+            }
+          },
+          "crew_assignments": {
+            "captain_picard": "Strategic planning and regulatory compliance",
+            "commander_riker": "Operations and inventory management",
+            "commander_data": "Compliance analytics and reporting",
+            "geordi_la_forge": "POS integration and technical infrastructure",
+            "lieutenant_worf": "Regulatory compliance and security",
+            "counselor_troi": "Customer experience and education",
+            "lieutenant_uhura": "Marketing and communication",
+            "dr_crusher": "Performance monitoring and optimization",
+            "quark": "Revenue optimization and tax reporting"
+          },
+          "metrics": {
+            "velocity": 0,
+            "burndown": [],
+            "quality_score": 0,
+            "customer_satisfaction": 0
+          },
+          "alex_ai_integration": {
+            "knowledge_base_updates": [],
+            "crew_learning": [],
+            "cross_project_insights": []
+          }
+        },
+        {
+          "sprint_id": "cannabis_compliance_sprint_2",
+          "project_id": "cannabis_compliance",
+          "project_name": "Cannabis Compliance & Management System",
+          "sprint_number": 2,
+          "start_date": "2025-09-03T14:23:23.067206",
+          "end_date": "2025-09-17T14:23:23.067207",
+          "status": "planning",
+          "phases": {
+            "planning": {
+              "duration": 2,
+              "status": "active",
+              "tasks": [
+                "Sprint goal definition and alignment",
+                "User story creation and prioritization",
+                "Task estimation and capacity planning",
+                "Risk assessment and mitigation planning",
+                "Alex AI knowledge base review and integration"
+              ],
+              "crew_assignments": {
+                "Sprint goal definition and alignment": [
+                  "captain_picard"
+                ],
+                "User story creation and prioritization": [
+                  "commander_riker"
+                ],
+                "Task estimation and capacity planning": [
+                  "captain_picard"
+                ],
+                "Risk assessment and mitigation planning": [
+                  "captain_picard"
+                ],
+                "Alex AI knowledge base review and integration": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "development": {
+              "duration": 8,
+              "status": "pending",
+              "tasks": [
+                "Core feature development",
+                "API integration and testing",
+                "Database design and implementation",
+                "User interface development",
+                "Alex AI crew coordination and knowledge sharing",
+                "Cross-project learning integration",
+                "Performance optimization",
+                "Security implementation"
+              ],
+              "crew_assignments": {
+                "Core feature development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "API integration and testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Database design and implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "User interface development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "Alex AI crew coordination and knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project learning integration": [
+                  "commander_riker"
+                ],
+                "Performance optimization": [
+                  "commander_riker"
+                ],
+                "Security implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "testing": {
+              "duration": 2,
+              "status": "pending",
+              "tasks": [
+                "Unit testing and code review",
+                "Integration testing",
+                "User acceptance testing",
+                "Performance testing",
+                "Security testing",
+                "Alex AI knowledge validation"
+              ],
+              "crew_assignments": {
+                "Unit testing and code review": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Integration testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "User acceptance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Performance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Security testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Alex AI knowledge validation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "review": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint review and demo preparation",
+                "Stakeholder feedback collection",
+                "Alex AI learning documentation",
+                "Cross-project knowledge sharing"
+              ],
+              "crew_assignments": {
+                "Sprint review and demo preparation": [
+                  "commander_riker"
+                ],
+                "Stakeholder feedback collection": [
+                  "commander_riker"
+                ],
+                "Alex AI learning documentation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "retrospective": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint retrospective and lessons learned",
+                "Process improvement identification",
+                "Alex AI knowledge base updates",
+                "Next sprint planning preparation"
+              ],
+              "crew_assignments": {
+                "Sprint retrospective and lessons learned": [
+                  "commander_riker"
+                ],
+                "Process improvement identification": [
+                  "commander_riker"
+                ],
+                "Alex AI knowledge base updates": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Next sprint planning preparation": [
+                  "captain_picard"
+                ]
+              }
+            }
+          },
+          "crew_assignments": {
+            "captain_picard": "Strategic planning and regulatory compliance",
+            "commander_riker": "Operations and inventory management",
+            "commander_data": "Compliance analytics and reporting",
+            "geordi_la_forge": "POS integration and technical infrastructure",
+            "lieutenant_worf": "Regulatory compliance and security",
+            "counselor_troi": "Customer experience and education",
+            "lieutenant_uhura": "Marketing and communication",
+            "dr_crusher": "Performance monitoring and optimization",
+            "quark": "Revenue optimization and tax reporting"
+          },
+          "metrics": {
+            "velocity": 0,
+            "burndown": [],
+            "quality_score": 0,
+            "customer_satisfaction": 0
+          },
+          "alex_ai_integration": {
+            "knowledge_base_updates": [],
+            "crew_learning": [],
+            "cross_project_insights": []
+          }
+        },
+        {
+          "sprint_id": "cannabis_compliance_sprint_3",
+          "project_id": "cannabis_compliance",
+          "project_name": "Cannabis Compliance & Management System",
+          "sprint_number": 3,
+          "start_date": "2025-09-03T14:23:23.067221",
+          "end_date": "2025-09-17T14:23:23.067222",
+          "status": "planning",
+          "phases": {
+            "planning": {
+              "duration": 2,
+              "status": "active",
+              "tasks": [
+                "Sprint goal definition and alignment",
+                "User story creation and prioritization",
+                "Task estimation and capacity planning",
+                "Risk assessment and mitigation planning",
+                "Alex AI knowledge base review and integration"
+              ],
+              "crew_assignments": {
+                "Sprint goal definition and alignment": [
+                  "captain_picard"
+                ],
+                "User story creation and prioritization": [
+                  "commander_riker"
+                ],
+                "Task estimation and capacity planning": [
+                  "captain_picard"
+                ],
+                "Risk assessment and mitigation planning": [
+                  "captain_picard"
+                ],
+                "Alex AI knowledge base review and integration": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "development": {
+              "duration": 8,
+              "status": "pending",
+              "tasks": [
+                "Core feature development",
+                "API integration and testing",
+                "Database design and implementation",
+                "User interface development",
+                "Alex AI crew coordination and knowledge sharing",
+                "Cross-project learning integration",
+                "Performance optimization",
+                "Security implementation"
+              ],
+              "crew_assignments": {
+                "Core feature development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "API integration and testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Database design and implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "User interface development": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ],
+                "Alex AI crew coordination and knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project learning integration": [
+                  "commander_riker"
+                ],
+                "Performance optimization": [
+                  "commander_riker"
+                ],
+                "Security implementation": [
+                  "commander_riker",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "testing": {
+              "duration": 2,
+              "status": "pending",
+              "tasks": [
+                "Unit testing and code review",
+                "Integration testing",
+                "User acceptance testing",
+                "Performance testing",
+                "Security testing",
+                "Alex AI knowledge validation"
+              ],
+              "crew_assignments": {
+                "Unit testing and code review": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Integration testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "User acceptance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Performance testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Security testing": [
+                  "lieutenant_worf",
+                  "counselor_troi"
+                ],
+                "Alex AI knowledge validation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "review": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint review and demo preparation",
+                "Stakeholder feedback collection",
+                "Alex AI learning documentation",
+                "Cross-project knowledge sharing"
+              ],
+              "crew_assignments": {
+                "Sprint review and demo preparation": [
+                  "commander_riker"
+                ],
+                "Stakeholder feedback collection": [
+                  "commander_riker"
+                ],
+                "Alex AI learning documentation": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Cross-project knowledge sharing": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ]
+              }
+            },
+            "retrospective": {
+              "duration": 1,
+              "status": "pending",
+              "tasks": [
+                "Sprint retrospective and lessons learned",
+                "Process improvement identification",
+                "Alex AI knowledge base updates",
+                "Next sprint planning preparation"
+              ],
+              "crew_assignments": {
+                "Sprint retrospective and lessons learned": [
+                  "commander_riker"
+                ],
+                "Process improvement identification": [
+                  "commander_riker"
+                ],
+                "Alex AI knowledge base updates": [
+                  "captain_picard",
+                  "commander_data",
+                  "geordi_la_forge"
+                ],
+                "Next sprint planning preparation": [
+                  "captain_picard"
+                ]
+              }
+            }
+          },
+          "crew_assignments": {
+            "captain_picard": "Strategic planning and regulatory compliance",
+            "commander_riker": "Operations and inventory management",
+            "commander_data": "Compliance analytics and reporting",
+            "geordi_la_forge": "POS integration and technical infrastructure",
+            "lieutenant_worf": "Regulatory compliance and security",
+            "counselor_troi": "Customer experience and education",
+            "lieutenant_uhura": "Marketing and communication",
+            "dr_crusher": "Performance monitoring and optimization",
+            "quark": "Revenue optimization and tax reporting"
+          },
+          "metrics": {
+            "velocity": 0,
+            "burndown": [],
+            "quality_score": 0,
+            "customer_satisfaction": 0
+          },
+          "alex_ai_integration": {
+            "knowledge_base_updates": [],
+            "crew_learning": [],
+            "cross_project_insights": []
+          }
+        }
+      ],
+      "crew_assignments": {
+        "captain_picard": "Strategic planning and regulatory compliance",
+        "commander_riker": "Operations and inventory management",
+        "commander_data": "Compliance analytics and reporting",
+        "geordi_la_forge": "POS integration and technical infrastructure",
+        "lieutenant_worf": "Regulatory compliance and security",
+        "counselor_troi": "Customer experience and education",
+        "lieutenant_uhura": "Marketing and communication",
+        "dr_crusher": "Performance monitoring and optimization",
+        "quark": "Revenue optimization and tax reporting"
+      },
+      "alex_ai_integration": {
+        "knowledge_base_status": "active",
+        "crew_learning_status": "active",
+        "cross_project_sharing": "active",
+        "knowledge_accumulation": "operational"
+      },
+      "metrics": {
+        "overall_progress": 35,
+        "velocity_trend": "increasing",
+        "quality_score": 8.5,
+        "customer_satisfaction": 9.0,
+        "alex_ai_utilization": 95
+      },
+      "next_actions": [
+        "Complete sprint 1 planning phase",
+        "Begin development phase tasks",
+        "Update Alex AI knowledge base",
+        "Coordinate with other project teams",
+        "Prepare for sprint review"
+      ]
+    }
+  ],
+  "crew_utilization": {},
+  "alex_ai_integration": {
+    "knowledge_base_status": "active",
+    "crew_learning_status": "active",
+    "cross_project_sharing": "active",
+    "knowledge_accumulation": "operational"
+  },
+  "overall_metrics": {
+    "total_sprints": 15,
+    "average_velocity": 35.0,
+    "overall_quality_score": 8.5,
+    "customer_satisfaction": 9.0,
+    "alex_ai_utilization": 95.0
+  },
+  "cross_project_insights": [
+    "AI automation is a common theme across all projects",
+    "Customer engagement and retention are universal priorities",
+    "Data analytics and insights are in high demand",
+    "Mobile-first solutions are becoming standard",
+    "Integration with existing systems is critical"
+  ],
+  "recommendations": [
+    "Implement cross-project knowledge sharing sessions",
+    "Establish common AI components and libraries",
+    "Create unified customer experience standards",
+    "Develop shared analytics and reporting tools",
+    "Build integrated payment and POS systems"
+  ]
+}

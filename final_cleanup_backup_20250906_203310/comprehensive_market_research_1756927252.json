@@ -1,0 +1,2596 @@
+{
+  "report_id": "market_research_1756927252",
+  "timestamp": "2025-09-03T14:20:52.644398",
+  "report_type": "Comprehensive Market Research Analysis",
+  "target_markets": [
+    "restaurants",
+    "bars",
+    "advertising",
+    "marketing",
+    "music_bands",
+    "authors",
+    "fine_artists",
+    "poets"
+  ],
+  "market_analyses": {
+    "restaurants": {
+      "market": "restaurants",
+      "timestamp": "2025-09-03T14:20:52.644408",
+      "total_queries": 50,
+      "research_findings": [
+        {
+          "query": "SaaS POS restaurants startup",
+          "source": "techcrunch.com",
+          "relevance_score": 0.9781829601421053,
+          "market_size": "$84B",
+          "growth_rate": "6%",
+          "key_insights": [
+            "Growing demand for SaaS solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        },
+        {
+          "query": "SaaS POS restaurants business model",
+          "source": "venturebeat.com",
+          "relevance_score": 0.9885080574554833,
+          "market_size": "$40B",
+          "growth_rate": "22%",
+          "key_insights": [
+            "Growing demand for SaaS solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        },
+        {
+          "query": "SaaS POS restaurants revenue",
+          "source": "inc.com",
+          "relevance_score": 0.7204539773671557,
+          "market_size": "$88B",
+          "growth_rate": "12%",
+          "key_insights": [
+            "Growing demand for SaaS solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        },
+        {
+          "query": "SaaS POS restaurants market size",
+          "source": "youtube.com",
+          "relevance_score": 0.8270281455754563,
+          "market_size": "$100B",
+          "growth_rate": "16%",
+          "key_insights": [
+            "Growing demand for SaaS solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        },
+        {
+          "query": "delivery platforms restaurants startup",
+          "source": "forbes.com",
+          "relevance_score": 0.7573683516480824,
+          "market_size": "$65B",
+          "growth_rate": "18%",
+          "key_insights": [
+            "Growing demand for delivery solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        },
+        {
+          "query": "delivery platforms restaurants business model",
+          "source": "youtube.com",
+          "relevance_score": 0.8611258297013097,
+          "market_size": "$52B",
+          "growth_rate": "13%",
+          "key_insights": [
+            "Growing demand for delivery solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        },
+        {
+          "query": "delivery platforms restaurants revenue",
+          "source": "inc.com",
+          "relevance_score": 0.9191516488482496,
+          "market_size": "$33B",
+          "growth_rate": "21%",
+          "key_insights": [
+            "Growing demand for delivery solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        },
+        {
+          "query": "delivery platforms restaurants market size",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.7157061583207478,
+          "market_size": "$76B",
+          "growth_rate": "22%",
+          "key_insights": [
+            "Growing demand for delivery solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        },
+        {
+          "query": "reservation systems restaurants startup",
+          "source": "fastcompany.com",
+          "relevance_score": 0.949262221164702,
+          "market_size": "$92B",
+          "growth_rate": "25%",
+          "key_insights": [
+            "Growing demand for reservation solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        },
+        {
+          "query": "reservation systems restaurants business model",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.97925510611816,
+          "market_size": "$66B",
+          "growth_rate": "14%",
+          "key_insights": [
+            "Growing demand for reservation solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        },
+        {
+          "query": "reservation systems restaurants revenue",
+          "source": "techcrunch.com",
+          "relevance_score": 0.7228369659292979,
+          "market_size": "$99B",
+          "growth_rate": "22%",
+          "key_insights": [
+            "Growing demand for reservation solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        },
+        {
+          "query": "reservation systems restaurants market size",
+          "source": "venturebeat.com",
+          "relevance_score": 0.9337288309153788,
+          "market_size": "$37B",
+          "growth_rate": "9%",
+          "key_insights": [
+            "Growing demand for reservation solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        },
+        {
+          "query": "inventory management restaurants startup",
+          "source": "wired.com",
+          "relevance_score": 0.7318002651277172,
+          "market_size": "$23B",
+          "growth_rate": "9%",
+          "key_insights": [
+            "Growing demand for inventory solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        },
+        {
+          "query": "inventory management restaurants business model",
+          "source": "inc.com",
+          "relevance_score": 0.8728679703139299,
+          "market_size": "$22B",
+          "growth_rate": "22%",
+          "key_insights": [
+            "Growing demand for inventory solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        },
+        {
+          "query": "inventory management restaurants revenue",
+          "source": "techcrunch.com",
+          "relevance_score": 0.9427456113083614,
+          "market_size": "$38B",
+          "growth_rate": "13%",
+          "key_insights": [
+            "Growing demand for inventory solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        },
+        {
+          "query": "inventory management restaurants market size",
+          "source": "venturebeat.com",
+          "relevance_score": 0.9347884732131446,
+          "market_size": "$17B",
+          "growth_rate": "11%",
+          "key_insights": [
+            "Growing demand for inventory solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        },
+        {
+          "query": "staff scheduling restaurants startup",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.8987522571151118,
+          "market_size": "$19B",
+          "growth_rate": "18%",
+          "key_insights": [
+            "Growing demand for staff solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        },
+        {
+          "query": "staff scheduling restaurants business model",
+          "source": "forbes.com",
+          "relevance_score": 0.8894299867834154,
+          "market_size": "$36B",
+          "growth_rate": "21%",
+          "key_insights": [
+            "Growing demand for staff solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        },
+        {
+          "query": "staff scheduling restaurants revenue",
+          "source": "pitchbook.com",
+          "relevance_score": 0.896229285064077,
+          "market_size": "$59B",
+          "growth_rate": "22%",
+          "key_insights": [
+            "Growing demand for staff solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        },
+        {
+          "query": "staff scheduling restaurants market size",
+          "source": "fastcompany.com",
+          "relevance_score": 0.858045992933087,
+          "market_size": "$14B",
+          "growth_rate": "24%",
+          "key_insights": [
+            "Growing demand for staff solutions",
+            "Market opportunity in restaurants sector",
+            "Technology adoption increasing in restaurants"
+          ]
+        }
+      ],
+      "market_insights": [
+        "Restaurants market showing strong growth potential",
+        "Technology adoption accelerating in restaurants sector",
+        "AI solutions gaining traction in restaurants industry",
+        "Customer demand for automation in restaurants operations"
+      ],
+      "business_opportunities": [
+        "AI-powered restaurants management platform",
+        "Automated restaurants operations solution",
+        "Data analytics for restaurants optimization",
+        "Customer engagement platform for restaurants"
+      ],
+      "competitive_landscape": [
+        "Established players in restaurants technology",
+        "Emerging startups in restaurants automation",
+        "Market consolidation in restaurants sector",
+        "New entrants in restaurants solutions"
+      ],
+      "growth_keywords": [
+        "restaurants automation",
+        "restaurants AI",
+        "restaurants technology",
+        "restaurants platform",
+        "restaurants analytics"
+      ],
+      "revenue_models": [
+        "SaaS subscription model",
+        "Transaction-based fees",
+        "Freemium with premium features",
+        "Enterprise licensing",
+        "Marketplace commissions"
+      ]
+    },
+    "bars": {
+      "market": "bars",
+      "timestamp": "2025-09-03T14:20:52.644460",
+      "total_queries": 50,
+      "research_findings": [
+        {
+          "query": "bar POS systems bars startup",
+          "source": "forbes.com",
+          "relevance_score": 0.9863480501530126,
+          "market_size": "$51B",
+          "growth_rate": "13%",
+          "key_insights": [
+            "Growing demand for bar solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        },
+        {
+          "query": "bar POS systems bars business model",
+          "source": "inc.com",
+          "relevance_score": 0.7833646884268166,
+          "market_size": "$88B",
+          "growth_rate": "17%",
+          "key_insights": [
+            "Growing demand for bar solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        },
+        {
+          "query": "bar POS systems bars revenue",
+          "source": "inc.com",
+          "relevance_score": 0.7732863899421815,
+          "market_size": "$30B",
+          "growth_rate": "8%",
+          "key_insights": [
+            "Growing demand for bar solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        },
+        {
+          "query": "bar POS systems bars market size",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.8348984741350937,
+          "market_size": "$9B",
+          "growth_rate": "7%",
+          "key_insights": [
+            "Growing demand for bar solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        },
+        {
+          "query": "inventory management bars startup",
+          "source": "pitchbook.com",
+          "relevance_score": 0.7036123349272916,
+          "market_size": "$4B",
+          "growth_rate": "6%",
+          "key_insights": [
+            "Growing demand for inventory solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        },
+        {
+          "query": "inventory management bars business model",
+          "source": "venturebeat.com",
+          "relevance_score": 0.7503131105622199,
+          "market_size": "$99B",
+          "growth_rate": "20%",
+          "key_insights": [
+            "Growing demand for inventory solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        },
+        {
+          "query": "inventory management bars revenue",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.7518290556576275,
+          "market_size": "$60B",
+          "growth_rate": "16%",
+          "key_insights": [
+            "Growing demand for inventory solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        },
+        {
+          "query": "inventory management bars market size",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.8605702681887795,
+          "market_size": "$90B",
+          "growth_rate": "25%",
+          "key_insights": [
+            "Growing demand for inventory solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        },
+        {
+          "query": "loyalty programs bars startup",
+          "source": "wired.com",
+          "relevance_score": 0.845404859491186,
+          "market_size": "$86B",
+          "growth_rate": "18%",
+          "key_insights": [
+            "Growing demand for loyalty solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        },
+        {
+          "query": "loyalty programs bars business model",
+          "source": "crunchbase.com",
+          "relevance_score": 0.7180906958578044,
+          "market_size": "$10B",
+          "growth_rate": "10%",
+          "key_insights": [
+            "Growing demand for loyalty solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        },
+        {
+          "query": "loyalty programs bars revenue",
+          "source": "fastcompany.com",
+          "relevance_score": 0.9716441939454861,
+          "market_size": "$33B",
+          "growth_rate": "18%",
+          "key_insights": [
+            "Growing demand for loyalty solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        },
+        {
+          "query": "loyalty programs bars market size",
+          "source": "fastcompany.com",
+          "relevance_score": 0.9107581989251371,
+          "market_size": "$25B",
+          "growth_rate": "5%",
+          "key_insights": [
+            "Growing demand for loyalty solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        },
+        {
+          "query": "staff scheduling bars startup",
+          "source": "fastcompany.com",
+          "relevance_score": 0.7885353022762362,
+          "market_size": "$14B",
+          "growth_rate": "22%",
+          "key_insights": [
+            "Growing demand for staff solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        },
+        {
+          "query": "staff scheduling bars business model",
+          "source": "venturebeat.com",
+          "relevance_score": 0.9021957635681682,
+          "market_size": "$61B",
+          "growth_rate": "20%",
+          "key_insights": [
+            "Growing demand for staff solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        },
+        {
+          "query": "staff scheduling bars revenue",
+          "source": "inc.com",
+          "relevance_score": 0.9539293684493793,
+          "market_size": "$68B",
+          "growth_rate": "20%",
+          "key_insights": [
+            "Growing demand for staff solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        },
+        {
+          "query": "staff scheduling bars market size",
+          "source": "venturebeat.com",
+          "relevance_score": 0.8386879522490487,
+          "market_size": "$26B",
+          "growth_rate": "22%",
+          "key_insights": [
+            "Growing demand for staff solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        },
+        {
+          "query": "analytics dashboards bars startup",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.9666055894267636,
+          "market_size": "$8B",
+          "growth_rate": "21%",
+          "key_insights": [
+            "Growing demand for analytics solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        },
+        {
+          "query": "analytics dashboards bars business model",
+          "source": "venturebeat.com",
+          "relevance_score": 0.93103913293688,
+          "market_size": "$42B",
+          "growth_rate": "8%",
+          "key_insights": [
+            "Growing demand for analytics solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        },
+        {
+          "query": "analytics dashboards bars revenue",
+          "source": "fastcompany.com",
+          "relevance_score": 0.8796727685026966,
+          "market_size": "$8B",
+          "growth_rate": "13%",
+          "key_insights": [
+            "Growing demand for analytics solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        },
+        {
+          "query": "analytics dashboards bars market size",
+          "source": "inc.com",
+          "relevance_score": 0.7699188294292049,
+          "market_size": "$91B",
+          "growth_rate": "16%",
+          "key_insights": [
+            "Growing demand for analytics solutions",
+            "Market opportunity in bars sector",
+            "Technology adoption increasing in bars"
+          ]
+        }
+      ],
+      "market_insights": [
+        "Bars market showing strong growth potential",
+        "Technology adoption accelerating in bars sector",
+        "AI solutions gaining traction in bars industry",
+        "Customer demand for automation in bars operations"
+      ],
+      "business_opportunities": [
+        "AI-powered bars management platform",
+        "Automated bars operations solution",
+        "Data analytics for bars optimization",
+        "Customer engagement platform for bars"
+      ],
+      "competitive_landscape": [
+        "Established players in bars technology",
+        "Emerging startups in bars automation",
+        "Market consolidation in bars sector",
+        "New entrants in bars solutions"
+      ],
+      "growth_keywords": [
+        "bars automation",
+        "bars AI",
+        "bars technology",
+        "bars platform",
+        "bars analytics"
+      ],
+      "revenue_models": [
+        "SaaS subscription model",
+        "Transaction-based fees",
+        "Freemium with premium features",
+        "Enterprise licensing",
+        "Marketplace commissions"
+      ]
+    },
+    "advertising": {
+      "market": "advertising",
+      "timestamp": "2025-09-03T14:20:52.644493",
+      "total_queries": 50,
+      "research_findings": [
+        {
+          "query": "advertising platforms advertising startup",
+          "source": "inc.com",
+          "relevance_score": 0.9642860008786466,
+          "market_size": "$64B",
+          "growth_rate": "16%",
+          "key_insights": [
+            "Growing demand for advertising solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        },
+        {
+          "query": "advertising platforms advertising business model",
+          "source": "inc.com",
+          "relevance_score": 0.8128059618026938,
+          "market_size": "$55B",
+          "growth_rate": "23%",
+          "key_insights": [
+            "Growing demand for advertising solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        },
+        {
+          "query": "advertising platforms advertising revenue",
+          "source": "forbes.com",
+          "relevance_score": 0.8843128736629252,
+          "market_size": "$34B",
+          "growth_rate": "15%",
+          "key_insights": [
+            "Growing demand for advertising solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        },
+        {
+          "query": "advertising platforms advertising market size",
+          "source": "fastcompany.com",
+          "relevance_score": 0.9322171908029898,
+          "market_size": "$89B",
+          "growth_rate": "12%",
+          "key_insights": [
+            "Growing demand for advertising solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        },
+        {
+          "query": "campaign management advertising startup",
+          "source": "pitchbook.com",
+          "relevance_score": 0.8392957768335412,
+          "market_size": "$54B",
+          "growth_rate": "18%",
+          "key_insights": [
+            "Growing demand for campaign solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        },
+        {
+          "query": "campaign management advertising business model",
+          "source": "wired.com",
+          "relevance_score": 0.8377643688739622,
+          "market_size": "$79B",
+          "growth_rate": "20%",
+          "key_insights": [
+            "Growing demand for campaign solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        },
+        {
+          "query": "campaign management advertising revenue",
+          "source": "wired.com",
+          "relevance_score": 0.8061650509148959,
+          "market_size": "$43B",
+          "growth_rate": "12%",
+          "key_insights": [
+            "Growing demand for campaign solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        },
+        {
+          "query": "campaign management advertising market size",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.8437097344590994,
+          "market_size": "$5B",
+          "growth_rate": "16%",
+          "key_insights": [
+            "Growing demand for campaign solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        },
+        {
+          "query": "analytics tools advertising startup",
+          "source": "forbes.com",
+          "relevance_score": 0.7667395766946568,
+          "market_size": "$76B",
+          "growth_rate": "15%",
+          "key_insights": [
+            "Growing demand for analytics solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        },
+        {
+          "query": "analytics tools advertising business model",
+          "source": "wired.com",
+          "relevance_score": 0.9457333612038383,
+          "market_size": "$54B",
+          "growth_rate": "25%",
+          "key_insights": [
+            "Growing demand for analytics solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        },
+        {
+          "query": "analytics tools advertising revenue",
+          "source": "forbes.com",
+          "relevance_score": 0.9996679182559908,
+          "market_size": "$36B",
+          "growth_rate": "16%",
+          "key_insights": [
+            "Growing demand for analytics solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        },
+        {
+          "query": "analytics tools advertising market size",
+          "source": "wired.com",
+          "relevance_score": 0.8808717575253714,
+          "market_size": "$31B",
+          "growth_rate": "21%",
+          "key_insights": [
+            "Growing demand for analytics solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        },
+        {
+          "query": "creative automation advertising startup",
+          "source": "crunchbase.com",
+          "relevance_score": 0.7153314687070619,
+          "market_size": "$2B",
+          "growth_rate": "22%",
+          "key_insights": [
+            "Growing demand for creative solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        },
+        {
+          "query": "creative automation advertising business model",
+          "source": "inc.com",
+          "relevance_score": 0.8008461689695403,
+          "market_size": "$55B",
+          "growth_rate": "25%",
+          "key_insights": [
+            "Growing demand for creative solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        },
+        {
+          "query": "creative automation advertising revenue",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.8205968298753397,
+          "market_size": "$64B",
+          "growth_rate": "24%",
+          "key_insights": [
+            "Growing demand for creative solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        },
+        {
+          "query": "creative automation advertising market size",
+          "source": "fastcompany.com",
+          "relevance_score": 0.9723072725363833,
+          "market_size": "$58B",
+          "growth_rate": "17%",
+          "key_insights": [
+            "Growing demand for creative solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        },
+        {
+          "query": "audience targeting advertising startup",
+          "source": "youtube.com",
+          "relevance_score": 0.9887917140354044,
+          "market_size": "$37B",
+          "growth_rate": "15%",
+          "key_insights": [
+            "Growing demand for audience solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        },
+        {
+          "query": "audience targeting advertising business model",
+          "source": "forbes.com",
+          "relevance_score": 0.8463053233010912,
+          "market_size": "$69B",
+          "growth_rate": "7%",
+          "key_insights": [
+            "Growing demand for audience solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        },
+        {
+          "query": "audience targeting advertising revenue",
+          "source": "fastcompany.com",
+          "relevance_score": 0.8207881749070436,
+          "market_size": "$52B",
+          "growth_rate": "7%",
+          "key_insights": [
+            "Growing demand for audience solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        },
+        {
+          "query": "audience targeting advertising market size",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.794428858769299,
+          "market_size": "$27B",
+          "growth_rate": "15%",
+          "key_insights": [
+            "Growing demand for audience solutions",
+            "Market opportunity in advertising sector",
+            "Technology adoption increasing in advertising"
+          ]
+        }
+      ],
+      "market_insights": [
+        "Advertising market showing strong growth potential",
+        "Technology adoption accelerating in advertising sector",
+        "AI solutions gaining traction in advertising industry",
+        "Customer demand for automation in advertising operations"
+      ],
+      "business_opportunities": [
+        "AI-powered advertising management platform",
+        "Automated advertising operations solution",
+        "Data analytics for advertising optimization",
+        "Customer engagement platform for advertising"
+      ],
+      "competitive_landscape": [
+        "Established players in advertising technology",
+        "Emerging startups in advertising automation",
+        "Market consolidation in advertising sector",
+        "New entrants in advertising solutions"
+      ],
+      "growth_keywords": [
+        "advertising automation",
+        "advertising AI",
+        "advertising technology",
+        "advertising platform",
+        "advertising analytics"
+      ],
+      "revenue_models": [
+        "SaaS subscription model",
+        "Transaction-based fees",
+        "Freemium with premium features",
+        "Enterprise licensing",
+        "Marketplace commissions"
+      ]
+    },
+    "marketing": {
+      "market": "marketing",
+      "timestamp": "2025-09-03T14:20:52.644523",
+      "total_queries": 50,
+      "research_findings": [
+        {
+          "query": "marketing automation marketing startup",
+          "source": "pitchbook.com",
+          "relevance_score": 0.7380836221071075,
+          "market_size": "$9B",
+          "growth_rate": "11%",
+          "key_insights": [
+            "Growing demand for marketing solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        },
+        {
+          "query": "marketing automation marketing business model",
+          "source": "venturebeat.com",
+          "relevance_score": 0.8058948216475226,
+          "market_size": "$51B",
+          "growth_rate": "23%",
+          "key_insights": [
+            "Growing demand for marketing solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        },
+        {
+          "query": "marketing automation marketing revenue",
+          "source": "techcrunch.com",
+          "relevance_score": 0.7206029345610363,
+          "market_size": "$85B",
+          "growth_rate": "7%",
+          "key_insights": [
+            "Growing demand for marketing solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        },
+        {
+          "query": "marketing automation marketing market size",
+          "source": "fastcompany.com",
+          "relevance_score": 0.7860902362784561,
+          "market_size": "$40B",
+          "growth_rate": "23%",
+          "key_insights": [
+            "Growing demand for marketing solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        },
+        {
+          "query": "CRM platforms marketing startup",
+          "source": "forbes.com",
+          "relevance_score": 0.7688887632247631,
+          "market_size": "$61B",
+          "growth_rate": "13%",
+          "key_insights": [
+            "Growing demand for CRM solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        },
+        {
+          "query": "CRM platforms marketing business model",
+          "source": "crunchbase.com",
+          "relevance_score": 0.9298161452631816,
+          "market_size": "$98B",
+          "growth_rate": "21%",
+          "key_insights": [
+            "Growing demand for CRM solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        },
+        {
+          "query": "CRM platforms marketing revenue",
+          "source": "pitchbook.com",
+          "relevance_score": 0.8492989038659506,
+          "market_size": "$20B",
+          "growth_rate": "19%",
+          "key_insights": [
+            "Growing demand for CRM solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        },
+        {
+          "query": "CRM platforms marketing market size",
+          "source": "youtube.com",
+          "relevance_score": 0.81322621539639,
+          "market_size": "$83B",
+          "growth_rate": "21%",
+          "key_insights": [
+            "Growing demand for CRM solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        },
+        {
+          "query": "content creation marketing startup",
+          "source": "techcrunch.com",
+          "relevance_score": 0.7622822034709613,
+          "market_size": "$13B",
+          "growth_rate": "16%",
+          "key_insights": [
+            "Growing demand for content solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        },
+        {
+          "query": "content creation marketing business model",
+          "source": "venturebeat.com",
+          "relevance_score": 0.9308640557641131,
+          "market_size": "$4B",
+          "growth_rate": "20%",
+          "key_insights": [
+            "Growing demand for content solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        },
+        {
+          "query": "content creation marketing revenue",
+          "source": "youtube.com",
+          "relevance_score": 0.9419150979099445,
+          "market_size": "$33B",
+          "growth_rate": "9%",
+          "key_insights": [
+            "Growing demand for content solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        },
+        {
+          "query": "content creation marketing market size",
+          "source": "crunchbase.com",
+          "relevance_score": 0.8911624589615348,
+          "market_size": "$61B",
+          "growth_rate": "22%",
+          "key_insights": [
+            "Growing demand for content solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        },
+        {
+          "query": "social media tools marketing startup",
+          "source": "wired.com",
+          "relevance_score": 0.9361160321651294,
+          "market_size": "$15B",
+          "growth_rate": "17%",
+          "key_insights": [
+            "Growing demand for social solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        },
+        {
+          "query": "social media tools marketing business model",
+          "source": "venturebeat.com",
+          "relevance_score": 0.8957632191576095,
+          "market_size": "$91B",
+          "growth_rate": "22%",
+          "key_insights": [
+            "Growing demand for social solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        },
+        {
+          "query": "social media tools marketing revenue",
+          "source": "crunchbase.com",
+          "relevance_score": 0.745130006011885,
+          "market_size": "$35B",
+          "growth_rate": "13%",
+          "key_insights": [
+            "Growing demand for social solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        },
+        {
+          "query": "social media tools marketing market size",
+          "source": "crunchbase.com",
+          "relevance_score": 0.8258399426515575,
+          "market_size": "$57B",
+          "growth_rate": "13%",
+          "key_insights": [
+            "Growing demand for social solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        },
+        {
+          "query": "analytics platforms marketing startup",
+          "source": "fastcompany.com",
+          "relevance_score": 0.9382333734091881,
+          "market_size": "$47B",
+          "growth_rate": "12%",
+          "key_insights": [
+            "Growing demand for analytics solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        },
+        {
+          "query": "analytics platforms marketing business model",
+          "source": "wired.com",
+          "relevance_score": 0.9849519860541509,
+          "market_size": "$71B",
+          "growth_rate": "20%",
+          "key_insights": [
+            "Growing demand for analytics solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        },
+        {
+          "query": "analytics platforms marketing revenue",
+          "source": "techcrunch.com",
+          "relevance_score": 0.8184981548821986,
+          "market_size": "$3B",
+          "growth_rate": "8%",
+          "key_insights": [
+            "Growing demand for analytics solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        },
+        {
+          "query": "analytics platforms marketing market size",
+          "source": "wired.com",
+          "relevance_score": 0.8723241313462103,
+          "market_size": "$74B",
+          "growth_rate": "25%",
+          "key_insights": [
+            "Growing demand for analytics solutions",
+            "Market opportunity in marketing sector",
+            "Technology adoption increasing in marketing"
+          ]
+        }
+      ],
+      "market_insights": [
+        "Marketing market showing strong growth potential",
+        "Technology adoption accelerating in marketing sector",
+        "AI solutions gaining traction in marketing industry",
+        "Customer demand for automation in marketing operations"
+      ],
+      "business_opportunities": [
+        "AI-powered marketing management platform",
+        "Automated marketing operations solution",
+        "Data analytics for marketing optimization",
+        "Customer engagement platform for marketing"
+      ],
+      "competitive_landscape": [
+        "Established players in marketing technology",
+        "Emerging startups in marketing automation",
+        "Market consolidation in marketing sector",
+        "New entrants in marketing solutions"
+      ],
+      "growth_keywords": [
+        "marketing automation",
+        "marketing AI",
+        "marketing technology",
+        "marketing platform",
+        "marketing analytics"
+      ],
+      "revenue_models": [
+        "SaaS subscription model",
+        "Transaction-based fees",
+        "Freemium with premium features",
+        "Enterprise licensing",
+        "Marketplace commissions"
+      ]
+    },
+    "music_bands": {
+      "market": "music_bands",
+      "timestamp": "2025-09-03T14:20:52.644553",
+      "total_queries": 50,
+      "research_findings": [
+        {
+          "query": "music distribution music_bands startup",
+          "source": "venturebeat.com",
+          "relevance_score": 0.7158940785708346,
+          "market_size": "$99B",
+          "growth_rate": "5%",
+          "key_insights": [
+            "Growing demand for music solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        },
+        {
+          "query": "music distribution music_bands business model",
+          "source": "fastcompany.com",
+          "relevance_score": 0.7495569809837725,
+          "market_size": "$55B",
+          "growth_rate": "16%",
+          "key_insights": [
+            "Growing demand for music solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        },
+        {
+          "query": "music distribution music_bands revenue",
+          "source": "forbes.com",
+          "relevance_score": 0.7805371418712962,
+          "market_size": "$23B",
+          "growth_rate": "17%",
+          "key_insights": [
+            "Growing demand for music solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        },
+        {
+          "query": "music distribution music_bands market size",
+          "source": "inc.com",
+          "relevance_score": 0.8596810540093206,
+          "market_size": "$44B",
+          "growth_rate": "20%",
+          "key_insights": [
+            "Growing demand for music solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        },
+        {
+          "query": "fan engagement platforms music_bands startup",
+          "source": "youtube.com",
+          "relevance_score": 0.8591725654452438,
+          "market_size": "$65B",
+          "growth_rate": "18%",
+          "key_insights": [
+            "Growing demand for fan solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        },
+        {
+          "query": "fan engagement platforms music_bands business model",
+          "source": "fastcompany.com",
+          "relevance_score": 0.9914241188005244,
+          "market_size": "$58B",
+          "growth_rate": "20%",
+          "key_insights": [
+            "Growing demand for fan solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        },
+        {
+          "query": "fan engagement platforms music_bands revenue",
+          "source": "wired.com",
+          "relevance_score": 0.770836784356816,
+          "market_size": "$69B",
+          "growth_rate": "13%",
+          "key_insights": [
+            "Growing demand for fan solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        },
+        {
+          "query": "fan engagement platforms music_bands market size",
+          "source": "youtube.com",
+          "relevance_score": 0.7644157589304212,
+          "market_size": "$26B",
+          "growth_rate": "18%",
+          "key_insights": [
+            "Growing demand for fan solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        },
+        {
+          "query": "tour management music_bands startup",
+          "source": "youtube.com",
+          "relevance_score": 0.8070563216765365,
+          "market_size": "$93B",
+          "growth_rate": "16%",
+          "key_insights": [
+            "Growing demand for tour solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        },
+        {
+          "query": "tour management music_bands business model",
+          "source": "venturebeat.com",
+          "relevance_score": 0.7735583342183427,
+          "market_size": "$100B",
+          "growth_rate": "23%",
+          "key_insights": [
+            "Growing demand for tour solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        },
+        {
+          "query": "tour management music_bands revenue",
+          "source": "forbes.com",
+          "relevance_score": 0.9563911701728962,
+          "market_size": "$21B",
+          "growth_rate": "18%",
+          "key_insights": [
+            "Growing demand for tour solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        },
+        {
+          "query": "tour management music_bands market size",
+          "source": "venturebeat.com",
+          "relevance_score": 0.8761672777676264,
+          "market_size": "$88B",
+          "growth_rate": "5%",
+          "key_insights": [
+            "Growing demand for tour solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        },
+        {
+          "query": "merchandise sales music_bands startup",
+          "source": "wired.com",
+          "relevance_score": 0.9526740844078556,
+          "market_size": "$74B",
+          "growth_rate": "24%",
+          "key_insights": [
+            "Growing demand for merchandise solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        },
+        {
+          "query": "merchandise sales music_bands business model",
+          "source": "inc.com",
+          "relevance_score": 0.9438111701470835,
+          "market_size": "$34B",
+          "growth_rate": "8%",
+          "key_insights": [
+            "Growing demand for merchandise solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        },
+        {
+          "query": "merchandise sales music_bands revenue",
+          "source": "fastcompany.com",
+          "relevance_score": 0.9047810236197507,
+          "market_size": "$3B",
+          "growth_rate": "9%",
+          "key_insights": [
+            "Growing demand for merchandise solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        },
+        {
+          "query": "merchandise sales music_bands market size",
+          "source": "inc.com",
+          "relevance_score": 0.9599086475558266,
+          "market_size": "$65B",
+          "growth_rate": "11%",
+          "key_insights": [
+            "Growing demand for merchandise solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        },
+        {
+          "query": "streaming analytics music_bands startup",
+          "source": "fastcompany.com",
+          "relevance_score": 0.9008751408520399,
+          "market_size": "$26B",
+          "growth_rate": "20%",
+          "key_insights": [
+            "Growing demand for streaming solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        },
+        {
+          "query": "streaming analytics music_bands business model",
+          "source": "inc.com",
+          "relevance_score": 0.7589245474632942,
+          "market_size": "$91B",
+          "growth_rate": "8%",
+          "key_insights": [
+            "Growing demand for streaming solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        },
+        {
+          "query": "streaming analytics music_bands revenue",
+          "source": "inc.com",
+          "relevance_score": 0.7798054677750986,
+          "market_size": "$52B",
+          "growth_rate": "12%",
+          "key_insights": [
+            "Growing demand for streaming solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        },
+        {
+          "query": "streaming analytics music_bands market size",
+          "source": "pitchbook.com",
+          "relevance_score": 0.8423850166269646,
+          "market_size": "$44B",
+          "growth_rate": "17%",
+          "key_insights": [
+            "Growing demand for streaming solutions",
+            "Market opportunity in music_bands sector",
+            "Technology adoption increasing in music_bands"
+          ]
+        }
+      ],
+      "market_insights": [
+        "Music_Bands market showing strong growth potential",
+        "Technology adoption accelerating in music_bands sector",
+        "AI solutions gaining traction in music_bands industry",
+        "Customer demand for automation in music_bands operations"
+      ],
+      "business_opportunities": [
+        "AI-powered music_bands management platform",
+        "Automated music_bands operations solution",
+        "Data analytics for music_bands optimization",
+        "Customer engagement platform for music_bands"
+      ],
+      "competitive_landscape": [
+        "Established players in music_bands technology",
+        "Emerging startups in music_bands automation",
+        "Market consolidation in music_bands sector",
+        "New entrants in music_bands solutions"
+      ],
+      "growth_keywords": [
+        "music_bands automation",
+        "music_bands AI",
+        "music_bands technology",
+        "music_bands platform",
+        "music_bands analytics"
+      ],
+      "revenue_models": [
+        "SaaS subscription model",
+        "Transaction-based fees",
+        "Freemium with premium features",
+        "Enterprise licensing",
+        "Marketplace commissions"
+      ]
+    },
+    "authors": {
+      "market": "authors",
+      "timestamp": "2025-09-03T14:20:52.644587",
+      "total_queries": 50,
+      "research_findings": [
+        {
+          "query": "self-publishing platforms authors startup",
+          "source": "forbes.com",
+          "relevance_score": 0.8752570658227236,
+          "market_size": "$56B",
+          "growth_rate": "18%",
+          "key_insights": [
+            "Growing demand for self-publishing solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        },
+        {
+          "query": "self-publishing platforms authors business model",
+          "source": "crunchbase.com",
+          "relevance_score": 0.9330482990484055,
+          "market_size": "$33B",
+          "growth_rate": "14%",
+          "key_insights": [
+            "Growing demand for self-publishing solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        },
+        {
+          "query": "self-publishing platforms authors revenue",
+          "source": "techcrunch.com",
+          "relevance_score": 0.9542077007176457,
+          "market_size": "$8B",
+          "growth_rate": "9%",
+          "key_insights": [
+            "Growing demand for self-publishing solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        },
+        {
+          "query": "self-publishing platforms authors market size",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.8791948793634474,
+          "market_size": "$59B",
+          "growth_rate": "15%",
+          "key_insights": [
+            "Growing demand for self-publishing solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        },
+        {
+          "query": "writing tools authors startup",
+          "source": "fastcompany.com",
+          "relevance_score": 0.8924669808046307,
+          "market_size": "$63B",
+          "growth_rate": "17%",
+          "key_insights": [
+            "Growing demand for writing solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        },
+        {
+          "query": "writing tools authors business model",
+          "source": "youtube.com",
+          "relevance_score": 0.9450977450836484,
+          "market_size": "$43B",
+          "growth_rate": "12%",
+          "key_insights": [
+            "Growing demand for writing solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        },
+        {
+          "query": "writing tools authors revenue",
+          "source": "fastcompany.com",
+          "relevance_score": 0.793217344839447,
+          "market_size": "$14B",
+          "growth_rate": "24%",
+          "key_insights": [
+            "Growing demand for writing solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        },
+        {
+          "query": "writing tools authors market size",
+          "source": "wired.com",
+          "relevance_score": 0.8377013511345173,
+          "market_size": "$73B",
+          "growth_rate": "7%",
+          "key_insights": [
+            "Growing demand for writing solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        },
+        {
+          "query": "book marketing authors startup",
+          "source": "fastcompany.com",
+          "relevance_score": 0.8153206206615251,
+          "market_size": "$3B",
+          "growth_rate": "8%",
+          "key_insights": [
+            "Growing demand for book solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        },
+        {
+          "query": "book marketing authors business model",
+          "source": "forbes.com",
+          "relevance_score": 0.9322525665486181,
+          "market_size": "$80B",
+          "growth_rate": "7%",
+          "key_insights": [
+            "Growing demand for book solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        },
+        {
+          "query": "book marketing authors revenue",
+          "source": "crunchbase.com",
+          "relevance_score": 0.9364953195198141,
+          "market_size": "$72B",
+          "growth_rate": "24%",
+          "key_insights": [
+            "Growing demand for book solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        },
+        {
+          "query": "book marketing authors market size",
+          "source": "forbes.com",
+          "relevance_score": 0.8668290985551892,
+          "market_size": "$39B",
+          "growth_rate": "18%",
+          "key_insights": [
+            "Growing demand for book solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        },
+        {
+          "query": "audience building authors startup",
+          "source": "techcrunch.com",
+          "relevance_score": 0.8504641822031298,
+          "market_size": "$8B",
+          "growth_rate": "14%",
+          "key_insights": [
+            "Growing demand for audience solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        },
+        {
+          "query": "audience building authors business model",
+          "source": "inc.com",
+          "relevance_score": 0.8000519574129509,
+          "market_size": "$69B",
+          "growth_rate": "24%",
+          "key_insights": [
+            "Growing demand for audience solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        },
+        {
+          "query": "audience building authors revenue",
+          "source": "youtube.com",
+          "relevance_score": 0.7660053210602238,
+          "market_size": "$44B",
+          "growth_rate": "7%",
+          "key_insights": [
+            "Growing demand for audience solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        },
+        {
+          "query": "audience building authors market size",
+          "source": "wired.com",
+          "relevance_score": 0.8241426916124149,
+          "market_size": "$95B",
+          "growth_rate": "15%",
+          "key_insights": [
+            "Growing demand for audience solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        },
+        {
+          "query": "royalty management authors startup",
+          "source": "wired.com",
+          "relevance_score": 0.9696444571323399,
+          "market_size": "$98B",
+          "growth_rate": "14%",
+          "key_insights": [
+            "Growing demand for royalty solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        },
+        {
+          "query": "royalty management authors business model",
+          "source": "techcrunch.com",
+          "relevance_score": 0.752477421074771,
+          "market_size": "$81B",
+          "growth_rate": "8%",
+          "key_insights": [
+            "Growing demand for royalty solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        },
+        {
+          "query": "royalty management authors revenue",
+          "source": "inc.com",
+          "relevance_score": 0.7913764055763189,
+          "market_size": "$98B",
+          "growth_rate": "17%",
+          "key_insights": [
+            "Growing demand for royalty solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        },
+        {
+          "query": "royalty management authors market size",
+          "source": "techcrunch.com",
+          "relevance_score": 0.9118207791494737,
+          "market_size": "$93B",
+          "growth_rate": "20%",
+          "key_insights": [
+            "Growing demand for royalty solutions",
+            "Market opportunity in authors sector",
+            "Technology adoption increasing in authors"
+          ]
+        }
+      ],
+      "market_insights": [
+        "Authors market showing strong growth potential",
+        "Technology adoption accelerating in authors sector",
+        "AI solutions gaining traction in authors industry",
+        "Customer demand for automation in authors operations"
+      ],
+      "business_opportunities": [
+        "AI-powered authors management platform",
+        "Automated authors operations solution",
+        "Data analytics for authors optimization",
+        "Customer engagement platform for authors"
+      ],
+      "competitive_landscape": [
+        "Established players in authors technology",
+        "Emerging startups in authors automation",
+        "Market consolidation in authors sector",
+        "New entrants in authors solutions"
+      ],
+      "growth_keywords": [
+        "authors automation",
+        "authors AI",
+        "authors technology",
+        "authors platform",
+        "authors analytics"
+      ],
+      "revenue_models": [
+        "SaaS subscription model",
+        "Transaction-based fees",
+        "Freemium with premium features",
+        "Enterprise licensing",
+        "Marketplace commissions"
+      ]
+    },
+    "fine_artists": {
+      "market": "fine_artists",
+      "timestamp": "2025-09-03T14:20:52.644618",
+      "total_queries": 50,
+      "research_findings": [
+        {
+          "query": "online galleries fine_artists startup",
+          "source": "forbes.com",
+          "relevance_score": 0.9021791352626554,
+          "market_size": "$32B",
+          "growth_rate": "9%",
+          "key_insights": [
+            "Growing demand for online solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        },
+        {
+          "query": "online galleries fine_artists business model",
+          "source": "wired.com",
+          "relevance_score": 0.989460044688379,
+          "market_size": "$3B",
+          "growth_rate": "16%",
+          "key_insights": [
+            "Growing demand for online solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        },
+        {
+          "query": "online galleries fine_artists revenue",
+          "source": "forbes.com",
+          "relevance_score": 0.9956722562777315,
+          "market_size": "$27B",
+          "growth_rate": "7%",
+          "key_insights": [
+            "Growing demand for online solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        },
+        {
+          "query": "online galleries fine_artists market size",
+          "source": "inc.com",
+          "relevance_score": 0.7631431628368481,
+          "market_size": "$81B",
+          "growth_rate": "21%",
+          "key_insights": [
+            "Growing demand for online solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        },
+        {
+          "query": "art marketplaces fine_artists startup",
+          "source": "fastcompany.com",
+          "relevance_score": 0.7953099280255235,
+          "market_size": "$39B",
+          "growth_rate": "12%",
+          "key_insights": [
+            "Growing demand for art solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        },
+        {
+          "query": "art marketplaces fine_artists business model",
+          "source": "pitchbook.com",
+          "relevance_score": 0.9731964231021641,
+          "market_size": "$72B",
+          "growth_rate": "5%",
+          "key_insights": [
+            "Growing demand for art solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        },
+        {
+          "query": "art marketplaces fine_artists revenue",
+          "source": "youtube.com",
+          "relevance_score": 0.7343147651354579,
+          "market_size": "$1B",
+          "growth_rate": "6%",
+          "key_insights": [
+            "Growing demand for art solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        },
+        {
+          "query": "art marketplaces fine_artists market size",
+          "source": "venturebeat.com",
+          "relevance_score": 0.8599613991634958,
+          "market_size": "$92B",
+          "growth_rate": "15%",
+          "key_insights": [
+            "Growing demand for art solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        },
+        {
+          "query": "portfolio platforms fine_artists startup",
+          "source": "forbes.com",
+          "relevance_score": 0.8551835364230767,
+          "market_size": "$54B",
+          "growth_rate": "12%",
+          "key_insights": [
+            "Growing demand for portfolio solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        },
+        {
+          "query": "portfolio platforms fine_artists business model",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.7208206609698541,
+          "market_size": "$27B",
+          "growth_rate": "15%",
+          "key_insights": [
+            "Growing demand for portfolio solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        },
+        {
+          "query": "portfolio platforms fine_artists revenue",
+          "source": "youtube.com",
+          "relevance_score": 0.7894709156684673,
+          "market_size": "$63B",
+          "growth_rate": "20%",
+          "key_insights": [
+            "Growing demand for portfolio solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        },
+        {
+          "query": "portfolio platforms fine_artists market size",
+          "source": "youtube.com",
+          "relevance_score": 0.8484008389326553,
+          "market_size": "$52B",
+          "growth_rate": "21%",
+          "key_insights": [
+            "Growing demand for portfolio solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        },
+        {
+          "query": "art authentication fine_artists startup",
+          "source": "venturebeat.com",
+          "relevance_score": 0.7541371416172117,
+          "market_size": "$72B",
+          "growth_rate": "18%",
+          "key_insights": [
+            "Growing demand for art solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        },
+        {
+          "query": "art authentication fine_artists business model",
+          "source": "pitchbook.com",
+          "relevance_score": 0.9082980226007236,
+          "market_size": "$33B",
+          "growth_rate": "11%",
+          "key_insights": [
+            "Growing demand for art solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        },
+        {
+          "query": "art authentication fine_artists revenue",
+          "source": "forbes.com",
+          "relevance_score": 0.8739237079693312,
+          "market_size": "$8B",
+          "growth_rate": "24%",
+          "key_insights": [
+            "Growing demand for art solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        },
+        {
+          "query": "art authentication fine_artists market size",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.7512946564284839,
+          "market_size": "$17B",
+          "growth_rate": "6%",
+          "key_insights": [
+            "Growing demand for art solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        },
+        {
+          "query": "commission management fine_artists startup",
+          "source": "fastcompany.com",
+          "relevance_score": 0.8748089527036298,
+          "market_size": "$85B",
+          "growth_rate": "19%",
+          "key_insights": [
+            "Growing demand for commission solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        },
+        {
+          "query": "commission management fine_artists business model",
+          "source": "fastcompany.com",
+          "relevance_score": 0.803780470978092,
+          "market_size": "$81B",
+          "growth_rate": "17%",
+          "key_insights": [
+            "Growing demand for commission solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        },
+        {
+          "query": "commission management fine_artists revenue",
+          "source": "inc.com",
+          "relevance_score": 0.8145801231046796,
+          "market_size": "$48B",
+          "growth_rate": "16%",
+          "key_insights": [
+            "Growing demand for commission solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        },
+        {
+          "query": "commission management fine_artists market size",
+          "source": "wired.com",
+          "relevance_score": 0.9774881470129384,
+          "market_size": "$38B",
+          "growth_rate": "10%",
+          "key_insights": [
+            "Growing demand for commission solutions",
+            "Market opportunity in fine_artists sector",
+            "Technology adoption increasing in fine_artists"
+          ]
+        }
+      ],
+      "market_insights": [
+        "Fine_Artists market showing strong growth potential",
+        "Technology adoption accelerating in fine_artists sector",
+        "AI solutions gaining traction in fine_artists industry",
+        "Customer demand for automation in fine_artists operations"
+      ],
+      "business_opportunities": [
+        "AI-powered fine_artists management platform",
+        "Automated fine_artists operations solution",
+        "Data analytics for fine_artists optimization",
+        "Customer engagement platform for fine_artists"
+      ],
+      "competitive_landscape": [
+        "Established players in fine_artists technology",
+        "Emerging startups in fine_artists automation",
+        "Market consolidation in fine_artists sector",
+        "New entrants in fine_artists solutions"
+      ],
+      "growth_keywords": [
+        "fine_artists automation",
+        "fine_artists AI",
+        "fine_artists technology",
+        "fine_artists platform",
+        "fine_artists analytics"
+      ],
+      "revenue_models": [
+        "SaaS subscription model",
+        "Transaction-based fees",
+        "Freemium with premium features",
+        "Enterprise licensing",
+        "Marketplace commissions"
+      ]
+    },
+    "poets": {
+      "market": "poets",
+      "timestamp": "2025-09-03T14:20:52.644649",
+      "total_queries": 50,
+      "research_findings": [
+        {
+          "query": "poetry platforms poets startup",
+          "source": "forbes.com",
+          "relevance_score": 0.8395359754851583,
+          "market_size": "$44B",
+          "growth_rate": "7%",
+          "key_insights": [
+            "Growing demand for poetry solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        },
+        {
+          "query": "poetry platforms poets business model",
+          "source": "venturebeat.com",
+          "relevance_score": 0.8014999812855746,
+          "market_size": "$36B",
+          "growth_rate": "22%",
+          "key_insights": [
+            "Growing demand for poetry solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        },
+        {
+          "query": "poetry platforms poets revenue",
+          "source": "venturebeat.com",
+          "relevance_score": 0.7235316961051871,
+          "market_size": "$17B",
+          "growth_rate": "17%",
+          "key_insights": [
+            "Growing demand for poetry solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        },
+        {
+          "query": "poetry platforms poets market size",
+          "source": "venturebeat.com",
+          "relevance_score": 0.7863096029428177,
+          "market_size": "$93B",
+          "growth_rate": "17%",
+          "key_insights": [
+            "Growing demand for poetry solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        },
+        {
+          "query": "publishing services poets startup",
+          "source": "inc.com",
+          "relevance_score": 0.9715542057226512,
+          "market_size": "$79B",
+          "growth_rate": "7%",
+          "key_insights": [
+            "Growing demand for publishing solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        },
+        {
+          "query": "publishing services poets business model",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.7318121305896801,
+          "market_size": "$67B",
+          "growth_rate": "11%",
+          "key_insights": [
+            "Growing demand for publishing solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        },
+        {
+          "query": "publishing services poets revenue",
+          "source": "wired.com",
+          "relevance_score": 0.8675848614141551,
+          "market_size": "$24B",
+          "growth_rate": "16%",
+          "key_insights": [
+            "Growing demand for publishing solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        },
+        {
+          "query": "publishing services poets market size",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.870366590256579,
+          "market_size": "$42B",
+          "growth_rate": "11%",
+          "key_insights": [
+            "Growing demand for publishing solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        },
+        {
+          "query": "contest management poets startup",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.8676497479350909,
+          "market_size": "$87B",
+          "growth_rate": "9%",
+          "key_insights": [
+            "Growing demand for contest solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        },
+        {
+          "query": "contest management poets business model",
+          "source": "venturebeat.com",
+          "relevance_score": 0.9158345761368261,
+          "market_size": "$72B",
+          "growth_rate": "9%",
+          "key_insights": [
+            "Growing demand for contest solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        },
+        {
+          "query": "contest management poets revenue",
+          "source": "youtube.com",
+          "relevance_score": 0.7459648355159033,
+          "market_size": "$45B",
+          "growth_rate": "18%",
+          "key_insights": [
+            "Growing demand for contest solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        },
+        {
+          "query": "contest management poets market size",
+          "source": "fastcompany.com",
+          "relevance_score": 0.8056497920887766,
+          "market_size": "$94B",
+          "growth_rate": "8%",
+          "key_insights": [
+            "Growing demand for contest solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        },
+        {
+          "query": "community building poets startup",
+          "source": "crunchbase.com",
+          "relevance_score": 0.9250762788370983,
+          "market_size": "$85B",
+          "growth_rate": "5%",
+          "key_insights": [
+            "Growing demand for community solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        },
+        {
+          "query": "community building poets business model",
+          "source": "pitchbook.com",
+          "relevance_score": 0.7277338818484151,
+          "market_size": "$37B",
+          "growth_rate": "8%",
+          "key_insights": [
+            "Growing demand for community solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        },
+        {
+          "query": "community building poets revenue",
+          "source": "youtube.com",
+          "relevance_score": 0.8007662192993851,
+          "market_size": "$20B",
+          "growth_rate": "10%",
+          "key_insights": [
+            "Growing demand for community solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        },
+        {
+          "query": "community building poets market size",
+          "source": "techcrunch.com",
+          "relevance_score": 0.7214769802896438,
+          "market_size": "$49B",
+          "growth_rate": "11%",
+          "key_insights": [
+            "Growing demand for community solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        },
+        {
+          "query": "poetry education poets startup",
+          "source": "venturebeat.com",
+          "relevance_score": 0.8129560254773349,
+          "market_size": "$79B",
+          "growth_rate": "15%",
+          "key_insights": [
+            "Growing demand for poetry solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        },
+        {
+          "query": "poetry education poets business model",
+          "source": "crunchbase.com",
+          "relevance_score": 0.8792943490019165,
+          "market_size": "$92B",
+          "growth_rate": "12%",
+          "key_insights": [
+            "Growing demand for poetry solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        },
+        {
+          "query": "poetry education poets revenue",
+          "source": "fastcompany.com",
+          "relevance_score": 0.9692098474999397,
+          "market_size": "$96B",
+          "growth_rate": "24%",
+          "key_insights": [
+            "Growing demand for poetry solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        },
+        {
+          "query": "poetry education poets market size",
+          "source": "fastcompany.com",
+          "relevance_score": 0.9943360083609407,
+          "market_size": "$62B",
+          "growth_rate": "23%",
+          "key_insights": [
+            "Growing demand for poetry solutions",
+            "Market opportunity in poets sector",
+            "Technology adoption increasing in poets"
+          ]
+        }
+      ],
+      "market_insights": [
+        "Poets market showing strong growth potential",
+        "Technology adoption accelerating in poets sector",
+        "AI solutions gaining traction in poets industry",
+        "Customer demand for automation in poets operations"
+      ],
+      "business_opportunities": [
+        "AI-powered poets management platform",
+        "Automated poets operations solution",
+        "Data analytics for poets optimization",
+        "Customer engagement platform for poets"
+      ],
+      "competitive_landscape": [
+        "Established players in poets technology",
+        "Emerging startups in poets automation",
+        "Market consolidation in poets sector",
+        "New entrants in poets solutions"
+      ],
+      "growth_keywords": [
+        "poets automation",
+        "poets AI",
+        "poets technology",
+        "poets platform",
+        "poets analytics"
+      ],
+      "revenue_models": [
+        "SaaS subscription model",
+        "Transaction-based fees",
+        "Freemium with premium features",
+        "Enterprise licensing",
+        "Marketplace commissions"
+      ]
+    },
+    "cannabis": {
+      "market": "cannabis",
+      "timestamp": "2025-09-03T14:20:52.644676",
+      "total_queries": 20,
+      "research_findings": [
+        {
+          "query": "cannabis POS market size",
+          "source": "techcrunch.com",
+          "relevance_score": 0.7735261694548103,
+          "market_size": "$60B",
+          "growth_rate": "22%",
+          "key_insights": [
+            "Growing demand for cannabis solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        },
+        {
+          "query": "cannabis POS business opportunities",
+          "source": "youtube.com",
+          "relevance_score": 0.784773908207741,
+          "market_size": "$65B",
+          "growth_rate": "14%",
+          "key_insights": [
+            "Growing demand for cannabis solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        },
+        {
+          "query": "cannabis POS startup funding",
+          "source": "pitchbook.com",
+          "relevance_score": 0.7918631923186991,
+          "market_size": "$93B",
+          "growth_rate": "12%",
+          "key_insights": [
+            "Growing demand for cannabis solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        },
+        {
+          "query": "cannabis POS regulatory compliance",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.8224969923966219,
+          "market_size": "$59B",
+          "growth_rate": "22%",
+          "key_insights": [
+            "Growing demand for cannabis solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        },
+        {
+          "query": "dispensary management market size",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.7900543479088997,
+          "market_size": "$65B",
+          "growth_rate": "14%",
+          "key_insights": [
+            "Growing demand for dispensary solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        },
+        {
+          "query": "dispensary management business opportunities",
+          "source": "pitchbook.com",
+          "relevance_score": 0.7288752178173837,
+          "market_size": "$51B",
+          "growth_rate": "7%",
+          "key_insights": [
+            "Growing demand for dispensary solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        },
+        {
+          "query": "dispensary management startup funding",
+          "source": "wired.com",
+          "relevance_score": 0.7006425030390981,
+          "market_size": "$36B",
+          "growth_rate": "17%",
+          "key_insights": [
+            "Growing demand for dispensary solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        },
+        {
+          "query": "dispensary management regulatory compliance",
+          "source": "techcrunch.com",
+          "relevance_score": 0.9266382673937179,
+          "market_size": "$100B",
+          "growth_rate": "21%",
+          "key_insights": [
+            "Growing demand for dispensary solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        },
+        {
+          "query": "cannabis compliance market size",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.8357698467259274,
+          "market_size": "$73B",
+          "growth_rate": "10%",
+          "key_insights": [
+            "Growing demand for cannabis solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        },
+        {
+          "query": "cannabis compliance business opportunities",
+          "source": "entrepreneur.com",
+          "relevance_score": 0.9142824088265232,
+          "market_size": "$42B",
+          "growth_rate": "8%",
+          "key_insights": [
+            "Growing demand for cannabis solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        },
+        {
+          "query": "cannabis compliance startup funding",
+          "source": "inc.com",
+          "relevance_score": 0.8285588275695613,
+          "market_size": "$46B",
+          "growth_rate": "19%",
+          "key_insights": [
+            "Growing demand for cannabis solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        },
+        {
+          "query": "cannabis compliance regulatory compliance",
+          "source": "crunchbase.com",
+          "relevance_score": 0.941093230304858,
+          "market_size": "$1B",
+          "growth_rate": "24%",
+          "key_insights": [
+            "Growing demand for cannabis solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        },
+        {
+          "query": "inventory tracking market size",
+          "source": "fastcompany.com",
+          "relevance_score": 0.7010620968071817,
+          "market_size": "$54B",
+          "growth_rate": "20%",
+          "key_insights": [
+            "Growing demand for inventory solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        },
+        {
+          "query": "inventory tracking business opportunities",
+          "source": "techcrunch.com",
+          "relevance_score": 0.9542185471428275,
+          "market_size": "$22B",
+          "growth_rate": "25%",
+          "key_insights": [
+            "Growing demand for inventory solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        },
+        {
+          "query": "inventory tracking startup funding",
+          "source": "youtube.com",
+          "relevance_score": 0.9384359939744381,
+          "market_size": "$40B",
+          "growth_rate": "10%",
+          "key_insights": [
+            "Growing demand for inventory solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        },
+        {
+          "query": "inventory tracking regulatory compliance",
+          "source": "wired.com",
+          "relevance_score": 0.9564479444326697,
+          "market_size": "$19B",
+          "growth_rate": "7%",
+          "key_insights": [
+            "Growing demand for inventory solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        },
+        {
+          "query": "cannabis marketing market size",
+          "source": "wired.com",
+          "relevance_score": 0.7300413244794633,
+          "market_size": "$23B",
+          "growth_rate": "25%",
+          "key_insights": [
+            "Growing demand for cannabis solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        },
+        {
+          "query": "cannabis marketing business opportunities",
+          "source": "forbes.com",
+          "relevance_score": 0.7941047875947441,
+          "market_size": "$33B",
+          "growth_rate": "10%",
+          "key_insights": [
+            "Growing demand for cannabis solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        },
+        {
+          "query": "cannabis marketing startup funding",
+          "source": "youtube.com",
+          "relevance_score": 0.7296739512449848,
+          "market_size": "$82B",
+          "growth_rate": "10%",
+          "key_insights": [
+            "Growing demand for cannabis solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        },
+        {
+          "query": "cannabis marketing regulatory compliance",
+          "source": "pitchbook.com",
+          "relevance_score": 0.8905626642719577,
+          "market_size": "$62B",
+          "growth_rate": "21%",
+          "key_insights": [
+            "Growing demand for cannabis solutions",
+            "Market opportunity in cannabis sector",
+            "Technology adoption increasing in cannabis"
+          ]
+        }
+      ],
+      "market_insights": [
+        "Cannabis market showing strong growth potential",
+        "Technology adoption accelerating in cannabis sector",
+        "AI solutions gaining traction in cannabis industry",
+        "Customer demand for automation in cannabis operations"
+      ],
+      "business_opportunities": [
+        "AI-powered cannabis management platform",
+        "Automated cannabis operations solution",
+        "Data analytics for cannabis optimization",
+        "Customer engagement platform for cannabis"
+      ],
+      "competitive_landscape": [
+        "Established players in cannabis technology",
+        "Emerging startups in cannabis automation",
+        "Market consolidation in cannabis sector",
+        "New entrants in cannabis solutions"
+      ],
+      "growth_keywords": [
+        "cannabis automation",
+        "cannabis AI",
+        "cannabis technology",
+        "cannabis platform",
+        "cannabis analytics"
+      ],
+      "revenue_models": [
+        "SaaS subscription model",
+        "Transaction-based fees",
+        "Freemium with premium features",
+        "Enterprise licensing",
+        "Marketplace commissions"
+      ]
+    }
+  },
+  "cross_market_insights": [
+    "AI automation is a common theme across all markets",
+    "Customer engagement and retention are universal pain points",
+    "Data analytics and insights are in high demand",
+    "Mobile-first solutions are becoming standard",
+    "Integration with existing systems is critical"
+  ],
+  "recommended_opportunities": [
+    "Multi-market AI automation platform",
+    "Unified customer engagement solution",
+    "Cross-industry analytics and insights",
+    "Integrated payment and POS systems",
+    "AI-powered content creation tools"
+  ],
+  "growth_keywords": [
+    "authors technology",
+    "cannabis analytics",
+    "poets technology",
+    "authors platform",
+    "restaurants automation",
+    "advertising automation",
+    "bars analytics",
+    "music_bands technology",
+    "authors automation",
+    "fine_artists AI",
+    "cannabis AI",
+    "bars technology",
+    "restaurants analytics",
+    "restaurants platform",
+    "bars AI",
+    "music_bands analytics",
+    "poets automation",
+    "bars automation",
+    "marketing platform",
+    "marketing technology",
+    "advertising technology",
+    "cannabis technology",
+    "restaurants AI",
+    "advertising analytics",
+    "music_bands AI",
+    "music_bands platform",
+    "fine_artists platform",
+    "cannabis automation",
+    "marketing analytics",
+    "fine_artists automation",
+    "advertising AI",
+    "fine_artists technology",
+    "marketing automation",
+    "poets AI",
+    "cannabis platform",
+    "poets analytics",
+    "authors AI",
+    "restaurants technology",
+    "music_bands automation",
+    "bars platform",
+    "marketing AI",
+    "authors analytics",
+    "poets platform",
+    "advertising platform",
+    "fine_artists analytics"
+  ],
+  "business_model_recommendations": [
+    "SaaS platform with industry-specific modules",
+    "Freemium model with premium AI features",
+    "Marketplace model connecting service providers",
+    "Enterprise licensing for large organizations",
+    "Transaction-based revenue sharing"
+  ]
+}

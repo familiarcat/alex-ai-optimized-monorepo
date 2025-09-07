@@ -1,0 +1,10 @@
+{
+  "description": "Multi-system integration workflow",
+  "components": [
+    "supabase",
+    "n8n",
+    "claude",
+    "monitoring"
+  ],
+  "status": "created"
+}

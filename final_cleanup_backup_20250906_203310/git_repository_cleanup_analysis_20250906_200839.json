@@ -1,0 +1,218 @@
+{
+  "analysis_timestamp": "2025-09-06T20:08:39.503015",
+  "project_root": ".",
+  "git_repositories": {
+    "main": {
+      "path": ".",
+      "relative_path": "main",
+      "is_main": true,
+      "git_dir": ".git",
+      "status": "?? git_repository_cleanup_analysis.py\n?? mcp-memory-optimization-milestone-v1.0-20250906_054431/\n",
+      "branches": "  alex-ai-job-search-app\n  main\n* mcp-memory-optimization-milestone\n",
+      "recent_commits": "2006923 MCP Memory Optimization Milestone v1.0 - Clean Implementation\nb964ff5 Add git remote setup script for milestone push\nd1f964d Final commit: Alex AI Credential Security Milestone v1.0\nf77e6f0 Alex AI Credential Security Milestone v1.0\nf1d6df5 \ud83d\ude80 MILESTONE: Secure n8n Integration & Production Deployment v1.1\n477a3d6 \ud83c\udfaf MILESTONE: Humanistic UI Transformation & Repository Cleanup\n657c069 \ud83d\udccb Add comprehensive milestone documentation for Alex AI Job Search System v1.0.0\n98467f3 \ud83d\ude80 MILESTONE: Alex AI Job Search System with Crew Analysis Integration\ncaf232a \ud83d\udccb Add comprehensive milestone documentation for Alex AI Job Search System v1.0\n38d23e2 \ud83d\ude80 MILESTONE: Alex AI Job Search System - Complete Next.js Application\n",
+      "remotes": "origin\thttps://github.com/familiarcat/musician-show-tour-app.git (fetch)\norigin\thttps://github.com/familiarcat/musician-show-tour-app.git (push)\n",
+      "file_count": 1271,
+      "directory_count": 223,
+      "has_uncommitted_changes": true,
+      "has_remotes": true
+    },
+    "alex-ai-job-search": {
+      "path": "alex-ai-job-search",
+      "relative_path": "alex-ai-job-search",
+      "is_main": false,
+      "git_dir": "alex-ai-job-search/.git",
+      "status": " D MILESTONE_v1.2_SUMMARY.md\n M package-lock.json\n M package.json\n M scripts/setup-alex-ai-database.js\n M src/app/page.tsx\n M src/lib/alex-ai.ts\n?? AUTOMATION_COMPLETE_SUMMARY.md\n?? MANUAL_WORKFLOW_ACTIVATION.md\n?? MILESTONE_v1.3_SUMMARY.md\n?? N8N_INTEGRATION_GUIDE.md\n?? N8N_WORKFLOW_ACTIVATION_GUIDE.md\n?? N8N_WORKFLOW_DEPLOYMENT_INSTRUCTIONS.md\n?? UNIFIED_DATA_ARCHITECTURE_SUMMARY.md\n?? activate-n8n-workflows.sh\n?? activate-workflows.js\n?? automate-production-switch.js\n?? automate-unified-deployment.sh\n?? automated-manual-guide.js\n?? check-webhook-urls.js\n?? create-unified-solution.js\n?? create-webhook-proxy.js\n?? deploy-milestone-v1.3.sh\n?? deploy-n8n-workflows.sh\n?? deploy-supabase-schema.js\n?? deploy-to-production.sh\n?? deploy-workflows-automated.js\n?? deploy-workflows-simple.js\n?? fix-webhook-config.js\n?? force-production-activation.js\n?? install-proxy.sh\n?? n8n-push-results.json\n?? n8n-webhook-proxy.js\n?? n8n-workflow-contacts-optimized.json\n?? n8n-workflow-contacts.json\n?? n8n-workflow-job-opportunities-optimized.json\n?? n8n-workflow-job-opportunities.json\n?? n8n-workflow-mcp-request-optimized.json\n?? n8n-workflow-mcp-request.json\n?? n8n-workflow-resume-analysis-optimized.json\n?? n8n-workflow-resume-analysis.json\n?? open-workflow-editors.sh\n?? proxy-package.json\n?? proxy.log\n?? push-workflows-final.js\n?? push-workflows-fixed.js\n?? push-workflows-to-n8n.js\n?? setup-unified-data.sh\n?? src/components/DataSyncDashboard.tsx\n?? src/components/SystemMonitor.tsx\n?? src/lib/mcp-integration.ts\n?? src/lib/n8n-sync-service.ts\n?? src/lib/unified-data-architecture.ts\n?? start-unified-server.sh\n?? supabase-unified-schema.sql\n?? test-system-simple.js\n?? test-unified-final.js\n?? test-unified-server.js\n?? test-unified-system.js\n?? test-workflows.js\n?? unified-server.log\n?? unified-webhook-server.js\n",
+      "branches": "* main\n",
+      "recent_commits": "1fd673b feat: Complete job search application with all functionality restored\ndff3ef4 \ud83d\udd12 SECURITY: Remove sensitive API keys and credentials\n6791f51 Initial commit: Alex AI Job Search Application\n",
+      "remotes": "origin\thttps://github.com/familiarcat/alex-ai-job-search.git (fetch)\norigin\thttps://github.com/familiarcat/alex-ai-job-search.git (push)\n",
+      "file_count": 735,
+      "directory_count": 140,
+      "has_uncommitted_changes": true,
+      "has_remotes": true
+    }
+  },
+  "sub_projects": {
+    "alex-ai-job-search": {
+      "path": "alex-ai-job-search",
+      "relative_path": "alex-ai-job-search",
+      "indicators": [
+        "package.json"
+      ],
+      "type": "Node.js/JavaScript"
+    },
+    "alex-ai-job-search/.next": {
+      "path": "alex-ai-job-search/.next",
+      "relative_path": "alex-ai-job-search/.next",
+      "indicators": [
+        "package.json"
+      ],
+      "type": "Node.js/JavaScript"
+    },
+    ".": {
+      "path": ".",
+      "relative_path": ".",
+      "indicators": [
+        "requirements.txt"
+      ],
+      "type": "Python"
+    },
+    "credential-security-milestone-v1.0-20250906_041507": {
+      "path": "credential-security-milestone-v1.0-20250906_041507",
+      "relative_path": "credential-security-milestone-v1.0-20250906_041507",
+      "indicators": [
+        "requirements.txt"
+      ],
+      "type": "Python"
+    },
+    "mcp-memory-optimization-milestone-v1.0-20250906_054431": {
+      "path": "mcp-memory-optimization-milestone-v1.0-20250906_054431",
+      "relative_path": "mcp-memory-optimization-milestone-v1.0-20250906_054431",
+      "indicators": [
+        "requirements.txt"
+      ],
+      "type": "Python"
+    },
+    "alexai-base-package": {
+      "path": "alexai-base-package",
+      "relative_path": "alexai-base-package",
+      "indicators": [
+        "requirements.txt"
+      ],
+      "type": "Python"
+    }
+  },
+  "cleanup_recommendations": [
+    {
+      "priority": "high",
+      "action": "commit_changes",
+      "description": "Commit uncommitted changes in main repository",
+      "repository": "main",
+      "details": "There are uncommitted changes that need to be addressed"
+    },
+    {
+      "priority": "high",
+      "action": "commit_changes",
+      "description": "Commit uncommitted changes in alex-ai-job-search",
+      "repository": "alex-ai-job-search",
+      "details": "Sub-repository alex-ai-job-search has uncommitted changes"
+    },
+    {
+      "priority": "medium",
+      "action": "consolidate_repository",
+      "description": "Consider consolidating alex-ai-job-search into main repository",
+      "repository": "alex-ai-job-search",
+      "details": "Sub-repository alex-ai-job-search could be managed as a subdirectory"
+    },
+    {
+      "priority": "low",
+      "action": "organize_sub_project",
+      "description": "Organize sub-project alex-ai-job-search/.next",
+      "repository": "main",
+      "details": "Sub-project alex-ai-job-search/.next (Node.js/JavaScript) should be properly organized"
+    },
+    {
+      "priority": "low",
+      "action": "organize_sub_project",
+      "description": "Organize sub-project .",
+      "repository": "main",
+      "details": "Sub-project . (Python) should be properly organized"
+    },
+    {
+      "priority": "low",
+      "action": "organize_sub_project",
+      "description": "Organize sub-project credential-security-milestone-v1.0-20250906_041507",
+      "repository": "main",
+      "details": "Sub-project credential-security-milestone-v1.0-20250906_041507 (Python) should be properly organized"
+    },
+    {
+      "priority": "low",
+      "action": "organize_sub_project",
+      "description": "Organize sub-project mcp-memory-optimization-milestone-v1.0-20250906_054431",
+      "repository": "main",
+      "details": "Sub-project mcp-memory-optimization-milestone-v1.0-20250906_054431 (Python) should be properly organized"
+    },
+    {
+      "priority": "low",
+      "action": "organize_sub_project",
+      "description": "Organize sub-project alexai-base-package",
+      "repository": "main",
+      "details": "Sub-project alexai-base-package (Python) should be properly organized"
+    }
+  ],
+  "consolidation_strategy": {
+    "approach": "monorepo_with_submodules",
+    "main_repository": "main",
+    "sub_repositories": [
+      {
+        "path": "alex-ai-job-search",
+        "action": "convert_to_submodule",
+        "reason": "Independent development history"
+      }
+    ],
+    "sub_projects": [
+      {
+        "path": "alex-ai-job-search",
+        "type": "Node.js/JavaScript",
+        "action": "organize_in_main",
+        "reason": "Part of main project ecosystem"
+      },
+      {
+        "path": "alex-ai-job-search/.next",
+        "type": "Node.js/JavaScript",
+        "action": "organize_in_main",
+        "reason": "Part of main project ecosystem"
+      },
+      {
+        "path": ".",
+        "type": "Python",
+        "action": "organize_in_main",
+        "reason": "Part of main project ecosystem"
+      },
+      {
+        "path": "credential-security-milestone-v1.0-20250906_041507",
+        "type": "Python",
+        "action": "organize_in_main",
+        "reason": "Part of main project ecosystem"
+      },
+      {
+        "path": "mcp-memory-optimization-milestone-v1.0-20250906_054431",
+        "type": "Python",
+        "action": "organize_in_main",
+        "reason": "Part of main project ecosystem"
+      },
+      {
+        "path": "alexai-base-package",
+        "type": "Python",
+        "action": "organize_in_main",
+        "reason": "Part of main project ecosystem"
+      }
+    ],
+    "consolidation_steps": [
+      {
+        "step": 1,
+        "action": "commit_all_changes",
+        "description": "Commit all uncommitted changes in all repositories"
+      },
+      {
+        "step": 2,
+        "action": "create_submodules",
+        "description": "Convert sub-repositories to git submodules"
+      },
+      {
+        "step": 3,
+        "action": "organize_sub_projects",
+        "description": "Organize sub-projects within main repository structure"
+      },
+      {
+        "step": 4,
+        "action": "update_gitignore",
+        "description": "Update .gitignore to handle submodules and sub-projects"
+      },
+      {
+        "step": 5,
+        "action": "create_documentation",
+        "description": "Create documentation for the consolidated structure"
+      }
+    ]
+  }
+}

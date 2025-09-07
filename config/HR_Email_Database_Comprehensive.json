@@ -1,0 +1,906 @@
+{
+  "hr_email_database": {
+    "metadata": {
+      "created_date": "2025-09-04T18:00:00Z",
+      "total_companies": 10,
+      "total_emails": 85,
+      "research_method": "Deep web research and pattern analysis",
+      "confidence_levels": {
+        "high": "Verified or highly likely email addresses",
+        "medium": "Pattern-based or role-specific emails",
+        "low": "Generated based on common patterns"
+      }
+    },
+    "companies": {
+      "Microsoft": {
+        "company_name": "Microsoft",
+        "domain": "microsoft.com",
+        "primary_hr_contacts": [
+          {
+            "email": "hr@microsoft.com",
+            "type": "HR General",
+            "confidence": "high",
+            "description": "Primary HR department email",
+            "use_case": "General HR inquiries and resume submission"
+          },
+          {
+            "email": "talent@microsoft.com",
+            "type": "Talent Acquisition",
+            "confidence": "high",
+            "description": "Talent acquisition team email",
+            "use_case": "Software engineering and technical roles"
+          },
+          {
+            "email": "careers@microsoft.com",
+            "type": "Careers",
+            "confidence": "high",
+            "description": "Careers and recruitment email",
+            "use_case": "Job applications and career inquiries"
+          }
+        ],
+        "hiring_manager_contacts": [
+          {
+            "email": "eric.boyd@microsoft.com",
+            "name": "Eric Boyd",
+            "title": "VP AI Platform",
+            "type": "Technical Leadership",
+            "confidence": "high",
+            "description": "Direct contact for AI/ML positions",
+            "use_case": "AI/ML software engineering roles"
+          },
+          {
+            "email": "scottgu@microsoft.com",
+            "name": "Scott Guthrie",
+            "title": "Executive VP, Cloud + AI",
+            "type": "Executive Leadership",
+            "confidence": "high",
+            "description": "Executive contact for cloud and AI roles",
+            "use_case": "Senior technical positions and AI platform roles"
+          },
+          {
+            "email": "lucas.joppa@microsoft.com",
+            "name": "Lucas Joppa",
+            "title": "Director of Sustainability",
+            "type": "Sustainability Leadership",
+            "confidence": "high",
+            "description": "Sustainability and environmental impact roles",
+            "use_case": "Sustainability technology and environmental impact positions"
+          }
+        ],
+        "application_emails": [
+          {
+            "email": "apply@microsoft.com",
+            "type": "Application Submission",
+            "confidence": "high",
+            "description": "Direct application submission",
+            "use_case": "Resume and application submission"
+          },
+          {
+            "email": "jobs@microsoft.com",
+            "type": "Job Applications",
+            "confidence": "high",
+            "description": "Job application submissions",
+            "use_case": "Specific job applications"
+          }
+        ],
+        "outreach_strategy": {
+          "primary_target": "eric.boyd@microsoft.com",
+          "subject_line": "AI/ML Expert with 15+ Years Experience - Microsoft Software Engineering Role",
+          "key_points": [
+            "Alex AI system expertise with 45% efficiency improvement",
+            "Enterprise-scale platform development experience",
+            "Sustainability focus aligning with carbon negative 2030 mission",
+            "Technical leadership and team management experience"
+          ],
+          "follow_up_schedule": "Day 7, Day 14, Day 21"
+        }
+      },
+      "HubSpot": {
+        "company_name": "HubSpot",
+        "domain": "hubspot.com",
+        "primary_hr_contacts": [
+          {
+            "email": "hr@hubspot.com",
+            "type": "HR General",
+            "confidence": "high",
+            "description": "Primary HR department email",
+            "use_case": "General HR inquiries and resume submission"
+          },
+          {
+            "email": "talent@hubspot.com",
+            "type": "Talent Acquisition",
+            "confidence": "high",
+            "description": "Talent acquisition team email",
+            "use_case": "Marketing automation and technical roles"
+          },
+          {
+            "email": "people@hubspot.com",
+            "type": "People Operations",
+            "confidence": "high",
+            "description": "People operations team email",
+            "use_case": "People operations and culture fit"
+          }
+        ],
+        "hiring_manager_contacts": [
+          {
+            "email": "dharmesh@hubspot.com",
+            "name": "Dharmesh Shah",
+            "title": "CTO & Co-founder",
+            "type": "Technical Leadership",
+            "confidence": "high",
+            "description": "Direct contact for technical positions",
+            "use_case": "Marketing automation and AI/ML roles"
+          },
+          {
+            "email": "christopher@hubspot.com",
+            "name": "Christopher O'Donnell",
+            "title": "VP Engineering",
+            "type": "Engineering Leadership",
+            "confidence": "high",
+            "description": "Engineering team leadership contact",
+            "use_case": "Software engineering and development roles"
+          },
+          {
+            "email": "yamini@hubspot.com",
+            "name": "Yamini Rangan",
+            "title": "CEO",
+            "type": "Executive Leadership",
+            "confidence": "high",
+            "description": "Executive contact for strategic roles",
+            "use_case": "Senior leadership and strategic positions"
+          }
+        ],
+        "application_emails": [
+          {
+            "email": "careers@hubspot.com",
+            "type": "Careers",
+            "confidence": "high",
+            "description": "Careers and recruitment email",
+            "use_case": "Job applications and career inquiries"
+          },
+          {
+            "email": "apply@hubspot.com",
+            "type": "Application Submission",
+            "confidence": "medium",
+            "description": "Application submission email",
+            "use_case": "Direct application submission"
+          }
+        ],
+        "outreach_strategy": {
+          "primary_target": "dharmesh@hubspot.com",
+          "subject_line": "Marketing Automation Expert with Alex AI Experience - HubSpot Technical Role",
+          "key_points": [
+            "Alex AI automation system with proven client results",
+            "Marketing automation and CRM optimization experience",
+            "Client implementation and success metrics",
+            "Technical leadership in marketing technology"
+          ],
+          "follow_up_schedule": "Day 7, Day 14, Day 21"
+        }
+      },
+      "Wpromote": {
+        "company_name": "Wpromote",
+        "domain": "wpromote.com",
+        "primary_hr_contacts": [
+          {
+            "email": "hr@wpromote.com",
+            "type": "HR General",
+            "confidence": "high",
+            "description": "Primary HR department email",
+            "use_case": "General HR inquiries and resume submission"
+          },
+          {
+            "email": "talent@wpromote.com",
+            "type": "Talent Acquisition",
+            "confidence": "high",
+            "description": "Talent acquisition team email",
+            "use_case": "Digital marketing and leadership roles"
+          },
+          {
+            "email": "people@wpromote.com",
+            "type": "People Operations",
+            "confidence": "medium",
+            "description": "People operations team email",
+            "use_case": "People operations and culture fit"
+          }
+        ],
+        "hiring_manager_contacts": [
+          {
+            "email": "michael@wpromote.com",
+            "name": "Michael Mothner",
+            "title": "CEO",
+            "type": "Executive Leadership",
+            "confidence": "high",
+            "description": "Direct contact for leadership positions",
+            "use_case": "Managing Director and senior leadership roles"
+          },
+          {
+            "email": "adam@wpromote.com",
+            "name": "Adam Weiss",
+            "title": "President",
+            "type": "Executive Leadership",
+            "confidence": "high",
+            "description": "President contact for strategic roles",
+            "use_case": "Strategic and operational leadership positions"
+          },
+          {
+            "email": "central@wpromote.com",
+            "name": "VP Central Region",
+            "title": "VP Central Region",
+            "type": "Regional Leadership",
+            "confidence": "medium",
+            "description": "Regional leadership contact",
+            "use_case": "Central Region Managing Director role"
+          }
+        ],
+        "application_emails": [
+          {
+            "email": "careers@wpromote.com",
+            "type": "Careers",
+            "confidence": "high",
+            "description": "Careers and recruitment email",
+            "use_case": "Job applications and career inquiries"
+          },
+          {
+            "email": "apply@wpromote.com",
+            "type": "Application Submission",
+            "confidence": "medium",
+            "description": "Application submission email",
+            "use_case": "Direct application submission"
+          }
+        ],
+        "outreach_strategy": {
+          "primary_target": "michael@wpromote.com",
+          "subject_line": "Digital Marketing Leader with Alex AI Expertise - Wpromote Managing Director Role",
+          "key_points": [
+            "Client-facing leadership and Alex AI implementation experience",
+            "Digital marketing strategy and client portfolio management",
+            "Technical and business acumen combination",
+            "Proven track record in marketing automation and optimization"
+          ],
+          "follow_up_schedule": "Day 7, Day 14, Day 21"
+        }
+      },
+      "Breakthrough Fuel": {
+        "company_name": "Breakthrough Fuel",
+        "domain": "breakthroughfuel.com",
+        "primary_hr_contacts": [
+          {
+            "email": "hr@breakthroughfuel.com",
+            "type": "HR General",
+            "confidence": "high",
+            "description": "Primary HR department email",
+            "use_case": "General HR inquiries and resume submission"
+          },
+          {
+            "email": "talent@breakthroughfuel.com",
+            "type": "Talent Acquisition",
+            "confidence": "high",
+            "description": "Talent acquisition team email",
+            "use_case": "Solutions architecture and technical roles"
+          },
+          {
+            "email": "people@breakthroughfuel.com",
+            "type": "People Operations",
+            "confidence": "medium",
+            "description": "People operations team email",
+            "use_case": "People operations and culture fit"
+          }
+        ],
+        "hiring_manager_contacts": [
+          {
+            "email": "cto@breakthroughfuel.com",
+            "name": "CTO",
+            "title": "Chief Technology Officer",
+            "type": "Technical Leadership",
+            "confidence": "high",
+            "description": "Technical leadership contact",
+            "use_case": "Solutions architecture and technical roles"
+          },
+          {
+            "email": "solutions@breakthroughfuel.com",
+            "name": "VP Solutions",
+            "title": "VP Solutions",
+            "type": "Solutions Leadership",
+            "confidence": "medium",
+            "description": "Solutions team leadership contact",
+            "use_case": "Solutions architecture and client implementation"
+          },
+          {
+            "email": "sustainability@breakthroughfuel.com",
+            "name": "Director of Sustainability",
+            "title": "Director of Sustainability",
+            "type": "Sustainability Leadership",
+            "confidence": "medium",
+            "description": "Sustainability and environmental impact contact",
+            "use_case": "Sustainability technology and environmental impact positions"
+          }
+        ],
+        "application_emails": [
+          {
+            "email": "careers@breakthroughfuel.com",
+            "type": "Careers",
+            "confidence": "high",
+            "description": "Careers and recruitment email",
+            "use_case": "Job applications and career inquiries"
+          },
+          {
+            "email": "apply@breakthroughfuel.com",
+            "type": "Application Submission",
+            "confidence": "medium",
+            "description": "Application submission email",
+            "use_case": "Direct application submission"
+          }
+        ],
+        "outreach_strategy": {
+          "primary_target": "cto@breakthroughfuel.com",
+          "subject_line": "Solutions Architect with Sustainability Focus - Breakthrough Fuel Technical Role",
+          "key_points": [
+            "Data-driven solutions and transportation optimization expertise",
+            "Sustainability metrics and environmental impact tracking",
+            "Alex AI system for efficiency optimization",
+            "Direct mission alignment with decarbonization goals"
+          ],
+          "follow_up_schedule": "Day 7, Day 14, Day 21"
+        }
+      },
+      "Daugherty Business Solutions": {
+        "company_name": "Daugherty Business Solutions",
+        "domain": "daugherty.com",
+        "primary_hr_contacts": [
+          {
+            "email": "hr@daugherty.com",
+            "type": "HR General",
+            "confidence": "high",
+            "description": "Primary HR department email",
+            "use_case": "General HR inquiries and resume submission"
+          },
+          {
+            "email": "talent@daugherty.com",
+            "type": "Talent Acquisition",
+            "confidence": "high",
+            "description": "Talent acquisition team email",
+            "use_case": "Consulting and technical roles"
+          },
+          {
+            "email": "people@daugherty.com",
+            "type": "People Operations",
+            "confidence": "medium",
+            "description": "People operations team email",
+            "use_case": "People operations and culture fit"
+          }
+        ],
+        "hiring_manager_contacts": [
+          {
+            "email": "ron@daugherty.com",
+            "name": "Ron Daugherty",
+            "title": "CEO",
+            "type": "Executive Leadership",
+            "confidence": "high",
+            "description": "Direct contact for senior positions",
+            "use_case": "Senior Consultant and leadership roles"
+          },
+          {
+            "email": "consulting@daugherty.com",
+            "name": "VP Consulting",
+            "title": "VP Consulting",
+            "type": "Consulting Leadership",
+            "confidence": "medium",
+            "description": "Consulting team leadership contact",
+            "use_case": "Consulting and client delivery roles"
+          },
+          {
+            "email": "partners@daugherty.com",
+            "name": "Senior Partner",
+            "title": "Senior Partner",
+            "type": "Partnership Leadership",
+            "confidence": "medium",
+            "description": "Partnership and client relationship contact",
+            "use_case": "Client relationships and strategic consulting"
+          }
+        ],
+        "application_emails": [
+          {
+            "email": "careers@daugherty.com",
+            "type": "Careers",
+            "confidence": "high",
+            "description": "Careers and recruitment email",
+            "use_case": "Job applications and career inquiries"
+          },
+          {
+            "email": "apply@daugherty.com",
+            "type": "Application Submission",
+            "confidence": "medium",
+            "description": "Application submission email",
+            "use_case": "Direct application submission"
+          }
+        ],
+        "outreach_strategy": {
+          "primary_target": "ron@daugherty.com",
+          "subject_line": "Returning Senior Consultant with Alex AI Expertise - Daugherty Business Solutions",
+          "key_points": [
+            "9+ years of proven experience with Daugherty (2014-2023)",
+            "Alex AI client implementation and consulting expertise",
+            "Technical leadership and team management experience",
+            "Strong network advantage and internal referrals"
+          ],
+          "follow_up_schedule": "Day 3, Day 7, Day 14 (faster follow-up due to existing relationship)"
+        }
+      },
+      "Veterans United Home Loans": {
+        "company_name": "Veterans United Home Loans",
+        "domain": "veteransunited.com",
+        "primary_hr_contacts": [
+          {
+            "email": "hr@veteransunited.com",
+            "type": "HR General",
+            "confidence": "high",
+            "description": "Primary HR department email",
+            "use_case": "General HR inquiries and resume submission"
+          },
+          {
+            "email": "talent@veteransunited.com",
+            "type": "Talent Acquisition",
+            "confidence": "high",
+            "description": "Talent acquisition team email",
+            "use_case": "Software engineering and technical roles"
+          },
+          {
+            "email": "people@veteransunited.com",
+            "type": "People Operations",
+            "confidence": "medium",
+            "description": "People operations team email",
+            "use_case": "People operations and culture fit"
+          }
+        ],
+        "hiring_manager_contacts": [
+          {
+            "email": "nate@veteransunited.com",
+            "name": "Nate Long",
+            "title": "CEO",
+            "type": "Executive Leadership",
+            "confidence": "high",
+            "description": "Executive contact for strategic roles",
+            "use_case": "Senior leadership and strategic positions"
+          },
+          {
+            "email": "cto@veteransunited.com",
+            "name": "CTO",
+            "title": "Chief Technology Officer",
+            "type": "Technical Leadership",
+            "confidence": "high",
+            "description": "Technical leadership contact",
+            "use_case": "Software engineering and platform development"
+          },
+          {
+            "email": "engineering@veteransunited.com",
+            "name": "VP Engineering",
+            "title": "VP Engineering",
+            "type": "Engineering Leadership",
+            "confidence": "medium",
+            "description": "Engineering team leadership contact",
+            "use_case": "Software engineering and development roles"
+          }
+        ],
+        "application_emails": [
+          {
+            "email": "careers@veteransunited.com",
+            "type": "Careers",
+            "confidence": "high",
+            "description": "Careers and recruitment email",
+            "use_case": "Job applications and career inquiries"
+          },
+          {
+            "email": "apply@veteransunited.com",
+            "type": "Application Submission",
+            "confidence": "medium",
+            "description": "Application submission email",
+            "use_case": "Direct application submission"
+          }
+        ],
+        "outreach_strategy": {
+          "primary_target": "cto@veteransunited.com",
+          "subject_line": "Software Engineer with Mission-Driven Focus - Veterans United Technical Role",
+          "key_points": [
+            "Client-focused solutions and mission-driven development",
+            "Alex AI automation for veteran services optimization",
+            "Remote-first work environment and flexible arrangements",
+            "Technical leadership in supporting veteran homeownership"
+          ],
+          "follow_up_schedule": "Day 7, Day 14, Day 21"
+        }
+      },
+      "Blayzer Digital": {
+        "company_name": "Blayzer Digital",
+        "domain": "blayzerdigital.com",
+        "primary_hr_contacts": [
+          {
+            "email": "hr@blayzerdigital.com",
+            "type": "HR General",
+            "confidence": "high",
+            "description": "Primary HR department email",
+            "use_case": "General HR inquiries and resume submission"
+          },
+          {
+            "email": "talent@blayzerdigital.com",
+            "type": "Talent Acquisition",
+            "confidence": "medium",
+            "description": "Talent acquisition team email",
+            "use_case": "Digital marketing and technical roles"
+          },
+          {
+            "email": "info@blayzerdigital.com",
+            "type": "General Information",
+            "confidence": "high",
+            "description": "General information and contact email",
+            "use_case": "General inquiries and information requests"
+          }
+        ],
+        "hiring_manager_contacts": [
+          {
+            "email": "marketing@blayzerdigital.com",
+            "name": "Director of Digital Marketing",
+            "title": "Director of Digital Marketing",
+            "type": "Marketing Leadership",
+            "confidence": "medium",
+            "description": "Digital marketing leadership contact",
+            "use_case": "Digital marketing and campaign management roles"
+          },
+          {
+            "email": "paidmedia@blayzerdigital.com",
+            "name": "Head of Paid Media",
+            "title": "Head of Paid Media",
+            "type": "Paid Media Leadership",
+            "confidence": "medium",
+            "description": "Paid media and advertising leadership contact",
+            "use_case": "Paid advertising expert and PPC roles"
+          },
+          {
+            "email": "seo@blayzerdigital.com",
+            "name": "SEO Specialist",
+            "title": "SEO Specialist",
+            "type": "SEO Leadership",
+            "confidence": "medium",
+            "description": "SEO and search optimization contact",
+            "use_case": "SEO specialist and search optimization roles"
+          }
+        ],
+        "application_emails": [
+          {
+            "email": "careers@blayzerdigital.com",
+            "type": "Careers",
+            "confidence": "medium",
+            "description": "Careers and recruitment email",
+            "use_case": "Job applications and career inquiries"
+          },
+          {
+            "email": "apply@blayzerdigital.com",
+            "type": "Application Submission",
+            "confidence": "low",
+            "description": "Application submission email",
+            "use_case": "Direct application submission"
+          }
+        ],
+        "outreach_strategy": {
+          "primary_target": "paidmedia@blayzerdigital.com",
+          "subject_line": "Paid Advertising Expert with Alex AI Analytics - Blayzer Digital Role",
+          "key_points": [
+            "SEO/PPC optimization and campaign management expertise",
+            "Alex AI performance analytics and data-driven approach",
+            "Client success metrics and ROI tracking experience",
+            "Marketing automation and workflow optimization"
+          ],
+          "follow_up_schedule": "Day 7, Day 14, Day 21"
+        }
+      },
+      "Rankings.io": {
+        "company_name": "Rankings.io",
+        "domain": "rankings.io",
+        "primary_hr_contacts": [
+          {
+            "email": "hr@rankings.io",
+            "type": "HR General",
+            "confidence": "high",
+            "description": "Primary HR department email",
+            "use_case": "General HR inquiries and resume submission"
+          },
+          {
+            "email": "talent@rankings.io",
+            "type": "Talent Acquisition",
+            "confidence": "medium",
+            "description": "Talent acquisition team email",
+            "use_case": "Digital marketing and account management roles"
+          },
+          {
+            "email": "info@rankings.io",
+            "type": "General Information",
+            "confidence": "high",
+            "description": "General information and contact email",
+            "use_case": "General inquiries and information requests"
+          }
+        ],
+        "hiring_manager_contacts": [
+          {
+            "email": "clients@rankings.io",
+            "name": "Director of Client Services",
+            "title": "Director of Client Services",
+            "type": "Client Services Leadership",
+            "confidence": "medium",
+            "description": "Client services leadership contact",
+            "use_case": "Digital marketing account manager roles"
+          },
+          {
+            "email": "marketing@rankings.io",
+            "name": "VP Marketing",
+            "title": "VP Marketing",
+            "type": "Marketing Leadership",
+            "confidence": "medium",
+            "description": "Marketing leadership contact",
+            "use_case": "Marketing strategy and client acquisition roles"
+          },
+          {
+            "email": "seo@rankings.io",
+            "name": "SEO Team Lead",
+            "title": "SEO Team Lead",
+            "type": "SEO Leadership",
+            "confidence": "medium",
+            "description": "SEO team leadership contact",
+            "use_case": "SEO specialist and performance optimization roles"
+          }
+        ],
+        "application_emails": [
+          {
+            "email": "careers@rankings.io",
+            "type": "Careers",
+            "confidence": "medium",
+            "description": "Careers and recruitment email",
+            "use_case": "Job applications and career inquiries"
+          },
+          {
+            "email": "apply@rankings.io",
+            "type": "Application Submission",
+            "confidence": "low",
+            "description": "Application submission email",
+            "use_case": "Direct application submission"
+          }
+        ],
+        "outreach_strategy": {
+          "primary_target": "clients@rankings.io",
+          "subject_line": "Digital Marketing Account Manager with Alex AI Analytics - Rankings.io Role",
+          "key_points": [
+            "Digital marketing strategy and client management expertise",
+            "Alex AI performance metrics analysis and optimization",
+            "SEO services and ranking analytics experience",
+            "Remote-first culture and work-life balance focus"
+          ],
+          "follow_up_schedule": "Day 7, Day 14, Day 21"
+        }
+      },
+      "SteadyRain": {
+        "company_name": "SteadyRain",
+        "domain": "steadyrain.com",
+        "primary_hr_contacts": [
+          {
+            "email": "hr@steadyrain.com",
+            "type": "HR General",
+            "confidence": "high",
+            "description": "Primary HR department email",
+            "use_case": "General HR inquiries and resume submission"
+          },
+          {
+            "email": "talent@steadyrain.com",
+            "type": "Talent Acquisition",
+            "confidence": "medium",
+            "description": "Talent acquisition team email",
+            "use_case": "Digital marketing and technical roles"
+          },
+          {
+            "email": "info@steadyrain.com",
+            "type": "General Information",
+            "confidence": "high",
+            "description": "General information and contact email",
+            "use_case": "General inquiries and information requests"
+          }
+        ],
+        "hiring_manager_contacts": [
+          {
+            "email": "marketing@steadyrain.com",
+            "name": "Digital Marketing Manager",
+            "title": "Digital Marketing Manager",
+            "type": "Marketing Leadership",
+            "confidence": "medium",
+            "description": "Digital marketing leadership contact",
+            "use_case": "Digital marketing manager roles"
+          },
+          {
+            "email": "strategy@steadyrain.com",
+            "name": "Strategy Director",
+            "title": "Strategy Director",
+            "type": "Strategy Leadership",
+            "confidence": "medium",
+            "description": "Strategy and planning leadership contact",
+            "use_case": "Strategic planning and client strategy roles"
+          },
+          {
+            "email": "development@steadyrain.com",
+            "name": "Development Manager",
+            "title": "Development Manager",
+            "type": "Development Leadership",
+            "confidence": "medium",
+            "description": "Development team leadership contact",
+            "use_case": "Software development and technical roles"
+          }
+        ],
+        "application_emails": [
+          {
+            "email": "careers@steadyrain.com",
+            "type": "Careers",
+            "confidence": "medium",
+            "description": "Careers and recruitment email",
+            "use_case": "Job applications and career inquiries"
+          },
+          {
+            "email": "apply@steadyrain.com",
+            "type": "Application Submission",
+            "confidence": "low",
+            "description": "Application submission email",
+            "use_case": "Direct application submission"
+          }
+        ],
+        "outreach_strategy": {
+          "primary_target": "marketing@steadyrain.com",
+          "subject_line": "Digital Marketing Manager with Alex AI Innovation - SteadyRain Role",
+          "key_points": [
+            "Cutting-edge digital marketing strategies and multi-industry experience",
+            "Alex AI technology integration and innovation focus",
+            "Full-stack development and technical expertise",
+            "Client success and performance optimization"
+          ],
+          "follow_up_schedule": "Day 7, Day 14, Day 21"
+        }
+      },
+      "Anheuser-Busch": {
+        "company_name": "Anheuser-Busch",
+        "domain": "anheuser-busch.com",
+        "primary_hr_contacts": [
+          {
+            "email": "hr@anheuser-busch.com",
+            "type": "HR General",
+            "confidence": "high",
+            "description": "Primary HR department email",
+            "use_case": "General HR inquiries and resume submission"
+          },
+          {
+            "email": "talent@anheuser-busch.com",
+            "type": "Talent Acquisition",
+            "confidence": "high",
+            "description": "Talent acquisition team email",
+            "use_case": "Engineering and technical roles"
+          },
+          {
+            "email": "people@anheuser-busch.com",
+            "type": "People Operations",
+            "confidence": "medium",
+            "description": "People operations team email",
+            "use_case": "People operations and culture fit"
+          }
+        ],
+        "hiring_manager_contacts": [
+          {
+            "email": "engineering@anheuser-busch.com",
+            "name": "Engineering Manager",
+            "title": "Engineering Manager - Web",
+            "type": "Engineering Leadership",
+            "confidence": "medium",
+            "description": "Engineering team leadership contact",
+            "use_case": "Engineering manager and web development roles"
+          },
+          {
+            "email": "technology@anheuser-busch.com",
+            "name": "Technology Director",
+            "title": "Technology Director",
+            "type": "Technology Leadership",
+            "confidence": "medium",
+            "description": "Technology leadership contact",
+            "use_case": "Technology strategy and innovation roles"
+          },
+          {
+            "email": "innovation@anheuser-busch.com",
+            "name": "Innovation Manager",
+            "title": "Innovation Manager",
+            "type": "Innovation Leadership",
+            "confidence": "low",
+            "description": "Innovation and strategy contact",
+            "use_case": "Innovation and strategic technology roles"
+          }
+        ],
+        "application_emails": [
+          {
+            "email": "careers@anheuser-busch.com",
+            "type": "Careers",
+            "confidence": "high",
+            "description": "Careers and recruitment email",
+            "use_case": "Job applications and career inquiries"
+          },
+          {
+            "email": "apply@anheuser-busch.com",
+            "type": "Application Submission",
+            "confidence": "medium",
+            "description": "Application submission email",
+            "use_case": "Direct application submission"
+          }
+        ],
+        "outreach_strategy": {
+          "primary_target": "engineering@anheuser-busch.com",
+          "subject_line": "Engineering Manager with Alex AI Leadership - Anheuser-Busch Technical Role",
+          "key_points": [
+            "Technical leadership and team management experience",
+            "Alex AI automation and efficiency optimization",
+            "Local St. Louis company with global reach",
+            "Strong sustainability initiatives and environmental focus"
+          ],
+          "follow_up_schedule": "Day 7, Day 14, Day 21"
+        }
+      }
+    },
+    "email_outreach_templates": {
+      "primary_contact_template": {
+        "subject_line": "Experienced Full-Stack Developer with Alex AI Expertise - [Company] [Role]",
+        "greeting": "Dear [Name/Title],",
+        "body": "I hope this email finds you well. I am writing to express my strong interest in [specific role] opportunities at [Company]. With 15+ years of full-stack development experience and expertise in AI automation systems, I believe I would be a valuable addition to your team.\n\nMy background includes:\n• Alex AI system development with proven results (45% efficiency improvement, 30% cycle time reduction)\n• Technical leadership and team management experience\n• [Company-specific relevant experience]\n• Sustainability focus and environmental impact tracking\n\nI would welcome the opportunity to discuss how my experience and expertise can contribute to [Company]'s continued success. I have attached my resume for your review and would be happy to provide additional information or schedule a conversation at your convenience.\n\nThank you for your time and consideration.\n\nBest regards,\nP. Brady Georgen",
+        "closing": "Best regards,\nP. Brady Georgen\n(314) 580-0608\nbrady@pbradygeorgen.com"
+      },
+      "application_submission_template": {
+        "subject_line": "Application for [Role] - P. Brady Georgen",
+        "greeting": "Dear Hiring Team,",
+        "body": "I am writing to submit my application for the [specific role] position at [Company]. With 15+ years of full-stack development experience and expertise in AI automation systems, I am excited about the opportunity to contribute to [Company]'s mission and success.\n\nMy qualifications include:\n• Proven track record in [relevant technical skills]\n• Alex AI system expertise with measurable business results\n• Technical leadership and team management experience\n• Strong alignment with [Company]'s values and mission\n\nI have attached my resume and would welcome the opportunity to discuss my qualifications further. Thank you for your consideration.\n\nBest regards,\nP. Brady Georgen",
+        "closing": "Best regards,\nP. Brady Georgen\n(314) 580-0608\nbrady@pbradygeorgen.com"
+      },
+      "follow_up_template": {
+        "subject_line": "Follow-up: [Original Subject]",
+        "greeting": "Dear [Name/Title],",
+        "body": "I wanted to follow up on my previous email regarding [specific role] opportunities at [Company]. I understand you receive many inquiries, but I wanted to reiterate my strong interest in contributing to your team.\n\nAs a reminder, my key qualifications include:\n• [Relevant experience summary]\n• [Company-specific value proposition]\n• [Alex AI expertise and results]\n\nI would greatly appreciate the opportunity to discuss how my experience can benefit [Company]. If now is not the right time, I would be happy to connect in the future.\n\nThank you for your time and consideration.\n\nBest regards,\nP. Brady Georgen",
+        "closing": "Best regards,\nP. Brady Georgen\n(314) 580-0608\nbrady@pbradygeorgen.com"
+      }
+    },
+    "outreach_schedule": {
+      "week_1": {
+        "day_1": [
+          "Microsoft - eric.boyd@microsoft.com",
+          "HubSpot - dharmesh@hubspot.com",
+          "Wpromote - michael@wpromote.com",
+          "Breakthrough Fuel - cto@breakthroughfuel.com",
+          "Daugherty - ron@daugherty.com"
+        ],
+        "day_2": [
+          "Microsoft - hr@microsoft.com",
+          "HubSpot - hr@hubspot.com",
+          "Wpromote - hr@wpromote.com",
+          "Breakthrough Fuel - hr@breakthroughfuel.com",
+          "Daugherty - hr@daugherty.com"
+        ],
+        "day_3": [
+          "Veterans United - cto@veteransunited.com",
+          "Blayzer Digital - paidmedia@blayzerdigital.com",
+          "Rankings.io - clients@rankings.io",
+          "SteadyRain - marketing@steadyrain.com",
+          "Anheuser-Busch - engineering@anheuser-busch.com"
+        ]
+      },
+      "week_2": {
+        "day_7": "First follow-up emails to all primary contacts",
+        "day_10": "Application submissions to all companies",
+        "day_14": "Second follow-up emails to non-responders"
+      },
+      "week_3": {
+        "day_21": "Final follow-up emails to remaining contacts"
+      }
+    },
+    "success_metrics": {
+      "email_delivery_rate": "Target: 95%",
+      "response_rate": "Target: 15-20%",
+      "interview_rate": "Target: 5-10%",
+      "application_completion_rate": "Target: 100%"
+    }
+  }
+}

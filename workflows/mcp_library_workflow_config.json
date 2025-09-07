@@ -1,0 +1,366 @@
+{
+  "workflow_name": "MCP Library Computer - Knowledge Distribution",
+  "description": "Star Trek-inspired ship's library computer for crew knowledge distribution",
+  "version": "1.0.0",
+  "n8n_workflow": {
+    "nodes": [
+      {
+        "id": "mcp-query-trigger",
+        "name": "MCP Query Trigger",
+        "type": "n8n-nodes-base.webhook",
+        "parameters": {
+          "httpMethod": "POST",
+          "path": "mcp-knowledge-query",
+          "responseMode": "responseNode"
+        }
+      },
+      {
+        "id": "crew-member-validator",
+        "name": "Crew Member Validator",
+        "type": "n8n-nodes-base.function",
+        "parameters": {
+          "functionCode": "// Validate crew member and extract query\nconst crewMember = $input.first().json.crew_member;\nconst query = $input.first().json.query;\nconst context = $input.first().json.context;\n\n// Validate crew member\nconst validCrewMembers = [\n  'Captain Jean-Luc Picard',\n  'Commander William Riker',\n  'Commander Data',\n  'Lieutenant Commander Geordi La Forge',\n  'Lieutenant Worf',\n  'Counselor Deanna Troi',\n  'Lieutenant Uhura',\n  'Dr. Beverly Crusher',\n  'Quark'\n];\n\nif (!validCrewMembers.includes(crewMember)) {\n  throw new Error(`Invalid crew member: ${crewMember}`);\n}\n\nreturn {\n  crew_member: crewMember,\n  query: query,\n  context: context,\n  timestamp: new Date().toISOString()\n};"
+        }
+      },
+      {
+        "id": "knowledge-source-router",
+        "name": "Knowledge Source Router",
+        "type": "n8n-nodes-base.switch",
+        "parameters": {
+          "rules": [
+            {
+              "conditions": {
+                "string": [
+                  {
+                    "value1": "={{ $json.query }}",
+                    "operation": "contains",
+                    "value2": "AI"
+                  }
+                ]
+              },
+              "outputIndex": 0
+            },
+            {
+              "conditions": {
+                "string": [
+                  {
+                    "value1": "={{ $json.query }}",
+                    "operation": "contains",
+                    "value2": "security"
+                  }
+                ]
+              },
+              "outputIndex": 1
+            },
+            {
+              "conditions": {
+                "string": [
+                  {
+                    "value1": "={{ $json.query }}",
+                    "operation": "contains",
+                    "value2": "engineering"
+                  }
+                ]
+              },
+              "outputIndex": 2
+            },
+            {
+              "conditions": {
+                "string": [
+                  {
+                    "value1": "={{ $json.query }}",
+                    "operation": "contains",
+                    "value2": "business"
+                  }
+                ]
+              },
+              "outputIndex": 3
+            }
+          ]
+        }
+      },
+      {
+        "id": "ai-knowledge-source",
+        "name": "AI Knowledge Source",
+        "type": "n8n-nodes-base.httpRequest",
+        "parameters": {
+          "url": "https://api.openai.com/v1/chat/completions",
+          "method": "POST",
+          "headers": {
+            "Authorization": "Bearer {{ $env.OPENAI_API_KEY }}",
+            "Content-Type": "application/json"
+          },
+          "body": {
+            "model": "gpt-4",
+            "messages": [
+              {
+                "role": "system",
+                "content": "You are the Enterprise's library computer. Provide comprehensive, accurate documentation and knowledge for Starfleet crew members. Focus on practical, actionable information that can be immediately applied to their duties."
+              },
+              {
+                "role": "user",
+                "content": "Crew Member: {{ $json.crew_member }}\nQuery: {{ $json.query }}\nContext: {{ $json.context }}\n\nPlease provide detailed documentation and knowledge resources for this query."
+              }
+            ],
+            "max_tokens": 2000,
+            "temperature": 0.3
+          }
+        }
+      },
+      {
+        "id": "security-knowledge-source",
+        "name": "Security Knowledge Source",
+        "type": "n8n-nodes-base.httpRequest",
+        "parameters": {
+          "url": "https://api.anthropic.com/v1/messages",
+          "method": "POST",
+          "headers": {
+            "x-api-key": "{{ $env.ANTHROPIC_API_KEY }}",
+            "Content-Type": "application/json",
+            "anthropic-version": "2023-06-01"
+          },
+          "body": {
+            "model": "claude-3-5-sonnet-20241022",
+            "max_tokens": 2000,
+            "messages": [
+              {
+                "role": "user",
+                "content": "Crew Member: {{ $json.crew_member }}\nQuery: {{ $json.query }}\nContext: {{ $json.context }}\n\nAs the Enterprise's security specialist, provide comprehensive security knowledge and protocols for this query."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "engineering-knowledge-source",
+        "name": "Engineering Knowledge Source",
+        "type": "n8n-nodes-base.httpRequest",
+        "parameters": {
+          "url": "https://api.openrouter.ai/api/v1/chat/completions",
+          "method": "POST",
+          "headers": {
+            "Authorization": "Bearer {{ $env.OPENROUTER_API_KEY }}",
+            "Content-Type": "application/json"
+          },
+          "body": {
+            "model": "meta-llama/llama-3.1-70b-instruct",
+            "messages": [
+              {
+                "role": "system",
+                "content": "You are the Enterprise's engineering database. Provide detailed technical documentation, best practices, and implementation guides for engineering queries."
+              },
+              {
+                "role": "user",
+                "content": "Crew Member: {{ $json.crew_member }}\nQuery: {{ $json.query }}\nContext: {{ $json.context }}\n\nProvide comprehensive engineering knowledge and technical documentation."
+              }
+            ],
+            "max_tokens": 2000
+          }
+        }
+      },
+      {
+        "id": "business-knowledge-source",
+        "name": "Business Knowledge Source",
+        "type": "n8n-nodes-base.httpRequest",
+        "parameters": {
+          "url": "https://api.openai.com/v1/chat/completions",
+          "method": "POST",
+          "headers": {
+            "Authorization": "Bearer {{ $env.OPENAI_API_KEY }}",
+            "Content-Type": "application/json"
+          },
+          "body": {
+            "model": "gpt-4",
+            "messages": [
+              {
+                "role": "system",
+                "content": "You are the Enterprise's business intelligence system. Provide comprehensive business knowledge, analytics methodologies, and strategic insights for crew members."
+              },
+              {
+                "role": "user",
+                "content": "Crew Member: {{ $json.crew_member }}\nQuery: {{ $json.query }}\nContext: {{ $json.context }}\n\nProvide detailed business knowledge and strategic insights."
+              }
+            ],
+            "max_tokens": 2000,
+            "temperature": 0.4
+          }
+        }
+      },
+      {
+        "id": "knowledge-synthesizer",
+        "name": "Knowledge Synthesizer",
+        "type": "n8n-nodes-base.function",
+        "parameters": {
+          "functionCode": "// Synthesize knowledge from multiple sources\nconst crewMember = $input.first().json.crew_member;\nconst query = $input.first().json.query;\nconst context = $input.first().json.context;\n\n// Extract knowledge from the response\nconst knowledgeResponse = $input.first().json;\nlet documentation = '';\nlet sources = [];\nlet confidence = 0.8;\n\n// Parse response based on source\nif (knowledgeResponse.choices && knowledgeResponse.choices[0]) {\n  documentation = knowledgeResponse.choices[0].message.content;\n  sources = ['OpenAI GPT-4'];\n} else if (knowledgeResponse.content && knowledgeResponse.content[0]) {\n  documentation = knowledgeResponse.content[0].text;\n  sources = ['Anthropic Claude'];\n} else if (knowledgeResponse.choices && knowledgeResponse.choices[0]) {\n  documentation = knowledgeResponse.choices[0].message.content;\n  sources = ['OpenRouter Llama'];\n}\n\n// Add metadata\nconst metadata = {\n  crew_member: crewMember,\n  query: query,\n  context: context,\n  timestamp: new Date().toISOString(),\n  source_type: 'mcp_library_computer',\n  confidence: confidence\n};\n\nreturn {\n  documentation: documentation,\n  sources: sources,\n  confidence: confidence,\n  metadata: metadata,\n  formatted_response: `# Knowledge for ${crewMember}\\n\\n**Query:** ${query}\\n\\n**Documentation:**\\n${documentation}\\n\\n**Sources:** ${sources.join(', ')}\\n**Confidence:** ${confidence}`\n};"
+        }
+      },
+      {
+        "id": "supabase-memory-storage",
+        "name": "Supabase Memory Storage",
+        "type": "n8n-nodes-base.httpRequest",
+        "parameters": {
+          "url": "{{ $env.SUPABASE_URL }}/rest/v1/crew_memories",
+          "method": "POST",
+          "headers": {
+            "apikey": "{{ $env.SUPABASE_ANON_KEY }}",
+            "Authorization": "Bearer {{ $env.SUPABASE_ANON_KEY }}",
+            "Content-Type": "application/json"
+          },
+          "body": {
+            "crew_member": "={{ $json.metadata.crew_member }}",
+            "mission_id": "mcp-knowledge-{{ $now.format('YYYYMMDD_HHmmss') }}",
+            "memory_type": "knowledge_acquisition",
+            "content": "={{ $json.formatted_response }}",
+            "importance": "high",
+            "sources": "={{ $json.sources }}",
+            "confidence": "={{ $json.confidence }}"
+          }
+        }
+      },
+      {
+        "id": "response-formatter",
+        "name": "Response Formatter",
+        "type": "n8n-nodes-base.function",
+        "parameters": {
+          "functionCode": "// Format final response\nconst input = $input.first().json;\n\nreturn {\n  success: true,\n  crew_member: input.metadata.crew_member,\n  query: input.metadata.query,\n  documentation: input.documentation,\n  sources: input.sources,\n  confidence: input.confidence,\n  timestamp: input.metadata.timestamp,\n  message: `Knowledge successfully distributed to ${input.metadata.crew_member}`\n};"
+        }
+      }
+    ],
+    "connections": {
+      "mcp-query-trigger": {
+        "main": [
+          [
+            {
+              "node": "crew-member-validator",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "crew-member-validator": {
+        "main": [
+          [
+            {
+              "node": "knowledge-source-router",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "knowledge-source-router": {
+        "main": [
+          [
+            {
+              "node": "ai-knowledge-source",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "security-knowledge-source",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "engineering-knowledge-source",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "business-knowledge-source",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "ai-knowledge-source": {
+        "main": [
+          [
+            {
+              "node": "knowledge-synthesizer",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "security-knowledge-source": {
+        "main": [
+          [
+            {
+              "node": "knowledge-synthesizer",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "engineering-knowledge-source": {
+        "main": [
+          [
+            {
+              "node": "knowledge-synthesizer",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "business-knowledge-source": {
+        "main": [
+          [
+            {
+              "node": "knowledge-synthesizer",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "knowledge-synthesizer": {
+        "main": [
+          [
+            {
+              "node": "supabase-memory-storage",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "supabase-memory-storage": {
+        "main": [
+          [
+            {
+              "node": "response-formatter",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "deployment_instructions": {
+    "step_1": "Import this workflow into your N8N instance",
+    "step_2": "Configure environment variables (OPENAI_API_KEY, ANTHROPIC_API_KEY, OPENROUTER_API_KEY, SUPABASE_URL, SUPABASE_ANON_KEY)",
+    "step_3": "Activate the workflow",
+    "step_4": "Test with a sample query using the webhook URL",
+    "step_5": "Integrate with MCP Library Computer System"
+  },
+  "testing_payload": {
+    "crew_member": "Commander Data",
+    "query": "Machine learning algorithms and applications",
+    "context": "knowledge_gap_filling",
+    "priority": "high",
+    "source": "mcp_library_computer"
+  }
+}

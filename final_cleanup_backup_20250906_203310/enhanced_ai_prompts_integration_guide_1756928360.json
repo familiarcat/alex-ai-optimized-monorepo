@@ -1,0 +1,51 @@
+{
+  "guide_id": "integration_guide_1756928360",
+  "timestamp": "2025-09-03T14:39:20.922407",
+  "live_system_config": {
+    "supabase": {
+      "url": "https://rpkkkbufdwxmjaerbhbn.supabase.co",
+      "anon_key": "sb_publishable_ibWfa8oHqDMzbhEr6BxgBw_0aXaq3DU",
+      "project_name": "strange-new-world"
+    },
+    "n8n": {
+      "url": "https://n8n.pbradygeorgen.com",
+      "api_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.API_KEY_PLACEHOLDERAPI_KEY_PLACEHOLDERAPI_KEY_PLACEHOLDERMjIyfQ.wFPf3jA0X2zdNkaPqoPzTEAE-MsS-XcM6Gk20KYr4Dw"
+    },
+    "claude": {
+      "model": "claude-3-5-sonnet-20241022",
+      "max_tokens": 4000,
+      "openrouter_key": "sk-or-v1-API_KEY_PLACEHOLDER31439f13fc40e77ecc1ff2a2"
+    }
+  },
+  "prompt_templates": {
+    "supabase_integration": "\n# Supabase Integration (Live System Configuration)\n\n# Environment Setup\nexport SUPABASE_URL=\"https://rpkkkbufdwxmjaerbhbn.supabase.co\"\nexport SUPABASE_ANON_KEY=\"sb_publishable_ibWfa8oHqDMzbhEr6BxgBw_0aXaq3DU\"\nexport SUPABASE_PROJECT_NAME=\"strange-new-world\"\n\n# Python Client Setup\nimport os\nfrom supabase import create_client, Client\n\nurl = os.environ.get(\"SUPABASE_URL\")\nkey = os.environ.get(\"SUPABASE_ANON_KEY\")\nsupabase: Client = create_client(url, key)\n\n# Best Practices:\n# 1. Use environment variables for configuration\n# 2. Implement proper error handling\n# 3. Use real-time subscriptions for live updates\n# 4. Implement batch operations for efficiency\n# 5. Follow established database schema\n",
+    "n8n_workflow": "\n# N8N Workflow Integration (Live System Configuration)\n\n# N8N Configuration\nN8N_CONFIG = {\n    \"url\": \"https://n8n.pbradygeorgen.com\",\n    \"api_key\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.API_KEY_PLACEHOLDERAPI_KEY_PLACEHOLDERAPI_KEY_PLACEHOLDERMjIyfQ.wFPf3jA0X2zdNkaPqoPzTEAE-MsS-XcM6Gk20KYr4Dw\"\n}\n\n# Webhook Integration Pattern\ndef trigger_n8n_workflow(workflow_id, data):\n    import requests\n    \n    url = f\"{N8N_CONFIG['url']}/webhook/{workflow_id}\"\n    headers = {\n        \"Authorization\": f\"Bearer {N8N_CONFIG['api_key']}\",\n        \"Content-Type\": \"application/json\"\n    }\n    \n    try:\n        response = requests.post(url, json=data, headers=headers)\n        return {\"success\": True, \"response\": response.json()}\n    except Exception as e:\n        return {\"success\": False, \"error\": str(e)}\n\n# Best Practices:\n# 1. Use webhooks for real-time integration\n# 2. Implement proper error handling\n# 3. Use established workflow patterns\n# 4. Include data validation\n# 5. Monitor workflow execution\n",
+    "claude_analysis": "\n# Claude AI Integration (Live System Configuration)\n\n# Claude Configuration\nCLAUDE_CONFIG = {\n    \"model\": \"claude-3-5-sonnet-20241022\",\n    \"max_tokens\": 4000,\n    \"api_key\": \"sk-or-v1-API_KEY_PLACEHOLDER31439f13fc40e77ecc1ff2a2\"\n}\n\n# Analysis Pattern\ndef analyze_with_claude(data, analysis_type):\n    import requests\n    \n    url = \"https://openrouter.ai/api/v1/chat/completions\"\n    headers = {\n        \"Authorization\": f\"Bearer {CLAUDE_CONFIG['api_key']}\",\n        \"Content-Type\": \"application/json\"\n    }\n    \n    payload = {\n        \"model\": CLAUDE_CONFIG[\"model\"],\n        \"messages\": [\n            {\"role\": \"system\", \"content\": f\"Analyze this data for {analysis_type}\"},\n            {\"role\": \"user\", \"content\": str(data)}\n        ],\n        \"max_tokens\": CLAUDE_CONFIG[\"max_tokens\"]\n    }\n    \n    try:\n        response = requests.post(url, json=payload, headers=headers)\n        return {\"success\": True, \"analysis\": response.json()}\n    except Exception as e:\n        return {\"success\": False, \"error\": str(e)}\n\n# Best Practices:\n# 1. Use OpenRouter for Claude access\n# 2. Implement proper error handling\n# 3. Use structured prompts\n# 4. Include context in analysis\n# 5. Store results in Supabase\n",
+    "system_integration": "\n# Multi-System Integration (Live System Configuration)\n\n# System Configuration\nSYSTEMS = {\n    \"supabase\": {\n        \"url\": \"https://rpkkkbufdwxmjaerbhbn.supabase.co\",\n        \"anon_key\": \"sb_publishable_ibWfa8oHqDMzbhEr6BxgBw_0aXaq3DU\"\n    },\n    \"n8n\": {\n        \"url\": \"https://n8n.pbradygeorgen.com\",\n        \"api_key\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.API_KEY_PLACEHOLDERAPI_KEY_PLACEHOLDERAPI_KEY_PLACEHOLDERMjIyfQ.wFPf3jA0X2zdNkaPqoPzTEAE-MsS-XcM6Gk20KYr4Dw\"\n    },\n    \"claude\": {\n        \"model\": \"claude-3-5-sonnet-20241022\",\n        \"api_key\": \"sk-or-v1-API_KEY_PLACEHOLDER31439f13fc40e77ecc1ff2a2\"\n    }\n}\n\n# Integration Pattern\ndef integrated_workflow(data):\n    # 1. Analyze with Claude\n    claude_result = analyze_with_claude(data, \"market_analysis\")\n    \n    if claude_result[\"success\"]:\n        # 2. Store in Supabase\n        supabase_result = supabase.table(\"market_research\").insert({\n            \"data\": data,\n            \"analysis\": claude_result[\"analysis\"]\n        }).execute()\n        \n        # 3. Trigger N8N workflow\n        n8n_result = trigger_n8n_workflow(\"market-analysis-complete\", {\n            \"data\": data,\n            \"analysis\": claude_result[\"analysis\"]\n        })\n        \n        return {\n            \"claude\": claude_result,\n            \"supabase\": supabase_result,\n            \"n8n\": n8n_result\n        }\n    \n    return {\"error\": \"Claude analysis failed\"}\n\n# Best Practices:\n# 1. Chain operations for data flow\n# 2. Implement error handling at each step\n# 3. Use established patterns\n# 4. Monitor integration health\n# 5. Include logging and metrics\n",
+    "market_research": "\n# Market Research Automation (Live System Integration)\n\n# Automated Research Workflow\ndef market_research_workflow(market, research_type):\n    # 1. Collect market data\n    market_data = collect_market_data(market)\n    \n    # 2. Analyze with Claude\n    analysis = analyze_with_claude(market_data, research_type)\n    \n    # 3. Store in Supabase\n    supabase.table(\"market_research\").insert({\n        \"market\": market,\n        \"research_type\": research_type,\n        \"data\": market_data,\n        \"analysis\": analysis,\n        \"timestamp\": datetime.now().isoformat()\n    }).execute()\n    \n    # 4. Trigger N8N notification\n    trigger_n8n_workflow(\"research-complete\", {\n        \"market\": market,\n        \"research_type\": research_type,\n        \"analysis\": analysis\n    })\n    \n    return analysis\n\n# Real-time Monitoring\ndef setup_market_monitoring():\n    # Supabase subscription for new research\n    supabase.table(\"market_research\").on(\"INSERT\", handle_new_research).subscribe()\n    \n    # N8N webhook for notifications\n    n8n_webhook = \"https://n8n.pbradygeorgen.com/webhook/market-update\"\n\n# Best Practices:\n# 1. Automate data collection\n# 2. Use AI for analysis\n# 3. Store results systematically\n# 4. Enable real-time monitoring\n# 5. Integrate with notification systems\n",
+    "business_validation": "\n# Business Model Validation (Live System Integration)\n\n# Validation Workflow\ndef validate_business_model(model_data):\n    # 1. Analyze with Claude\n    validation = analyze_with_claude(model_data, \"business_validation\")\n    \n    # 2. Store validation results\n    supabase.table(\"business_models\").insert({\n        \"model_data\": model_data,\n        \"validation\": validation,\n        \"status\": \"validated\",\n        \"timestamp\": datetime.now().isoformat()\n    }).execute()\n    \n    # 3. Trigger N8N workflow\n    trigger_n8n_workflow(\"validation-complete\", {\n        \"model\": model_data,\n        \"validation\": validation\n    })\n    \n    return validation\n\n# Automated Validation Schedule\ndef setup_validation_schedule():\n    # Daily validation of pending models\n    pending_models = supabase.table(\"business_models\")        .select(\"*\")        .eq(\"status\", \"pending\")        .execute()\n    \n    for model in pending_models.data:\n        validate_business_model(model)\n\n# Best Practices:\n# 1. Automate validation processes\n# 2. Use AI for analysis\n# 3. Track validation status\n# 4. Schedule regular validations\n# 5. Integrate with notification systems\n"
+  },
+  "best_practices": {
+    "environment_management": "Use environment variables for all configuration",
+    "error_handling": "Implement try-catch blocks with proper logging",
+    "security": "Never expose API keys in code, use environment variables",
+    "integration": "Follow established patterns for system integration",
+    "monitoring": "Include logging and monitoring in all operations",
+    "real_time": "Use Supabase subscriptions for real-time updates",
+    "automation": "Use N8N for workflow automation",
+    "ai_analysis": "Use Claude for intelligent analysis and insights"
+  },
+  "integration_patterns": {
+    "supabase_n8n": "Use N8N webhooks to trigger Supabase operations",
+    "claude_supabase": "Use Claude for analysis, store results in Supabase",
+    "n8n_claude": "Use N8N to orchestrate Claude AI workflows",
+    "real_time": "Use Supabase subscriptions for real-time updates",
+    "automated_workflows": "Chain operations for automated data processing"
+  },
+  "usage_examples": {
+    "market_research": "Automated market data collection and analysis",
+    "business_validation": "AI-powered business model validation",
+    "real_time_monitoring": "Live updates and notifications",
+    "data_processing": "Automated data processing pipelines"
+  }
+}

@@ -1,0 +1,4 @@
+
+[submodule "alex-ai-job-search"]
+    path = alex-ai-job-search
+    url = ./alex-ai-job-search

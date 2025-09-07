@@ -1,0 +1,91 @@
+{
+  "tables": {
+    "market_research": {
+      "columns": {
+        "id": "uuid PRIMARY KEY DEFAULT gen_random_uuid()",
+        "market": "text NOT NULL",
+        "source": "text NOT NULL",
+        "title": "text",
+        "content": "text",
+        "url": "text",
+        "published_date": "timestamp",
+        "relevance_score": "float",
+        "keywords": "jsonb",
+        "created_at": "timestamp DEFAULT now()"
+      },
+      "indexes": [
+        "CREATE INDEX idx_market_research_market ON market_research(market)",
+        "CREATE INDEX idx_market_research_source ON market_research(source)",
+        "CREATE INDEX idx_market_research_keywords ON market_research USING GIN(keywords)"
+      ]
+    },
+    "startup_profiles": {
+      "columns": {
+        "id": "uuid PRIMARY KEY DEFAULT gen_random_uuid()",
+        "name": "text NOT NULL",
+        "description": "text",
+        "market": "text NOT NULL",
+        "funding_raised": "text",
+        "employees": "integer",
+        "founded": "integer",
+        "keywords": "jsonb",
+        "created_at": "timestamp DEFAULT now()"
+      },
+      "indexes": [
+        "CREATE INDEX idx_startup_profiles_market ON startup_profiles(market)",
+        "CREATE INDEX idx_startup_profiles_keywords ON startup_profiles USING GIN(keywords)"
+      ]
+    },
+    "market_data": {
+      "columns": {
+        "id": "uuid PRIMARY KEY DEFAULT gen_random_uuid()",
+        "market": "text NOT NULL",
+        "market_size": "text",
+        "growth_rate": "text",
+        "key_players": "jsonb",
+        "trends": "jsonb",
+        "updated_at": "timestamp DEFAULT now()"
+      },
+      "indexes": [
+        "CREATE INDEX idx_market_data_market ON market_data(market)"
+      ]
+    },
+    "funding_rounds": {
+      "columns": {
+        "id": "uuid PRIMARY KEY DEFAULT gen_random_uuid()",
+        "company": "text NOT NULL",
+        "market": "text NOT NULL",
+        "amount": "text",
+        "round": "text",
+        "date": "timestamp",
+        "investors": "jsonb",
+        "created_at": "timestamp DEFAULT now()"
+      },
+      "indexes": [
+        "CREATE INDEX idx_funding_rounds_market ON funding_rounds(market)",
+        "CREATE INDEX idx_funding_rounds_date ON funding_rounds(date)"
+      ]
+    },
+    "keyword_trends": {
+      "columns": {
+        "id": "uuid PRIMARY KEY DEFAULT gen_random_uuid()",
+        "keyword": "text NOT NULL",
+        "market": "text NOT NULL",
+        "frequency": "integer",
+        "trend_score": "float",
+        "date": "date",
+        "created_at": "timestamp DEFAULT now()"
+      },
+      "indexes": [
+        "CREATE INDEX idx_keyword_trends_keyword ON keyword_trends(keyword)",
+        "CREATE INDEX idx_keyword_trends_market ON keyword_trends(market)",
+        "CREATE INDEX idx_keyword_trends_date ON keyword_trends(date)"
+      ]
+    }
+  },
+  "views": {
+    "market_summary": "\n                    CREATE VIEW market_summary AS\n                    SELECT \n                        market,\n                        COUNT(*) as total_articles,\n                        AVG(relevance_score) as avg_relevance,\n                        jsonb_agg(DISTINCT keywords) as all_keywords\n                    FROM market_research\n                    GROUP BY market\n                ",
+    "startup_summary": "\n                    CREATE VIEW startup_summary AS\n                    SELECT \n                        market,\n                        COUNT(*) as total_startups,\n                        AVG(employees) as avg_employees,\n                        jsonb_agg(DISTINCT keywords) as all_keywords\n                    FROM startup_profiles\n                    GROUP BY market\n                ",
+    "funding_summary": "\n                    CREATE VIEW funding_summary AS\n                    SELECT \n                        market,\n                        COUNT(*) as total_rounds,\n                        jsonb_agg(DISTINCT amount) as funding_amounts,\n                        jsonb_agg(DISTINCT round) as round_types\n                    FROM funding_rounds\n                    GROUP BY market\n                "
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "description": "Market research project with enhanced prompts",
+  "components": [
+    "enhanced_prompts",
+    "supabase_integration",
+    "n8n_workflows"
+  ],
+  "status": "template_created"
+}

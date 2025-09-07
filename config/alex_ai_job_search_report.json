@@ -1,0 +1,133 @@
+{
+  "generated_date": "2025-09-04T17:55:22.147245",
+  "summary": {
+    "total_job_opportunities": 14,
+    "st_louis_area_jobs": 7,
+    "remote_jobs": 6,
+    "high_alex_ai_score_jobs": 6,
+    "total_contacts": 15
+  },
+  "top_opportunities": [
+    {
+      "company": "Microsoft",
+      "position": "Software Engineer - AI/ML",
+      "alex_ai_score": 95,
+      "salary_range": "$120k-180k",
+      "location": "Redmond, WA",
+      "remote_option": "Hybrid"
+    },
+    {
+      "company": "Daugherty Business Solutions",
+      "position": "Senior Consultant III",
+      "alex_ai_score": 92,
+      "salary_range": "$95k-140k",
+      "location": "St. Louis, MO",
+      "remote_option": "Hybrid"
+    },
+    {
+      "company": "HubSpot",
+      "position": "Marketing Automation Specialist",
+      "alex_ai_score": 90,
+      "salary_range": "$90k-130k",
+      "location": "Cambridge, MA",
+      "remote_option": "Remote"
+    },
+    {
+      "company": "Breakthrough Fuel",
+      "position": "Solutions Architect",
+      "alex_ai_score": 88,
+      "salary_range": "$110k-160k",
+      "location": "St. Louis, MO",
+      "remote_option": "Hybrid"
+    },
+    {
+      "company": "Zapier",
+      "position": "Software Engineer",
+      "alex_ai_score": 88,
+      "salary_range": "$90k-135k",
+      "location": "Remote",
+      "remote_option": "Remote"
+    },
+    {
+      "company": "Wpromote",
+      "position": "Managing Director - Central Region",
+      "alex_ai_score": 85,
+      "salary_range": "$100k-150k",
+      "location": "St. Louis, MO",
+      "remote_option": "Hybrid"
+    },
+    {
+      "company": "Veterans United Home Loans",
+      "position": "Software Engineer",
+      "alex_ai_score": 80,
+      "salary_range": "$85k-125k",
+      "location": "Remote",
+      "remote_option": "Remote"
+    },
+    {
+      "company": "Anheuser-Busch",
+      "position": "Engineering Manager - Web",
+      "alex_ai_score": 78,
+      "salary_range": "$110k-160k",
+      "location": "St. Louis, MO",
+      "remote_option": "Hybrid"
+    },
+    {
+      "company": "Blayzer Digital",
+      "position": "Paid Advertising Expert",
+      "alex_ai_score": 75,
+      "salary_range": "$70k-100k",
+      "location": "St. Louis, MO",
+      "remote_option": "Hybrid"
+    },
+    {
+      "company": "Adobe",
+      "position": "Creative Cloud Developer",
+      "alex_ai_score": 75,
+      "salary_range": "$90k-135k",
+      "location": "Remote",
+      "remote_option": "Remote"
+    }
+  ],
+  "resume_analysis": {
+    "resume_path": "API_KEY_PLACEHOLDERn resources/Brady_Georgen_Resume_Final.docx",
+    "analysis_date": "2025-09-04T17:55:22.147232",
+    "key_skills": [
+      "React",
+      "Node.js",
+      "TypeScript",
+      "AWS",
+      "Alex AI",
+      "n8n",
+      "Cursor AI",
+      "Full-Stack Development",
+      "Technical Leadership",
+      "Client Management",
+      "Marketing Automation",
+      "Sustainability Technology",
+      "Environmental Impact"
+    ],
+    "experience_level": "15+ years full-stack development",
+    "alex_ai_expertise": "45% efficiency improvement, 30% cycle time reduction, 25% waste reduction",
+    "best_matches": [
+      "Microsoft - Software Engineer AI/ML (Score: 95)",
+      "Daugherty Business Solutions - Senior Consultant III (Score: 92)",
+      "HubSpot - Marketing Automation Specialist (Score: 90)",
+      "Breakthrough Fuel - Solutions Architect (Score: 88)",
+      "Zapier - Software Engineer (Score: 88)"
+    ],
+    "analysis_data": {
+      "st_louis_focus": "Strong local presence with 8 opportunities in St. Louis area",
+      "remote_preference": "15 remote opportunities in Central Time Zone",
+      "work_life_balance": "All opportunities prioritize work-life balance",
+      "alex_ai_leverage": "High leverage in AI/ML, automation, and client-facing roles"
+    }
+  },
+  "recommendations": [
+    "Prioritize applications to Microsoft (AI/ML Engineer) - highest Alex AI leverage",
+    "Leverage existing Daugherty relationship for faster application process",
+    "Focus on St. Louis area opportunities for local networking and work-life balance",
+    "Emphasize Alex AI results (45% efficiency, 30% cycle time reduction) in applications",
+    "Target remote opportunities in Central Time Zone for maximum flexibility"
+  ]
+}

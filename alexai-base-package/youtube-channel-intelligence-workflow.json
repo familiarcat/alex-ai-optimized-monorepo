@@ -1,0 +1,424 @@
+{
+  "name": "YouTube Channel Intelligence System",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "channel-intelligence",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "name": "Channel Intelligence Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "position": [240, 300],
+      "webhookId": "youtube-channel-intelligence"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "channel_url_validation",
+              "leftValue": "={{ $json.channel_url }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "isNotEmpty"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "name": "Validate Channel Request",
+      "type": "n8n-nodes-base.if",
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.channel_url }}",
+        "options": {
+          "timeout": 10000
+        }
+      },
+      "name": "Extract Channel ID",
+      "type": "n8n-nodes-base.function",
+      "position": [680, 200],
+      "functionCode": "// Extract YouTube channel ID from various URL formats\nconst url = $input.first().json.channel_url;\nconst patterns = [\n  /youtube\\.com\\/channel\\/([a-zA-Z0-9_-]+)/,\n  /youtube\\.com\\/c\\/([a-zA-Z0-9_-]+)/,\n  /youtube\\.com\\/user\\/([a-zA-Z0-9_-]+)/,\n  /youtube\\.com\\/@([a-zA-Z0-9_-]+)/\n];\n\nlet channelId = null;\nfor (const pattern of patterns) {\n  const match = url.match(pattern);\n  if (match) {\n    channelId = match[1];\n    break;\n  }\n}\n\nif (channelId) {\n  return {\n    channel_id: channelId,\n    original_url: url,\n    max_videos: $input.first().json.max_videos || 50,\n    analysis_depth: $input.first().json.analysis_depth || 'standard',\n    request_id: $input.first().json.request_id || Date.now().toString()\n  };\n} else {\n  throw new Error('Invalid YouTube channel URL format');\n}"
+    },
+    {
+      "parameters": {
+        "url": "https://www.googleapis.com/youtube/v3/channels",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "part",
+              "value": "snippet,statistics"
+            },
+            {
+              "name": "id",
+              "value": "={{ $json.channel_id }}"
+            },
+            {
+              "name": "key",
+              "value": "={{ $vars.YOUTUBE_API_KEY }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Get Channel Info",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [900, 200]
+    },
+    {
+      "parameters": {
+        "url": "https://www.googleapis.com/youtube/v3/search",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "part",
+              "value": "snippet"
+            },
+            {
+              "name": "channelId",
+              "value": "={{ $json.channel_id }}"
+            },
+            {
+              "name": "type",
+              "value": "video"
+            },
+            {
+              "name": "order",
+              "value": "relevance"
+            },
+            {
+              "name": "maxResults",
+              "value": "={{ $json.max_videos }}"
+            },
+            {
+              "name": "key",
+              "value": "={{ $vars.YOUTUBE_API_KEY }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Get Channel Videos",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [900, 400]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Crew-specialized analysis with cost optimization\nconst channelInfo = $('Get Channel Info').first().json;\nconst videos = $('Get Channel Videos').first().json;\nconst channelId = $('Extract Channel ID').first().json.channel_id;\nconst analysisDepth = $('Extract Channel ID').first().json.analysis_depth;\n\n// Crew member configurations with cost optimization\nconst crewConfig = {\n  'captain_picard': {\n    tier: 'premium',\n    maxCost: 0.10,\n    keywords: ['strategy', 'leadership', 'vision', 'mission', 'decision'],\n    maxVideos: analysisDepth === 'comprehensive' ? 20 : analysisDepth === 'standard' ? 10 : 5\n  },\n  'commander_riker': {\n    tier: 'premium',\n    maxCost: 0.10,\n    keywords: ['execution', 'tactical', 'operations', 'implementation'],\n    maxVideos: analysisDepth === 'comprehensive' ? 20 : analysisDepth === 'standard' ? 10 : 5\n  },\n  'commander_data': {\n    tier: 'standard',\n    maxCost: 0.05,\n    keywords: ['data', 'analytics', 'logic', 'patterns', 'metrics'],\n    maxVideos: analysisDepth === 'comprehensive' ? 15 : analysisDepth === 'standard' ? 8 : 4\n  },\n  'geordi_la_forge': {\n    tier: 'standard',\n    maxCost: 0.05,\n    keywords: ['technical', 'engineering', 'infrastructure', 'systems'],\n    maxVideos: analysisDepth === 'comprehensive' ? 15 : analysisDepth === 'standard' ? 8 : 4\n  },\n  'lieutenant_worf': {\n    tier: 'standard',\n    maxCost: 0.05,\n    keywords: ['security', 'compliance', 'risk', 'protection'],\n    maxVideos: analysisDepth === 'comprehensive' ? 15 : analysisDepth === 'standard' ? 8 : 4\n  },\n  'counselor_troi': {\n    tier: 'economy',\n    maxCost: 0.02,\n    keywords: ['user', 'experience', 'psychology', 'emotion', 'behavior'],\n    maxVideos: analysisDepth === 'comprehensive' ? 10 : analysisDepth === 'standard' ? 5 : 3\n  },\n  'lieutenant_uhura': {\n    tier: 'economy',\n    maxCost: 0.02,\n    keywords: ['communication', 'information', 'media', 'messaging'],\n    maxVideos: analysisDepth === 'comprehensive' ? 10 : analysisDepth === 'standard' ? 5 : 3\n  },\n  'dr_crusher': {\n    tier: 'economy',\n    maxCost: 0.02,\n    keywords: ['health', 'wellness', 'medical', 'care', 'healing'],\n    maxVideos: analysisDepth === 'comprehensive' ? 10 : analysisDepth === 'standard' ? 5 : 3\n  },\n  'quark': {\n    tier: 'economy',\n    maxCost: 0.02,\n    keywords: ['business', 'commerce', 'profit', 'market', 'revenue'],\n    maxVideos: analysisDepth === 'comprehensive' ? 10 : analysisDepth === 'standard' ? 5 : 3\n  }\n};\n\n// Analyze videos for each crew member\nconst crewInsights = {};\nconst allVideos = videos.items || [];\n\nfor (const [crewMember, config] of Object.entries(crewConfig)) {\n  const relevantVideos = [];\n  \n  // Select most relevant videos for this crew member\n  for (const video of allVideos) {\n    const title = video.snippet.title.toLowerCase();\n    const description = video.snippet.description.toLowerCase();\n    const content = `${title} ${description}`;\n    \n    const relevanceScore = config.keywords.reduce((score, keyword) => {\n      return score + (content.includes(keyword) ? 1 : 0);\n    }, 0);\n    \n    if (relevanceScore > 0) {\n      relevantVideos.push({ video, relevanceScore });\n    }\n  }\n  \n  // Sort by relevance and limit by cost optimization\n  relevantVideos.sort((a, b) => b.relevanceScore - a.relevanceScore);\n  const selectedVideos = relevantVideos.slice(0, config.maxVideos);\n  \n  // Generate insights for selected videos\n  const insights = [];\n  for (const { video, relevanceScore } of selectedVideos) {\n    const insight = {\n      video_id: video.id.videoId,\n      video_title: video.snippet.title,\n      relevance_score: relevanceScore / config.keywords.length,\n      insight_content: `${crewMember} analysis: ${video.snippet.title} contains ${config.keywords.filter(kw => \n        video.snippet.title.toLowerCase().includes(kw) || \n        video.snippet.description.toLowerCase().includes(kw)\n      ).join(', ')} concepts`,\n      insight_type: `${crewMember}_analysis`,\n      cost_tier: config.tier,\n      max_cost: config.maxCost\n    };\n    insights.push(insight);\n  }\n  \n  crewInsights[crewMember] = insights;\n}\n\n// Generate channel summary\nconst totalInsights = Object.values(crewInsights).reduce((sum, insights) => sum + insights.length, 0);\nconst crewCount = Object.keys(crewInsights).length;\n\nconst channelSummary = `Channel Analysis Complete:\\n` +\n  `- Channel: ${channelInfo.items?.[0]?.snippet?.title || 'Unknown'}\\n` +\n  `- Videos analyzed: ${allVideos.length}\\n` +\n  `- Total insights: ${totalInsights}\\n` +\n  `- Crew members: ${crewCount}\\n` +\n  `- Analysis depth: ${analysisDepth}`;\n\n// Extract key themes\nconst allContent = allVideos.map(v => `${v.snippet.title} ${v.snippet.description}`).join(' ');\nconst words = allContent.toLowerCase().match(/\\b\\w{4,}\\b/g) || [];\nconst wordFreq = {};\nwords.forEach(word => wordFreq[word] = (wordFreq[word] || 0) + 1);\nconst keyThemes = Object.entries(wordFreq)\n  .sort(([,a], [,b]) => b - a)\n  .slice(0, 10)\n  .map(([word]) => word);\n\nreturn {\n  channel_id: channelId,\n  channel_name: channelInfo.items?.[0]?.snippet?.title || 'Unknown',\n  channel_info: channelInfo.items?.[0] || {},\n  total_videos: allVideos.length,\n  crew_insights: crewInsights,\n  channel_summary: channelSummary,\n  key_themes: keyThemes,\n  analysis_timestamp: new Date().toISOString(),\n  analysis_depth: analysisDepth,\n  cost_optimization: {\n    total_estimated_cost: Object.values(crewConfig).reduce((sum, config) => sum + config.maxCost, 0),\n    crew_tiers: Object.fromEntries(Object.entries(crewConfig).map(([crew, config]) => [crew, config.tier]))\n  }\n};"
+      },
+      "name": "Crew-Specialized Analysis",
+      "type": "n8n-nodes-base.function",
+      "position": [1120, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{ $vars.SUPABASE_URL }}/rest/v1/channel_analysis",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "={{ $vars.SUPABASE_ANON_KEY }}"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer {{ $vars.SUPABASE_ANON_KEY }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Prefer",
+              "value": "return=minimal"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "channel_id",
+              "value": "={{ $json.channel_id }}"
+            },
+            {
+              "name": "channel_name",
+              "value": "={{ $json.channel_name }}"
+            },
+            {
+              "name": "total_videos",
+              "value": "={{ $json.total_videos }}"
+            },
+            {
+              "name": "analysis_timestamp",
+              "value": "={{ $json.analysis_timestamp }}"
+            },
+            {
+              "name": "channel_summary",
+              "value": "={{ $json.channel_summary }}"
+            },
+            {
+              "name": "key_themes",
+              "value": "={{ $json.key_themes }}"
+            },
+            {
+              "name": "analysis_metadata",
+              "value": "={{ $json.cost_optimization }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Store Channel Analysis",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [1340, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Store individual crew insights with vector optimization\nconst analysisData = $input.first().json;\nconst crewInsights = analysisData.crew_insights;\nconst channelId = analysisData.channel_id;\n\nconst insightPromises = [];\n\nfor (const [crewMember, insights] of Object.entries(crewInsights)) {\n  for (const insight of insights) {\n    const insightData = {\n      channel_id: channelId,\n      crew_member: crewMember,\n      insight_type: insight.insight_type,\n      content: insight.insight_content,\n      relevance_score: insight.relevance_score,\n      vector_embedding: {\n        // Simplified vector embedding based on content hash\n        dimensions: 64,\n        data: Array.from({length: 64}, (_, i) => \n          Math.sin(insight.insight_content.charCodeAt(i % insight.insight_content.length) + i) * 0.5\n        )\n      },\n      metadata: {\n        video_id: insight.video_id,\n        video_title: insight.video_title,\n        cost_tier: insight.cost_tier,\n        max_cost: insight.max_cost,\n        analysis_timestamp: analysisData.analysis_timestamp\n      }\n    };\n    \n    insightPromises.push({\n      url: `${$vars.SUPABASE_URL}/rest/v1/crew_insights`,\n      headers: {\n        'apikey': $vars.SUPABASE_ANON_KEY,\n        'Authorization': `Bearer ${$vars.SUPABASE_ANON_KEY}`,\n        'Content-Type': 'application/json'\n      },\n      body: insightData\n    });\n  }\n}\n\nreturn insightPromises;"
+      },
+      "name": "Prepare Crew Insights Storage",
+      "type": "n8n-nodes-base.function",
+      "position": [1340, 400]
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.url }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "={{ $json.headers.apikey }}"
+            },
+            {
+              "name": "Authorization",
+              "value": "={{ $json.headers.Authorization }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "={{ $json.headers['Content-Type'] }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "channel_id",
+              "value": "={{ $json.body.channel_id }}"
+            },
+            {
+              "name": "crew_member",
+              "value": "={{ $json.body.crew_member }}"
+            },
+            {
+              "name": "insight_type",
+              "value": "={{ $json.body.insight_type }}"
+            },
+            {
+              "name": "content",
+              "value": "={{ $json.body.content }}"
+            },
+            {
+              "name": "relevance_score",
+              "value": "={{ $json.body.relevance_score }}"
+            },
+            {
+              "name": "vector_embedding",
+              "value": "={{ $json.body.vector_embedding }}"
+            },
+            {
+              "name": "metadata",
+              "value": "={{ $json.body.metadata }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Store Crew Insights",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [1560, 400]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ {\n  \"status\": \"success\",\n  \"message\": \"YouTube channel intelligence analysis completed\",\n  \"channel_id\": $json.channel_id,\n  \"channel_name\": $json.channel_name,\n  \"total_videos\": $json.total_videos,\n  \"total_insights\": Object.values($json.crew_insights).reduce((sum, insights) => sum + insights.length, 0),\n  \"crew_members\": Object.keys($json.crew_insights).length,\n  \"analysis_depth\": $json.analysis_depth,\n  \"cost_optimization\": $json.cost_optimization,\n  \"key_themes\": $json.key_themes.slice(0, 5),\n  \"analysis_timestamp\": $json.analysis_timestamp\n} }}"
+      },
+      "name": "Success Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "position": [1780, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ {\n  \"status\": \"error\",\n  \"message\": \"Invalid request: Channel URL is required\",\n  \"error_code\": \"MISSING_CHANNEL_URL\"\n} }}"
+      },
+      "name": "Error Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "position": [680, 400]
+    },
+    {
+      "parameters": {
+        "content": "YouTube Channel Intelligence System\n\nThis workflow provides comprehensive YouTube channel analysis with crew-specialized insights:\n\n1. Channel Intelligence Webhook - Receives channel analysis requests\n2. Validate Channel Request - Ensures channel URL is provided\n3. Extract Channel ID - Parses YouTube channel URL to get channel ID\n4. Get Channel Info - Fetches channel metadata and statistics\n5. Get Channel Videos - Retrieves channel videos for analysis\n6. Crew-Specialized Analysis - Analyzes content with cost optimization\n7. Store Channel Analysis - Saves analysis results to Supabase\n8. Store Crew Insights - Saves individual crew insights with vectors\n9. Success/Error Response - Returns results to requesting system\n\nFeatures:\n- Cost-optimized analysis based on crew member tiers\n- Vector embeddings for rapid similarity search\n- Crew-specialized insight generation\n- Comprehensive channel intelligence\n\nUsage:\nPOST to webhook with: {\n  \"channel_url\": \"https://youtube.com/channel/...\",\n  \"max_videos\": 50,\n  \"analysis_depth\": \"standard\"\n}"
+      },
+      "name": "Workflow Documentation",
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [240, 100]
+    }
+  ],
+  "connections": {
+    "Channel Intelligence Webhook": {
+      "main": [
+        [
+          {
+            "node": "Validate Channel Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate Channel Request": {
+      "main": [
+        [
+          {
+            "node": "Extract Channel ID",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Error Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Channel ID": {
+      "main": [
+        [
+          {
+            "node": "Get Channel Info",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Get Channel Videos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Channel Info": {
+      "main": [
+        [
+          {
+            "node": "Crew-Specialized Analysis",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Channel Videos": {
+      "main": [
+        [
+          {
+            "node": "Crew-Specialized Analysis",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Crew-Specialized Analysis": {
+      "main": [
+        [
+          {
+            "node": "Store Channel Analysis",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Prepare Crew Insights Storage",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Store Channel Analysis": {
+      "main": [
+        [
+          {
+            "node": "Success Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare Crew Insights Storage": {
+      "main": [
+        [
+          {
+            "node": "Store Crew Insights",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Store Crew Insights": {
+      "main": [
+        [
+          {
+            "node": "Success Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "createdAt": "2025-01-27T13:00:00.000Z",
+      "updatedAt": "2025-01-27T13:00:00.000Z",
+      "id": "youtube-channel-intelligence",
+      "name": "YouTube Channel Intelligence"
+    },
+    {
+      "createdAt": "2025-01-27T13:00:00.000Z",
+      "updatedAt": "2025-01-27T13:00:00.000Z",
+      "id": "crew-specialized-analysis",
+      "name": "Crew Specialized Analysis"
+    }
+  ],
+  "triggerCount": 1,
+  "updatedAt": "2025-01-27T13:00:00.000Z",
+  "versionId": "1"
+}

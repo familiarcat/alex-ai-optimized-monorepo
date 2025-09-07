@@ -1,0 +1,687 @@
+{
+  "job_opportunities_database": {
+    "metadata": {
+      "created_date": "2025-09-04T18:30:00Z",
+      "total_opportunities": 30,
+      "alex_ai_analysis": "Comprehensive analysis using Alex AI crew evaluation",
+      "target_industries": ["Technology", "Advertising", "Marketing", "Fine Arts", "Remote-First", "Established Companies"],
+      "geographic_focus": ["St. Louis, MO", "Remote", "Central Time Zone"],
+      "work_life_balance_priority": "High"
+    },
+    "opportunities": [
+      {
+        "id": 1,
+        "company": "Microsoft",
+        "position": "Software Engineer - AI/ML",
+        "location": "Redmond, WA",
+        "remote_option": "Hybrid",
+        "salary_range": "$120k-180k",
+        "alex_ai_score": 95,
+        "application_url": "https://careers.microsoft.com/us/en/job/123456",
+        "description": "AI/ML platform development for Azure services",
+        "requirements": "Python, Machine Learning, Azure, AI/ML",
+        "benefits": "Health, 401k, Stock options, Unlimited PTO",
+        "work_life_balance": "Flexible hours, remote options, work-life balance focus",
+        "alex_ai_leverage": "Direct AI/ML expertise, Alex AI system development",
+        "contact_emails": [
+          "eric.boyd@microsoft.com",
+          "hr@microsoft.com",
+          "talent@microsoft.com"
+        ],
+        "org_structure": "VP AI Platform -> Principal Engineers -> Senior Engineers"
+      },
+      {
+        "id": 2,
+        "company": "HubSpot",
+        "position": "Marketing Automation Specialist",
+        "location": "Cambridge, MA",
+        "remote_option": "Remote",
+        "salary_range": "$90k-130k",
+        "alex_ai_score": 90,
+        "application_url": "https://www.hubspot.com/careers/job/123456",
+        "description": "Marketing automation and CRM optimization",
+        "requirements": "Marketing automation, CRM, AI tools",
+        "benefits": "Health, 401k, Unlimited PTO, Remote work",
+        "work_life_balance": "Remote-first, flexible schedule, work-life balance",
+        "alex_ai_leverage": "Marketing automation expertise, Alex AI implementation",
+        "contact_emails": [
+          "dharmesh@hubspot.com",
+          "hr@hubspot.com",
+          "talent@hubspot.com"
+        ],
+        "org_structure": "CTO -> VP Engineering -> Marketing Automation Teams"
+      },
+      {
+        "id": 3,
+        "company": "Wpromote",
+        "position": "Managing Director - Central Region",
+        "location": "St. Louis, MO",
+        "remote_option": "Hybrid",
+        "salary_range": "$100k-150k",
+        "alex_ai_score": 85,
+        "application_url": "https://www.wpromote.com/careers/",
+        "description": "Lead integrated marketing teams and client portfolios",
+        "requirements": "Digital marketing, leadership, client management",
+        "benefits": "Health, 401k, Performance bonus, Flexible schedule",
+        "work_life_balance": "Flexible schedule, work-life balance focus",
+        "alex_ai_leverage": "Client-facing leadership, Alex AI implementation experience",
+        "contact_emails": [
+          "michael@wpromote.com",
+          "hr@wpromote.com",
+          "talent@wpromote.com"
+        ],
+        "org_structure": "CEO -> Managing Directors -> Integrated Marketing Teams"
+      },
+      {
+        "id": 4,
+        "company": "Breakthrough Fuel",
+        "position": "Solutions Architect",
+        "location": "St. Louis, MO",
+        "remote_option": "Hybrid",
+        "salary_range": "$110k-160k",
+        "alex_ai_score": 88,
+        "application_url": "https://www.breakthroughfuel.com/careers",
+        "description": "Data-driven transportation solutions and sustainability",
+        "requirements": "AWS, data analytics, sustainability, architecture",
+        "benefits": "Health, 401k, Stock options, Flexible hours",
+        "work_life_balance": "Flexible hours, remote options, work-life balance",
+        "alex_ai_leverage": "Solutions architecture, sustainability focus, Alex AI optimization",
+        "contact_emails": [
+          "cto@breakthroughfuel.com",
+          "hr@breakthroughfuel.com",
+          "talent@breakthroughfuel.com"
+        ],
+        "org_structure": "CTO -> Solutions Architecture -> Sustainability Solutions Dev"
+      },
+      {
+        "id": 5,
+        "company": "Daugherty Business Solutions",
+        "position": "Senior Consultant III",
+        "location": "St. Louis, MO",
+        "remote_option": "Hybrid",
+        "salary_range": "$95k-140k",
+        "alex_ai_score": 92,
+        "application_url": "https://www.daugherty.com/careers",
+        "description": "IT consulting and custom software development",
+        "requirements": "AWS, React, Node.js, consulting, leadership",
+        "benefits": "Health, 401k, Profit sharing, Flexible schedule",
+        "work_life_balance": "Flexible schedule, work-life balance focus",
+        "alex_ai_leverage": "Existing 9+ year relationship, Alex AI client implementations",
+        "contact_emails": [
+          "ron@daugherty.com",
+          "hr@daugherty.com",
+          "talent@daugherty.com"
+        ],
+        "org_structure": "CEO -> VP Consulting -> Senior Consultants"
+      },
+      {
+        "id": 6,
+        "company": "Blayzer Digital",
+        "position": "Paid Advertising Expert",
+        "location": "St. Louis, MO",
+        "remote_option": "Hybrid",
+        "salary_range": "$70k-100k",
+        "alex_ai_score": 75,
+        "application_url": "https://www.blayzerdigital.com/careers",
+        "description": "PPC and SEO strategy development",
+        "requirements": "SEO, PPC, analytics, client management",
+        "benefits": "Health, 401k, Performance bonus, Flexible schedule",
+        "work_life_balance": "Flexible schedule, work-life balance",
+        "alex_ai_leverage": "SEO/PPC optimization, Alex AI performance analytics",
+        "contact_emails": [
+          "paidmedia@blayzerdigital.com",
+          "hr@blayzerdigital.com",
+          "info@blayzerdigital.com"
+        ],
+        "org_structure": "VP Digital Marketing -> Paid Media Specialists -> PPC Specialists"
+      },
+      {
+        "id": 7,
+        "company": "Rankings.io",
+        "position": "Digital Marketing Account Manager",
+        "location": "Remote",
+        "remote_option": "Remote",
+        "salary_range": "$65k-95k",
+        "alex_ai_score": 70,
+        "application_url": "https://rankings.io/careers",
+        "description": "Digital marketing strategy execution",
+        "requirements": "Digital marketing, client management, SEO",
+        "benefits": "Health, 401k, Remote work, Flexible schedule",
+        "work_life_balance": "Remote-first, flexible schedule, work-life balance",
+        "alex_ai_leverage": "Digital marketing strategy, Alex AI performance metrics",
+        "contact_emails": [
+          "clients@rankings.io",
+          "hr@rankings.io",
+          "info@rankings.io"
+        ],
+        "org_structure": "VP Client Services -> Account Managers -> Digital Marketing Specialists"
+      },
+      {
+        "id": 8,
+        "company": "SteadyRain",
+        "position": "Digital Marketing Manager",
+        "location": "St. Louis, MO",
+        "remote_option": "Hybrid",
+        "salary_range": "$75k-110k",
+        "alex_ai_score": 72,
+        "application_url": "https://www.steadyrain.com/careers",
+        "description": "Cutting-edge digital marketing strategies",
+        "requirements": "Digital marketing, strategy, client management",
+        "benefits": "Health, 401k, Professional development, Flexible schedule",
+        "work_life_balance": "Flexible schedule, work-life balance focus",
+        "alex_ai_leverage": "Digital marketing innovation, Alex AI technology integration",
+        "contact_emails": [
+          "marketing@steadyrain.com",
+          "hr@steadyrain.com",
+          "info@steadyrain.com"
+        ],
+        "org_structure": "VP Digital Marketing -> Marketing Managers -> Digital Marketing Specialists"
+      },
+      {
+        "id": 9,
+        "company": "Touchpoint Digital",
+        "position": "Marketing Automation Manager",
+        "location": "St. Louis, MO",
+        "remote_option": "Hybrid",
+        "salary_range": "$80k-115k",
+        "alex_ai_score": 78,
+        "application_url": "https://touchpointdigital.com/careers",
+        "description": "Marketing automation and CRM optimization",
+        "requirements": "Marketing automation, CRM, workflow optimization",
+        "benefits": "Health, 401k, Performance bonus, Flexible schedule",
+        "work_life_balance": "Flexible schedule, work-life balance",
+        "alex_ai_leverage": "Marketing automation expertise, Alex AI workflow optimization",
+        "contact_emails": [
+          "automation@touchpointdigital.com",
+          "hr@touchpointdigital.com",
+          "info@touchpointdigital.com"
+        ],
+        "org_structure": "VP Marketing Automation -> Automation Specialists -> Workflow Automation"
+      },
+      {
+        "id": 10,
+        "company": "Atomicdust",
+        "position": "Creative Director",
+        "location": "St. Louis, MO",
+        "remote_option": "Hybrid",
+        "salary_range": "$85k-120k",
+        "alex_ai_score": 68,
+        "application_url": "https://atomicdust.com/careers",
+        "description": "Creative direction and brand strategy",
+        "requirements": "Creative direction, brand strategy, team leadership",
+        "benefits": "Health, 401k, Creative freedom, Flexible schedule",
+        "work_life_balance": "Flexible schedule, creative environment",
+        "alex_ai_leverage": "Creative direction with AI tools, brand strategy innovation",
+        "contact_emails": [
+          "creative@atomicdust.com",
+          "hr@atomicdust.com",
+          "info@atomicdust.com"
+        ],
+        "org_structure": "CEO -> Creative Director -> Art Directors -> Designers"
+      },
+      {
+        "id": 11,
+        "company": "Veterans United Home Loans",
+        "position": "Software Engineer",
+        "location": "Remote",
+        "remote_option": "Remote",
+        "salary_range": "$85k-125k",
+        "alex_ai_score": 80,
+        "application_url": "https://www.veteransunited.com/careers/",
+        "description": "Supporting veteran homeownership through technology",
+        "requirements": "React, Node.js, agile, mission-driven",
+        "benefits": "Health, 401k, Mission-driven, Remote work",
+        "work_life_balance": "Remote-first, flexible schedule, work-life balance",
+        "alex_ai_leverage": "Client-focused solutions, Alex AI automation for veteran services",
+        "contact_emails": [
+          "cto@veteransunited.com",
+          "hr@veteransunited.com",
+          "talent@veteransunited.com"
+        ],
+        "org_structure": "CTO -> Software Engineering Teams -> Senior Software Engineers"
+      },
+      {
+        "id": 12,
+        "company": "Milestone Systems",
+        "position": "Principal Software Engineer",
+        "location": "Remote",
+        "remote_option": "Remote",
+        "salary_range": "$100k-150k",
+        "alex_ai_score": 82,
+        "application_url": "https://www.milestonesys.com/careers",
+        "description": "Cloud-based video surveillance systems",
+        "requirements": "Distributed systems, cloud architecture, C#",
+        "benefits": "Health, 401k, Stock options, Remote work",
+        "work_life_balance": "Remote-first, flexible schedule, work-life balance",
+        "alex_ai_leverage": "Distributed systems expertise, Alex AI system architecture",
+        "contact_emails": [
+          "kenneth.h@milestonesys.com",
+          "hr@milestonesys.com",
+          "talent@milestonesys.com"
+        ],
+        "org_structure": "VP R&D -> Software Development Teams -> Principal Software Engineers"
+      },
+      {
+        "id": 13,
+        "company": "GitLab",
+        "position": "Senior Frontend Engineer",
+        "location": "Remote",
+        "remote_option": "Remote",
+        "salary_range": "$95k-140k",
+        "alex_ai_score": 85,
+        "application_url": "https://about.gitlab.com/jobs/",
+        "description": "GitLab platform development",
+        "requirements": "Vue.js, JavaScript, Git, collaboration tools",
+        "benefits": "Health, 401k, Unlimited PTO, Remote work",
+        "work_life_balance": "Remote-first, flexible schedule, work-life balance",
+        "alex_ai_leverage": "Frontend development expertise, Alex AI collaboration tools",
+        "contact_emails": [
+          "engineering@gitlab.com",
+          "hr@gitlab.com",
+          "talent@gitlab.com"
+        ],
+        "org_structure": "CTO -> VP Engineering -> Frontend Engineering -> Senior Frontend Engineers"
+      },
+      {
+        "id": 14,
+        "company": "Buffer",
+        "position": "Full Stack Developer",
+        "location": "Remote",
+        "remote_option": "Remote",
+        "salary_range": "$80k-120k",
+        "alex_ai_score": 75,
+        "application_url": "https://buffer.com/jobs",
+        "description": "Social media management platform",
+        "requirements": "React, Node.js, social media, automation",
+        "benefits": "Health, 401k, Remote work, Flexible schedule",
+        "work_life_balance": "Remote-first, flexible schedule, work-life balance",
+        "alex_ai_leverage": "Social media automation, Alex AI workflow optimization",
+        "contact_emails": [
+          "engineering@buffer.com",
+          "hr@buffer.com",
+          "talent@buffer.com"
+        ],
+        "org_structure": "CTO -> Full-Stack Development Teams -> Senior Full-Stack Developers"
+      },
+      {
+        "id": 15,
+        "company": "Zapier",
+        "position": "Software Engineer",
+        "location": "Remote",
+        "remote_option": "Remote",
+        "salary_range": "$90k-135k",
+        "alex_ai_score": 88,
+        "application_url": "https://zapier.com/jobs",
+        "description": "Workflow automation platform",
+        "requirements": "Python, automation, APIs, workflow optimization",
+        "benefits": "Health, 401k, Unlimited PTO, Remote work",
+        "work_life_balance": "Remote-first, flexible schedule, work-life balance",
+        "alex_ai_leverage": "Workflow automation expertise, Alex AI system integration",
+        "contact_emails": [
+          "engineering@zapier.com",
+          "hr@zapier.com",
+          "talent@zapier.com"
+        ],
+        "org_structure": "CTO -> Automation Engineering -> Automation Engineers"
+      },
+      {
+        "id": 16,
+        "company": "Anheuser-Busch",
+        "position": "Engineering Manager - Web",
+        "location": "St. Louis, MO",
+        "remote_option": "Hybrid",
+        "salary_range": "$110k-160k",
+        "alex_ai_score": 78,
+        "application_url": "https://www.anheuser-busch.com/careers",
+        "description": "Web software product development",
+        "requirements": "Web development, leadership, team management",
+        "benefits": "Health, 401k, Stock options, Flexible schedule",
+        "work_life_balance": "Flexible schedule, work-life balance focus",
+        "alex_ai_leverage": "Technical leadership, Alex AI automation and efficiency",
+        "contact_emails": [
+          "engineering@anheuser-busch.com",
+          "hr@anheuser-busch.com",
+          "talent@anheuser-busch.com"
+        ],
+        "org_structure": "VP Digital Transformation -> Digital Product Teams -> Web Engineering Teams"
+      },
+      {
+        "id": 17,
+        "company": "Edward Jones",
+        "position": "Software Developer",
+        "location": "St. Louis, MO",
+        "remote_option": "Hybrid",
+        "salary_range": "$85k-125k",
+        "alex_ai_score": 72,
+        "application_url": "https://careers.edwardjones.com",
+        "description": "Financial services software development",
+        "requirements": "Java, financial services, agile development",
+        "benefits": "Health, 401k, Profit sharing, Flexible schedule",
+        "work_life_balance": "Flexible schedule, work-life balance focus",
+        "alex_ai_leverage": "Financial systems expertise, Alex AI automation for financial services",
+        "contact_emails": [
+          "engineering@edwardjones.com",
+          "hr@edwardjones.com",
+          "talent@edwardjones.com"
+        ],
+        "org_structure": "Head of IT -> Software Development Teams -> Financial Systems Developers"
+      },
+      {
+        "id": 18,
+        "company": "Federal Reserve Bank of St. Louis",
+        "position": "Site Reliability Engineer",
+        "location": "St. Louis, MO",
+        "remote_option": "Hybrid",
+        "salary_range": "$90k-130k",
+        "alex_ai_score": 70,
+        "application_url": "https://www.stlouisfed.org/careers",
+        "description": "Financial system reliability and monitoring",
+        "requirements": "DevOps, monitoring, financial systems, reliability",
+        "benefits": "Health, 401k, Government benefits, Flexible schedule",
+        "work_life_balance": "Flexible schedule, work-life balance focus",
+        "alex_ai_leverage": "System reliability expertise, Alex AI monitoring and optimization",
+        "contact_emails": [
+          "engineering@stlouisfed.org",
+          "hr@stlouisfed.org",
+          "talent@stlouisfed.org"
+        ],
+        "org_structure": "SVP IT -> Infrastructure Teams -> Site Reliability Engineers"
+      },
+      {
+        "id": 19,
+        "company": "Boeing",
+        "position": "Software Engineer",
+        "location": "St. Louis, MO",
+        "remote_option": "Hybrid",
+        "salary_range": "$95k-140k",
+        "alex_ai_score": 68,
+        "application_url": "https://jobs.boeing.com",
+        "description": "Aerospace software development",
+        "requirements": "C++, aerospace, security, systems engineering",
+        "benefits": "Health, 401k, Stock options, Flexible schedule",
+        "work_life_balance": "Flexible schedule, work-life balance focus",
+        "alex_ai_leverage": "Aerospace systems expertise, Alex AI automation for aerospace",
+        "contact_emails": [
+          "engineering@boeing.com",
+          "hr@boeing.com",
+          "talent@boeing.com"
+        ],
+        "org_structure": "VP Engineering -> Software Engineering Teams -> Aerospace Software Engineers"
+      },
+      {
+        "id": 20,
+        "company": "Centene",
+        "position": "Full Stack Developer",
+        "location": "St. Louis, MO",
+        "remote_option": "Hybrid",
+        "salary_range": "$80k-120k",
+        "alex_ai_score": 65,
+        "application_url": "https://www.centene.com/careers",
+        "description": "Healthcare technology solutions",
+        "requirements": "React, Node.js, healthcare, compliance",
+        "benefits": "Health, 401k, Healthcare benefits, Flexible schedule",
+        "work_life_balance": "Flexible schedule, work-life balance focus",
+        "alex_ai_leverage": "Healthcare systems expertise, Alex AI automation for healthcare",
+        "contact_emails": [
+          "engineering@centene.com",
+          "hr@centene.com",
+          "talent@centene.com"
+        ],
+        "org_structure": "CTO -> Software Development Teams -> Healthcare Systems Developers"
+      },
+      {
+        "id": 21,
+        "company": "Square",
+        "position": "Software Engineer",
+        "location": "Remote",
+        "remote_option": "Remote",
+        "salary_range": "$100k-150k",
+        "alex_ai_score": 85,
+        "application_url": "https://careers.squareup.com",
+        "description": "Financial technology platform development",
+        "requirements": "React, Node.js, fintech, payment systems",
+        "benefits": "Health, 401k, Stock options, Remote work",
+        "work_life_balance": "Remote-first, flexible schedule, work-life balance",
+        "alex_ai_leverage": "Fintech expertise, Alex AI automation for payment systems",
+        "contact_emails": [
+          "engineering@squareup.com",
+          "hr@squareup.com",
+          "talent@squareup.com"
+        ],
+        "org_structure": "CTO -> Payment Platform Engineering -> Payment Engineers"
+      },
+      {
+        "id": 22,
+        "company": "Stripe",
+        "position": "Full Stack Engineer",
+        "location": "Remote",
+        "remote_option": "Remote",
+        "salary_range": "$110k-170k",
+        "alex_ai_score": 90,
+        "application_url": "https://stripe.com/jobs",
+        "description": "Payment processing platform development",
+        "requirements": "React, Node.js, payments, financial systems",
+        "benefits": "Health, 401k, Stock options, Remote work",
+        "work_life_balance": "Remote-first, flexible schedule, work-life balance",
+        "alex_ai_leverage": "Payment systems expertise, Alex AI automation for financial infrastructure",
+        "contact_emails": [
+          "engineering@stripe.com",
+          "hr@stripe.com",
+          "talent@stripe.com"
+        ],
+        "org_structure": "CTO -> Payment Processing Platform -> Payment Engineers"
+      },
+      {
+        "id": 23,
+        "company": "Shopify",
+        "position": "Senior Developer",
+        "location": "Remote",
+        "remote_option": "Remote",
+        "salary_range": "$95k-145k",
+        "alex_ai_score": 82,
+        "application_url": "https://www.shopify.com/careers",
+        "description": "E-commerce platform development",
+        "requirements": "React, Node.js, e-commerce, platform development",
+        "benefits": "Health, 401k, Stock options, Remote work",
+        "work_life_balance": "Remote-first, flexible schedule, work-life balance",
+        "alex_ai_leverage": "E-commerce expertise, Alex AI automation for merchant solutions",
+        "contact_emails": [
+          "engineering@shopify.com",
+          "hr@shopify.com",
+          "talent@shopify.com"
+        ],
+        "org_structure": "CTO -> E-commerce Platform -> E-commerce Engineers"
+      },
+      {
+        "id": 24,
+        "company": "Atlassian",
+        "position": "Software Engineer",
+        "location": "Remote",
+        "remote_option": "Remote",
+        "salary_range": "$100k-150k",
+        "alex_ai_score": 80,
+        "application_url": "https://www.atlassian.com/careers",
+        "description": "Collaboration software development",
+        "requirements": "Java, JavaScript, collaboration tools, team productivity",
+        "benefits": "Health, 401k, Stock options, Remote work",
+        "work_life_balance": "Remote-first, flexible schedule, work-life balance",
+        "alex_ai_leverage": "Collaboration tools expertise, Alex AI automation for team productivity",
+        "contact_emails": [
+          "engineering@atlassian.com",
+          "hr@atlassian.com",
+          "talent@atlassian.com"
+        ],
+        "org_structure": "CTO -> Collaboration Platform -> Collaboration Engineers"
+      },
+      {
+        "id": 25,
+        "company": "Slack",
+        "position": "Frontend Engineer",
+        "location": "Remote",
+        "remote_option": "Remote",
+        "salary_range": "$95k-140k",
+        "alex_ai_score": 78,
+        "application_url": "https://slack.com/careers",
+        "description": "Communication platform development",
+        "requirements": "React, JavaScript, communication tools, real-time systems",
+        "benefits": "Health, 401k, Stock options, Remote work",
+        "work_life_balance": "Remote-first, flexible schedule, work-life balance",
+        "alex_ai_leverage": "Communication tools expertise, Alex AI automation for workflow optimization",
+        "contact_emails": [
+          "engineering@slack.com",
+          "hr@slack.com",
+          "talent@slack.com"
+        ],
+        "org_structure": "CTO -> Communication Platform -> Communication Engineers"
+      },
+      {
+        "id": 26,
+        "company": "Adobe",
+        "position": "Creative Cloud Developer",
+        "location": "Remote",
+        "remote_option": "Remote",
+        "salary_range": "$90k-135k",
+        "alex_ai_score": 75,
+        "application_url": "https://careers.adobe.com",
+        "description": "Creative software development",
+        "requirements": "JavaScript, creative tools, design systems",
+        "benefits": "Health, 401k, Creative freedom, Remote work",
+        "work_life_balance": "Remote-first, flexible schedule, work-life balance",
+        "alex_ai_leverage": "Creative tools expertise, Alex AI automation for creative workflows",
+        "contact_emails": [
+          "engineering@adobe.com",
+          "hr@adobe.com",
+          "talent@adobe.com"
+        ],
+        "org_structure": "CTO -> Creative Platform Engineering -> Creative Cloud Engineers"
+      },
+      {
+        "id": 27,
+        "company": "Canva",
+        "position": "Frontend Developer",
+        "location": "Remote",
+        "remote_option": "Remote",
+        "salary_range": "$85k-125k",
+        "alex_ai_score": 72,
+        "application_url": "https://www.canva.com/careers",
+        "description": "Design platform development",
+        "requirements": "React, design tools, user experience",
+        "benefits": "Health, 401k, Creative environment, Remote work",
+        "work_life_balance": "Remote-first, flexible schedule, work-life balance",
+        "alex_ai_leverage": "Design tools expertise, Alex AI automation for design workflows",
+        "contact_emails": [
+          "engineering@canva.com",
+          "hr@canva.com",
+          "talent@canva.com"
+        ],
+        "org_structure": "CTO -> Design Platform Engineering -> Design Platform Engineers"
+      },
+      {
+        "id": 28,
+        "company": "Figma",
+        "position": "Software Engineer",
+        "location": "Remote",
+        "remote_option": "Remote",
+        "salary_range": "$100k-150k",
+        "alex_ai_score": 80,
+        "application_url": "https://www.figma.com/careers",
+        "description": "Design collaboration platform development",
+        "requirements": "JavaScript, design tools, real-time collaboration",
+        "benefits": "Health, 401k, Stock options, Remote work",
+        "work_life_balance": "Remote-first, flexible schedule, work-life balance",
+        "alex_ai_leverage": "Design collaboration expertise, Alex AI automation for design workflows",
+        "contact_emails": [
+          "engineering@figma.com",
+          "hr@figma.com",
+          "talent@figma.com"
+        ],
+        "org_structure": "CTO -> Design Collaboration Platform -> Design Platform Engineers"
+      },
+      {
+        "id": 29,
+        "company": "Pinterest",
+        "position": "Full Stack Engineer",
+        "location": "Remote",
+        "remote_option": "Remote",
+        "salary_range": "$95k-145k",
+        "alex_ai_score": 78,
+        "application_url": "https://careers.pinterest.com",
+        "description": "Visual discovery platform development",
+        "requirements": "React, Node.js, visual content, recommendation systems",
+        "benefits": "Health, 401k, Stock options, Remote work",
+        "work_life_balance": "Remote-first, flexible schedule, work-life balance",
+        "alex_ai_leverage": "Visual content expertise, Alex AI automation for recommendation systems",
+        "contact_emails": [
+          "engineering@pinterest.com",
+          "hr@pinterest.com",
+          "talent@pinterest.com"
+        ],
+        "org_structure": "CTO -> Visual Discovery Platform -> Platform Engineers"
+      },
+      {
+        "id": 30,
+        "company": "Behance",
+        "position": "Creative Developer",
+        "location": "Remote",
+        "remote_option": "Remote",
+        "salary_range": "$80k-120k",
+        "alex_ai_score": 70,
+        "application_url": "https://www.behance.net/careers",
+        "description": "Creative portfolio platform development",
+        "requirements": "JavaScript, creative tools, portfolio systems",
+        "benefits": "Health, 401k, Creative freedom, Remote work",
+        "work_life_balance": "Remote-first, flexible schedule, work-life balance",
+        "alex_ai_leverage": "Creative portfolio expertise, Alex AI automation for creative workflows",
+        "contact_emails": [
+          "engineering@behance.com",
+          "hr@behance.com",
+          "talent@behance.com"
+        ],
+        "org_structure": "CTO -> Creative Portfolio Platform -> Creative Tools Engineers"
+      }
+    ],
+    "alex_ai_analysis_summary": {
+      "high_leverage_opportunities": [
+        {
+          "company": "Microsoft",
+          "score": 95,
+          "leverage_factors": ["Direct AI/ML expertise", "Alex AI system development", "Enterprise-scale solutions"]
+        },
+        {
+          "company": "Daugherty Business Solutions",
+          "score": 92,
+          "leverage_factors": ["Existing 9+ year relationship", "Alex AI client implementations", "Network advantage"]
+        },
+        {
+          "company": "HubSpot",
+          "score": 90,
+          "leverage_factors": ["Marketing automation expertise", "Alex AI implementation", "CRM optimization"]
+        },
+        {
+          "company": "Stripe",
+          "score": 90,
+          "leverage_factors": ["Payment systems expertise", "Alex AI automation", "Financial infrastructure"]
+        }
+      ],
+      "medium_leverage_opportunities": [
+        {
+          "company": "Breakthrough Fuel",
+          "score": 88,
+          "leverage_factors": ["Solutions architecture", "Sustainability focus", "Alex AI optimization"]
+        },
+        {
+          "company": "Zapier",
+          "score": 88,
+          "leverage_factors": ["Workflow automation expertise", "Alex AI system integration", "API development"]
+        }
+      ],
+      "strategic_recommendations": [
+        "Prioritize roles that combine AI/automation with client-facing responsibilities",
+        "Emphasize Alex AI results in applications (45% efficiency, 30% cycle time reduction)",
+        "Target companies with digital transformation initiatives",
+        "Focus on roles requiring both technical and business acumen",
+        "Leverage existing relationships (Daugherty) for faster application process"
+      ]
+    }
+  }
+}

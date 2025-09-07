@@ -1,0 +1,254 @@
+{
+  "name": "MCP Memory Consolidation Workflow",
+  "nodes": [
+    {
+      "id": "memory-optimization-trigger",
+      "name": "Memory Optimization Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [240, 300],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "daysInterval": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "load-memories-from-supabase",
+      "name": "Load Memories from Supabase",
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [460, 300],
+      "parameters": {
+        "operation": "select",
+        "table": "crew_memories",
+        "returnAll": true
+      }
+    },
+    {
+      "id": "generate-embeddings",
+      "name": "Generate Vector Embeddings",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1,
+      "position": [680, 300],
+      "parameters": {
+        "resource": "embedding",
+        "operation": "create",
+        "model": "text-embedding-3-small",
+        "input": "={{ $json.content }}"
+      }
+    },
+    {
+      "id": "calculate-similarity",
+      "name": "Calculate Memory Similarity",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [900, 300],
+      "parameters": {
+        "functionCode": "// Calculate cosine similarity between memory embeddings\nconst items = $input.all();\nconst processedItems = [];\n\nfor (let i = 0; i < items.length; i++) {\n  const currentItem = items[i].json;\n  const similarities = [];\n  \n  for (let j = 0; j < items.length; j++) {\n    if (i !== j) {\n      const otherItem = items[j].json;\n      const similarity = calculateCosineSimilarity(\n        currentItem.embedding || [],\n        otherItem.embedding || []\n      );\n      \n      if (similarity > 0.85) { // Similarity threshold\n        similarities.push({\n          memory_id: otherItem.id,\n          similarity: similarity,\n          content: otherItem.content\n        });\n      }\n    }\n  }\n  \n  processedItems.push({\n    ...currentItem,\n    similar_memories: similarities,\n    similarity_count: similarities.length\n  });\n}\n\nfunction calculateCosineSimilarity(vecA, vecB) {\n  if (vecA.length !== vecB.length) return 0;\n  \n  let dotProduct = 0;\n  let normA = 0;\n  let normB = 0;\n  \n  for (let i = 0; i < vecA.length; i++) {\n    dotProduct += vecA[i] * vecB[i];\n    normA += vecA[i] * vecA[i];\n    normB += vecB[i] * vecB[i];\n  }\n  \n  return dotProduct / (Math.sqrt(normA) * Math.sqrt(normB));\n}\n\nreturn processedItems;"
+      }
+    },
+    {
+      "id": "identify-clusters",
+      "name": "Identify Memory Clusters",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [1120, 300],
+      "parameters": {
+        "functionCode": "// Identify clusters of similar memories\nconst items = $input.all();\nconst clusters = [];\nconst processed = new Set();\n\nfor (const item of items) {\n  const data = item.json;\n  \n  if (processed.has(data.id)) continue;\n  \n  if (data.similarity_count > 0) {\n    const cluster = {\n      cluster_id: `cluster_${data.id}`,\n      memories: [data],\n      project_coverage: new Set([data.project_id]),\n      crew_coverage: new Set([data.crew_member]),\n      total_importance: data.importance_score || 0.5\n    };\n    \n    // Add similar memories to cluster\n    for (const similar of data.similar_memories) {\n      const similarItem = items.find(i => i.json.id === similar.memory_id);\n      if (similarItem && !processed.has(similar.memory_id)) {\n        cluster.memories.push(similarItem.json);\n        cluster.project_coverage.add(similarItem.json.project_id);\n        cluster.crew_coverage.add(similarItem.json.crew_member);\n        cluster.total_importance += similarItem.json.importance_score || 0.5;\n        processed.add(similar.memory_id);\n      }\n    }\n    \n    cluster.project_coverage = Array.from(cluster.project_coverage);\n    cluster.crew_coverage = Array.from(cluster.crew_coverage);\n    cluster.avg_importance = cluster.total_importance / cluster.memories.length;\n    \n    clusters.push(cluster);\n    processed.add(data.id);\n  }\n}\n\n// Add standalone memories\nfor (const item of items) {\n  const data = item.json;\n  if (!processed.has(data.id)) {\n    clusters.push({\n      cluster_id: `standalone_${data.id}`,\n      memories: [data],\n      project_coverage: [data.project_id],\n      crew_coverage: [data.crew_member],\n      total_importance: data.importance_score || 0.5,\n      avg_importance: data.importance_score || 0.5\n    });\n  }\n}\n\nreturn clusters;"
+      }
+    },
+    {
+      "id": "consolidate-clusters",
+      "name": "Consolidate Memory Clusters",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [1340, 300],
+      "parameters": {
+        "functionCode": "// Consolidate memories within clusters\nconst clusters = $input.all();\nconst consolidatedMemories = [];\nconst memoriesToDelete = [];\n\nfor (const cluster of clusters) {\n  const clusterData = cluster.json;\n  \n  if (clusterData.memories.length === 1) {\n    // Single memory - keep as is\n    consolidatedMemories.push(clusterData.memories[0]);\n  } else {\n    // Multiple memories - consolidate\n    const consolidated = {\n      id: `consolidated_${clusterData.cluster_id}`,\n      content: consolidateContent(clusterData.memories),\n      project_id: clusterData.project_coverage[0],\n      crew_member: 'system_consolidated',\n      memory_type: clusterData.memories[0].memory_type,\n      importance_score: clusterData.avg_importance,\n      created_at: new Date().toISOString(),\n      last_accessed: new Date().toISOString(),\n      access_count: clusterData.memories.reduce((sum, m) => sum + (m.access_count || 1), 0),\n      tags: [...new Set(clusterData.memories.flatMap(m => m.tags || []))],\n      related_memories: clusterData.memories.map(m => m.id),\n      embedding: clusterData.memories[0].embedding || [],\n      is_consolidated: true,\n      original_count: clusterData.memories.length\n    };\n    \n    consolidatedMemories.push(consolidated);\n    \n    // Mark original memories for deletion\n    memoriesToDelete.push(...clusterData.memories.map(m => m.id));\n  }\n}\n\nfunction consolidateContent(memories) {\n  const typeGroups = {};\n  \n  for (const memory of memories) {\n    const type = memory.memory_type || 'general';\n    if (!typeGroups[type]) {\n      typeGroups[type] = [];\n    }\n    typeGroups[type].push(memory.content);\n  }\n  \n  const consolidatedParts = [];\n  \n  for (const [type, contents] of Object.entries(typeGroups)) {\n    if (contents.length === 1) {\n      consolidatedParts.push(contents[0]);\n    } else {\n      const summary = `Consolidated ${type}s (${contents.length} memories):\\n` +\n        contents.map((content, i) => `${i + 1}. ${content}`).join('\\n');\n      consolidatedParts.push(summary);\n    }\n  }\n  \n  return consolidatedParts.join('\\n\\n');\n}\n\nreturn {\n  consolidated_memories: consolidatedMemories,\n  memories_to_delete: memoriesToDelete,\n  optimization_stats: {\n    original_count: memoriesToDelete.length + consolidatedMemories.length,\n    consolidated_count: consolidatedMemories.length,\n    deleted_count: memoriesToDelete.length,\n    space_saved_percent: (memoriesToDelete.length / (memoriesToDelete.length + consolidatedMemories.length)) * 100\n  }\n};"
+      }
+    },
+    {
+      "id": "update-supabase-memories",
+      "name": "Update Supabase Memories",
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [1560, 200],
+      "parameters": {
+        "operation": "upsert",
+        "table": "crew_memories",
+        "columns": "id,content,project_id,crew_member,memory_type,importance_score,created_at,last_accessed,access_count,tags,related_memories,embedding,is_consolidated,original_count"
+      }
+    },
+    {
+      "id": "delete-old-memories",
+      "name": "Delete Old Memories",
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [1560, 400],
+      "parameters": {
+        "operation": "delete",
+        "table": "crew_memories",
+        "filterType": "manual",
+        "conditions": {
+          "conditions": [
+            {
+              "keyName": "id",
+              "condition": "in",
+              "keyValue": "={{ $json.memories_to_delete }}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "generate-optimization-report",
+      "name": "Generate Optimization Report",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [1780, 300],
+      "parameters": {
+        "functionCode": "// Generate comprehensive optimization report\nconst data = $input.first().json;\nconst stats = data.optimization_stats;\nconst timestamp = new Date().toISOString();\n\nconst report = {\n  timestamp: timestamp,\n  optimization_summary: {\n    original_memory_count: stats.original_count,\n    final_memory_count: stats.consolidated_count,\n    memories_consolidated: stats.original_count - stats.consolidated_count,\n    space_saved_percent: stats.space_saved_percent,\n    optimization_efficiency: `${((stats.original_count - stats.consolidated_count) / stats.original_count * 100).toFixed(1)}%`\n  },\n  memory_distribution: {\n    by_project: {},\n    by_crew_member: {},\n    by_memory_type: {}\n  },\n  cluster_analysis: {\n    total_clusters: 0,\n    average_cluster_size: 0,\n    largest_cluster_size: 0\n  },\n  recommendations: [\n    'Consider adjusting similarity threshold if consolidation is too aggressive',\n    'Monitor memory access patterns to improve importance scoring',\n    'Review consolidated memories for content quality',\n    'Set up alerts for memory growth patterns'\n  ]\n};\n\n// Analyze memory distribution\nfor (const memory of data.consolidated_memories) {\n  // By project\n  report.memory_distribution.by_project[memory.project_id] = \n    (report.memory_distribution.by_project[memory.project_id] || 0) + 1;\n  \n  // By crew member\n  report.memory_distribution.by_crew_member[memory.crew_member] = \n    (report.memory_distribution.by_crew_member[memory.crew_member] || 0) + 1;\n  \n  // By memory type\n  report.memory_distribution.by_memory_type[memory.memory_type] = \n    (report.memory_distribution.by_memory_type[memory.memory_type] || 0) + 1;\n}\n\n// Calculate cluster statistics\nconst clusterSizes = data.consolidated_memories\n  .filter(m => m.is_consolidated)\n  .map(m => m.original_count || 1);\n\nif (clusterSizes.length > 0) {\n  report.cluster_analysis.total_clusters = clusterSizes.length;\n  report.cluster_analysis.average_cluster_size = \n    (clusterSizes.reduce((a, b) => a + b, 0) / clusterSizes.length).toFixed(2);\n  report.cluster_analysis.largest_cluster_size = Math.max(...clusterSizes);\n}\n\nreturn {\n  report: report,\n  success: true,\n  message: `Memory optimization completed successfully. ${stats.original_count - stats.consolidated_count} memories consolidated into ${stats.consolidated_count} optimized memories.`\n};"
+      }
+    },
+    {
+      "id": "send-notification",
+      "name": "Send Optimization Notification",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [2000, 300],
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "memory-optimization-complete",
+        "responseMode": "responseNode"
+      }
+    }
+  ],
+  "connections": {
+    "memory-optimization-trigger": {
+      "main": [
+        [
+          {
+            "node": "load-memories-from-supabase",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "load-memories-from-supabase": {
+      "main": [
+        [
+          {
+            "node": "generate-embeddings",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "generate-embeddings": {
+      "main": [
+        [
+          {
+            "node": "calculate-similarity",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "calculate-similarity": {
+      "main": [
+        [
+          {
+            "node": "identify-clusters",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "identify-clusters": {
+      "main": [
+        [
+          {
+            "node": "consolidate-clusters",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "consolidate-clusters": {
+      "main": [
+        [
+          {
+            "node": "update-supabase-memories",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "delete-old-memories",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "update-supabase-memories": {
+      "main": [
+        [
+          {
+            "node": "generate-optimization-report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "delete-old-memories": {
+      "main": [
+        [
+          {
+            "node": "generate-optimization-report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "generate-optimization-report": {
+      "main": [
+        [
+          {
+            "node": "send-notification",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "createdAt": "2025-01-06T05:30:00.000Z",
+      "updatedAt": "2025-01-06T05:30:00.000Z",
+      "id": "memory-optimization",
+      "name": "Memory Optimization"
+    }
+  ],
+  "triggerCount": 1,
+  "updatedAt": "2025-01-06T05:30:00.000Z",
+  "versionId": "1"
+}

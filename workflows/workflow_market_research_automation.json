@@ -1,0 +1,10 @@
+{
+  "description": "Automated market research with AI analysis",
+  "components": [
+    "data_collection",
+    "claude_analysis",
+    "supabase_storage",
+    "n8n_notification"
+  ],
+  "status": "created"
+}

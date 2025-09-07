@@ -1,0 +1,173 @@
+{
+  "Microsoft": {
+    "company_name": "Microsoft",
+    "analysis_timestamp": "2025-09-04T17:23:14.821074",
+    "crew_analysis": {
+      "technical_lead": {
+        "perspective": "Technical Leadership & Architecture",
+        "alex_ai_leverage_score": 65,
+        "technical_opportunities": [
+          "High priority target"
+        ],
+        "key_technical_contacts": [],
+        "recommended_approach": "Emphasize full-stack development and technical leadership capabilities",
+        "mermaid_focus": "Technical hierarchy and decision-making structure"
+      },
+      "ai_strategy": {
+        "perspective": "AI Strategy & Automation",
+        "ai_alignment_score": 65,
+        "ai_opportunities": [
+          "Good AI/automation potential"
+        ],
+        "ai_strategy_contacts": [],
+        "alex_ai_leverage_points": [
+          "AI/ML platform development",
+          "Cloud architecture",
+          "Enterprise-scale solutions"
+        ],
+        "mermaid_focus": "AI/automation decision-making and implementation structure"
+      },
+      "client_success": {
+        "perspective": "Client Success & Relationship Management",
+        "client_opportunities": [
+          "High-value client relationships"
+        ],
+        "client_success_contacts": [],
+        "relationship_building_strategy": "Focus on technical innovation and sustainability alignment",
+        "mermaid_focus": "Client relationship and success management structure"
+      },
+      "sustainability": {
+        "perspective": "Sustainability & Environmental Impact",
+        "sustainability_opportunities": [
+          "Strong sustainability initiatives (carbon negative)"
+        ],
+        "sustainability_contacts": [],
+        "environmental_alignment": "Strong alignment - carbon negative by 2030",
+        "mermaid_focus": "Sustainability and environmental impact decision structure"
+      },
+      "org_structure": {
+        "perspective": "Organizational Structure & Decision Making",
+        "org_complexity": "high",
+        "key_decision_makers": [
+          {
+            "name": "Satya Nadella",
+            "title": "CEO",
+            "decision_authority": "high",
+            "type": "executive"
+          },
+          {
+            "name": "Scott Guthrie",
+            "title": "Executive VP, Cloud + AI",
+            "decision_authority": "high",
+            "type": "executive"
+          },
+          {
+            "name": "Rajesh Jha",
+            "title": "Executive VP, Experiences + Devices",
+            "decision_authority": "high",
+            "type": "executive"
+          }
+        ],
+        "reporting_structure": {
+          "levels": "multiple",
+          "structure": "matrix_organization",
+          "decision_flow": "distributed"
+        },
+        "mermaid_focus": "Complete organizational hierarchy and decision flow"
+      }
+    },
+    "consensus_recommendations": {
+      "priority_score": 65,
+      "key_contacts": [],
+      "application_strategy": "Emphasize full-stack development and technical leadership capabilities | Focus on technical innovation and sustainability alignment",
+      "mermaid_model_focus": "Technical hierarchy and decision-making structure | AI/automation decision-making and implementation structure | Client relationship and success management structure | Sustainability and environmental impact decision structure | Complete organizational hierarchy and decision flow"
+    },
+    "mermaid_model": "graph TD\n    CEO[\"CEO\"]\n    TECH_LEAD[\"Technical Lead<br/>Development\"]\n    MKT_LEAD[\"Marketing Lead<br/>Client Relations\"]\n    AI_SPEC[\"AI Specialist<br/>Automation\"]\n    CEO --> TECH_LEAD\n    CEO --> MKT_LEAD\n    TECH_LEAD --> AI_SPEC\n"
+  },
+  "HubSpot": {
+    "company_name": "HubSpot",
+    "analysis_timestamp": "2025-09-04T17:23:14.821139",
+    "crew_analysis": {
+      "technical_lead": {
+        "perspective": "Technical Leadership & Architecture",
+        "alex_ai_leverage_score": 85,
+        "technical_opportunities": [
+          "High Alex AI leverage potential",
+          "High priority target"
+        ],
+        "key_technical_contacts": [
+          {
+            "name": "Dharmesh Shah",
+            "title": "CTO & Co-founder",
+            "type": "technical_leadership",
+            "priority": "high"
+          }
+        ],
+        "recommended_approach": "Lead with Alex AI automation expertise and technical architecture experience",
+        "mermaid_focus": "Technical hierarchy and decision-making structure"
+      },
+      "ai_strategy": {
+        "perspective": "AI Strategy & Automation",
+        "ai_alignment_score": 85,
+        "ai_opportunities": [
+          "Excellent AI/automation alignment"
+        ],
+        "ai_strategy_contacts": [],
+        "alex_ai_leverage_points": [
+          "Marketing automation workflows",
+          "CRM optimization",
+          "Campaign management systems"
+        ],
+        "mermaid_focus": "AI/automation decision-making and implementation structure"
+      },
+      "client_success": {
+        "perspective": "Client Success & Relationship Management",
+        "client_opportunities": [
+          "High-value client relationships"
+        ],
+        "client_success_contacts": [],
+        "relationship_building_strategy": "Build relationships through shared values and technical expertise",
+        "mermaid_focus": "Client relationship and success management structure"
+      },
+      "sustainability": {
+        "perspective": "Sustainability & Environmental Impact",
+        "sustainability_opportunities": [],
+        "sustainability_contacts": [],
+        "environmental_alignment": "Moderate alignment - general sustainability awareness",
+        "mermaid_focus": "Sustainability and environmental impact decision structure"
+      },
+      "org_structure": {
+        "perspective": "Organizational Structure & Decision Making",
+        "org_complexity": "medium",
+        "key_decision_makers": [
+          {
+            "name": "Yamini Rangan",
+            "title": "CEO",
+            "decision_authority": "high",
+            "type": "executive"
+          }
+        ],
+        "reporting_structure": {
+          "levels": "moderate",
+          "structure": "flat_hierarchy",
+          "decision_flow": "collaborative"
+        },
+        "mermaid_focus": "Complete organizational hierarchy and decision flow"
+      }
+    },
+    "consensus_recommendations": {
+      "priority_score": 85,
+      "key_contacts": [
+        {
+          "name": "Dharmesh Shah",
+          "title": "CTO & Co-founder",
+          "type": "technical_leadership",
+          "priority": "high"
+        }
+      ],
+      "application_strategy": "Lead with Alex AI automation expertise and technical architecture experience | Build relationships through shared values and technical expertise",
+      "mermaid_model_focus": "Technical hierarchy and decision-making structure | AI/automation decision-making and implementation structure | Client relationship and success management structure | Sustainability and environmental impact decision structure | Complete organizational hierarchy and decision flow"
+    },
+    "mermaid_model": "graph TD\n    CEO[\"CEO<br/>Strategic Leadership\"]\n    CTO[\"CTO<br/>Technical Leadership\"]\n    VP_ENG[\"VP Engineering<br/>Development Teams\"]\n    VP_MKT[\"VP Marketing<br/>Client Strategy\"]\n    AI_DIR[\"AI Strategy Director<br/>Alex AI Integration\"]\n    SUST_DIR[\"Sustainability Director<br/>Environmental Impact\"]\n    CEO --> CTO\n    CEO --> VP_MKT\n    CTO --> VP_ENG\n    CTO --> AI_DIR\n    VP_MKT --> SUST_DIR\n    AI_DIR --> ALEX_AI[\"Alex AI System<br/>Automation & Optimization\"]\n    SUST_DIR --> ENV_METRICS[\"Environmental Metrics<br/>Sustainability Tracking\"]\n"
+  }
+}
