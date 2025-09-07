@@ -11,5 +11,9 @@
   "devDependencies": {
     "turbo": "^1.10.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "scripts": {
+    "monitor": "node scripts/monitor-performance.js",
+    "perf": "turbo run build --dry-run --graph"
+  }
 }

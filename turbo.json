@@ -1,56 +1,100 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "globalDependencies": [
-    "**/.env.*local"
+    "**/.env.*local",
+    "**/.env",
+    "**/package.json",
+    "**/pnpm-lock.yaml",
+    "**/turbo.json"
   ],
   "pipeline": {
     "build": {
       "dependsOn": [
-        "^build"
+        "^build",
+        "type-check"
       ],
       "outputs": [
         ".next/**",
         "dist/**",
         "build/**",
-        "!.next/cache/**"
+        "!.next/cache/**",
+        "!.turbo/**"
       ],
       "env": [
-        "NODE_ENV"
-      ]
+        "NODE_ENV",
+        "NEXT_PUBLIC_*"
+      ],
+      "cache": true,
+      "inputs": [
+        "src/**/*",
+        "public/**/*",
+        "package.json",
+        "tsconfig.json",
+        "next.config.*",
+        "tailwind.config.*",
+        "postcss.config.*"
+      ],
+      "outputMode": "hash-only"
     },
     "dev": {
       "cache": false,
       "persistent": true,
       "env": [
         "NODE_ENV",
-        "PORT"
+        "PORT",
+        "NEXT_PUBLIC_*"
       ]
     },
     "test": {
       "dependsOn": [
-        "build"
+        "build",
+        "lint"
       ],
       "outputs": [
-        "coverage/**"
+        "coverage/**",
+        "test-results/**"
       ],
       "env": [
         "NODE_ENV"
+      ],
+      "cache": true,
+      "inputs": [
+        "src/**/*",
+        "test/**/*",
+        "**/*.test.*",
+        "**/*.spec.*",
+        "jest.config.*",
+        "vitest.config.*"
       ]
     },
     "lint": {
+      "dependsOn": [
+        "type-check"
+      ],
       "outputs": [],
       "env": [
         "NODE_ENV"
+      ],
+      "cache": true,
+      "inputs": [
+        "src/**/*",
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.js",
+        "**/*.jsx",
+        "eslint.config.*",
+        ".eslintrc.*"
       ]
     },
     "type-check": {
       "dependsOn": [
-        "^build"
+        "^type-check"
       ],
       "outputs": [],
       "env": [
         "NODE_ENV"
-      ]
+      ],
+      "cache": true
     },
     "clean": {
       "cache": false
