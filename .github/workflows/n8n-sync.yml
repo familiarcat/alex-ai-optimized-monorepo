@@ -1,0 +1,203 @@
+name: N8N Workflow Synchronization
+
+on:
+  push:
+    branches: [main]
+    paths: ['workflows/**']
+  pull_request:
+    paths: ['workflows/**']
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target environment'
+        required: true
+        default: 'production'
+        type: choice
+        options:
+        - production
+        - staging
+
+env:
+  N8N_URL: ${{ secrets.N8N_URL }}
+  N8N_API_KEY: ${{ secrets.N8N_API_KEY }}
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    name: Validate Workflows
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+      
+      - name: Validate Workflow JSON
+        run: |
+          echo "🔍 Validating workflow JSON files..."
+          for file in workflows/*.json; do
+            if [ -f "$file" ]; then
+              echo "Validating $file"
+              jq empty "$file" || {
+                echo "❌ Invalid JSON in $file"
+                exit 1
+              }
+            fi
+          done
+          echo "✅ All JSON files are valid"
+      
+      - name: Validate Workflow Structure
+        run: |
+          echo "🔍 Validating workflow structure..."
+          for file in workflows/*.json; do
+            if [ -f "$file" ]; then
+              echo "Checking structure of $file"
+              jq -e '.name and .nodes' "$file" || {
+                echo "❌ Missing required fields in $file"
+                exit 1
+              }
+              
+              # Check for webhook triggers
+              jq -e '.nodes[] | select(.type == "n8n-nodes-base.webhook")' "$file" || {
+                echo "⚠️  No webhook trigger found in $file"
+              }
+              
+              # Check for response nodes
+              jq -e '.nodes[] | select(.type == "n8n-nodes-base.respondToWebhook")' "$file" || {
+                echo "⚠️  No response node found in $file"
+              }
+            fi
+          done
+          echo "✅ All workflow structures are valid"
+
+  test:
+    runs-on: ubuntu-latest
+    needs: validate
+    name: Test Workflows
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq curl
+      
+      - name: Test Workflow Logic
+        run: |
+          echo "🧪 Testing workflow logic..."
+          chmod +x scripts/test-workflows.sh
+          ./scripts/test-workflows.sh
+      
+      - name: Security Validation
+        run: |
+          echo "🔒 Running security validation..."
+          chmod +x scripts/security-validation.sh
+          ./scripts/security-validation.sh
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [validate, test]
+    if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
+    name: Deploy to N8N
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq curl
+      
+      - name: Deploy to N8N
+        env:
+          N8N_URL: ${{ secrets.N8N_URL }}
+          N8N_API_KEY: ${{ secrets.N8N_API_KEY }}
+          TARGET_ENV: ${{ github.event.inputs.environment || 'production' }}
+        run: |
+          echo "🚀 Deploying workflows to N8N..."
+          chmod +x scripts/n8n-cicd-sync.sh
+          ./scripts/n8n-cicd-sync.sh
+      
+      - name: Verify Deployment
+        env:
+          N8N_URL: ${{ secrets.N8N_URL }}
+          N8N_API_KEY: ${{ secrets.N8N_API_KEY }}
+        run: |
+          echo "🔍 Verifying deployment..."
+          chmod +x scripts/verify-deployment.sh
+          ./scripts/verify-deployment.sh
+      
+      - name: Notify Deployment
+        if: success()
+        run: |
+          echo "📢 Notifying successful deployment..."
+          curl -X POST "$N8N_URL/webhook/deployment-notification" \
+               -H "Content-Type: application/json" \
+               -d '{
+                 "status": "success",
+                 "environment": "${{ github.event.inputs.environment || 'production' }}",
+                 "git_commit": "${{ github.sha }}",
+                 "git_branch": "${{ github.ref_name }}",
+                 "timestamp": "'$(date -u +%Y-%m-%dT%H:%M:%SZ)'"
+               }' || echo "⚠️  Notification failed, but deployment succeeded"
+      
+      - name: Notify Failure
+        if: failure()
+        run: |
+          echo "❌ Deployment failed, sending notification..."
+          curl -X POST "$N8N_URL/webhook/deployment-notification" \
+               -H "Content-Type: application/json" \
+               -d '{
+                 "status": "failure",
+                 "environment": "${{ github.event.inputs.environment || 'production' }}",
+                 "git_commit": "${{ github.sha }}",
+                 "git_branch": "${{ github.ref_name }}",
+                 "timestamp": "'$(date -u +%Y-%m-%dT%H:%M:%SZ)'",
+                 "error": "Deployment failed during CI/CD process"
+               }' || echo "⚠️  Failure notification failed"
+
+  rollback:
+    runs-on: ubuntu-latest
+    needs: deploy
+    if: failure()
+    name: Rollback on Failure
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq curl
+      
+      - name: Rollback Deployment
+        env:
+          N8N_URL: ${{ secrets.N8N_URL }}
+          N8N_API_KEY: ${{ secrets.N8N_API_KEY }}
+        run: |
+          echo "🔄 Rolling back deployment..."
+          chmod +x scripts/rollback-deployment.sh
+          ./scripts/rollback-deployment.sh
