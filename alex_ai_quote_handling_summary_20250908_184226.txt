@@ -1,0 +1,28 @@
+
+🧠 ALEX AI MEMORY: Quote Handling System Fix
+============================================
+
+CRITICAL INSIGHT: Shell Quote Handling Safety
+
+PROBLEM: dquote> and cmdand dquote> errors in shell commands
+SOLUTION: safe-milestone-push.sh script with proper quote escaping
+PRIORITY: CRITICAL - Prevents development workflow breakage
+
+KEY POINTS:
+- Always use safe-milestone-push.sh for milestone commits
+- Use pnpm run milestone:safe for safe milestone pushes
+- Never use complex quotes directly in shell commands
+- Use printf for complex strings to avoid shell interpretation
+
+PREVENTION: This memory must be referenced when creating any shell scripts
+or git commands to prevent quote handling errors.
+
+CREW RELEVANCE:
+- Data: High (system operations)
+- Geordi: High (technical infrastructure)
+- Q: High (system anomalies)
+- Others: Medium/Low (various specializations)
+
+TIMESTAMP: 2025-09-08T18:42:26.474573
+STATUS: ACTIVE - Must be remembered
+        
