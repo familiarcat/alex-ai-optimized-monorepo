@@ -7,8 +7,8 @@
         "path": "alex-ai-jobs",
         "responseMode": "responseNode"
       },
-      "id": "webhook-get",
-      "name": "Webhook - GET",
+      "id": "webhook-get-jobs",
+      "name": "Webhook - Get Jobs",
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 1,
       "position": [240, 300],
@@ -16,17 +16,88 @@
     },
     {
       "parameters": {
+        "httpMethod": "POST",
+        "path": "alex-ai-jobs",
+        "responseMode": "responseNode"
+      },
+      "id": "webhook-create-job",
+      "name": "Webhook - Create Job",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [240, 500],
+      "webhookId": "alex-ai-jobs"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "condition-1",
+              "leftValue": "={{ $json.method }}",
+              "rightValue": "GET",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "if-get-request",
+      "name": "IF - GET Request",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "condition-1",
+              "leftValue": "={{ $json.method }}",
+              "rightValue": "POST",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "if-post-request",
+      "name": "IF - POST Request",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [460, 500]
+    },
+    {
+      "parameters": {
         "url": "https://rpkkkbufdwxmjaerbhbn.supabase.co/rest/v1/job_opportunities",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "supabaseApi",
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [
             {
               "name": "apikey",
-              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJwa2trYnVmZHd4bWphZXJiaGJuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYwOTcyMjIsImV4cCI6MjA3MTY3MzIyMn0.wFPf3jA0X2zdNkaPqoPzTEAE-MsS-XcM6Gk20KYr4Dw"
+              "value": "={{ $credentials.supabaseApi.apiKey }}"
             },
             {
               "name": "Authorization",
-              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJwa2trYnVmZHd4bWphZXJiaGJuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYwOTcyMjIsImV4cCI6MjA3MTY3MzIyMn0.wFPf3jA0X2zdNkaPqoPzTEAE-MsS-XcM6Gk20KYr4Dw"
+              "value": "Bearer {{ $credentials.supabaseApi.apiKey }}"
             }
           ]
         },
@@ -44,26 +115,145 @@
           ]
         }
       },
-      "id": "supabase-get",
+      "id": "supabase-get-jobs",
       "name": "Supabase - Get Jobs",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
-      "position": [460, 300]
+      "position": [680, 200]
+    },
+    {
+      "parameters": {
+        "url": "https://rpkkkbufdwxmjaerbhbn.supabase.co/rest/v1/job_opportunities",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "supabaseApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "={{ $credentials.supabaseApi.apiKey }}"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer {{ $credentials.supabaseApi.apiKey }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "company",
+              "value": "={{ $json.body.company }}"
+            },
+            {
+              "name": "position",
+              "value": "={{ $json.body.position }}"
+            },
+            {
+              "name": "location",
+              "value": "={{ $json.body.location }}"
+            },
+            {
+              "name": "remote_option",
+              "value": "={{ $json.body.remote_option }}"
+            },
+            {
+              "name": "salary_range",
+              "value": "={{ $json.body.salary_range }}"
+            },
+            {
+              "name": "description",
+              "value": "={{ $json.body.description }}"
+            },
+            {
+              "name": "requirements",
+              "value": "={{ $json.body.requirements }}"
+            },
+            {
+              "name": "benefits",
+              "value": "={{ $json.body.benefits }}"
+            },
+            {
+              "name": "application_url",
+              "value": "={{ $json.body.application_url }}"
+            },
+            {
+              "name": "source",
+              "value": "={{ $json.body.source || 'n8n' }}"
+            },
+            {
+              "name": "alex_ai_score",
+              "value": "={{ $json.body.alex_ai_score || 85 }}"
+            },
+            {
+              "name": "st_louis_area",
+              "value": "={{ $json.body.st_louis_area || false }}"
+            },
+            {
+              "name": "st_louis_focus",
+              "value": "={{ $json.body.st_louis_focus || false }}"
+            }
+          ]
+        }
+      },
+      "id": "supabase-create-job",
+      "name": "Supabase - Create Job",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [680, 400]
     },
     {
       "parameters": {
         "respondWith": "json",
         "responseBody": "={{ { \"success\": true, \"data\": $json, \"message\": \"Job opportunities retrieved successfully\" } }}"
       },
-      "id": "respond",
-      "name": "Respond",
+      "id": "respond-jobs",
+      "name": "Respond - Jobs",
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1,
-      "position": [680, 300]
+      "position": [900, 200]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { \"success\": true, \"data\": $json, \"message\": \"Job created successfully\" } }}"
+      },
+      "id": "respond-created",
+      "name": "Respond - Created",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [900, 400]
     }
   ],
   "connections": {
-    "Webhook - GET": {
+    "Webhook - Get Jobs": {
+      "main": [
+        [
+          {
+            "node": "IF - GET Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook - Create Job": {
+      "main": [
+        [
+          {
+            "node": "IF - POST Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF - GET Request": {
       "main": [
         [
           {
@@ -74,11 +264,33 @@
         ]
       ]
     },
+    "IF - POST Request": {
+      "main": [
+        [
+          {
+            "node": "Supabase - Create Job",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
     "Supabase - Get Jobs": {
       "main": [
         [
           {
-            "node": "Respond",
+            "node": "Respond - Jobs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Supabase - Create Job": {
+      "main": [
+        [
+          {
+            "node": "Respond - Created",
             "type": "main",
             "index": 0
           }
@@ -91,7 +303,5 @@
     "executionOrder": "v1"
   },
   "versionId": "1",
-  "id": "alex-ai-jobs-simple",
-  "tags": []
+  "id": "alex-ai-jobs-webhook"
 }
-
