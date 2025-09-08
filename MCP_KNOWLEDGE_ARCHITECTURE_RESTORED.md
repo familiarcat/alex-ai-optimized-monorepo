@@ -138,3 +138,4 @@ Local API Fails → Mock Data (/api/mock-data?type=jobs)
 **✅ MCP Knowledge Architecture Successfully Restored!**
 
 The system now properly follows the **Frontend → N8N → MCP** architecture pattern, ensuring that MCPs can populate job data through N8N workflows while maintaining proper separation of concerns and robust fallback mechanisms.
+

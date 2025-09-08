@@ -72,3 +72,4 @@ fi
 echo ""
 echo "🎉 Credential validation complete!"
 echo "All required credentials are properly loaded and available."
+

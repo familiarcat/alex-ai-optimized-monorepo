@@ -129,3 +129,4 @@ echo "Next steps:"
 echo "1. Verify webhook is active in N8N dashboard"
 echo "2. Test the webhook endpoints"
 echo "3. Update frontend to use N8N as primary data source"
+
