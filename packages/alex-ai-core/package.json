@@ -1,5 +1,5 @@
 {
-  "name": "@alex-ai/core",
+  "name": "@alex-ai/legacy-core",
   "version": "1.0.0",
   "description": "Alex AI Core System - AI agents, memory, and workflows",
   "main": "dist/index.js",

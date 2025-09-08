@@ -35,6 +35,19 @@ export_vars=(
     "ALEX_AI_VERSION"
 )
 
+# Map Supabase credentials from your ~/.zshrc format to Next.js format
+if [ -n "$SUPABASE_URL" ]; then
+    export NEXT_PUBLIC_SUPABASE_URL="$SUPABASE_URL"
+fi
+
+if [ -n "$SUPABASE_ANON_KEY" ]; then
+    export NEXT_PUBLIC_SUPABASE_ANON_KEY="$SUPABASE_ANON_KEY"
+fi
+
+if [ -n "$SUPABASE_KEY" ]; then
+    export NEXT_PUBLIC_SUPABASE_ANON_KEY="$SUPABASE_KEY"
+fi
+
 echo "🌐 Exporting environment variables:"
 for var in "${export_vars[@]}"; do
     if [ -n "${!var}" ]; then
