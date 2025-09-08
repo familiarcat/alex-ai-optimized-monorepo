@@ -28,6 +28,7 @@
     "alex-ai:status": "node -e \"const { getAlexAIStatus } = require('@alex-ai/core'); getAlexAIStatus().then(console.log);\"",
     "alex-ai:test": "node -e \"const { getAlexAI } = require('@alex-ai/core'); getAlexAI().runTests().then(console.log);\"",
     "milestone": "./scripts/milestone-push.sh",
-    "quick-milestone": "./scripts/quick-milestone.sh"
+    "quick-milestone": "./scripts/quick-milestone.sh",
+    "validate-creds": "./scripts/credential-validator.sh"
   }
 }
