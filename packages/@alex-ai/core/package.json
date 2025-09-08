@@ -1,0 +1,58 @@
+{
+  "name": "@alex-ai/core",
+  "version": "2.0.0",
+  "description": "Alex AI Core Package - Central Integration Hub for all sub-projects",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "alex-ai",
+    "ai",
+    "automation",
+    "n8n",
+    "federation-crew",
+    "stealth-scraping",
+    "credentials-management"
+  ],
+  "author": "Alex AI Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0"
+  },
+  "peerDependencies": {
+    "puppeteer": "^21.0.0"
+  },
+  "peerDependenciesMeta": {
+    "puppeteer": {
+      "optional": true
+    }
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/familiarcat/alex-ai-optimized-monorepo.git",
+    "directory": "packages/@alex-ai/core"
+  }
+}

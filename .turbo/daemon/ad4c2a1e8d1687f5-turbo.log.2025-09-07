@@ -666,3 +666,31 @@
 2025-09-07T10:01:44.363729Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
 2025-09-07T10:01:45.453483Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("ALEX_AI_MILESTONE_v2.0.md")}
 2025-09-07T10:01:45.453527Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T10:04:27.756158Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("ALEX_AI_MILESTONE_v2.0.md")}
+2025-09-07T10:04:27.757078Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T10:13:59.059599Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/@alex-ai/core/src/alex-ai-manager.ts"), AnchoredSystemPathBuf("packages/@alex-ai/core"), AnchoredSystemPathBuf("packages/@alex-ai/core/src")}
+2025-09-07T10:13:59.061066Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T10:13:59.445137Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/@alex-ai/core/src/alex-ai-manager.ts")}
+2025-09-07T10:13:59.445169Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T10:14:17.643885Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/@alex-ai/core/src/n8n-credentials-manager.ts")}
+2025-09-07T10:14:17.643909Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T10:14:17.842523Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/@alex-ai/core/src/n8n-credentials-manager.ts")}
+2025-09-07T10:14:17.842536Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T10:14:41.443954Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/@alex-ai/core/src/unified-data-service.ts")}
+2025-09-07T10:14:41.443997Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T10:14:41.741285Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/@alex-ai/core/src/unified-data-service.ts")}
+2025-09-07T10:14:41.741297Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T10:15:17.842593Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/@alex-ai/core/src/stealth-scraping-service.ts")}
+2025-09-07T10:15:17.842660Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T10:15:18.042101Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/@alex-ai/core/src/stealth-scraping-service.ts")}
+2025-09-07T10:15:18.042122Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T10:15:49.243105Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/@alex-ai/core/src/crew-manager.ts")}
+2025-09-07T10:15:49.243172Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T10:15:49.441274Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/@alex-ai/core/src/crew-manager.ts")}
+2025-09-07T10:15:49.441287Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T10:16:11.942074Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/@alex-ai/core/src/index.ts")}
+2025-09-07T10:16:11.942120Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T10:16:12.641575Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/@alex-ai/core/src/index.ts")}
+2025-09-07T10:16:12.641639Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-07T10:16:31.009715Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/@alex-ai/core/package.json")}
+2025-09-07T10:16:31.010206Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
