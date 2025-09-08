@@ -1,0 +1,133 @@
+{
+  "name": "Alex AI Jobs Production",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "GET",
+        "path": "jobs",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook-get-jobs",
+      "name": "GET Jobs Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [240, 300],
+      "webhookId": "alex-ai-jobs-get"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "jobs",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook-post-jobs",
+      "name": "POST Jobs Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [240, 500],
+      "webhookId": "alex-ai-jobs-post"
+    },
+    {
+      "parameters": {
+        "operation": "select",
+        "table": "job_opportunities",
+        "options": {
+          "limit": 100
+        }
+      },
+      "id": "supabase-select",
+      "name": "Select Jobs from Supabase",
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [460, 300],
+      "credentials": {
+        "supabaseApi": {
+          "id": "supabase-credentials",
+          "name": "Supabase Credentials"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "insert",
+        "table": "job_opportunities",
+        "columns": "company,position,location,remote_option,salary_range,description,requirements,benefits,application_url,source,scraped_at,alex_ai_score,st_louis_area,st_louis_focus"
+      },
+      "id": "supabase-insert",
+      "name": "Insert Job to Supabase",
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [460, 500],
+      "credentials": {
+        "supabaseApi": {
+          "id": "supabase-credentials",
+          "name": "Supabase Credentials"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}"
+      },
+      "id": "respond-success",
+      "name": "Respond with Success",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [680, 400]
+    }
+  ],
+  "connections": {
+    "webhook-get-jobs": {
+      "main": [
+        [
+          {
+            "node": "supabase-select",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "webhook-post-jobs": {
+      "main": [
+        [
+          {
+            "node": "supabase-insert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "supabase-select": {
+      "main": [
+        [
+          {
+            "node": "respond-success",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "supabase-insert": {
+      "main": [
+        [
+          {
+            "node": "respond-success",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {},
+  "versionId": "1"
+}
+
+

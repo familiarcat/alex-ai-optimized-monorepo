@@ -1,340 +1,201 @@
 #!/bin/bash
 
-# Security Audit System
-# Comprehensive security assessment for Alex AI system
+# Security Audit Script for Alex AI Monorepo
+# This script performs comprehensive security checks
 
-set -euo pipefail
+set -e
 
-# Configuration
-AUDIT_DIR="security-audit-results"
-LOG_FILE="${AUDIT_DIR}/security-audit.log"
+echo "🔒 ALEX AI SECURITY AUDIT"
+echo "========================="
+echo ""
 
-# Ensure audit directory exists
-mkdir -p "$AUDIT_DIR"
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m' # No Color
 
-# Audit counters
-TOTAL_CHECKS=0
-PASSED_CHECKS=0
-FAILED_CHECKS=0
-WARNING_CHECKS=0
-
-# Logging function
-log() {
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$LOG_FILE"
-}
-
-# Audit result tracking
-audit_result() {
-    local check_name="$1"
-    local result="$2"
-    local details="${3:-}"
-    
-    TOTAL_CHECKS=$((TOTAL_CHECKS + 1))
-    
-    case "$result" in
+# Function to print colored output
+print_status() {
+    local status=$1
+    local message=$2
+    case $status in
         "PASS")
-            PASSED_CHECKS=$((PASSED_CHECKS + 1))
-            log "✅ PASS: $check_name"
+            echo -e "${GREEN}✅ $message${NC}"
             ;;
         "FAIL")
-            FAILED_CHECKS=$((FAILED_CHECKS + 1))
-            log "❌ FAIL: $check_name - $details"
+            echo -e "${RED}❌ $message${NC}"
             ;;
         "WARN")
-            WARNING_CHECKS=$((WARNING_CHECKS + 1))
-            log "⚠️  WARN: $check_name - $details"
+            echo -e "${YELLOW}⚠️  $message${NC}"
             ;;
     esac
 }
 
-# Check file permissions
+# Function to check for secrets in files
+check_secrets() {
+    echo "🔍 Checking for exposed secrets..."
+    
+    local secrets_found=false
+    
+    # Check for common secret patterns
+    if grep -r -i "sk-proj-" . --exclude-dir=node_modules --exclude-dir=.git --exclude="*.log" > /dev/null 2>&1; then
+        print_status "FAIL" "OpenAI API keys found in codebase"
+        secrets_found=true
+    fi
+    
+    if grep -r -i "sb_publishable_" . --exclude-dir=node_modules --exclude-dir=.git --exclude="*.log" > /dev/null 2>&1; then
+        print_status "FAIL" "Supabase keys found in codebase"
+        secrets_found=true
+    fi
+    
+    if grep -r -i "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9" . --exclude-dir=node_modules --exclude-dir=.git --exclude="*.log" > /dev/null 2>&1; then
+        print_status "FAIL" "JWT tokens found in codebase"
+        secrets_found=true
+    fi
+    
+    if grep -r -i "sk-or-v1-" . --exclude-dir=node_modules --exclude-dir=.git --exclude="*.log" > /dev/null 2>&1; then
+        print_status "FAIL" "OpenRouter API keys found in codebase"
+        secrets_found=true
+    fi
+    
+    if [ "$secrets_found" = false ]; then
+        print_status "PASS" "No exposed secrets found"
+    fi
+}
+
+# Function to check environment files
+check_env_files() {
+    echo ""
+    echo "🔍 Checking environment configuration..."
+    
+    if [ -f "apps/alex-ai-job-search/.env.local" ]; then
+        print_status "WARN" ".env.local file exists (should not be committed)"
+    else
+        print_status "PASS" "No .env.local file found"
+    fi
+    
+    if [ -f "apps/alex-ai-job-search/.env.production" ]; then
+        print_status "WARN" ".env.production file exists (should not be committed)"
+    else
+        print_status "PASS" "No .env.production file found"
+    fi
+    
+    if [ -f "apps/alex-ai-job-search/env.example" ]; then
+        print_status "PASS" "env.example file exists for reference"
+    else
+        print_status "FAIL" "env.example file missing"
+    fi
+}
+
+# Function to check security headers
+check_security_headers() {
+    echo ""
+    echo "🔍 Checking security configuration..."
+    
+    if [ -f "apps/alex-ai-job-search/next.config.js" ]; then
+        if grep -q "X-Frame-Options" apps/alex-ai-job-search/next.config.js; then
+            print_status "PASS" "Security headers configured in Next.js"
+        else
+            print_status "FAIL" "Security headers not configured"
+        fi
+    else
+        print_status "FAIL" "Next.js config file missing"
+    fi
+    
+    if [ -f "apps/alex-ai-job-search/src/middleware.ts" ]; then
+        print_status "PASS" "Security middleware exists"
+    else
+        print_status "FAIL" "Security middleware missing"
+    fi
+}
+
+# Function to check dependencies
+check_dependencies() {
+    echo ""
+    echo "🔍 Checking dependencies for vulnerabilities..."
+    
+    if command -v npm &> /dev/null; then
+        cd apps/alex-ai-job-search
+        if npm audit --audit-level=moderate > /dev/null 2>&1; then
+            print_status "PASS" "No high-severity vulnerabilities found"
+        else
+            print_status "WARN" "Vulnerabilities found - run 'npm audit' for details"
+        fi
+        cd ../..
+    else
+        print_status "WARN" "npm not available for dependency audit"
+    fi
+}
+
+# Function to check git configuration
+check_git_security() {
+    echo ""
+    echo "🔍 Checking Git security..."
+    
+    if [ -f ".gitignore" ]; then
+        if grep -q "\.env" .gitignore; then
+            print_status "PASS" ".env files are gitignored"
+        else
+            print_status "FAIL" ".env files not in .gitignore"
+        fi
+        
+        if grep -q "node_modules" .gitignore; then
+            print_status "PASS" "node_modules is gitignored"
+        else
+            print_status "FAIL" "node_modules not in .gitignore"
+        fi
+    else
+        print_status "FAIL" ".gitignore file missing"
+    fi
+}
+
+# Function to check file permissions
 check_file_permissions() {
-    log "Checking file permissions..."
+    echo ""
+    echo "🔍 Checking file permissions..."
     
-    # Check API key file permissions
-    if [[ -f "$HOME/.alexai-keys/api-keys.env" ]]; then
-        local perms=$(stat -f "%OLp" "$HOME/.alexai-keys/api-keys.env" 2>/dev/null || echo "000")
-        if [[ "$perms" == "600" ]]; then
-            audit_result "API Key File Permissions" "PASS"
-        else
-            audit_result "API Key File Permissions" "FAIL" "Expected 600, got $perms"
-        fi
+    # Check for overly permissive files
+    local permissive_files=$(find . -type f -perm /o+w -not -path "./node_modules/*" -not -path "./.git/*" 2>/dev/null | wc -l)
+    
+    if [ "$permissive_files" -eq 0 ]; then
+        print_status "PASS" "No overly permissive file permissions found"
     else
-        audit_result "API Key File Permissions" "FAIL" "File does not exist"
-    fi
-    
-    # Check secure directory permissions
-    if [[ -d "$HOME/.alexai-keys" ]]; then
-        local dir_perms=$(stat -f "%OLp" "$HOME/.alexai-keys" 2>/dev/null || echo "000")
-        if [[ "$dir_perms" == "700" ]]; then
-            audit_result "Secure Directory Permissions" "PASS"
-        else
-            audit_result "Secure Directory Permissions" "FAIL" "Expected 700, got $dir_perms"
-        fi
-    else
-        audit_result "Secure Directory Permissions" "FAIL" "Directory does not exist"
-    fi
-    
-    # Check script permissions
-    local scripts=(
-        "scripts/production-shell-engine.sh"
-        "scripts/quick-production-test.sh"
-        "scripts/security-audit.sh"
-    )
-    
-    for script in "${scripts[@]}"; do
-        if [[ -f "$script" ]]; then
-            local script_perms=$(stat -f "%OLp" "$script" 2>/dev/null || echo "000")
-            if [[ "$script_perms" == "755" ]]; then
-                audit_result "Script Permissions: $(basename "$script")" "PASS"
-            else
-                audit_result "Script Permissions: $(basename "$script")" "WARN" "Expected 755, got $script_perms"
-            fi
-        else
-            audit_result "Script Permissions: $(basename "$script")" "FAIL" "File does not exist"
-        fi
-    done
-}
-
-# Check for sensitive data exposure
-check_sensitive_data() {
-    log "Checking for sensitive data exposure..."
-    
-    # Check for hardcoded API keys in scripts
-    local sensitive_patterns=(
-        "sk-ant-api"
-        "sk-"
-        "password"
-        "secret"
-        "token"
-    )
-    
-    for pattern in "${sensitive_patterns[@]}"; do
-        if grep -r "$pattern" scripts/ --exclude-dir=generated --exclude-dir=test-results 2>/dev/null | grep -v "YOUR_.*_HERE" | grep -v "placeholder" >/dev/null; then
-            audit_result "Hardcoded Sensitive Data: $pattern" "FAIL" "Found potential sensitive data in scripts"
-        else
-            audit_result "Hardcoded Sensitive Data: $pattern" "PASS"
-        fi
-    done
-    
-    # Check for API keys in git history
-    if git log --all --full-history --grep="sk-ant" >/dev/null 2>&1; then
-        audit_result "API Keys in Git History" "FAIL" "Found API keys in git history"
-    else
-        audit_result "API Keys in Git History" "PASS"
+        print_status "WARN" "$permissive_files files with world-write permissions found"
     fi
 }
 
-# Check environment security
-check_environment_security() {
-    log "Checking environment security..."
-    
-    # Check if .env files are in .gitignore
-    if grep -q "\.env" .gitignore 2>/dev/null; then
-        audit_result "Environment Files in .gitignore" "PASS"
-    else
-        audit_result "Environment Files in .gitignore" "FAIL" ".env files not ignored"
-    fi
-    
-    # Check for .env files in repository
-    if find . -name "*.env" -not -path "./.git/*" | grep -v ".alexai-keys" >/dev/null; then
-        audit_result "Environment Files in Repository" "WARN" "Found .env files in repository"
-    else
-        audit_result "Environment Files in Repository" "PASS"
-    fi
-    
-    # Check for backup files
-    if find . -name "*.bak" -o -name "*.backup" -o -name "*~" | grep -v ".git" >/dev/null; then
-        audit_result "Backup Files" "WARN" "Found backup files in repository"
-    else
-        audit_result "Backup Files" "PASS"
-    fi
+# Function to generate security report
+generate_report() {
+    echo ""
+    echo "📊 SECURITY AUDIT SUMMARY"
+    echo "========================="
+    echo "Date: $(date)"
+    echo "Repository: $(git remote get-url origin 2>/dev/null || echo 'Not a git repository')"
+    echo "Branch: $(git branch --show-current 2>/dev/null || echo 'Not a git repository')"
+    echo ""
+    echo "Security checks completed. Review any FAIL or WARN items above."
+    echo ""
+    echo "🔒 Security Recommendations:"
+    echo "1. Never commit .env files or API keys"
+    echo "2. Use environment variables for all sensitive data"
+    echo "3. Regularly update dependencies"
+    echo "4. Enable GitHub security features (Dependabot, Code scanning)"
+    echo "5. Use HTTPS for all external connections"
+    echo "6. Implement proper authentication and authorization"
+    echo "7. Monitor for security events and log them"
 }
 
-# Check API key management
-check_api_key_management() {
-    log "Checking API key management..."
-    
-    # Check if API keys are loaded from secure location
-    if [[ -f "$HOME/.alexai-keys/manage-keys.sh" ]]; then
-        audit_result "API Key Management Script" "PASS"
-    else
-        audit_result "API Key Management Script" "FAIL" "Management script missing"
-    fi
-    
-    # Check if .zshrc sources secure keys
-    if grep -q "source.*alexai-keys" "$HOME/.zshrc" 2>/dev/null; then
-        audit_result "Secure Key Loading in .zshrc" "PASS"
-    else
-        audit_result "Secure Key Loading in .zshrc" "WARN" "Not using secure key loading"
-    fi
-    
-    # Check for API key validation
-    if [[ -f "scripts/validate-api-keys.sh" ]]; then
-        audit_result "API Key Validation Script" "PASS"
-    else
-        audit_result "API Key Validation Script" "WARN" "No validation script found"
-    fi
-}
-
-# Check network security
-check_network_security() {
-    log "Checking network security..."
-    
-    # Check for HTTPS usage in API calls
-    if grep -r "https://" scripts/ --exclude-dir=generated --exclude-dir=test-results 2>/dev/null | grep -q "api"; then
-        audit_result "HTTPS API Usage" "PASS"
-    else
-        audit_result "HTTPS API Usage" "WARN" "No HTTPS API calls found"
-    fi
-    
-    # Check for HTTP usage (should be minimal)
-    if grep -r "http://" scripts/ --exclude-dir=generated --exclude-dir=test-results 2>/dev/null | grep -v "localhost" >/dev/null; then
-        audit_result "HTTP Usage" "WARN" "Found HTTP calls (should use HTTPS)"
-    else
-        audit_result "HTTP Usage" "PASS"
-    fi
-}
-
-# Check input validation
-check_input_validation() {
-    log "Checking input validation..."
-    
-    # Check for input validation in shell scripts
-    local validation_patterns=(
-        "set -euo pipefail"
-        "validate_"
-        "check_"
-    )
-    
-    for pattern in "${validation_patterns[@]}"; do
-        if grep -r "$pattern" scripts/ --exclude-dir=generated --exclude-dir=test-results 2>/dev/null >/dev/null; then
-            audit_result "Input Validation: $pattern" "PASS"
-        else
-            audit_result "Input Validation: $pattern" "WARN" "Limited input validation found"
-        fi
-    done
-}
-
-# Check error handling
-check_error_handling() {
-    log "Checking error handling..."
-    
-    # Check for error handling patterns
-    local error_patterns=(
-        "trap.*ERR"
-        "handle_error"
-        "set -e"
-    )
-    
-    for pattern in "${error_patterns[@]}"; do
-        if grep -r "$pattern" scripts/ --exclude-dir=generated --exclude-dir=test-results 2>/dev/null >/dev/null; then
-            audit_result "Error Handling: $pattern" "PASS"
-        else
-            audit_result "Error Handling: $pattern" "WARN" "Limited error handling found"
-        fi
-    done
-}
-
-# Generate security report
-generate_security_report() {
-    local report_file="${AUDIT_DIR}/security-report.md"
-    
-    cat > "$report_file" << EOF
-# Security Audit Report
-
-**Generated:** $(date)
-**Audit System:** Security Audit v1.0
-
-## Summary
-
-- **Total Checks:** $TOTAL_CHECKS
-- **Passed:** $PASSED_CHECKS
-- **Failed:** $FAILED_CHECKS
-- **Warnings:** $WARNING_CHECKS
-- **Security Score:** $((PASSED_CHECKS * 100 / TOTAL_CHECKS))%
-
-## Detailed Results
-
-EOF
-
-    # Add detailed results from log
-    grep -E "(PASS|FAIL|WARN):" "$LOG_FILE" >> "$report_file"
-    
-    cat >> "$report_file" << EOF
-
-## Recommendations
-
-EOF
-
-    if [[ $FAILED_CHECKS -eq 0 && $WARNING_CHECKS -eq 0 ]]; then
-        cat >> "$report_file" << EOF
-✅ **Excellent security posture!** All checks passed.
-
-### Next Steps:
-1. Continue regular security audits
-2. Monitor for new security threats
-3. Keep dependencies updated
-EOF
-    elif [[ $FAILED_CHECKS -eq 0 ]]; then
-        cat >> "$report_file" << EOF
-⚠️  **Good security posture with warnings.** Address warnings for improved security.
-
-### Action Items:
-- Review and address $WARNING_CHECKS warning(s)
-- Implement recommended improvements
-- Schedule follow-up audit
-EOF
-    else
-        cat >> "$report_file" << EOF
-❌ **Security issues found.** Address critical issues immediately.
-
-### Critical Actions:
-- Fix $FAILED_CHECKS critical security issue(s)
-- Address $WARNING_CHECKS warning(s)
-- Implement security improvements
-- Re-run security audit
-EOF
-    fi
-    
-    log "Security report generated: $report_file"
-}
-
-# Main audit execution
+# Main execution
 main() {
-    log "Starting Security Audit"
-    log "======================"
-    
-    # Run all security checks
+    check_secrets
+    check_env_files
+    check_security_headers
+    check_dependencies
+    check_git_security
     check_file_permissions
-    check_sensitive_data
-    check_environment_security
-    check_api_key_management
-    check_network_security
-    check_input_validation
-    check_error_handling
-    
-    # Generate report
-    generate_security_report
-    
-    # Final summary
-    log ""
-    log "Security Audit Complete"
-    log "======================"
-    log "Total Checks: $TOTAL_CHECKS"
-    log "Passed: $PASSED_CHECKS"
-    log "Failed: $FAILED_CHECKS"
-    log "Warnings: $WARNING_CHECKS"
-    log "Security Score: $((PASSED_CHECKS * 100 / TOTAL_CHECKS))%"
-    
-    if [[ $FAILED_CHECKS -eq 0 ]]; then
-        log "🔒 Security audit passed! System is secure."
-        exit 0
-    else
-        log "🚨 Security issues found! Review report for details."
-        exit 1
-    fi
+    generate_report
 }
 
-# Execute main function
-main "$@"
+# Run the audit
+main

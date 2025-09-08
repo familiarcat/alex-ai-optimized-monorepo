@@ -29,6 +29,10 @@
     "alex-ai:test": "node -e \"const { getAlexAI } = require('@alex-ai/core'); getAlexAI().runTests().then(console.log);\"",
     "milestone": "./scripts/milestone-push.sh",
     "quick-milestone": "./scripts/quick-milestone.sh",
-    "validate-creds": "./scripts/credential-validator.sh"
+    "validate-creds": "./scripts/credential-validator.sh",
+    "security:audit": "./scripts/security-audit.sh",
+    "security:check": "npm audit --audit-level=moderate",
+    "security:fix": "npm audit fix",
+    "security:update": "npm update && npm audit fix"
   }
 }

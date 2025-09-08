@@ -1,0 +1,358 @@
+name: Alex AI CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop, staging ]
+  pull_request:
+    branches: [ main, develop ]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Deployment environment'
+        required: true
+        default: 'test'
+        type: choice
+        options:
+        - test
+        - uat
+        - production
+
+env:
+  NODE_VERSION: '20'
+  PNPM_VERSION: '8'
+
+jobs:
+  # Security and Quality Checks
+  security-audit:
+    name: Security Audit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run security audit
+        run: pnpm audit --audit-level moderate
+
+      - name: Check for vulnerabilities
+        run: |
+          if pnpm audit --audit-level high --json | jq -e '.vulnerabilities | length > 0'; then
+            echo "High severity vulnerabilities found!"
+            exit 1
+          fi
+
+  # Code Quality and Testing
+  quality-checks:
+    name: Code Quality & Testing
+    runs-on: ubuntu-latest
+    needs: security-audit
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run linting
+        run: pnpm lint
+
+      - name: Run type checking
+        run: pnpm type-check
+
+      - name: Run unit tests
+        run: pnpm test
+
+      - name: Run E2E tests
+        run: pnpm test:e2e
+
+      - name: Generate test coverage
+        run: pnpm test:coverage
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+
+  # Build and Package
+  build:
+    name: Build Application
+    runs-on: ubuntu-latest
+    needs: quality-checks
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build application
+        run: pnpm build
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: |
+            apps/alex-ai-job-search/.next/
+            packages/*/dist/
+          retention-days: 7
+
+  # Deploy to Test Environment
+  deploy-test:
+    name: Deploy to Test
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/develop' || github.event_name == 'workflow_dispatch'
+    environment: test
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifacts
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Deploy N8N Infrastructure
+        run: ./scripts/deploy-complete-n8n-infrastructure.sh
+        env:
+          N8N_API_KEY: ${{ secrets.N8N_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy to Vercel (Test)
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          vercel-args: '--prod'
+          working-directory: apps/alex-ai-job-search
+
+      - name: Run smoke tests
+        run: |
+          sleep 30  # Wait for deployment
+          curl -f https://alex-ai-job-search-test.vercel.app/api/health || exit 1
+
+  # Deploy to UAT Environment
+  deploy-uat:
+    name: Deploy to UAT
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/staging' || (github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'uat')
+    environment: uat
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifacts
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Deploy N8N Infrastructure
+        run: ./scripts/deploy-complete-n8n-infrastructure.sh
+        env:
+          N8N_API_KEY: ${{ secrets.N8N_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy to Vercel (UAT)
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_UAT }}
+          vercel-args: '--prod'
+          working-directory: apps/alex-ai-job-search
+
+      - name: Run UAT tests
+        run: |
+          sleep 30  # Wait for deployment
+          curl -f https://alex-ai-job-search-uat.vercel.app/api/health || exit 1
+
+  # Deploy to Production
+  deploy-production:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/main' || (github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'production')
+    environment: production
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifacts
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Deploy N8N Infrastructure
+        run: ./scripts/deploy-complete-n8n-infrastructure.sh
+        env:
+          N8N_API_KEY: ${{ secrets.N8N_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy to Vercel (Production)
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_PROD }}
+          vercel-args: '--prod'
+          working-directory: apps/alex-ai-job-search
+
+      - name: Run production smoke tests
+        run: |
+          sleep 30  # Wait for deployment
+          curl -f https://alex-ai-job-search.vercel.app/api/health || exit 1
+
+      - name: Notify deployment success
+        uses: 8398a7/action-slack@v3
+        with:
+          status: success
+          channel: '#alex-ai-deployments'
+          text: '🚀 Alex AI Job Search deployed to production successfully!'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+  # Post-deployment monitoring
+  monitor:
+    name: Post-deployment Monitoring
+    runs-on: ubuntu-latest
+    needs: [deploy-test, deploy-uat, deploy-production]
+    if: always()
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run health checks
+        run: |
+          echo "🏥 Running post-deployment health checks..."
+          
+          # Test N8N webhooks
+          curl -f https://n8n.pbradygeorgen.com/webhook/alex-ai-jobs || echo "⚠️ N8N webhook check failed"
+          
+          # Test Supabase connection
+          curl -f "${{ secrets.SUPABASE_URL }}/rest/v1/job_opportunities?select=count" || echo "⚠️ Supabase connection check failed"
+          
+          echo "✅ Health checks completed"
+
+      - name: Generate deployment report
+        run: |
+          echo "📊 Deployment Report" > deployment-report.md
+          echo "===================" >> deployment-report.md
+          echo "" >> deployment-report.md
+          echo "**Timestamp:** $(date)" >> deployment-report.md
+          echo "**Branch:** ${{ github.ref }}" >> deployment-report.md
+          echo "**Commit:** ${{ github.sha }}" >> deployment-report.md
+          echo "**Actor:** ${{ github.actor }}" >> deployment-report.md
+          echo "" >> deployment-report.md
+          echo "**Deployments:**" >> deployment-report.md
+          echo "- Test: ${{ needs.deploy-test.result }}" >> deployment-report.md
+          echo "- UAT: ${{ needs.deploy-uat.result }}" >> deployment-report.md
+          echo "- Production: ${{ needs.deploy-production.result }}" >> deployment-report.md
+
+      - name: Upload deployment report
+        uses: actions/upload-artifact@v3
+        with:
+          name: deployment-report
+          path: deployment-report.md
+          retention-days: 30
+
+
+
