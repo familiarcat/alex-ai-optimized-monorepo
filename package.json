@@ -26,6 +26,8 @@
     "deploy": "pnpm run load-creds && turbo run deploy",
     "alex-ai:init": "pnpm run load-creds && node -e \"const { initializeAlexAI } = require('@alex-ai/core'); initializeAlexAI().then(() => console.log('Alex AI initialized'));\"",
     "alex-ai:status": "node -e \"const { getAlexAIStatus } = require('@alex-ai/core'); getAlexAIStatus().then(console.log);\"",
-    "alex-ai:test": "node -e \"const { getAlexAI } = require('@alex-ai/core'); getAlexAI().runTests().then(console.log);\""
+    "alex-ai:test": "node -e \"const { getAlexAI } = require('@alex-ai/core'); getAlexAI().runTests().then(console.log);\"",
+    "milestone": "./scripts/milestone-push.sh",
+    "quick-milestone": "./scripts/quick-milestone.sh"
   }
 }
