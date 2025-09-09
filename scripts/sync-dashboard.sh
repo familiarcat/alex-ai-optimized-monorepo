@@ -17,12 +17,20 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Logging functions
+log_info() {
+    echo -e "${BLUE}ℹ️  $1${NC}"
 }
 
+log_success() {
+    echo -e "${GREEN}✅ $1${NC}"
 }
 
+log_warning() {
+    echo -e "${YELLOW}⚠️  $1${NC}"
 }
 
+log_error() {
+    echo -e "${RED}❌ $1${NC}"
 }
 
 # Generate dashboard
@@ -449,6 +457,7 @@ EOF
 }
 
 # Main execution function
+main() {
     echo ""
     
     # Create dashboard directory

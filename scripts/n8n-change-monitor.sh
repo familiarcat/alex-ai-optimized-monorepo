@@ -41,7 +41,7 @@ log_error() {
 }
 
 # Check prerequisites
-    
+check_prerequisites() {
     if [ -z "$N8N_URL" ] || [ -z "$N8N_API_KEY" ]; then
         log_error "N8N_URL and N8N_API_KEY environment variables are required"
         exit 1
@@ -69,7 +69,7 @@ log_error() {
 }
 
 # Test N8N connection
-    
+test_n8n_connection() {
     local response=$(curl -s -w "%{http_code}" -H "X-N8N-API-KEY: $N8N_API_KEY" "$N8N_URL/api/v1/workflows")
     local http_code="${response: -3}"
     
@@ -373,6 +373,7 @@ EOF
 }
 
 # Main execution function
+main() {
     echo "N8N URL: $N8N_URL"
     echo "Workflows Directory: $WORKFLOWS_DIR"
     echo ""
