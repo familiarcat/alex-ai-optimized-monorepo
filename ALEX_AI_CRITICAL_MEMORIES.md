@@ -68,6 +68,73 @@ pnpm run milestone:safe "Your milestone message"
 
 ---
 
+### 🚨 CRITICAL: N8N Gatekeeper Architecture
+**Date:** 2025-09-08  
+**Priority:** CRITICAL - Prevents system architecture violations  
+**Status:** ACTIVE - Must be remembered
+
+#### Problem Identified
+- Repeated attempts to put Supabase directly into the Next.js UI layer
+- Violation of the N8N gatekeeper architecture pattern
+- Direct client-to-database coupling instead of client-to-N8N-to-database
+
+#### Root Cause
+- Hallucination pattern where Supabase is incorrectly placed in frontend
+- Forgetting that N8N is the single source of truth and gatekeeper
+- Attempting to bypass N8N for direct database access
+
+#### Correct Architecture
+```
+Client → N8N → Supabase → N8N → Client
+```
+
+#### Incorrect Architecture (Hallucination)
+```
+Client → Supabase (BYPASSING N8N)
+```
+
+#### Evidence from Terminal Logs
+```
+❌ Unexpected error in job opportunities API: TypeError: Cannot read properties of undefined (reading 'get')
+    at RateLimiter.check (src/lib/rate-limiter.ts:42:54)
+    at rateLimitMiddleware (src/lib/rate-limiter.ts:113:59)
+    at GET (src/app/api/job-opportunities/route.ts:9:61)
+
+⚠️ Supabase health check failed: Invalid API key
+⚠️ N8N health check failed: 404
+🏥 Health check completed: unhealthy
+```
+
+#### Architecture Rules
+1. **Client components:** NO Supabase imports
+2. **API routes:** NO Supabase imports (use N8N data service)
+3. **Data flow:** Client → N8N → Supabase → N8N → Client
+4. **Fallbacks:** Live data store → Live scraping → Mock data
+5. **NEVER:** Client → Supabase (direct)
+
+#### Prevention Measures
+- **NEVER** import Supabase client in Next.js API routes
+- **NEVER** create direct Supabase connections in frontend
+- **ALWAYS** route data through N8N webhooks
+- **ALWAYS** use N8N as the single source of truth
+- **ALWAYS** maintain the gatekeeper pattern
+
+#### Crew Relevance
+- **Data:** Highest - Data manages all data operations and flow
+- **Geordi La Forge:** Highest - Geordi manages technical infrastructure
+- **Q:** Highest - Q manages system anomalies and architectural violations
+- **Picard:** High - Picard oversees overall system architecture
+- **Riker:** High - Riker coordinates system integration
+- **Worf:** High - Worf handles system security and integrity
+- **Wesley Crusher:** High - Wesley handles automation and data flow
+- **Troi:** Medium - Troi focuses on user experience flow
+- **Beverly Crusher:** Low - Beverly focuses on health monitoring
+
+#### Critical Reminder
+**This architecture pattern must be remembered to prevent future hallucinations that break the N8N gatekeeper system.**
+
+---
+
 ### 📋 Memory Management Instructions
 - This file contains critical system insights that must never be forgotten
 - All crew members should reference this file when working on system operations

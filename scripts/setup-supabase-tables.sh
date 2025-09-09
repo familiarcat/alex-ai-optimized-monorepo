@@ -1,83 +1,72 @@
 #!/bin/bash
 
-# Setup Supabase Tables for Alex AI
-# This script provides instructions and tools for setting up Supabase tables
+# Alex AI Supabase Table Setup Script
+# This script guides you through setting up the required Supabase tables
 
 set -e
 
-echo "🏗️  Alex AI Supabase Tables Setup"
+echo "🗄️  Alex AI Supabase Table Setup"
 echo "================================="
-
-# Load credentials
-echo "🔐 Loading credentials..."
-source ./scripts/load-credentials.sh
-
-echo ""
-echo "📋 Supabase Setup Instructions:"
-echo "==============================="
-echo ""
-echo "1. Go to your Supabase Dashboard:"
-echo "   https://supabase.com/dashboard"
-echo ""
-echo "2. Select your project:"
-echo "   URL: $NEXT_PUBLIC_SUPABASE_URL"
-echo ""
-echo "3. Navigate to SQL Editor (left sidebar)"
-echo ""
-echo "4. Copy and paste the following SQL script:"
 echo ""
 
-# Display the SQL schema
-echo "```sql"
-cat supabase_schema.sql
-echo "```"
-echo ""
-
-echo "5. Click 'Run' to execute the script"
-echo ""
-echo "6. Verify tables were created by checking the 'Table Editor'"
-echo ""
-echo "📊 Expected Tables:"
-echo "  - job_opportunities"
-echo "  - contacts"
-echo "  - applications"
-echo "  - user_analytics_events"
-echo "  - user_sessions"
-echo "  - scraping_jobs"
-echo "  - scheduled_scraping_configs"
-echo "  - scheduled_scraping_status"
-echo "  - user_polling_preferences"
-echo ""
-
-echo "🧪 Testing Database Connection:"
-echo "==============================="
-
-# Test the database connection
-echo "Testing Supabase connection..."
-test_response=$(curl -s -H "apikey: $NEXT_PUBLIC_SUPABASE_ANON_KEY" \
-    -H "Authorization: Bearer $NEXT_PUBLIC_SUPABASE_ANON_KEY" \
-    "$NEXT_PUBLIC_SUPABASE_URL/rest/v1/job_opportunities?select=count" || echo "Connection failed")
-
-if echo "$test_response" | grep -q "count\|error"; then
-    echo "✅ Supabase connection successful"
-    echo "Response: $test_response"
+# Load credentials from ~/.zshrc
+echo "ℹ️  Loading credentials from ~/.zshrc..."
+if [ -f ~/.zshrc ]; then
+    while IFS= read -r line; do
+        if [[ $line == export* ]]; then
+            eval "$line" 2>/dev/null || true
+        fi
+    done < ~/.zshrc
+    echo "✅ Credentials loaded"
 else
-    echo "❌ Supabase connection failed"
-    echo "Response: $test_response"
-    echo ""
-    echo "Please ensure:"
-    echo "1. Tables are created in Supabase"
-    echo "2. RLS policies are set up correctly"
-    echo "3. API keys are valid"
+    echo "❌ ~/.zshrc not found"
+    exit 1
 fi
 
 echo ""
-echo "🎉 Setup Complete!"
-echo "=================="
+echo "📋 Supabase Project Information:"
+echo "  URL: $SUPABASE_URL"
+echo "  Project: $SUPABASE_PROJECT_NAME"
 echo ""
-echo "Next steps:"
-echo "1. Verify tables in Supabase Dashboard"
-echo "2. Test the API endpoints"
-echo "3. Deploy N8N webhooks"
-echo "4. Begin live data collection"
+
+echo "🔧 Manual Setup Required:"
+echo "========================="
 echo ""
+echo "Since we need to create tables in Supabase, please follow these steps:"
+echo ""
+echo "1. Open your Supabase dashboard:"
+echo "   https://supabase.com/dashboard/project/$SUPABASE_PROJECT_NAME"
+echo ""
+echo "2. Go to the SQL Editor"
+echo ""
+echo "3. Copy and paste the following SQL script:"
+echo ""
+echo "--- START SQL SCRIPT ---"
+cat scripts/create-supabase-tables.sql
+echo ""
+echo "--- END SQL SCRIPT ---"
+echo ""
+echo "4. Click 'Run' to execute the script"
+echo ""
+echo "5. Verify the tables were created by checking the Table Editor"
+echo ""
+
+echo "📊 Expected Tables:"
+echo "  - job_opportunities"
+echo "  - contacts" 
+echo "  - applications"
+echo "  - crew_memories"
+echo "  - user_analytics"
+echo ""
+
+echo "✅ After creating the tables, run the following to test the connection:"
+echo "   pnpm run dev"
+echo ""
+
+echo "🔍 To verify tables were created, you can run:"
+echo "   curl -X GET '$SUPABASE_URL/rest/v1/job_opportunities?select=*' \\"
+echo "        -H 'apikey: $SUPABASE_ANON_KEY' \\"
+echo "        -H 'Authorization: Bearer $SUPABASE_ANON_KEY'"
+echo ""
+
+echo "🎉 Once tables are created, the application should work properly!"

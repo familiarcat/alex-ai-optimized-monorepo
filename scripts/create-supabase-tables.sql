@@ -1,5 +1,5 @@
--- Alex AI Supabase Tables Creation Script
--- Execute this script in your Supabase SQL editor
+-- Alex AI Supabase Tables
+-- Creates all required tables for the job search application
 
 -- Enable necessary extensions
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
@@ -93,42 +93,8 @@ ALTER TABLE crew_memories ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_analytics ENABLE ROW LEVEL SECURITY;
 
 -- Create RLS policies (allow all for now, can be restricted later)
-DROP POLICY IF EXISTS "Allow all operations on job_opportunities" ON job_opportunities;
 CREATE POLICY "Allow all operations on job_opportunities" ON job_opportunities FOR ALL USING (true);
-
-DROP POLICY IF EXISTS "Allow all operations on contacts" ON contacts;
 CREATE POLICY "Allow all operations on contacts" ON contacts FOR ALL USING (true);
-
-DROP POLICY IF EXISTS "Allow all operations on applications" ON applications;
 CREATE POLICY "Allow all operations on applications" ON applications FOR ALL USING (true);
-
-DROP POLICY IF EXISTS "Allow all operations on crew_memories" ON crew_memories;
 CREATE POLICY "Allow all operations on crew_memories" ON crew_memories FOR ALL USING (true);
-
-DROP POLICY IF EXISTS "Allow all operations on user_analytics" ON user_analytics;
 CREATE POLICY "Allow all operations on user_analytics" ON user_analytics FOR ALL USING (true);
-
--- Insert test data
-INSERT INTO job_opportunities (
-    company, position, location, remote_option, salary_range, 
-    description, requirements, benefits, application_url, source,
-    alex_ai_score, st_louis_area, st_louis_focus
-) VALUES (
-    'Test Company', 'Software Engineer', 'St. Louis, MO', 'Hybrid', 
-    '$80,000 - $120,000', 'Test job description for Alex AI', 
-    'React, TypeScript, Node.js', 'Health insurance, 401k, remote work',
-    'https://example.com/apply', 'test', 85, true, true
-) ON CONFLICT DO NOTHING;
-
-INSERT INTO crew_memories (
-    crew_member, knowledge_type, title, content, tags, metadata
-) VALUES (
-    'data', 'technical', 'Supabase Setup Complete', 
-    'All Supabase tables have been created and configured successfully',
-    ARRAY['setup', 'supabase', 'database'],
-    '{"setup_complete": true, "timestamp": "' || NOW() || '"}'::jsonb
-) ON CONFLICT DO NOTHING;
-
--- Verify tables were created
-SELECT 'Tables created successfully' as status;
-SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' AND table_name IN ('job_opportunities', 'contacts', 'applications', 'crew_memories', 'user_analytics');
