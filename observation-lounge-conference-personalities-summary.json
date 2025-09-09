@@ -1,0 +1,34 @@
+{
+  "conference_date": "2025-09-09T00:45:50.382858",
+  "atmosphere": "The familiar hum of the observation deck, with holographic displays showing system status and the soft glow of the N8N workflow visualizations",
+  "participants": 8,
+  "conversation_exchanges": 9,
+  "recommendations": 5,
+  "key_personalities": {
+    "leader": "Alex AI Commander (charismatic, strategic)",
+    "enthusiast": "N8n Workflow Specialist (energetic, detail-oriented)",
+    "perfectionist": "Script Intelligence Analyst (methodical, deliberate)",
+    "pragmatist": "Deployment Engineer (results-oriented, no-nonsense)",
+    "visionary": "Data Architect (abstract thinker, philosophical)",
+    "authority": "Quality Assurance Lead (thorough, direct)",
+    "guardian": "Security Specialist (paranoid in best way, urgent)",
+    "diplomat": "Integration Coordinator (solution-oriented, enthusiastic)"
+  },
+  "crew_dynamics": {
+    "closest_pairs": [
+      "Alex AI Commander \u2194 N8N Workflow Specialist",
+      "Script Intelligence Analyst \u2194 Quality Assurance Lead",
+      "Deployment Engineer \u2194 Security Specialist"
+    ],
+    "occasional_tensions": [
+      "Security Specialist vs N8N Workflow Specialist (security vs functionality)",
+      "Deployment Engineer vs Script Intelligence Analyst (pragmatism vs perfectionism)",
+      "Data Architect vs Deployment Engineer (theory vs practice)"
+    ],
+    "consensus_builders": [
+      "Integration Coordinator (diplomatic)",
+      "Alex AI Commander (charismatic leadership)",
+      "Quality Assurance Lead (authority on quality)"
+    ]
+  }
+}
