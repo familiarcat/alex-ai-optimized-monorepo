@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-09-09T03:24:11.686879",
+  "scraper": "Quark YouTube Analysis System",
+  "video_data": {
+    "video_id": "8QN23ZThdRY",
+    "url": "https://www.youtube.com/watch?v=8QN23ZThdRY",
+    "title": "Cursor AI Agents Work Like 10 Developers (Cursor VP Live Demo)",
+    "description": "Join me as I chat with Lee Robinson, VP of Developer Experience at Cursor, as he shares practical tips for maximizing productivity with Cursor's AI coding tools. He demonstrates how to structure prompts, create custom commands, and leverage agents for everything from bug fixes to code reviews. The conversation highlights how AI tools are making software development more accessible while enabling developers to build higher quality products with less effort.\\n\\nTimestamps:\\n00:00 - Intro\\n01:49 - Using AI Agents in Cursor\\n08:21 - Custom Rules within Cursor\\n11:49 - BugBot and code review automation\\n17:19 - CLI and headless options for Cursor agents\\n19:29 - Tips for getting the most out of Cursor\\n21:09 - Examples of innovative software built with Cursor\\n\\nGet Your Complete Financial OS at https://dub.sh/brex-sip\\n\\nKey Points:\\n\u2022 Lee demonstrates how to effectively use Cursor's AI agents for discrete coding tasks\\n\u2022 Setting up proper linting, formatting, and testing helps agents self-correct their outputs\\n\u2022 Custom commands and rules can be created to enhance code reviews and writing quality\\n\u2022 Cursor offers CLI and headless options for running agents in automation workflow\\n\\n1) Create New Chats for Each Task\\n\\nLee showed us his workflow - he created 20+ separate agent chats in a single day!\\n\\nWHY? Because context window matters:\\n\u2022 Each new chat = fresh brain for the AI\\n\u2022 Prevents \\",
+    "view_count": "42955",
+    "duration": "1782",
+    "scraped_at": "2025-09-09T03:24:11.686589",
+    "method": "requests_regex"
+  },
+  "quark_analysis": {
+    "video_title": "Cursor AI Agents Work Like 10 Developers (Cursor VP Live Demo)",
+    "profit_insights": [],
+    "business_applications": [],
+    "latinum_potential": "LOW - Limited viewership",
+    "quark_recommendations": [
+      "Extract key strategies for our gold-pressed latinum system",
+      "Identify revenue optimization techniques",
+      "Look for scalable business model insights",
+      "Find user engagement monetization methods"
+    ]
+  },
+  "profit_focus": "Gold-pressed latinum system optimization",
+  "rules_of_acquisition_applied": [
+    "Rule 10: Greed is eternal",
+    "Rule 45: Expand or die",
+    "Rule 62: The riskier the road, the greater the profit",
+    "Rule 292: Only a fool passes up a business opportunity"
+  ]
+}

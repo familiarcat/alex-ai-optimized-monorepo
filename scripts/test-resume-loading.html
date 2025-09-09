@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Resume Loading</title>
+</head>
+<body>
+    <h1>Test Resume Loading</h1>
+    <div id="status">Testing...</div>
+    <div id="details"></div>
+
+    <script>
+        async function testResumeLoading() {
+            const statusDiv = document.getElementById('status');
+            const detailsDiv = document.getElementById('details');
+            
+            try {
+                statusDiv.textContent = 'Fetching resume file...';
+                detailsDiv.innerHTML = 'Testing fetch from /Brady_Georgen_Resume_Final.docx<br>';
+                
+                const response = await fetch('/Brady_Georgen_Resume_Final.docx');
+                detailsDiv.innerHTML += `Response status: ${response.status}<br>`;
+                detailsDiv.innerHTML += `Response ok: ${response.ok}<br>`;
+                
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch: ${response.status} ${response.statusText}`);
+                }
+                
+                const blob = await response.blob();
+                detailsDiv.innerHTML += `Blob size: ${blob.size} bytes<br>`;
+                detailsDiv.innerHTML += `Blob type: ${blob.type}<br>`;
+                
+                const file = new File([blob], 'Brady_Georgen_Resume_Final.docx', {
+                    type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+                });
+                
+                detailsDiv.innerHTML += `File name: ${file.name}<br>`;
+                detailsDiv.innerHTML += `File size: ${file.size} bytes<br>`;
+                detailsDiv.innerHTML += `File type: ${file.type}<br>`;
+                
+                statusDiv.textContent = '✅ Resume loading successful!';
+                statusDiv.style.color = 'green';
+                
+            } catch (error) {
+                statusDiv.textContent = '❌ Resume loading failed!';
+                statusDiv.style.color = 'red';
+                detailsDiv.innerHTML += `<br>Error: ${error.message}`;
+            }
+        }
+        
+        // Run test when page loads
+        testResumeLoading();
+    </script>
+</body>
+</html>
