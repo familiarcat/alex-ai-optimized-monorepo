@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex AI Script Management Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 1.2em;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .panel {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .panel h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        
+        .search-section {
+            margin-bottom: 20px;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        
+        .search-button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s ease;
+        }
+        
+        .search-button:hover {
+            background: #5a6fd8;
+        }
+        
+        .script-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .script-item {
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .script-item:hover {
+            background: #f8f9fa;
+        }
+        
+        .script-name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .script-purpose {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+        
+        .script-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8em;
+            color: #999;
+        }
+        
+        .category-tag {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        
+        .category-deployment { background: #e3f2fd; color: #1976d2; }
+        .category-testing { background: #f3e5f5; color: #7b1fa2; }
+        .category-ai_ml { background: #e8f5e8; color: #388e3c; }
+        .category-data_management { background: #fff3e0; color: #f57c00; }
+        .category-workflow { background: #fce4ec; color: #c2185b; }
+        
+        .recommendations {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        .recommendation-item {
+            padding: 15px;
+            border-left: 4px solid #667eea;
+            background: #f8f9fa;
+            margin-bottom: 10px;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .recommendation-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .recommendation-text {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .duplicates-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .duplicate-group {
+            padding: 15px;
+            border: 1px solid #ffebee;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            background: #ffebee;
+        }
+        
+        .duplicate-title {
+            font-weight: bold;
+            color: #c62828;
+            margin-bottom: 10px;
+        }
+        
+        .duplicate-scripts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .duplicate-script {
+            background: #ffcdd2;
+            padding: 5px 10px;
+            border-radius: 12px;
+            font-size: 0.9em;
+            color: #c62828;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #5a6fd8;
+        }
+        
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+        
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background: #218838;
+        }
+        
+        .btn-warning {
+            background: #ffc107;
+            color: #212529;
+        }
+        
+        .btn-warning:hover {
+            background: #e0a800;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+        
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        
+        .success {
+            background: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧠 Alex AI Script Management Dashboard</h1>
+            <p>Intelligent script discovery, categorization, and redundancy prevention</p>
+        </div>
+        
+        <div class="stats-grid" id="statsGrid">
+            <div class="stat-card">
+                <div class="stat-number" id="totalScripts">-</div>
+                <div class="stat-label">Total Scripts</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalLines">-</div>
+                <div class="stat-label">Total Lines</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalCategories">-</div>
+                <div class="stat-label">Categories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="duplicates">-</div>
+                <div class="stat-label">Duplicates</div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="panel">
+                <h2>🔍 Script Discovery</h2>
+                <div class="search-section">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search for script purpose or functionality...">
+                    <button onclick="searchScripts()" class="search-button">Search</button>
+                </div>
+                <div id="searchResults" class="script-list">
+                    <div class="loading">Click search to find scripts...</div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <h2>📊 Category Breakdown</h2>
+                <div id="categoryBreakdown" class="script-list">
+                    <div class="loading">Loading categories...</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="recommendations">
+            <h2>💡 Recommendations</h2>
+            <div id="recommendationsList">
+                <div class="loading">Loading recommendations...</div>
+            </div>
+        </div>
+        
+        <div class="duplicates-section">
+            <h2>⚠️ Potential Duplicates</h2>
+            <div id="duplicatesList">
+                <div class="loading">Loading duplicates...</div>
+            </div>
+        </div>
+        
+        <div class="action-buttons">
+            <button onclick="refreshData()" class="btn btn-primary">🔄 Refresh Data</button>
+            <button onclick="runAnalysis()" class="btn btn-secondary">📊 Run Analysis</button>
+            <button onclick="exportData()" class="btn btn-success">📤 Export Data</button>
+            <button onclick="openIntelligentDiscovery()" class="btn btn-warning">🧠 Intelligent Discovery</button>
+        </div>
+    </div>
+
+    <script>
+        let analysisData = null;
+        
+        // Load analysis data
+        async function loadAnalysisData() {
+            try {
+                const response = await fetch('script-analysis.json');
+                analysisData = await response.json();
+                updateDashboard();
+            } catch (error) {
+                console.error('Error loading analysis data:', error);
+                showError('Failed to load analysis data');
+            }
+        }
+        
+        // Update dashboard with loaded data
+        function updateDashboard() {
+            if (!analysisData) return;
+            
+            // Update stats
+            document.getElementById('totalScripts').textContent = analysisData.total_scripts.toLocaleString();
+            document.getElementById('totalLines').textContent = analysisData.total_lines.toLocaleString();
+            document.getElementById('totalCategories').textContent = Object.keys(analysisData.categories).length;
+            document.getElementById('duplicates').textContent = analysisData.potential_duplicates.length;
+            
+            // Update category breakdown
+            updateCategoryBreakdown();
+            
+            // Update recommendations
+            updateRecommendations();
+            
+            // Update duplicates
+            updateDuplicates();
+        }
+        
+        function updateCategoryBreakdown() {
+            const container = document.getElementById('categoryBreakdown');
+            const categories = analysisData.categories;
+            
+            let html = '';
+            for (const [category, data] of Object.entries(categories)) {
+                html += `
+                    <div class="script-item">
+                        <div class="script-name">${category.replace('_', ' ').toUpperCase()}</div>
+                        <div class="script-purpose">${data.count} scripts</div>
+                        <div class="script-meta">
+                            <span>${data.total_lines.toLocaleString()} lines</span>
+                            <span>${(data.total_size / 1024).toFixed(1)} KB</span>
+                        </div>
+                    </div>
+                `;
+            }
+            container.innerHTML = html;
+        }
+        
+        function updateRecommendations() {
+            const container = document.getElementById('recommendationsList');
+            const recommendations = analysisData.recommendations || [];
+            
+            if (recommendations.length === 0) {
+                container.innerHTML = '<div class="loading">No recommendations available</div>';
+                return;
+            }
+            
+            let html = '';
+            recommendations.forEach(rec => {
+                html += `
+                    <div class="recommendation-item">
+                        <div class="recommendation-title">${rec.type.replace('_', ' ').toUpperCase()}</div>
+                        <div class="recommendation-text">${rec.message}</div>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+        
+        function updateDuplicates() {
+            const container = document.getElementById('duplicatesList');
+            const duplicates = analysisData.potential_duplicates || [];
+            
+            if (duplicates.length === 0) {
+                container.innerHTML = '<div class="loading">No duplicates found</div>';
+                return;
+            }
+            
+            let html = '';
+            duplicates.slice(0, 10).forEach(dup => {
+                html += `
+                    <div class="duplicate-group">
+                        <div class="duplicate-title">Similarity: ${dup.similarity || 'Unknown'}</div>
+                        <div class="duplicate-scripts">
+                            ${dup.scripts.map(script => `<span class="duplicate-script">${script}</span>`).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+        
+        function searchScripts() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            if (!query) return;
+            
+            const container = document.getElementById('searchResults');
+            container.innerHTML = '<div class="loading">Searching...</div>';
+            
+            if (!analysisData) {
+                container.innerHTML = '<div class="error">No analysis data available</div>';
+                return;
+            }
+            
+            const scripts = analysisData.scripts || [];
+            const results = scripts.filter(script => 
+                script.purpose.toLowerCase().includes(query) ||
+                script.file_name.toLowerCase().includes(query) ||
+                script.tags.some(tag => tag.toLowerCase().includes(query))
+            );
+            
+            if (results.length === 0) {
+                container.innerHTML = '<div class="loading">No scripts found matching your search</div>';
+                return;
+            }
+            
+            let html = '';
+            results.slice(0, 20).forEach(script => {
+                html += `
+                    <div class="script-item">
+                        <div class="script-name">${script.file_name}</div>
+                        <div class="script-purpose">${script.purpose}</div>
+                        <div class="script-meta">
+                            <span class="category-tag category-${script.category}">${script.category}</span>
+                            <span>${script.line_count} lines</span>
+                        </div>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+        
+        function refreshData() {
+            loadAnalysisData();
+        }
+        
+        function runAnalysis() {
+            // This would trigger a new analysis
+            showSuccess('Analysis started... Check console for progress');
+        }
+        
+        function exportData() {
+            if (!analysisData) {
+                showError('No data to export');
+                return;
+            }
+            
+            const dataStr = JSON.stringify(analysisData, null, 2);
+            const dataBlob = new Blob([dataStr], {type: 'application/json'});
+            const url = URL.createObjectURL(dataBlob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'script-analysis-export.json';
+            link.click();
+            URL.revokeObjectURL(url);
+        }
+        
+        function openIntelligentDiscovery() {
+            // This would open the intelligent discovery interface
+            showSuccess('Opening Intelligent Discovery...');
+        }
+        
+        function showError(message) {
+            const container = document.querySelector('.container');
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error';
+            errorDiv.textContent = message;
+            container.insertBefore(errorDiv, container.firstChild);
+            setTimeout(() => errorDiv.remove(), 5000);
+        }
+        
+        function showSuccess(message) {
+            const container = document.querySelector('.container');
+            const successDiv = document.createElement('div');
+            successDiv.className = 'success';
+            successDiv.textContent = message;
+            container.insertBefore(successDiv, container.firstChild);
+            setTimeout(() => successDiv.remove(), 3000);
+        }
+        
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            loadAnalysisData();
+        });
+    </script>
+</body>
+</html>

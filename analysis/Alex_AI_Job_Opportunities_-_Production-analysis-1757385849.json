@@ -1,0 +1,19 @@
+{
+  "workflow_name": "Alex AI Job Opportunities - Production",
+  "analysis_timestamp": "2025-09-08T21:44:09.337093",
+  "change_source": "n8n_production",
+  "metrics": {
+    "node_count": 2,
+    "connection_count": 1,
+    "webhook_count": 1,
+    "function_count": 0,
+    "http_request_count": 0
+  },
+  "issues": [],
+  "recommendations": [
+    "Review changes for security implications",
+    "Test workflow functionality in development",
+    "Consider impact on dependent workflows",
+    "Monitor performance after deployment"
+  ]
+}

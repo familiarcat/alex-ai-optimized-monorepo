@@ -1,0 +1,107 @@
+{
+  "scripts_to_purge": [
+    {
+      "file": "simple-working-example.sh",
+      "path": "scripts/simple-working-example.sh",
+      "reason": "Minimal functionality - can be consolidated"
+    },
+    {
+      "file": "initialize_yolo_mode.sh",
+      "path": "scripts/initialize_yolo_mode.sh",
+      "reason": "Minimal functionality - can be consolidated"
+    },
+    {
+      "file": "status.sh",
+      "path": "scripts/templates/safe-output/status.sh",
+      "reason": "Minimal functionality - can be consolidated"
+    }
+  ],
+  "scripts_to_keep": [],
+  "scripts_to_consolidate": [],
+  "bloated_scripts": [],
+  "duplicate_scripts": [],
+  "obsolete_scripts": [
+    {
+      "file": "update-zshrc-with-placeholder.sh",
+      "path": "scripts/update-zshrc-with-placeholder.sh",
+      "reason": "Contains obsolete indicator: old"
+    },
+    {
+      "file": "test_mcp_system.py",
+      "path": "scripts/python/test_mcp_system.py",
+      "reason": "Contains obsolete indicator: test_"
+    },
+    {
+      "file": "enhanced_prompts_test_suite.py",
+      "path": "scripts/python/enhanced_prompts_test_suite.py",
+      "reason": "Contains obsolete indicator: test_"
+    },
+    {
+      "file": "test_channel_intelligence_system.py",
+      "path": "scripts/python/test_channel_intelligence_system.py",
+      "reason": "Contains obsolete indicator: test_"
+    },
+    {
+      "file": "test_youtube_scraper_integration.py",
+      "path": "scripts/python/test_youtube_scraper_integration.py",
+      "reason": "Contains obsolete indicator: test_"
+    },
+    {
+      "file": "test_alex_ai_system.py",
+      "path": "scripts/python/test_alex_ai_system.py",
+      "reason": "Contains obsolete indicator: test_"
+    },
+    {
+      "file": "fix_credential_security.py",
+      "path": "scripts/python/fix_credential_security.py",
+      "reason": "Contains obsolete indicator: fix_"
+    },
+    {
+      "file": "n8n_integration_test_system.py",
+      "path": "scripts/python/n8n_integration_test_system.py",
+      "reason": "Contains obsolete indicator: test_"
+    }
+  ],
+  "minimal_scripts": [
+    {
+      "file": "simple-working-example.sh",
+      "path": "scripts/simple-working-example.sh",
+      "reason": "Minimal functionality - can be consolidated"
+    },
+    {
+      "file": "claude-api-key-guide.sh",
+      "path": "scripts/claude-api-key-guide.sh",
+      "reason": "Minimal functionality - can be consolidated"
+    },
+    {
+      "file": "initialize_yolo_mode.sh",
+      "path": "scripts/initialize_yolo_mode.sh",
+      "reason": "Minimal functionality - can be consolidated"
+    },
+    {
+      "file": "claude-api-fix-final.sh",
+      "path": "scripts/claude-api-fix-final.sh",
+      "reason": "Minimal functionality - can be consolidated"
+    },
+    {
+      "file": "shell-safety-guide.sh",
+      "path": "scripts/shell-safety-guide.sh",
+      "reason": "Minimal functionality - can be consolidated"
+    },
+    {
+      "file": "test-script.sh",
+      "path": "scripts/test-script.sh",
+      "reason": "Minimal functionality - can be consolidated"
+    },
+    {
+      "file": "milestone.sh",
+      "path": "scripts/templates/safe-output/milestone.sh",
+      "reason": "Minimal functionality - can be consolidated"
+    },
+    {
+      "file": "status.sh",
+      "path": "scripts/templates/safe-output/status.sh",
+      "reason": "Minimal functionality - can be consolidated"
+    }
+  ]
+}

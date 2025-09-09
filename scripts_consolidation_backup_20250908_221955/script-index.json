@@ -1,0 +1,927 @@
+{
+  "consolidated_scripts": {
+    "deployment/sync_operations": {
+      "path": "scripts/deployment/sync_operations/consolidated_sync_operations.py",
+      "original_scripts": [
+        "n8n-cicd-sync.sh",
+        "sync-n8n-unified-config.sh",
+        "n8n-bidirectional-sync.py",
+        "n8n-sync-monitor.py",
+        "setup-n8n-bidirectional-sync.sh"
+      ],
+      "count": 5
+    },
+    "deployment/general": {
+      "path": "scripts/deployment/general/consolidated_general.py",
+      "original_scripts": [
+        "get-and-update-claude-key.sh",
+        "intelligent-script-discovery.py",
+        "optimize-packages-structure.sh",
+        "populate-job-data.js",
+        "script-memory-system.py",
+        "analyze-conflicts.sh",
+        "add-quote-handling-memory.py",
+        "security-validation.sh",
+        "security-audit.sh",
+        "setup-dev-environment.sh",
+        "production-readiness-assessment.sh",
+        "add-architecture-memory.py",
+        "analyze-production-changes.sh",
+        "script-analyzer.py",
+        "setup-bidirectional-sync.sh",
+        "setup-git-remote.sh",
+        "sync-dashboard.sh",
+        "secure-credential-manager.sh",
+        "shell-prompt-safety-system.sh",
+        "production-shell-engine.sh",
+        "setup-database.js",
+        "deploy.sh",
+        "load-credentials.sh",
+        "add-quote-handling-memory-simple.py",
+        "automate-bidirectional-setup.sh",
+        "setup-database-simple.js",
+        "alexai-init.sh",
+        "string-manipulation-fix.sh",
+        "consolidated_shell-prompt-safety-system.py",
+        "consolidated_alex_ai_credential_manager.py",
+        "consolidated_enhanced_ai_prompts_system.py",
+        "consolidated_mcp_library_computer_system.py",
+        "consolidated_progressive_git_push_system.py",
+        "consolidated_observation_lounge_crew_debrief.py",
+        "consolidated_youtube_channel_intelligence_system.py",
+        "consolidated_youtube_scraper_crew_integration.py",
+        "consolidated_alexai-init.py",
+        "consolidated_mcp_integration_system.py",
+        "consolidated_enhanced_ai_prompts_deployment_system.py",
+        "consolidated_demo_youtube_scraper_system.py",
+        "consolidated_crew_coordinator.py",
+        "consolidated_enhanced_unified_router.py",
+        "consolidated_crew_learning_assessment.py",
+        "consolidated_get-and-update-claude-key.py",
+        "consolidated_mcp_memory_optimization_system.py",
+        "consolidated_observation_lounge_memory_consensus.py",
+        "consolidated_crew_personal_history_analysis.py",
+        "youtube_scraper_crew_integration.py",
+        "final_monorepo_cleanup.py",
+        "turborepo_implementation_plan.py",
+        "alex_ai_yolo_mode_integration_system.py",
+        "phase2_turborepo_optimization.py",
+        "youtube_crew_memory_integration.py",
+        "enhanced_ai_prompts_system.py",
+        "alex_ai_credential_manager.py",
+        "alex_ai_yolo_initialization.py",
+        "alex_ai_crew_mermaid_models.py",
+        "alex_ai_webhook_server.py",
+        "enhanced_unified_router.py",
+        "crew_learning_assessment.py",
+        "observation_lounge_crew_debrief.py",
+        "enhanced_ai_prompts_deployment_system.py",
+        "cursor_ai_behavior_analysis.py",
+        "alex_ai_job_search_system.py",
+        "yolo_mode_crew_memory_update.py",
+        "youtube_channel_intelligence_system.py",
+        "crew_yolo_mode_memory_sync.py",
+        "alex_ai_job_search_integration.py",
+        "cursor_ai_integration_memory_update.py",
+        "simple_youtube_crew_memory_demo.py",
+        "observation_lounge_yolo_mode_debrief.py",
+        "knowledge_gap_research_plan.py",
+        "mcp_memory_optimization_system.py",
+        "research_phase_execution_plan.py",
+        "repository_optimization_analysis.py",
+        "business_operations_legal_system.py",
+        "simple_turborepo_research_system.py",
+        "agile_sprint_dashboard_system.py",
+        "crew_business_readiness_consensus.py",
+        "crew_coordinator.py",
+        "phase3_alex_ai_integration.py",
+        "alex_ai_yolo_mode_memory_integration.py",
+        "mcp_integration_system.py",
+        "observation_lounge_memory_consensus.py",
+        "email_research_system.py",
+        "turborepo_research_system.py",
+        "progressive_git_push_system.py",
+        "yolo_mode_issue_investigation.py",
+        "mcp_library_computer_system.py",
+        "phase1_turborepo_setup.py",
+        "proper_yolo_mode_configuration.py",
+        "alex-ai-universal-deployment-system.py",
+        "business_readiness_assessment.py",
+        "demo_youtube_scraper_system.py",
+        "progress.sh"
+      ],
+      "count": 95
+    },
+    "deployment/api_integration": {
+      "path": "scripts/deployment/api_integration/consolidated_api_integration.py",
+      "original_scripts": [
+        "update-claude-api.sh",
+        "validate-api-keys.sh",
+        "claude-api-fix-final.sh",
+        "setup-hourly-scraping.sh",
+        "fix-claude-api.sh",
+        "setup-secure-api-keys.sh",
+        "begin-live-scraping.sh",
+        "consolidated_fix-claude-api.py",
+        "consolidated_setup-secure-api-keys.py",
+        "consolidated_update-claude-api.py",
+        "consolidated_claude-api-fix-final.py"
+      ],
+      "count": 11
+    },
+    "deployment/supabase_setup": {
+      "path": "scripts/deployment/supabase_setup/consolidated_supabase_setup.py",
+      "original_scripts": [
+        "setup-supabase-with-credentials.sh",
+        "setup-supabase-tables.sh",
+        "enhanced_ai_prompts_with_supabase_integration.py",
+        "supabase_research_integration_system.py",
+        "supabase_data_import_script.py"
+      ],
+      "count": 5
+    },
+    "deployment/milestone_management": {
+      "path": "scripts/deployment/milestone_management/consolidated_milestone_management.py",
+      "original_scripts": [
+        "milestone-push.sh",
+        "milestone-push-system.sh",
+        "channel-intelligence-dual-milestone-push.sh",
+        "credential-security-milestone-push.sh",
+        "alex-ai-universal-milestone-push.sh",
+        "quick-milestone.sh",
+        "alex-ai-universal-git-milestone-push.sh",
+        "cursor-extension-milestone.sh",
+        "enhanced-ai-prompts-dual-milestone-push.sh",
+        "consolidated_channel-intelligence-dual-milestone-push.py",
+        "consolidated_milestone-push-system.py",
+        "mcp_memory_optimization_milestone_push.py"
+      ],
+      "count": 12
+    },
+    "deployment/n8n_deployment": {
+      "path": "scripts/deployment/n8n_deployment/consolidated_n8n_deployment.py",
+      "original_scripts": [
+        "deploy-n8n-with-credentials.sh",
+        "deploy-missing-n8n-webhooks.sh",
+        "deploy-n8n-webhooks.sh",
+        "deploy-complete-n8n-infrastructure.sh"
+      ],
+      "count": 4
+    },
+    "deployment/unit_testing": {
+      "path": "scripts/deployment/unit_testing/consolidated_unit_testing.py",
+      "original_scripts": [
+        "quick-production-test.sh",
+        "test-alex-ai-fixes.sh",
+        "robust-test.sh",
+        "end-to-end-testing.sh",
+        "production-testing-suite.sh",
+        "test-basic.sh",
+        "test-status.sh",
+        "test-progress.sh",
+        "consolidated_test-status.py",
+        "consolidated_test-progress.py",
+        "consolidated_test_channel_intelligence_system.py",
+        "consolidated_test-basic.py",
+        "consolidated_robust-test.py",
+        "consolidated_test_youtube_scraper_integration.py",
+        "consolidated_enhanced_prompts_test_suite.py",
+        "consolidated_test_alex_ai_system.py",
+        "consolidated_test_mcp_system.py",
+        "test_mcp_system.py",
+        "enhanced_prompts_test_suite.py",
+        "test_channel_intelligence_system.py",
+        "comprehensive_yolo_stress_test.py",
+        "test_youtube_scraper_integration.py",
+        "test_alex_ai_system.py"
+      ],
+      "count": 23
+    },
+    "testing/general": {
+      "path": "scripts/testing/general/consolidated_general.py",
+      "original_scripts": [
+        "optimize-turborepo-structure.sh",
+        "safe-execute.sh",
+        "comprehensive-string-fix.sh",
+        "credential-validator.sh",
+        "update-zshrc-with-placeholder.sh",
+        "shell-safety-guide.sh",
+        "validate-strings.sh",
+        "monitor-performance.js",
+        "load_alex_ai_credentials.sh",
+        "consolidated_crew_coordination_update_system.py",
+        "consolidated_fix_credential_security.py",
+        "consolidated_update-zshrc-with-placeholder.py",
+        "consolidated_shell-safety-guide.py",
+        "consolidated_cursor-ai-shell-integration.py",
+        "consolidated_advanced_ai_agent_development_system.py",
+        "consolidated_alex_ai_memory_sharing_assessment.py",
+        "consolidated_cursor-ai-shell-helper.py",
+        "consolidated_greg_channel_intelligence_analysis.py",
+        "consolidated_load_alex_ai_credentials.py",
+        "consolidated_alex_ai_comprehensive_assessment.py",
+        "comprehensive_market_research_system.py",
+        "crew_coordination_update_system.py",
+        "alex_ai_memory_sharing_assessment.py",
+        "optimized_web_crawler_system.py",
+        "advanced_ai_agent_development_system.py",
+        "fix_credential_security.py",
+        "intelligent_monorepo_cleanup.py",
+        "alex_ai_comprehensive_assessment.py",
+        "clean_secrets.py",
+        "status.sh"
+      ],
+      "count": 30
+    },
+    "testing/api_integration": {
+      "path": "scripts/testing/api_integration/consolidated_api_integration.py",
+      "original_scripts": [
+        "fix-zshrc-api-key.sh",
+        "claude-api-key-guide.sh",
+        "consolidated_fix-zshrc-api-key.py",
+        "consolidated_claude-api-key-guide.py",
+        "company_research_system.py"
+      ],
+      "count": 5
+    },
+    "testing/unit_testing": {
+      "path": "scripts/testing/unit_testing/consolidated_unit_testing.py",
+      "original_scripts": [
+        "test-workflows.sh",
+        "add-test-ids.js",
+        "test-script.sh",
+        "consolidated_test-script.py"
+      ],
+      "count": 4
+    },
+    "testing/e2e_testing": {
+      "path": "scripts/testing/e2e_testing/consolidated_e2e_testing.py",
+      "original_scripts": [
+        "fix-e2e-issues.sh",
+        "simple-e2e-test.js",
+        "improved-e2e-test.js",
+        "puppeteer-e2e-test.js"
+      ],
+      "count": 4
+    }
+  },
+  "remaining_scripts": {
+    "n8n-cicd-sync.sh": {
+      "path": "n8n-cicd-sync.sh",
+      "category": "deployment"
+    },
+    "get-and-update-claude-key.sh": {
+      "path": "get-and-update-claude-key.sh",
+      "category": "ai_ml"
+    },
+    "greg-community-intelligence-dual-milestone-push.sh": {
+      "path": "greg-community-intelligence-dual-milestone-push.sh",
+      "category": "utilities"
+    },
+    "intelligent-script-discovery.py": {
+      "path": "intelligent-script-discovery.py",
+      "category": "utilities"
+    },
+    "update-claude-api.sh": {
+      "path": "update-claude-api.sh",
+      "category": "ai_ml"
+    },
+    "optimize-turborepo-structure.sh": {
+      "path": "optimize-turborepo-structure.sh",
+      "category": "utilities"
+    },
+    "simple-working-example.sh": {
+      "path": "simple-working-example.sh",
+      "category": "utilities"
+    },
+    "setup-supabase-with-credentials.sh": {
+      "path": "setup-supabase-with-credentials.sh",
+      "category": "data_management"
+    },
+    "script-consolidation-plan.py": {
+      "path": "script-consolidation-plan.py",
+      "category": "utilities"
+    },
+    "optimize-packages-structure.sh": {
+      "path": "optimize-packages-structure.sh",
+      "category": "utilities"
+    },
+    "milestone-push.sh": {
+      "path": "milestone-push.sh",
+      "category": "utilities"
+    },
+    "milestone-push-system.sh": {
+      "path": "milestone-push-system.sh",
+      "category": "utilities"
+    },
+    "populate-job-data.js": {
+      "path": "populate-job-data.js",
+      "category": "data_management"
+    },
+    "deploy-n8n-with-credentials.sh": {
+      "path": "deploy-n8n-with-credentials.sh",
+      "category": "deployment"
+    },
+    "sync-n8n-unified-config.sh": {
+      "path": "sync-n8n-unified-config.sh",
+      "category": "deployment"
+    },
+    "script-memory-system.py": {
+      "path": "script-memory-system.py",
+      "category": "utilities"
+    },
+    "fix-zshrc-api-key.sh": {
+      "path": "fix-zshrc-api-key.sh",
+      "category": "utilities"
+    },
+    "safe-execute.sh": {
+      "path": "safe-execute.sh",
+      "category": "utilities"
+    },
+    "claude-api-key-guide.sh": {
+      "path": "claude-api-key-guide.sh",
+      "category": "ai_ml"
+    },
+    "analyze-conflicts.sh": {
+      "path": "analyze-conflicts.sh",
+      "category": "utilities"
+    },
+    "add-quote-handling-memory.py": {
+      "path": "add-quote-handling-memory.py",
+      "category": "utilities"
+    },
+    "security-validation.sh": {
+      "path": "security-validation.sh",
+      "category": "utilities"
+    },
+    "quick-production-test.sh": {
+      "path": "quick-production-test.sh",
+      "category": "testing"
+    },
+    "get-supabase-anon-key.sh": {
+      "path": "get-supabase-anon-key.sh",
+      "category": "data_management"
+    },
+    "test-alex-ai-fixes.sh": {
+      "path": "test-alex-ai-fixes.sh",
+      "category": "testing"
+    },
+    "security-audit.sh": {
+      "path": "security-audit.sh",
+      "category": "utilities"
+    },
+    "n8n-bidirectional-sync.py": {
+      "path": "n8n-bidirectional-sync.py",
+      "category": "deployment"
+    },
+    "initialize_yolo_mode.sh": {
+      "path": "initialize_yolo_mode.sh",
+      "category": "utilities"
+    },
+    "test-workflows.sh": {
+      "path": "test-workflows.sh",
+      "category": "testing"
+    },
+    "channel-intelligence-dual-milestone-push.sh": {
+      "path": "channel-intelligence-dual-milestone-push.sh",
+      "category": "utilities"
+    },
+    "credential-security-milestone-push.sh": {
+      "path": "credential-security-milestone-push.sh",
+      "category": "utilities"
+    },
+    "setup-dev-environment.sh": {
+      "path": "setup-dev-environment.sh",
+      "category": "utilities"
+    },
+    "n8n-sync-monitor.py": {
+      "path": "n8n-sync-monitor.py",
+      "category": "deployment"
+    },
+    "robust-test.sh": {
+      "path": "robust-test.sh",
+      "category": "testing"
+    },
+    "update-script-references.py": {
+      "path": "update-script-references.py",
+      "category": "utilities"
+    },
+    "production-readiness-assessment.sh": {
+      "path": "production-readiness-assessment.sh",
+      "category": "utilities"
+    },
+    "alex-ai-universal-milestone-push.sh": {
+      "path": "alex-ai-universal-milestone-push.sh",
+      "category": "ai_ml"
+    },
+    "validate-api-keys.sh": {
+      "path": "validate-api-keys.sh",
+      "category": "utilities"
+    },
+    "quick-milestone.sh": {
+      "path": "quick-milestone.sh",
+      "category": "utilities"
+    },
+    "fix-e2e-issues.sh": {
+      "path": "fix-e2e-issues.sh",
+      "category": "utilities"
+    },
+    "add-architecture-memory.py": {
+      "path": "add-architecture-memory.py",
+      "category": "utilities"
+    },
+    "analyze-production-changes.sh": {
+      "path": "analyze-production-changes.sh",
+      "category": "utilities"
+    },
+    "comprehensive-string-fix.sh": {
+      "path": "comprehensive-string-fix.sh",
+      "category": "utilities"
+    },
+    "credential-validator.sh": {
+      "path": "credential-validator.sh",
+      "category": "utilities"
+    },
+    "alex-ai-universal-git-milestone-push.sh": {
+      "path": "alex-ai-universal-git-milestone-push.sh",
+      "category": "ai_ml"
+    },
+    "claude-api-fix-final.sh": {
+      "path": "claude-api-fix-final.sh",
+      "category": "ai_ml"
+    },
+    "script-analyzer.py": {
+      "path": "script-analyzer.py",
+      "category": "utilities"
+    },
+    "cursor-extension-milestone.sh": {
+      "path": "cursor-extension-milestone.sh",
+      "category": "utilities"
+    },
+    "setup-bidirectional-sync.sh": {
+      "path": "setup-bidirectional-sync.sh",
+      "category": "workflow"
+    },
+    "master-safe-execute.sh": {
+      "path": "master-safe-execute.sh",
+      "category": "utilities"
+    },
+    "deploy-missing-n8n-webhooks.sh": {
+      "path": "deploy-missing-n8n-webhooks.sh",
+      "category": "deployment"
+    },
+    "test-intelligent-discovery.sh": {
+      "path": "test-intelligent-discovery.sh",
+      "category": "testing"
+    },
+    "setup-git-remote.sh": {
+      "path": "setup-git-remote.sh",
+      "category": "utilities"
+    },
+    "setup-hourly-scraping.sh": {
+      "path": "setup-hourly-scraping.sh",
+      "category": "utilities"
+    },
+    "setup-n8n-bidirectional-sync.sh": {
+      "path": "setup-n8n-bidirectional-sync.sh",
+      "category": "deployment"
+    },
+    "update-zshrc-with-placeholder.sh": {
+      "path": "update-zshrc-with-placeholder.sh",
+      "category": "utilities"
+    },
+    "sync-dashboard.sh": {
+      "path": "sync-dashboard.sh",
+      "category": "workflow"
+    },
+    "secure-credential-manager.sh": {
+      "path": "secure-credential-manager.sh",
+      "category": "utilities"
+    },
+    "n8n-change-monitor.sh": {
+      "path": "n8n-change-monitor.sh",
+      "category": "deployment"
+    },
+    "fix-claude-api.sh": {
+      "path": "fix-claude-api.sh",
+      "category": "ai_ml"
+    },
+    "setup-supabase-tables.sh": {
+      "path": "setup-supabase-tables.sh",
+      "category": "data_management"
+    },
+    "deploy-n8n-webhooks.sh": {
+      "path": "deploy-n8n-webhooks.sh",
+      "category": "deployment"
+    },
+    "shell-prompt-safety-system.sh": {
+      "path": "shell-prompt-safety-system.sh",
+      "category": "utilities"
+    },
+    "production-shell-engine.sh": {
+      "path": "production-shell-engine.sh",
+      "category": "utilities"
+    },
+    "shell-safety-guide.sh": {
+      "path": "shell-safety-guide.sh",
+      "category": "utilities"
+    },
+    "add-test-ids.js": {
+      "path": "add-test-ids.js",
+      "category": "testing"
+    },
+    "setup-database.js": {
+      "path": "setup-database.js",
+      "category": "data_management"
+    },
+    "end-to-end-testing.sh": {
+      "path": "end-to-end-testing.sh",
+      "category": "testing"
+    },
+    "deploy.sh": {
+      "path": "deploy.sh",
+      "category": "deployment"
+    },
+    "simple-e2e-test.js": {
+      "path": "simple-e2e-test.js",
+      "category": "testing"
+    },
+    "enhanced-ai-prompts-dual-milestone-push.sh": {
+      "path": "enhanced-ai-prompts-dual-milestone-push.sh",
+      "category": "ai_ml"
+    },
+    "load-credentials.sh": {
+      "path": "load-credentials.sh",
+      "category": "utilities"
+    },
+    "validate-strings.sh": {
+      "path": "validate-strings.sh",
+      "category": "utilities"
+    },
+    "add-quote-handling-memory-simple.py": {
+      "path": "add-quote-handling-memory-simple.py",
+      "category": "utilities"
+    },
+    "production-testing-suite.sh": {
+      "path": "production-testing-suite.sh",
+      "category": "testing"
+    },
+    "automate-bidirectional-setup.sh": {
+      "path": "automate-bidirectional-setup.sh",
+      "category": "utilities"
+    },
+    "setup-secure-api-keys.sh": {
+      "path": "setup-secure-api-keys.sh",
+      "category": "utilities"
+    },
+    "monitor-performance.js": {
+      "path": "monitor-performance.js",
+      "category": "utilities"
+    },
+    "begin-live-scraping.sh": {
+      "path": "begin-live-scraping.sh",
+      "category": "utilities"
+    },
+    "deploy-complete-n8n-infrastructure.sh": {
+      "path": "deploy-complete-n8n-infrastructure.sh",
+      "category": "deployment"
+    },
+    "improved-e2e-test.js": {
+      "path": "improved-e2e-test.js",
+      "category": "testing"
+    },
+    "test-script.sh": {
+      "path": "test-script.sh",
+      "category": "testing"
+    },
+    "load_alex_ai_credentials.sh": {
+      "path": "load_alex_ai_credentials.sh",
+      "category": "ai_ml"
+    },
+    "safe-milestone-push.sh": {
+      "path": "safe-milestone-push.sh",
+      "category": "utilities"
+    },
+    "setup-database-simple.js": {
+      "path": "setup-database-simple.js",
+      "category": "data_management"
+    },
+    "alexai-init.sh": {
+      "path": "alexai-init.sh",
+      "category": "ai_ml"
+    },
+    "string-manipulation-fix.sh": {
+      "path": "string-manipulation-fix.sh",
+      "category": "utilities"
+    },
+    "puppeteer-e2e-test.js": {
+      "path": "puppeteer-e2e-test.js",
+      "category": "testing"
+    },
+    "test-basic.sh": {
+      "path": "generated/test-basic.sh",
+      "category": "testing"
+    },
+    "test-status.sh": {
+      "path": "generated/test-status.sh",
+      "category": "testing"
+    },
+    "test-progress.sh": {
+      "path": "generated/test-progress.sh",
+      "category": "testing"
+    },
+    "youtube_scraper_crew_integration.py": {
+      "path": "python/youtube_scraper_crew_integration.py",
+      "category": "utilities"
+    },
+    "final_monorepo_cleanup.py": {
+      "path": "python/final_monorepo_cleanup.py",
+      "category": "utilities"
+    },
+    "turborepo_implementation_plan.py": {
+      "path": "python/turborepo_implementation_plan.py",
+      "category": "utilities"
+    },
+    "alex_ai_yolo_mode_integration_system.py": {
+      "path": "python/alex_ai_yolo_mode_integration_system.py",
+      "category": "ai_ml"
+    },
+    "comprehensive_market_research_system.py": {
+      "path": "python/comprehensive_market_research_system.py",
+      "category": "utilities"
+    },
+    "phase2_turborepo_optimization.py": {
+      "path": "python/phase2_turborepo_optimization.py",
+      "category": "utilities"
+    },
+    "crew_coordination_update_system.py": {
+      "path": "python/crew_coordination_update_system.py",
+      "category": "utilities"
+    },
+    "youtube_crew_memory_integration.py": {
+      "path": "python/youtube_crew_memory_integration.py",
+      "category": "utilities"
+    },
+    "test_mcp_system.py": {
+      "path": "python/test_mcp_system.py",
+      "category": "testing"
+    },
+    "enhanced_ai_prompts_system.py": {
+      "path": "python/enhanced_ai_prompts_system.py",
+      "category": "ai_ml"
+    },
+    "alex_ai_credential_manager.py": {
+      "path": "python/alex_ai_credential_manager.py",
+      "category": "ai_ml"
+    },
+    "enhanced_prompts_test_suite.py": {
+      "path": "python/enhanced_prompts_test_suite.py",
+      "category": "testing"
+    },
+    "alex_ai_yolo_initialization.py": {
+      "path": "python/alex_ai_yolo_initialization.py",
+      "category": "ai_ml"
+    },
+    "alex_ai_memory_sharing_assessment.py": {
+      "path": "python/alex_ai_memory_sharing_assessment.py",
+      "category": "ai_ml"
+    },
+    "alex_ai_crew_mermaid_models.py": {
+      "path": "python/alex_ai_crew_mermaid_models.py",
+      "category": "ai_ml"
+    },
+    "enhanced_ai_prompts_with_supabase_integration.py": {
+      "path": "python/enhanced_ai_prompts_with_supabase_integration.py",
+      "category": "ai_ml"
+    },
+    "alex_ai_webhook_server.py": {
+      "path": "python/alex_ai_webhook_server.py",
+      "category": "ai_ml"
+    },
+    "supabase_research_integration_system.py": {
+      "path": "python/supabase_research_integration_system.py",
+      "category": "data_management"
+    },
+    "enhanced_unified_router.py": {
+      "path": "python/enhanced_unified_router.py",
+      "category": "utilities"
+    },
+    "crew_learning_assessment.py": {
+      "path": "python/crew_learning_assessment.py",
+      "category": "utilities"
+    },
+    "optimized_web_crawler_system.py": {
+      "path": "python/optimized_web_crawler_system.py",
+      "category": "utilities"
+    },
+    "observation_lounge_crew_debrief.py": {
+      "path": "python/observation_lounge_crew_debrief.py",
+      "category": "utilities"
+    },
+    "enhanced_ai_prompts_deployment_system.py": {
+      "path": "python/enhanced_ai_prompts_deployment_system.py",
+      "category": "deployment"
+    },
+    "cursor_ai_behavior_analysis.py": {
+      "path": "python/cursor_ai_behavior_analysis.py",
+      "category": "ai_ml"
+    },
+    "alex_ai_job_search_system.py": {
+      "path": "python/alex_ai_job_search_system.py",
+      "category": "ai_ml"
+    },
+    "yolo_mode_crew_memory_update.py": {
+      "path": "python/yolo_mode_crew_memory_update.py",
+      "category": "utilities"
+    },
+    "youtube_channel_intelligence_system.py": {
+      "path": "python/youtube_channel_intelligence_system.py",
+      "category": "utilities"
+    },
+    "mcp_memory_optimization_milestone_push.py": {
+      "path": "python/mcp_memory_optimization_milestone_push.py",
+      "category": "utilities"
+    },
+    "crew_yolo_mode_memory_sync.py": {
+      "path": "python/crew_yolo_mode_memory_sync.py",
+      "category": "workflow"
+    },
+    "alex_ai_job_search_integration.py": {
+      "path": "python/alex_ai_job_search_integration.py",
+      "category": "ai_ml"
+    },
+    "test_channel_intelligence_system.py": {
+      "path": "python/test_channel_intelligence_system.py",
+      "category": "testing"
+    },
+    "cursor_ai_integration_memory_update.py": {
+      "path": "python/cursor_ai_integration_memory_update.py",
+      "category": "ai_ml"
+    },
+    "simple_youtube_crew_memory_demo.py": {
+      "path": "python/simple_youtube_crew_memory_demo.py",
+      "category": "utilities"
+    },
+    "comprehensive_yolo_stress_test.py": {
+      "path": "python/comprehensive_yolo_stress_test.py",
+      "category": "testing"
+    },
+    "observation_lounge_yolo_mode_debrief.py": {
+      "path": "python/observation_lounge_yolo_mode_debrief.py",
+      "category": "utilities"
+    },
+    "knowledge_gap_research_plan.py": {
+      "path": "python/knowledge_gap_research_plan.py",
+      "category": "utilities"
+    },
+    "mcp_memory_optimization_system.py": {
+      "path": "python/mcp_memory_optimization_system.py",
+      "category": "utilities"
+    },
+    "research_phase_execution_plan.py": {
+      "path": "python/research_phase_execution_plan.py",
+      "category": "utilities"
+    },
+    "repository_optimization_analysis.py": {
+      "path": "python/repository_optimization_analysis.py",
+      "category": "utilities"
+    },
+    "business_operations_legal_system.py": {
+      "path": "python/business_operations_legal_system.py",
+      "category": "utilities"
+    },
+    "advanced_ai_agent_development_system.py": {
+      "path": "python/advanced_ai_agent_development_system.py",
+      "category": "ai_ml"
+    },
+    "simple_turborepo_research_system.py": {
+      "path": "python/simple_turborepo_research_system.py",
+      "category": "utilities"
+    },
+    "agile_sprint_dashboard_system.py": {
+      "path": "python/agile_sprint_dashboard_system.py",
+      "category": "utilities"
+    },
+    "test_youtube_scraper_integration.py": {
+      "path": "python/test_youtube_scraper_integration.py",
+      "category": "testing"
+    },
+    "crew_business_readiness_consensus.py": {
+      "path": "python/crew_business_readiness_consensus.py",
+      "category": "utilities"
+    },
+    "crew_coordinator.py": {
+      "path": "python/crew_coordinator.py",
+      "category": "utilities"
+    },
+    "phase3_alex_ai_integration.py": {
+      "path": "python/phase3_alex_ai_integration.py",
+      "category": "ai_ml"
+    },
+    "alex_ai_yolo_mode_memory_integration.py": {
+      "path": "python/alex_ai_yolo_mode_memory_integration.py",
+      "category": "ai_ml"
+    },
+    "mcp_integration_system.py": {
+      "path": "python/mcp_integration_system.py",
+      "category": "utilities"
+    },
+    "supabase_data_import_script.py": {
+      "path": "python/supabase_data_import_script.py",
+      "category": "data_management"
+    },
+    "observation_lounge_memory_consensus.py": {
+      "path": "python/observation_lounge_memory_consensus.py",
+      "category": "utilities"
+    },
+    "test_alex_ai_system.py": {
+      "path": "python/test_alex_ai_system.py",
+      "category": "testing"
+    },
+    "email_research_system.py": {
+      "path": "python/email_research_system.py",
+      "category": "ai_ml"
+    },
+    "fix_credential_security.py": {
+      "path": "python/fix_credential_security.py",
+      "category": "utilities"
+    },
+    "turborepo_research_system.py": {
+      "path": "python/turborepo_research_system.py",
+      "category": "utilities"
+    },
+    "progressive_git_push_system.py": {
+      "path": "python/progressive_git_push_system.py",
+      "category": "utilities"
+    },
+    "yolo_mode_issue_investigation.py": {
+      "path": "python/yolo_mode_issue_investigation.py",
+      "category": "utilities"
+    },
+    "mcp_library_computer_system.py": {
+      "path": "python/mcp_library_computer_system.py",
+      "category": "utilities"
+    },
+    "phase1_turborepo_setup.py": {
+      "path": "python/phase1_turborepo_setup.py",
+      "category": "utilities"
+    },
+    "n8n_integration_test_system.py": {
+      "path": "python/n8n_integration_test_system.py",
+      "category": "deployment"
+    },
+    "proper_yolo_mode_configuration.py": {
+      "path": "python/proper_yolo_mode_configuration.py",
+      "category": "utilities"
+    },
+    "intelligent_monorepo_cleanup.py": {
+      "path": "python/intelligent_monorepo_cleanup.py",
+      "category": "utilities"
+    },
+    "company_research_system.py": {
+      "path": "python/company_research_system.py",
+      "category": "utilities"
+    },
+    "alex-ai-universal-deployment-system.py": {
+      "path": "python/alex-ai-universal-deployment-system.py",
+      "category": "deployment"
+    },
+    "alex_ai_comprehensive_assessment.py": {
+      "path": "python/alex_ai_comprehensive_assessment.py",
+      "category": "ai_ml"
+    },
+    "business_readiness_assessment.py": {
+      "path": "python/business_readiness_assessment.py",
+      "category": "utilities"
+    },
+    "demo_youtube_scraper_system.py": {
+      "path": "python/demo_youtube_scraper_system.py",
+      "category": "utilities"
+    },
+    "clean_secrets.py": {
+      "path": "python/clean_secrets.py",
+      "category": "utilities"
+    },
+    "store_crew_memories_supabase.py": {
+      "path": "python/store_crew_memories_supabase.py",
+      "category": "data_management"
+    },
+    "milestone.sh": {
+      "path": "templates/safe-output/milestone.sh",
+      "category": "utilities"
+    },
+    "progress.sh": {
+      "path": "templates/safe-output/progress.sh",
+      "category": "utilities"
+    },
+    "status.sh": {
+      "path": "templates/safe-output/status.sh",
+      "category": "utilities"
+    },
+    "list.sh": {
+      "path": "templates/safe-output/list.sh",
+      "category": "utilities"
+    }
+  },
+  "categories": {}
+}

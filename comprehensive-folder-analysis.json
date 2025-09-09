@@ -1,0 +1,5790 @@
+{
+  "timestamp": "2025-09-08T22:31:04.390064",
+  "total_scripts": 221,
+  "total_folders": 50,
+  "folder_analyses": {
+    ".": {
+      "folder_name": "scripts",
+      "script_count": 86,
+      "total_size": 889126,
+      "total_lines": 26607,
+      "redundancy_score": 0.059160413346705264,
+      "consolidation_opportunities": [],
+      "recommended_actions": [
+        "Large number of scripts - consider creating subfolders",
+        "Mixed purposes detected - consider reorganizing by purpose"
+      ],
+      "scripts": [
+        {
+          "file_name": "n8n-cicd-sync.sh",
+          "file_type": "sh",
+          "size_bytes": 9590,
+          "lines": 321,
+          "purpose": "Synchronization",
+          "complexity": 10,
+          "functions": [
+            "get_workflow_id",
+            "validate_workflow",
+            "test_n8n_connection",
+            "test_workflow",
+            "deploy_workflow",
+            "generate_deployment_report",
+            "backup_workflows"
+          ],
+          "imports": [
+            "Monitor",
+            "+",
+            "Collect",
+            "Optimize",
+            "Review"
+          ]
+        },
+        {
+          "file_name": "get-and-update-claude-key.sh",
+          "file_type": "sh",
+          "size_bytes": 4345,
+          "lines": 129,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [],
+          "imports": [
+            "Exiting.\"",
+            "Click",
+            "Need",
+            "Copy",
+            "~/.zshrc",
+            "Sign",
+            "Error:\"",
+            "Go",
+            "Name"
+          ]
+        },
+        {
+          "file_name": "greg-community-intelligence-dual-milestone-push.sh",
+          "file_type": "sh",
+          "size_bytes": 24879,
+          "lines": 635,
+          "purpose": "Version Control",
+          "complexity": 10,
+          "functions": [
+            "print_success",
+            "print_section",
+            "print_error"
+          ],
+          "imports": [
+            "Extract",
+            "Build",
+            "Continue",
+            "Achieve"
+          ]
+        },
+        {
+          "file_name": "intelligent-script-discovery.py",
+          "file_type": "py",
+          "size_bytes": 18747,
+          "lines": 533,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "use_as_template_recommendation",
+            "modify_template_for_purpose",
+            "generate_bash_template",
+            "create_script_from_recommendation",
+            "generate_javascript_template",
+            "find_similar_scripts",
+            "save_recommendation",
+            "generate_new_script_template",
+            "generate_template_content",
+            "generate_python_template",
+            "get_file_extension_for_category",
+            "load_analysis",
+            "calculate_similarity",
+            "extend_existing_script_recommendation",
+            "create_new_script_recommendation",
+            "discover_script"
+          ],
+          "imports": [
+            "datetime",
+            "subprocess",
+            "dataclasses",
+            "sys",
+            "typing",
+            "dataclass",
+            "json",
+            "logging",
+            "os",
+            "argparse",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "update-claude-api.sh",
+          "file_type": "sh",
+          "size_bytes": 2211,
+          "lines": 63,
+          "purpose": "General Utility",
+          "complexity": 7,
+          "functions": [],
+          "imports": [
+            "Copy",
+            "Navigate",
+            "Update",
+            "Go",
+            "Create"
+          ]
+        },
+        {
+          "file_name": "optimize-turborepo-structure.sh",
+          "file_type": "sh",
+          "size_bytes": 7288,
+          "lines": 229,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [],
+          "imports": [
+            "Remove",
+            "Commit",
+            "-maxdepth",
+            "Move",
+            "Update",
+            "Test",
+            "Create"
+          ]
+        },
+        {
+          "file_name": "setup-supabase-with-credentials.sh",
+          "file_type": "sh",
+          "size_bytes": 9835,
+          "lines": 305,
+          "purpose": "Environment Setup",
+          "complexity": 10,
+          "functions": [
+            "create_tables_direct",
+            "create_indexes",
+            "execute_sql",
+            "insert_test_data",
+            "test_tables",
+            "setup_rls"
+          ],
+          "imports": [
+            "Louis,",
+            "VARCHAR(100),"
+          ]
+        },
+        {
+          "file_name": "script-consolidation-plan.py",
+          "file_type": "py",
+          "size_bytes": 22450,
+          "lines": 509,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "determine_script_type",
+            "create_new_directory_structure",
+            "create_consolidation_mapping",
+            "create_consolidated_python_script",
+            "consolidate_scripts",
+            "analyze_redundant_scripts",
+            "analyze_duplicates",
+            "create_consolidation_plan",
+            "create_consolidated_bash_script",
+            "group_scripts_by_subcategory",
+            "create_consolidated_script",
+            "calculate_space_saved",
+            "remove_duplicate_scripts",
+            "determine_subcategory",
+            "calculate_scripts_after_consolidation",
+            "get_consolidation_strategy",
+            "create_consolidated_javascript_script",
+            "execute_consolidation"
+          ],
+          "imports": [
+            "datetime",
+            "sys",
+            "typing",
+            "json",
+            "shutil",
+            "logging",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "optimize-packages-structure.sh",
+          "file_type": "sh",
+          "size_bytes": 18518,
+          "lines": 715,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [],
+          "imports": [
+            "Run",
+            "Commander",
+            "**Fixed",
+            "**Consolidated",
+            "**Created",
+            "**Standardized",
+            "Update",
+            "Implement",
+            "Add",
+            "Beverly",
+            "Test",
+            "**Optimized",
+            "**Removed",
+            "Deploy",
+            "**Moved",
+            "**Enhanced",
+            "Review"
+          ]
+        },
+        {
+          "file_name": "milestone-push.sh",
+          "file_type": "sh",
+          "size_bytes": 4215,
+          "lines": 171,
+          "purpose": "Version Control",
+          "complexity": 10,
+          "functions": [
+            "print_milestone",
+            "get_timestamp",
+            "show_help",
+            "create_milestone_message",
+            "print_warning",
+            "print_info",
+            "milestone_push"
+          ],
+          "imports": [
+            "Push",
+            "Commit",
+            "Stage",
+            "tracking",
+            "management",
+            "print_info",
+            "management!",
+            "data",
+            "Create"
+          ]
+        },
+        {
+          "file_name": "milestone-push-system.sh",
+          "file_type": "sh",
+          "size_bytes": 12574,
+          "lines": 385,
+          "purpose": "Version Control",
+          "complexity": 10,
+          "functions": [
+            "create_project_milestone_package",
+            "create_push_instructions",
+            "create_alexai_base_package",
+            "display_current_status",
+            "create_milestone_summary"
+          ],
+          "imports": [
+            "**Repository",
+            "Push",
+            "**Update",
+            "**Set",
+            "Project-Specific",
+            "Set",
+            "Update",
+            "EOF",
+            "###",
+            "The",
+            "Alex",
+            "**Create",
+            "Create"
+          ]
+        },
+        {
+          "file_name": "populate-job-data.js",
+          "file_type": "js",
+          "size_bytes": 14201,
+          "lines": 310,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "populateJobData"
+          ],
+          "imports": [
+            "@supabase/supabase-js",
+            "axios"
+          ]
+        },
+        {
+          "file_name": "intelligent-consolidation-executor.py",
+          "file_type": "py",
+          "size_bytes": 18694,
+          "lines": 473,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "create_backup",
+            "update_script_references",
+            "create_initial_utility_file",
+            "consolidate_redundant_scripts",
+            "extract_function_content",
+            "execute_consolidation",
+            "merge_scripts",
+            "main",
+            "add_function_to_utility",
+            "create_shared_utility_file",
+            "generate_consolidation_report",
+            "save_consolidation_log",
+            "remove_function_from_file",
+            "find_best_script",
+            "consolidate_duplicate_functions",
+            "add_utility_import",
+            "__init__",
+            "find_best_function_implementation",
+            "load_recommendations",
+            "cleanup_orphaned_functions",
+            "remove_duplicate_functions"
+          ],
+          "imports": [
+            "datetime",
+            "sys",
+            "already",
+            "typing",
+            "at",
+            "json",
+            "shutil",
+            "logging",
+            "os",
+            "insert_index",
+            "statements",
+            "to",
+            "Dict",
+            "re"
+          ]
+        },
+        {
+          "file_name": "deploy-n8n-with-credentials.sh",
+          "file_type": "sh",
+          "size_bytes": 5154,
+          "lines": 179,
+          "purpose": "Deployment and Setup",
+          "complexity": 10,
+          "functions": [
+            "create_supabase_credentials",
+            "test_webhooks",
+            "deploy_workflow",
+            "activate_workflow"
+          ],
+          "imports": [
+            "Test",
+            "Begin",
+            "Create"
+          ]
+        },
+        {
+          "file_name": "script-management-dashboard.html",
+          "file_type": "html",
+          "size_bytes": 18777,
+          "lines": 586,
+          "purpose": "General Utility",
+          "complexity": 1,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "sync-n8n-unified-config.sh",
+          "file_type": "sh",
+          "size_bytes": 7439,
+          "lines": 225,
+          "purpose": "Synchronization",
+          "complexity": 10,
+          "functions": [
+            "update_workflow",
+            "create_workflow"
+          ],
+          "imports": [
+            "Monitor",
+            "~/.zshrc",
+            "Collect",
+            "Optimize",
+            "Implement",
+            "Crusher",
+            "Test",
+            "Review",
+            "Please"
+          ]
+        },
+        {
+          "file_name": "script-memory-system.py",
+          "file_type": "py",
+          "size_bytes": 16221,
+          "lines": 419,
+          "purpose": "Memory Management",
+          "complexity": 10,
+          "functions": [
+            "get_script_recommendations",
+            "find_existing_script",
+            "store_script_memory",
+            "suggest_script_extension",
+            "create_script_header",
+            "extract_relevant_functions",
+            "create_script_structure",
+            "search_similar_scripts",
+            "create_script_embedding",
+            "extract_relevant_dependencies",
+            "create_basic_template",
+            "create_script_template"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "dataclasses",
+            "sys",
+            "sentence_transformers",
+            "typing",
+            "numpy",
+            "SentenceTransformer",
+            "dataclass",
+            "json",
+            "logging",
+            "os",
+            "hashlib",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "fix-zshrc-api-key.sh",
+          "file_type": "sh",
+          "size_bytes": 3327,
+          "lines": 77,
+          "purpose": "General Utility",
+          "complexity": 6,
+          "functions": [],
+          "imports": [
+            "If",
+            "~/.zshrc\"",
+            "You'll",
+            "Test"
+          ]
+        },
+        {
+          "file_name": "safe-execute.sh",
+          "file_type": "sh",
+          "size_bytes": 3867,
+          "lines": 167,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "safe_status",
+            "safe_milestone",
+            "safe_list",
+            "safe_progress"
+          ],
+          "imports": []
+        },
+        {
+          "file_name": "claude-api-key-guide.sh",
+          "file_type": "sh",
+          "size_bytes": 2274,
+          "lines": 67,
+          "purpose": "General Utility",
+          "complexity": 3,
+          "functions": [],
+          "imports": [
+            "Run:",
+            "\ud83c\udf10",
+            "Save",
+            "Replace",
+            "\ud83d\udcdd",
+            "\ud83d\udd11",
+            "\ud83d\udd10",
+            "\ud83c\udfaf"
+          ]
+        },
+        {
+          "file_name": "script-index.json",
+          "file_type": "json",
+          "size_bytes": 30413,
+          "lines": 927,
+          "purpose": "General Utility",
+          "complexity": 1,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "analyze-conflicts.sh",
+          "file_type": "sh",
+          "size_bytes": 9859,
+          "lines": 336,
+          "purpose": "Analysis",
+          "complexity": 10,
+          "functions": [
+            "check_circular_dependencies",
+            "analyze_conflicts",
+            "generate_resolution_recommendations",
+            "generate_conflict_matrix",
+            "check_workflow_conflicts"
+          ],
+          "imports": [
+            "**Merge",
+            "Remove",
+            "Invalid",
+            "Circular",
+            "Review",
+            "**Code",
+            "**Deployment**:",
+            "**Manual",
+            "##",
+            "**Documentation**:",
+            "**Validation**:",
+            "Resolve",
+            "Fix",
+            "**Testing**:",
+            "Missing",
+            "Orphaned",
+            "Validate",
+            "Duplicate",
+            "**Monitoring**:"
+          ]
+        },
+        {
+          "file_name": "add-quote-handling-memory.py",
+          "file_type": "py",
+          "size_bytes": 21986,
+          "lines": 588,
+          "purpose": "Memory Management",
+          "complexity": 10,
+          "functions": [
+            "save_memory_to_file",
+            "add_memory_to_supabase",
+            "add_memory_via_api",
+            "add_memory"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "sys",
+            "Supabase",
+            "typing",
+            "json",
+            "urllib",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "security-validation.sh",
+          "file_type": "sh",
+          "size_bytes": 8171,
+          "lines": 278,
+          "purpose": "Security",
+          "complexity": 10,
+          "functions": [
+            "validate_url_security",
+            "check_sensitive_data",
+            "check_dangerous_commands",
+            "validate_authentication",
+            "validate_workflow_permissions",
+            "check_hardcoded_credentials"
+          ],
+          "imports": []
+        },
+        {
+          "file_name": "validate-consolidated-structure.py",
+          "file_type": "py",
+          "size_bytes": 13660,
+          "lines": 355,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "test_functionality",
+            "test_intelligent_discovery",
+            "check_broken_references",
+            "generate_recommendations",
+            "test_consolidated_scripts",
+            "find_broken_references",
+            "generate_validation_report",
+            "test_script_analyzer",
+            "check_script_structure",
+            "validate_consolidated_scripts",
+            "validate_structure",
+            "validate_directory_structure",
+            "validate_remaining_scripts"
+          ],
+          "imports": [
+            "subprocess",
+            "typing",
+            "json",
+            "logging",
+            "os",
+            "Dict",
+            "re"
+          ]
+        },
+        {
+          "file_name": "quick-production-test.sh",
+          "file_type": "sh",
+          "size_bytes": 4608,
+          "lines": 175,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [
+            "test_result",
+            "test_api_security",
+            "test_nextjs"
+          ],
+          "imports": [
+            "Address"
+          ]
+        },
+        {
+          "file_name": "get-supabase-anon-key.sh",
+          "file_type": "sh",
+          "size_bytes": 2184,
+          "lines": 77,
+          "purpose": "General Utility",
+          "complexity": 9,
+          "functions": [],
+          "imports": [
+            "Reload",
+            "Copy",
+            "Re-run",
+            "Update",
+            "Go",
+            "~/.zshrc\""
+          ]
+        },
+        {
+          "file_name": "test-alex-ai-fixes.sh",
+          "file_type": "sh",
+          "size_bytes": 4438,
+          "lines": 142,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [],
+          "imports": [
+            "Create",
+            "Activate"
+          ]
+        },
+        {
+          "file_name": "security-audit.sh",
+          "file_type": "sh",
+          "size_bytes": 6156,
+          "lines": 199,
+          "purpose": "Security",
+          "complexity": 10,
+          "functions": [
+            "generate_report",
+            "check_security_headers",
+            "check_secrets",
+            "check_git_security",
+            "check_env_files",
+            "print_status",
+            "check_dependencies",
+            "check_file_permissions"
+          ],
+          "imports": [
+            "Monitor",
+            "Regularly",
+            "Implement",
+            "Never",
+            "Use",
+            "Enable",
+            "else",
+            "--exclude-dir=node_modules",
+            "-type",
+            "Review"
+          ]
+        },
+        {
+          "file_name": "n8n-bidirectional-sync.py",
+          "file_type": "py",
+          "size_bytes": 15650,
+          "lines": 404,
+          "purpose": "Synchronization",
+          "complexity": 10,
+          "functions": [
+            "get_workflow_hash",
+            "fetch_n8n_workflows",
+            "generate_sync_report",
+            "sync_from_n8n_to_dev",
+            "load_sync_history",
+            "run_sync",
+            "sync_workflow_from_n8n",
+            "analyze_workflow_changes",
+            "save_analysis",
+            "save_sync_history"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "sys",
+            "time",
+            "typing",
+            "json",
+            "logging",
+            "os",
+            "hashlib",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "test-workflows.sh",
+          "file_type": "sh",
+          "size_bytes": 6010,
+          "lines": 190,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [
+            "test_workflow_structure",
+            "test_workflow_logic",
+            "test_workflow_connectivity"
+          ],
+          "imports": []
+        },
+        {
+          "file_name": "n8n-sync-dashboard.html",
+          "file_type": "html",
+          "size_bytes": 16068,
+          "lines": 491,
+          "purpose": "Synchronization",
+          "complexity": 1,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "credential-security-milestone-push.sh",
+          "file_type": "sh",
+          "size_bytes": 5471,
+          "lines": 180,
+          "purpose": "Version Control",
+          "complexity": 6,
+          "functions": [],
+          "imports": [
+            "git",
+            "Add",
+            "Shell",
+            "Test",
+            "N8N",
+            "Verify",
+            "ANTHROPIC_API_KEY"
+          ]
+        },
+        {
+          "file_name": "setup-dev-environment.sh",
+          "file_type": "sh",
+          "size_bytes": 4241,
+          "lines": 119,
+          "purpose": "Environment Setup",
+          "complexity": 10,
+          "functions": [],
+          "imports": [
+            "Reload",
+            "Or",
+            "~/.zshrc",
+            "Start",
+            "Creating",
+            "Please",
+            "~/.zshrc\""
+          ]
+        },
+        {
+          "file_name": "n8n-sync-monitor.py",
+          "file_type": "py",
+          "size_bytes": 14108,
+          "lines": 379,
+          "purpose": "Synchronization",
+          "complexity": 10,
+          "functions": [
+            "save_dashboard_data",
+            "check_n8n_health",
+            "measure_n8n_response_time",
+            "generate_alerts",
+            "generate_dashboard_data",
+            "get_workflow_status",
+            "check_sync_health",
+            "run_monitor",
+            "calculate_sync_frequency"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "dataclasses",
+            "sys",
+            "time",
+            "typing",
+            "dataclass",
+            "json",
+            "logging",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "robust-test.sh",
+          "file_type": "sh",
+          "size_bytes": 4141,
+          "lines": 116,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [],
+          "imports": [
+            "~/.alexai-keys/api-keys.env",
+            "alexai_env/bin/activate"
+          ]
+        },
+        {
+          "file_name": "comprehensive-folder-analyzer.py",
+          "file_type": "py",
+          "size_bytes": 24313,
+          "lines": 591,
+          "purpose": "Analysis",
+          "complexity": 10,
+          "functions": [
+            "extract_imports",
+            "generate_optimization_recommendations",
+            "analyze_all_folders",
+            "find_deprecated_scripts",
+            "discover_all_scripts_and_folders",
+            "find_within_folder_consolidation",
+            "main",
+            "create_restructuring_plan",
+            "save_analysis_results",
+            "find_cross_folder_redundancy",
+            "calculate_complexity",
+            "calculate_name_similarity",
+            "analyze_script",
+            "identify_consolidation_opportunities",
+            "determine_purpose",
+            "calculate_script_similarity",
+            "calculate_folder_redundancy",
+            "__init__",
+            "generate_folder_recommendations",
+            "analyze_each_folder",
+            "extract_functions"
+          ],
+          "imports": [
+            "datetime",
+            "dataclasses",
+            "overlap",
+            "defaultdict",
+            "typing",
+            "dataclass",
+            "collections",
+            "json",
+            "import_patterns",
+            "logging",
+            "os",
+            "statements",
+            "Dict",
+            "re"
+          ]
+        },
+        {
+          "file_name": "update-script-references.py",
+          "file_type": "py",
+          "size_bytes": 12183,
+          "lines": 317,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "update_script_files",
+            "update_package_json",
+            "update_all_references",
+            "update_file_references",
+            "update_relative_paths",
+            "get_new_script_path",
+            "update_config_files",
+            "load_consolidation_mapping",
+            "get_new_import_path",
+            "update_script_calls",
+            "update_imports",
+            "determine_script_category",
+            "create_script_index",
+            "update_documentation"
+          ],
+          "imports": [
+            "scripts",
+            "path",
+            "typing",
+            "json",
+            "logging",
+            "os",
+            "statements",
+            "Dict",
+            "re"
+          ]
+        },
+        {
+          "file_name": "production-readiness-assessment.sh",
+          "file_type": "sh",
+          "size_bytes": 13248,
+          "lines": 414,
+          "purpose": "Production Operations",
+          "complexity": 10,
+          "functions": [
+            "assess_integration",
+            "assess_support_system",
+            "assess_documentation",
+            "assess_security",
+            "assess_performance",
+            "generate_readiness_report",
+            "assess_result",
+            "assess_technical_requirements"
+          ],
+          "imports": [
+            "Prepare",
+            "Documentation",
+            "Support",
+            "Performance",
+            "Conduct",
+            "Address",
+            "Technical",
+            "Launch",
+            "Security",
+            "Deploy",
+            "###",
+            "Integration",
+            "Significant"
+          ]
+        },
+        {
+          "file_name": "alex-ai-universal-milestone-push.sh",
+          "file_type": "sh",
+          "size_bytes": 21099,
+          "lines": 656,
+          "purpose": "Version Control",
+          "complexity": 10,
+          "functions": [
+            "print_header",
+            "print_step"
+          ],
+          "imports": [
+            "Cross-project",
+            "Performance",
+            "Integrate",
+            "**Automation**:",
+            "Deploy",
+            "Build",
+            "**Automated",
+            "Advanced",
+            "Scale",
+            "Universal",
+            "Create",
+            "Activate",
+            "**N8N",
+            "**Market",
+            "**Claude",
+            "**Business",
+            "**Multi-System",
+            "**AI",
+            "Document",
+            "**Security**:",
+            "**Supabase",
+            "optimization",
+            "Collective",
+            "Self-improving",
+            "Enable",
+            "Machine",
+            "Quality",
+            "Monitor",
+            "**Integration**:",
+            "**Environment",
+            "**Error",
+            "**Real-time",
+            "Implement",
+            "Test",
+            "**Monitoring**:"
+          ]
+        },
+        {
+          "file_name": "validate-api-keys.sh",
+          "file_type": "sh",
+          "size_bytes": 6367,
+          "lines": 218,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "validate_all_keys",
+            "test_api_connectivity",
+            "validate_key_format"
+          ],
+          "imports": [
+            "\"$HOME/.alexai-keys/api-keys.env\"",
+            "Review"
+          ]
+        },
+        {
+          "file_name": "quick-milestone.sh",
+          "file_type": "sh",
+          "size_bytes": 1481,
+          "lines": 67,
+          "purpose": "Version Control",
+          "complexity": 3,
+          "functions": [],
+          "imports": [
+            "#",
+            "management"
+          ]
+        },
+        {
+          "file_name": "fix-e2e-issues.sh",
+          "file_type": "sh",
+          "size_bytes": 14234,
+          "lines": 396,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [],
+          "imports": [
+            "scripts/testing/unit_testing/consolidated_unit_testing.py",
+            "Run",
+            "Page",
+            "Improve",
+            "temp_page_fix.js",
+            "scripts/testing/e2e_testing/consolidated_e2e_testing.py",
+            "Dashboard",
+            "Creating",
+            "Add",
+            "Job",
+            "Fix",
+            "Adding",
+            "API"
+          ]
+        },
+        {
+          "file_name": "analyze-production-changes.sh",
+          "file_type": "sh",
+          "size_bytes": 13639,
+          "lines": 428,
+          "purpose": "Analysis",
+          "complexity": 10,
+          "functions": [
+            "get_performance_analysis",
+            "assess_overall_risk",
+            "get_security_analysis",
+            "generate_impact_matrix",
+            "count_risk_level",
+            "get_workflow_analysis",
+            "get_dependency_analysis",
+            "generate_risk_assessment",
+            "analyze_production_changes",
+            "analyze_workflow_impact"
+          ],
+          "imports": [
+            "**Dependency",
+            "**Review",
+            "##",
+            "**Test",
+            "**Security",
+            "**Integration",
+            "**Performance"
+          ]
+        },
+        {
+          "file_name": "comprehensive-string-fix.sh",
+          "file_type": "sh",
+          "size_bytes": 5576,
+          "lines": 229,
+          "purpose": "General Utility",
+          "complexity": 9,
+          "functions": [
+            "demonstrate_fix",
+            "safe_echo",
+            "fix_script",
+            "create_master_safe_script"
+          ],
+          "imports": [
+            "scripts/master-safe-execute.sh",
+            "scripts/master-safe-execute.sh'"
+          ]
+        },
+        {
+          "file_name": "credential-validator.sh",
+          "file_type": "sh",
+          "size_bytes": 1655,
+          "lines": 76,
+          "purpose": "General Utility",
+          "complexity": 9,
+          "functions": [],
+          "imports": [
+            "./scripts/deployment/general/consolidated_general.py"
+          ]
+        },
+        {
+          "file_name": "alex-ai-universal-git-milestone-push.sh",
+          "file_type": "sh",
+          "size_bytes": 10576,
+          "lines": 314,
+          "purpose": "Version Control",
+          "complexity": 10,
+          "functions": [
+            "check_git_repo",
+            "get_current_branch",
+            "create_milestone_summary",
+            "check_git_status",
+            "commit_and_push"
+          ],
+          "imports": [
+            "#",
+            "optimization"
+          ]
+        },
+        {
+          "file_name": "claude-api-fix-final.sh",
+          "file_type": "sh",
+          "size_bytes": 2762,
+          "lines": 77,
+          "purpose": "General Utility",
+          "complexity": 5,
+          "functions": [],
+          "imports": [
+            "\ud83d\udd04",
+            "\ud83e\uddea",
+            "\ud83c\udf10",
+            "This",
+            "\ud83d\udd11",
+            "\ud83d\udcdd",
+            "~/.zshrc\""
+          ]
+        },
+        {
+          "file_name": "script-analyzer.py",
+          "file_type": "py",
+          "size_bytes": 31249,
+          "lines": 740,
+          "purpose": "Analysis",
+          "complexity": 10,
+          "functions": [
+            "find_related_scripts",
+            "generate_analysis_report",
+            "search_scripts",
+            "save_memory",
+            "define_categories",
+            "find_potential_duplicates",
+            "find_redundant_scripts",
+            "generate_recommendations",
+            "categorize_script",
+            "calculate_complexity",
+            "extract_dependencies",
+            "analyze_script",
+            "determine_purpose",
+            "analyze_all_scripts",
+            "save_analysis",
+            "extract_comments",
+            "are_scripts_similar",
+            "extract_variables",
+            "extract_tags",
+            "extract_functions"
+          ],
+          "imports": [
+            "datetime",
+            "dataclasses",
+            "sys",
+            "pathlib",
+            "Path",
+            "typing",
+            "dataclass",
+            "json",
+            "logging",
+            "os",
+            "hashlib",
+            "Dict",
+            "re"
+          ]
+        },
+        {
+          "file_name": "cursor-extension-milestone.sh",
+          "file_type": "sh",
+          "size_bytes": 4111,
+          "lines": 150,
+          "purpose": "Version Control",
+          "complexity": 10,
+          "functions": [],
+          "imports": [
+            "Monitor",
+            "##",
+            "git",
+            "Deploy",
+            "Update",
+            "Test",
+            "Configure",
+            "Initialize",
+            "Create",
+            "Iterate"
+          ]
+        },
+        {
+          "file_name": "deploy-missing-n8n-webhooks.sh",
+          "file_type": "sh",
+          "size_bytes": 5137,
+          "lines": 179,
+          "purpose": "Deployment and Setup",
+          "complexity": 10,
+          "functions": [
+            "test_webhook",
+            "create_webhook_workflow"
+          ],
+          "imports": [
+            "Verify",
+            "Check",
+            "Test"
+          ]
+        },
+        {
+          "file_name": "test-intelligent-discovery.sh",
+          "file_type": "sh",
+          "size_bytes": 898,
+          "lines": 52,
+          "purpose": "Testing and Validation",
+          "complexity": 3,
+          "functions": [
+            "deploy_n8n_workflows"
+          ],
+          "imports": []
+        },
+        {
+          "file_name": "setup-git-remote.sh",
+          "file_type": "sh",
+          "size_bytes": 1969,
+          "lines": 61,
+          "purpose": "Environment Setup",
+          "complexity": 6,
+          "functions": [],
+          "imports": [
+            "Don't",
+            "Click",
+            "Copy",
+            "Repository",
+            "Go",
+            "Description:"
+          ]
+        },
+        {
+          "file_name": "setup-hourly-scraping.sh",
+          "file_type": "sh",
+          "size_bytes": 7114,
+          "lines": 241,
+          "purpose": "Environment Setup",
+          "complexity": 10,
+          "functions": [
+            "setup_database",
+            "check_url",
+            "initialize_configs",
+            "create_webhook_scheduling",
+            "create_cron_job",
+            "create_systemd_timer",
+            "test_cron_endpoint"
+          ],
+          "imports": [
+            "Monitor",
+            "Access",
+            "**Cron-job.org**",
+            "**EasyCron**",
+            "Go",
+            "Test",
+            "**GitHub",
+            "Review",
+            "**Vercel"
+          ]
+        },
+        {
+          "file_name": "setup-n8n-bidirectional-sync.sh",
+          "file_type": "sh",
+          "size_bytes": 10270,
+          "lines": 384,
+          "purpose": "Synchronization",
+          "complexity": 10,
+          "functions": [
+            "setup_cron_jobs",
+            "create_documentation",
+            "create_directories",
+            "create_config_files",
+            "setup_python_scripts",
+            "create_management_scripts",
+            "test_setup"
+          ],
+          "imports": [
+            "**Check",
+            "Run",
+            "##",
+            "Start",
+            "EOF",
+            "View",
+            "Please",
+            "**Manual",
+            "Check"
+          ]
+        },
+        {
+          "file_name": "update-zshrc-with-placeholder.sh",
+          "file_type": "sh",
+          "size_bytes": 1703,
+          "lines": 42,
+          "purpose": "General Utility",
+          "complexity": 2,
+          "functions": [],
+          "imports": [
+            "Run:",
+            "Replace",
+            "Go",
+            "Test",
+            "~/.zshrc\"",
+            "Create"
+          ]
+        },
+        {
+          "file_name": "sync-dashboard.sh",
+          "file_type": "sh",
+          "size_bytes": 13991,
+          "lines": 470,
+          "purpose": "Synchronization",
+          "complexity": 10,
+          "functions": [
+            "generate_json_data",
+            "generate_summary_report",
+            "generate_dashboard"
+          ],
+          "imports": [
+            "Setup",
+            "##",
+            "Continue",
+            "Enhance",
+            "Optimize",
+            "Implement",
+            "Review"
+          ]
+        },
+        {
+          "file_name": "secure-credential-manager.sh",
+          "file_type": "sh",
+          "size_bytes": 13577,
+          "lines": 481,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "deploy_n8n_workflows",
+            "validate_credentials",
+            "create_supabase_client",
+            "create_env_files",
+            "create_n8n_credentials",
+            "load_credentials",
+            "create_supabase_tables",
+            "test_setup"
+          ],
+          "imports": [
+            "Run:",
+            "Deploy",
+            "Test",
+            "VARCHAR(100),"
+          ]
+        },
+        {
+          "file_name": "n8n-change-monitor.sh",
+          "file_type": "sh",
+          "size_bytes": 11564,
+          "lines": 397,
+          "purpose": "Monitoring",
+          "complexity": 10,
+          "functions": [
+            "backup_local_file",
+            "sync_new_workflow_to_dev",
+            "compare_workflows",
+            "log_info",
+            "monitor_n8n_changes",
+            "get_n8n_workflows",
+            "sync_workflow_to_dev",
+            "log_warning",
+            "generate_sync_report",
+            "commit_workflow_changes",
+            "log_error",
+            "analyze_workflow_changes",
+            "log_success"
+          ],
+          "imports": [
+            ">",
+            "**Review",
+            "**Test",
+            "\"$local_file\")",
+            "**Deploy**:",
+            "**Security",
+            "Please"
+          ]
+        },
+        {
+          "file_name": "fix-claude-api.sh",
+          "file_type": "sh",
+          "size_bytes": 2198,
+          "lines": 56,
+          "purpose": "General Utility",
+          "complexity": 6,
+          "functions": [],
+          "imports": [
+            "Reload",
+            "Generate",
+            "Update",
+            "Test",
+            "~/.zshrc\""
+          ]
+        },
+        {
+          "file_name": "setup-supabase-tables.sh",
+          "file_type": "sh",
+          "size_bytes": 1931,
+          "lines": 72,
+          "purpose": "Environment Setup",
+          "complexity": 5,
+          "functions": [],
+          "imports": [
+            "Click",
+            "Copy",
+            "Open",
+            "Go",
+            "Verify"
+          ]
+        },
+        {
+          "file_name": "deploy-n8n-webhooks.sh",
+          "file_type": "sh",
+          "size_bytes": 4415,
+          "lines": 133,
+          "purpose": "Deployment and Setup",
+          "complexity": 10,
+          "functions": [
+            "deploy_workflow"
+          ],
+          "imports": [
+            "./scripts/deployment/general/consolidated_general.py",
+            "Verify",
+            "Update",
+            "Test"
+          ]
+        },
+        {
+          "file_name": "shell-prompt-safety-system.sh",
+          "file_type": "sh",
+          "size_bytes": 7003,
+          "lines": 262,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "show_safety_guidelines",
+            "validate_scripts",
+            "print_milestone",
+            "safe_multiline_output",
+            "test_shell_safety",
+            "announce_milestone",
+            "report_status",
+            "track_progress",
+            "safe_execute",
+            "create_safe_templates"
+          ],
+          "imports": [
+            "EOF"
+          ]
+        },
+        {
+          "file_name": "production-shell-engine.sh",
+          "file_type": "sh",
+          "size_bytes": 8103,
+          "lines": 360,
+          "purpose": "Production Operations",
+          "complexity": 10,
+          "functions": [
+            "generate_basic_script",
+            "output",
+            "generate_progress_script",
+            "generate_batch",
+            "handle_error",
+            "validate_output_directory",
+            "generate_status_script",
+            "validate_script_name",
+            "show_status",
+            "update_progress",
+            "run_progress",
+            "test_script",
+            "generate_script"
+          ],
+          "imports": [
+            "Must"
+          ]
+        },
+        {
+          "file_name": "shell-safety-guide.sh",
+          "file_type": "sh",
+          "size_bytes": 2336,
+          "lines": 86,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [],
+          "imports": [
+            "Use",
+            "Always"
+          ]
+        },
+        {
+          "file_name": "add-test-ids.js",
+          "file_type": "js",
+          "size_bytes": 1609,
+          "lines": 36,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [
+            "addTestIds"
+          ],
+          "imports": []
+        },
+        {
+          "file_name": "end-to-end-testing.sh",
+          "file_type": "sh",
+          "size_bytes": 8089,
+          "lines": 246,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [],
+          "imports": [
+            "System",
+            "Monitor",
+            "|",
+            "Louis,",
+            "Data",
+            "Cross-Crew",
+            "Optimize",
+            "./scripts/deployment/general/consolidated_general.py",
+            "Fallback",
+            "Deploy",
+            "N8N",
+            "Review",
+            "Create",
+            "Live"
+          ]
+        },
+        {
+          "file_name": "deploy.sh",
+          "file_type": "sh",
+          "size_bytes": 664,
+          "lines": 36,
+          "purpose": "Deployment and Setup",
+          "complexity": 3,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "simple-e2e-test.js",
+          "file_type": "js",
+          "size_bytes": 44342,
+          "lines": 1359,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [
+            "testResponsiveDesign",
+            "runAllTests",
+            "testFilterSidebar",
+            "testJobCards",
+            "testPageLoad",
+            "testDashboardButtons",
+            "takeScreenshot",
+            "logTest",
+            "testStatsDashboard",
+            "testApplicationTracker",
+            "testDataSourceIndicator",
+            "testAPIConnectivity",
+            "testResumeUpload",
+            "waitForElement"
+          ],
+          "imports": [
+            "fs",
+            "puppeteer",
+            "path"
+          ]
+        },
+        {
+          "file_name": "intelligent-script-purge.py",
+          "file_type": "py",
+          "size_bytes": 28177,
+          "lines": 682,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "find_repeated_patterns",
+            "find_referenced_scripts",
+            "find_database_operations",
+            "is_minimal_script",
+            "calculate_bloat_score",
+            "execute_purge",
+            "group_similar_scripts",
+            "generate_purging_recommendations",
+            "identify_minimal_scripts",
+            "identify_bloated_scripts",
+            "find_unused_items",
+            "load_analysis_data",
+            "identify_duplicate_scripts",
+            "identify_consolidation_candidates",
+            "find_critical_workflows",
+            "perform_safety_checks",
+            "are_scripts_similar",
+            "find_essential_functions",
+            "generate_purge_report",
+            "analyze_scripts_for_purging",
+            "find_long_functions",
+            "identify_obsolete_scripts",
+            "find_api_endpoints",
+            "calculate_file_hash"
+          ],
+          "imports": [
+            "datetime",
+            "typing",
+            "json",
+            "shutil",
+            "logging",
+            "os",
+            "Dict",
+            "re"
+          ]
+        },
+        {
+          "file_name": "deep-code-analyzer.py",
+          "file_type": "py",
+          "size_bytes": 32074,
+          "lines": 844,
+          "purpose": "Analysis",
+          "complexity": 10,
+          "functions": [
+            "extract_python_function",
+            "save_recommendations",
+            "analyze_bash_script",
+            "are_scripts_redundant",
+            "analyze_javascript_script",
+            "register_functions",
+            "calculate_estimated_savings",
+            "extract_javascript_function",
+            "calculate_python_complexity",
+            "find_redundant_scripts",
+            "analyze_python_script",
+            "calculate_function_complexity",
+            "calculate_bash_complexity",
+            "find_duplicate_functions",
+            "create_consolidation_plan",
+            "analyze_script",
+            "calculate_javascript_function_complexity",
+            "analyze_all_scripts",
+            "save_analysis",
+            "generate_consolidation_recommendations",
+            "calculate_bash_function_complexity",
+            "determine_script_purpose",
+            "calculate_javascript_complexity",
+            "extract_bash_function",
+            "are_functions_similar"
+          ],
+          "imports": [
+            "datetime",
+            "dataclasses",
+            "overlap",
+            "defaultdict",
+            "typing",
+            "ast",
+            "dataclass",
+            "json",
+            "collections",
+            "logging",
+            "os",
+            "statements",
+            "Dict",
+            "re"
+          ]
+        },
+        {
+          "file_name": "load-credentials.sh",
+          "file_type": "sh",
+          "size_bytes": 4021,
+          "lines": 133,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [],
+          "imports": [
+            "Credentials",
+            "environment",
+            "Run",
+            "CI/CD"
+          ]
+        },
+        {
+          "file_name": "validate-strings.sh",
+          "file_type": "sh",
+          "size_bytes": 1265,
+          "lines": 52,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "validate_strings"
+          ],
+          "imports": []
+        },
+        {
+          "file_name": "production-testing-suite.sh",
+          "file_type": "sh",
+          "size_bytes": 9538,
+          "lines": 345,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [
+            "test_api_key_management",
+            "generate_test_report",
+            "test_claude_api",
+            "test_nextjs_app",
+            "test_shell_generation",
+            "test_alexai_integration"
+          ],
+          "imports": [
+            "Prepare",
+            "Conduct",
+            "\"$HOME/.alexai-keys/manage-keys.sh\"",
+            "Deploy",
+            "###",
+            "Review"
+          ]
+        },
+        {
+          "file_name": "automate-bidirectional-setup.sh",
+          "file_type": "sh",
+          "size_bytes": 33160,
+          "lines": 1097,
+          "purpose": "Environment Setup",
+          "complexity": 10,
+          "functions": [
+            "setup_dashboard_monitoring",
+            "load_credentials",
+            "enable_scheduled_workflows",
+            "monitor_dashboard",
+            "log_automation",
+            "generate_final_report",
+            "test_system_with_sample_change",
+            "configure_github_secrets",
+            "check_prerequisites",
+            "verify_system"
+          ],
+          "imports": [
+            "Run:",
+            "**Monitor**:",
+            "**Optimize**:",
+            "Monitor",
+            "Open",
+            "##",
+            "**Test**:",
+            "~/.zshrc",
+            "View",
+            "The",
+            "Check",
+            "**Review**:"
+          ]
+        },
+        {
+          "file_name": "setup-secure-api-keys.sh",
+          "file_type": "sh",
+          "size_bytes": 7740,
+          "lines": 236,
+          "purpose": "Environment Setup",
+          "complexity": 10,
+          "functions": [],
+          "imports": [
+            "source",
+            "\"$API_KEYS_FILE\"",
+            "(${#POTENTIAL_KEY}",
+            "If",
+            "alexai-status\"",
+            "the",
+            "Please",
+            "~/.zshrc\"",
+            "(${#ANTHROPIC_API_KEY}"
+          ]
+        },
+        {
+          "file_name": "monitor-performance.js",
+          "file_type": "js",
+          "size_bytes": 4833,
+          "lines": 154,
+          "purpose": "Monitoring",
+          "complexity": 10,
+          "functions": [],
+          "imports": [
+            "child_process",
+            "fs",
+            "path"
+          ]
+        },
+        {
+          "file_name": "begin-live-scraping.sh",
+          "file_type": "sh",
+          "size_bytes": 4931,
+          "lines": 160,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [],
+          "imports": [
+            "Setting",
+            "Monitor",
+            "Starting",
+            "|",
+            "Louis,",
+            "./scripts/deployment/general/consolidated_general.py",
+            "Test",
+            "Louis",
+            "Verify",
+            "Check"
+          ]
+        },
+        {
+          "file_name": "deploy-complete-n8n-infrastructure.sh",
+          "file_type": "sh",
+          "size_bytes": 3836,
+          "lines": 126,
+          "purpose": "Deployment and Setup",
+          "complexity": 10,
+          "functions": [
+            "test_supabase_connection",
+            "test_webhook_endpoints",
+            "activate_n8n_workflows"
+          ],
+          "imports": [
+            "Start",
+            "Please",
+            "Execute",
+            "Test"
+          ]
+        },
+        {
+          "file_name": "n8n-crew-script-analyzer.py",
+          "file_type": "py",
+          "size_bytes": 31693,
+          "lines": 770,
+          "purpose": "Analysis",
+          "complexity": 10,
+          "functions": [
+            "discover_all_scripts",
+            "activate_deprecation_crew",
+            "analyze_primary_intent",
+            "activate_consolidation_crew",
+            "analyze_secondary_intents",
+            "simulate_crew_analysis",
+            "analyze_dependencies",
+            "main",
+            "get_folder_description",
+            "generate_optimal_structure",
+            "save_analysis_results",
+            "analyze_existing_folders",
+            "activate_categorization_crew",
+            "find_consolidation_candidates",
+            "recommend_folder",
+            "analyze_maintenance_priority",
+            "create_research_prompt",
+            "find_folder_consolidation_opportunities",
+            "__init__",
+            "are_scripts_similar",
+            "check_deprecation",
+            "activate_research_crew",
+            "generate_crew_insights",
+            "get_deprecation_reason",
+            "activate_n8n_crew_analysis",
+            "analyze_complexity",
+            "calculate_similarity",
+            "identify_orphaned_scripts",
+            "parse_research_analysis",
+            "create_implementation_plan"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "dataclasses",
+            "defaultdict",
+            "time",
+            "typing",
+            "dataclass",
+            "collections",
+            "json",
+            "logging",
+            "os",
+            "Dict",
+            "supabase"
+          ]
+        },
+        {
+          "file_name": "test-script.sh",
+          "file_type": "sh",
+          "size_bytes": 242,
+          "lines": 14,
+          "purpose": "Testing and Validation",
+          "complexity": 1,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "load_alex_ai_credentials.sh",
+          "file_type": "sh",
+          "size_bytes": 735,
+          "lines": 27,
+          "purpose": "AI Systems",
+          "complexity": 7,
+          "functions": [],
+          "imports": [
+            "~/.zshrc"
+          ]
+        },
+        {
+          "file_name": "safe-milestone-push.sh",
+          "file_type": "sh",
+          "size_bytes": 2413,
+          "lines": 91,
+          "purpose": "Version Control",
+          "complexity": 4,
+          "functions": [
+            "create_safe_commit_message",
+            "safe_commit",
+            "safe_push",
+            "escape_quotes",
+            "milestone_push"
+          ],
+          "imports": []
+        },
+        {
+          "file_name": "setup-database-simple.js",
+          "file_type": "js",
+          "size_bytes": 8389,
+          "lines": 265,
+          "purpose": "Environment Setup",
+          "complexity": 10,
+          "functions": [
+            "setupDatabase"
+          ],
+          "imports": [
+            "@supabase/supabase-js",
+            "fs",
+            "path",
+            "dotenv"
+          ]
+        },
+        {
+          "file_name": "alexai-init.sh",
+          "file_type": "sh",
+          "size_bytes": 1901,
+          "lines": 46,
+          "purpose": "AI Systems",
+          "complexity": 8,
+          "functions": [],
+          "imports": [
+            "Project",
+            "~/.zshrc",
+            "AlexAI"
+          ]
+        },
+        {
+          "file_name": "string-manipulation-fix.sh",
+          "file_type": "sh",
+          "size_bytes": 13002,
+          "lines": 485,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "create_fix_documentation",
+            "safe_multiline",
+            "safe_output",
+            "create_safe_execution",
+            "create_validation_system",
+            "demonstrate_safe_output",
+            "create_safe_templates",
+            "fix_existing_scripts"
+          ],
+          "imports": [
+            "String",
+            "scripts/testing/general/consolidated_general.py",
+            "**Use",
+            "**Validate",
+            "**Test",
+            "**Always",
+            "Safe",
+            "**Avoid",
+            "EOF"
+          ]
+        }
+      ]
+    },
+    "generated": {
+      "folder_name": "generated",
+      "script_count": 3,
+      "total_size": 1882,
+      "total_lines": 110,
+      "redundancy_score": 0.36666666666666664,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": [
+        {
+          "file_name": "test-basic.sh",
+          "file_type": "sh",
+          "size_bytes": 510,
+          "lines": 32,
+          "purpose": "Testing and Validation",
+          "complexity": 1,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "test-status.sh",
+          "file_type": "sh",
+          "size_bytes": 498,
+          "lines": 28,
+          "purpose": "Testing and Validation",
+          "complexity": 1,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "test-progress.sh",
+          "file_type": "sh",
+          "size_bytes": 874,
+          "lines": 50,
+          "purpose": "Testing and Validation",
+          "complexity": 1,
+          "functions": [],
+          "imports": []
+        }
+      ]
+    },
+    "consolidated": {
+      "folder_name": "consolidated",
+      "script_count": 51,
+      "total_size": 560818,
+      "total_lines": 14045,
+      "redundancy_score": 0.12685857007823922,
+      "consolidation_opportunities": [],
+      "recommended_actions": [
+        "Large number of scripts - consider creating subfolders",
+        "Mixed purposes detected - consider reorganizing by purpose"
+      ],
+      "scripts": [
+        {
+          "file_name": "consolidated_fix-zshrc-api-key.py",
+          "file_type": "py",
+          "size_bytes": 3633,
+          "lines": 89,
+          "purpose": "General Utility",
+          "complexity": 5,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_shell-prompt-safety-system.py",
+          "file_type": "py",
+          "size_bytes": 7387,
+          "lines": 276,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_test-status.py",
+          "file_type": "py",
+          "size_bytes": 847,
+          "lines": 44,
+          "purpose": "Testing and Validation",
+          "complexity": 1,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_crew_coordination_update_system.py",
+          "file_type": "py",
+          "size_bytes": 11726,
+          "lines": 256,
+          "purpose": "Crew Management",
+          "complexity": 10,
+          "functions": [
+            "main",
+            "simulate_crew_coordination_update"
+          ],
+          "imports": [
+            "datetime",
+            "sys",
+            "typing",
+            "json",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_fix_credential_security.py",
+          "file_type": "py",
+          "size_bytes": 7112,
+          "lines": 208,
+          "purpose": "Security",
+          "complexity": 10,
+          "functions": [
+            "create_anthropic_key_prompt",
+            "main",
+            "create_secure_credential_loader",
+            "test_credential_access",
+            "create_crew_memory_about_fix",
+            "check_current_credentials"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "subprocess",
+            "os"
+          ]
+        },
+        {
+          "file_name": "consolidated_fix-claude-api.py",
+          "file_type": "py",
+          "size_bytes": 2501,
+          "lines": 68,
+          "purpose": "General Utility",
+          "complexity": 5,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_alex_ai_credential_manager.py",
+          "file_type": "py",
+          "size_bytes": 15184,
+          "lines": 372,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "load_from_environment",
+            "validate_credentials",
+            "setup_environment_variables",
+            "save_credentials_securely",
+            "encrypt_credentials",
+            "load_from_zshrc",
+            "run_comprehensive_setup",
+            "main",
+            "decrypt_credentials",
+            "create_secure_directory",
+            "test_credential_access",
+            "generate_credential_report",
+            "load_credentials_securely",
+            "create_crew_memory",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "subprocess",
+            "hashlib",
+            "pathlib",
+            "Path",
+            "typing",
+            "json",
+            "os",
+            "Dict",
+            "base64"
+          ]
+        },
+        {
+          "file_name": "consolidated_setup-secure-api-keys.py",
+          "file_type": "py",
+          "size_bytes": 8057,
+          "lines": 248,
+          "purpose": "Environment Setup",
+          "complexity": 10,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_enhanced_ai_prompts_system.py",
+          "file_type": "py",
+          "size_bytes": 14952,
+          "lines": 426,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "_get_system_integration_prompt",
+            "_get_supabase_integration_prompt",
+            "trigger_n8n_workflow",
+            "_get_market_research_prompt",
+            "_get_n8n_workflow_prompt",
+            "_get_business_validation_prompt",
+            "setup_validation_schedule",
+            "create_integration_guide",
+            "setup_market_monitoring",
+            "validate_business_model",
+            "main",
+            "analyze_with_claude",
+            "_get_claude_analysis_prompt",
+            "market_research_workflow",
+            "generate_enhanced_prompt",
+            "integrated_workflow",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "create_client",
+            "requests",
+            "typing",
+            "json",
+            "os",
+            "Dict",
+            "supabase"
+          ]
+        },
+        {
+          "file_name": "consolidated_mcp_library_computer_system.py",
+          "file_type": "py",
+          "size_bytes": 17350,
+          "lines": 384,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "run_knowledge_distribution_cycle",
+            "main",
+            "query_mcp_library",
+            "update_crew_specialization",
+            "print_distribution_report",
+            "create_crew_knowledge_memory",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_claude-api-key-guide.py",
+          "file_type": "py",
+          "size_bytes": 2586,
+          "lines": 79,
+          "purpose": "General Utility",
+          "complexity": 3,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_update-claude-api.py",
+          "file_type": "py",
+          "size_bytes": 2520,
+          "lines": 75,
+          "purpose": "General Utility",
+          "complexity": 7,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_progressive_git_push_system.py",
+          "file_type": "py",
+          "size_bytes": 11714,
+          "lines": 280,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "run_progressive_push",
+            "main",
+            "create_alex_ai_progressive_steps",
+            "execute_push_step",
+            "create_push_step",
+            "print_progressive_report",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "subprocess",
+            "sys",
+            "time",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_observation_lounge_crew_debrief.py",
+          "file_type": "py",
+          "size_bytes": 19430,
+          "lines": 406,
+          "purpose": "Crew Management",
+          "complexity": 10,
+          "functions": [
+            "main",
+            "simulate_observation_lounge_session"
+          ],
+          "imports": [
+            "datetime",
+            "sys",
+            "typing",
+            "json",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_test-script.py",
+          "file_type": "py",
+          "size_bytes": 507,
+          "lines": 26,
+          "purpose": "Testing and Validation",
+          "complexity": 1,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_store_crew_memories_supabase.py",
+          "file_type": "py",
+          "size_bytes": 5773,
+          "lines": 162,
+          "purpose": "Crew Management",
+          "complexity": 10,
+          "functions": [
+            "store_crew_memories",
+            "main",
+            "create_memory_summary",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_youtube_channel_intelligence_system.py",
+          "file_type": "py",
+          "size_bytes": 28245,
+          "lines": 624,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "_generate_channel_summary",
+            "_analyze_video_for_crew_member",
+            "_extract_logical_concepts",
+            "_create_vector_embedding",
+            "get_channel_insights_for_crew",
+            "_store_crew_insights",
+            "main",
+            "_extract_data_concepts",
+            "_extract_decision_concepts",
+            "_extract_key_concepts",
+            "_extract_channel_id",
+            "_get_channel_info",
+            "_calculate_relevance_score",
+            "analyze_youtube_channel",
+            "_select_relevant_videos",
+            "_generate_crew_specific_insight",
+            "_create_content_vectors",
+            "_store_channel_analysis",
+            "__init__",
+            "_extract_key_themes",
+            "_get_channel_videos",
+            "_analyze_videos_with_crew_specialization",
+            "_extract_leadership_concepts",
+            "search_insights_by_vector_similarity",
+            "_extract_analytical_concepts"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "dataclasses",
+            "defaultdict",
+            "sys",
+            "YouTubeScraperCrewIntegration",
+            "typing",
+            "numpy",
+            "dataclass",
+            "collections",
+            "json",
+            "youtube_scraper_crew_integration",
+            "os",
+            "hashlib",
+            "Dict",
+            "re"
+          ]
+        },
+        {
+          "file_name": "consolidated_youtube_scraper_crew_integration.py",
+          "file_type": "py",
+          "size_bytes": 14376,
+          "lines": 364,
+          "purpose": "Crew Management",
+          "complexity": 10,
+          "functions": [
+            "main",
+            "_generate_request_id",
+            "_extract_video_id",
+            "_get_existing_analysis",
+            "_is_already_processed",
+            "get_crew_analysis_history",
+            "_is_valid_youtube_url",
+            "list_crew_members",
+            "request_youtube_analysis",
+            "batch_analyze_videos",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "hashlib",
+            "sys",
+            "typing",
+            "json",
+            "os",
+            "Dict",
+            "re"
+          ]
+        },
+        {
+          "file_name": "consolidated_update-zshrc-with-placeholder.py",
+          "file_type": "py",
+          "size_bytes": 2017,
+          "lines": 54,
+          "purpose": "General Utility",
+          "complexity": 2,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_alexai-init.py",
+          "file_type": "py",
+          "size_bytes": 2182,
+          "lines": 58,
+          "purpose": "AI Systems",
+          "complexity": 6,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_shell-safety-guide.py",
+          "file_type": "py",
+          "size_bytes": 2628,
+          "lines": 98,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_channel-intelligence-dual-milestone-push.py",
+          "file_type": "py",
+          "size_bytes": 12661,
+          "lines": 331,
+          "purpose": "Version Control",
+          "complexity": 10,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_test-progress.py",
+          "file_type": "py",
+          "size_bytes": 1283,
+          "lines": 68,
+          "purpose": "Testing and Validation",
+          "complexity": 1,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_n8n_integration_test_system.py",
+          "file_type": "py",
+          "size_bytes": 12427,
+          "lines": 317,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [
+            "load_workflow_tests",
+            "main",
+            "test_workflow",
+            "run_comprehensive_test",
+            "save_test_results",
+            "test_crew_memory_synchronization",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "sys",
+            "time",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_mcp_integration_system.py",
+          "file_type": "py",
+          "size_bytes": 30390,
+          "lines": 739,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "_determine_correlation_type",
+            "correlate_memories",
+            "_matches_criteria",
+            "export_memories",
+            "store_memory",
+            "handle_mcp_request",
+            "trigger_workflow",
+            "import_memories",
+            "get_memory_by_id",
+            "_text_search_memories",
+            "search_memories",
+            "main",
+            "consolidate_memories",
+            "get_memory_statistics",
+            "_convert_to_csv",
+            "get_workflow_status",
+            "__init__",
+            "optimize_memories",
+            "_load_project_memories"
+          ],
+          "imports": [
+            "datetime",
+            "memory",
+            "dataclasses",
+            "asyncio",
+            "mcp_memory_optimization_system",
+            "typing",
+            "numpy",
+            "dataclass",
+            "aiohttp",
+            "json",
+            "logging",
+            "os",
+            "Dict",
+            "MCPMemoryOptimizationSystem"
+          ]
+        },
+        {
+          "file_name": "consolidated_enhanced_ai_prompts_deployment_system.py",
+          "file_type": "py",
+          "size_bytes": 21488,
+          "lines": 538,
+          "purpose": "Deployment and Setup",
+          "complexity": 10,
+          "functions": [
+            "deploy_enhanced_prompts",
+            "test_integration_guide_creation",
+            "scale_to_other_projects",
+            "execute_all_next_steps",
+            "test_performance",
+            "main",
+            "setUp",
+            "test_live_system_integration",
+            "create_advanced_workflows",
+            "test_prompt_generation",
+            "setup_automated_testing",
+            "setup_performance_monitoring",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "time",
+            "typing",
+            "json",
+            "unittest",
+            "os",
+            "enhanced_ai_prompts_system",
+            "EnhancedAIPromptsSystem",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_test_channel_intelligence_system.py",
+          "file_type": "py",
+          "size_bytes": 14206,
+          "lines": 348,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [
+            "test_channel_info_retrieval",
+            "test_vector_embedding_generation",
+            "generate_test_report",
+            "test_crew_collaboration_insights",
+            "main",
+            "test_channel_id_extraction",
+            "test_cost_optimization",
+            "test_performance_scalability",
+            "test_full_channel_analysis",
+            "run_all_tests",
+            "test_crew_specialized_analysis",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "YouTubeChannelIntelligenceSystem",
+            "sys",
+            "youtube_channel_intelligence_system",
+            "time",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_demo_youtube_scraper_system.py",
+          "file_type": "py",
+          "size_bytes": 14665,
+          "lines": 376,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "demo_individual_crew_analysis",
+            "interactive_single_analysis",
+            "demo_analysis_history",
+            "main",
+            "interactive_demo",
+            "demo_crew_member_listing",
+            "interactive_batch_analysis",
+            "demo_crew_coordination_analysis",
+            "run_complete_demo",
+            "demo_batch_analysis_perspectives",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "sys",
+            "YouTubeScraperCrewIntegration",
+            "ObservationLoungeCoordinator",
+            "typing",
+            "crew_coordinator",
+            "json",
+            "youtube_scraper_crew_integration",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_cursor-ai-shell-integration.py",
+          "file_type": "py",
+          "size_bytes": 9450,
+          "lines": 295,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_claude-api-fix-final.py",
+          "file_type": "py",
+          "size_bytes": 3077,
+          "lines": 89,
+          "purpose": "General Utility",
+          "complexity": 5,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_crew_coordinator.py",
+          "file_type": "py",
+          "size_bytes": 17381,
+          "lines": 394,
+          "purpose": "Crew Management",
+          "complexity": 10,
+          "functions": [
+            "_extract_key_themes",
+            "_get_crew_member_insight",
+            "_synthesize_crew_insights",
+            "_generate_recommendations",
+            "_generate_next_actions",
+            "_identify_divergence",
+            "_conduct_crew_session",
+            "main",
+            "_identify_consensus",
+            "coordinate_observation_lounge",
+            "_handle_youtube_analysis_request",
+            "_select_crew_members",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "sys",
+            "YouTubeScraperCrewIntegration",
+            "typing",
+            "json",
+            "youtube_scraper_crew_integration",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_enhanced_unified_router.py",
+          "file_type": "py",
+          "size_bytes": 10680,
+          "lines": 277,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "route_request",
+            "main",
+            "_format_crew_prompt",
+            "__init__",
+            "_execute_openrouter_request",
+            "_make_routing_decision",
+            "_select_crew_member",
+            "_execute_claude_request"
+          ],
+          "imports": [
+            "requests",
+            "sys",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_test-basic.py",
+          "file_type": "py",
+          "size_bytes": 1037,
+          "lines": 52,
+          "purpose": "Testing and Validation",
+          "complexity": 1,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_crew_learning_assessment.py",
+          "file_type": "py",
+          "size_bytes": 19837,
+          "lines": 439,
+          "purpose": "Crew Management",
+          "complexity": 10,
+          "functions": [
+            "_analyze_individual_learnings",
+            "_store_crew_memories",
+            "main",
+            "_generate_learning_report",
+            "assess_crew_learning",
+            "_analyze_shared_learnings",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_advanced_ai_agent_development_system.py",
+          "file_type": "py",
+          "size_bytes": 18357,
+          "lines": 422,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "develop_capabilities",
+            "create_advanced_agents",
+            "main",
+            "create_advanced_agent_system",
+            "orchestrate_advanced_workflow",
+            "execute_advanced_task",
+            "develop_self_improving_capabilities",
+            "initialize_enhanced_prompts",
+            "learn_from_interactions",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "typing",
+            "json",
+            "enhanced_ai_prompts_system",
+            "EnhancedAIPromptsSystem",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_alex_ai_memory_sharing_assessment.py",
+          "file_type": "py",
+          "size_bytes": 15455,
+          "lines": 359,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "get_all_crew_memories",
+            "create_test_memory_for_crew",
+            "_generate_overall_assessment",
+            "main",
+            "verify_memory_sharing",
+            "print_assessment_report",
+            "test_supabase_connection",
+            "test_memory_consistency",
+            "run_comprehensive_assessment",
+            "analyze_crew_memory_distribution",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "time",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_robust-test.py",
+          "file_type": "py",
+          "size_bytes": 4432,
+          "lines": 128,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_get-and-update-claude-key.py",
+          "file_type": "py",
+          "size_bytes": 4654,
+          "lines": 141,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_test_youtube_scraper_integration.py",
+          "file_type": "py",
+          "size_bytes": 16761,
+          "lines": 430,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [
+            "generate_test_report",
+            "test_crew_member_perspectives",
+            "test_duplicate_processing_prevention",
+            "main",
+            "test_batch_video_analysis",
+            "test_analysis_history_retrieval",
+            "test_invalid_url_handling",
+            "run_all_tests",
+            "test_crew_member_listing",
+            "test_single_video_analysis",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "sys",
+            "YouTubeScraperCrewIntegration",
+            "time",
+            "typing",
+            "json",
+            "youtube_scraper_crew_integration",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_cursor-ai-shell-helper.py",
+          "file_type": "py",
+          "size_bytes": 1709,
+          "lines": 76,
+          "purpose": "AI Systems",
+          "complexity": 5,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_enhanced_prompts_test_suite.py",
+          "file_type": "py",
+          "size_bytes": 2039,
+          "lines": 63,
+          "purpose": "Testing and Validation",
+          "complexity": 8,
+          "functions": [
+            "test_performance",
+            "test_integration_guide_creation",
+            "setUp",
+            "test_prompt_generation"
+          ],
+          "imports": [
+            "time",
+            "unittest",
+            "enhanced_ai_prompts_system",
+            "EnhancedAIPromptsSystem"
+          ]
+        },
+        {
+          "file_name": "consolidated_greg-community-intelligence-dual-milestone-push.py",
+          "file_type": "py",
+          "size_bytes": 13032,
+          "lines": 333,
+          "purpose": "Version Control",
+          "complexity": 10,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_mcp_memory_optimization_system.py",
+          "file_type": "py",
+          "size_bytes": 24854,
+          "lines": 613,
+          "purpose": "Memory Management",
+          "complexity": 10,
+          "functions": [
+            "generate_optimization_report",
+            "_create_content_summary",
+            "optimize_memory_storage",
+            "find_similar_memories",
+            "main",
+            "save_optimized_memories_to_supabase",
+            "_hash_based_embedding",
+            "_consolidate_content",
+            "calculate_importance_score",
+            "consolidate_similar_memories",
+            "load_memories_from_supabase",
+            "create_memory_clusters",
+            "generate_embedding",
+            "cosine_similarity",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "dataclasses",
+            "typing",
+            "numpy",
+            "dataclass",
+            "json",
+            "logging",
+            "os",
+            "hashlib",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_test_alex_ai_system.py",
+          "file_type": "py",
+          "size_bytes": 4811,
+          "lines": 155,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [
+            "test_enhanced_router",
+            "main",
+            "test_crew_coordinator",
+            "test_job_search_system"
+          ],
+          "imports": [
+            "datetime",
+            "sys",
+            "ObservationLoungeCoordinator",
+            "enhanced_unified_router",
+            "alex_ai_job_search_system",
+            "crew_coordinator",
+            "json",
+            "EnhancedUnifiedRouter",
+            "AlexAIJobSearchSystem",
+            "os"
+          ]
+        },
+        {
+          "file_name": "consolidated_observation_lounge_memory_consensus.py",
+          "file_type": "py",
+          "size_bytes": 16809,
+          "lines": 377,
+          "purpose": "Memory Management",
+          "complexity": 10,
+          "functions": [
+            "get_system_wide_memories",
+            "print_observation_lounge_report",
+            "main",
+            "get_crew_memories",
+            "simulate_crew_member_reflection",
+            "run_observation_lounge_session",
+            "generate_consensus",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_milestone-push-system.py",
+          "file_type": "py",
+          "size_bytes": 12969,
+          "lines": 399,
+          "purpose": "Version Control",
+          "complexity": 8,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_crew_personal_history_analysis.py",
+          "file_type": "py",
+          "size_bytes": 14455,
+          "lines": 300,
+          "purpose": "Crew Management",
+          "complexity": 10,
+          "functions": [
+            "analyze_crew_member_history",
+            "run_comprehensive_crew_analysis",
+            "main",
+            "get_crew_memories",
+            "print_crew_analysis_report",
+            "_generate_personal_assessment",
+            "_generate_overall_summary",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_greg_channel_intelligence_analysis.py",
+          "file_type": "py",
+          "size_bytes": 29713,
+          "lines": 613,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "generate_crew_workflow_integrations",
+            "main",
+            "generate_global_alexai_intelligence",
+            "analyze_greg_channel"
+          ],
+          "imports": [
+            "datetime",
+            "sys",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_load_alex_ai_credentials.py",
+          "file_type": "py",
+          "size_bytes": 1050,
+          "lines": 39,
+          "purpose": "AI Systems",
+          "complexity": 7,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "consolidated_alex_ai_comprehensive_assessment.py",
+          "file_type": "py",
+          "size_bytes": 10449,
+          "lines": 245,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "_generate_next_steps",
+            "_generate_recommendations",
+            "print_comprehensive_report",
+            "main",
+            "_assess_overall_health",
+            "run_comprehensive_assessment",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "CrewPersonalHistoryAnalysis",
+            "alex_ai_memory_sharing_assessment",
+            "typing",
+            "AlexAIMemorySharingAssessment",
+            "json",
+            "crew_personal_history_analysis",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "consolidated_test_mcp_system.py",
+          "file_type": "py",
+          "size_bytes": 19960,
+          "lines": 492,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [
+            "generate_optimization_report",
+            "_create_content_summary",
+            "optimize_memory_storage",
+            "find_similar_memories",
+            "main",
+            "_consolidate_content",
+            "calculate_importance_score",
+            "consolidate_similar_memories",
+            "generate_embedding",
+            "cosine_similarity",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "dataclasses",
+            "typing",
+            "dataclass",
+            "json",
+            "os",
+            "hashlib",
+            "Dict"
+          ]
+        }
+      ]
+    },
+    "python": {
+      "folder_name": "python",
+      "script_count": 66,
+      "total_size": 1234457,
+      "total_lines": 28654,
+      "redundancy_score": 0.14203916850062495,
+      "consolidation_opportunities": [],
+      "recommended_actions": [
+        "Large number of scripts - consider creating subfolders",
+        "Mixed purposes detected - consider reorganizing by purpose"
+      ],
+      "scripts": [
+        {
+          "file_name": "youtube_scraper_crew_integration.py",
+          "file_type": "py",
+          "size_bytes": 13874,
+          "lines": 348,
+          "purpose": "Crew Management",
+          "complexity": 10,
+          "functions": [
+            "_generate_request_id",
+            "_extract_video_id",
+            "_get_existing_analysis",
+            "_is_already_processed",
+            "get_crew_analysis_history",
+            "_is_valid_youtube_url",
+            "list_crew_members",
+            "request_youtube_analysis",
+            "batch_analyze_videos"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "hashlib",
+            "sys",
+            "typing",
+            "json",
+            "os",
+            "Dict",
+            "re"
+          ]
+        },
+        {
+          "file_name": "final_monorepo_cleanup.py",
+          "file_type": "py",
+          "size_bytes": 19957,
+          "lines": 502,
+          "purpose": "Maintenance",
+          "complexity": 10,
+          "functions": [
+            "move_files_to_organized_structure",
+            "safe_remove_file",
+            "run_final_cleanup",
+            "identify_excess_files",
+            "identify_sub_projects",
+            "categorize_main_folder_files",
+            "organize_remaining_files",
+            "generate_cleanup_report",
+            "log",
+            "create_backup"
+          ],
+          "imports": [
+            "datetime",
+            "sys",
+            "pathlib",
+            "Path",
+            "typing",
+            "shutil",
+            "json",
+            "os",
+            "Dict",
+            "re"
+          ]
+        },
+        {
+          "file_name": "turborepo_implementation_plan.py",
+          "file_type": "py",
+          "size_bytes": 21794,
+          "lines": 503,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "save_implementation_data",
+            "_analyze_current_structure",
+            "_define_implementation_phases",
+            "generate_implementation_plan",
+            "_create_turborepo_config"
+          ],
+          "imports": [
+            "datetime",
+            "dataclasses",
+            "typing",
+            "dataclass",
+            "json",
+            "logging",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "alex_ai_yolo_mode_integration_system.py",
+          "file_type": "py",
+          "size_bytes": 24220,
+          "lines": 472,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "create_integration_report",
+            "run_comprehensive_integration",
+            "save_integration_system",
+            "analyze_prompt_comprehensive",
+            "create_comprehensive_integration"
+          ],
+          "imports": [
+            "datetime",
+            "pathlib",
+            "Path",
+            "typing",
+            "json",
+            "logging",
+            "os",
+            "Dict",
+            "re"
+          ]
+        },
+        {
+          "file_name": "comprehensive_market_research_system.py",
+          "file_type": "py",
+          "size_bytes": 11537,
+          "lines": 299,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "simulate_web_research",
+            "generate_market_research_report",
+            "analyze_cannabis_market",
+            "generate_research_queries"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "time",
+            "typing",
+            "json",
+            "Dict",
+            "random"
+          ]
+        },
+        {
+          "file_name": "phase2_turborepo_optimization.py",
+          "file_type": "py",
+          "size_bytes": 32371,
+          "lines": 974,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "configure_local_caching",
+            "optimize_task_dependencies",
+            "configure_build_outputs",
+            "implement_incremental_builds",
+            "generate_phase2_report",
+            "execute_phase2",
+            "run_command",
+            "setup_performance_monitoring",
+            "test_optimizations",
+            "setup_remote_caching",
+            "log_step",
+            "optimize_cicd_integration"
+          ],
+          "imports": [
+            "datetime",
+            "subprocess",
+            "pathlib",
+            "Path",
+            "typing",
+            "json",
+            "logging",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "crew_coordination_update_system.py",
+          "file_type": "py",
+          "size_bytes": 11346,
+          "lines": 242,
+          "purpose": "Crew Management",
+          "complexity": 10,
+          "functions": [
+            "simulate_crew_coordination_update"
+          ],
+          "imports": [
+            "datetime",
+            "sys",
+            "typing",
+            "json",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "youtube_crew_memory_integration.py",
+          "file_type": "py",
+          "size_bytes": 16937,
+          "lines": 388,
+          "purpose": "Crew Management",
+          "complexity": 10,
+          "functions": [
+            "_extract_crew_memories",
+            "run_demo_analysis",
+            "generate_memory_report",
+            "_parse_analysis_output",
+            "_locate_youtube_scripts",
+            "run_youtube_analysis",
+            "_create_memory",
+            "_parse_text_insights"
+          ],
+          "imports": [
+            "datetime",
+            "subprocess",
+            "sys",
+            "pathlib",
+            "Path",
+            "typing",
+            "json",
+            "logging",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "enhanced_ai_prompts_system.py",
+          "file_type": "py",
+          "size_bytes": 14417,
+          "lines": 409,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "_get_system_integration_prompt",
+            "_get_supabase_integration_prompt",
+            "trigger_n8n_workflow",
+            "_get_market_research_prompt",
+            "_get_n8n_workflow_prompt",
+            "_get_business_validation_prompt",
+            "setup_validation_schedule",
+            "create_integration_guide",
+            "setup_market_monitoring",
+            "validate_business_model",
+            "analyze_with_claude",
+            "_get_claude_analysis_prompt",
+            "market_research_workflow",
+            "generate_enhanced_prompt",
+            "integrated_workflow"
+          ],
+          "imports": [
+            "datetime",
+            "create_client",
+            "requests",
+            "typing",
+            "json",
+            "os",
+            "Dict",
+            "supabase"
+          ]
+        },
+        {
+          "file_name": "alex_ai_credential_manager.py",
+          "file_type": "py",
+          "size_bytes": 14722,
+          "lines": 357,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "load_from_environment",
+            "validate_credentials",
+            "setup_environment_variables",
+            "save_credentials_securely",
+            "encrypt_credentials",
+            "load_from_zshrc",
+            "run_comprehensive_setup",
+            "decrypt_credentials",
+            "create_secure_directory",
+            "test_credential_access",
+            "generate_credential_report",
+            "load_credentials_securely",
+            "create_crew_memory"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "subprocess",
+            "hashlib",
+            "pathlib",
+            "Path",
+            "typing",
+            "json",
+            "os",
+            "Dict",
+            "base64"
+          ]
+        },
+        {
+          "file_name": "enhanced_prompts_test_suite.py",
+          "file_type": "py",
+          "size_bytes": 1643,
+          "lines": 49,
+          "purpose": "Testing and Validation",
+          "complexity": 7,
+          "functions": [
+            "test_integration_guide_creation",
+            "setUp",
+            "test_prompt_generation"
+          ],
+          "imports": [
+            "time",
+            "unittest",
+            "enhanced_ai_prompts_system",
+            "EnhancedAIPromptsSystem"
+          ]
+        },
+        {
+          "file_name": "alex_ai_yolo_initialization.py",
+          "file_type": "py",
+          "size_bytes": 15387,
+          "lines": 405,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "run_complete_initialization",
+            "_store_yolo_initialization_memory",
+            "create_yolo_prompt_template",
+            "initialize_yolo_mode",
+            "update_alex_ai_system_config",
+            "create_yolo_initialization_script",
+            "generate_initialization_report"
+          ],
+          "imports": [
+            "datetime",
+            "subprocess",
+            "sys",
+            "pathlib",
+            "Path",
+            "typing",
+            "json",
+            "logging",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "alex_ai_memory_sharing_assessment.py",
+          "file_type": "py",
+          "size_bytes": 15011,
+          "lines": 344,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "get_all_crew_memories",
+            "create_test_memory_for_crew",
+            "_generate_overall_assessment",
+            "verify_memory_sharing",
+            "print_assessment_report",
+            "test_supabase_connection",
+            "test_memory_consistency",
+            "run_comprehensive_assessment",
+            "analyze_crew_memory_distribution"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "time",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "alex_ai_crew_mermaid_models.py",
+          "file_type": "py",
+          "size_bytes": 23316,
+          "lines": 539,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "_identify_technical_contacts",
+            "_technical_lead_analysis",
+            "_generate_medium_priority_mermaid",
+            "_consolidate_application_strategy",
+            "_analyze_reporting_structure",
+            "analyze_company_structure",
+            "_determine_mermaid_focus",
+            "_identify_ai_strategy_contacts",
+            "_consolidate_key_contacts",
+            "_get_technical_approach",
+            "_identify_sustainability_contacts",
+            "generate_comprehensive_mermaid_model",
+            "_get_relationship_strategy",
+            "_get_environmental_alignment",
+            "_ai_strategy_analysis",
+            "_identify_client_success_contacts",
+            "_generate_high_priority_mermaid",
+            "run_comprehensive_analysis",
+            "_get_alex_ai_leverage_points",
+            "_org_structure_analysis",
+            "_calculate_priority_score",
+            "_identify_decision_makers",
+            "_sustainability_analysis",
+            "_client_success_analysis",
+            "_generate_standard_mermaid",
+            "_assess_org_complexity",
+            "_generate_consensus_recommendations"
+          ],
+          "imports": [
+            "datetime",
+            "typing",
+            "json",
+            "Dict",
+            "re"
+          ]
+        },
+        {
+          "file_name": "enhanced_ai_prompts_with_supabase_integration.py",
+          "file_type": "py",
+          "size_bytes": 22511,
+          "lines": 656,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "generate_best_practice_prompt",
+            "create_sprint_workflow",
+            "extract_live_config_patterns",
+            "build_dynamic_prompt",
+            "generate_n8n_workflow_prompt",
+            "orchestrate_claude_agents",
+            "load_supabase_config",
+            "trigger_n8n_workflow",
+            "main",
+            "setup_progress_tracking",
+            "sync_data_to_n8n",
+            "create_claude_agent",
+            "safe_supabase_query",
+            "analyze_revenue_projections",
+            "subscribe_to_market_updates",
+            "create_market_research_workflow",
+            "generate_supabase_code_prompt",
+            "analyze_with_claude_and_store",
+            "get_market_research_by_market",
+            "generate_system_integration_prompt",
+            "create_validation_workflow",
+            "setup_market_monitoring",
+            "generate_system_aware_code",
+            "batch_insert_research_data",
+            "generate_enhanced_prompt",
+            "__init__",
+            "insert_market_research",
+            "generate_integration_prompt",
+            "create_system_integration_guide"
+          ],
+          "imports": [
+            "datetime",
+            "create_client",
+            "requests",
+            "typing",
+            "json",
+            "os",
+            "Dict",
+            "supabase"
+          ]
+        },
+        {
+          "file_name": "alex_ai_webhook_server.py",
+          "file_type": "py",
+          "size_bytes": 10439,
+          "lines": 242,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "health_check",
+            "job_matching",
+            "job_tracking",
+            "resume_tailoring",
+            "cover_letter_generation",
+            "resume_analysis"
+          ],
+          "imports": [
+            "datetime",
+            "flask_cors",
+            "alex_ai_job_search_system",
+            "Flask",
+            "json",
+            "AlexAIJobSearchSystem",
+            "os",
+            "flask",
+            "CORS"
+          ]
+        },
+        {
+          "file_name": "supabase_research_integration_system.py",
+          "file_type": "py",
+          "size_bytes": 36774,
+          "lines": 828,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "generate_supabase_schema_sql",
+            "main",
+            "generate_insert_statements",
+            "generate_complete_supabase_setup",
+            "generate_sample_data",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "typing",
+            "json",
+            "Dict",
+            "random"
+          ]
+        },
+        {
+          "file_name": "enhanced_unified_router.py",
+          "file_type": "py",
+          "size_bytes": 10266,
+          "lines": 262,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "route_request",
+            "_format_crew_prompt",
+            "_execute_openrouter_request",
+            "_make_routing_decision",
+            "_select_crew_member",
+            "_execute_claude_request"
+          ],
+          "imports": [
+            "requests",
+            "sys",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "crew_learning_assessment.py",
+          "file_type": "py",
+          "size_bytes": 19397,
+          "lines": 424,
+          "purpose": "Crew Management",
+          "complexity": 10,
+          "functions": [
+            "_analyze_individual_learnings",
+            "_store_crew_memories",
+            "_generate_learning_report",
+            "assess_crew_learning",
+            "_analyze_shared_learnings"
+          ],
+          "imports": [
+            "datetime",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "optimized_web_crawler_system.py",
+          "file_type": "py",
+          "size_bytes": 20083,
+          "lines": 456,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "simulate_web_crawl",
+            "crawl_market_research",
+            "generate_supabase_schema",
+            "extract_keywords_from_text"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "time",
+            "typing",
+            "urljoin",
+            "json",
+            "Dict",
+            "random",
+            "re"
+          ]
+        },
+        {
+          "file_name": "observation_lounge_crew_debrief.py",
+          "file_type": "py",
+          "size_bytes": 19049,
+          "lines": 392,
+          "purpose": "Crew Management",
+          "complexity": 10,
+          "functions": [
+            "simulate_observation_lounge_session"
+          ],
+          "imports": [
+            "datetime",
+            "sys",
+            "typing",
+            "json",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "enhanced_ai_prompts_deployment_system.py",
+          "file_type": "py",
+          "size_bytes": 21011,
+          "lines": 522,
+          "purpose": "Deployment and Setup",
+          "complexity": 10,
+          "functions": [
+            "deploy_enhanced_prompts",
+            "test_integration_guide_creation",
+            "scale_to_other_projects",
+            "execute_all_next_steps",
+            "test_performance",
+            "setUp",
+            "test_live_system_integration",
+            "create_advanced_workflows",
+            "test_prompt_generation",
+            "setup_automated_testing",
+            "setup_performance_monitoring"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "time",
+            "typing",
+            "json",
+            "unittest",
+            "os",
+            "enhanced_ai_prompts_system",
+            "EnhancedAIPromptsSystem",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "cursor_ai_behavior_analysis.py",
+          "file_type": "py",
+          "size_bytes": 10680,
+          "lines": 276,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "generate_analysis_report",
+            "create_solution_guide",
+            "run_analysis",
+            "analyze_issue",
+            "create_crew_memory_update"
+          ],
+          "imports": [
+            "datetime",
+            "pathlib",
+            "Path",
+            "json",
+            "logging"
+          ]
+        },
+        {
+          "file_name": "alex_ai_job_search_system.py",
+          "file_type": "py",
+          "size_bytes": 25086,
+          "lines": 359,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "_tailor_experience_for_job",
+            "save_job_search_results",
+            "run_job_search_automation",
+            "load_job_opportunities",
+            "load_org_structures",
+            "create_application_wizard",
+            "tailor_resume_for_job",
+            "init_database",
+            "_generate_cover_letter"
+          ],
+          "imports": [
+            "datetime",
+            "sqlite3",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "yolo_mode_crew_memory_update.py",
+          "file_type": "py",
+          "size_bytes": 27614,
+          "lines": 554,
+          "purpose": "Crew Management",
+          "complexity": 10,
+          "functions": [
+            "create_yolo_integration_memory",
+            "generate_integration_report",
+            "create_cursor_ai_memory",
+            "_store_in_mcp_system",
+            "run_update",
+            "store_memories",
+            "create_crew_specific_memories"
+          ],
+          "imports": [
+            "datetime",
+            "subprocess",
+            "pathlib",
+            "Path",
+            "json",
+            "logging"
+          ]
+        },
+        {
+          "file_name": "youtube_channel_intelligence_system.py",
+          "file_type": "py",
+          "size_bytes": 27732,
+          "lines": 608,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "_generate_channel_summary",
+            "_analyze_video_for_crew_member",
+            "_extract_logical_concepts",
+            "_create_vector_embedding",
+            "get_channel_insights_for_crew",
+            "_store_crew_insights",
+            "_extract_data_concepts",
+            "_extract_decision_concepts",
+            "_extract_key_concepts",
+            "_extract_channel_id",
+            "_get_channel_info",
+            "_calculate_relevance_score",
+            "analyze_youtube_channel",
+            "_select_relevant_videos",
+            "_generate_crew_specific_insight",
+            "_create_content_vectors",
+            "_store_channel_analysis",
+            "_extract_key_themes",
+            "_get_channel_videos",
+            "_analyze_videos_with_crew_specialization",
+            "_extract_leadership_concepts",
+            "search_insights_by_vector_similarity",
+            "_extract_analytical_concepts"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "dataclasses",
+            "defaultdict",
+            "sys",
+            "YouTubeScraperCrewIntegration",
+            "typing",
+            "numpy",
+            "dataclass",
+            "collections",
+            "json",
+            "youtube_scraper_crew_integration",
+            "os",
+            "hashlib",
+            "Dict",
+            "re"
+          ]
+        },
+        {
+          "file_name": "mcp_memory_optimization_milestone_push.py",
+          "file_type": "py",
+          "size_bytes": 11544,
+          "lines": 350,
+          "purpose": "Version Control",
+          "complexity": 9,
+          "functions": [
+            "create_milestone_package"
+          ],
+          "imports": [
+            "datetime",
+            "pathlib",
+            "Path",
+            "tarfile",
+            "json",
+            "os"
+          ]
+        },
+        {
+          "file_name": "crew_yolo_mode_memory_sync.py",
+          "file_type": "py",
+          "size_bytes": 23465,
+          "lines": 464,
+          "purpose": "Synchronization",
+          "complexity": 10,
+          "functions": [
+            "run_crew_memory_sync",
+            "create_crew_memory_sync",
+            "save_crew_memory_sync",
+            "create_crew_sync_report",
+            "create_crew_coordination_workflow",
+            "create_crew_memory_update_script"
+          ],
+          "imports": [
+            "datetime",
+            "pathlib",
+            "Path",
+            "typing",
+            "json",
+            "logging",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "alex_ai_job_search_integration.py",
+          "file_type": "py",
+          "size_bytes": 29201,
+          "lines": 577,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "populate_database",
+            "load_comprehensive_job_data",
+            "create_user_interface",
+            "analyze_resume",
+            "load_contact_database",
+            "run_integration",
+            "init_database",
+            "generate_comprehensive_report"
+          ],
+          "imports": [
+            "datetime",
+            "sqlite3",
+            "typing",
+            "json",
+            "shutil",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "test_channel_intelligence_system.py",
+          "file_type": "py",
+          "size_bytes": 13738,
+          "lines": 332,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [
+            "test_channel_info_retrieval",
+            "test_vector_embedding_generation",
+            "generate_test_report",
+            "test_crew_collaboration_insights",
+            "test_channel_id_extraction",
+            "test_cost_optimization",
+            "test_performance_scalability",
+            "test_full_channel_analysis",
+            "run_all_tests",
+            "test_crew_specialized_analysis"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "YouTubeChannelIntelligenceSystem",
+            "sys",
+            "youtube_channel_intelligence_system",
+            "time",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "simple_youtube_crew_memory_demo.py",
+          "file_type": "py",
+          "size_bytes": 12506,
+          "lines": 267,
+          "purpose": "Crew Management",
+          "complexity": 10,
+          "functions": [
+            "run_demo",
+            "simulate_youtube_analysis",
+            "generate_memory_report"
+          ],
+          "imports": [
+            "datetime",
+            "subprocess",
+            "pathlib",
+            "Path",
+            "typing",
+            "json",
+            "logging",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "comprehensive_yolo_stress_test.py",
+          "file_type": "py",
+          "size_bytes": 20031,
+          "lines": 548,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [
+            "generate_stress_test_report",
+            "test_directory_operations",
+            "run_all_stress_tests",
+            "test_configuration_operations",
+            "test_n8n_workflow_operations",
+            "test_performance",
+            "test_file_creation",
+            "test_method",
+            "test_operation",
+            "test_error_handling",
+            "test_edge_cases",
+            "test_memory_system_operations",
+            "test_code_generation",
+            "test_crew_system_operations",
+            "test_package_management",
+            "test_git_operations"
+          ],
+          "imports": [
+            "datetime",
+            "subprocess",
+            "sys",
+            "pathlib",
+            "Path",
+            "time",
+            "json",
+            "logging",
+            "os"
+          ]
+        },
+        {
+          "file_name": "observation_lounge_yolo_mode_debrief.py",
+          "file_type": "py",
+          "size_bytes": 22531,
+          "lines": 412,
+          "purpose": "YOLO Mode",
+          "complexity": 10,
+          "functions": [
+            "_generate_consensus",
+            "generate_debrief_report",
+            "_generate_recommendations",
+            "_store_debrief_session",
+            "conduct_yolo_mode_debrief",
+            "_get_crew_insight"
+          ],
+          "imports": [
+            "datetime",
+            "pathlib",
+            "Path",
+            "json",
+            "logging"
+          ]
+        },
+        {
+          "file_name": "knowledge_gap_research_plan.py",
+          "file_type": "py",
+          "size_bytes": 16344,
+          "lines": 349,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "create_research_plan"
+          ],
+          "imports": [
+            "datetime",
+            "json",
+            "Dict",
+            "typing"
+          ]
+        },
+        {
+          "file_name": "mcp_memory_optimization_system.py",
+          "file_type": "py",
+          "size_bytes": 43087,
+          "lines": 1067,
+          "purpose": "Memory Management",
+          "complexity": 10,
+          "functions": [
+            "generate_optimization_report",
+            "_create_content_summary",
+            "optimize_memory_storage",
+            "find_similar_memories",
+            "save_optimized_memories_to_supabase",
+            "_hash_based_embedding",
+            "_consolidate_content",
+            "calculate_importance_score",
+            "load_memories_from_supabase",
+            "consolidate_similar_memories",
+            "create_memory_clusters",
+            "generate_embedding",
+            "cosine_similarity"
+          ],
+          "imports": [
+            "datetime",
+            "dataclasses",
+            "typing",
+            "numpy",
+            "dataclass",
+            "json",
+            "logging",
+            "os",
+            "hashlib",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "research_phase_execution_plan.py",
+          "file_type": "py",
+          "size_bytes": 29817,
+          "lines": 662,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "_generate_risk_mitigation",
+            "_generate_next_steps",
+            "_generate_overall_deliverables",
+            "generate_execution_plan",
+            "_generate_phase_tasks",
+            "_generate_phase_milestones",
+            "_generate_success_criteria",
+            "_generate_success_metrics",
+            "__init__"
+          ],
+          "imports": [
+            "datetime",
+            "json",
+            "Dict",
+            "typing"
+          ]
+        },
+        {
+          "file_name": "repository_optimization_analysis.py",
+          "file_type": "py",
+          "size_bytes": 17358,
+          "lines": 402,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "_categorize_file",
+            "_counselor_troi_analysis",
+            "_get_directory_reason",
+            "execute_optimization_plan",
+            "_commander_data_analysis",
+            "run_complete_optimization",
+            "_lt_la_forge_analysis",
+            "_dr_crusher_analysis",
+            "analyze_large_files",
+            "convene_observation_lounge",
+            "_captain_picard_analysis",
+            "create_optimization_plan"
+          ],
+          "imports": [
+            "datetime",
+            "subprocess",
+            "sys",
+            "ObservationLoungeCoordinator",
+            "enhanced_unified_router",
+            "typing",
+            "crew_coordinator",
+            "json",
+            "EnhancedUnifiedRouter",
+            "os",
+            "Alex",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "business_operations_legal_system.py",
+          "file_type": "py",
+          "size_bytes": 20440,
+          "lines": 462,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "generate_business_model_analysis",
+            "generate_comprehensive_business_plan",
+            "main",
+            "generate_llc_setup_plan",
+            "generate_payment_integration_plan"
+          ],
+          "imports": [
+            "datetime",
+            "typing",
+            "json",
+            "Dict",
+            "random"
+          ]
+        },
+        {
+          "file_name": "advanced_ai_agent_development_system.py",
+          "file_type": "py",
+          "size_bytes": 17768,
+          "lines": 404,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "develop_capabilities",
+            "create_advanced_agents",
+            "create_advanced_agent_system",
+            "orchestrate_advanced_workflow",
+            "execute_advanced_task",
+            "develop_self_improving_capabilities",
+            "initialize_enhanced_prompts",
+            "learn_from_interactions"
+          ],
+          "imports": [
+            "datetime",
+            "typing",
+            "json",
+            "enhanced_ai_prompts_system",
+            "EnhancedAIPromptsSystem",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "simple_turborepo_research_system.py",
+          "file_type": "py",
+          "size_bytes": 52733,
+          "lines": 1076,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "scrape_turborepo_documentation",
+            "_load_turborepo_knowledge",
+            "scrape_turborepo_website",
+            "main",
+            "analyze_for_crew_member",
+            "_initialize_crew",
+            "generate_research_report",
+            "conduct_crew_research",
+            "save_research_data"
+          ],
+          "imports": [
+            "datetime",
+            "BeautifulSoup",
+            "dataclasses",
+            "asyncio",
+            "typing",
+            "dataclass",
+            "aiohttp",
+            "json",
+            "urllib",
+            "logging",
+            "Dict",
+            "bs4",
+            "re"
+          ]
+        },
+        {
+          "file_name": "agile_sprint_dashboard_system.py",
+          "file_type": "py",
+          "size_bytes": 22142,
+          "lines": 488,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "generate_sprint_dashboard",
+            "generate_multi_project_dashboard",
+            "_assign_crew_to_tasks",
+            "create_sprint",
+            "update_sprint_progress",
+            "_generate_sprint_tasks"
+          ],
+          "imports": [
+            "datetime",
+            "typing",
+            "json",
+            "Dict",
+            "random"
+          ]
+        },
+        {
+          "file_name": "test_youtube_scraper_integration.py",
+          "file_type": "py",
+          "size_bytes": 16308,
+          "lines": 414,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [
+            "generate_test_report",
+            "test_crew_member_perspectives",
+            "test_duplicate_processing_prevention",
+            "test_batch_video_analysis",
+            "test_analysis_history_retrieval",
+            "run_all_tests",
+            "test_invalid_url_handling",
+            "test_crew_member_listing",
+            "test_single_video_analysis"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "sys",
+            "YouTubeScraperCrewIntegration",
+            "time",
+            "typing",
+            "json",
+            "youtube_scraper_crew_integration",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "crew_business_readiness_consensus.py",
+          "file_type": "py",
+          "size_bytes": 16927,
+          "lines": 368,
+          "purpose": "Crew Management",
+          "complexity": 10,
+          "functions": [
+            "simulate_crew_consensus"
+          ],
+          "imports": [
+            "datetime",
+            "json",
+            "Dict",
+            "typing"
+          ]
+        },
+        {
+          "file_name": "crew_coordinator.py",
+          "file_type": "py",
+          "size_bytes": 16988,
+          "lines": 379,
+          "purpose": "Crew Management",
+          "complexity": 10,
+          "functions": [
+            "_extract_key_themes",
+            "_get_crew_member_insight",
+            "_synthesize_crew_insights",
+            "_generate_recommendations",
+            "_generate_next_actions",
+            "_identify_divergence",
+            "_conduct_crew_session",
+            "_identify_consensus",
+            "coordinate_observation_lounge",
+            "_handle_youtube_analysis_request",
+            "_select_crew_members"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "sys",
+            "YouTubeScraperCrewIntegration",
+            "typing",
+            "json",
+            "youtube_scraper_crew_integration",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "phase3_alex_ai_integration.py",
+          "file_type": "py",
+          "size_bytes": 30758,
+          "lines": 847,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "implement_memory_optimization",
+            "create_monitoring_alerting",
+            "setup_n8n_workflows",
+            "test_integrations",
+            "execute_phase3",
+            "generate_phase3_report",
+            "setup_automated_testing",
+            "configure_deployment_pipelines",
+            "configure_mcp_tools_sharing",
+            "integrate_crew_coordination"
+          ],
+          "imports": [
+            "datetime",
+            "subprocess",
+            "pathlib",
+            "Path",
+            "typing",
+            "json",
+            "logging",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "alex_ai_yolo_mode_memory_integration.py",
+          "file_type": "py",
+          "size_bytes": 23373,
+          "lines": 478,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "run_memory_integration",
+            "create_supabase_memory_update",
+            "create_babysitting_warning_engine",
+            "create_yolo_mode_memory",
+            "save_memory_integration",
+            "analyze_prompt_for_babysitting"
+          ],
+          "imports": [
+            "datetime",
+            "pathlib",
+            "Path",
+            "typing",
+            "json",
+            "logging",
+            "os",
+            "Dict",
+            "re"
+          ]
+        },
+        {
+          "file_name": "mcp_integration_system.py",
+          "file_type": "py",
+          "size_bytes": 30001,
+          "lines": 726,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "_determine_correlation_type",
+            "correlate_memories",
+            "handle_mcp_request",
+            "trigger_workflow",
+            "import_memories",
+            "optimize_memories",
+            "get_memory_by_id",
+            "search_memories",
+            "_text_search_memories",
+            "_matches_criteria",
+            "_load_project_memories",
+            "_convert_to_csv",
+            "main",
+            "get_workflow_status",
+            "consolidate_memories",
+            "get_memory_statistics",
+            "export_memories",
+            "store_memory"
+          ],
+          "imports": [
+            "datetime",
+            "memory",
+            "dataclasses",
+            "asyncio",
+            "mcp_memory_optimization_system",
+            "typing",
+            "numpy",
+            "dataclass",
+            "aiohttp",
+            "json",
+            "logging",
+            "os",
+            "Dict",
+            "MCPMemoryOptimizationSystem"
+          ]
+        },
+        {
+          "file_name": "supabase_data_import_script.py",
+          "file_type": "py",
+          "size_bytes": 21596,
+          "lines": 450,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "transform_knowledge_base_data",
+            "transform_business_operations_data",
+            "transform_business_models_data",
+            "load_data_file",
+            "generate_import_data",
+            "transform_execution_plans_data",
+            "transform_agile_projects_data",
+            "generate_supabase_import_script",
+            "transform_market_research_data"
+          ],
+          "imports": [
+            "datetime",
+            "typing",
+            "json",
+            "summary",
+            "os",
+            "script",
+            "and",
+            "all",
+            "Dict",
+            "data"
+          ]
+        },
+        {
+          "file_name": "observation_lounge_memory_consensus.py",
+          "file_type": "py",
+          "size_bytes": 16358,
+          "lines": 362,
+          "purpose": "Memory Management",
+          "complexity": 10,
+          "functions": [
+            "get_system_wide_memories",
+            "print_observation_lounge_report",
+            "get_crew_memories",
+            "simulate_crew_member_reflection",
+            "run_observation_lounge_session",
+            "generate_consensus"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "test_alex_ai_system.py",
+          "file_type": "py",
+          "size_bytes": 4519,
+          "lines": 142,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [
+            "test_enhanced_router",
+            "test_crew_coordinator",
+            "test_job_search_system"
+          ],
+          "imports": [
+            "datetime",
+            "sys",
+            "ObservationLoungeCoordinator",
+            "enhanced_unified_router",
+            "alex_ai_job_search_system",
+            "crew_coordinator",
+            "json",
+            "EnhancedUnifiedRouter",
+            "AlexAIJobSearchSystem",
+            "os"
+          ]
+        },
+        {
+          "file_name": "email_research_system.py",
+          "file_type": "py",
+          "size_bytes": 13956,
+          "lines": 356,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "generate_email_recommendations",
+            "_research_application_emails",
+            "_research_contact_emails",
+            "_generate_outreach_strategy",
+            "generate_email_database",
+            "run_comprehensive_research",
+            "_research_hiring_manager_emails",
+            "_research_hr_emails",
+            "research_company_emails",
+            "save_results"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "BeautifulSoup",
+            "typing",
+            "json",
+            "Dict",
+            "bs4",
+            "re"
+          ]
+        },
+        {
+          "file_name": "fix_credential_security.py",
+          "file_type": "py",
+          "size_bytes": 6786,
+          "lines": 195,
+          "purpose": "Security",
+          "complexity": 10,
+          "functions": [
+            "create_anthropic_key_prompt",
+            "create_secure_credential_loader",
+            "test_credential_access",
+            "create_crew_memory_about_fix",
+            "check_current_credentials"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "subprocess",
+            "os"
+          ]
+        },
+        {
+          "file_name": "progressive_git_push_system.py",
+          "file_type": "py",
+          "size_bytes": 11297,
+          "lines": 265,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "run_progressive_push",
+            "create_alex_ai_progressive_steps",
+            "execute_push_step",
+            "create_push_step",
+            "print_progressive_report"
+          ],
+          "imports": [
+            "datetime",
+            "subprocess",
+            "sys",
+            "time",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "yolo_mode_issue_investigation.py",
+          "file_type": "py",
+          "size_bytes": 10753,
+          "lines": 225,
+          "purpose": "YOLO Mode",
+          "complexity": 10,
+          "functions": [
+            "investigate_package_management_issue",
+            "generate_investigation_report",
+            "investigate_error_handling_issue",
+            "run_investigation"
+          ],
+          "imports": [
+            "datetime",
+            "subprocess",
+            "sys",
+            "json",
+            "logging",
+            "os"
+          ]
+        },
+        {
+          "file_name": "mcp_library_computer_system.py",
+          "file_type": "py",
+          "size_bytes": 16922,
+          "lines": 369,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "run_knowledge_distribution_cycle",
+            "query_mcp_library",
+            "update_crew_specialization",
+            "print_distribution_report",
+            "create_crew_knowledge_memory"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "phase1_turborepo_setup.py",
+          "file_type": "py",
+          "size_bytes": 24291,
+          "lines": 591,
+          "purpose": "Environment Setup",
+          "complexity": 10,
+          "functions": [
+            "migrate_existing_apps",
+            "setup_shared_packages",
+            "create_turbo_config",
+            "configure_basic_tasks",
+            "execute_phase1",
+            "install_turborepo",
+            "generate_phase1_report",
+            "test_turborepo_functionality",
+            "setup_workspace_structure"
+          ],
+          "imports": [
+            "datetime",
+            "subprocess",
+            "pathlib",
+            "Path",
+            "typing",
+            "json",
+            "logging",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "n8n_integration_test_system.py",
+          "file_type": "py",
+          "size_bytes": 11976,
+          "lines": 302,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [
+            "load_workflow_tests",
+            "test_workflow",
+            "run_comprehensive_test",
+            "save_test_results",
+            "test_crew_memory_synchronization"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "sys",
+            "time",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "proper_yolo_mode_configuration.py",
+          "file_type": "py",
+          "size_bytes": 15333,
+          "lines": 342,
+          "purpose": "YOLO Mode",
+          "complexity": 10,
+          "functions": [
+            "generate_configuration_report",
+            "create_cursor_rules_file",
+            "run_proper_configuration",
+            "save_configuration",
+            "create_proper_yolo_config"
+          ],
+          "imports": [
+            "datetime",
+            "pathlib",
+            "Path",
+            "json",
+            "logging",
+            "os"
+          ]
+        },
+        {
+          "file_name": "intelligent_monorepo_cleanup.py",
+          "file_type": "py",
+          "size_bytes": 14638,
+          "lines": 376,
+          "purpose": "Maintenance",
+          "complexity": 10,
+          "functions": [
+            "safe_remove_directory",
+            "safe_remove_file",
+            "consolidate_similar_scripts",
+            "archive_milestone_packages",
+            "generate_cleanup_report",
+            "remove_duplicate_files",
+            "run_intelligent_cleanup"
+          ],
+          "imports": [
+            "datetime",
+            "difflib",
+            "sys",
+            "pathlib",
+            "Path",
+            "tarfile",
+            "typing",
+            "shutil",
+            "json",
+            "os",
+            "hashlib",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "company_research_system.py",
+          "file_type": "py",
+          "size_bytes": 17236,
+          "lines": 448,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "_extract_hiring_team",
+            "_extract_job_openings",
+            "run_research",
+            "_extract_contact_info",
+            "_scrape_main_website",
+            "generate_mermaid_org_chart",
+            "scrape_company_info",
+            "_extract_company_description",
+            "_scrape_careers_page",
+            "generate_contact_database",
+            "_extract_leadership_info",
+            "_extract_application_process",
+            "_scrape_linkedin_info"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "BeautifulSoup",
+            "time",
+            "typing",
+            "json",
+            "Dict",
+            "bs4",
+            "re"
+          ]
+        },
+        {
+          "file_name": "alex-ai-universal-deployment-system.py",
+          "file_type": "py",
+          "size_bytes": 19293,
+          "lines": 458,
+          "purpose": "Deployment and Setup",
+          "complexity": 10,
+          "functions": [
+            "simulate_cross_project_deployment",
+            "create_deployment_manifest",
+            "validate_alex_ai_core",
+            "execute_universal_deployment",
+            "create_deployment_summary",
+            "validate_universal_package"
+          ],
+          "imports": [
+            "datetime",
+            "subprocess",
+            "typing",
+            "json",
+            "shutil",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "alex_ai_comprehensive_assessment.py",
+          "file_type": "py",
+          "size_bytes": 10000,
+          "lines": 230,
+          "purpose": "AI Systems",
+          "complexity": 10,
+          "functions": [
+            "_generate_next_steps",
+            "_generate_recommendations",
+            "print_comprehensive_report",
+            "_assess_overall_health",
+            "run_comprehensive_assessment"
+          ],
+          "imports": [
+            "datetime",
+            "CrewPersonalHistoryAnalysis",
+            "alex_ai_memory_sharing_assessment",
+            "typing",
+            "AlexAIMemorySharingAssessment",
+            "json",
+            "crew_personal_history_analysis",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "business_readiness_assessment.py",
+          "file_type": "py",
+          "size_bytes": 21442,
+          "lines": 441,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "simulate_business_readiness_assessment"
+          ],
+          "imports": [
+            "datetime",
+            "json",
+            "Dict",
+            "typing"
+          ]
+        },
+        {
+          "file_name": "demo_youtube_scraper_system.py",
+          "file_type": "py",
+          "size_bytes": 14232,
+          "lines": 360,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "demo_individual_crew_analysis",
+            "interactive_single_analysis",
+            "demo_analysis_history",
+            "interactive_demo",
+            "demo_crew_member_listing",
+            "interactive_batch_analysis",
+            "demo_crew_coordination_analysis",
+            "run_complete_demo",
+            "demo_batch_analysis_perspectives"
+          ],
+          "imports": [
+            "datetime",
+            "sys",
+            "YouTubeScraperCrewIntegration",
+            "ObservationLoungeCoordinator",
+            "typing",
+            "crew_coordinator",
+            "json",
+            "youtube_scraper_crew_integration",
+            "os",
+            "Dict"
+          ]
+        },
+        {
+          "file_name": "clean_secrets.py",
+          "file_type": "py",
+          "size_bytes": 4253,
+          "lines": 113,
+          "purpose": "Maintenance",
+          "complexity": 10,
+          "functions": [
+            "clean_file",
+            "find_files_with_secrets",
+            "clean_all_secrets"
+          ],
+          "imports": [
+            "List",
+            "os",
+            "typing",
+            "re"
+          ]
+        },
+        {
+          "file_name": "store_crew_memories_supabase.py",
+          "file_type": "py",
+          "size_bytes": 5342,
+          "lines": 147,
+          "purpose": "Crew Management",
+          "complexity": 10,
+          "functions": [
+            "store_crew_memories",
+            "create_memory_summary"
+          ],
+          "imports": [
+            "datetime",
+            "requests",
+            "typing",
+            "json",
+            "os",
+            "Dict"
+          ]
+        }
+      ]
+    },
+    "data_management": {
+      "folder_name": "data_management",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "data_management/backup_restore": {
+      "folder_name": "backup_restore",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "data_management/data_processing": {
+      "folder_name": "data_processing",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "data_management/database_ops": {
+      "folder_name": "database_ops",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "data_management/api_integration": {
+      "folder_name": "api_integration",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "data_management/data_sync": {
+      "folder_name": "data_sync",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "ai_ml": {
+      "folder_name": "ai_ml",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "ai_ml/crew_coordination": {
+      "folder_name": "crew_coordination",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "ai_ml/prompt_engineering": {
+      "folder_name": "prompt_engineering",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "ai_ml/memory_management": {
+      "folder_name": "memory_management",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "ai_ml/llm_integration": {
+      "folder_name": "llm_integration",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "ai_ml/ai_automation": {
+      "folder_name": "ai_automation",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "utilities": {
+      "folder_name": "utilities",
+      "script_count": 1,
+      "total_size": 39657,
+      "total_lines": 1100,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": [
+        {
+          "file_name": "shared_functions.py",
+          "file_type": "py",
+          "size_bytes": 39657,
+          "lines": 1100,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "_create_content_summary",
+            "test_error_handling",
+            "_consolidate_content",
+            "save_research_data",
+            "save_results",
+            "main",
+            "run_command",
+            "load_analysis",
+            "add_memory",
+            "generate_optimization_report",
+            "test_performance",
+            "store_crew_memories",
+            "find_similar_memories",
+            "create_crew_specific_memories",
+            "calculate_importance_score",
+            "log",
+            "consolidate_similar_memories",
+            "_initialize_crew",
+            "store_memories",
+            "log_step",
+            "__init__",
+            "configure_local_caching",
+            "save_memory_to_file",
+            "generate_integration_report",
+            "organize_remaining_files",
+            "_store_in_mcp_system",
+            "run_update",
+            "create_backup",
+            "create_memory_summary"
+          ],
+          "imports": [
+            "datetime",
+            "logging",
+            "os",
+            "sys"
+          ]
+        }
+      ]
+    },
+    "utilities/system_utilities": {
+      "folder_name": "system_utilities",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "utilities/file_operations": {
+      "folder_name": "file_operations",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "utilities/cleanup": {
+      "folder_name": "cleanup",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "utilities/code_generation": {
+      "folder_name": "code_generation",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "utilities/text_processing": {
+      "folder_name": "text_processing",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "testing": {
+      "folder_name": "testing",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "testing/api_testing": {
+      "folder_name": "api_testing",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "testing/general": {
+      "folder_name": "general",
+      "script_count": 1,
+      "total_size": 5891,
+      "total_lines": 207,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": [
+        {
+          "file_name": "consolidated_general.py",
+          "file_type": "py",
+          "size_bytes": 5891,
+          "lines": 207,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "comprehensive_market_research_system",
+            "consolidated_update_zshrc_with_placeholder",
+            "consolidated_greg_channel_intelligence_analysis",
+            "advanced_ai_agent_development_system",
+            "optimized_web_crawler_system",
+            "consolidated_load_alex_ai_credentials",
+            "consolidated_crew_coordination_update_system",
+            "alex_ai_memory_sharing_assessment",
+            "main",
+            "crew_coordination_update_system",
+            "alex_ai_comprehensive_assessment",
+            "consolidated_alex_ai_memory_sharing_assessment",
+            "consolidated_cursor_ai_shell_integration",
+            "consolidated_alex_ai_comprehensive_assessment",
+            "consolidated_shell_safety_guide",
+            "clean_secrets",
+            "intelligent_monorepo_cleanup",
+            "consolidated_advanced_ai_agent_development_system",
+            "fix_credential_security",
+            "consolidated_fix_credential_security",
+            "consolidated_cursor_ai_shell_helper"
+          ],
+          "imports": [
+            "datetime",
+            "sys",
+            "json",
+            "logging",
+            "os"
+          ]
+        }
+      ]
+    },
+    "testing/performance_testing": {
+      "folder_name": "performance_testing",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "testing/api_integration": {
+      "folder_name": "api_integration",
+      "script_count": 1,
+      "total_size": 1411,
+      "total_lines": 57,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": [
+        {
+          "file_name": "consolidated_api_integration.py",
+          "file_type": "py",
+          "size_bytes": 1411,
+          "lines": 57,
+          "purpose": "General Utility",
+          "complexity": 6,
+          "functions": [
+            "company_research_system",
+            "consolidated_claude_api_key_guide",
+            "consolidated_fix_zshrc_api_key",
+            "main"
+          ],
+          "imports": [
+            "datetime",
+            "sys",
+            "json",
+            "logging",
+            "os"
+          ]
+        }
+      ]
+    },
+    "testing/unit_testing": {
+      "folder_name": "unit_testing",
+      "script_count": 1,
+      "total_size": 1113,
+      "total_lines": 51,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": [
+        {
+          "file_name": "consolidated_unit_testing.py",
+          "file_type": "py",
+          "size_bytes": 1113,
+          "lines": 51,
+          "purpose": "Testing and Validation",
+          "complexity": 3,
+          "functions": [],
+          "imports": []
+        }
+      ]
+    },
+    "testing/security_testing": {
+      "folder_name": "security_testing",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "testing/e2e_testing": {
+      "folder_name": "e2e_testing",
+      "script_count": 1,
+      "total_size": 1418,
+      "total_lines": 54,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": [
+        {
+          "file_name": "consolidated_e2e_testing.py",
+          "file_type": "py",
+          "size_bytes": 1418,
+          "lines": 54,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [],
+          "imports": []
+        }
+      ]
+    },
+    "deployment": {
+      "folder_name": "deployment",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "deployment/n8n_deployment": {
+      "folder_name": "n8n_deployment",
+      "script_count": 1,
+      "total_size": 1279,
+      "total_lines": 51,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": [
+        {
+          "file_name": "consolidated_n8n_deployment.py",
+          "file_type": "py",
+          "size_bytes": 1279,
+          "lines": 51,
+          "purpose": "Deployment and Setup",
+          "complexity": 4,
+          "functions": [],
+          "imports": []
+        }
+      ]
+    },
+    "deployment/milestone_management": {
+      "folder_name": "milestone_management",
+      "script_count": 1,
+      "total_size": 2423,
+      "total_lines": 99,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": [
+        {
+          "file_name": "consolidated_milestone_management.py",
+          "file_type": "py",
+          "size_bytes": 2423,
+          "lines": 99,
+          "purpose": "Version Control",
+          "complexity": 3,
+          "functions": [],
+          "imports": []
+        }
+      ]
+    },
+    "deployment/ci_cd": {
+      "folder_name": "ci_cd",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "deployment/supabase_setup": {
+      "folder_name": "supabase_setup",
+      "script_count": 1,
+      "total_size": 1505,
+      "total_lines": 57,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": [
+        {
+          "file_name": "consolidated_supabase_setup.py",
+          "file_type": "py",
+          "size_bytes": 1505,
+          "lines": 57,
+          "purpose": "Environment Setup",
+          "complexity": 6,
+          "functions": [
+            "supabase_research_integration_system",
+            "supabase_data_import_script",
+            "main",
+            "enhanced_ai_prompts_with_supabase_integration"
+          ],
+          "imports": [
+            "datetime",
+            "sys",
+            "json",
+            "logging",
+            "os"
+          ]
+        }
+      ]
+    },
+    "deployment/general": {
+      "folder_name": "general",
+      "script_count": 1,
+      "total_size": 16966,
+      "total_lines": 597,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": [
+        {
+          "file_name": "consolidated_general.py",
+          "file_type": "py",
+          "size_bytes": 16966,
+          "lines": 597,
+          "purpose": "General Utility",
+          "complexity": 10,
+          "functions": [
+            "crew_business_readiness_consensus",
+            "consolidated_observation_lounge_memory_consensus",
+            "consolidated_mcp_library_computer_system",
+            "simple_youtube_crew_memory_demo",
+            "youtube_channel_intelligence_system",
+            "observation_lounge_yolo_mode_debrief",
+            "add_quote_handling_memory",
+            "turborepo_implementation_plan",
+            "alex_ai_job_search_integration",
+            "add_quote_handling_memory_simple",
+            "phase1_turborepo_setup",
+            "script_analyzer",
+            "alex_ai_credential_manager",
+            "alex_ai_webhook_server",
+            "alex_ai_crew_mermaid_models",
+            "proper_yolo_mode_configuration",
+            "consolidated_enhanced_ai_prompts_deployment_system",
+            "youtube_crew_memory_integration",
+            "consolidated_mcp_integration_system",
+            "business_readiness_assessment",
+            "consolidated_observation_lounge_crew_debrief",
+            "observation_lounge_crew_debrief",
+            "main",
+            "consolidated_get_and_update_claude_key",
+            "consolidated_crew_learning_assessment",
+            "consolidated_enhanced_unified_router",
+            "script_memory_system",
+            "consolidated_shell_prompt_safety_system",
+            "knowledge_gap_research_plan",
+            "email_research_system",
+            "yolo_mode_issue_investigation",
+            "alex_ai_universal_deployment_system",
+            "cursor_ai_integration_memory_update",
+            "phase3_alex_ai_integration",
+            "consolidated_youtube_channel_intelligence_system",
+            "cursor_ai_behavior_analysis",
+            "mcp_library_computer_system",
+            "consolidated_crew_coordinator",
+            "alex_ai_yolo_initialization",
+            "demo_youtube_scraper_system",
+            "simple_turborepo_research_system",
+            "phase2_turborepo_optimization",
+            "consolidated_progressive_git_push_system",
+            "yolo_mode_crew_memory_update",
+            "repository_optimization_analysis",
+            "consolidated_mcp_memory_optimization_system",
+            "youtube_scraper_crew_integration",
+            "enhanced_ai_prompts_deployment_system",
+            "enhanced_ai_prompts_system",
+            "business_operations_legal_system",
+            "intelligent_script_discovery",
+            "add_architecture_memory",
+            "observation_lounge_memory_consensus",
+            "consolidated_demo_youtube_scraper_system",
+            "agile_sprint_dashboard_system",
+            "mcp_memory_optimization_system",
+            "turborepo_research_system",
+            "enhanced_unified_router",
+            "progressive_git_push_system",
+            "crew_learning_assessment",
+            "alex_ai_job_search_system",
+            "consolidated_crew_personal_history_analysis",
+            "alex_ai_yolo_mode_memory_integration",
+            "research_phase_execution_plan",
+            "crew_coordinator",
+            "mcp_integration_system",
+            "alex_ai_yolo_mode_integration_system",
+            "consolidated_enhanced_ai_prompts_system",
+            "consolidated_youtube_scraper_crew_integration",
+            "crew_yolo_mode_memory_sync",
+            "consolidated_alexai_init",
+            "final_monorepo_cleanup",
+            "consolidated_alex_ai_credential_manager"
+          ],
+          "imports": [
+            "datetime",
+            "sys",
+            "json",
+            "logging",
+            "os"
+          ]
+        }
+      ]
+    },
+    "deployment/environment_setup": {
+      "folder_name": "environment_setup",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "deployment/api_integration": {
+      "folder_name": "api_integration",
+      "script_count": 1,
+      "total_size": 2340,
+      "total_lines": 93,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": [
+        {
+          "file_name": "consolidated_api_integration.py",
+          "file_type": "py",
+          "size_bytes": 2340,
+          "lines": 93,
+          "purpose": "General Utility",
+          "complexity": 7,
+          "functions": [],
+          "imports": []
+        }
+      ]
+    },
+    "deployment/api_deployment": {
+      "folder_name": "api_deployment",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "deployment/unit_testing": {
+      "folder_name": "unit_testing",
+      "script_count": 1,
+      "total_size": 4510,
+      "total_lines": 165,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": [
+        {
+          "file_name": "consolidated_unit_testing.py",
+          "file_type": "py",
+          "size_bytes": 4510,
+          "lines": 165,
+          "purpose": "Testing and Validation",
+          "complexity": 10,
+          "functions": [
+            "consolidated_test_progress",
+            "consolidated_test_mcp_system",
+            "comprehensive_yolo_stress_test",
+            "consolidated_test_alex_ai_system",
+            "consolidated_robust_test",
+            "test_youtube_scraper_integration",
+            "main",
+            "test_mcp_system",
+            "consolidated_test_youtube_scraper_integration",
+            "consolidated_enhanced_prompts_test_suite",
+            "consolidated_test_status",
+            "enhanced_prompts_test_suite",
+            "test_alex_ai_system",
+            "consolidated_test_basic",
+            "test_channel_intelligence_system",
+            "consolidated_test_channel_intelligence_system"
+          ],
+          "imports": [
+            "datetime",
+            "sys",
+            "json",
+            "logging",
+            "os"
+          ]
+        }
+      ]
+    },
+    "deployment/sync_operations": {
+      "folder_name": "sync_operations",
+      "script_count": 1,
+      "total_size": 1346,
+      "total_lines": 57,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": [
+        {
+          "file_name": "consolidated_sync_operations.py",
+          "file_type": "py",
+          "size_bytes": 1346,
+          "lines": 57,
+          "purpose": "Synchronization",
+          "complexity": 4,
+          "functions": [],
+          "imports": []
+        }
+      ]
+    },
+    "workflow": {
+      "folder_name": "workflow",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "workflow/milestone_management": {
+      "folder_name": "milestone_management",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "workflow/orchestration": {
+      "folder_name": "orchestration",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "workflow/pipeline_automation": {
+      "folder_name": "pipeline_automation",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "workflow/n8n_workflows": {
+      "folder_name": "n8n_workflows",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "workflow/sync_operations": {
+      "folder_name": "sync_operations",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "templates": {
+      "folder_name": "templates",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    },
+    "templates/safe-output": {
+      "folder_name": "safe-output",
+      "script_count": 3,
+      "total_size": 1111,
+      "total_lines": 52,
+      "redundancy_score": 0.09999999999999999,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": [
+        {
+          "file_name": "milestone.sh",
+          "file_type": "sh",
+          "size_bytes": 314,
+          "lines": 15,
+          "purpose": "Version Control",
+          "complexity": 1,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "progress.sh",
+          "file_type": "sh",
+          "size_bytes": 460,
+          "lines": 17,
+          "purpose": "General Utility",
+          "complexity": 2,
+          "functions": [],
+          "imports": []
+        },
+        {
+          "file_name": "list.sh",
+          "file_type": "sh",
+          "size_bytes": 337,
+          "lines": 20,
+          "purpose": "General Utility",
+          "complexity": 2,
+          "functions": [],
+          "imports": []
+        }
+      ]
+    },
+    "test-results": {
+      "folder_name": "test-results",
+      "script_count": 0,
+      "total_size": 0,
+      "total_lines": 0,
+      "redundancy_score": 0.0,
+      "consolidation_opportunities": [],
+      "recommended_actions": [],
+      "scripts": []
+    }
+  },
+  "consolidation_opportunities": [
+    {
+      "primary_script": "consolidated_crew_coordination_update_system.py",
+      "similar_scripts": [
+        {
+          "script": 

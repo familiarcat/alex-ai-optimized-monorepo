@@ -1,0 +1,122 @@
+[
+  {
+    "action": "archived_deprecated",
+    "script": "scripts/comprehensive-folder-analyzer.py",
+    "archive_path": "scripts/archived/deprecated/comprehensive-folder-analyzer.py",
+    "reason": "Contains 'old' indicator"
+  },
+  {
+    "action": "archived_deprecated",
+    "script": "scripts/update-zshrc-with-placeholder.sh",
+    "archive_path": "scripts/archived/deprecated/update-zshrc-with-placeholder.sh",
+    "reason": "Contains 'old' indicator"
+  },
+  {
+    "action": "archived_deprecated",
+    "script": "scripts/folder-restructuring-executor.py",
+    "archive_path": "scripts/archived/deprecated/folder-restructuring-executor.py",
+    "reason": "Contains 'old' indicator"
+  },
+  {
+    "action": "archived_deprecated",
+    "script": "scripts/consolidated/consolidated_update-zshrc-with-placeholder.py",
+    "archive_path": "scripts/archived/deprecated/consolidated_update-zshrc-with-placeholder.py",
+    "reason": "Contains 'old' indicator"
+  },
+  {
+    "action": "archived_deprecated",
+    "script": "scripts/consolidated/consolidated_n8n_integration_test_system.py",
+    "archive_path": "scripts/archived/deprecated/consolidated_n8n_integration_test_system.py",
+    "reason": "Contains 'test_' indicator"
+  },
+  {
+    "action": "archived_deprecated",
+    "script": "scripts/consolidated/consolidated_test_channel_intelligence_system.py",
+    "archive_path": "scripts/archived/deprecated/consolidated_test_channel_intelligence_system.py",
+    "reason": "Contains 'test_' indicator"
+  },
+  {
+    "action": "archived_deprecated",
+    "script": "scripts/consolidated/consolidated_test_youtube_scraper_integration.py",
+    "archive_path": "scripts/archived/deprecated/consolidated_test_youtube_scraper_integration.py",
+    "reason": "Contains 'test_' indicator"
+  },
+  {
+    "action": "archived_deprecated",
+    "script": "scripts/consolidated/consolidated_enhanced_prompts_test_suite.py",
+    "archive_path": "scripts/archived/deprecated/consolidated_enhanced_prompts_test_suite.py",
+    "reason": "Contains 'test_' indicator"
+  },
+  {
+    "action": "archived_deprecated",
+    "script": "scripts/consolidated/consolidated_test_alex_ai_system.py",
+    "archive_path": "scripts/archived/deprecated/consolidated_test_alex_ai_system.py",
+    "reason": "Contains 'test_' indicator"
+  },
+  {
+    "action": "archived_deprecated",
+    "script": "scripts/consolidated/consolidated_test_mcp_system.py",
+    "archive_path": "scripts/archived/deprecated/consolidated_test_mcp_system.py",
+    "reason": "Contains 'test_' indicator"
+  },
+  {
+    "action": "archived_deprecated",
+    "script": "scripts/python/enhanced_prompts_test_suite.py",
+    "archive_path": "scripts/archived/deprecated/enhanced_prompts_test_suite.py",
+    "reason": "Contains 'test_' indicator"
+  },
+  {
+    "action": "archived_deprecated",
+    "script": "scripts/python/test_channel_intelligence_system.py",
+    "archive_path": "scripts/archived/deprecated/test_channel_intelligence_system.py",
+    "reason": "Contains 'test_' indicator"
+  },
+  {
+    "action": "archived_deprecated",
+    "script": "scripts/python/test_youtube_scraper_integration.py",
+    "archive_path": "scripts/archived/deprecated/test_youtube_scraper_integration.py",
+    "reason": "Contains 'test_' indicator"
+  },
+  {
+    "action": "archived_deprecated",
+    "script": "scripts/python/test_alex_ai_system.py",
+    "archive_path": "scripts/archived/deprecated/test_alex_ai_system.py",
+    "reason": "Contains 'test_' indicator"
+  },
+  {
+    "action": "archived_deprecated",
+    "script": "scripts/python/n8n_integration_test_system.py",
+    "archive_path": "scripts/archived/deprecated/n8n_integration_test_system.py",
+    "reason": "Contains 'test_' indicator"
+  },
+  {
+    "action": "consolidated",
+    "kept_script": "scripts/alex-ai-universal-milestone-push.sh",
+    "archived_script": "scripts/alex-ai-universal-git-milestone-push.sh",
+    "archive_path": "scripts/archived/consolidated/alex-ai-universal-git-milestone-push.sh"
+  },
+  {
+    "action": "consolidated",
+    "kept_script": "scripts/consolidated/consolidated_enhanced_ai_prompts_deployment_system.py",
+    "archived_script": "scripts/consolidated/consolidated_enhanced_ai_prompts_system.py",
+    "archive_path": "scripts/archived/consolidated/consolidated_enhanced_ai_prompts_system.py"
+  },
+  {
+    "action": "consolidated",
+    "kept_script": "scripts/deployment/general/consolidated_general.py",
+    "archived_script": "scripts/testing/general/consolidated_general.py",
+    "archive_path": "scripts/archived/consolidated/consolidated_general.py"
+  },
+  {
+    "action": "consolidated",
+    "kept_script": "scripts/deployment/api_integration/consolidated_api_integration.py",
+    "archived_script": "scripts/testing/api_integration/consolidated_api_integration.py",
+    "archive_path": "scripts/archived/consolidated/consolidated_api_integration.py"
+  },
+  {
+    "action": "consolidated",
+    "kept_script": "scripts/deployment/unit_testing/consolidated_unit_testing.py",
+    "archived_script": "scripts/testing/unit_testing/consolidated_unit_testing.py",
+    "archive_path": "scripts/archived/consolidated/consolidated_unit_testing.py"
+  }
+]

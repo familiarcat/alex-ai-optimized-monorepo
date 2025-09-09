@@ -1,0 +1,215 @@
+{
+  "last_sync": "2025-09-08T21:44:16.418881",
+  "workflow_hashes": {
+    "36KPle5mPiMaazG6": "593d305cd7c516d8",
+    "58B6WvShXJ7bj8Ni": "21cfae25bb3b18e9",
+    "AeoHsSbJAXbWSs8Y": "5fad1e90087b888f",
+    "BdNHOluRYUw2JxGW": "d608ed7b2e3ef28f",
+    "C5Kq9nZTnZEc0EWo": "a40e02caa69d244e",
+    "FEdNQJgLBjJVh3oP": "93171e8b17cf635e",
+    "GhSB8EpZWXLU78LM": "c8720213472042ca",
+    "IKckCG6TsUvrZd8P": "638a51d69ad9d648",
+    "Imn7p6pVgi6SRvnF": "a9c8facca8ae99f7",
+    "L6K4bzSKlGC36ABL": "531893449b3ced7c",
+    "QJnN7ks2KsQTENDc": "60304da2ce1b24a4",
+    "RY8pm6gUFtkTKcpg": "4ced791e9a3f233a",
+    "SXAMupVWdOxZybF6": "00b63150b8021f4d",
+    "VQDH8tqWvVmigWd1": "1b5bd15047e7d407",
+    "XJeicUzVaGNb8gsB": "b43b6fc9efe73676",
+    "Xbdaf4VdEA4mEuL2": "a705dab653b4ed1e",
+    "YIm1VzYzVdphsjb9": "7a90547f5947cd60",
+    "aNfs26Wlau80ufmh": "4abb9b0d58b2c25f",
+    "e0UEwyVcXJqeePdj": "094cf23a3b35dcde",
+    "eviPmIvTnoJcnaas": "7909b603883319aa",
+    "gIwrQHHArgrVARjL": "25aa3c0c897cd179",
+    "p0L9kldRFQmexqBx": "7c78ddb7686cae07",
+    "rLN1eArIA6t3tEwZ": "fb5136b92f56e89f"
+  },
+  "sync_operations": [
+    {
+      "timestamp": "2025-09-08T21:44:09.335997",
+      "operation": "n8n_to_dev",
+      "workflow_name": "Crew - Lieutenant Uhura - Communications & I/O Operations Officer",
+      "workflow_id": "36KPle5mPiMaazG6",
+      "file_path": "workflows/Crew_-_Lieutenant_Uhura_-_Communications_&_I_O_Operations_Officer.json",
+      "hash": "593d305cd7c516d8"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.337014",
+      "operation": "n8n_to_dev",
+      "workflow_name": "Alex AI Job Opportunities - Production",
+      "workflow_id": "58B6WvShXJ7bj8Ni",
+      "file_path": "workflows/Alex_AI_Job_Opportunities_-_Production.json",
+      "hash": "21cfae25bb3b18e9"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.337913",
+      "operation": "n8n_to_dev",
+      "workflow_name": "System - Federation Concise Agency - OpenRouter Crew",
+      "workflow_id": "AeoHsSbJAXbWSs8Y",
+      "file_path": "workflows/System_-_Federation_Concise_Agency_-_OpenRouter_Crew.json",
+      "hash": "5fad1e90087b888f"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.338960",
+      "operation": "n8n_to_dev",
+      "workflow_name": "Crew - Captain Jean-Luc Picard - Strategic Leadership & Mission Command",
+      "workflow_id": "BdNHOluRYUw2JxGW",
+      "file_path": "workflows/Crew_-_Captain_Jean-Luc_Picard_-_Strategic_Leadership_&_Mission_Command.json",
+      "hash": "d608ed7b2e3ef28f"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.340196",
+      "operation": "n8n_to_dev",
+      "workflow_name": "Enhanced Unified AI Controller - Cursor + Claude + OpenRouter",
+      "workflow_id": "C5Kq9nZTnZEc0EWo",
+      "file_path": "workflows/Enhanced_Unified_AI_Controller_-_Cursor_+_Claude_+_OpenRouter.json",
+      "hash": "a40e02caa69d244e"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.341126",
+      "operation": "n8n_to_dev",
+      "workflow_name": "Alex AI - Unified Crew Integration System",
+      "workflow_id": "FEdNQJgLBjJVh3oP",
+      "file_path": "workflows/Alex_AI_-_Unified_Crew_Integration_System.json",
+      "hash": "93171e8b17cf635e"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.342072",
+      "operation": "n8n_to_dev",
+      "workflow_name": "Crew - Lieutenant Worf - Security & Compliance Operations",
+      "workflow_id": "GhSB8EpZWXLU78LM",
+      "file_path": "workflows/Crew_-_Lieutenant_Worf_-_Security_&_Compliance_Operations.json",
+      "hash": "c8720213472042ca"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.342832",
+      "operation": "n8n_to_dev",
+      "workflow_name": "Crew Management System",
+      "workflow_id": "IKckCG6TsUvrZd8P",
+      "file_path": "workflows/Crew_Management_System.json",
+      "hash": "638a51d69ad9d648"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.343782",
+      "operation": "n8n_to_dev",
+      "workflow_name": "Crew - Commander William Riker - Tactical Execution & Workflow Management",
+      "workflow_id": "Imn7p6pVgi6SRvnF",
+      "file_path": "workflows/Crew_-_Commander_William_Riker_-_Tactical_Execution_&_Workflow_Management.json",
+      "hash": "a9c8facca8ae99f7"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.345074",
+      "operation": "n8n_to_dev",
+      "workflow_name": "Crew - Quark - Business Intelligence & Budget Optimization",
+      "workflow_id": "L6K4bzSKlGC36ABL",
+      "file_path": "workflows/Crew_-_Quark_-_Business_Intelligence_&_Budget_Optimization.json",
+      "hash": "531893449b3ced7c"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.346619",
+      "operation": "n8n_to_dev",
+      "workflow_name": "Crew - Counselor Deanna Troi - User Experience & Empathy Analysis",
+      "workflow_id": "QJnN7ks2KsQTENDc",
+      "file_path": "workflows/Crew_-_Counselor_Deanna_Troi_-_User_Experience_&_Empathy_Analysis.json",
+      "hash": "60304da2ce1b24a4"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.347556",
+      "operation": "n8n_to_dev",
+      "workflow_name": "Alex AI Resume Analysis - Production",
+      "workflow_id": "RY8pm6gUFtkTKcpg",
+      "file_path": "workflows/Alex_AI_Resume_Analysis_-_Production.json",
+      "hash": "4ced791e9a3f233a"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.348623",
+      "operation": "n8n_to_dev",
+      "workflow_name": "Crew - Dr. Beverly Crusher - Health & Diagnostics Officer",
+      "workflow_id": "SXAMupVWdOxZybF6",
+      "file_path": "workflows/Crew_-_Dr._Beverly_Crusher_-_Health_&_Diagnostics_Officer.json",
+      "hash": "00b63150b8021f4d"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.349431",
+      "operation": "n8n_to_dev",
+      "workflow_name": "System - Federation Crew - OpenRouter Agent Coordination",
+      "workflow_id": "VQDH8tqWvVmigWd1",
+      "file_path": "workflows/System_-_Federation_Crew_-_OpenRouter_Agent_Coordination.json",
+      "hash": "1b5bd15047e7d407"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.350526",
+      "operation": "n8n_to_dev",
+      "workflow_name": "LLM_Democratic_Collaboration",
+      "workflow_id": "XJeicUzVaGNb8gsB",
+      "file_path": "workflows/LLM_Democratic_Collaboration.json",
+      "hash": "b43b6fc9efe73676"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.351264",
+      "operation": "n8n_to_dev",
+      "workflow_name": "Alex AI - Enhanced MCP Knowledge Integration",
+      "workflow_id": "Xbdaf4VdEA4mEuL2",
+      "file_path": "workflows/Alex_AI_-_Enhanced_MCP_Knowledge_Integration.json",
+      "hash": "a705dab653b4ed1e"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.352203",
+      "operation": "n8n_to_dev",
+      "workflow_name": "Observation Lounge - Crew Coordination & Decision Making",
+      "workflow_id": "YIm1VzYzVdphsjb9",
+      "file_path": "workflows/Observation_Lounge_-_Crew_Coordination_&_Decision_Making.json",
+      "hash": "7a90547f5947cd60"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.352843",
+      "operation": "n8n_to_dev",
+      "workflow_name": "System - AlexAI Optimized Crew - Complete Mission Control",
+      "workflow_id": "aNfs26Wlau80ufmh",
+      "file_path": "workflows/System_-_AlexAI_Optimized_Crew_-_Complete_Mission_Control.json",
+      "hash": "4abb9b0d58b2c25f"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.353519",
+      "operation": "n8n_to_dev",
+      "workflow_name": "Crew - Lieutenant Commander Geordi La Forge - Infrastructure & System Integration",
+      "workflow_id": "e0UEwyVcXJqeePdj",
+      "file_path": "workflows/Crew_-_Lieutenant_Commander_Geordi_La_Forge_-_Infrastructure_&_System_Integration.json",
+      "hash": "094cf23a3b35dcde"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.354487",
+      "operation": "n8n_to_dev",
+      "workflow_name": "System - Enhanced Federation Crew - Complete Mission Control",
+      "workflow_id": "eviPmIvTnoJcnaas",
+      "file_path": "workflows/System_-_Enhanced_Federation_Crew_-_Complete_Mission_Control.json",
+      "hash": "7909b603883319aa"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.355106",
+      "operation": "n8n_to_dev",
+      "workflow_name": "Crew - Commander Data - Analytics & Logic Operations",
+      "workflow_id": "gIwrQHHArgrVARjL",
+      "file_path": "workflows/Crew_-_Commander_Data_-_Analytics_&_Logic_Operations.json",
+      "hash": "25aa3c0c897cd179"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.355560",
+      "operation": "n8n_to_dev",
+      "workflow_name": "Alex AI MCP Request Handler - Production",
+      "workflow_id": "p0L9kldRFQmexqBx",
+      "file_path": "workflows/Alex_AI_MCP_Request_Handler_-_Production.json",
+      "hash": "7c78ddb7686cae07"
+    },
+    {
+      "timestamp": "2025-09-08T21:44:09.355977",
+      "operation": "n8n_to_dev",
+      "workflow_name": "Alex AI Contacts - Production",
+      "workflow_id": "rLN1eArIA6t3tEwZ",
+      "file_path": "workflows/Alex_AI_Contacts_-_Production.json",
+      "hash": "fb5136b92f56e89f"
+    }
+  ],
+  "conflicts": []
+}

@@ -1,0 +1,1563 @@
+{
+  "new_structure": {
+    "deployment": {
+      "description": "Deployment and infrastructure scripts",
+      "subcategories": {
+        "n8n_deployment": "N8N workflow deployment and management",
+        "supabase_setup": "Supabase database setup and configuration",
+        "environment_setup": "Development and production environment setup",
+        "ci_cd": "Continuous integration and deployment",
+        "api_deployment": "API endpoint deployment and management"
+      }
+    },
+    "testing": {
+      "description": "Testing and quality assurance scripts",
+      "subcategories": {
+        "e2e_testing": "End-to-end testing scripts",
+        "unit_testing": "Unit testing and validation",
+        "performance_testing": "Performance and load testing",
+        "security_testing": "Security validation and auditing",
+        "api_testing": "API endpoint testing"
+      }
+    },
+    "ai_ml": {
+      "description": "AI and machine learning scripts",
+      "subcategories": {
+        "llm_integration": "Large Language Model integration",
+        "prompt_engineering": "Prompt engineering and optimization",
+        "ai_automation": "AI-powered automation scripts",
+        "memory_management": "AI memory and knowledge management",
+        "crew_coordination": "AI crew coordination and management"
+      }
+    },
+    "data_management": {
+      "description": "Data processing and management scripts",
+      "subcategories": {
+        "database_ops": "Database operations and migrations",
+        "data_sync": "Data synchronization between systems",
+        "data_processing": "Data transformation and processing",
+        "backup_restore": "Data backup and restore operations",
+        "api_integration": "API data integration and processing"
+      }
+    },
+    "workflow": {
+      "description": "Workflow automation and process management",
+      "subcategories": {
+        "n8n_workflows": "N8N workflow management and automation",
+        "milestone_management": "Project milestone and version management",
+        "sync_operations": "Data and system synchronization",
+        "pipeline_automation": "CI/CD pipeline automation",
+        "orchestration": "Process orchestration and coordination"
+      }
+    },
+    "utilities": {
+      "description": "General utility scripts and tools",
+      "subcategories": {
+        "file_operations": "File and directory operations",
+        "text_processing": "Text processing and manipulation",
+        "system_utilities": "System-level utilities",
+        "code_generation": "Code generation and templating",
+        "cleanup": "Cleanup and maintenance operations"
+      }
+    }
+  },
+  "duplicates_to_remove": [],
+  "scripts_to_consolidate": {
+    "deployment_n8n_deployment": [
+      "n8n-cicd-sync.sh",
+      "get-and-update-claude-key.sh",
+      "intelligent-script-discovery.py",
+      "setup-supabase-with-credentials.sh",
+      "optimize-packages-structure.sh",
+      "milestone-push.sh",
+      "milestone-push-system.sh",
+      "populate-job-data.js",
+      "deploy-n8n-with-credentials.sh",
+      "sync-n8n-unified-config.sh",
+      "script-memory-system.py",
+      "analyze-conflicts.sh",
+      "add-quote-handling-memory.py",
+      "security-validation.sh",
+      "quick-production-test.sh",
+      "test-alex-ai-fixes.sh",
+      "security-audit.sh",
+      "n8n-bidirectional-sync.py",
+      "channel-intelligence-dual-milestone-push.sh",
+      "credential-security-milestone-push.sh",
+      "setup-dev-environment.sh",
+      "n8n-sync-monitor.py",
+      "robust-test.sh",
+      "production-readiness-assessment.sh",
+      "alex-ai-universal-milestone-push.sh",
+      "validate-api-keys.sh",
+      "quick-milestone.sh",
+      "add-architecture-memory.py",
+      "analyze-production-changes.sh",
+      "alex-ai-universal-git-milestone-push.sh",
+      "claude-api-fix-final.sh",
+      "script-analyzer.py",
+      "cursor-extension-milestone.sh",
+      "setup-bidirectional-sync.sh",
+      "deploy-missing-n8n-webhooks.sh",
+      "setup-git-remote.sh",
+      "setup-hourly-scraping.sh",
+      "setup-n8n-bidirectional-sync.sh",
+      "sync-dashboard.sh",
+      "secure-credential-manager.sh",
+      "n8n-change-monitor.sh",
+      "fix-claude-api.sh",
+      "setup-supabase-tables.sh",
+      "deploy-n8n-webhooks.sh",
+      "shell-prompt-safety-system.sh",
+      "production-shell-engine.sh",
+      "end-to-end-testing.sh",
+      "deploy.sh",
+      "enhanced-ai-prompts-dual-milestone-push.sh",
+      "load-credentials.sh",
+      "add-quote-handling-memory-simple.py",
+      "production-testing-suite.sh",
+      "automate-bidirectional-setup.sh",
+      "setup-secure-api-keys.sh",
+      "begin-live-scraping.sh",
+      "deploy-complete-n8n-infrastructure.sh",
+      "setup-database-simple.js",
+      "alexai-init.sh",
+      "string-manipulation-fix.sh",
+      "test-basic.sh",
+      "consolidated_shell-prompt-safety-system.py",
+      "consolidated_fix-claude-api.py",
+      "consolidated_alex_ai_credential_manager.py",
+      "consolidated_setup-secure-api-keys.py",
+      "consolidated_enhanced_ai_prompts_system.py",
+      "consolidated_mcp_library_computer_system.py",
+      "consolidated_progressive_git_push_system.py",
+      "consolidated_observation_lounge_crew_debrief.py",
+      "consolidated_youtube_channel_intelligence_system.py",
+      "consolidated_youtube_scraper_crew_integration.py",
+      "consolidated_alexai-init.py",
+      "consolidated_channel-intelligence-dual-milestone-push.py",
+      "consolidated_n8n_integration_test_system.py",
+      "consolidated_mcp_integration_system.py",
+      "consolidated_enhanced_ai_prompts_deployment_system.py",
+      "consolidated_test_channel_intelligence_system.py",
+      "consolidated_demo_youtube_scraper_system.py",
+      "consolidated_claude-api-fix-final.py",
+      "consolidated_crew_coordinator.py",
+      "consolidated_enhanced_unified_router.py",
+      "consolidated_test-basic.py",
+      "consolidated_robust-test.py",
+      "consolidated_get-and-update-claude-key.py",
+      "consolidated_test_youtube_scraper_integration.py",
+      "consolidated_enhanced_prompts_test_suite.py",
+      "consolidated_test_alex_ai_system.py",
+      "consolidated_observation_lounge_memory_consensus.py",
+      "consolidated_milestone-push-system.py",
+      "consolidated_crew_personal_history_analysis.py",
+      "youtube_scraper_crew_integration.py",
+      "turborepo_implementation_plan.py",
+      "alex_ai_yolo_mode_integration_system.py",
+      "phase2_turborepo_optimization.py",
+      "youtube_crew_memory_integration.py",
+      "enhanced_ai_prompts_system.py",
+      "alex_ai_credential_manager.py",
+      "enhanced_prompts_test_suite.py",
+      "alex_ai_yolo_initialization.py",
+      "alex_ai_crew_mermaid_models.py",
+      "alex_ai_webhook_server.py",
+      "enhanced_unified_router.py",
+      "observation_lounge_crew_debrief.py",
+      "enhanced_ai_prompts_deployment_system.py",
+      "cursor_ai_behavior_analysis.py",
+      "alex_ai_job_search_system.py",
+      "yolo_mode_crew_memory_update.py",
+      "youtube_channel_intelligence_system.py",
+      "crew_yolo_mode_memory_sync.py",
+      "alex_ai_job_search_integration.py",
+      "test_channel_intelligence_system.py",
+      "cursor_ai_integration_memory_update.py",
+      "simple_youtube_crew_memory_demo.py",
+      "comprehensive_yolo_stress_test.py",
+      "observation_lounge_yolo_mode_debrief.py",
+      "knowledge_gap_research_plan.py",
+      "research_phase_execution_plan.py",
+      "repository_optimization_analysis.py",
+      "business_operations_legal_system.py",
+      "simple_turborepo_research_system.py",
+      "agile_sprint_dashboard_system.py",
+      "test_youtube_scraper_integration.py",
+      "crew_business_readiness_consensus.py",
+      "crew_coordinator.py",
+      "phase3_alex_ai_integration.py",
+      "mcp_integration_system.py",
+      "supabase_data_import_script.py",
+      "observation_lounge_memory_consensus.py",
+      "test_alex_ai_system.py",
+      "email_research_system.py",
+      "turborepo_research_system.py",
+      "progressive_git_push_system.py",
+      "yolo_mode_issue_investigation.py",
+      "mcp_library_computer_system.py",
+      "phase1_turborepo_setup.py",
+      "n8n_integration_test_system.py",
+      "business_readiness_assessment.py",
+      "demo_youtube_scraper_system.py"
+    ],
+    "testing_e2e_testing": [
+      "greg-community-intelligence-dual-milestone-push.sh",
+      "optimize-turborepo-structure.sh",
+      "fix-zshrc-api-key.sh",
+      "safe-execute.sh",
+      "get-supabase-anon-key.sh",
+      "test-workflows.sh",
+      "fix-e2e-issues.sh",
+      "comprehensive-string-fix.sh",
+      "credential-validator.sh",
+      "shell-safety-guide.sh",
+      "add-test-ids.js",
+      "simple-e2e-test.js",
+      "validate-strings.sh",
+      "improved-e2e-test.js",
+      "test-script.sh",
+      "puppeteer-e2e-test.js",
+      "consolidated_fix-zshrc-api-key.py",
+      "consolidated_crew_coordination_update_system.py",
+      "consolidated_fix_credential_security.py",
+      "consolidated_claude-api-key-guide.py",
+      "consolidated_test-script.py",
+      "consolidated_store_crew_memories_supabase.py",
+      "consolidated_update-zshrc-with-placeholder.py",
+      "consolidated_shell-safety-guide.py",
+      "consolidated_cursor-ai-shell-integration.py",
+      "consolidated_advanced_ai_agent_development_system.py",
+      "consolidated_alex_ai_memory_sharing_assessment.py",
+      "consolidated_cursor-ai-shell-helper.py",
+      "consolidated_greg-community-intelligence-dual-milestone-push.py",
+      "consolidated_greg_channel_intelligence_analysis.py",
+      "consolidated_load_alex_ai_credentials.py",
+      "consolidated_alex_ai_comprehensive_assessment.py",
+      "alex_ai_memory_sharing_assessment.py",
+      "advanced_ai_agent_development_system.py",
+      "fix_credential_security.py",
+      "intelligent_monorepo_cleanup.py",
+      "alex_ai_comprehensive_assessment.py"
+    ],
+    "deployment_environment_setup": [
+      "update-claude-api.sh",
+      "test-status.sh",
+      "consolidated_test-status.py",
+      "consolidated_update-claude-api.py",
+      "enhanced_ai_prompts_with_supabase_integration.py",
+      "alex-ai-universal-deployment-system.py"
+    ],
+    "testing_unit_testing": [
+      "claude-api-key-guide.sh",
+      "monitor-performance.js",
+      "safe-milestone-push.sh",
+      "comprehensive_market_research_system.py",
+      "crew_coordination_update_system.py",
+      "optimized_web_crawler_system.py",
+      "company_research_system.py",
+      "clean_secrets.py",
+      "store_crew_memories_supabase.py"
+    ],
+    "deployment_docker": [
+      "consolidated_crew_learning_assessment.py",
+      "consolidated_mcp_memory_optimization_system.py",
+      "consolidated_test_mcp_system.py",
+      "final_monorepo_cleanup.py",
+      "test_mcp_system.py",
+      "crew_learning_assessment.py",
+      "mcp_memory_optimization_milestone_push.py",
+      "mcp_memory_optimization_system.py",
+      "alex_ai_yolo_mode_memory_integration.py",
+      "proper_yolo_mode_configuration.py"
+    ]
+  },
+  "consolidation_plan": {
+    "deployment": {
+      "total_scripts": 158,
+      "subcategory_groups": {
+        "sync_operations": [
+          {
+            "name": "n8n-cicd-sync.sh",
+            "path": "scripts/n8n-cicd-sync.sh",
+            "lines": 333,
+            "purpose": "Synchronization and data management"
+          },
+          {
+            "name": "sync-n8n-unified-config.sh",
+            "path": "scripts/sync-n8n-unified-config.sh",
+            "lines": 225,
+            "purpose": "Synchronization and data management"
+          },
+          {
+            "name": "n8n-bidirectional-sync.py",
+            "path": "scripts/n8n-bidirectional-sync.py",
+            "lines": 407,
+            "purpose": "Synchronization and data management"
+          },
+          {
+            "name": "n8n-sync-monitor.py",
+            "path": "scripts/n8n-sync-monitor.py",
+            "lines": 382,
+            "purpose": "Synchronization and data management"
+          },
+          {
+            "name": "setup-n8n-bidirectional-sync.sh",
+            "path": "scripts/setup-n8n-bidirectional-sync.sh",
+            "lines": 396,
+            "purpose": "sets up the complete bi-directional sync system for N8N workflows"
+          }
+        ],
+        "general": [
+          {
+            "name": "get-and-update-claude-key.sh",
+            "path": "scripts/get-and-update-claude-key.sh",
+            "lines": 129,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "intelligent-script-discovery.py",
+            "path": "scripts/intelligent-script-discovery.py",
+            "lines": 538,
+            "purpose": "Implement {purpose.lower()}"
+          },
+          {
+            "name": "optimize-packages-structure.sh",
+            "path": "scripts/optimize-packages-structure.sh",
+            "lines": 715,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "populate-job-data.js",
+            "path": "scripts/populate-job-data.js",
+            "lines": 310,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "script-memory-system.py",
+            "path": "scripts/script-memory-system.py",
+            "lines": 426,
+            "purpose": "Implement {purpose.lower()}"
+          },
+          {
+            "name": "analyze-conflicts.sh",
+            "path": "scripts/analyze-conflicts.sh",
+            "lines": 346,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "add-quote-handling-memory.py",
+            "path": "scripts/add-quote-handling-memory.py",
+            "lines": 290,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "security-validation.sh",
+            "path": "scripts/security-validation.sh",
+            "lines": 288,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "security-audit.sh",
+            "path": "scripts/security-audit.sh",
+            "lines": 201,
+            "purpose": "performs comprehensive security checks"
+          },
+          {
+            "name": "setup-dev-environment.sh",
+            "path": "scripts/setup-dev-environment.sh",
+            "lines": 119,
+            "purpose": "sets up the complete development environment with automatic credential loading"
+          },
+          {
+            "name": "production-readiness-assessment.sh",
+            "path": "scripts/production-readiness-assessment.sh",
+            "lines": 418,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "add-architecture-memory.py",
+            "path": "scripts/add-architecture-memory.py",
+            "lines": 248,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "analyze-production-changes.sh",
+            "path": "scripts/analyze-production-changes.sh",
+            "lines": 438,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "script-analyzer.py",
+            "path": "scripts/script-analyzer.py",
+            "lines": 743,
+            "purpose": "\\s*(.+)',"
+          },
+          {
+            "name": "setup-bidirectional-sync.sh",
+            "path": "scripts/setup-bidirectional-sync.sh",
+            "lines": 491,
+            "purpose": "Synchronization and data management"
+          },
+          {
+            "name": "setup-git-remote.sh",
+            "path": "scripts/setup-git-remote.sh",
+            "lines": 61,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "sync-dashboard.sh",
+            "path": "scripts/sync-dashboard.sh",
+            "lines": 480,
+            "purpose": "Synchronization and data management"
+          },
+          {
+            "name": "secure-credential-manager.sh",
+            "path": "scripts/secure-credential-manager.sh",
+            "lines": 483,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "shell-prompt-safety-system.sh",
+            "path": "scripts/shell-prompt-safety-system.sh",
+            "lines": 264,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "production-shell-engine.sh",
+            "path": "scripts/production-shell-engine.sh",
+            "lines": 370,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "setup-database.js",
+            "path": "scripts/setup-database.js",
+            "lines": 115,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "deploy.sh",
+            "path": "scripts/deploy.sh",
+            "lines": 36,
+            "purpose": "Deployment and setup"
+          },
+          {
+            "name": "load-credentials.sh",
+            "path": "scripts/load-credentials.sh",
+            "lines": 133,
+            "purpose": "loads credentials from ~/.zshrc and makes them available"
+          },
+          {
+            "name": "add-quote-handling-memory-simple.py",
+            "path": "scripts/add-quote-handling-memory-simple.py",
+            "lines": 246,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "automate-bidirectional-setup.sh",
+            "path": "scripts/automate-bidirectional-setup.sh",
+            "lines": 641,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "setup-database-simple.js",
+            "path": "scripts/setup-database-simple.js",
+            "lines": 145,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "alexai-init.sh",
+            "path": "scripts/alexai-init.sh",
+            "lines": 46,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "string-manipulation-fix.sh",
+            "path": "scripts/string-manipulation-fix.sh",
+            "lines": 509,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_shell-prompt-safety-system.py",
+            "path": "scripts/consolidated/consolidated_shell-prompt-safety-system.py",
+            "lines": 276,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_alex_ai_credential_manager.py",
+            "path": "scripts/consolidated/consolidated_alex_ai_credential_manager.py",
+            "lines": 372,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_enhanced_ai_prompts_system.py",
+            "path": "scripts/consolidated/consolidated_enhanced_ai_prompts_system.py",
+            "lines": 426,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_mcp_library_computer_system.py",
+            "path": "scripts/consolidated/consolidated_mcp_library_computer_system.py",
+            "lines": 384,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_progressive_git_push_system.py",
+            "path": "scripts/consolidated/consolidated_progressive_git_push_system.py",
+            "lines": 280,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_observation_lounge_crew_debrief.py",
+            "path": "scripts/consolidated/consolidated_observation_lounge_crew_debrief.py",
+            "lines": 406,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_youtube_channel_intelligence_system.py",
+            "path": "scripts/consolidated/consolidated_youtube_channel_intelligence_system.py",
+            "lines": 624,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_youtube_scraper_crew_integration.py",
+            "path": "scripts/consolidated/consolidated_youtube_scraper_crew_integration.py",
+            "lines": 364,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_alexai-init.py",
+            "path": "scripts/consolidated/consolidated_alexai-init.py",
+            "lines": 58,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_mcp_integration_system.py",
+            "path": "scripts/consolidated/consolidated_mcp_integration_system.py",
+            "lines": 739,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_enhanced_ai_prompts_deployment_system.py",
+            "path": "scripts/consolidated/consolidated_enhanced_ai_prompts_deployment_system.py",
+            "lines": 538,
+            "purpose": "Deployment and setup"
+          },
+          {
+            "name": "consolidated_demo_youtube_scraper_system.py",
+            "path": "scripts/consolidated/consolidated_demo_youtube_scraper_system.py",
+            "lines": 376,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_crew_coordinator.py",
+            "path": "scripts/consolidated/consolidated_crew_coordinator.py",
+            "lines": 394,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_enhanced_unified_router.py",
+            "path": "scripts/consolidated/consolidated_enhanced_unified_router.py",
+            "lines": 277,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_crew_learning_assessment.py",
+            "path": "scripts/consolidated/consolidated_crew_learning_assessment.py",
+            "lines": 439,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_get-and-update-claude-key.py",
+            "path": "scripts/consolidated/consolidated_get-and-update-claude-key.py",
+            "lines": 141,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_mcp_memory_optimization_system.py",
+            "path": "scripts/consolidated/consolidated_mcp_memory_optimization_system.py",
+            "lines": 613,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_observation_lounge_memory_consensus.py",
+            "path": "scripts/consolidated/consolidated_observation_lounge_memory_consensus.py",
+            "lines": 377,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_crew_personal_history_analysis.py",
+            "path": "scripts/consolidated/consolidated_crew_personal_history_analysis.py",
+            "lines": 300,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "youtube_scraper_crew_integration.py",
+            "path": "scripts/python/youtube_scraper_crew_integration.py",
+            "lines": 351,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "final_monorepo_cleanup.py",
+            "path": "scripts/python/final_monorepo_cleanup.py",
+            "lines": 505,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "turborepo_implementation_plan.py",
+            "path": "scripts/python/turborepo_implementation_plan.py",
+            "lines": 506,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "alex_ai_yolo_mode_integration_system.py",
+            "path": "scripts/python/alex_ai_yolo_mode_integration_system.py",
+            "lines": 475,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "phase2_turborepo_optimization.py",
+            "path": "scripts/python/phase2_turborepo_optimization.py",
+            "lines": 977,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "youtube_crew_memory_integration.py",
+            "path": "scripts/python/youtube_crew_memory_integration.py",
+            "lines": 395,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "enhanced_ai_prompts_system.py",
+            "path": "scripts/python/enhanced_ai_prompts_system.py",
+            "lines": 412,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "alex_ai_credential_manager.py",
+            "path": "scripts/python/alex_ai_credential_manager.py",
+            "lines": 360,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "alex_ai_yolo_initialization.py",
+            "path": "scripts/python/alex_ai_yolo_initialization.py",
+            "lines": 410,
+            "purpose": "automatically enables YOLO Mode for Alex AI system"
+          },
+          {
+            "name": "alex_ai_crew_mermaid_models.py",
+            "path": "scripts/python/alex_ai_crew_mermaid_models.py",
+            "lines": 542,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "alex_ai_webhook_server.py",
+            "path": "scripts/python/alex_ai_webhook_server.py",
+            "lines": 241,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "enhanced_unified_router.py",
+            "path": "scripts/python/enhanced_unified_router.py",
+            "lines": 265,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "crew_learning_assessment.py",
+            "path": "scripts/python/crew_learning_assessment.py",
+            "lines": 427,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "observation_lounge_crew_debrief.py",
+            "path": "scripts/python/observation_lounge_crew_debrief.py",
+            "lines": 393,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "enhanced_ai_prompts_deployment_system.py",
+            "path": "scripts/python/enhanced_ai_prompts_deployment_system.py",
+            "lines": 525,
+            "purpose": "Deployment and setup"
+          },
+          {
+            "name": "cursor_ai_behavior_analysis.py",
+            "path": "scripts/python/cursor_ai_behavior_analysis.py",
+            "lines": 279,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "alex_ai_job_search_system.py",
+            "path": "scripts/python/alex_ai_job_search_system.py",
+            "lines": 362,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "yolo_mode_crew_memory_update.py",
+            "path": "scripts/python/yolo_mode_crew_memory_update.py",
+            "lines": 281,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "youtube_channel_intelligence_system.py",
+            "path": "scripts/python/youtube_channel_intelligence_system.py",
+            "lines": 611,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "crew_yolo_mode_memory_sync.py",
+            "path": "scripts/python/crew_yolo_mode_memory_sync.py",
+            "lines": 467,
+            "purpose": "Synchronization and data management"
+          },
+          {
+            "name": "alex_ai_job_search_integration.py",
+            "path": "scripts/python/alex_ai_job_search_integration.py",
+            "lines": 580,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "cursor_ai_integration_memory_update.py",
+            "path": "scripts/python/cursor_ai_integration_memory_update.py",
+            "lines": 285,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "simple_youtube_crew_memory_demo.py",
+            "path": "scripts/python/simple_youtube_crew_memory_demo.py",
+            "lines": 274,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "observation_lounge_yolo_mode_debrief.py",
+            "path": "scripts/python/observation_lounge_yolo_mode_debrief.py",
+            "lines": 417,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "knowledge_gap_research_plan.py",
+            "path": "scripts/python/knowledge_gap_research_plan.py",
+            "lines": 350,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "mcp_memory_optimization_system.py",
+            "path": "scripts/python/mcp_memory_optimization_system.py",
+            "lines": 601,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "research_phase_execution_plan.py",
+            "path": "scripts/python/research_phase_execution_plan.py",
+            "lines": 663,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "repository_optimization_analysis.py",
+            "path": "scripts/python/repository_optimization_analysis.py",
+            "lines": 405,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "business_operations_legal_system.py",
+            "path": "scripts/python/business_operations_legal_system.py",
+            "lines": 486,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "simple_turborepo_research_system.py",
+            "path": "scripts/python/simple_turborepo_research_system.py",
+            "lines": 599,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "agile_sprint_dashboard_system.py",
+            "path": "scripts/python/agile_sprint_dashboard_system.py",
+            "lines": 498,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "crew_business_readiness_consensus.py",
+            "path": "scripts/python/crew_business_readiness_consensus.py",
+            "lines": 369,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "crew_coordinator.py",
+            "path": "scripts/python/crew_coordinator.py",
+            "lines": 382,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "phase3_alex_ai_integration.py",
+            "path": "scripts/python/phase3_alex_ai_integration.py",
+            "lines": 854,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "alex_ai_yolo_mode_memory_integration.py",
+            "path": "scripts/python/alex_ai_yolo_mode_memory_integration.py",
+            "lines": 481,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "mcp_integration_system.py",
+            "path": "scripts/python/mcp_integration_system.py",
+            "lines": 727,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "observation_lounge_memory_consensus.py",
+            "path": "scripts/python/observation_lounge_memory_consensus.py",
+            "lines": 365,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "email_research_system.py",
+            "path": "scripts/python/email_research_system.py",
+            "lines": 430,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "turborepo_research_system.py",
+            "path": "scripts/python/turborepo_research_system.py",
+            "lines": 481,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "progressive_git_push_system.py",
+            "path": "scripts/python/progressive_git_push_system.py",
+            "lines": 268,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "yolo_mode_issue_investigation.py",
+            "path": "scripts/python/yolo_mode_issue_investigation.py",
+            "lines": 228,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "mcp_library_computer_system.py",
+            "path": "scripts/python/mcp_library_computer_system.py",
+            "lines": 372,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "phase1_turborepo_setup.py",
+            "path": "scripts/python/phase1_turborepo_setup.py",
+            "lines": 598,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "proper_yolo_mode_configuration.py",
+            "path": "scripts/python/proper_yolo_mode_configuration.py",
+            "lines": 345,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "alex-ai-universal-deployment-system.py",
+            "path": "scripts/python/alex-ai-universal-deployment-system.py",
+            "lines": 467,
+            "purpose": "Deployment and setup"
+          },
+          {
+            "name": "business_readiness_assessment.py",
+            "path": "scripts/python/business_readiness_assessment.py",
+            "lines": 442,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "demo_youtube_scraper_system.py",
+            "path": "scripts/python/demo_youtube_scraper_system.py",
+            "lines": 363,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "progress.sh",
+            "path": "scripts/templates/safe-output/progress.sh",
+            "lines": 19,
+            "purpose": "General utility script"
+          }
+        ],
+        "api_integration": [
+          {
+            "name": "update-claude-api.sh",
+            "path": "scripts/update-claude-api.sh",
+            "lines": 63,
+            "purpose": "helps you update your Claude API key for Alex AI integration"
+          },
+          {
+            "name": "validate-api-keys.sh",
+            "path": "scripts/validate-api-keys.sh",
+            "lines": 222,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "claude-api-fix-final.sh",
+            "path": "scripts/claude-api-fix-final.sh",
+            "lines": 77,
+            "purpose": "provides the complete solution for your API key issue"
+          },
+          {
+            "name": "setup-hourly-scraping.sh",
+            "path": "scripts/setup-hourly-scraping.sh",
+            "lines": 243,
+            "purpose": "sets up automatic hourly job scraping"
+          },
+          {
+            "name": "fix-claude-api.sh",
+            "path": "scripts/fix-claude-api.sh",
+            "lines": 56,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "setup-secure-api-keys.sh",
+            "path": "scripts/setup-secure-api-keys.sh",
+            "lines": 236,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "begin-live-scraping.sh",
+            "path": "scripts/begin-live-scraping.sh",
+            "lines": 160,
+            "purpose": "starts the live data collection process"
+          },
+          {
+            "name": "consolidated_fix-claude-api.py",
+            "path": "scripts/consolidated/consolidated_fix-claude-api.py",
+            "lines": 68,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_setup-secure-api-keys.py",
+            "path": "scripts/consolidated/consolidated_setup-secure-api-keys.py",
+            "lines": 248,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_update-claude-api.py",
+            "path": "scripts/consolidated/consolidated_update-claude-api.py",
+            "lines": 75,
+            "purpose": "helps you update your Claude API key for Alex AI integration"
+          },
+          {
+            "name": "consolidated_claude-api-fix-final.py",
+            "path": "scripts/consolidated/consolidated_claude-api-fix-final.py",
+            "lines": 89,
+            "purpose": "provides the complete solution for your API key issue"
+          }
+        ],
+        "supabase_setup": [
+          {
+            "name": "setup-supabase-with-credentials.sh",
+            "path": "scripts/setup-supabase-with-credentials.sh",
+            "lines": 307,
+            "purpose": "creates all required Supabase tables using credentials from ~/.zshrc"
+          },
+          {
+            "name": "setup-supabase-tables.sh",
+            "path": "scripts/setup-supabase-tables.sh",
+            "lines": 72,
+            "purpose": "guides you through setting up the required Supabase tables"
+          },
+          {
+            "name": "enhanced_ai_prompts_with_supabase_integration.py",
+            "path": "scripts/python/enhanced_ai_prompts_with_supabase_integration.py",
+            "lines": 655,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "supabase_research_integration_system.py",
+            "path": "scripts/python/supabase_research_integration_system.py",
+            "lines": 827,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "supabase_data_import_script.py",
+            "path": "scripts/python/supabase_data_import_script.py",
+            "lines": 475,
+            "purpose": "General utility script"
+          }
+        ],
+        "milestone_management": [
+          {
+            "name": "milestone-push.sh",
+            "path": "scripts/milestone-push.sh",
+            "lines": 177,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "milestone-push-system.sh",
+            "path": "scripts/milestone-push-system.sh",
+            "lines": 387,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "channel-intelligence-dual-milestone-push.sh",
+            "path": "scripts/channel-intelligence-dual-milestone-push.sh",
+            "lines": 320,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "credential-security-milestone-push.sh",
+            "path": "scripts/credential-security-milestone-push.sh",
+            "lines": 180,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "alex-ai-universal-milestone-push.sh",
+            "path": "scripts/alex-ai-universal-milestone-push.sh",
+            "lines": 371,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "quick-milestone.sh",
+            "path": "scripts/quick-milestone.sh",
+            "lines": 67,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "alex-ai-universal-git-milestone-push.sh",
+            "path": "scripts/alex-ai-universal-git-milestone-push.sh",
+            "lines": 326,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "cursor-extension-milestone.sh",
+            "path": "scripts/cursor-extension-milestone.sh",
+            "lines": 150,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "enhanced-ai-prompts-dual-milestone-push.sh",
+            "path": "scripts/enhanced-ai-prompts-dual-milestone-push.sh",
+            "lines": 300,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_channel-intelligence-dual-milestone-push.py",
+            "path": "scripts/consolidated/consolidated_channel-intelligence-dual-milestone-push.py",
+            "lines": 331,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_milestone-push-system.py",
+            "path": "scripts/consolidated/consolidated_milestone-push-system.py",
+            "lines": 399,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "mcp_memory_optimization_milestone_push.py",
+            "path": "scripts/python/mcp_memory_optimization_milestone_push.py",
+            "lines": 349,
+            "purpose": "General utility script"
+          }
+        ],
+        "n8n_deployment": [
+          {
+            "name": "deploy-n8n-with-credentials.sh",
+            "path": "scripts/deploy-n8n-with-credentials.sh",
+            "lines": 181,
+            "purpose": "deploys N8N workflows and configures them with Supabase credentials"
+          },
+          {
+            "name": "deploy-missing-n8n-webhooks.sh",
+            "path": "scripts/deploy-missing-n8n-webhooks.sh",
+            "lines": 179,
+            "purpose": "creates and activates the missing webhook endpoints for Alex AI"
+          },
+          {
+            "name": "deploy-n8n-webhooks.sh",
+            "path": "scripts/deploy-n8n-webhooks.sh",
+            "lines": 133,
+            "purpose": "deploys the webhook workflows to n8n.pbradygeorgen.com"
+          },
+          {
+            "name": "deploy-complete-n8n-infrastructure.sh",
+            "path": "scripts/deploy-complete-n8n-infrastructure.sh",
+            "lines": 130,
+            "purpose": "deploys the complete bi-directional data flow infrastructure"
+          }
+        ],
+        "unit_testing": [
+          {
+            "name": "quick-production-test.sh",
+            "path": "scripts/quick-production-test.sh",
+            "lines": 183,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "test-alex-ai-fixes.sh",
+            "path": "scripts/test-alex-ai-fixes.sh",
+            "lines": 142,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "robust-test.sh",
+            "path": "scripts/robust-test.sh",
+            "lines": 116,
+            "purpose": "avoids shell quote issues and provides comprehensive testing"
+          },
+          {
+            "name": "end-to-end-testing.sh",
+            "path": "scripts/end-to-end-testing.sh",
+            "lines": 246,
+            "purpose": "conducts comprehensive testing of the entire system"
+          },
+          {
+            "name": "production-testing-suite.sh",
+            "path": "scripts/production-testing-suite.sh",
+            "lines": 355,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "test-basic.sh",
+            "path": "scripts/generated/test-basic.sh",
+            "lines": 38,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "test-status.sh",
+            "path": "scripts/generated/test-status.sh",
+            "lines": 32,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "test-progress.sh",
+            "path": "scripts/generated/test-progress.sh",
+            "lines": 56,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "consolidated_test-status.py",
+            "path": "scripts/consolidated/consolidated_test-status.py",
+            "lines": 44,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "consolidated_test-progress.py",
+            "path": "scripts/consolidated/consolidated_test-progress.py",
+            "lines": 68,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "consolidated_test_channel_intelligence_system.py",
+            "path": "scripts/consolidated/consolidated_test_channel_intelligence_system.py",
+            "lines": 348,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "consolidated_test-basic.py",
+            "path": "scripts/consolidated/consolidated_test-basic.py",
+            "lines": 52,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "consolidated_robust-test.py",
+            "path": "scripts/consolidated/consolidated_robust-test.py",
+            "lines": 128,
+            "purpose": "avoids shell quote issues and provides comprehensive testing"
+          },
+          {
+            "name": "consolidated_test_youtube_scraper_integration.py",
+            "path": "scripts/consolidated/consolidated_test_youtube_scraper_integration.py",
+            "lines": 430,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "consolidated_enhanced_prompts_test_suite.py",
+            "path": "scripts/consolidated/consolidated_enhanced_prompts_test_suite.py",
+            "lines": 63,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "consolidated_test_alex_ai_system.py",
+            "path": "scripts/consolidated/consolidated_test_alex_ai_system.py",
+            "lines": 155,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "consolidated_test_mcp_system.py",
+            "path": "scripts/consolidated/consolidated_test_mcp_system.py",
+            "lines": 492,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "test_mcp_system.py",
+            "path": "scripts/python/test_mcp_system.py",
+            "lines": 480,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "enhanced_prompts_test_suite.py",
+            "path": "scripts/python/enhanced_prompts_test_suite.py",
+            "lines": 50,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "test_channel_intelligence_system.py",
+            "path": "scripts/python/test_channel_intelligence_system.py",
+            "lines": 335,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "comprehensive_yolo_stress_test.py",
+            "path": "scripts/python/comprehensive_yolo_stress_test.py",
+            "lines": 555,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "test_youtube_scraper_integration.py",
+            "path": "scripts/python/test_youtube_scraper_integration.py",
+            "lines": 417,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "test_alex_ai_system.py",
+            "path": "scripts/python/test_alex_ai_system.py",
+            "lines": 143,
+            "purpose": "Testing and validation"
+          }
+        ],
+        "n8n_workflows": [
+          {
+            "name": "n8n-change-monitor.sh",
+            "path": "scripts/n8n-change-monitor.sh",
+            "lines": 403,
+            "purpose": "Monitoring and health checking"
+          },
+          {
+            "name": "consolidated_n8n_integration_test_system.py",
+            "path": "scripts/consolidated/consolidated_n8n_integration_test_system.py",
+            "lines": 317,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "n8n_integration_test_system.py",
+            "path": "scripts/python/n8n_integration_test_system.py",
+            "lines": 305,
+            "purpose": "Testing and validation"
+          }
+        ]
+      },
+      "consolidation_strategy": "consolidate_into_subcategories"
+    },
+    "testing": {
+      "total_scripts": 49,
+      "subcategory_groups": {
+        "milestone_management": [
+          {
+            "name": "greg-community-intelligence-dual-milestone-push.sh",
+            "path": "scripts/greg-community-intelligence-dual-milestone-push.sh",
+            "lines": 320,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "safe-milestone-push.sh",
+            "path": "scripts/safe-milestone-push.sh",
+            "lines": 91,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_greg-community-intelligence-dual-milestone-push.py",
+            "path": "scripts/consolidated/consolidated_greg-community-intelligence-dual-milestone-push.py",
+            "lines": 333,
+            "purpose": "General utility script"
+          }
+        ],
+        "general": [
+          {
+            "name": "optimize-turborepo-structure.sh",
+            "path": "scripts/optimize-turborepo-structure.sh",
+            "lines": 229,
+            "purpose": "implements the crew's recommendations for proper Turborepo structure"
+          },
+          {
+            "name": "safe-execute.sh",
+            "path": "scripts/safe-execute.sh",
+            "lines": 88,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "comprehensive-string-fix.sh",
+            "path": "scripts/comprehensive-string-fix.sh",
+            "lines": 253,
+            "purpose": "has been rewritten with safe string manipulation"
+          },
+          {
+            "name": "credential-validator.sh",
+            "path": "scripts/credential-validator.sh",
+            "lines": 76,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "update-zshrc-with-placeholder.sh",
+            "path": "scripts/update-zshrc-with-placeholder.sh",
+            "lines": 42,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "shell-safety-guide.sh",
+            "path": "scripts/shell-safety-guide.sh",
+            "lines": 86,
+            "purpose": "demonstrates best practices to avoid shell quote issues"
+          },
+          {
+            "name": "validate-strings.sh",
+            "path": "scripts/validate-strings.sh",
+            "lines": 54,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "monitor-performance.js",
+            "path": "scripts/monitor-performance.js",
+            "lines": 154,
+            "purpose": "Monitoring and health checking"
+          },
+          {
+            "name": "load_alex_ai_credentials.sh",
+            "path": "scripts/load_alex_ai_credentials.sh",
+            "lines": 27,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_crew_coordination_update_system.py",
+            "path": "scripts/consolidated/consolidated_crew_coordination_update_system.py",
+            "lines": 256,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_fix_credential_security.py",
+            "path": "scripts/consolidated/consolidated_fix_credential_security.py",
+            "lines": 208,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_update-zshrc-with-placeholder.py",
+            "path": "scripts/consolidated/consolidated_update-zshrc-with-placeholder.py",
+            "lines": 54,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_shell-safety-guide.py",
+            "path": "scripts/consolidated/consolidated_shell-safety-guide.py",
+            "lines": 98,
+            "purpose": "demonstrates best practices to avoid shell quote issues"
+          },
+          {
+            "name": "consolidated_cursor-ai-shell-integration.py",
+            "path": "scripts/consolidated/consolidated_cursor-ai-shell-integration.py",
+            "lines": 295,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_advanced_ai_agent_development_system.py",
+            "path": "scripts/consolidated/consolidated_advanced_ai_agent_development_system.py",
+            "lines": 422,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_alex_ai_memory_sharing_assessment.py",
+            "path": "scripts/consolidated/consolidated_alex_ai_memory_sharing_assessment.py",
+            "lines": 359,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_cursor-ai-shell-helper.py",
+            "path": "scripts/consolidated/consolidated_cursor-ai-shell-helper.py",
+            "lines": 76,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_greg_channel_intelligence_analysis.py",
+            "path": "scripts/consolidated/consolidated_greg_channel_intelligence_analysis.py",
+            "lines": 613,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_load_alex_ai_credentials.py",
+            "path": "scripts/consolidated/consolidated_load_alex_ai_credentials.py",
+            "lines": 39,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_alex_ai_comprehensive_assessment.py",
+            "path": "scripts/consolidated/consolidated_alex_ai_comprehensive_assessment.py",
+            "lines": 245,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "comprehensive_market_research_system.py",
+            "path": "scripts/python/comprehensive_market_research_system.py",
+            "lines": 343,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "crew_coordination_update_system.py",
+            "path": "scripts/python/crew_coordination_update_system.py",
+            "lines": 243,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "alex_ai_memory_sharing_assessment.py",
+            "path": "scripts/python/alex_ai_memory_sharing_assessment.py",
+            "lines": 347,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "optimized_web_crawler_system.py",
+            "path": "scripts/python/optimized_web_crawler_system.py",
+            "lines": 489,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "advanced_ai_agent_development_system.py",
+            "path": "scripts/python/advanced_ai_agent_development_system.py",
+            "lines": 409,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "fix_credential_security.py",
+            "path": "scripts/python/fix_credential_security.py",
+            "lines": 196,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "intelligent_monorepo_cleanup.py",
+            "path": "scripts/python/intelligent_monorepo_cleanup.py",
+            "lines": 385,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "alex_ai_comprehensive_assessment.py",
+            "path": "scripts/python/alex_ai_comprehensive_assessment.py",
+            "lines": 233,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "clean_secrets.py",
+            "path": "scripts/python/clean_secrets.py",
+            "lines": 114,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "status.sh",
+            "path": "scripts/templates/safe-output/status.sh",
+            "lines": 16,
+            "purpose": "General utility script"
+          }
+        ],
+        "api_integration": [
+          {
+            "name": "fix-zshrc-api-key.sh",
+            "path": "scripts/fix-zshrc-api-key.sh",
+            "lines": 77,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "claude-api-key-guide.sh",
+            "path": "scripts/claude-api-key-guide.sh",
+            "lines": 67,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_fix-zshrc-api-key.py",
+            "path": "scripts/consolidated/consolidated_fix-zshrc-api-key.py",
+            "lines": 89,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "consolidated_claude-api-key-guide.py",
+            "path": "scripts/consolidated/consolidated_claude-api-key-guide.py",
+            "lines": 79,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "company_research_system.py",
+            "path": "scripts/python/company_research_system.py",
+            "lines": 453,
+            "purpose": "This would require LinkedIn API or web scraping"
+          }
+        ],
+        "supabase_setup": [
+          {
+            "name": "get-supabase-anon-key.sh",
+            "path": "scripts/get-supabase-anon-key.sh",
+            "lines": 77,
+            "purpose": "helps identify the correct JWT anon key for Supabase"
+          },
+          {
+            "name": "consolidated_store_crew_memories_supabase.py",
+            "path": "scripts/consolidated/consolidated_store_crew_memories_supabase.py",
+            "lines": 162,
+            "purpose": "General utility script"
+          },
+          {
+            "name": "store_crew_memories_supabase.py",
+            "path": "scripts/python/store_crew_memories_supabase.py",
+            "lines": 150,
+            "purpose": "General utility script"
+          }
+        ],
+        "unit_testing": [
+          {
+            "name": "test-workflows.sh",
+            "path": "scripts/test-workflows.sh",
+            "lines": 200,
+            "purpose": "Full JavaScript validation would require a JS engine"
+          },
+          {
+            "name": "add-test-ids.js",
+            "path": "scripts/add-test-ids.js",
+            "lines": 36,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "test-script.sh",
+            "path": "scripts/test-script.sh",
+            "lines": 14,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "consolidated_test-script.py",
+            "path": "scripts/consolidated/consolidated_test-script.py",
+            "lines": 26,
+            "purpose": "Testing and validation"
+          }
+        ],
+        "e2e_testing": [
+          {
+            "name": "fix-e2e-issues.sh",
+            "path": "scripts/fix-e2e-issues.sh",
+            "lines": 396,
+            "purpose": "addresses the main issues found in the E2E tests"
+          },
+          {
+            "name": "simple-e2e-test.js",
+            "path": "scripts/simple-e2e-test.js",
+            "lines": 588,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "improved-e2e-test.js",
+            "path": "scripts/improved-e2e-test.js",
+            "lines": 279,
+            "purpose": "Testing and validation"
+          },
+          {
+            "name": "puppeteer-e2e-test.js",
+            "path": "scripts/puppeteer-e2e-test.js",
+            "lines": 534,
+            "purpose": "Testing and validation"
+          }
+        ]
+      },
+      "consolidation_strategy": "merge_similar_scripts"
+    }
+  },
+  "total_scripts_before": 212,
+  "total_scripts_after": 148,
+  "space_saved": 991002
+}

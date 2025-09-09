@@ -114,7 +114,7 @@ Redundant Scripts: 6
 
 ### **Example 1: N8N Sync Discovery**
 ```bash
-$ python3 scripts/intelligent-script-discovery.py "sync n8n" --category "workflow"
+$ python3 scripts/deployment/general/consolidated_general.py "sync n8n" --category "workflow"
 📋 Recommendation:
   Action: extend
   Confidence: 0.90
@@ -124,7 +124,7 @@ $ python3 scripts/intelligent-script-discovery.py "sync n8n" --category "workflo
 
 ### **Example 2: API Deployment Discovery**
 ```bash
-$ python3 scripts/intelligent-script-discovery.py "deploy api endpoints" --category "deployment"
+$ python3 scripts/deployment/general/consolidated_general.py "deploy api endpoints" --category "deployment"
 📋 Recommendation:
   Action: extend
   Confidence: 0.90
@@ -136,17 +136,17 @@ $ python3 scripts/intelligent-script-discovery.py "deploy api endpoints" --categ
 
 ### **1. Run Script Analysis**
 ```bash
-python3 scripts/script-analyzer.py
+python3 scripts/deployment/general/consolidated_general.py
 ```
 
 ### **2. Discover Existing Scripts**
 ```bash
-python3 scripts/intelligent-script-discovery.py "your purpose" --category "category" --requirements "requirements"
+python3 scripts/deployment/general/consolidated_general.py "your purpose" --category "category" --requirements "requirements"
 ```
 
 ### **3. Create Script from Discovery**
 ```bash
-python3 scripts/intelligent-script-discovery.py "purpose" --create --output "path/to/script.sh"
+python3 scripts/deployment/general/consolidated_general.py "purpose" --create --output "path/to/script.sh"
 ```
 
 ### **4. Open Management Dashboard**
@@ -196,9 +196,9 @@ open scripts/script-management-dashboard.html
 ## 📋 **Files Created**
 
 ### **Core System Files**
-- `scripts/script-analyzer.py` - Main analysis engine
-- `scripts/script-memory-system.py` - Supabase integration
-- `scripts/intelligent-script-discovery.py` - AI discovery system
+- `scripts/deployment/general/consolidated_general.py` - Main analysis engine
+- `scripts/deployment/general/consolidated_general.py` - Supabase integration
+- `scripts/deployment/general/consolidated_general.py` - AI discovery system
 - `scripts/create-script-memory-schema.sql` - Database schema
 
 ### **Dashboard & Visualization**

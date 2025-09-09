@@ -1,0 +1,16 @@
+{
+  "n8n": {
+    "url": "https://n8n.pbradygeorgen.com",
+    "api_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZTA3ZGJlZi0yZDJmLTQ2YjUtYWQ3ZC0yYjIzZTk2ZWE1NjYiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwiaWF0IjoxNzU2MDk3MjIyfQ.wFPf3jA0X2zdNkaPqoPzTEAE-MsS-XcM6Gk20KYr4Dw"
+  },
+  "sync": {
+    "workflows_dir": "workflows",
+    "analysis_dir": "analysis",
+    "monitor_interval": 60,
+    "alert_threshold": 5
+  },
+  "dashboard": {
+    "refresh_interval": 30000,
+    "data_file": "n8n-sync-dashboard.json"
+  }
+}

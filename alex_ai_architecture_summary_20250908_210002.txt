@@ -1,0 +1,33 @@
+
+🧠 ALEX AI MEMORY: N8N Gatekeeper Architecture
+==============================================
+
+CRITICAL INSIGHT: Supabase Must Stay Behind N8N
+
+PROBLEM: Repeated attempts to put Supabase directly into Next.js UI layer
+SOLUTION: Enforce N8N gatekeeper pattern - Client → N8N → Supabase → N8N → Client
+PRIORITY: CRITICAL - Prevents system architecture violations
+
+KEY RULES:
+- NEVER import Supabase client in Next.js API routes
+- NEVER create direct Supabase connections in frontend
+- ALWAYS route data through N8N webhooks
+- ALWAYS use N8N as the single source of truth
+- ALWAYS maintain the gatekeeper pattern
+
+ARCHITECTURE FLOW:
+✅ CORRECT: Client → N8N → Supabase → N8N → Client
+❌ WRONG: Client → Supabase (bypassing N8N)
+
+PREVENTION: This memory must be referenced when designing any data flow
+or API architecture to prevent hallucinations that break the N8N gatekeeper system.
+
+CREW RELEVANCE:
+- Data: Highest (data operations)
+- Geordi: Highest (technical infrastructure)
+- Q: Highest (system anomalies)
+- Others: High/Medium (various specializations)
+
+TIMESTAMP: 2025-09-08T21:00:02.210183
+STATUS: ACTIVE - Must be remembered
+        

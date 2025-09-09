@@ -1,0 +1,1018 @@
+[
+  {
+    "type": "function_consolidation",
+    "function": "log_info",
+    "kept_in": "scripts/n8n-change-monitor.sh",
+    "removed_from": [
+      "scripts/n8n-cicd-sync.sh",
+      "scripts/analyze-conflicts.sh",
+      "scripts/security-validation.sh",
+      "scripts/test-workflows.sh",
+      "scripts/analyze-production-changes.sh",
+      "scripts/setup-bidirectional-sync.sh",
+      "scripts/test-intelligent-discovery.sh",
+      "scripts/setup-n8n-bidirectional-sync.sh",
+      "scripts/sync-dashboard.sh",
+      "scripts/automate-bidirectional-setup.sh",
+      "scripts/automate-bidirectional-setup.sh"
+    ],
+    "savings": 33
+  },
+  {
+    "type": "function_consolidation",
+    "function": "log_success",
+    "kept_in": "scripts/n8n-change-monitor.sh",
+    "removed_from": [
+      "scripts/n8n-cicd-sync.sh",
+      "scripts/analyze-conflicts.sh",
+      "scripts/security-validation.sh",
+      "scripts/test-workflows.sh",
+      "scripts/analyze-production-changes.sh",
+      "scripts/setup-bidirectional-sync.sh",
+      "scripts/test-intelligent-discovery.sh",
+      "scripts/setup-n8n-bidirectional-sync.sh",
+      "scripts/sync-dashboard.sh",
+      "scripts/automate-bidirectional-setup.sh",
+      "scripts/automate-bidirectional-setup.sh"
+    ],
+    "savings": 33
+  },
+  {
+    "type": "function_consolidation",
+    "function": "log_warning",
+    "kept_in": "scripts/n8n-change-monitor.sh",
+    "removed_from": [
+      "scripts/n8n-cicd-sync.sh",
+      "scripts/analyze-conflicts.sh",
+      "scripts/security-validation.sh",
+      "scripts/test-workflows.sh",
+      "scripts/analyze-production-changes.sh",
+      "scripts/setup-bidirectional-sync.sh",
+      "scripts/test-intelligent-discovery.sh",
+      "scripts/setup-n8n-bidirectional-sync.sh",
+      "scripts/sync-dashboard.sh",
+      "scripts/automate-bidirectional-setup.sh"
+    ],
+    "savings": 30
+  },
+  {
+    "type": "function_consolidation",
+    "function": "log_error",
+    "kept_in": "scripts/n8n-change-monitor.sh",
+    "removed_from": [
+      "scripts/n8n-cicd-sync.sh",
+      "scripts/analyze-conflicts.sh",
+      "scripts/security-validation.sh",
+      "scripts/test-workflows.sh",
+      "scripts/analyze-production-changes.sh",
+      "scripts/setup-bidirectional-sync.sh",
+      "scripts/test-intelligent-discovery.sh",
+      "scripts/setup-n8n-bidirectional-sync.sh",
+      "scripts/sync-dashboard.sh",
+      "scripts/automate-bidirectional-setup.sh"
+    ],
+    "savings": 30
+  },
+  {
+    "type": "function_consolidation",
+    "function": "check_prerequisites",
+    "kept_in": "scripts/setup-bidirectional-sync.sh",
+    "removed_from": [
+      "scripts/n8n-cicd-sync.sh",
+      "scripts/setup-n8n-bidirectional-sync.sh",
+      "scripts/n8n-change-monitor.sh",
+      "scripts/automate-bidirectional-setup.sh"
+    ],
+    "savings": 102
+  },
+  {
+    "type": "function_consolidation",
+    "function": "test_n8n_connection",
+    "kept_in": "scripts/n8n-cicd-sync.sh",
+    "removed_from": [
+      "scripts/n8n-change-monitor.sh",
+      "scripts/deploy-complete-n8n-infrastructure.sh"
+    ],
+    "savings": 25
+  },
+  {
+    "type": "function_consolidation",
+    "function": "main",
+    "kept_in": "scripts/python/business_operations_legal_system.py",
+    "removed_from": [
+      "scripts/n8n-cicd-sync.sh",
+      "scripts/intelligent-script-discovery.py",
+      "scripts/setup-supabase-with-credentials.sh",
+      "scripts/script-consolidation-plan.py",
+      "scripts/milestone-push.sh",
+      "scripts/milestone-push-system.sh",
+      "scripts/deploy-n8n-with-credentials.sh",
+      "scripts/script-memory-system.py",
+      "scripts/analyze-conflicts.sh",
+      "scripts/add-quote-handling-memory.py",
+      "scripts/security-validation.sh",
+      "scripts/validate-consolidated-structure.py",
+      "scripts/quick-production-test.sh",
+      "scripts/security-audit.sh",
+      "scripts/n8n-bidirectional-sync.py",
+      "scripts/test-workflows.sh",
+      "scripts/n8n-sync-monitor.py",
+      "scripts/update-script-references.py",
+      "scripts/production-readiness-assessment.sh",
+      "scripts/validate-api-keys.sh",
+      "scripts/add-architecture-memory.py",
+      "scripts/analyze-production-changes.sh",
+      "scripts/comprehensive-string-fix.sh",
+      "scripts/comprehensive-string-fix.sh",
+      "scripts/comprehensive-string-fix.sh",
+      "scripts/script-analyzer.py",
+      "scripts/setup-bidirectional-sync.sh",
+      "scripts/master-safe-execute.sh",
+      "scripts/test-intelligent-discovery.sh",
+      "scripts/setup-hourly-scraping.sh",
+      "scripts/setup-n8n-bidirectional-sync.sh",
+      "scripts/sync-dashboard.sh",
+      "scripts/secure-credential-manager.sh",
+      "scripts/n8n-change-monitor.sh",
+      "scripts/shell-prompt-safety-system.sh",
+      "scripts/production-shell-engine.sh",
+      "scripts/production-shell-engine.sh",
+      "scripts/intelligent-script-purge.py",
+      "scripts/deep-code-analyzer.py",
+      "scripts/validate-strings.sh",
+      "scripts/add-quote-handling-memory-simple.py",
+      "scripts/production-testing-suite.sh",
+      "scripts/automate-bidirectional-setup.sh",
+      "scripts/automate-bidirectional-setup.sh",
+      "scripts/deploy-complete-n8n-infrastructure.sh",
+      "scripts/string-manipulation-fix.sh",
+      "scripts/string-manipulation-fix.sh",
+      "scripts/generated/test-basic.sh",
+      "scripts/python/youtube_scraper_crew_integration.py",
+      "scripts/python/final_monorepo_cleanup.py",
+      "scripts/python/turborepo_implementation_plan.py",
+      "scripts/python/alex_ai_yolo_mode_integration_system.py",
+      "scripts/python/comprehensive_market_research_system.py",
+      "scripts/python/phase2_turborepo_optimization.py",
+      "scripts/python/crew_coordination_update_system.py",
+      "scripts/python/youtube_crew_memory_integration.py",
+      "scripts/python/test_mcp_system.py",
+      "scripts/python/enhanced_ai_prompts_system.py",
+      "scripts/python/alex_ai_credential_manager.py",
+      "scripts/python/alex_ai_yolo_initialization.py",
+      "scripts/python/alex_ai_memory_sharing_assessment.py",
+      "scripts/python/alex_ai_crew_mermaid_models.py",
+      "scripts/python/enhanced_unified_router.py",
+      "scripts/python/crew_learning_assessment.py",
+      "scripts/python/optimized_web_crawler_system.py",
+      "scripts/python/observation_lounge_crew_debrief.py",
+      "scripts/python/enhanced_ai_prompts_deployment_system.py",
+      "scripts/python/cursor_ai_behavior_analysis.py",
+      "scripts/python/alex_ai_job_search_system.py",
+      "scripts/python/yolo_mode_crew_memory_update.py",
+      "scripts/python/youtube_channel_intelligence_system.py",
+      "scripts/python/crew_yolo_mode_memory_sync.py",
+      "scripts/python/alex_ai_job_search_integration.py",
+      "scripts/python/test_channel_intelligence_system.py",
+      "scripts/python/cursor_ai_integration_memory_update.py",
+      "scripts/python/simple_youtube_crew_memory_demo.py",
+      "scripts/python/comprehensive_yolo_stress_test.py",
+      "scripts/python/observation_lounge_yolo_mode_debrief.py",
+      "scripts/python/knowledge_gap_research_plan.py",
+      "scripts/python/mcp_memory_optimization_system.py",
+      "scripts/python/research_phase_execution_plan.py",
+      "scripts/python/advanced_ai_agent_development_system.py",
+      "scripts/python/simple_turborepo_research_system.py",
+      "scripts/python/agile_sprint_dashboard_system.py",
+      "scripts/python/test_youtube_scraper_integration.py",
+      "scripts/python/crew_business_readiness_consensus.py",
+      "scripts/python/crew_coordinator.py",
+      "scripts/python/phase3_alex_ai_integration.py",
+      "scripts/python/alex_ai_yolo_mode_memory_integration.py",
+      "scripts/python/supabase_data_import_script.py",
+      "scripts/python/observation_lounge_memory_consensus.py",
+      "scripts/python/test_alex_ai_system.py",
+      "scripts/python/email_research_system.py",
+      "scripts/python/fix_credential_security.py",
+      "scripts/python/progressive_git_push_system.py",
+      "scripts/python/yolo_mode_issue_investigation.py",
+      "scripts/python/mcp_library_computer_system.py",
+      "scripts/python/phase1_turborepo_setup.py",
+      "scripts/python/n8n_integration_test_system.py",
+      "scripts/python/proper_yolo_mode_configuration.py",
+      "scripts/python/intelligent_monorepo_cleanup.py",
+      "scripts/python/company_research_system.py",
+      "scripts/python/alex-ai-universal-deployment-system.py",
+      "scripts/python/alex_ai_comprehensive_assessment.py",
+      "scripts/python/business_readiness_assessment.py",
+      "scripts/python/demo_youtube_scraper_system.py",
+      "scripts/python/store_crew_memories_supabase.py"
+    ],
+    "savings": 3278
+  },
+  {
+    "type": "function_consolidation",
+    "function": "print_status",
+    "kept_in": "scripts/security-audit.sh",
+    "removed_from": [
+      "scripts/greg-community-intelligence-dual-milestone-push.sh",
+      "scripts/milestone-push.sh",
+      "scripts/channel-intelligence-dual-milestone-push.sh"
+    ],
+    "savings": 9
+  },
+  {
+    "type": "function_consolidation",
+    "function": "print_success",
+    "kept_in": "scripts/greg-community-intelligence-dual-milestone-push.sh",
+    "removed_from": [
+      "scripts/channel-intelligence-dual-milestone-push.sh",
+      "scripts/alex-ai-universal-milestone-push.sh",
+      "scripts/alex-ai-universal-git-milestone-push.sh",
+      "scripts/enhanced-ai-prompts-dual-milestone-push.sh"
+    ],
+    "savings": 12
+  },
+  {
+    "type": "function_consolidation",
+    "function": "print_error",
+    "kept_in": "scripts/greg-community-intelligence-dual-milestone-push.sh",
+    "removed_from": [
+      "scripts/milestone-push.sh",
+      "scripts/channel-intelligence-dual-milestone-push.sh",
+      "scripts/alex-ai-universal-milestone-push.sh",
+      "scripts/alex-ai-universal-git-milestone-push.sh",
+      "scripts/enhanced-ai-prompts-dual-milestone-push.sh"
+    ],
+    "savings": 15
+  },
+  {
+    "type": "function_consolidation",
+    "function": "print_section",
+    "kept_in": "scripts/greg-community-intelligence-dual-milestone-push.sh",
+    "removed_from": [
+      "scripts/channel-intelligence-dual-milestone-push.sh"
+    ],
+    "savings": 6
+  },
+  {
+    "type": "function_consolidation",
+    "function": "__init__",
+    "kept_in": "scripts/python/research_phase_execution_plan.py",
+    "removed_from": [
+      "scripts/intelligent-script-discovery.py",
+      "scripts/script-consolidation-plan.py",
+      "scripts/script-memory-system.py",
+      "scripts/add-quote-handling-memory.py",
+      "scripts/validate-consolidated-structure.py",
+      "scripts/n8n-bidirectional-sync.py",
+      "scripts/n8n-sync-monitor.py",
+      "scripts/update-script-references.py",
+      "scripts/add-architecture-memory.py",
+      "scripts/script-analyzer.py",
+      "scripts/intelligent-script-purge.py",
+      "scripts/deep-code-analyzer.py",
+      "scripts/add-quote-handling-memory-simple.py",
+      "scripts/python/youtube_scraper_crew_integration.py",
+      "scripts/python/final_monorepo_cleanup.py",
+      "scripts/python/turborepo_implementation_plan.py",
+      "scripts/python/alex_ai_yolo_mode_integration_system.py",
+      "scripts/python/comprehensive_market_research_system.py",
+      "scripts/python/phase2_turborepo_optimization.py",
+      "scripts/python/youtube_crew_memory_integration.py",
+      "scripts/python/test_mcp_system.py",
+      "scripts/python/enhanced_ai_prompts_system.py",
+      "scripts/python/alex_ai_credential_manager.py",
+      "scripts/python/alex_ai_yolo_initialization.py",
+      "scripts/python/alex_ai_memory_sharing_assessment.py",
+      "scripts/python/alex_ai_crew_mermaid_models.py",
+      "scripts/python/enhanced_unified_router.py",
+      "scripts/python/crew_learning_assessment.py",
+      "scripts/python/optimized_web_crawler_system.py",
+      "scripts/python/enhanced_ai_prompts_deployment_system.py",
+      "scripts/python/cursor_ai_behavior_analysis.py",
+      "scripts/python/alex_ai_job_search_system.py",
+      "scripts/python/yolo_mode_crew_memory_update.py",
+      "scripts/python/youtube_channel_intelligence_system.py",
+      "scripts/python/crew_yolo_mode_memory_sync.py",
+      "scripts/python/alex_ai_job_search_integration.py",
+      "scripts/python/test_channel_intelligence_system.py",
+      "scripts/python/cursor_ai_integration_memory_update.py",
+      "scripts/python/simple_youtube_crew_memory_demo.py",
+      "scripts/python/comprehensive_yolo_stress_test.py",
+      "scripts/python/observation_lounge_yolo_mode_debrief.py",
+      "scripts/python/mcp_memory_optimization_system.py",
+      "scripts/python/repository_optimization_analysis.py",
+      "scripts/python/business_operations_legal_system.py",
+      "scripts/python/advanced_ai_agent_development_system.py",
+      "scripts/python/advanced_ai_agent_development_system.py",
+      "scripts/python/simple_turborepo_research_system.py",
+      "scripts/python/agile_sprint_dashboard_system.py",
+      "scripts/python/test_youtube_scraper_integration.py",
+      "scripts/python/crew_coordinator.py",
+      "scripts/python/phase3_alex_ai_integration.py",
+      "scripts/python/alex_ai_yolo_mode_memory_integration.py",
+      "scripts/python/mcp_integration_system.py",
+      "scripts/python/supabase_data_import_script.py",
+      "scripts/python/observation_lounge_memory_consensus.py",
+      "scripts/python/email_research_system.py",
+      "scripts/python/turborepo_research_system.py",
+      "scripts/python/progressive_git_push_system.py",
+      "scripts/python/yolo_mode_issue_investigation.py",
+      "scripts/python/mcp_library_computer_system.py",
+      "scripts/python/phase1_turborepo_setup.py",
+      "scripts/python/n8n_integration_test_system.py",
+      "scripts/python/proper_yolo_mode_configuration.py",
+      "scripts/python/intelligent_monorepo_cleanup.py",
+      "scripts/python/company_research_system.py",
+      "scripts/python/alex-ai-universal-deployment-system.py",
+      "scripts/python/alex_ai_comprehensive_assessment.py",
+      "scripts/python/demo_youtube_scraper_system.py",
+      "scripts/python/clean_secrets.py",
+      "scripts/python/store_crew_memories_supabase.py"
+    ],
+    "savings": 1691
+  },
+  {
+    "type": "function_consolidation",
+    "function": "load_analysis",
+    "kept_in": "scripts/intelligent-script-discovery.py",
+    "removed_from": [
+      "scripts/script-consolidation-plan.py"
+    ],
+    "savings": 8
+  },
+  {
+    "type": "function_consolidation",
+    "function": "create_backup",
+    "kept_in": "scripts/python/final_monorepo_cleanup.py",
+    "removed_from": [
+      "scripts/script-consolidation-plan.py",
+      "scripts/intelligent-script-purge.py",
+      "scripts/python/intelligent_monorepo_cleanup.py"
+    ],
+    "savings": 18
+  },
+  {
+    "type": "function_consolidation",
+    "function": "print_info",
+    "kept_in": "scripts/milestone-push.sh",
+    "removed_from": [
+      "scripts/alex-ai-universal-milestone-push.sh",
+      "scripts/alex-ai-universal-git-milestone-push.sh",
+      "scripts/enhanced-ai-prompts-dual-milestone-push.sh"
+    ],
+    "savings": 9
+  },
+  {
+    "type": "function_consolidation",
+    "function": "print_warning",
+    "kept_in": "scripts/milestone-push.sh",
+    "removed_from": [
+      "scripts/alex-ai-universal-milestone-push.sh",
+      "scripts/alex-ai-universal-git-milestone-push.sh",
+      "scripts/enhanced-ai-prompts-dual-milestone-push.sh"
+    ],
+    "savings": 9
+  },
+  {
+    "type": "function_consolidation",
+    "function": "safe_execute",
+    "kept_in": "scripts/shell-prompt-safety-system.sh",
+    "removed_from": [
+      "scripts/safe-execute.sh",
+      "scripts/comprehensive-string-fix.sh",
+      "scripts/master-safe-execute.sh",
+      "scripts/string-manipulation-fix.sh"
+    ],
+    "savings": 70
+  },
+  {
+    "type": "function_consolidation",
+    "function": "safe_status",
+    "kept_in": "scripts/safe-execute.sh",
+    "removed_from": [
+      "scripts/comprehensive-string-fix.sh",
+      "scripts/comprehensive-string-fix.sh",
+      "scripts/master-safe-execute.sh",
+      "scripts/string-manipulation-fix.sh",
+      "scripts/string-manipulation-fix.sh"
+    ],
+    "savings": 32
+  },
+  {
+    "type": "function_consolidation",
+    "function": "safe_milestone",
+    "kept_in": "scripts/safe-execute.sh",
+    "removed_from": [
+      "scripts/comprehensive-string-fix.sh",
+      "scripts/comprehensive-string-fix.sh",
+      "scripts/master-safe-execute.sh",
+      "scripts/string-manipulation-fix.sh",
+      "scripts/string-manipulation-fix.sh",
+      "scripts/templates/safe-output/milestone.sh"
+    ],
+    "savings": 57
+  },
+  {
+    "type": "function_consolidation",
+    "function": "safe_progress",
+    "kept_in": "scripts/safe-execute.sh",
+    "removed_from": [
+      "scripts/comprehensive-string-fix.sh",
+      "scripts/comprehensive-string-fix.sh",
+      "scripts/master-safe-execute.sh",
+      "scripts/string-manipulation-fix.sh",
+      "scripts/string-manipulation-fix.sh",
+      "scripts/templates/safe-output/progress.sh"
+    ],
+    "savings": 69
+  },
+  {
+    "type": "function_consolidation",
+    "function": "safe_list",
+    "kept_in": "scripts/safe-execute.sh",
+    "removed_from": [
+      "scripts/comprehensive-string-fix.sh",
+      "scripts/comprehensive-string-fix.sh",
+      "scripts/master-safe-execute.sh",
+      "scripts/string-manipulation-fix.sh",
+      "scripts/string-manipulation-fix.sh",
+      "scripts/templates/safe-output/list.sh"
+    ],
+    "savings": 81
+  },
+  {
+    "type": "function_consolidation",
+    "function": "save_memory_to_file",
+    "kept_in": "scripts/add-architecture-memory.py",
+    "removed_from": [
+      "scripts/add-quote-handling-memory.py",
+      "scripts/add-quote-handling-memory-simple.py"
+    ],
+    "savings": 53
+  },
+  {
+    "type": "function_consolidation",
+    "function": "add_memory",
+    "kept_in": "scripts/add-quote-handling-memory.py",
+    "removed_from": [
+      "scripts/add-architecture-memory.py",
+      "scripts/add-quote-handling-memory-simple.py"
+    ],
+    "savings": 76
+  },
+  {
+    "type": "function_consolidation",
+    "function": "test_result",
+    "kept_in": "scripts/quick-production-test.sh",
+    "removed_from": [
+      "scripts/production-testing-suite.sh"
+    ],
+    "savings": 15
+  },
+  {
+    "type": "function_consolidation",
+    "function": "test_shell_generation",
+    "kept_in": "scripts/production-testing-suite.sh",
+    "removed_from": [
+      "scripts/quick-production-test.sh"
+    ],
+    "savings": 26
+  },
+  {
+    "type": "function_consolidation",
+    "function": "test_error_handling",
+    "kept_in": "scripts/python/comprehensive_yolo_stress_test.py",
+    "removed_from": [
+      "scripts/quick-production-test.sh",
+      "scripts/production-testing-suite.sh"
+    ],
+    "savings": 30
+  },
+  {
+    "type": "function_consolidation",
+    "function": "test_performance",
+    "kept_in": "scripts/python/comprehensive_yolo_stress_test.py",
+    "removed_from": [
+      "scripts/quick-production-test.sh",
+      "scripts/production-testing-suite.sh",
+      "scripts/python/enhanced_prompts_test_suite.py"
+    ],
+    "savings": 56
+  },
+  {
+    "type": "function_consolidation",
+    "function": "log",
+    "kept_in": "scripts/python/final_monorepo_cleanup.py",
+    "removed_from": [
+      "scripts/production-readiness-assessment.sh",
+      "scripts/validate-api-keys.sh",
+      "scripts/production-shell-engine.sh",
+      "scripts/production-shell-engine.sh",
+      "scripts/production-testing-suite.sh",
+      "scripts/generated/test-basic.sh",
+      "scripts/python/intelligent_monorepo_cleanup.py"
+    ],
+    "savings": 24
+  },
+  {
+    "type": "function_consolidation",
+    "function": "print_header",
+    "kept_in": "scripts/alex-ai-universal-milestone-push.sh",
+    "removed_from": [
+      "scripts/alex-ai-universal-git-milestone-push.sh",
+      "scripts/enhanced-ai-prompts-dual-milestone-push.sh"
+    ],
+    "savings": 10
+  },
+  {
+    "type": "function_consolidation",
+    "function": "print_step",
+    "kept_in": "scripts/alex-ai-universal-milestone-push.sh",
+    "removed_from": [
+      "scripts/alex-ai-universal-git-milestone-push.sh",
+      "scripts/enhanced-ai-prompts-dual-milestone-push.sh"
+    ],
+    "savings": 6
+  },
+  {
+    "type": "function_consolidation",
+    "function": "create_memory_summary",
+    "kept_in": "scripts/python/store_crew_memories_supabase.py",
+    "removed_from": [
+      "scripts/add-architecture-memory.py",
+      "scripts/add-quote-handling-memory-simple.py"
+    ],
+    "savings": 65
+  },
+  {
+    "type": "function_consolidation",
+    "function": "safe_echo",
+    "kept_in": "scripts/comprehensive-string-fix.sh",
+    "removed_from": [
+      "scripts/master-safe-execute.sh"
+    ],
+    "savings": 3
+  },
+  {
+    "type": "function_consolidation",
+    "function": "log_step",
+    "kept_in": "scripts/python/phase2_turborepo_optimization.py",
+    "removed_from": [
+      "scripts/setup-bidirectional-sync.sh",
+      "scripts/automate-bidirectional-setup.sh",
+      "scripts/python/phase3_alex_ai_integration.py",
+      "scripts/python/phase1_turborepo_setup.py"
+    ],
+    "savings": 40
+  },
+  {
+    "type": "function_consolidation",
+    "function": "log_automation",
+    "kept_in": "scripts/setup-bidirectional-sync.sh",
+    "removed_from": [
+      "scripts/automate-bidirectional-setup.sh"
+    ],
+    "savings": 3
+  },
+  {
+    "type": "function_consolidation",
+    "function": "configure_github_secrets",
+    "kept_in": "scripts/setup-bidirectional-sync.sh",
+    "removed_from": [
+      "scripts/automate-bidirectional-setup.sh"
+    ],
+    "savings": 52
+  },
+  {
+    "type": "function_consolidation",
+    "function": "enable_scheduled_workflows",
+    "kept_in": "scripts/automate-bidirectional-setup.sh",
+    "removed_from": [
+      "scripts/setup-bidirectional-sync.sh"
+    ],
+    "savings": 40
+  },
+  {
+    "type": "function_consolidation",
+    "function": "generate_final_report",
+    "kept_in": "scripts/setup-bidirectional-sync.sh",
+    "removed_from": [
+      "scripts/automate-bidirectional-setup.sh"
+    ],
+    "savings": 90
+  },
+  {
+    "type": "function_consolidation",
+    "function": "handle_error",
+    "kept_in": "scripts/production-shell-engine.sh",
+    "removed_from": [
+      "scripts/generated/test-basic.sh"
+    ],
+    "savings": 6
+  },
+  {
+    "type": "function_consolidation",
+    "function": "safe_output",
+    "kept_in": "scripts/string-manipulation-fix.sh",
+    "removed_from": [
+      "scripts/production-shell-engine.sh"
+    ],
+    "savings": 4
+  },
+  {
+    "type": "function_consolidation",
+    "function": "output",
+    "kept_in": "scripts/production-shell-engine.sh",
+    "removed_from": [
+      "scripts/generated/test-status.sh",
+      "scripts/generated/test-progress.sh"
+    ],
+    "savings": 6
+  },
+  {
+    "type": "function_consolidation",
+    "function": "show_status",
+    "kept_in": "scripts/production-shell-engine.sh",
+    "removed_from": [
+      "scripts/generated/test-status.sh"
+    ],
+    "savings": 15
+  },
+  {
+    "type": "function_consolidation",
+    "function": "update_progress",
+    "kept_in": "scripts/production-shell-engine.sh",
+    "removed_from": [
+      "scripts/generated/test-progress.sh"
+    ],
+    "savings": 11
+  },
+  {
+    "type": "function_consolidation",
+    "function": "run_progress",
+    "kept_in": "scripts/production-shell-engine.sh",
+    "removed_from": [
+      "scripts/generated/test-progress.sh"
+    ],
+    "savings": 22
+  },
+  {
+    "type": "function_consolidation",
+    "function": "logTest",
+    "kept_in": "scripts/simple-e2e-test.js",
+    "removed_from": [
+      "scripts/improved-e2e-test.js",
+      "scripts/puppeteer-e2e-test.js"
+    ],
+    "savings": 24
+  },
+  {
+    "type": "function_consolidation",
+    "function": "takeScreenshot",
+    "kept_in": "scripts/simple-e2e-test.js",
+    "removed_from": [
+      "scripts/improved-e2e-test.js",
+      "scripts/puppeteer-e2e-test.js"
+    ],
+    "savings": 20
+  },
+  {
+    "type": "function_consolidation",
+    "function": "waitForElement",
+    "kept_in": "scripts/simple-e2e-test.js",
+    "removed_from": [
+      "scripts/puppeteer-e2e-test.js"
+    ],
+    "savings": 8
+  },
+  {
+    "type": "function_consolidation",
+    "function": "testPageLoad",
+    "kept_in": "scripts/improved-e2e-test.js",
+    "removed_from": [
+      "scripts/simple-e2e-test.js",
+      "scripts/puppeteer-e2e-test.js"
+    ],
+    "savings": 56
+  },
+  {
+    "type": "function_consolidation",
+    "function": "testDashboardButtons",
+    "kept_in": "scripts/simple-e2e-test.js",
+    "removed_from": [
+      "scripts/improved-e2e-test.js",
+      "scripts/puppeteer-e2e-test.js"
+    ],
+    "savings": 101
+  },
+  {
+    "type": "function_consolidation",
+    "function": "testJobCards",
+    "kept_in": "scripts/simple-e2e-test.js",
+    "removed_from": [
+      "scripts/improved-e2e-test.js",
+      "scripts/puppeteer-e2e-test.js"
+    ],
+    "savings": 109
+  },
+  {
+    "type": "function_consolidation",
+    "function": "testFilterSidebar",
+    "kept_in": "scripts/simple-e2e-test.js",
+    "removed_from": [
+      "scripts/puppeteer-e2e-test.js"
+    ],
+    "savings": 42
+  },
+  {
+    "type": "function_consolidation",
+    "function": "testResumeUpload",
+    "kept_in": "scripts/simple-e2e-test.js",
+    "removed_from": [
+      "scripts/puppeteer-e2e-test.js"
+    ],
+    "savings": 38
+  },
+  {
+    "type": "function_consolidation",
+    "function": "testResponsiveDesign",
+    "kept_in": "scripts/simple-e2e-test.js",
+    "removed_from": [
+      "scripts/puppeteer-e2e-test.js"
+    ],
+    "savings": 30
+  },
+  {
+    "type": "function_consolidation",
+    "function": "testAPIConnectivity",
+    "kept_in": "scripts/simple-e2e-test.js",
+    "removed_from": [
+      "scripts/improved-e2e-test.js",
+      "scripts/puppeteer-e2e-test.js"
+    ],
+    "savings": 103
+  },
+  {
+    "type": "function_consolidation",
+    "function": "runAllTests",
+    "kept_in": "scripts/simple-e2e-test.js",
+    "removed_from": [
+      "scripts/improved-e2e-test.js",
+      "scripts/puppeteer-e2e-test.js"
+    ],
+    "savings": 95
+  },
+  {
+    "type": "function_consolidation",
+    "function": "validate_strings",
+    "kept_in": "scripts/validate-strings.sh",
+    "removed_from": [
+      "scripts/string-manipulation-fix.sh"
+    ],
+    "savings": 32
+  },
+  {
+    "type": "function_consolidation",
+    "function": "organize_remaining_files",
+    "kept_in": "scripts/python/final_monorepo_cleanup.py",
+    "removed_from": [
+      "scripts/python/intelligent_monorepo_cleanup.py"
+    ],
+    "savings": 17
+  },
+  {
+    "type": "function_consolidation",
+    "function": "run_command",
+    "kept_in": "scripts/python/phase2_turborepo_optimization.py",
+    "removed_from": [
+      "scripts/python/phase3_alex_ai_integration.py",
+      "scripts/python/phase1_turborepo_setup.py"
+    ],
+    "savings": 48
+  },
+  {
+    "type": "function_consolidation",
+    "function": "store_crew_memories",
+    "kept_in": "scripts/python/store_crew_memories_supabase.py",
+    "removed_from": [
+      "scripts/python/youtube_crew_memory_integration.py",
+      "scripts/python/simple_youtube_crew_memory_demo.py"
+    ],
+    "savings": 50
+  },
+  {
+    "type": "function_consolidation",
+    "function": "_store_in_mcp_system",
+    "kept_in": "scripts/python/yolo_mode_crew_memory_update.py",
+    "removed_from": [
+      "scripts/python/youtube_crew_memory_integration.py",
+      "scripts/python/alex_ai_yolo_initialization.py",
+      "scripts/python/cursor_ai_integration_memory_update.py",
+      "scripts/python/simple_youtube_crew_memory_demo.py"
+    ],
+    "savings": 100
+  },
+  {
+    "type": "function_consolidation",
+    "function": "calculate_importance_score",
+    "kept_in": "scripts/python/test_mcp_system.py",
+    "removed_from": [
+      "scripts/python/mcp_memory_optimization_system.py"
+    ],
+    "savings": 35
+  },
+  {
+    "type": "function_consolidation",
+    "function": "find_similar_memories",
+    "kept_in": "scripts/python/test_mcp_system.py",
+    "removed_from": [
+      "scripts/python/mcp_memory_optimization_system.py"
+    ],
+    "savings": 18
+  },
+  {
+    "type": "function_consolidation",
+    "function": "consolidate_similar_memories",
+    "kept_in": "scripts/python/test_mcp_system.py",
+    "removed_from": [
+      "scripts/python/mcp_memory_optimization_system.py"
+    ],
+    "savings": 43
+  },
+  {
+    "type": "function_consolidation",
+    "function": "_consolidate_content",
+    "kept_in": "scripts/python/test_mcp_system.py",
+    "removed_from": [
+      "scripts/python/mcp_memory_optimization_system.py"
+    ],
+    "savings": 21
+  },
+  {
+    "type": "function_consolidation",
+    "function": "_create_content_summary",
+    "kept_in": "scripts/python/test_mcp_system.py",
+    "removed_from": [
+      "scripts/python/mcp_memory_optimization_system.py"
+    ],
+    "savings": 31
+  },
+  {
+    "type": "function_consolidation",
+    "function": "generate_optimization_report",
+    "kept_in": "scripts/python/mcp_memory_optimization_system.py",
+    "removed_from": [
+      "scripts/python/test_mcp_system.py",
+      "scripts/python/repository_optimization_analysis.py"
+    ],
+    "savings": 103
+  },
+  {
+    "type": "function_consolidation",
+    "function": "create_crew_specific_memories",
+    "kept_in": "scripts/python/yolo_mode_crew_memory_update.py",
+    "removed_from": [
+      "scripts/python/cursor_ai_integration_memory_update.py"
+    ],
+    "savings": 33
+  },
+  {
+    "type": "function_consolidation",
+    "function": "store_memories",
+    "kept_in": "scripts/python/yolo_mode_crew_memory_update.py",
+    "removed_from": [
+      "scripts/python/cursor_ai_integration_memory_update.py"
+    ],
+    "savings": 20
+  },
+  {
+    "type": "function_consolidation",
+    "function": "generate_integration_report",
+    "kept_in": "scripts/python/yolo_mode_crew_memory_update.py",
+    "removed_from": [
+      "scripts/python/cursor_ai_integration_memory_update.py"
+    ],
+    "savings": 82
+  },
+  {
+    "type": "function_consolidation",
+    "function": "run_update",
+    "kept_in": "scripts/python/yolo_mode_crew_memory_update.py",
+    "removed_from": [
+      "scripts/python/cursor_ai_integration_memory_update.py"
+    ],
+    "savings": 30
+  },
+  {
+    "type": "function_consolidation",
+    "function": "_initialize_crew",
+    "kept_in": "scripts/python/simple_turborepo_research_system.py",
+    "removed_from": [
+      "scripts/python/observation_lounge_yolo_mode_debrief.py",
+      "scripts/python/turborepo_research_system.py"
+    ],
+    "savings": 122
+  },
+  {
+    "type": "function_consolidation",
+    "function": "save_research_data",
+    "kept_in": "scripts/python/turborepo_research_system.py",
+    "removed_from": [
+      "scripts/python/simple_turborepo_research_system.py"
+    ],
+    "savings": 28
+  },
+  {
+    "type": "function_consolidation",
+    "function": "save_results",
+    "kept_in": "scripts/python/email_research_system.py",
+    "removed_from": [
+      "scripts/python/company_research_system.py"
+    ],
+    "savings": 5
+  },
+  {
+    "type": "script_consolidation",
+    "kept_script": "scripts/greg-community-intelligence-dual-milestone-push.sh",
+    "merged_scripts": [
+      "scripts/channel-intelligence-dual-milestone-push.sh"
+    ],
+    "savings": 1
+  },
+  {
+    "type": "script_consolidation",
+    "kept_script": "scripts/safe-execute.sh",
+    "merged_scripts": [
+      "scripts/master-safe-execute.sh"
+    ],
+    "savings": 1
+  },
+  {
+    "type": "script_consolidation",
+    "kept_script": "scripts/add-quote-handling-memory.py",
+    "merged_scripts": [
+      "scripts/add-architecture-memory.py",
+      "scripts/add-quote-handling-memory-simple.py"
+    ],
+    "savings": 2
+  },
+  {
+    "type": "script_consolidation",
+    "kept_script": "scripts/alex-ai-universal-milestone-push.sh",
+    "merged_scripts": [
+      "scripts/enhanced-ai-prompts-dual-milestone-push.sh"
+    ],
+    "savings": 1
+  },
+  {
+    "type": "script_consolidation",
+    "kept_script": "scripts/automate-bidirectional-setup.sh",
+    "merged_scripts": [
+      "scripts/setup-bidirectional-sync.sh"
+    ],
+    "savings": 1
+  },
+  {
+    "type": "script_consolidation",
+    "kept_script": "scripts/setup-database-simple.js",
+    "merged_scripts": [
+      "scripts/setup-database.js"
+    ],
+    "savings": 1
+  },
+  {
+    "type": "script_consolidation",
+    "kept_script": "scripts/simple-e2e-test.js",
+    "merged_scripts": [
+      "scripts/improved-e2e-test.js",
+      "scripts/puppeteer-e2e-test.js"
+    ],
+    "savings": 2
+  },
+  {
+    "type": "script_consolidation",
+    "kept_script": "scripts/python/mcp_memory_optimization_system.py",
+    "merged_scripts": [
+      "scripts/python/test_mcp_system.py"
+    ],
+    "savings": 1
+  },
+  {
+    "type": "script_consolidation",
+    "kept_script": "scripts/python/yolo_mode_crew_memory_update.py",
+    "merged_scripts": [
+      "scripts/python/cursor_ai_integration_memory_update.py"
+    ],
+    "savings": 1
+  },
+  {
+    "type": "script_consolidation",
+    "kept_script": "scripts/python/simple_turborepo_research_system.py",
+    "merged_scripts": [
+      "scripts/python/turborepo_research_system.py"
+    ],
+    "savings": 1
+  }
+]
