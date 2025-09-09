@@ -1,0 +1,203 @@
+{
+  "name": "alex-ai-vscode-extension",
+  "displayName": "Alex AI - AI Assistant with Crew",
+  "description": "AI-powered coding assistant with specialized crew members for enhanced development experience",
+  "version": "1.0.0",
+  "publisher": "alex-ai",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other",
+    "Machine Learning",
+    "Snippets"
+  ],
+  "keywords": [
+    "ai",
+    "assistant",
+    "code",
+    "crew",
+    "alex-ai",
+    "productivity"
+  ],
+  "activationEvents": [
+    "onCommand:alex-ai.openChat",
+    "onCommand:alex-ai.explainCode",
+    "onCommand:alex-ai.generateCode"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "alex-ai.openChat",
+        "title": "Open Alex AI Chat",
+        "category": "Alex AI"
+      },
+      {
+        "command": "alex-ai.explainCode",
+        "title": "Explain Selected Code",
+        "category": "Alex AI"
+      },
+      {
+        "command": "alex-ai.generateCode",
+        "title": "Generate Code from Prompt",
+        "category": "Alex AI"
+      },
+      {
+        "command": "alex-ai.refactorCode",
+        "title": "Refactor Selected Code",
+        "category": "Alex AI"
+      },
+      {
+        "command": "alex-ai.optimizeCode",
+        "title": "Optimize Selected Code",
+        "category": "Alex AI"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "alex-ai.explainCode",
+          "when": "editorHasSelection",
+          "group": "alex-ai"
+        },
+        {
+          "command": "alex-ai.refactorCode",
+          "when": "editorHasSelection",
+          "group": "alex-ai"
+        },
+        {
+          "command": "alex-ai.optimizeCode",
+          "when": "editorHasSelection",
+          "group": "alex-ai"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "alex-ai.openChat"
+        },
+        {
+          "command": "alex-ai.explainCode"
+        },
+        {
+          "command": "alex-ai.generateCode"
+        },
+        {
+          "command": "alex-ai.refactorCode"
+        },
+        {
+          "command": "alex-ai.optimizeCode"
+        }
+      ]
+    },
+    "views": {
+      "explorer": [
+        {
+          "id": "alex-ai-crew",
+          "name": "Alex AI Crew",
+          "when": "alex-ai.connected"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "alex-ai",
+          "title": "Alex AI",
+          "icon": "$(robot)"
+        }
+      ],
+      "panel": [
+        {
+          "id": "alex-ai-chat",
+          "title": "Alex AI Chat",
+          "icon": "$(comment-discussion)"
+        }
+      ]
+    },
+    "views": {
+      "alex-ai": [
+        {
+          "id": "alex-ai-crew",
+          "name": "Crew Members",
+          "when": "alex-ai.connected"
+        },
+        {
+          "id": "alex-ai-status",
+          "name": "Status",
+          "when": "alex-ai.connected"
+        }
+      ],
+      "alex-ai-chat": [
+        {
+          "id": "alex-ai-chat-panel",
+          "name": "Chat"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Alex AI",
+      "properties": {
+        "alex-ai.apiUrl": {
+          "type": "string",
+          "default": "http://localhost:3000",
+          "description": "Alex AI API base URL"
+        },
+        "alex-ai.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "Alex AI API key for authentication"
+        },
+        "alex-ai.defaultCrewMember": {
+          "type": "string",
+          "default": "Commander Data",
+          "enum": [
+            "Captain Jean-Luc Picard",
+            "Commander William Riker", 
+            "Commander Data",
+            "Geordi La Forge",
+            "Lieutenant Worf",
+            "Dr. Beverly Crusher",
+            "Counselor Deanna Troi",
+            "Lieutenant Uhura",
+            "Quark"
+          ],
+          "description": "Default crew member for AI assistance"
+        },
+        "alex-ai.enableContextAwareness": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable context awareness for better responses"
+        },
+        "alex-ai.maxContextLength": {
+          "type": "number",
+          "default": 4000,
+          "description": "Maximum context length to send with requests"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "ws": "^8.14.0"
+  }
+}
+
+
+
