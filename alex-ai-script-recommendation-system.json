@@ -1,0 +1,46 @@
+{
+  "name": "Alex AI Script Recommendation System",
+  "version": "1.0.0",
+  "description": "Intelligent script discovery, extension, and categorization system",
+  "capabilities": [
+    "Find existing scripts by functionality",
+    "Suggest script extensions",
+    "Recommend proper categorization",
+    "Identify consolidation opportunities",
+    "Provide usage examples"
+  ],
+  "api_endpoints": {
+    "find_script": "/api/scripts/find",
+    "suggest_extension": "/api/scripts/extend",
+    "categorize_script": "/api/scripts/categorize",
+    "get_similar": "/api/scripts/similar",
+    "get_recommendations": "/api/scripts/recommend"
+  },
+  "knowledge_base": {
+    "total_scripts": 205,
+    "categories": [
+      "utilities",
+      "testing",
+      "python",
+      "deployment",
+      "templates",
+      "consolidated",
+      "generated"
+    ],
+    "functionality_types": [
+      "data_processing",
+      "monitoring",
+      "testing",
+      "automation",
+      "deployment",
+      "database_operations",
+      "file_operations",
+      "security",
+      "api_integration",
+      "synchronization"
+    ],
+    "consolidation_groups": [
+      "Standalone"
+    ]
+  }
+}
