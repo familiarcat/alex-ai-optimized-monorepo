@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-09-05T09:49:27.474Z",
+  "n8nUrl": "https://n8n.pbradygeorgen.com",
+  "totalWorkflows": 4,
+  "successfulPushes": 4,
+  "workflows": [
+    {
+      "name": "Alex AI Job Opportunities - Production",
+      "id": "58B6WvShXJ7bj8Ni",
+      "webhookPath": "alex-ai-job-opportunities",
+      "status": "pushed",
+      "url": "https://n8n.pbradygeorgen.com/workflow/58B6WvShXJ7bj8Ni"
+    },
+    {
+      "name": "Alex AI Contacts - Production",
+      "id": "rLN1eArIA6t3tEwZ",
+      "webhookPath": "alex-ai-contacts",
+      "status": "pushed",
+      "url": "https://n8n.pbradygeorgen.com/workflow/rLN1eArIA6t3tEwZ"
+    },
+    {
+      "name": "Alex AI Resume Analysis - Production",
+      "id": "RY8pm6gUFtkTKcpg",
+      "webhookPath": "alex-ai-resume-analysis",
+      "status": "pushed",
+      "url": "https://n8n.pbradygeorgen.com/workflow/RY8pm6gUFtkTKcpg"
+    },
+    {
+      "name": "Alex AI MCP Request Handler - Production",
+      "id": "p0L9kldRFQmexqBx",
+      "webhookPath": "alex-ai-mcp-request",
+      "status": "pushed",
+      "url": "https://n8n.pbradygeorgen.com/workflow/p0L9kldRFQmexqBx"
+    }
+  ]
+}

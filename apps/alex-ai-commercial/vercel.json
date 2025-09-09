@@ -1,0 +1,70 @@
+{
+  "version": 2,
+  "name": "alex-ai-job-search",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "@next_public_supabase_url",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@next_public_supabase_anon_key",
+    "SUPABASE_SERVICE_ROLE_KEY": "@supabase_service_role_key",
+    "NEXT_PUBLIC_ALEX_AI_ENABLED": "@next_public_alex_ai_enabled",
+    "ALEX_AI_API_URL": "@alex_ai_api_url",
+    "N8N_API_KEY": "@n8n_api_key",
+    "OPENAI_API_KEY": "@openai_api_key",
+    "GITHUB_TOKEN": "@github_token",
+    "AWS_ACCESS_KEY_ID": "@aws_access_key_id",
+    "AWS_SECRET_ACCESS_KEY": "@aws_secret_access_key",
+    "AWS_REGION": "@aws_region",
+    "VERCEL_TOKEN": "@vercel_token",
+    "VERCEL_ORG_ID": "@vercel_org_id",
+    "VERCEL_PROJECT_ID": "@vercel_project_id",
+    "NEXT_PUBLIC_APP_NAME": "@next_public_app_name",
+    "NEXT_PUBLIC_APP_VERSION": "@next_public_app_version",
+    "NEXT_PUBLIC_APP_ENV": "@next_public_app_env",
+    "NEXT_PUBLIC_RESUME_ANALYSIS_ENABLED": "@next_public_resume_analysis_enabled",
+    "RESUME_ANALYSIS_API_URL": "@resume_analysis_api_url",
+    "NEXT_PUBLIC_JOB_TRACKING_ENABLED": "@next_public_job_tracking_enabled",
+    "JOB_TRACKING_API_URL": "@job_tracking_api_url"
+  },
+  "functions": {
+    "src/app/api/**/*.ts": {
+      "maxDuration": 30
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/dashboard",
+      "destination": "/",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/health",
+      "destination": "/api/health"
+    }
+  ]
+}

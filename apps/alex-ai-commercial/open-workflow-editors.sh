@@ -1,0 +1,30 @@
+#!/bin/bash
+
+echo "🌐 Opening n8n Workflow Editors in Browser..."
+echo "============================================="
+echo ""
+
+# Open each workflow editor
+echo "Opening Alex AI Job Opportunities - Production - alex-ai-job-opportunities..."
+open "https://n8n.pbradygeorgen.com/workflow/58B6WvShXJ7bj8Ni/webhook"
+echo "Opening Alex AI Resume Analysis - Production - alex-ai-resume-analysis..."
+open "https://n8n.pbradygeorgen.com/workflow/RY8pm6gUFtkTKcpg/webhook"
+echo "Opening Alex AI MCP Request Handler - Production - alex-ai-mcp-request..."
+open "https://n8n.pbradygeorgen.com/workflow/p0L9kldRFQmexqBx/webhook"
+echo "Opening Alex AI Contacts - Production - alex-ai-contacts..."
+open "https://n8n.pbradygeorgen.com/workflow/rLN1eArIA6t3tEwZ/webhook"
+
+echo ""
+echo "✅ All workflow editors opened!"
+echo ""
+echo "📋 Manual Steps Required:"
+echo "1. For each opened workflow:"
+echo "   - Click 'Production URL' button (instead of 'Test URL')"
+echo "   - Save the workflow (Ctrl+S or click Save)"
+echo "   - Verify the URL shows: https://n8n.pbradygeorgen.com/webhook/[path]"
+echo ""
+echo "2. After completing all 4 workflows, run:"
+echo "   node test-workflows.js"
+echo ""
+echo "3. If successful, run:"
+echo "   node test-system-simple.js"
