@@ -1,0 +1,100 @@
+{
+  "timestamp": "2025-09-09T01:34:21.566522",
+  "base_url": "n8n.pbradygeorgen.com",
+  "issues_identified": [
+    {
+      "status": "success",
+      "message": "Basic connectivity confirmed, API authentication issue identified"
+    }
+  ],
+  "solutions_attempted": [
+    {
+      "status": "success",
+      "working_method": "n8n_api_key_header",
+      "method_config": {
+        "headers": {
+          "X-N8N-API-Key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZTA3ZGJlZi0yZDJmLTQ2YjUtYWQ3ZC0yYjIzZTk2ZWE1NjYiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwiaWF0IjoxNzU2MDk3MjIyfQ.wFPf3jA0X2zdNkaPqoPzTEAE-MsS-XcM6Gk20KYr4Dw"
+        },
+        "description": "API key in X-N8N-API-Key header"
+      },
+      "all_results": {
+        "bearer_token": {
+          "status_code": 401,
+          "success": false,
+          "response_time": 0.110663,
+          "description": "Bearer token in Authorization header",
+          "error": "{\"message\":\"'X-N8N-API-KEY' header required\"}"
+        },
+        "api_key_header": {
+          "status_code": 401,
+          "success": false,
+          "response_time": 0.109031,
+          "description": "API key in X-API-Key header",
+          "error": "{\"message\":\"'X-N8N-API-KEY' header required\"}"
+        },
+        "n8n_api_key_header": {
+          "status_code": 200,
+          "success": true,
+          "response_time": 0.13648,
+          "description": "API key in X-N8N-API-Key header",
+          "error": null
+        }
+      }
+    },
+    {
+      "status": "success",
+      "working_path": "/api/workflows",
+      "all_results": {
+        "/api/v1/workflows": {
+          "status_code": 401,
+          "success": false,
+          "response_time": 0.100151,
+          "error": "{\"message\":\"'X-N8N-API-KEY' header required\"}"
+        },
+        "/api/workflows": {
+          "status_code": 200,
+          "success": true,
+          "response_time": 0.109805,
+          "error": null
+        }
+      }
+    },
+    {
+      "status": "success",
+      "indicators": [
+        "n8n",
+        "workflow",
+        "automation"
+      ],
+      "has_api_docs": false,
+      "requires_auth": false
+    }
+  ],
+  "final_status": "success",
+  "recommendations": [
+    {
+      "priority": "MEDIUM",
+      "issue": "API key contains special characters",
+      "solution": "Ensure API key contains only alphanumeric characters",
+      "action": "Regenerate API key if necessary"
+    },
+    {
+      "priority": "HIGH",
+      "issue": "N8N instance may require different authentication",
+      "solution": "Self-hosted N8N instances may use different API endpoints",
+      "action": "Check N8N instance documentation for correct API paths"
+    },
+    {
+      "priority": "HIGH",
+      "issue": "N8N instance may require user authentication",
+      "solution": "Some N8N instances require user login before API access",
+      "action": "Check if user authentication is required"
+    },
+    {
+      "priority": "MEDIUM",
+      "issue": "N8N API may not be enabled",
+      "solution": "Ensure N8N API is enabled in instance configuration",
+      "action": "Check N8N instance settings for API enablement"
+    }
+  ]
+}
