@@ -28,7 +28,7 @@ test_result() {
 }
 
 # Test 1: Shell Script Generation
-    
+test_shell_generation() {
     local test_dir="test-output"
     mkdir -p "$test_dir"
     
@@ -102,7 +102,7 @@ test_nextjs() {
 }
 
 # Test 4: Error Handling
-    
+test_error_handling() {
     # Test invalid input
     if ! ./scripts/deployment/general/consolidated_general.py generate "invalid" "basic" 2>/dev/null; then
         test_result "Invalid Input Handling" "PASS"
@@ -113,7 +113,7 @@ test_nextjs() {
 }
 
 # Test 5: Performance
-    
+test_performance() {
     local start_time=$(date +%s)
     
     # Quick batch test
@@ -140,6 +140,9 @@ test_nextjs() {
 }
 
 # Main execution
+main() {
+    printf '%s\n' "===================="
+    printf '%s\n' "Alex AI Production Test"
     printf '%s\n' "===================="
     printf '%s\n' ""
     

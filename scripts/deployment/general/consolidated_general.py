@@ -15,7 +15,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-def get_and_update_claude_key.sh():
+def get_and_update_claude_key():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
@@ -27,13 +27,13 @@ def intelligent_script_discovery():
     # TODO: Implement consolidated functionality
     pass
 
-def optimize_packages_structure.sh():
+def optimize_packages_structure():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def populate_job_data.js():
+def populate_job_data():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
@@ -45,7 +45,7 @@ def script_memory_system():
     # TODO: Implement consolidated functionality
     pass
 
-def analyze_conflicts.sh():
+def analyze_conflicts():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
@@ -57,25 +57,25 @@ def add_quote_handling_memory():
     # TODO: Implement consolidated functionality
     pass
 
-def security_validation.sh():
+def security_validation():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def security_audit.sh():
+def security_audit():
     """performs comprehensive security checks"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def setup_dev_environment.sh():
+def setup_dev_environment():
     """sets up the complete development environment with automatic credential loading"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def production_readiness_assessment.sh():
+def production_readiness_assessment():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
@@ -87,7 +87,7 @@ def add_architecture_memory():
     # TODO: Implement consolidated functionality
     pass
 
-def analyze_production_changes.sh():
+def analyze_production_changes():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
@@ -99,55 +99,55 @@ def script_analyzer():
     # TODO: Implement consolidated functionality
     pass
 
-def setup_bidirectional_sync.sh():
+def setup_bidirectional_sync():
     """Synchronization and data management"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def setup_git_remote.sh():
+def setup_git_remote():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def sync_dashboard.sh():
+def sync_dashboard():
     """Synchronization and data management"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def secure_credential_manager.sh():
+def secure_credential_manager():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def shell_prompt_safety_system.sh():
+def shell_prompt_safety_system():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def production_shell_engine.sh():
+def production_shell_engine():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def setup_database.js():
+def setup_database():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def deploy.sh():
+def deploy():
     """Deployment and setup"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def load_credentials.sh():
+def load_credentials():
     """loads credentials from ~/.zshrc and makes them available"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
@@ -159,25 +159,25 @@ def add_quote_handling_memory_simple():
     # TODO: Implement consolidated functionality
     pass
 
-def automate_bidirectional_setup.sh():
+def automate_bidirectional_setup():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def setup_database_simple.js():
+def setup_database_simple():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def alexai_init.sh():
+def alexai_init():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def string_manipulation_fix.sh():
+def string_manipulation_fix():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
@@ -579,7 +579,7 @@ def demo_youtube_scraper_system():
     # TODO: Implement consolidated functionality
     pass
 
-def progress.sh():
+def progress():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
@@ -616,55 +616,55 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-def optimize_turborepo_structure.sh():
+def optimize_turborepo_structure():
     """implements the crew's recommendations for proper Turborepo structure"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def safe_execute.sh():
+def safe_execute():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def comprehensive_string_fix.sh():
+def comprehensive_string_fix():
     """has been rewritten with safe string manipulation"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def credential_validator.sh():
+def credential_validator():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def update_zshrc_with_placeholder.sh():
+def update_zshrc_with_placeholder():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def shell_safety_guide.sh():
+def shell_safety_guide():
     """demonstrates best practices to avoid shell quote issues"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def validate_strings.sh():
+def validate_strings():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def monitor_performance.js():
+def monitor_performance():
     """Monitoring and health checking"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
     pass
 
-def load_alex_ai_credentials.sh():
+def load_alex_ai_credentials():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality
@@ -790,7 +790,7 @@ def clean_secrets():
     # TODO: Implement consolidated functionality
     pass
 
-def status.sh():
+def status():
     """General utility script"""
     logger.info(f"Running {script_name}")
     # TODO: Implement consolidated functionality

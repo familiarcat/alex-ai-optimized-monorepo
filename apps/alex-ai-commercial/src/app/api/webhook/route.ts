@@ -88,3 +88,6 @@ async function handlePaymentFailed(invoice: Stripe.Invoice) {
   console.log('Payment failed:', invoice.id)
   // Handle failed payment (notify user, suspend service, etc.)
 }
+
+
+

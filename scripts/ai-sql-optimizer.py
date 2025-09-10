@@ -80,3 +80,9 @@ class AISQLOptimizer:
 if __name__ == "__main__":
     optimizer = AISQLOptimizer()
     optimizer.optimize_supabase_performance()
+
+
+
+
+
+

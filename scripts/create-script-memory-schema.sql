@@ -345,3 +345,9 @@ GRANT EXECUTE ON FUNCTION search_scripts_fulltext TO authenticated;
 GRANT EXECUTE ON FUNCTION get_script_statistics TO authenticated;
 GRANT EXECUTE ON FUNCTION find_potential_duplicates TO authenticated;
 GRANT EXECUTE ON FUNCTION get_category_statistics TO authenticated;
+
+
+
+
+
+

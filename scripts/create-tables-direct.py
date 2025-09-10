@@ -165,3 +165,9 @@ if __name__ == "__main__":
     
     print("\n" + "=" * 50)
     print("🏁 Alex AI table setup complete!")
+
+
+
+
+
+

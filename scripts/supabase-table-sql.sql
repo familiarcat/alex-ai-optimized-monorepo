@@ -86,3 +86,9 @@ CREATE POLICY "Allow public read access to applications" ON applications FOR SEL
 CREATE POLICY "Allow public insert to job_opportunities" ON job_opportunities FOR INSERT WITH CHECK (true);
 CREATE POLICY "Allow public insert to contacts" ON contacts FOR INSERT WITH CHECK (true);
 CREATE POLICY "Allow public insert to applications" ON applications FOR INSERT WITH CHECK (true);
+
+
+
+
+
+

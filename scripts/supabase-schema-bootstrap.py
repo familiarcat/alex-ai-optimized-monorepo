@@ -216,3 +216,9 @@ if __name__ == "__main__":
         print("\n🏁 Alex AI platform setup complete!")
     else:
         print("\n⚠️  Setup incomplete - manual intervention may be required")
+
+
+
+
+
+

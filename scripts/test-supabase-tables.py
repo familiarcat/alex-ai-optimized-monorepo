@@ -108,3 +108,9 @@ if __name__ == "__main__":
     test_supabase_connection()
     
     print("\n🏁 Test complete!")
+
+
+
+
+
+

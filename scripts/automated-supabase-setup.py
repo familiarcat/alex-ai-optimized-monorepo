@@ -232,3 +232,9 @@ if __name__ == "__main__":
         print("   Check Supabase dashboard and run the SQL script if needed")
     
     print("\n🏁 Automated setup complete!")
+
+
+
+
+
+
