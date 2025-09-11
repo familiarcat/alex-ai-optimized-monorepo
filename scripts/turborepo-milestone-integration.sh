@@ -206,23 +206,22 @@ create_workspace_milestone() {
 # Create cross-workspace milestone
 create_cross_workspace_milestone() {
     local milestone="$1"
-    local workspaces=("${@:2}")
-    local branch="${workspaces[-1]:-main}"
-    
-    # Remove branch from workspaces array
-    unset workspaces[-1]
+    shift
+    local branch="main"
     
     echo -e "${GEORDI_COLOR}🔧 Creating cross-workspace milestone...${NC}"
-    echo -e "${DATA_COLOR}📊 Affected workspaces: ${workspaces[*]}${NC}"
+    echo -e "${DATA_COLOR}📊 Affected workspaces: $*${NC}"
     
     local total_impact=0
     
-    # Calculate total impact
-    for workspace in "${workspaces[@]}"; do
+    # Calculate total impact for each workspace
+    for workspace in "$@"; do
         if [[ -d "$workspace" ]]; then
             local impact
-            impact=$(get_workspace_impact "$workspace")
-            total_impact=$((total_impact + impact))
+            impact=$(get_workspace_impact "$workspace" 2>/dev/null | tail -1)
+            if [[ "$impact" =~ ^[0-9]+$ ]]; then
+                total_impact=$((total_impact + impact))
+            fi
         fi
     done
     
