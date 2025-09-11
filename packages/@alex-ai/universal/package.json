@@ -22,6 +22,7 @@
   "author": "Alex AI Team",
   "license": "MIT",
   "dependencies": {
+    "@alex-ai/core": "workspace:*",
     "axios": "^1.6.0",
     "ws": "^8.14.0"
   },
@@ -33,9 +34,6 @@
     "eslint": "^8.0.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0"
-  },
-  "dependencies": {
-    "@alex-ai/core": "workspace:*"
   },
   "files": [
     "dist",

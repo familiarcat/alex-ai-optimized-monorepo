@@ -52,40 +52,85 @@ export class AlexAICrewManager {
   private initializeCrewMembers(): void {
     const members: CrewMember[] = [
       {
-        id: 'technical_lead',
-        name: 'Alex Technical Lead',
-        role: 'Technical Lead',
-        specialization: ['TypeScript', 'Node.js', 'MCP', 'API Design', 'System Architecture'],
+        id: 'captain_picard',
+        name: 'Captain Jean-Luc Picard',
+        role: 'Commanding Officer',
+        specialization: ['Strategic Leadership', 'Mission Planning', 'Decision Making', 'Crew Management'],
         status: 'active',
         lastActivity: new Date(),
-        capabilities: ['code_review', 'architecture_design', 'performance_optimization', 'technical_analysis']
+        capabilities: ['strategic_planning', 'leadership', 'mission_coordination', 'decision_making', 'crew_management']
       },
       {
-        id: 'ai_strategy',
-        name: 'Alex AI Strategy',
-        role: 'AI Strategy Specialist',
-        specialization: ['AI/ML', 'MCP', 'Workflow Automation', 'Prompt Engineering', 'LLM Integration'],
+        id: 'commander_riker',
+        name: 'Commander William Riker',
+        role: 'First Officer',
+        specialization: ['Tactical Operations', 'Workflow Management', 'Execution', 'Team Leadership', 'Resource Coordination'],
         status: 'active',
         lastActivity: new Date(),
-        capabilities: ['ai_analysis', 'prompt_optimization', 'workflow_design', 'llm_integration']
+        capabilities: ['tactical_operations', 'workflow_management', 'execution', 'team_leadership', 'resource_coordination']
       },
       {
-        id: 'client_success',
-        name: 'Alex Client Success',
-        role: 'Client Success Manager',
-        specialization: ['User Experience', 'Integration', 'Documentation', 'Support', 'Client Relations'],
+        id: 'commander_data',
+        name: 'Commander Data',
+        role: 'Operations Officer',
+        specialization: ['Analytics', 'Logic', 'Data Processing', 'AI/ML', 'MCP', 'Workflow Automation', 'Prompt Engineering', 'LLM Integration'],
         status: 'active',
         lastActivity: new Date(),
-        capabilities: ['user_research', 'integration_support', 'documentation', 'client_relations']
+        capabilities: ['data_analysis', 'ai_ml', 'mcp_integration', 'workflow_automation', 'prompt_engineering', 'llm_integration']
       },
       {
-        id: 'sustainability',
-        name: 'Alex Sustainability',
-        role: 'Sustainability Specialist',
-        specialization: ['Scalability', 'Performance', 'Maintenance', 'Long-term Planning', 'Optimization'],
+        id: 'geordi_la_forge',
+        name: 'Lieutenant Commander Geordi La Forge',
+        role: 'Chief Engineer',
+        specialization: ['Infrastructure', 'System Integration', 'Technical Solutions', 'TypeScript', 'Node.js', 'MCP', 'API Design', 'System Architecture'],
         status: 'active',
         lastActivity: new Date(),
-        capabilities: ['performance_analysis', 'scalability_planning', 'maintenance_optimization', 'long_term_planning']
+        capabilities: ['infrastructure', 'system_integration', 'technical_solutions', 'typescript', 'nodejs', 'api_design', 'system_architecture']
+      },
+      {
+        id: 'lieutenant_worf',
+        name: 'Lieutenant Worf',
+        role: 'Security Officer',
+        specialization: ['Security', 'Compliance', 'Risk Assessment', 'Testing', 'Quality Assurance'],
+        status: 'active',
+        lastActivity: new Date(),
+        capabilities: ['security', 'compliance', 'risk_assessment', 'testing', 'quality_assurance']
+      },
+      {
+        id: 'counselor_troi',
+        name: 'Counselor Deanna Troi',
+        role: 'Ship\'s Counselor',
+        specialization: ['User Experience', 'Empathy Analysis', 'Human Factors', 'Quality Assurance', 'Visual Debugging'],
+        status: 'active',
+        lastActivity: new Date(),
+        capabilities: ['user_experience', 'empathy_analysis', 'human_factors', 'quality_assurance', 'visual_debugging']
+      },
+      {
+        id: 'lieutenant_uhura',
+        name: 'Lieutenant Uhura',
+        role: 'Communications Officer',
+        specialization: ['Communications', 'I/O Operations', 'Information Flow', 'Documentation', 'Automation'],
+        status: 'active',
+        lastActivity: new Date(),
+        capabilities: ['communications', 'io_operations', 'information_flow', 'documentation', 'automation']
+      },
+      {
+        id: 'dr_crusher',
+        name: 'Dr. Beverly Crusher',
+        role: 'Chief Medical Officer',
+        specialization: ['Health', 'Diagnostics', 'System Optimization', 'Performance Optimization'],
+        status: 'active',
+        lastActivity: new Date(),
+        capabilities: ['health', 'diagnostics', 'system_optimization', 'performance_optimization']
+      },
+      {
+        id: 'quark',
+        name: 'Quark',
+        role: 'Business Operations',
+        specialization: ['Business Intelligence', 'Budget Optimization', 'ROI Analysis', 'Business Analysis'],
+        status: 'active',
+        lastActivity: new Date(),
+        capabilities: ['business_intelligence', 'budget_optimization', 'roi_analysis', 'business_analysis']
       }
     ]
 

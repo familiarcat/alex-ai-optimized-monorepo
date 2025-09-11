@@ -9,9 +9,9 @@
 
 import { AlexAIMasterProject } from './core/master-project.js';
 import { MemoryHub } from './memory-hub/memory-hub.js';
-import { N8NSyncHub } from './n8n-sync-hub/n8n-sync-hub.js';
-import { AnalyticsHub } from './analytics-hub/analytics-hub.js';
-import { DeploymentHub } from './deployment-hub/deployment-hub.js';
+import { N8NSyncHub } from '../n8n-sync-hub/n8n-sync-hub.js';
+import { AnalyticsHub } from '../analytics-hub/analytics-hub.js';
+import { DeploymentHub } from '../deployment-hub/deployment-hub.js';
 
 class AlexAIMasterProjectApp {
   private masterProject: AlexAIMasterProject;
@@ -83,7 +83,7 @@ class AlexAIMasterProjectApp {
 }
 
 // CLI interface
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (process.argv[1] && process.argv[1].endsWith('index.js')) {
   const app = new AlexAIMasterProjectApp();
   
   const command = process.argv[2] || 'start';
@@ -138,3 +138,4 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 }
 
 export { AlexAIMasterProjectApp };
+

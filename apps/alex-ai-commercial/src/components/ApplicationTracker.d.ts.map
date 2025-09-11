@@ -1,0 +1,1 @@
+{"version":3,"file":"ApplicationTracker.d.ts","sourceRoot":"","sources":["ApplicationTracker.tsx"],"names":[],"mappings":"AAIA,OAAO,EAAE,WAAW,EAAE,cAAc,EAAE,MAAM,wBAAwB,CAAA;AAUpE,UAAU,uBAAuB;IAC/B,YAAY,EAAE,WAAW,EAAE,CAAA;IAC3B,gBAAgB,EAAE,cAAc,EAAE,CAAA;CACnC;AAED,MAAM,CAAC,OAAO,UAAU,kBAAkB,CAAC,EAAE,YAAY,EAAE,gBAAgB,EAAE,EAAE,uBAAuB,+BA6MrG"}

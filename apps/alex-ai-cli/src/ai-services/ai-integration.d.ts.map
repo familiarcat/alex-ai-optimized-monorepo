@@ -1,0 +1,1 @@
+{"version":3,"file":"ai-integration.d.ts","sourceRoot":"","sources":["ai-integration.ts"],"names":[],"mappings":"AAAA,qBAAa,aAAa;IACxB,OAAO,CAAC,WAAW,CAAkB;IAE/B,UAAU,IAAI,OAAO,CAAC,IAAI,CAAC;IAK3B,cAAc,CAAC,OAAO,EAAE,MAAM,GAAG,OAAO,CAAC,GAAG,CAAC;IAa7C,SAAS,IAAI,OAAO,CAAC;QAAE,WAAW,EAAE,OAAO,CAAC;QAAC,MAAM,EAAE,MAAM,CAAA;KAAE,CAAC;CAMrE"}

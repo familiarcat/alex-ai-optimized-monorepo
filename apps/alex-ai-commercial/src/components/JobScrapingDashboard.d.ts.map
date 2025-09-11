@@ -1,0 +1,1 @@
+{"version":3,"file":"JobScrapingDashboard.d.ts","sourceRoot":"","sources":["JobScrapingDashboard.tsx"],"names":[],"mappings":"AAEA,OAAO,KAA8B,MAAM,OAAO,CAAA;AAmBlD,UAAU,yBAAyB;IACjC,aAAa,CAAC,EAAE,MAAM,IAAI,CAAA;IAC1B,kBAAkB,CAAC,EAAE,CAAC,IAAI,EAAE,GAAG,EAAE,KAAK,IAAI,CAAA;CAC3C;AAED,MAAM,CAAC,OAAO,UAAU,oBAAoB,CAAC,EAAE,aAAa,EAAE,kBAAkB,EAAE,EAAE,yBAAyB,qBAgT5G"}

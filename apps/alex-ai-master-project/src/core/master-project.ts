@@ -6,9 +6,9 @@
  */
 
 import { MemoryHub } from '../memory-hub/memory-hub.js';
-import { N8NSyncHub } from '../n8n-sync-hub/n8n-sync-hub.js';
-import { AnalyticsHub } from '../analytics-hub/analytics-hub.js';
-import { DeploymentHub } from '../deployment-hub/deployment-hub.js';
+import { N8NSyncHub } from '../../n8n-sync-hub/n8n-sync-hub.js';
+import { AnalyticsHub } from '../../analytics-hub/analytics-hub.js';
+import { DeploymentHub } from '../../deployment-hub/deployment-hub.js';
 
 export interface MasterProjectConfig {
   memoryHub: MemoryHub;
@@ -146,10 +146,10 @@ export class AlexAIMasterProject {
     await this.config.memoryHub.initializeCrossProjectLearning(this.projects);
     
     // Initialize N8N sync for all projects
-    await this.config.n8nSyncHub.initializeProjectSync(this.projects);
+    await this.config.n8nSyncHub.initializeProjectSync(Array.from(this.projects.values()));
     
     // Initialize analytics for cross-project insights
-    await this.config.analyticsHub.initializeCrossProjectAnalytics(this.projects);
+    await this.config.analyticsHub.initializeCrossProjectAnalytics(Array.from(this.projects.values()));
     
     console.log('✅ Cross-project learning initialized');
   }
@@ -178,10 +178,10 @@ export class AlexAIMasterProject {
       await this.config.memoryHub.syncToProjects(this.projects);
       
       // Sync N8N workflows
-      await this.config.n8nSyncHub.syncWorkflows(this.projects);
+      await this.config.n8nSyncHub.syncWorkflows(Array.from(this.projects.values()));
       
       // Generate cross-project insights
-      const newInsights = await this.config.analyticsHub.generateCrossProjectInsights(this.projects);
+      const newInsights = await this.config.analyticsHub.generateCrossProjectInsights(Array.from(this.projects.values()));
       this.insights.push(...newInsights);
       
       console.log(`✅ Sync completed - ${newInsights.length} new insights generated`);
@@ -239,3 +239,4 @@ export class AlexAIMasterProject {
     );
   }
 }
+

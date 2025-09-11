@@ -1,70 +1,34 @@
 #!/usr/bin/env node
 /**
- * Alex AI Universal CLI
+ * Alex AI CLI - Main Entry Point
  * 
- * Cross-platform development CLI with dynamic framework evolution,
- * design system synchronization, and AI-powered development.
+ * A powerful CLI tool for creating and managing projects with Alex AI integration.
  */
 
-import { Command } from '@oclif/core';
-import chalk from 'chalk';
-import figlet from 'figlet';
-import ora from 'ora';
+import { Command, Flags } from '@oclif/core';
+import Create from './commands/create.js';
+import Evolve from './commands/evolve.js';
 
-class AlexAICLI extends Command {
-  static description = 'Alex AI Universal CLI - Cross-Platform Development with Dynamic Framework Evolution';
+export default class AlexCLI extends Command {
+  static description = 'Alex AI CLI - Create and manage projects with AI integration';
+
+  static version = '1.0.0';
 
   static flags = {
-    version: Command.flags.version({ char: 'v' }),
-    help: Command.flags.help({ char: 'h' }),
+    version: Flags.version({ char: 'v' }),
+    help: Flags.help({ char: 'h' }),
   };
 
-  async run() {
-    // Display Alex AI CLI banner
-    console.log(chalk.blue(figlet.textSync('Alex AI CLI', { horizontalLayout: 'full' })));
-    console.log(chalk.gray('Universal Cross-Platform Development with AI-Powered Evolution\n'));
+  static commands = [Create, Evolve];
 
-    // Show available commands
-    console.log(chalk.yellow('🚀 Available Commands:'));
-    console.log(chalk.white('  create     Create a new project with any framework'));
-    console.log(chalk.white('  evolve     Evolve project to a different framework'));
-    console.log(chalk.white('  sync       Sync design system across platforms'));
-    console.log(chalk.white('  translate  Translate components between frameworks'));
-    console.log(chalk.white('  status     Show project status and health'));
-    console.log(chalk.white('  help       Show detailed help for any command\n'));
-
-    // Show examples
-    console.log(chalk.yellow('💡 Examples:'));
-    console.log(chalk.gray('  # Create a new React project'));
-    console.log(chalk.white('  alex create my-app --framework react\n'));
-    
-    console.log(chalk.gray('  # Evolve to Next.js for authentication'));
-    console.log(chalk.white('  alex evolve my-app --to nextjs --reason "Need auth and database"\n'));
-    
-    console.log(chalk.gray('  # Add React Native version'));
-    console.log(chalk.white('  alex evolve my-app --to react-native --sync-design\n'));
-    
-    console.log(chalk.gray('  # Sync design changes across all platforms'));
-    console.log(chalk.white('  alex sync my-app --platforms all\n'));
-
-    // Show supported frameworks
-    console.log(chalk.yellow('🎯 Supported Frameworks:'));
-    console.log(chalk.white('  • React (Web applications)'));
-    console.log(chalk.white('  • Next.js (Full-stack applications)'));
-    console.log(chalk.white('  • React Native (Mobile applications)'));
-    console.log(chalk.white('  • Universal (Cross-platform components)\n'));
-
-    // Show AI features
-    console.log(chalk.yellow('🤖 AI-Powered Features:'));
-    console.log(chalk.white('  • Intelligent project generation'));
-    console.log(chalk.white('  • Smart framework translation'));
-    console.log(chalk.white('  • Design system synchronization'));
-    console.log(chalk.white('  • Best practice enforcement'));
-    console.log(chalk.white('  • Code quality optimization\n'));
-
-    console.log(chalk.green('✨ Ready to build amazing cross-platform applications!'));
-    console.log(chalk.gray('Run "alex help <command>" for detailed information about any command.\n'));
+  async run(): Promise<void> {
+    this.log('🚀 Alex AI CLI');
+    this.log('Create and manage projects with AI integration');
+    this.log('');
+    this.log('Available commands:');
+    this.log('  create    Create a new project');
+    this.log('  evolve    Evolve an existing project');
+    this.log('');
+    this.log('Use --help with any command to see more information.');
   }
 }
-
-export = AlexAICLI;
