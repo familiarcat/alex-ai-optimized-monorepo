@@ -335,7 +335,7 @@ main() {
             ;;
         "milestone")
             if [[ $# -ge 3 ]]; then
-                create_workspace_milestone "$2" "$3" "${4:-main}"
+                create_workspace_milestone "$3" "$2" "${4:-main}"
             else
                 echo "Error: milestone requires <milestone-name> <workspace>"
                 exit 1
