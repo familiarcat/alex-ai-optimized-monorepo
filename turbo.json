@@ -122,6 +122,25 @@
         "NODE_ENV"
       ],
       "cache": true
+    },
+    "install-plugin": {
+      "cache": false,
+      "inputs": [
+        "scripts/**/*",
+        "plugins/**/*",
+        "themes/**/*"
+      ]
+    },
+    "uninstall-plugin": {
+      "cache": false
+    },
+    "test-plugin": {
+      "cache": false,
+      "inputs": [
+        "scripts/**/*",
+        "plugins/**/*",
+        "themes/**/*"
+      ]
     }
   }
 }

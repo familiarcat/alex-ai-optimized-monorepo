@@ -1,0 +1,61 @@
+{
+  "name": "@alex-ai/shell-plugin",
+  "version": "1.0.0",
+  "description": "Alex AI Monorepo Shell Enhancement Plugin for Oh-My-Zsh",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'Shell plugin - no build required'",
+    "dev": "echo 'Shell plugin - no dev server required'",
+    "test": "echo 'Shell plugin - no tests required'",
+    "lint": "echo 'Shell plugin - no linting required'",
+    "clean": "echo 'Shell plugin - no cleanup required'",
+    "install-plugin": "./scripts/install.sh",
+    "uninstall-plugin": "./scripts/uninstall.sh",
+    "test-plugin": "./scripts/test.sh"
+  },
+  "keywords": [
+    "alex-ai",
+    "shell",
+    "zsh",
+    "oh-my-zsh",
+    "monorepo",
+    "turborepo",
+    "workspace",
+    "milestone",
+    "crew",
+    "star-trek"
+  ],
+  "author": "Alex AI Crew",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/familiarcat/alex-ai-optimized-monorepo.git",
+    "directory": "apps/alex-ai-shell-plugin"
+  },
+  "bugs": {
+    "url": "https://github.com/familiarcat/alex-ai-optimized-monorepo/issues"
+  },
+  "homepage": "https://github.com/familiarcat/alex-ai-optimized-monorepo#readme",
+  "files": [
+    "src/",
+    "scripts/",
+    "themes/",
+    "plugins/",
+    "README.md",
+    "package.json"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "zsh": ">=5.0.0"
+  },
+  "peerDependencies": {
+    "oh-my-zsh": ">=1.0.0"
+  },
+  "dependencies": {
+    "@alex-ai/core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
