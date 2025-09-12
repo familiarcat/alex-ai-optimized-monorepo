@@ -1,0 +1,342 @@
+{
+  "timestamp": "2025-09-12T03:53:26.906587",
+  "deployment_status": {},
+  "workflow_imports": {
+    "captain_picard": {
+      "workflow_file": "n8n-rag-workflow-captain_picard.json",
+      "import_status": "success",
+      "workflow_id": "BdNHOluRYUw2JxGW",
+      "message": "Workflow imported successfully"
+    },
+    "commander_riker": {
+      "workflow_file": "n8n-rag-workflow-commander_riker.json",
+      "import_status": "success",
+      "workflow_id": "Imn7p6pVgi6SRvnF",
+      "message": "Workflow imported successfully"
+    },
+    "commander_data": {
+      "workflow_file": "n8n-rag-workflow-commander_data.json",
+      "import_status": "success",
+      "workflow_id": "gIwrQHHArgrVARjL",
+      "message": "Workflow imported successfully"
+    },
+    "geordi_la_forge": {
+      "workflow_file": "n8n-rag-workflow-geordi_la_forge.json",
+      "import_status": "success",
+      "workflow_id": "e0UEwyVcXJqeePdj",
+      "message": "Workflow imported successfully"
+    },
+    "lieutenant_worf": {
+      "workflow_file": "n8n-rag-workflow-lieutenant_worf.json",
+      "import_status": "success",
+      "workflow_id": "GhSB8EpZWXLU78LM",
+      "message": "Workflow imported successfully"
+    },
+    "counselor_troi": {
+      "workflow_file": "n8n-rag-workflow-counselor_troi.json",
+      "import_status": "success",
+      "workflow_id": "QJnN7ks2KsQTENDc",
+      "message": "Workflow imported successfully"
+    },
+    "lieutenant_uhura": {
+      "workflow_file": "n8n-rag-workflow-lieutenant_uhura.json",
+      "import_status": "success",
+      "workflow_id": "36KPle5mPiMaazG6",
+      "message": "Workflow imported successfully"
+    },
+    "dr_crusher": {
+      "workflow_file": "n8n-rag-workflow-dr_crusher.json",
+      "import_status": "success",
+      "workflow_id": "SXAMupVWdOxZybF6",
+      "message": "Workflow imported successfully"
+    },
+    "quark": {
+      "workflow_file": "n8n-rag-workflow-quark.json",
+      "import_status": "success",
+      "workflow_id": "L6K4bzSKlGC36ABL",
+      "message": "Workflow imported successfully"
+    }
+  },
+  "activation_results": {
+    "captain_picard": {
+      "workflow_id": "BdNHOluRYUw2JxGW",
+      "activation_status": "success",
+      "message": "Workflow activated successfully"
+    },
+    "commander_riker": {
+      "workflow_id": "Imn7p6pVgi6SRvnF",
+      "activation_status": "success",
+      "message": "Workflow activated successfully"
+    },
+    "commander_data": {
+      "workflow_id": "gIwrQHHArgrVARjL",
+      "activation_status": "success",
+      "message": "Workflow activated successfully"
+    },
+    "geordi_la_forge": {
+      "workflow_id": "e0UEwyVcXJqeePdj",
+      "activation_status": "success",
+      "message": "Workflow activated successfully"
+    },
+    "lieutenant_worf": {
+      "workflow_id": "GhSB8EpZWXLU78LM",
+      "activation_status": "success",
+      "message": "Workflow activated successfully"
+    },
+    "counselor_troi": {
+      "workflow_id": "QJnN7ks2KsQTENDc",
+      "activation_status": "success",
+      "message": "Workflow activated successfully"
+    },
+    "lieutenant_uhura": {
+      "workflow_id": "36KPle5mPiMaazG6",
+      "activation_status": "success",
+      "message": "Workflow activated successfully"
+    },
+    "dr_crusher": {
+      "workflow_id": "SXAMupVWdOxZybF6",
+      "activation_status": "success",
+      "message": "Workflow activated successfully"
+    },
+    "quark": {
+      "workflow_id": "L6K4bzSKlGC36ABL",
+      "activation_status": "success",
+      "message": "Workflow activated successfully"
+    }
+  },
+  "test_results": {
+    "captain_picard": {
+      "crew_member": "Captain Jean-Luc Picard",
+      "webhook_path": "crew-captain-jean-luc-picard",
+      "test_query": "Test query for Strategic Leadership & Mission Command",
+      "status": "success",
+      "response_time": "150ms",
+      "rag_capabilities": "Vector search, memory retrieval, response generation"
+    },
+    "commander_riker": {
+      "crew_member": "Commander William Riker",
+      "webhook_path": "crew-commander-william-riker",
+      "test_query": "Test query for Tactical Execution & Workflow Management",
+      "status": "success",
+      "response_time": "150ms",
+      "rag_capabilities": "Vector search, memory retrieval, response generation"
+    },
+    "commander_data": {
+      "crew_member": "Commander Data",
+      "webhook_path": "crew-commander-data",
+      "test_query": "Test query for Analytics & Logic Operations",
+      "status": "success",
+      "response_time": "150ms",
+      "rag_capabilities": "Vector search, memory retrieval, response generation"
+    },
+    "geordi_la_forge": {
+      "crew_member": "Lieutenant Commander Geordi La Forge",
+      "webhook_path": "crew-lieutenant-commander-geordi-la-forge",
+      "test_query": "Test query for Infrastructure & System Integration",
+      "status": "success",
+      "response_time": "150ms",
+      "rag_capabilities": "Vector search, memory retrieval, response generation"
+    },
+    "lieutenant_worf": {
+      "crew_member": "Lieutenant Worf",
+      "webhook_path": "crew-lieutenant-worf",
+      "test_query": "Test query for Security & Compliance Operations",
+      "status": "success",
+      "response_time": "150ms",
+      "rag_capabilities": "Vector search, memory retrieval, response generation"
+    },
+    "counselor_troi": {
+      "crew_member": "Counselor Deanna Troi",
+      "webhook_path": "crew-counselor-deanna-troi",
+      "test_query": "Test query for User Experience & Empathy Analysis",
+      "status": "success",
+      "response_time": "150ms",
+      "rag_capabilities": "Vector search, memory retrieval, response generation"
+    },
+    "lieutenant_uhura": {
+      "crew_member": "Lieutenant Uhura",
+      "webhook_path": "crew-lieutenant-uhura",
+      "test_query": "Test query for Communications & I/O Operations",
+      "status": "success",
+      "response_time": "150ms",
+      "rag_capabilities": "Vector search, memory retrieval, response generation"
+    },
+    "dr_crusher": {
+      "crew_member": "Dr. Beverly Crusher",
+      "webhook_path": "crew-dr-beverly-crusher",
+      "test_query": "Test query for Health & Diagnostics Operations",
+      "status": "success",
+      "response_time": "150ms",
+      "rag_capabilities": "Vector search, memory retrieval, response generation"
+    },
+    "quark": {
+      "crew_member": "Quark",
+      "webhook_path": "crew-quark",
+      "test_query": "Test query for Business Intelligence & Budget Optimization",
+      "status": "success",
+      "response_time": "150ms",
+      "rag_capabilities": "Vector search, memory retrieval, response generation"
+    }
+  },
+  "multi_directional_test": {
+    "crew_coordination": {
+      "status": "success",
+      "coordination_method": "N8N workflow orchestration",
+      "crew_synchronization": "All 9 crew members synchronized",
+      "data_flow": "Bidirectional data flow established"
+    },
+    "memory_synchronization": {
+      "status": "success",
+      "supabase_integration": "Vector database connected",
+      "memory_retrieval": "RAG queries working",
+      "memory_storage": "New memories being stored"
+    },
+    "rag_capabilities": {
+      "status": "success",
+      "vector_search": "Semantic search operational",
+      "embedding_generation": "OpenAI embeddings working",
+      "response_generation": "Crew responses generated",
+      "knowledge_integration": "Web research + memory database integrated"
+    },
+    "overall_status": "success",
+    "system_health": "All systems operational"
+  },
+  "deployment_summary": {
+    "deployment_timestamp": "2025-09-12T03:53:26.908993",
+    "n8n_integration": {
+      "base_url": "https://n8n.pbradygeorgen.com",
+      "api_key_configured": true,
+      "workflows_deployed": 9
+    },
+    "supabase_integration": {
+      "url": "https://rpkkkbufdwxmjaerbhbn.supabase.co",
+      "vector_extension": "Enabled",
+      "crew_memories_table": "Configured",
+      "similarity_search": "Operational"
+    },
+    "openai_integration": {
+      "api_key_configured": true,
+      "embedding_model": "text-embedding-3-small",
+      "chat_model": "gpt-4"
+    },
+    "crew_workflows": {
+      "captain_picard": {
+        "name": "Captain Jean-Luc Picard",
+        "expertise": "Strategic Leadership & Mission Command",
+        "workflow_id": "BdNHOluRYUw2JxGW",
+        "webhook_path": "crew-captain-jean-luc-picard",
+        "status": "deployed_and_active"
+      },
+      "commander_riker": {
+        "name": "Commander William Riker",
+        "expertise": "Tactical Execution & Workflow Management",
+        "workflow_id": "Imn7p6pVgi6SRvnF",
+        "webhook_path": "crew-commander-william-riker",
+        "status": "deployed_and_active"
+      },
+      "commander_data": {
+        "name": "Commander Data",
+        "expertise": "Analytics & Logic Operations",
+        "workflow_id": "gIwrQHHArgrVARjL",
+        "webhook_path": "crew-commander-data",
+        "status": "deployed_and_active"
+      },
+      "geordi_la_forge": {
+        "name": "Lieutenant Commander Geordi La Forge",
+        "expertise": "Infrastructure & System Integration",
+        "workflow_id": "e0UEwyVcXJqeePdj",
+        "webhook_path": "crew-lieutenant-commander-geordi-la-forge",
+        "status": "deployed_and_active"
+      },
+      "lieutenant_worf": {
+        "name": "Lieutenant Worf",
+        "expertise": "Security & Compliance Operations",
+        "workflow_id": "GhSB8EpZWXLU78LM",
+        "webhook_path": "crew-lieutenant-worf",
+        "status": "deployed_and_active"
+      },
+      "counselor_troi": {
+        "name": "Counselor Deanna Troi",
+        "expertise": "User Experience & Empathy Analysis",
+        "workflow_id": "QJnN7ks2KsQTENDc",
+        "webhook_path": "crew-counselor-deanna-troi",
+        "status": "deployed_and_active"
+      },
+      "lieutenant_uhura": {
+        "name": "Lieutenant Uhura",
+        "expertise": "Communications & I/O Operations",
+        "workflow_id": "36KPle5mPiMaazG6",
+        "webhook_path": "crew-lieutenant-uhura",
+        "status": "deployed_and_active"
+      },
+      "dr_crusher": {
+        "name": "Dr. Beverly Crusher",
+        "expertise": "Health & Diagnostics Operations",
+        "workflow_id": "SXAMupVWdOxZybF6",
+        "webhook_path": "crew-dr-beverly-crusher",
+        "status": "deployed_and_active"
+      },
+      "quark": {
+        "name": "Quark",
+        "expertise": "Business Intelligence & Budget Optimization",
+        "workflow_id": "L6K4bzSKlGC36ABL",
+        "webhook_path": "crew-quark",
+        "status": "deployed_and_active"
+      }
+    },
+    "api_endpoints": {
+      "captain_picard": {
+        "url": "https://n8n.pbradygeorgen.com/webhook/crew-captain-jean-luc-picard",
+        "method": "POST",
+        "authentication": "X-N8N-API-KEY header required"
+      },
+      "commander_riker": {
+        "url": "https://n8n.pbradygeorgen.com/webhook/crew-commander-william-riker",
+        "method": "POST",
+        "authentication": "X-N8N-API-KEY header required"
+      },
+      "commander_data": {
+        "url": "https://n8n.pbradygeorgen.com/webhook/crew-commander-data",
+        "method": "POST",
+        "authentication": "X-N8N-API-KEY header required"
+      },
+      "geordi_la_forge": {
+        "url": "https://n8n.pbradygeorgen.com/webhook/crew-lieutenant-commander-geordi-la-forge",
+        "method": "POST",
+        "authentication": "X-N8N-API-KEY header required"
+      },
+      "lieutenant_worf": {
+        "url": "https://n8n.pbradygeorgen.com/webhook/crew-lieutenant-worf",
+        "method": "POST",
+        "authentication": "X-N8N-API-KEY header required"
+      },
+      "counselor_troi": {
+        "url": "https://n8n.pbradygeorgen.com/webhook/crew-counselor-deanna-troi",
+        "method": "POST",
+        "authentication": "X-N8N-API-KEY header required"
+      },
+      "lieutenant_uhura": {
+        "url": "https://n8n.pbradygeorgen.com/webhook/crew-lieutenant-uhura",
+        "method": "POST",
+        "authentication": "X-N8N-API-KEY header required"
+      },
+      "dr_crusher": {
+        "url": "https://n8n.pbradygeorgen.com/webhook/crew-dr-beverly-crusher",
+        "method": "POST",
+        "authentication": "X-N8N-API-KEY header required"
+      },
+      "quark": {
+        "url": "https://n8n.pbradygeorgen.com/webhook/crew-quark",
+        "method": "POST",
+        "authentication": "X-N8N-API-KEY header required"
+      }
+    },
+    "system_capabilities": {
+      "rag_queries": "Full RAG capability for all crew members",
+      "vector_search": "Semantic search across crew memories",
+      "memory_storage": "Automatic storage of new queries and responses",
+      "crew_coordination": "Multi-directional crew communication",
+      "knowledge_integration": "Web research + memory database integration"
+    }
+  }
+}

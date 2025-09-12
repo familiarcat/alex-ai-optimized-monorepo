@@ -1,0 +1,264 @@
+{
+  "timestamp": "2025-09-12T03:52:35.237726",
+  "generated_workflows": {
+    "captain_picard": {
+      "workflow_file": "n8n-rag-workflow-captain_picard.json",
+      "workflow_id": "BdNHOluRYUw2JxGW",
+      "webhook_path": "crew-captain-jean-luc-picard",
+      "expertise": "Strategic Leadership & Mission Command",
+      "rag_capabilities": [
+        "strategic_planning",
+        "mission_coordination",
+        "decision_making"
+      ]
+    },
+    "commander_riker": {
+      "workflow_file": "n8n-rag-workflow-commander_riker.json",
+      "workflow_id": "Imn7p6pVgi6SRvnF",
+      "webhook_path": "crew-commander-william-riker",
+      "expertise": "Tactical Execution & Workflow Management",
+      "rag_capabilities": [
+        "tactical_operations",
+        "workflow_management",
+        "execution"
+      ]
+    },
+    "commander_data": {
+      "workflow_file": "n8n-rag-workflow-commander_data.json",
+      "workflow_id": "gIwrQHHArgrVARjL",
+      "webhook_path": "crew-commander-data",
+      "expertise": "Analytics & Logic Operations",
+      "rag_capabilities": [
+        "data_analysis",
+        "logical_processing",
+        "analytics"
+      ]
+    },
+    "geordi_la_forge": {
+      "workflow_file": "n8n-rag-workflow-geordi_la_forge.json",
+      "workflow_id": "e0UEwyVcXJqeePdj",
+      "webhook_path": "crew-lieutenant-commander-geordi-la-forge",
+      "expertise": "Infrastructure & System Integration",
+      "rag_capabilities": [
+        "technical_implementation",
+        "system_integration",
+        "engineering"
+      ]
+    },
+    "lieutenant_worf": {
+      "workflow_file": "n8n-rag-workflow-lieutenant_worf.json",
+      "workflow_id": "GhSB8EpZWXLU78LM",
+      "webhook_path": "crew-lieutenant-worf",
+      "expertise": "Security & Compliance Operations",
+      "rag_capabilities": [
+        "security_protocols",
+        "compliance",
+        "risk_assessment"
+      ]
+    },
+    "counselor_troi": {
+      "workflow_file": "n8n-rag-workflow-counselor_troi.json",
+      "workflow_id": "QJnN7ks2KsQTENDc",
+      "webhook_path": "crew-counselor-deanna-troi",
+      "expertise": "User Experience & Empathy Analysis",
+      "rag_capabilities": [
+        "user_experience",
+        "empathy_analysis",
+        "human_factors"
+      ]
+    },
+    "lieutenant_uhura": {
+      "workflow_file": "n8n-rag-workflow-lieutenant_uhura.json",
+      "workflow_id": "36KPle5mPiMaazG6",
+      "webhook_path": "crew-lieutenant-uhura",
+      "expertise": "Communications & I/O Operations",
+      "rag_capabilities": [
+        "communications",
+        "information_flow",
+        "data_transmission"
+      ]
+    },
+    "dr_crusher": {
+      "workflow_file": "n8n-rag-workflow-dr_crusher.json",
+      "workflow_id": "SXAMupVWdOxZybF6",
+      "webhook_path": "crew-dr-beverly-crusher",
+      "expertise": "Health & Diagnostics Operations",
+      "rag_capabilities": [
+        "system_health",
+        "diagnostics",
+        "performance_monitoring"
+      ]
+    },
+    "quark": {
+      "workflow_file": "n8n-rag-workflow-quark.json",
+      "workflow_id": "L6K4bzSKlGC36ABL",
+      "webhook_path": "crew-quark",
+      "expertise": "Business Intelligence & Budget Optimization",
+      "rag_capabilities": [
+        "business_analysis",
+        "roi_optimization",
+        "cost_benefit_analysis"
+      ]
+    }
+  },
+  "rag_capabilities": {},
+  "supabase_integration": {
+    "vector_extension": "Enabled",
+    "crew_memories_table": "Configured with vector support",
+    "similarity_search_function": "Created",
+    "rag_query_table": "Created",
+    "embedding_generation": "Configured",
+    "sql_functions": {
+      "find_similar_memories": "\nCREATE OR REPLACE FUNCTION find_similar_memories(\n    p_memory_id TEXT,\n    p_similarity_threshold FLOAT DEFAULT 0.75,\n    p_limit INTEGER DEFAULT 10\n) RETURNS TABLE (\n    similar_memory_id TEXT,\n    similarity_score FLOAT,\n    content_preview TEXT\n) AS $$\nDECLARE\n    target_embedding VECTOR(1536);\nBEGIN\n    SELECT embedding INTO target_embedding \n    FROM crew_memories \n    WHERE id = p_memory_id;\n    \n    IF target_embedding IS NULL THEN\n        RETURN;\n    END IF;\n    \n    RETURN QUERY\n    SELECT \n        cm.id,\n        1 - (cm.embedding <=> target_embedding) as similarity_score,\n        LEFT(cm.content, 100) as content_preview\n    FROM crew_memories cm\n    WHERE cm.id != p_memory_id\n      AND cm.embedding IS NOT NULL\n      AND 1 - (cm.embedding <=> target_embedding) >= p_similarity_threshold\n    ORDER BY cm.embedding <=> target_embedding\n    LIMIT p_limit;\nEND;\n$$ LANGUAGE plpgsql;\n                ",
+      "search_memories_by_crew": "\nCREATE OR REPLACE FUNCTION search_memories_by_crew(\n    p_crew_member TEXT,\n    p_query_embedding VECTOR(1536),\n    p_similarity_threshold FLOAT DEFAULT 0.75,\n    p_limit INTEGER DEFAULT 10\n) RETURNS TABLE (\n    memory_id TEXT,\n    content TEXT,\n    similarity_score FLOAT,\n    memory_type TEXT,\n    importance_score FLOAT\n) AS $$\nBEGIN\n    RETURN QUERY\n    SELECT \n        cm.id,\n        cm.content,\n        1 - (cm.embedding <=> p_query_embedding) as similarity_score,\n        cm.memory_type,\n        cm.importance_score\n    FROM crew_memories cm\n    WHERE cm.crew_member = p_crew_member\n      AND cm.embedding IS NOT NULL\n      AND 1 - (cm.embedding <=> p_query_embedding) >= p_similarity_threshold\n    ORDER BY cm.embedding <=> p_query_embedding\n    LIMIT p_limit;\nEND;\n$$ LANGUAGE plpgsql;\n                "
+    }
+  },
+  "deployment_instructions": {
+    "title": "N8N RAG Workflow Deployment Guide",
+    "version": "1.0.0",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Access N8N Dashboard",
+        "description": "Go to https://n8n.pbradygeorgen.com and login with your credentials"
+      },
+      {
+        "step": 2,
+        "title": "Import RAG Workflows",
+        "description": "Import each generated workflow JSON file using the Import from file option"
+      },
+      {
+        "step": 3,
+        "title": "Configure Supabase Connection",
+        "description": "Set up Supabase credentials in each workflow's Supabase nodes"
+      },
+      {
+        "step": 4,
+        "title": "Configure OpenAI API",
+        "description": "Add OpenAI API key to the OpenAI nodes in each workflow"
+      },
+      {
+        "step": 5,
+        "title": "Activate Workflows",
+        "description": "Toggle each workflow to Active status"
+      },
+      {
+        "step": 6,
+        "title": "Test RAG Endpoints",
+        "description": "Test each crew member's RAG webhook endpoint"
+      }
+    ],
+    "api_endpoints": {
+      "captain_picard": {
+        "webhook_url": "https://n8n.pbradygeorgen.com/webhook/crew-captain-jean-luc-picard",
+        "method": "POST",
+        "headers": {
+          "X-N8N-API-KEY": "your-api-key",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "query": "Your question or request for RAG analysis"
+        }
+      },
+      "commander_riker": {
+        "webhook_url": "https://n8n.pbradygeorgen.com/webhook/crew-commander-william-riker",
+        "method": "POST",
+        "headers": {
+          "X-N8N-API-KEY": "your-api-key",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "query": "Your question or request for RAG analysis"
+        }
+      },
+      "commander_data": {
+        "webhook_url": "https://n8n.pbradygeorgen.com/webhook/crew-commander-data",
+        "method": "POST",
+        "headers": {
+          "X-N8N-API-KEY": "your-api-key",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "query": "Your question or request for RAG analysis"
+        }
+      },
+      "geordi_la_forge": {
+        "webhook_url": "https://n8n.pbradygeorgen.com/webhook/crew-lieutenant-commander-geordi-la-forge",
+        "method": "POST",
+        "headers": {
+          "X-N8N-API-KEY": "your-api-key",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "query": "Your question or request for RAG analysis"
+        }
+      },
+      "lieutenant_worf": {
+        "webhook_url": "https://n8n.pbradygeorgen.com/webhook/crew-lieutenant-worf",
+        "method": "POST",
+        "headers": {
+          "X-N8N-API-KEY": "your-api-key",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "query": "Your question or request for RAG analysis"
+        }
+      },
+      "counselor_troi": {
+        "webhook_url": "https://n8n.pbradygeorgen.com/webhook/crew-counselor-deanna-troi",
+        "method": "POST",
+        "headers": {
+          "X-N8N-API-KEY": "your-api-key",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "query": "Your question or request for RAG analysis"
+        }
+      },
+      "lieutenant_uhura": {
+        "webhook_url": "https://n8n.pbradygeorgen.com/webhook/crew-lieutenant-uhura",
+        "method": "POST",
+        "headers": {
+          "X-N8N-API-KEY": "your-api-key",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "query": "Your question or request for RAG analysis"
+        }
+      },
+      "dr_crusher": {
+        "webhook_url": "https://n8n.pbradygeorgen.com/webhook/crew-dr-beverly-crusher",
+        "method": "POST",
+        "headers": {
+          "X-N8N-API-KEY": "your-api-key",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "query": "Your question or request for RAG analysis"
+        }
+      },
+      "quark": {
+        "webhook_url": "https://n8n.pbradygeorgen.com/webhook/crew-quark",
+        "method": "POST",
+        "headers": {
+          "X-N8N-API-KEY": "your-api-key",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "query": "Your question or request for RAG analysis"
+        }
+      }
+    },
+    "test_commands": {
+      "captain_picard": "\n# Test Captain Jean-Luc Picard RAG workflow\ncurl -X POST https://n8n.pbradygeorgen.com/webhook/crew-captain-jean-luc-picard \\\n  -H \"X-N8N-API-KEY: your-api-key\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"query\": \"Test query for Strategic Leadership & Mission Command\"}'\n            ",
+      "commander_riker": "\n# Test Commander William Riker RAG workflow\ncurl -X POST https://n8n.pbradygeorgen.com/webhook/crew-commander-william-riker \\\n  -H \"X-N8N-API-KEY: your-api-key\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"query\": \"Test query for Tactical Execution & Workflow Management\"}'\n            ",
+      "commander_data": "\n# Test Commander Data RAG workflow\ncurl -X POST https://n8n.pbradygeorgen.com/webhook/crew-commander-data \\\n  -H \"X-N8N-API-KEY: your-api-key\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"query\": \"Test query for Analytics & Logic Operations\"}'\n            ",
+      "geordi_la_forge": "\n# Test Lieutenant Commander Geordi La Forge RAG workflow\ncurl -X POST https://n8n.pbradygeorgen.com/webhook/crew-lieutenant-commander-geordi-la-forge \\\n  -H \"X-N8N-API-KEY: your-api-key\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"query\": \"Test query for Infrastructure & System Integration\"}'\n            ",
+      "lieutenant_worf": "\n# Test Lieutenant Worf RAG workflow\ncurl -X POST https://n8n.pbradygeorgen.com/webhook/crew-lieutenant-worf \\\n  -H \"X-N8N-API-KEY: your-api-key\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"query\": \"Test query for Security & Compliance Operations\"}'\n            ",
+      "counselor_troi": "\n# Test Counselor Deanna Troi RAG workflow\ncurl -X POST https://n8n.pbradygeorgen.com/webhook/crew-counselor-deanna-troi \\\n  -H \"X-N8N-API-KEY: your-api-key\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"query\": \"Test query for User Experience & Empathy Analysis\"}'\n            ",
+      "lieutenant_uhura": "\n# Test Lieutenant Uhura RAG workflow\ncurl -X POST https://n8n.pbradygeorgen.com/webhook/crew-lieutenant-uhura \\\n  -H \"X-N8N-API-KEY: your-api-key\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"query\": \"Test query for Communications & I/O Operations\"}'\n            ",
+      "dr_crusher": "\n# Test Dr. Beverly Crusher RAG workflow\ncurl -X POST https://n8n.pbradygeorgen.com/webhook/crew-dr-beverly-crusher \\\n  -H \"X-N8N-API-KEY: your-api-key\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"query\": \"Test query for Health & Diagnostics Operations\"}'\n            ",
+      "quark": "\n# Test Quark RAG workflow\ncurl -X POST https://n8n.pbradygeorgen.com/webhook/crew-quark \\\n  -H \"X-N8N-API-KEY: your-api-key\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"query\": \"Test query for Business Intelligence & Budget Optimization\"}'\n            "
+    }
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "name": "Lieutenant Uhura - RAG Enhanced Memory System",
+  "nodes": [
+    {
+      "id": "webhook_trigger",
+      "type": "n8n-nodes-base.webhook",
+      "name": "RAG Query Trigger",
+      "parameters": {
+        "path": "crew-lieutenant-uhura",
+        "httpMethod": "POST",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "position": [
+        240,
+        300
+      ],
+      "typeVersion": 1
+    },
+    {
+      "id": "rag_query_processor",
+      "type": "n8n-nodes-base.function",
+      "name": "RAG Query Processor",
+      "parameters": {
+        "functionCode": "\n// RAG Query Processor for Lieutenant Uhura\nconst query = $input.first().json.query || $input.first().json.body?.query;\nconst crew_member = \"lieutenant_uhura\";\nconst expertise = \"Communications & I/O Operations\";\nconst personality = \"Communicative, organized, information-focused\";\n\n// Process the query and determine RAG capabilities needed\nconst rag_capabilities = [\"communications\", \"information_flow\", \"data_transmission\"];\n\n// Generate unique memory ID\nconst memoryId = `rag_${crew_member}_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;\n\n// Prepare query data for processing\nconst queryData = {\n    query: query,\n    crew_member: crew_member,\n    expertise: expertise,\n    personality: personality,\n    rag_capabilities: rag_capabilities,\n    memory_id: memoryId,\n    timestamp: new Date().toISOString()\n};\n\nreturn queryData;\n"
+      },
+      "position": [
+        460,
+        300
+      ],
+      "typeVersion": 1
+    },
+    {
+      "id": "openai_embedding",
+      "type": "n8n-nodes-base.openAi",
+      "name": "Generate Query Embedding",
+      "parameters": {
+        "resource": "embedding",
+        "operation": "create",
+        "model": "text-embedding-3-small",
+        "input": "={{ $json.query }}"
+      },
+      "position": [
+        680,
+        200
+      ],
+      "typeVersion": 1
+    },
+    {
+      "id": "supabase_vector_search",
+      "type": "n8n-nodes-base.supabase",
+      "name": "Search Vector Database",
+      "parameters": {
+        "operation": "execute",
+        "query": "\nSELECT \n    id, content, embedding, crew_member, memory_type, importance_score,\n    1 - (embedding <=> $1::vector) as similarity_score,\n    tags, created_at\nFROM crew_memories \nWHERE crew_member = $2 \n  AND 1 - (embedding <=> $1::vector) > 0.75\nORDER BY embedding <=> $1::vector\nLIMIT 10\n                        ",
+        "parameters": [
+          "={{ $json.query_embedding }}",
+          "={{ $json.crew_member }}"
+        ]
+      },
+      "position": [
+        900,
+        200
+      ],
+      "typeVersion": 1
+    },
+    {
+      "id": "crew_response_generator",
+      "type": "n8n-nodes-base.openAi",
+      "name": "Crew Response Generator",
+      "parameters": {
+        "resource": "chat",
+        "operation": "create",
+        "model": "gpt-4",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are Lieutenant Uhura from Star Trek: The Next Generation. \n\nYour expertise: Communications & I/O Operations\nYour personality: Communicative, organized, information-focused\nYour RAG capabilities: communications, information_flow, data_transmission\n\nYou have access to a comprehensive knowledge base through RAG (Retrieval-Augmented Generation) that includes:\n- Web-scraped documentation from 90+ sources\n- N8N Supabase memory database with 27+ memories\n- Vector embeddings for semantic search\n- Crew-specific expertise and knowledge\n\nUse your specialized knowledge and the provided memories to respond to queries. Maintain your character's personality and speaking style while providing comprehensive, expert-level responses."
+          },
+          {
+            "role": "user",
+            "content": "Query: {{ $json.query }}\n\nRelevant Memories from Vector Database:\n{{ $json.similar_memories }}\n\nPlease provide a comprehensive response using your expertise and the retrieved knowledge. Be specific and actionable in your response."
+          }
+        ],
+        "options": {
+          "temperature": 0.7,
+          "maxTokens": 1000
+        }
+      },
+      "position": [
+        1120,
+        300
+      ],
+      "typeVersion": 1
+    },
+    {
+      "id": "memory_storage",
+      "type": "n8n-nodes-base.supabase",
+      "name": "Store New Memory",
+      "parameters": {
+        "operation": "insert",
+        "table": "crew_memories",
+        "data": {
+          "id": "={{ $json.memory_id }}",
+          "content": "={{ $json.query }}",
+          "embedding": "={{ $json.query_embedding }}",
+          "project_id": "n8n_rag_system",
+          "crew_member": "={{ $json.crew_member }}",
+          "memory_type": "rag_query",
+          "importance_score": 0.7,
+          "tags": [
+            "rag",
+            "query",
+            "{{ $json.crew_member }}",
+            "n8n_workflow"
+          ],
+          "created_by": "n8n_rag_system"
+        }
+      },
+      "position": [
+        900,
+        400
+      ],
+      "typeVersion": 1
+    },
+    {
+      "id": "response_webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "name": "RAG Response",
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "{\n  \"crew_member\": \"{{ $json.crew_member }}\",\n  \"expertise\": \"{{ $json.expertise }}\",\n  \"query\": \"{{ $json.query }}\",\n  \"response\": \"{{ $json.crew_response }}\",\n  \"similar_memories_found\": {{ $json.similar_memories_count }},\n  \"rag_capabilities_used\": {{ $json.rag_capabilities }},\n  \"timestamp\": \"{{ $json.timestamp }}\",\n  \"memory_id\": \"{{ $json.memory_id }}\"\n}"
+      },
+      "position": [
+        1340,
+        300
+      ],
+      "typeVersion": 1
+    }
+  ],
+  "connections": {
+    "RAG Query Trigger": {
+      "main": [
+        [
+          {
+            "node": "RAG Query Processor",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "RAG Query Processor": {
+      "main": [
+        [
+          {
+            "node": "Generate Query Embedding",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Search Vector Database",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Query Embedding": {
+      "main": [
+        [
+          {
+            "node": "Search Vector Database",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Store New Memory",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search Vector Database": {
+      "main": [
+        [
+          {
+            "node": "Crew Response Generator",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Crew Response Generator": {
+      "main": [
+        [
+          {
+            "node": "RAG Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Store New Memory": {
+      "main": [
+        [
+          {
+            "node": "RAG Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "tags": [
+    "rag",
+    "crew",
+    "memory",
+    "alex-ai"
+  ]
+}
