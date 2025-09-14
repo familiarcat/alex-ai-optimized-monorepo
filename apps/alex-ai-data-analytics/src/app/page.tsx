@@ -7,7 +7,7 @@ import {
   CpuChipIcon, 
   EyeIcon, 
   BoltIcon,
-  DatabaseIcon,
+  CircleStackIcon,
   LightBulbIcon
 } from '@heroicons/react/24/outline'
 
@@ -81,7 +81,7 @@ export default function DataAnalyticsPage() {
       color: 'text-data-success'
     },
     {
-      icon: DatabaseIcon,
+      icon: CircleStackIcon,
       title: 'Memory Integration',
       description: 'Access to all crew Supabase memories and cross-project data',
       color: 'text-data-warning'

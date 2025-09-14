@@ -15,6 +15,7 @@ import { explainCode } from './commands/explainCode';
 import { generateCode } from './commands/generateCode';
 import { refactorCode } from './commands/refactorCode';
 import { optimizeCode } from './commands/optimizeCode';
+import { engageAlexAI, quickEngageAlexAI } from './commands/engageAlexAI';
 
 export function activate(context: vscode.ExtensionContext) {
     console.log('Alex AI VS Code Extension is now active!');
@@ -33,14 +34,16 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.registerCommand('alex-ai.explainCode', () => explainCode(alexAIClient, contextManager, crewManager)),
         vscode.commands.registerCommand('alex-ai.generateCode', () => generateCode(alexAIClient, contextManager, crewManager)),
         vscode.commands.registerCommand('alex-ai.refactorCode', () => refactorCode(alexAIClient, contextManager, crewManager)),
-        vscode.commands.registerCommand('alex-ai.optimizeCode', () => optimizeCode(alexAIClient, contextManager, crewManager))
+        vscode.commands.registerCommand('alex-ai.optimizeCode', () => optimizeCode(alexAIClient, contextManager, crewManager)),
+        vscode.commands.registerCommand('alex-ai.engageAlexAI', () => engageAlexAI(alexAIClient, contextManager, crewManager)),
+        vscode.commands.registerCommand('alex-ai.quickEngage', () => quickEngageAlexAI(alexAIClient, contextManager, crewManager))
     ];
 
     // Register status bar item
     const statusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
     statusBarItem.text = "$(robot) Alex AI";
-    statusBarItem.command = 'alex-ai.openChat';
-    statusBarItem.tooltip = 'Open Alex AI Chat';
+    statusBarItem.command = 'alex-ai.engageAlexAI';
+    statusBarItem.tooltip = 'Engage Alex AI - Natural language interaction';
     statusBarItem.show();
 
     // Register webview provider
@@ -60,12 +63,24 @@ export function activate(context: vscode.ExtensionContext) {
     vscode.commands.executeCommand('setContext', 'alex-ai.connected', true);
 
     // Show welcome message
-    vscode.window.showInformationMessage('Alex AI is ready! Use Ctrl+Shift+P and search for "Alex AI" to get started.');
+    vscode.window.showInformationMessage(
+        'Alex AI is ready! Click the robot icon in the status bar or use Ctrl+Shift+P → "Engage Alex AI" to start.',
+        'Engage Alex AI',
+        'Open Chat'
+    ).then(selection => {
+        if (selection === 'Engage Alex AI') {
+            vscode.commands.executeCommand('alex-ai.engageAlexAI');
+        } else if (selection === 'Open Chat') {
+            vscode.commands.executeCommand('alex-ai.openChat');
+        }
+    });
 }
 
 export function deactivate() {
     console.log('Alex AI VS Code Extension is now deactivated');
 }
+
+
 
 
 

@@ -23,7 +23,9 @@
   "activationEvents": [
     "onCommand:alex-ai.openChat",
     "onCommand:alex-ai.explainCode",
-    "onCommand:alex-ai.generateCode"
+    "onCommand:alex-ai.generateCode",
+    "onCommand:alex-ai.engageAlexAI",
+    "onCommand:alex-ai.quickEngage"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -52,6 +54,16 @@
         "command": "alex-ai.optimizeCode",
         "title": "Optimize Selected Code",
         "category": "Alex AI"
+      },
+      {
+        "command": "alex-ai.engageAlexAI",
+        "title": "Engage Alex AI",
+        "category": "Alex AI"
+      },
+      {
+        "command": "alex-ai.quickEngage",
+        "title": "Quick Engage Alex AI",
+        "category": "Alex AI"
       }
     ],
     "menus": {
@@ -70,6 +82,11 @@
           "command": "alex-ai.optimizeCode",
           "when": "editorHasSelection",
           "group": "alex-ai"
+        },
+        {
+          "command": "alex-ai.engageAlexAI",
+          "when": "editorTextFocus",
+          "group": "alex-ai"
         }
       ],
       "commandPalette": [
@@ -87,6 +104,12 @@
         },
         {
           "command": "alex-ai.optimizeCode"
+        },
+        {
+          "command": "alex-ai.engageAlexAI"
+        },
+        {
+          "command": "alex-ai.quickEngage"
         }
       ]
     },
@@ -198,6 +221,8 @@
     "ws": "^8.14.0"
   }
 }
+
+
 
 
 

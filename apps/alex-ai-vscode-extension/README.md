@@ -4,11 +4,13 @@ AI-powered coding assistant with specialized crew members for enhanced developme
 
 ## 🚀 Features
 
+- **Natural Language Interaction**: "Engage Alex AI" command for natural language queries (similar to Cursor AI)
 - **Chat Interface**: Interactive chat with Alex AI crew members
 - **Crew Members**: 9 specialized AI assistants with unique personalities and expertise
 - **Context Awareness**: Understands your current code, project structure, and dependencies
 - **Code Actions**: Explain, generate, refactor, and optimize code
 - **Real-time Assistance**: Get help while coding without leaving VS Code
+- **Quick Actions**: Predefined prompts for common development tasks
 
 ## 👥 Crew Members
 
@@ -38,7 +40,12 @@ AI-powered coding assistant with specialized crew members for enhanced developme
 
 ## 🎯 Usage
 
-### Chat Commands
+### Natural Language Commands (Cursor AI Style)
+- `Ctrl+Shift+P` → "Alex AI: Engage Alex AI" - Natural language interaction
+- `Ctrl+Shift+P` → "Alex AI: Quick Engage Alex AI" - Predefined prompts
+- Click robot icon in status bar → Engage Alex AI
+
+### Traditional Chat Commands
 - `Ctrl+Shift+P` → "Alex AI: Open Chat"
 - `Ctrl+Shift+P` → "Alex AI: Explain Code"
 - `Ctrl+Shift+P` → "Alex AI: Generate Code"
@@ -48,10 +55,20 @@ AI-powered coding assistant with specialized crew members for enhanced developme
 ### Right-click Context Menu
 - Select code and right-click → "Ask Alex AI" options
 - Get instant explanations and suggestions
+- "Engage Alex AI" for natural language queries
 
 ### Status Bar
-- Click the Alex AI status bar item to open chat
+- Click the Alex AI robot icon to engage Alex AI with natural language
 - Shows connection status and active crew member
+
+### Example Usage
+```
+User: "engage Alex AI - help me create a React component for user authentication"
+Alex AI: "I'll help you create a user authentication component. Let me analyze your project structure and suggest the best approach..."
+
+User: "engage Alex AI - optimize this function for better performance"
+Alex AI: "I'll analyze the performance bottlenecks in your function and suggest optimizations..."
+```
 
 ## 🔧 Development
 
@@ -105,6 +122,8 @@ MIT License - see LICENSE file for details
 ---
 
 **Made with ❤️ by the Alex AI team**
+
+
 
 
 

@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .master-card {
+    @apply bg-white/95 backdrop-blur-sm rounded-xl shadow-xl p-6 border border-white/20;
+  }
+  
+  .master-button {
+    @apply px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .master-button-primary {
+    @apply master-button bg-master-primary text-white hover:bg-blue-800 shadow-lg hover:shadow-xl;
+  }
+  
+  .master-button-secondary {
+    @apply master-button bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm;
+  }
+  
+  .master-input {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-master-primary focus:border-transparent bg-white/90;
+  }
+  
+  .master-app-card {
+    @apply master-card hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer;
+  }
+  
+  .master-metric {
+    @apply text-3xl font-bold text-master-primary;
+  }
+  
+  .master-label {
+    @apply text-sm text-gray-600 uppercase tracking-wide font-semibold;
+  }
+  
+  .master-status-online {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800;
+  }
+  
+  .master-status-offline {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800;
+  }
+  
+  .master-status-loading {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800;
+  }
+  
+  .crew-theme-picard {
+    @apply bg-gradient-to-br from-picard to-blue-600;
+  }
+  
+  .crew-theme-data {
+    @apply bg-gradient-to-br from-data to-blue-500;
+  }
+  
+  .crew-theme-riker {
+    @apply bg-gradient-to-br from-riker to-red-500;
+  }
+  
+  .crew-theme-la-forge {
+    @apply bg-gradient-to-br from-la-forge to-orange-500;
+  }
+  
+  .crew-theme-worf {
+    @apply bg-gradient-to-br from-worf to-red-600;
+  }
+  
+  .crew-theme-troi {
+    @apply bg-gradient-to-br from-troi to-purple-500;
+  }
+  
+  .crew-theme-uhura {
+    @apply bg-gradient-to-br from-uhura to-purple-600;
+  }
+  
+  .crew-theme-crusher {
+    @apply bg-gradient-to-br from-crusher to-green-500;
+  }
+  
+  .crew-theme-quark {
+    @apply bg-gradient-to-br from-quark to-yellow-500;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-master-primary to-master-secondary bg-clip-text text-transparent;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .animate-bounce-slow {
+    animation: bounce 2s infinite;
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+}
+
+

@@ -48,9 +48,6 @@
     "node": ">=18.0.0",
     "zsh": ">=5.0.0"
   },
-  "peerDependencies": {
-    "oh-my-zsh": ">=1.0.0"
-  },
   "dependencies": {
     "@alex-ai/core": "workspace:*"
   },
