@@ -22,17 +22,11 @@ interface LottieAnimationProps {
   direction?: 1 | -1;
   playOnHover?: boolean;
   playOnClick?: boolean;
-  playOnScroll?: boolean;
-  playOnMouseMove?: boolean;
-  scrollThreshold?: number;
-  mouseSensitivity?: number;
   theme?: 'light' | 'dark' | 'auto';
   colorOverrides?: Record<string, string>;
   onComplete?: () => void;
   onLoopComplete?: () => void;
   onEnterFrame?: (currentTime: number) => void;
-  onScroll?: (scrollProgress: number) => void;
-  onMouseMove?: (mousePosition: { x: number; y: number }) => void;
 }
 
 export function LottieAnimation({
@@ -46,24 +40,16 @@ export function LottieAnimation({
   direction = 1,
   playOnHover = false,
   playOnClick = false,
-  playOnScroll = false,
-  playOnMouseMove = false,
-  scrollThreshold = 0.5,
-  mouseSensitivity = 1,
   theme = 'auto',
   colorOverrides = {},
   onComplete,
   onLoopComplete,
   onEnterFrame,
-  onScroll,
-  onMouseMove,
 }: LottieAnimationProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const animationRef = useRef<AnimationItem | null>(null);
   const [isPlaying, setIsPlaying] = useState(autoplay);
   const [isHovered, setIsHovered] = useState(false);
-  const [scrollProgress, setScrollProgress] = useState(0);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const { designSystem } = useDesignSystem();
 
   // Apply color overrides based on design system
@@ -185,84 +171,6 @@ export function LottieAnimation({
       }
     };
   }, [animationData, isPlaying, loop, speed, direction, designSystem]);
-
-  // Scroll interaction effect
-  useEffect(() => {
-    if (!playOnScroll || !animationRef.current) return;
-
-    const handleScroll = () => {
-      const element = containerRef.current;
-      if (!element) return;
-
-      const rect = element.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-      const elementTop = rect.top;
-      const elementHeight = rect.height;
-      
-      // Calculate scroll progress (0 to 1)
-      const progress = Math.max(0, Math.min(1, 
-        (windowHeight - elementTop) / (windowHeight + elementHeight)
-      ));
-      
-      setScrollProgress(progress);
-      
-      // Control animation based on scroll progress
-      if (progress >= scrollThreshold) {
-        animationRef.current?.play();
-      } else {
-        animationRef.current?.pause();
-      }
-      
-      // Set animation progress based on scroll
-      const totalFrames = animationRef.current?.totalFrames || 0;
-      const targetFrame = progress * totalFrames;
-      animationRef.current?.goToAndStop(targetFrame, true);
-      
-      onScroll?.(progress);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Initial call
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [playOnScroll, scrollThreshold, onScroll]);
-
-  // Mouse interaction effect
-  useEffect(() => {
-    if (!playOnMouseMove || !animationRef.current) return;
-
-    const handleMouseMove = (event: MouseEvent) => {
-      const element = containerRef.current;
-      if (!element) return;
-
-      const rect = element.getBoundingClientRect();
-      const x = (event.clientX - rect.left) / rect.width;
-      const y = (event.clientY - rect.top) / rect.height;
-      
-      const position = { x, y };
-      setMousePosition(position);
-      
-      // Control animation based on mouse position
-      const totalFrames = animationRef.current?.totalFrames || 0;
-      const targetFrame = (x * mouseSensitivity) * totalFrames;
-      animationRef.current?.goToAndStop(targetFrame, true);
-      
-      onMouseMove?.(position);
-    };
-
-    const element = containerRef.current;
-    if (element) {
-      element.addEventListener('mousemove', handleMouseMove);
-    }
-
-    return () => {
-      if (element) {
-        element.removeEventListener('mousemove', handleMouseMove);
-      }
-    };
-  }, [playOnMouseMove, mouseSensitivity, onMouseMove]);
 
   // Handle play/pause
   const togglePlay = () => {

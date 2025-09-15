@@ -1,0 +1,318 @@
+/**
+ * Carson/Brockmann Design System CSS
+ * Synthesis of David Carson (experimental) and Josef Muller-Brockmann (Swiss precision)
+ * Dark, edgy aesthetic with maintained legibility
+ */
+
+:root {
+  /* Carson Colors - Bold, Experimental */
+  --carson-primary: #ff6b35;      /* Orange - Bold, attention-grabbing */
+  --carson-secondary: #f7931e;    /* Yellow-orange - Energy */
+  --carson-accent: #ff1744;       /* Red - Urgency, rebellion */
+  --carson-dark: #1a1a1a;         /* Near black - Depth */
+  --carson-darker: #0a0a0a;       /* Pure black - Mystery */
+  
+  /* Brockmann Colors - Systematic, Functional */
+  --brockmann-primary: #2196f3;   /* Blue - Trust, precision */
+  --brockmann-secondary: #4caf50; /* Green - Growth, stability */
+  --brockmann-accent: #9c27b0;    /* Purple - Innovation */
+  --brockmann-light: #f5f5f5;     /* Light gray - Clarity */
+  --brockmann-dark: #424242;      /* Dark gray - Structure */
+  
+  /* Hybrid Colors - Modern, Balanced */
+  --hybrid-primary: #6366f1;      /* Indigo - Modern, tech */
+  --hybrid-secondary: #10b981;    /* Emerald - Success, growth */
+  --hybrid-accent: #f59e0b;       /* Amber - Warning, attention */
+  --hybrid-neutral: #6b7280;      /* Gray - Neutral, professional */
+  
+  /* Typography - Carson Style */
+  --font-carson: 'Inter', 'Helvetica Neue', sans-serif;
+  --font-weight-carson-bold: 900;
+  --font-weight-carson-medium: 700;
+  --font-weight-carson-light: 400;
+  
+  /* Typography - Brockmann Style */
+  --font-brockmann: 'Inter', 'Helvetica Neue', sans-serif;
+  --font-weight-brockmann-bold: 600;
+  --font-weight-brockmann-medium: 500;
+  --font-weight-brockmann-light: 300;
+  
+  /* Spacing - Carson (Irregular, Organic) */
+  --space-carson-xs: 0.25rem;
+  --space-carson-sm: 0.5rem;
+  --space-carson-md: 1rem;
+  --space-carson-lg: 1.5rem;
+  --space-carson-xl: 2rem;
+  --space-carson-2xl: 3rem;
+  --space-carson-3xl: 4rem;
+  
+  /* Spacing - Brockmann (Systematic, Grid-based) */
+  --space-brockmann-xs: 0.25rem;
+  --space-brockmann-sm: 0.5rem;
+  --space-brockmann-md: 1rem;
+  --space-brockmann-lg: 1.5rem;
+  --space-brockmann-xl: 2rem;
+  --space-brockmann-2xl: 2.5rem;
+  --space-brockmann-3xl: 3rem;
+  
+  /* Border Radius - Carson (Organic, Irregular) */
+  --radius-carson-sm: 0.25rem;
+  --radius-carson-md: 0.5rem;
+  --radius-carson-lg: 1rem;
+  --radius-carson-xl: 1.5rem;
+  --radius-carson-2xl: 2rem;
+  
+  /* Border Radius - Brockmann (Precise, Geometric) */
+  --radius-brockmann-sm: 0.125rem;
+  --radius-brockmann-md: 0.25rem;
+  --radius-brockmann-lg: 0.5rem;
+  --radius-brockmann-xl: 0.75rem;
+  --radius-brockmann-2xl: 1rem;
+  
+  /* Shadows - Carson (Dramatic, Layered) */
+  --shadow-carson-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-carson-md: 0 4px 8px rgba(0, 0, 0, 0.4);
+  --shadow-carson-lg: 0 8px 16px rgba(0, 0, 0, 0.5);
+  --shadow-carson-xl: 0 16px 32px rgba(0, 0, 0, 0.6);
+  
+  /* Shadows - Brockmann (Subtle, Functional) */
+  --shadow-brockmann-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+  --shadow-brockmann-md: 0 2px 4px rgba(0, 0, 0, 0.15);
+  --shadow-brockmann-lg: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --shadow-brockmann-xl: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Carson Theme */
+.theme-carson {
+  --primary: var(--carson-primary);
+  --secondary: var(--carson-secondary);
+  --accent: var(--carson-accent);
+  --background: var(--carson-darker);
+  --surface: var(--carson-dark);
+  --text: #ffffff;
+  --text-muted: #cccccc;
+  --border: var(--carson-primary);
+  --shadow: var(--shadow-carson-md);
+  --font-family: var(--font-carson);
+  --font-weight-bold: var(--font-weight-carson-bold);
+  --font-weight-medium: var(--font-weight-carson-medium);
+  --font-weight-light: var(--font-weight-carson-light);
+  --spacing: var(--space-carson-md);
+  --radius: var(--radius-carson-md);
+}
+
+/* Brockmann Theme */
+.theme-brockmann {
+  --primary: var(--brockmann-primary);
+  --secondary: var(--brockmann-secondary);
+  --accent: var(--brockmann-accent);
+  --background: var(--brockmann-light);
+  --surface: #ffffff;
+  --text: var(--brockmann-dark);
+  --text-muted: var(--brockmann-neutral);
+  --border: var(--brockmann-primary);
+  --shadow: var(--shadow-brockmann-md);
+  --font-family: var(--font-brockmann);
+  --font-weight-bold: var(--font-weight-brockmann-bold);
+  --font-weight-medium: var(--font-weight-brockmann-medium);
+  --font-weight-light: var(--font-weight-brockmann-light);
+  --spacing: var(--space-brockmann-md);
+  --radius: var(--radius-brockmann-md);
+}
+
+/* Hybrid Theme */
+.theme-hybrid {
+  --primary: var(--hybrid-primary);
+  --secondary: var(--hybrid-secondary);
+  --accent: var(--hybrid-accent);
+  --background: #0f172a;
+  --surface: #1e293b;
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --border: var(--hybrid-primary);
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  --font-family: var(--font-carson);
+  --font-weight-bold: var(--font-weight-carson-bold);
+  --font-weight-medium: var(--font-weight-carson-medium);
+  --font-weight-light: var(--font-weight-carson-light);
+  --spacing: var(--space-carson-md);
+  --radius: var(--radius-carson-md);
+}
+
+/* Base Styles */
+body {
+  font-family: var(--font-family);
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+/* Carson Typography */
+.carson-text {
+  font-family: var(--font-carson);
+  font-weight: var(--font-weight-carson-medium);
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.carson-heading {
+  font-family: var(--font-carson);
+  font-weight: var(--font-weight-carson-bold);
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+/* Brockmann Typography */
+.brockmann-text {
+  font-family: var(--font-brockmann);
+  font-weight: var(--font-weight-brockmann-medium);
+  letter-spacing: 0.025em;
+  line-height: 1.5;
+}
+
+.brockmann-heading {
+  font-family: var(--font-brockmann);
+  font-weight: var(--font-weight-brockmann-bold);
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+/* Carson Buttons */
+.btn-carson {
+  background: linear-gradient(135deg, var(--carson-primary), var(--carson-secondary));
+  color: white;
+  border: none;
+  padding: var(--space-carson-md) var(--space-carson-lg);
+  border-radius: var(--radius-carson-lg);
+  font-family: var(--font-carson);
+  font-weight: var(--font-weight-carson-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: var(--shadow-carson-md);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-carson:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-carson-lg);
+}
+
+.btn-carson:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-carson-sm);
+}
+
+/* Brockmann Buttons */
+.btn-brockmann {
+  background: var(--brockmann-primary);
+  color: white;
+  border: 2px solid var(--brockmann-primary);
+  padding: var(--space-brockmann-md) var(--space-brockmann-lg);
+  border-radius: var(--radius-brockmann-md);
+  font-family: var(--font-brockmann);
+  font-weight: var(--font-weight-brockmann-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  box-shadow: var(--shadow-brockmann-md);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-brockmann:hover {
+  background: transparent;
+  color: var(--brockmann-primary);
+  box-shadow: var(--shadow-brockmann-lg);
+}
+
+/* Carson Cards */
+.card-carson {
+  background: var(--carson-dark);
+  border: 2px solid var(--carson-primary);
+  border-radius: var(--radius-carson-xl);
+  padding: var(--space-carson-lg);
+  box-shadow: var(--shadow-carson-lg);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-carson::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--carson-primary), var(--carson-secondary), var(--carson-accent));
+}
+
+.card-carson:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-carson-xl);
+}
+
+/* Brockmann Cards */
+.card-brockmann {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-brockmann-lg);
+  padding: var(--space-brockmann-lg);
+  box-shadow: var(--shadow-brockmann-md);
+  transition: all 0.2s ease;
+}
+
+.card-brockmann:hover {
+  box-shadow: var(--shadow-brockmann-lg);
+  border-color: var(--primary);
+}
+
+/* Animations */
+@keyframes carson-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes brockmann-fade {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hybrid-glow {
+  0%, 100% { box-shadow: 0 0 5px var(--primary); }
+  50% { box-shadow: 0 0 20px var(--primary), 0 0 30px var(--primary); }
+}
+
+.animate-carson-pulse {
+  animation: carson-pulse 2s ease-in-out infinite;
+}
+
+.animate-brockmann-fade {
+  animation: brockmann-fade 0.5s ease-out;
+}
+
+.animate-hybrid-glow {
+  animation: hybrid-glow 2s ease-in-out infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carson-heading {
+    font-size: 1.5rem;
+  }
+  
+  .brockmann-heading {
+    font-size: 1.25rem;
+  }
+  
+  .btn-carson,
+  .btn-brockmann {
+    padding: var(--space-carson-sm) var(--space-carson-md);
+    font-size: 0.875rem;
+  }
+}
