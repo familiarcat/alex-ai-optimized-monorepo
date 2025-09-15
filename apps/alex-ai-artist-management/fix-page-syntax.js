@@ -58,3 +58,6 @@ function fixPageSyntax(filePath) {
 console.log('Fixing page component syntax errors...');
 pageFiles.forEach(fixPageSyntax);
 console.log('Syntax fixes complete!');
+
+
+

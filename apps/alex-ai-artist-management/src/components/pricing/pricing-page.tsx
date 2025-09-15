@@ -205,7 +205,7 @@ export function PricingPage() {
               <CardFooter className="pt-6">
                 <Button 
                   className={`w-full ${plan.popular ? 'bg-blue-600 hover:bg-blue-700' : ''}`}
-                  variant={plan.popular ? 'default' : 'outline'}
+                  variant={plan.popular ? 'default' : plan.cta === 'Contact Sales' ? 'cta-primary' : 'outline'}
                 >
                   {plan.cta}
                 </Button>

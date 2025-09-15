@@ -29,15 +29,14 @@ export function CTA() {
           <div className={styles.buttonContainer}>
             <Button 
               size="lg" 
-              className={styles.primaryButton}
+              variant="cta-hero-primary"
             >
               Start Your Free Trial
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
             <Button 
-              variant="outline" 
-              size="lg" 
-              className={styles.secondaryButton}
+              variant="cta-hero-secondary-enhanced" 
+              size="lg"
             >
               Schedule a Demo
             </Button>

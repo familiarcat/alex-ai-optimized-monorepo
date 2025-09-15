@@ -7,15 +7,22 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "cta-primary",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
-        secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
+        outline: "cta-secondary",
+        secondary: "cta-secondary",
+        ghost: "cta-ghost",
         link: "text-primary underline-offset-4 hover:underline",
+        // CTA-specific variants for contextual styling
+        "cta-primary": "cta-primary",
+        "cta-secondary": "cta-secondary",
+        "cta-ghost": "cta-ghost",
+        "cta-hero-primary": "cta-hero-primary",
+        "cta-hero-secondary": "cta-hero-secondary",
+        "cta-hero-secondary-enhanced": "cta-hero-secondary-enhanced",
+        "cta-card-primary": "cta-card-primary",
+        "cta-card-secondary": "cta-card-secondary",
       },
       size: {
         default: "h-10 px-4 py-2",

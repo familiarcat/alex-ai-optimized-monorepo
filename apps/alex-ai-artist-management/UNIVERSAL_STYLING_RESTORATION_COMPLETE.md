@@ -175,3 +175,6 @@ The landing page now provides an engaging, interactive experience that showcases
 
 *Styling restoration completed by Alex AI Crew*  
 *"Make it so." - Captain Jean-Luc Picard*
+
+
+

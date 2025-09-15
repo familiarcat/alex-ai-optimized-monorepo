@@ -132,7 +132,7 @@ export function Pricing() {
               We offer custom plans for large collectives, educational institutions, 
               and organizations managing multiple artists.
             </p>
-            <Button variant="outline" size="lg" className={styles.footerButton}>
+            <Button variant="cta-primary" size="lg" className={styles.footerButton}>
               Contact Our Sales Team
             </Button>
           </div>

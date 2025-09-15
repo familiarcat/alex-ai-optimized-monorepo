@@ -94,3 +94,6 @@ function convertPageToClient(filePath) {
 console.log('Converting page components to client components...');
 pageFiles.forEach(convertPageToClient);
 console.log('Conversion complete!');
+
+
+

@@ -67,10 +67,10 @@ export function Header() {
               </div>
             ) : (
               <div className="flex items-center space-x-4">
-                <Button variant="ghost" asChild>
+                <Button variant="cta-secondary" asChild>
                   <Link href="/login">Sign In</Link>
                 </Button>
-                <Button asChild>
+                <Button variant="cta-primary" asChild>
                   <Link href="/signup">Get Started</Link>
                 </Button>
               </div>
@@ -125,10 +125,10 @@ export function Header() {
                   </>
                 ) : (
                   <>
-                    <Button variant="ghost" asChild className="w-full">
+                    <Button variant="cta-secondary" asChild className="w-full">
                       <Link href="/login">Sign In</Link>
                     </Button>
-                    <Button asChild className="w-full">
+                    <Button variant="cta-primary" asChild className="w-full">
                       <Link href="/signup">Get Started</Link>
                     </Button>
                   </>

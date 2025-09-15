@@ -60,3 +60,6 @@ function updateComponent(componentPath) {
 console.log('Updating components to use centralized styling...');
 components.forEach(updateComponent);
 console.log('Component updates complete!');
+
+
+

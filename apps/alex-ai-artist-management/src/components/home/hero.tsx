@@ -47,13 +47,13 @@ export function Hero() {
 
             <div className={styles.buttonContainer}>
               <button 
-                className={styles.primaryButton}
+                className="cta-hero-primary"
                 onClick={() => window.location.href = '/signup'}
               >
                 Join Our Community
               </button>
               <button 
-                className={styles.secondaryButton}
+                className="cta-hero-secondary-enhanced"
                 onClick={() => window.location.href = '/demo'}
               >
                 <Play className="w-5 h-5 mr-2 inline" />

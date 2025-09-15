@@ -100,3 +100,6 @@ CREATE POLICY "Allow public insert to applications" ON applications FOR INSERT W
 
 
 
+
+
+

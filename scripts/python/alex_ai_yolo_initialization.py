@@ -22,6 +22,7 @@ logging.basicConfig(level=logging.INFO, format='%(levelname)s:%(name)s:%(message
 class AlexAIYOLOInitialization:
     """Manages YOLO Mode initialization for Alex AI system"""
     
+    def __init__(self):
         self.yolo_status = False
         self.initialization_log = []
         

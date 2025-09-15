@@ -3,6 +3,46 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* CTA Button System - Single Source of Truth */
+  --cta-primary-bg: #2563eb;        /* Blue-600 */
+  --cta-primary-text: #ffffff;      /* White */
+  --cta-primary-hover: #1d4ed8;     /* Blue-700 */
+  
+  --cta-secondary-bg: transparent;   /* Transparent */
+  --cta-secondary-text: #374151;    /* Gray-700 */
+  --cta-secondary-border: #d1d5db;  /* Gray-300 */
+  --cta-secondary-hover-bg: #f9fafb; /* Gray-50 */
+  --cta-secondary-hover-text: #111827; /* Gray-900 */
+  
+  --cta-ghost-bg: transparent;       /* Transparent */
+  --cta-ghost-text: #6b7280;        /* Gray-500 */
+  --cta-ghost-hover-bg: #f3f4f6;    /* Gray-100 */
+  --cta-ghost-hover-text: #111827;  /* Gray-900 */
+  
+  /* Contextual CTA Variants */
+  --cta-hero-primary-bg: #2563eb;   /* Blue-600 */
+  --cta-hero-primary-text: #ffffff; /* White */
+  --cta-hero-secondary-bg: transparent;
+  --cta-hero-secondary-text: #1f2937; /* Gray-800 */
+  --cta-hero-secondary-border: #1f2937; /* Gray-800 */
+  
+  /* Enhanced Secondary CTA for better visual prominence */
+  --cta-hero-secondary-enhanced-bg: #f8fafc; /* Slate-50 */
+  --cta-hero-secondary-enhanced-text: #7c3aed; /* Violet-600 */
+  --cta-hero-secondary-enhanced-border: #7c3aed; /* Violet-600 */
+  --cta-hero-secondary-enhanced-hover-bg: #7c3aed; /* Violet-600 */
+  --cta-hero-secondary-enhanced-hover-text: #ffffff; /* White */
+  
+  --cta-card-primary-bg: #2563eb;   /* Blue-600 */
+  --cta-card-primary-text: #ffffff; /* White */
+  --cta-card-secondary-bg: #f3f4f6; /* Gray-100 */
+  --cta-card-secondary-text: #374151; /* Gray-700 */
+  
+  /* Accessibility - High Contrast Mode */
+  --cta-high-contrast-bg: #000000;  /* Black */
+  --cta-high-contrast-text: #ffffff; /* White */
+  --cta-high-contrast-border: #000000; /* Black */
 }
 
 @theme inline {
@@ -10,12 +50,46 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  /* CTA Color Variables */
+  --color-cta-primary-bg: var(--cta-primary-bg);
+  --color-cta-primary-text: var(--cta-primary-text);
+  --color-cta-primary-hover: var(--cta-primary-hover);
+  --color-cta-secondary-bg: var(--cta-secondary-bg);
+  --color-cta-secondary-text: var(--cta-secondary-text);
+  --color-cta-secondary-border: var(--cta-secondary-border);
+  --color-cta-secondary-hover-bg: var(--cta-secondary-hover-bg);
+  --color-cta-secondary-hover-text: var(--cta-secondary-hover-text);
+  --color-cta-ghost-bg: var(--cta-ghost-bg);
+  --color-cta-ghost-text: var(--cta-ghost-text);
+  --color-cta-ghost-hover-bg: var(--cta-ghost-hover-bg);
+  --color-cta-ghost-hover-text: var(--cta-ghost-hover-text);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    
+    /* Dark Mode CTA Adjustments */
+    --cta-secondary-text: #d1d5db;  /* Gray-300 */
+    --cta-secondary-border: #4b5563; /* Gray-600 */
+    --cta-secondary-hover-bg: #374151; /* Gray-700 */
+    --cta-secondary-hover-text: #f9fafb; /* Gray-50 */
+    
+    --cta-ghost-text: #9ca3af;      /* Gray-400 */
+    --cta-ghost-hover-bg: #374151;  /* Gray-700 */
+    --cta-ghost-hover-text: #f9fafb; /* Gray-50 */
+  }
+}
+
+@media (prefers-contrast: high) {
+  :root {
+    /* High Contrast Mode for Accessibility */
+    --cta-primary-bg: var(--cta-high-contrast-bg);
+    --cta-primary-text: var(--cta-high-contrast-text);
+    --cta-secondary-border: var(--cta-high-contrast-border);
+    --cta-secondary-text: var(--cta-high-contrast-text);
   }
 }
 
@@ -23,4 +97,133 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CTA Button Utility Classes - Single Source of Truth */
+.cta-primary {
+  background-color: var(--cta-primary-bg);
+  color: var(--cta-primary-text);
+  border: 1px solid var(--cta-primary-bg);
+  transition: all 0.2s ease-in-out;
+}
+
+.cta-primary:hover {
+  background-color: var(--cta-primary-hover);
+  border-color: var(--cta-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.cta-secondary {
+  background-color: var(--cta-secondary-bg);
+  color: var(--cta-secondary-text);
+  border: 1px solid var(--cta-secondary-border);
+  transition: all 0.2s ease-in-out;
+}
+
+.cta-secondary:hover {
+  background-color: var(--cta-secondary-hover-bg);
+  color: var(--cta-secondary-hover-text);
+  border-color: var(--cta-secondary-hover-text);
+  transform: translateY(-1px);
+}
+
+.cta-ghost {
+  background-color: var(--cta-ghost-bg);
+  color: var(--cta-ghost-text);
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.cta-ghost:hover {
+  background-color: var(--cta-ghost-hover-bg);
+  color: var(--cta-ghost-hover-text);
+  border-color: var(--cta-ghost-hover-bg);
+}
+
+/* Contextual CTA Variants */
+.cta-hero-primary {
+  background-color: var(--cta-hero-primary-bg);
+  color: var(--cta-hero-primary-text);
+  border: 1px solid var(--cta-hero-primary-bg);
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-hero-primary:hover {
+  background-color: var(--cta-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+}
+
+.cta-hero-secondary {
+  background-color: var(--cta-hero-secondary-bg);
+  color: var(--cta-hero-secondary-text);
+  border: 2px solid var(--cta-hero-secondary-border);
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-hero-secondary:hover {
+  background-color: var(--cta-hero-secondary-text);
+  color: #ffffff;
+  border-color: var(--cta-hero-secondary-text);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(31, 41, 55, 0.3);
+}
+
+/* Enhanced Secondary CTA - More Visual Prominence */
+.cta-hero-secondary-enhanced {
+  background-color: var(--cta-hero-secondary-enhanced-bg);
+  color: var(--cta-hero-secondary-enhanced-text);
+  border: 2px solid var(--cta-hero-secondary-enhanced-border);
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.1);
+}
+
+.cta-hero-secondary-enhanced:hover {
+  background-color: var(--cta-hero-secondary-enhanced-hover-bg);
+  color: var(--cta-hero-secondary-enhanced-hover-text);
+  border-color: var(--cta-hero-secondary-enhanced-hover-bg);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.3);
+}
+
+.cta-card-primary {
+  background-color: var(--cta-card-primary-bg);
+  color: var(--cta-card-primary-text);
+  border: 1px solid var(--cta-card-primary-bg);
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.cta-card-primary:hover {
+  background-color: var(--cta-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.cta-card-secondary {
+  background-color: var(--cta-card-secondary-bg);
+  color: var(--cta-card-secondary-text);
+  border: 1px solid var(--cta-card-secondary-bg);
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.cta-card-secondary:hover {
+  background-color: var(--cta-secondary-hover-bg);
+  color: var(--cta-secondary-hover-text);
+  transform: translateY(-1px);
 }

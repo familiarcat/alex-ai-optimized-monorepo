@@ -116,10 +116,10 @@ export function Testimonials() {
               Start your journey with Alex AI Artist Management today and see why artists worldwide trust us with their careers.
             </p>
             <div className={styles.footerButtons}>
-              <button className={styles.footerButtonPrimary}>
+              <button className="cta-card-primary">
                 Start Free Trial
               </button>
-              <button className={styles.footerButtonSecondary}>
+              <button className="cta-card-secondary">
                 View Success Stories
               </button>
             </div>
