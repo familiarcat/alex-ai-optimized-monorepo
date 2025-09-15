@@ -1,7 +1,11 @@
+"use client";
+
 import { Check, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useStyles } from "@/hooks/useStyles";
 
 export function Pricing() {
+  const styles = useStyles('pricing');
   const plans = [
     {
       name: "Starter",
@@ -56,67 +60,61 @@ export function Pricing() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+    <section className={styles.container}>
+      <div className={styles.content}>
+        <div className={styles.header}>
+          <h2 className={styles.heading}>
             Simple, Transparent
-            <span className="block text-blue-600">Pricing</span>
+            <span className={styles.gradientHeading}>Pricing</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className={styles.description}>
             Choose the plan that fits your artistic career stage. 
             Upgrade or downgrade anytime as your needs change.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className={styles.grid}>
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`relative bg-white rounded-2xl p-8 border-2 transition-all duration-300 ${
-                plan.popular
-                  ? "border-blue-500 shadow-xl scale-105"
-                  : "border-gray-200 hover:border-gray-300 hover:shadow-lg"
+              className={`${styles.planCard} ${
+                plan.popular ? styles.planCardPopular : styles.planCardDefault
               }`}
             >
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium flex items-center space-x-1">
-                    <Star className="w-4 h-4" />
-                    <span>Most Popular</span>
-                  </div>
+                <div className={styles.popularBadge}>
+                  <Star className="w-4 h-4" />
+                  <span>Most Popular</span>
                 </div>
               )}
 
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              <div className={styles.planHeader}>
+                <h3 className={styles.planName}>
                   {plan.name}
                 </h3>
-                <div className="flex items-baseline justify-center mb-4">
-                  <span className="text-4xl font-bold text-gray-900">
+                <div className={styles.planPrice}>
+                  <span className={styles.planPriceValue}>
                     {plan.price}
                   </span>
                   {plan.period && (
-                    <span className="text-gray-600 ml-1">{plan.period}</span>
+                    <span className={styles.planPricePeriod}>{plan.period}</span>
                   )}
                 </div>
-                <p className="text-gray-600">{plan.description}</p>
+                <p className={styles.planDescription}>{plan.description}</p>
               </div>
 
-              <ul className="space-y-4 mb-8">
+              <ul className={styles.planFeatures}>
                 {plan.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-start space-x-3">
-                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">{feature}</span>
+                  <li key={featureIndex} className={styles.planFeature}>
+                    <Check className={styles.planFeatureIcon} />
+                    <span className={styles.planFeatureText}>{feature}</span>
                   </li>
                 ))}
               </ul>
 
               <Button
-                className={`w-full ${
-                  plan.popular
-                    ? "bg-blue-600 hover:bg-blue-700"
-                    : "bg-gray-900 hover:bg-gray-800"
+                className={`${styles.planButton} ${
+                  plan.popular ? styles.planButtonPopular : styles.planButtonDefault
                 }`}
               >
                 {plan.cta}
@@ -125,23 +123,23 @@ export function Pricing() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <div className="bg-white rounded-xl p-8 border border-gray-200 max-w-2xl mx-auto">
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">
+        <div className={styles.footer}>
+          <div className={styles.footerCard}>
+            <h3 className={styles.footerTitle}>
               Need a custom solution?
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className={styles.footerDescription}>
               We offer custom plans for large collectives, educational institutions, 
               and organizations managing multiple artists.
             </p>
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" className={styles.footerButton}>
               Contact Our Sales Team
             </Button>
           </div>
         </div>
 
-        <div className="mt-12 text-center">
-          <p className="text-gray-500 text-sm">
+        <div className={styles.disclaimer}>
+          <p className={styles.disclaimerText}>
             All plans include a 14-day free trial. No credit card required to start.
             Cancel anytime.
           </p>

@@ -1,3 +1,5 @@
+"use client";
+
 import { 
   Calendar, 
   Users, 
@@ -10,8 +12,10 @@ import {
   MessageSquare,
   CreditCard
 } from "lucide-react";
+import { useStyles } from "@/hooks/useStyles";
 
 export function Features() {
+  const styles = useStyles('features');
   const features = [
     {
       icon: Calendar,
@@ -66,44 +70,44 @@ export function Features() {
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+    <section className={styles.container}>
+      <div className={styles.content}>
+        <div className={styles.header}>
+          <h2 className={styles.heading}>
             Everything You Need to
-            <span className="block text-blue-600">Thrive as an Artist</span>
+            <span className={styles.gradientHeading}>Thrive as an Artist</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className={styles.description}>
             Built by artists who understand the struggle. Tools that actually work, 
             community that actually supports, and opportunities that actually pay.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className={styles.grid}>
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group p-6 bg-gray-50 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300"
+              className={styles.featureCard}
             >
               <div className="flex items-center space-x-4 mb-4">
-                <div className="p-3 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors">
+                <div className={styles.featureIcon}>
                   <feature.icon className="w-6 h-6 text-blue-600" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className={styles.featureTitle}>
                   {feature.title}
                 </h3>
               </div>
-              <p className="text-gray-600 leading-relaxed">
+              <p className={styles.featureDescription}>
                 {feature.description}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <div className="inline-flex items-center space-x-2 bg-blue-50 text-blue-700 px-6 py-3 rounded-full">
+        <div className={styles.footer}>
+          <div className={styles.footerBadge}>
             <Zap className="w-5 h-5" />
-            <span className="font-medium">
+            <span className={styles.footerText}>
               Powered by Alex AI - Built for artists, by artists
             </span>
           </div>

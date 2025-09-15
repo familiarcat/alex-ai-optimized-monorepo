@@ -4,8 +4,10 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, X, User, Settings, LogOut } from "lucide-react";
 import { useState } from "react";
+import { useStyles } from "@/hooks/useStyles";
 
 export function Header() {
+  const styles = useStyles('header');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false); // This would come from auth context
 

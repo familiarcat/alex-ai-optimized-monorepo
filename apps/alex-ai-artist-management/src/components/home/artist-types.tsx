@@ -1,6 +1,10 @@
+"use client";
+
 import { Music, Palette, BookOpen, Mic, Camera, Scissors, Theater, Code } from "lucide-react";
+import { useStyles } from "@/hooks/useStyles";
 
 export function ArtistTypes() {
+  const styles = useStyles('artistTypes');
   const artistTypes = [
     {
       icon: Music,

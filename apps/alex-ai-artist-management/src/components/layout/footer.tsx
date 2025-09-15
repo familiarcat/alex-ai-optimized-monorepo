@@ -1,7 +1,11 @@
+"use client";
+
 import Link from "next/link";
 import { Github, Twitter, Linkedin, Mail } from "lucide-react";
+import { useStyles } from "@/hooks/useStyles";
 
 export function Footer() {
+  const styles = useStyles('footer');
   const footerLinks = {
     product: [
       { name: "Features", href: "/features" },
@@ -37,9 +41,9 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-gray-50 border-t">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+    <footer className={styles.container}>
+      <div className={styles.content}>
+        <div className={styles.grid}>
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center space-x-2 mb-4">
@@ -50,16 +54,16 @@ export function Footer() {
                 Alex AI Artist
               </span>
             </Link>
-            <p className="text-gray-600 text-sm mb-4">
+            <p className={styles.description}>
               Empowering artists to manage their careers with AI-powered tools
               and comprehensive booking management.
             </p>
-            <div className="flex space-x-4">
+            <div className={styles.socialLinks}>
               {socialLinks.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-400 hover:text-gray-600 transition-colors"
+                  className={styles.socialLink}
                   aria-label={item.name}
                 >
                   <item.icon className="h-5 w-5" />
@@ -69,8 +73,8 @@ export function Footer() {
           </div>
 
           {/* Product */}
-          <div>
-            <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
+          <div className={styles.section}>
+            <h3 className={styles.title}>
               Product
             </h3>
             <ul className="space-y-3">
@@ -78,7 +82,7 @@ export function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-gray-600 hover:text-blue-600 text-sm transition-colors"
+                    className={styles.link}
                   >
                     {link.name}
                   </Link>
@@ -88,8 +92,8 @@ export function Footer() {
           </div>
 
           {/* Artists */}
-          <div>
-            <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
+          <div className={styles.section}>
+            <h3 className={styles.title}>
               For Artists
             </h3>
             <ul className="space-y-3">
@@ -97,7 +101,7 @@ export function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-gray-600 hover:text-blue-600 text-sm transition-colors"
+                    className={styles.link}
                   >
                     {link.name}
                   </Link>
@@ -107,8 +111,8 @@ export function Footer() {
           </div>
 
           {/* Support */}
-          <div>
-            <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
+          <div className={styles.section}>
+            <h3 className={styles.title}>
               Support
             </h3>
             <ul className="space-y-3">
@@ -116,7 +120,7 @@ export function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-gray-600 hover:text-blue-600 text-sm transition-colors"
+                    className={styles.link}
                   >
                     {link.name}
                   </Link>
@@ -126,8 +130,8 @@ export function Footer() {
           </div>
 
           {/* Company */}
-          <div>
-            <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
+          <div className={styles.section}>
+            <h3 className={styles.title}>
               Company
             </h3>
             <ul className="space-y-3">
@@ -135,7 +139,7 @@ export function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-gray-600 hover:text-blue-600 text-sm transition-colors"
+                    className={styles.link}
                   >
                     {link.name}
                   </Link>
@@ -146,27 +150,27 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-8 pt-8 border-t border-gray-200">
+        <div className={styles.bottom}>
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-500 text-sm">
+            <p className={styles.copyright}>
               © 2025 Alex AI Artist Management Platform. All rights reserved.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
+            <div className={styles.legal}>
               <Link
                 href="/privacy"
-                className="text-gray-500 hover:text-gray-700 text-sm transition-colors"
+                className={styles.legalLink}
               >
                 Privacy Policy
               </Link>
               <Link
                 href="/terms"
-                className="text-gray-500 hover:text-gray-700 text-sm transition-colors"
+                className={styles.legalLink}
               >
                 Terms of Service
               </Link>
               <Link
                 href="/cookies"
-                className="text-gray-500 hover:text-gray-700 text-sm transition-colors"
+                className={styles.legalLink}
               >
                 Cookie Policy
               </Link>
