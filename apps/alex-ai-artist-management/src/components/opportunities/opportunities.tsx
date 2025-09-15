@@ -330,8 +330,8 @@ export function Opportunities() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Performance Opportunities</h1>
-          <p className="text-gray-600">Discover and apply to opportunities that match your artistic profile</p>
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">Opportunities Await</h1>
+          <p className="text-gray-600">Discover opportunities that match your artistic vision and help you grow your career.</p>
         </div>
 
         {/* Filters and Search */}

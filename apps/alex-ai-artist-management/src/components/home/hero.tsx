@@ -5,9 +5,9 @@ import { Play, Star, Users, Calendar, TrendingUp } from "lucide-react";
 export function Hero() {
   const stats = [
     { icon: Users, label: "Active Artists", value: "10,000+" },
-    { icon: Calendar, label: "Bookings Made", value: "50,000+" },
+    { icon: Calendar, label: "Shows Booked", value: "50,000+" },
     { icon: Star, label: "Success Rate", value: "98%" },
-    { icon: TrendingUp, label: "Revenue Growth", value: "150%" },
+    { icon: TrendingUp, label: "Earnings Growth", value: "150%" },
   ];
 
   return (
@@ -22,36 +22,36 @@ export function Hero() {
           {/* Content */}
           <div className="text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Manage Your
+              Your Art Deserves
               <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Artistic Career
+                Better Tools.
               </span>
-              with AI Power
+              We're Here to Help.
             </h1>
             
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              The comprehensive platform for artists across all disciplines. 
-              Book shows, manage portfolios, track finances, and grow your career 
-              with AI-powered insights and automation.
+              A platform built by artists, for artists. Where your creativity is the priority, 
+              not the algorithm. Where community matters more than competition. Where every artist 
+              has the tools they need to thrive.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
-              <Button size="lg" className="text-lg px-8 py-4" asChild>
+              <Button size="lg" className="text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700" asChild>
                 <Link href="/signup">
-                  Start Your Journey
+                  Join Our Community
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4" asChild>
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-gray-800 text-gray-800 hover:bg-gray-100" asChild>
                 <Link href="/demo">
                   <Play className="w-5 h-5 mr-2" />
-                  Watch Demo
+                  See How It Works
                 </Link>
               </Button>
             </div>
 
             {/* Trust Indicators */}
             <div className="text-sm text-gray-500">
-              <p className="mb-2">Trusted by artists worldwide</p>
+              <p className="mb-2">Join 10,000+ artists who are thriving</p>
               <div className="flex items-center justify-center lg:justify-start space-x-4">
                 <div className="flex -space-x-2">
                   {[1, 2, 3, 4, 5].map((i) => (
@@ -63,7 +63,7 @@ export function Hero() {
                     </div>
                   ))}
                 </div>
-                <span>Join 10,000+ artists</span>
+                <span>Join our community</span>
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@ export function Hero() {
                 {/* Mock Dashboard */}
                 <div className="flex items-center justify-between">
                   <h3 className="text-lg font-semibold text-gray-900">
-                    Artist Dashboard
+                    Your Creative Hub
                   </h3>
                   <div className="flex space-x-2">
                     <div className="w-3 h-3 bg-red-400 rounded-full"></div>
@@ -113,10 +113,10 @@ export function Hero() {
                   <h4 className="font-medium text-gray-900">Recent Activity</h4>
                   <div className="space-y-2">
                     {[
-                      "New booking request from The Blue Note",
-                      "Portfolio view from Art Gallery NYC",
-                      "Payment received for Jazz Festival",
-                      "New opportunity: Poetry Reading Series"
+                      "The Blue Note wants your sound",
+                      "Art Gallery NYC discovered your work",
+                      "Jazz Festival payment received",
+                      "Poetry Reading Series needs your voice"
                     ].map((activity, index) => (
                       <div
                         key={index}
