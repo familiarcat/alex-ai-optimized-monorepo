@@ -1,11 +1,14 @@
-import { Portfolio } from "@/components/portfolio/portfolio";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Portfolio - Alex AI Artist Management",
-  description: "Showcase your work and build your professional artistic brand",
-};
+import { Portfolio } from "@/components/portfolio/portfolio";
+import { useStyles } from "@/hooks/useStyles";
 
 export default function PortfolioPage() {
-  return <Portfolio />;
+  const styles = useStyles('page');
+
+  return (
+    <div className={styles.container}>
+      <Portfolio />
+    </div>
+  );
 }

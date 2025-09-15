@@ -1,11 +1,14 @@
-import { AboutPage } from "@/components/about/about-page";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "About Us - Alex AI Artist Management",
-  description: "Learn about Alex AI Artist Management Platform and our mission to empower artists worldwide",
-};
+import { AboutPage } from "@/components/about/about-page";
+import { useStyles } from "@/hooks/useStyles";
 
 export default function AboutPageRoute() {
-  return <AboutPage />;
+  const styles = useStyles('page');
+
+  return (
+    <div className={styles.container}>
+      <AboutPage />
+    </div>
+  );
 }

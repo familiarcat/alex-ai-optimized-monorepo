@@ -1,11 +1,14 @@
-import { FeaturesPage } from "@/components/features/features-page";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Features - Alex AI Artist Management",
-  description: "Discover all the powerful features and tools available in Alex AI Artist Management Platform",
-};
+import { FeaturesPage } from "@/components/features/features-page";
+import { useStyles } from "@/hooks/useStyles";
 
 export default function FeaturesPageRoute() {
-  return <FeaturesPage />;
+  const styles = useStyles('page');
+
+  return (
+    <div className={styles.container}>
+      <FeaturesPage />
+    </div>
+  );
 }

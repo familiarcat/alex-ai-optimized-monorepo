@@ -1,11 +1,14 @@
-import { Analytics } from "@/components/analytics/analytics";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Analytics - Alex AI Artist Management",
-  description: "Track your career performance and gain insights into your artistic growth",
-};
+import { Analytics } from "@/components/analytics/analytics";
+import { useStyles } from "@/hooks/useStyles";
 
 export default function AnalyticsPage() {
-  return <Analytics />;
+  const styles = useStyles('page');
+
+  return (
+    <div className={styles.container}>
+      <Analytics />
+    </div>
+  );
 }

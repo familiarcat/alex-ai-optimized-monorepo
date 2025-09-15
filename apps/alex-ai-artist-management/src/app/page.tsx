@@ -1,3 +1,5 @@
+"use client";
+
 import { Hero } from "@/components/home/hero";
 import { Features } from "@/components/home/features";
 import { ArtistTypes } from "@/components/home/artist-types";

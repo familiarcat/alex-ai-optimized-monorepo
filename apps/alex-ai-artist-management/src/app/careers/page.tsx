@@ -1,11 +1,14 @@
-import { CareersPage } from "@/components/careers/careers-page";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Careers - Alex AI Artist Management",
-  description: "Join our team and help build the future of artist management. Explore open positions and career opportunities.",
-};
+import { CareersPage } from "@/components/careers/careers-page";
+import { useStyles } from "@/hooks/useStyles";
 
 export default function Careers() {
-  return <CareersPage />;
+  const styles = useStyles('page');
+
+  return (
+    <div className={styles.container}>
+      <CareersPage />
+    </div>
+  );
 }

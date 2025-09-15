@@ -1,11 +1,14 @@
-import { PrivacyPage } from "@/components/privacy/privacy-page";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy - Alex AI Artist Management",
-  description: "Learn how Alex AI Artist Management protects and handles your personal information.",
-};
+import { PrivacyPage } from "@/components/privacy/privacy-page";
+import { useStyles } from "@/hooks/useStyles";
 
 export default function Privacy() {
-  return <PrivacyPage />;
+  const styles = useStyles('page');
+
+  return (
+    <div className={styles.container}>
+      <PrivacyPage />
+    </div>
+  );
 }

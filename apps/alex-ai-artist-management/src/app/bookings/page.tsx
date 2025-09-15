@@ -1,11 +1,14 @@
-import { Bookings } from "@/components/bookings/bookings";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Bookings - Alex AI Artist Management",
-  description: "Manage your performance bookings and scheduling",
-};
+import { Bookings } from "@/components/bookings/bookings";
+import { useStyles } from "@/hooks/useStyles";
 
 export default function BookingsPage() {
-  return <Bookings />;
+  const styles = useStyles('page');
+
+  return (
+    <div className={styles.container}>
+      <Bookings />
+    </div>
+  );
 }

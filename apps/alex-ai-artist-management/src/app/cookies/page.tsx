@@ -1,11 +1,14 @@
-import { CookiesPage } from "@/components/cookies/cookies-page";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Cookie Policy - Alex AI Artist Management",
-  description: "Learn about how Alex AI Artist Management uses cookies and similar technologies.",
-};
+import { CookiesPage } from "@/components/cookies/cookies-page";
+import { useStyles } from "@/hooks/useStyles";
 
 export default function Cookies() {
-  return <CookiesPage />;
+  const styles = useStyles('page');
+
+  return (
+    <div className={styles.container}>
+      <CookiesPage />
+    </div>
+  );
 }

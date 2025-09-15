@@ -1,11 +1,14 @@
-import { ContactPage } from "@/components/contact/contact-page";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Contact Us - Alex AI Artist Management",
-  description: "Get in touch with the Alex AI team for support, partnerships, or general inquiries",
-};
+import { ContactPage } from "@/components/contact/contact-page";
+import { useStyles } from "@/hooks/useStyles";
 
 export default function ContactPageRoute() {
-  return <ContactPage />;
+  const styles = useStyles('page');
+
+  return (
+    <div className={styles.container}>
+      <ContactPage />
+    </div>
+  );
 }

@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Play, Star, Users, Calendar, TrendingUp } from "lucide-react";
@@ -17,16 +19,24 @@ export function Hero() {
         <div className="w-full h-full bg-gradient-to-br from-blue-100/20 to-purple-100/20"></div>
       </div>
       
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full opacity-20 animate-pulse"></div>
+        <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-green-400 to-blue-500 rounded-full opacity-20 animate-pulse delay-1000"></div>
+      </div>
+      
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Your Art Deserves
-              <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Better Tools.
+              <span className="block mb-2">YOUR ART</span>
+              <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
+                DESERVES BETTER
               </span>
-              We're Here to Help.
+              <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold">
+                WE'RE HERE TO HELP
+              </span>
             </h1>
             
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -36,17 +46,19 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
-              <Button size="lg" className="text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700" asChild>
-                <Link href="/signup">
-                  Join Our Community
-                </Link>
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-gray-800 text-gray-800 hover:bg-gray-100" asChild>
-                <Link href="/demo">
-                  <Play className="w-5 h-5 mr-2" />
-                  See How It Works
-                </Link>
-              </Button>
+              <button 
+                className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4 font-bold rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                onClick={() => window.location.href = '/signup'}
+              >
+                Join Our Community
+              </button>
+              <button 
+                className="border-2 border-gray-800 text-gray-800 hover:bg-gray-100 text-lg px-8 py-4 font-bold rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                onClick={() => window.location.href = '/demo'}
+              >
+                <Play className="w-5 h-5 mr-2 inline" />
+                See How It Works
+              </button>
             </div>
 
             {/* Trust Indicators */}

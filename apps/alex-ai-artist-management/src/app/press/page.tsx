@@ -1,11 +1,14 @@
-import { PressPage } from "@/components/press/press-page";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Press - Alex AI Artist Management",
-  description: "Latest news, press releases, and media coverage about Alex AI Artist Management.",
-};
+import { PressPage } from "@/components/press/press-page";
+import { useStyles } from "@/hooks/useStyles";
 
 export default function Press() {
-  return <PressPage />;
+  const styles = useStyles('page');
+
+  return (
+    <div className={styles.container}>
+      <PressPage />
+    </div>
+  );
 }

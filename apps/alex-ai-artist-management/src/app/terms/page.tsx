@@ -1,11 +1,14 @@
-import { TermsPage } from "@/components/terms/terms-page";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Terms of Service - Alex AI Artist Management",
-  description: "Read our terms of service for Alex AI Artist Management platform.",
-};
+import { TermsPage } from "@/components/terms/terms-page";
+import { useStyles } from "@/hooks/useStyles";
 
 export default function Terms() {
-  return <TermsPage />;
+  const styles = useStyles('page');
+
+  return (
+    <div className={styles.container}>
+      <TermsPage />
+    </div>
+  );
 }

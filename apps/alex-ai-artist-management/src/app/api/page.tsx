@@ -1,11 +1,14 @@
-import { ApiPage } from "@/components/api/api-page";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "API - Alex AI Artist Management",
-  description: "Powerful API for integrating Alex AI Artist Management into your applications.",
-};
+import { ApiPage } from "@/components/api/api-page";
+import { useStyles } from "@/hooks/useStyles";
 
 export default function Api() {
-  return <ApiPage />;
+  const styles = useStyles('page');
+
+  return (
+    <div className={styles.container}>
+      <ApiPage />
+    </div>
+  );
 }

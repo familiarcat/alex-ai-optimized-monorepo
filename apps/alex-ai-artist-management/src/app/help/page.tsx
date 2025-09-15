@@ -1,11 +1,14 @@
-import { HelpPage } from "@/components/help/help-page";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Help Center - Alex AI Artist Management",
-  description: "Get help and support for Alex AI Artist Management. Find answers, tutorials, and contact our support team.",
-};
+import { HelpPage } from "@/components/help/help-page";
+import { useStyles } from "@/hooks/useStyles";
 
 export default function Help() {
-  return <HelpPage />;
+  const styles = useStyles('page');
+
+  return (
+    <div className={styles.container}>
+      <HelpPage />
+    </div>
+  );
 }

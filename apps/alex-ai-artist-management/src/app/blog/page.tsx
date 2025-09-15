@@ -1,11 +1,14 @@
-import { BlogPage } from "@/components/blog/blog-page";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Blog - Alex AI Artist Management",
-  description: "Latest news, tips, and insights for artists. Learn how to grow your career and make the most of Alex AI.",
-};
+import { BlogPage } from "@/components/blog/blog-page";
+import { useStyles } from "@/hooks/useStyles";
 
 export default function Blog() {
-  return <BlogPage />;
+  const styles = useStyles('page');
+
+  return (
+    <div className={styles.container}>
+      <BlogPage />
+    </div>
+  );
 }

@@ -1,11 +1,14 @@
-import { MusiciansPage } from "@/components/artists/musicians-page";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "For Musicians - Alex AI Artist Management",
-  description: "Comprehensive tools and features designed specifically for musicians and bands to manage their careers, bookings, and performances",
-};
+import { MusiciansPage } from "@/components/artists/musicians-page";
+import { useStyles } from "@/hooks/useStyles";
 
 export default function MusiciansPageRoute() {
-  return <MusiciansPage />;
+  const styles = useStyles('page');
+
+  return (
+    <div className={styles.container}>
+      <MusiciansPage />
+    </div>
+  );
 }

@@ -1,11 +1,14 @@
-import { CommunityPage } from "@/components/community/community-page";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Community - Alex AI Artist Management",
-  description: "Join the Alex AI Artist Management community. Connect with other artists, share experiences, and get support.",
-};
+import { CommunityPage } from "@/components/community/community-page";
+import { useStyles } from "@/hooks/useStyles";
 
 export default function Community() {
-  return <CommunityPage />;
+  const styles = useStyles('page');
+
+  return (
+    <div className={styles.container}>
+      <CommunityPage />
+    </div>
+  );
 }

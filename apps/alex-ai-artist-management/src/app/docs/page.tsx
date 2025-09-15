@@ -1,11 +1,14 @@
-import { DocsPage } from "@/components/docs/docs-page";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Documentation - Alex AI Artist Management",
-  description: "Complete documentation for Alex AI Artist Management. Learn how to use all features and integrations.",
-};
+import { DocsPage } from "@/components/docs/docs-page";
+import { useStyles } from "@/hooks/useStyles";
 
 export default function Docs() {
-  return <DocsPage />;
+  const styles = useStyles('page');
+
+  return (
+    <div className={styles.container}>
+      <DocsPage />
+    </div>
+  );
 }

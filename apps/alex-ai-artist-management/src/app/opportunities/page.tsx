@@ -1,11 +1,14 @@
-import { Opportunities } from "@/components/opportunities/opportunities";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Opportunities - Alex AI Artist Management",
-  description: "Discover and apply to performance opportunities that match your artistic profile",
-};
+import { Opportunities } from "@/components/opportunities/opportunities";
+import { useStyles } from "@/hooks/useStyles";
 
 export default function OpportunitiesPage() {
-  return <Opportunities />;
+  const styles = useStyles('page');
+
+  return (
+    <div className={styles.container}>
+      <Opportunities />
+    </div>
+  );
 }
