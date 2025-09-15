@@ -1,0 +1,66 @@
+# After Effects Project Files
+*.aep
+*.aepx
+*.aet
+*.aetx
+
+# Rendered Outputs
+renders/
+*.mov
+*.mp4
+*.avi
+*.wmv
+*.flv
+*.webm
+
+# Temporary Files
+*.tmp
+*.temp
+*_temp*
+*_backup*
+
+# Cache Files
+*.cache
+*.cch
+
+# Preview Files
+previews/
+*.preview
+
+# Project Backups
+*_backup_*
+*_bak_*
+
+# After Effects Settings
+*.aes
+*.aepr
+
+# Media Cache
+Media Cache/
+Media Cache Files/
+
+# Auto-Save Files
+*_auto_save_*
+
+# Crash Recovery
+*_crash_recovery_*
+
+# Keep Lottie Exports
+!lottie-exports/
+!lottie-exports/**/*.json
+!lottie-exports/**/*.lottie
+
+# Keep Scripts
+!scripts/
+!scripts/**/*.jsx
+!scripts/**/*.js
+
+# Keep Templates
+!templates/
+!templates/**/*.aep
+!templates/**/*.aet
+
+# Keep Documentation
+!docs/
+!docs/**/*.md
+!docs/**/*.txt
