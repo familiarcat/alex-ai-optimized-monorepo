@@ -10,10 +10,10 @@ import {
   Youtube, 
   Facebook, 
   Twitter,
-  Spotify,
+  Music2, // Using Music2 instead of Spotify
   Apple,
-  Soundcloud,
-  Bandcamp,
+  Cloud, // Using Cloud instead of Soundcloud
+  Disc3, // Using Disc3 instead of Bandcamp
   Mail,
   Calendar,
   CreditCard,
@@ -68,7 +68,7 @@ export function IntegrationsPage() {
     {
       name: "Spotify",
       description: "Import your tracks and albums from Spotify",
-      icon: Spotify,
+      icon: Music2,
       category: "music",
       status: "available",
       popular: true
@@ -84,7 +84,7 @@ export function IntegrationsPage() {
     {
       name: "SoundCloud",
       description: "Import tracks and playlists from SoundCloud",
-      icon: Soundcloud,
+      icon: Cloud,
       category: "music",
       status: "available",
       popular: false
@@ -92,7 +92,7 @@ export function IntegrationsPage() {
     {
       name: "Bandcamp",
       description: "Sync your Bandcamp releases and sales data",
-      icon: Bandcamp,
+      icon: Disc3,
       category: "music",
       status: "available",
       popular: false

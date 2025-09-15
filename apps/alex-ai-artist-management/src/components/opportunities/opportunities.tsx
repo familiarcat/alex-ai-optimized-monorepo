@@ -23,8 +23,10 @@ import {
   ExternalLink
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { alexAI } from "@/lib/alex-ai";
+import { Opportunity, ArtistProfile } from "@/types/alex-ai";
 
-// Mock data simulating N8N workflow results
+// Mock data fallback
 const mockOpportunities = [
   {
     id: 1,
@@ -166,26 +168,63 @@ const opportunityTypes = [
 ];
 
 export function Opportunities() {
-  const [opportunities, setOpportunities] = useState(mockOpportunities);
-  const [filteredOpportunities, setFilteredOpportunities] = useState(mockOpportunities);
+  const [opportunities, setOpportunities] = useState<Opportunity[]>(mockOpportunities);
+  const [filteredOpportunities, setFilteredOpportunities] = useState<Opportunity[]>(mockOpportunities);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedType, setSelectedType] = useState("all");
   const [sortBy, setSortBy] = useState("compatibility");
   const [showRecommendedOnly, setShowRecommendedOnly] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [alexAIStatus, setAlexAIStatus] = useState<any>(null);
 
-  // Simulate N8N workflow data fetching
+  // Fetch opportunities using Alex AI
   useEffect(() => {
     const fetchOpportunities = async () => {
       setIsLoading(true);
-      // Simulate API call delay
-      await new Promise(resolve => setTimeout(resolve, 800));
-      setOpportunities(mockOpportunities);
-      setIsLoading(false);
+      
+      try {
+        // Initialize Alex AI if not already done
+        if (!alexAIStatus) {
+          const status = await alexAI.initialize();
+          setAlexAIStatus(status);
+        }
+        
+        // Create artist profile for AI matching
+        const artistProfile: ArtistProfile = {
+          id: 'artist_123',
+          name: 'Sarah Chen',
+          type: 'musician',
+          location: 'New York, NY',
+          experienceLevel: 'professional',
+          rating: 4.8,
+          preferences: {
+            preferredVenues: ['The Blue Note', 'Village Vanguard'],
+            maxTravelDistance: 50,
+            minCompensation: 500,
+            availableDays: ['friday', 'saturday', 'sunday'],
+            genres: ['jazz', 'blues'],
+            audienceSize: { min: 50, max: 500 }
+          }
+        };
+        
+        // Fetch opportunities using Alex AI
+        const fetchedOpportunities = await alexAI.fetchOpportunities(artistProfile, {
+          type: selectedType === 'all' ? undefined : selectedType,
+          recommended: showRecommendedOnly
+        });
+        
+        setOpportunities(fetchedOpportunities);
+      } catch (error) {
+        console.error('Failed to fetch opportunities:', error);
+        // Fallback to mock data
+        setOpportunities(mockOpportunities);
+      } finally {
+        setIsLoading(false);
+      }
     };
 
     fetchOpportunities();
-  }, []);
+  }, [selectedType, showRecommendedOnly, alexAIStatus]);
 
   // Filter and search logic
   useEffect(() => {
@@ -229,15 +268,40 @@ export function Opportunities() {
     setFilteredOpportunities(filtered);
   }, [opportunities, searchTerm, selectedType, sortBy, showRecommendedOnly]);
 
-  const handleApply = (opportunityId: number) => {
-    // Simulate application submission via N8N workflow
-    setOpportunities(prev => 
-      prev.map(opp => 
-        opp.id === opportunityId 
-          ? { ...opp, status: "applied" }
-          : opp
-      )
-    );
+  const handleApply = async (opportunityId: number) => {
+    try {
+      // Submit application using Alex AI
+      const applicationData = {
+        coverLetter: "I am excited to apply for this opportunity and believe my experience aligns perfectly with your requirements.",
+        portfolioItems: ["portfolio_item_1", "portfolio_item_2"],
+        availability: ["friday", "saturday", "sunday"],
+        specialRequirements: "None",
+        expectedCompensation: 1000
+      };
+      
+      const result = await alexAI.submitBookingApplication(
+        opportunityId.toString(), 
+        'artist_123', 
+        applicationData
+      );
+      
+      if (result.success) {
+        // Update local state
+        setOpportunities(prev => 
+          prev.map(opp => 
+            opp.id === opportunityId 
+              ? { ...opp, status: "applied" as const }
+              : opp
+          )
+        );
+        
+        // Show success message (you could add a toast notification here)
+        console.log('Application submitted successfully:', result);
+      }
+    } catch (error) {
+      console.error('Failed to submit application:', error);
+      // You could show an error message to the user here
+    }
   };
 
   const toggleFavorite = (opportunityId: number) => {

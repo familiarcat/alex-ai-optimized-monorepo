@@ -16,8 +16,10 @@ import {
   Mic
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { alexAI } from "@/lib/alex-ai";
+import { ArtistProfile, DashboardMetrics, PerformanceStats, Booking, CareerInsights } from "@/types/alex-ai";
 
-// Mock data that would come from N8N workflows
+// Mock data fallback
 const mockDashboardData = {
   artist: {
     name: "Sarah Chen",
@@ -115,18 +117,37 @@ const artistTypeIcons = {
 export function Dashboard() {
   const [data, setData] = useState(mockDashboardData);
   const [isLoading, setIsLoading] = useState(true);
+  const [alexAIStatus, setAlexAIStatus] = useState<any>(null);
+  const [careerInsights, setCareerInsights] = useState<CareerInsights | null>(null);
 
   useEffect(() => {
-    // Simulate N8N workflow data fetching
-    const fetchDashboardData = async () => {
+    // Initialize Alex AI and fetch dashboard data
+    const initializeAndFetchData = async () => {
       setIsLoading(true);
-      // Simulate API call delay
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      setData(mockDashboardData);
-      setIsLoading(false);
+      
+      try {
+        // Initialize Alex AI
+        const status = await alexAI.initialize();
+        setAlexAIStatus(status);
+        
+        // Fetch dashboard data using Alex AI
+        const dashboardData = await alexAI.fetchDashboardData('artist_123');
+        setData(dashboardData);
+        
+        // Fetch career insights
+        const insights = await alexAI.getCareerInsights('artist_123', '30d');
+        setCareerInsights(insights);
+        
+      } catch (error) {
+        console.error('Failed to fetch data:', error);
+        // Fallback to mock data
+        setData(mockDashboardData);
+      } finally {
+        setIsLoading(false);
+      }
     };
 
-    fetchDashboardData();
+    initializeAndFetchData();
   }, []);
 
   if (isLoading) {
@@ -321,6 +342,68 @@ export function Dashboard() {
             </div>
           </div>
         </div>
+
+        {/* Alex AI Status & Career Insights */}
+        {(alexAIStatus || careerInsights) && (
+          <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Alex AI Status */}
+            {alexAIStatus && (
+              <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6 border border-blue-200">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                    <span className="text-white text-sm font-bold">AI</span>
+                  </div>
+                  <h2 className="text-xl font-semibold text-gray-900">Alex AI Status</h2>
+                  <div className={`w-3 h-3 rounded-full ${alexAIStatus.isConnected ? 'bg-green-500' : 'bg-red-500'}`}></div>
+                </div>
+                <div className="space-y-2 text-sm">
+                  <p className="text-gray-600">
+                    <span className="font-medium">Crew Members:</span> {alexAIStatus.crewMembers.length} active
+                  </p>
+                  <p className="text-gray-600">
+                    <span className="font-medium">Workflows:</span> {alexAIStatus.activeWorkflows.length} running
+                  </p>
+                  <p className="text-gray-600">
+                    <span className="font-medium">Last Update:</span> {alexAIStatus.lastHealthCheck ? new Date(alexAIStatus.lastHealthCheck).toLocaleTimeString() : 'Never'}
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {/* Career Insights */}
+            {careerInsights && (
+              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 border border-green-200">
+                <div className="flex items-center space-x-3 mb-4">
+                  <TrendingUp className="w-6 h-6 text-green-600" />
+                  <h2 className="text-xl font-semibold text-gray-900">Career Insights</h2>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-2">
+                    <span className="text-sm font-medium text-gray-700">Growth Trend:</span>
+                    <span className={`px-2 py-1 rounded-full text-xs font-medium ${
+                      careerInsights.growthTrend === 'positive' ? 'bg-green-100 text-green-800' :
+                      careerInsights.growthTrend === 'negative' ? 'bg-red-100 text-red-800' :
+                      'bg-yellow-100 text-yellow-800'
+                    }`}>
+                      {careerInsights.growthTrend}
+                    </span>
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium text-gray-700 mb-2">Top Recommendations:</p>
+                    <ul className="space-y-1">
+                      {careerInsights.recommendations.slice(0, 2).map((rec, index) => (
+                        <li key={index} className="text-sm text-gray-600 flex items-start space-x-2">
+                          <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                          <span>{rec}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
 
         {/* Quick Actions */}
         <div className="mt-8">
