@@ -1,0 +1,70 @@
+{
+  "deployment_timestamp": "1757898065.2403991",
+  "system_version": "1.0.0",
+  "deployment_status": "successful",
+  "knowledge_base_status": "active",
+  "processed_decisions": 4,
+  "knowledge_summary": {
+    "total_decisions": 4,
+    "total_lessons": 2,
+    "domains_covered": 2,
+    "evolution_patterns": 2,
+    "average_historical_connections": 0.25
+  },
+  "domain_coverage": {
+    "artist_management": {
+      "count": 1,
+      "lessons": [
+        "Our application should leverage data analytics to provide insights and recommendations"
+      ]
+    },
+    "general": {
+      "count": 3,
+      "lessons": [
+        "Each page must provide measurable value through data-driven insights"
+      ]
+    }
+  },
+  "system_capabilities": {
+    "vector_similarity_search": true,
+    "historical_context_retrieval": true,
+    "solution_evolution_analysis": true,
+    "pattern_recognition": true,
+    "learning_progression_tracking": true,
+    "self_referential_learning": true
+  },
+  "processed_conferences": [
+    {
+      "file": "Observation_Lounge_Artist_Management_Conference_20250114.json",
+      "decision_id": "e909d87d6ac1",
+      "problem": "Design comprehensive artist management application for caree...",
+      "historical_context": 0,
+      "lessons_learned": 1,
+      "evolution_type": "novel_approach"
+    },
+    {
+      "file": "Observation_Lounge_RAG_Integration_Conference_20250114.json",
+      "decision_id": "ac8209032d24",
+      "problem": "Unknown problem",
+      "historical_context": 0,
+      "lessons_learned": 0,
+      "evolution_type": "novel_approach"
+    },
+    {
+      "file": "Observation_Lounge_Full_Application_Design_Conference_20250114.json",
+      "decision_id": "7c7707158fb0",
+      "problem": "Design complete functionality for all pages with mock N8N in...",
+      "historical_context": 0,
+      "lessons_learned": 1,
+      "evolution_type": "novel_approach"
+    },
+    {
+      "file": "Observation_Lounge_Production_Process_Conference_20250114.json",
+      "decision_id": "81454af2767c",
+      "problem": "Unknown problem",
+      "historical_context": 1,
+      "lessons_learned": 0,
+      "evolution_type": "evolutionary_improvement"
+    }
+  ]
+}
