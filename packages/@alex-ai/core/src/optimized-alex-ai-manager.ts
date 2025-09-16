@@ -388,3 +388,4 @@ export const initializeOptimizedAlexAI = async (config?: Partial<OptimizedAlexAI
 }
 
 export const getOptimizedAlexAI = () => OptimizedAlexAIManager.getInstance()
+

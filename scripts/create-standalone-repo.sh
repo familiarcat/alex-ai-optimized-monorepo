@@ -580,3 +580,4 @@ echo "4. git commit -m 'Initial commit: Alex AI Universal repository structure'"
 echo "5. Create GitHub repository and push"
 echo ""
 echo "📦 Then run the migration script to copy packages from the monorepo"
+

@@ -42,3 +42,4 @@ echo "  Or directly:"
 echo "    node $HOME/.alex-ai/universal-alex-ai-cursor-integration.js engage"
 echo ""
 echo "🔄 Please restart your terminal or run 'source ~/.zshrc' to use the new commands."
+

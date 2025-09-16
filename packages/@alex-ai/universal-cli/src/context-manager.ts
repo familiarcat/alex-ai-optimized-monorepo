@@ -261,3 +261,4 @@ export class ContextManager {
     return relevantTypes.some(type => type.includes(queryLower));
   }
 }
+

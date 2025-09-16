@@ -8,3 +8,4 @@ export { AlexAICLI } from './cli';
 export { ProjectDetector, ProjectInfo } from './project-detector';
 export { ContextManager } from './context-manager';
 export { CrewCoordinator, AssignedCrewMember } from './crew-coordinator';
+
